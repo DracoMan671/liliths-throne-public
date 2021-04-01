@@ -14,7 +14,11 @@ import com.lilithsthrone.utils.colours.PresetColour;
  * @author Innoxia
  */
 public enum FluidTypeBase {
-	
+
+	URINE(Util.newArrayListOfValues("urine"),
+			BodyCoveringType.URINE,
+			PresetColour.BASE_GOLD),
+
 	CUM(Util.newArrayListOfValues("cum", "cream", "jism", "jizz", "seed", "spooge"),
 			BodyCoveringType.CUM,
 			PresetColour.CUM),

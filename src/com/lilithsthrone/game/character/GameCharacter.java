@@ -31,6 +31,7 @@ import java.util.Set;
 import java.util.TreeMap;
 import java.util.stream.Collectors;
 
+import com.lilithsthrone.LolificationProject.ModCommon.Conversions;
 import org.w3c.dom.Comment;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
@@ -296,6 +297,7 @@ import com.lilithsthrone.world.places.PlaceUpgrade;
  * @version 0.4
  * @author Innoxia, orvail(relationship section)
  */
+@SuppressWarnings("all")
 public abstract class GameCharacter implements XMLSaving {
 
 	/** Calculations description as used in getAttributeValue() */
@@ -303,12 +305,12 @@ public abstract class GameCharacter implements XMLSaving {
 	public static final String MANA_CALCULATION = "5 + (2*level) + (5*Arcane) + Bonus Aura";
 	public static final String RESTING_LUST_CALCULATION = "(Corruption/2) + Bonuses";
 
-	public static final int LEVEL_CAP = 50;
+	public static final int LEVEL_CAP = Main.getProperties().maxLevel;
 	public static final int MAX_TRAITS = 6;
 	public static final int MAX_COMBAT_MOVES = 8;
 	public static final int DEFAULT_COMBAT_AP = 3;
 
-	public static final int MINIMUM_AGE = 18;
+	public static int MINIMUM_AGE = 5;
 	
 	public static final int DEFAULT_TIME_START_VALUE = -1;
 	
@@ -4041,6 +4043,7 @@ public abstract class GameCharacter implements XMLSaving {
 	}
 	
 	public int getAgeValue() {
+	    MINIMUM_AGE = Main.getProperties().minAge;
 		int age = Math.max(0, (int) ChronoUnit.YEARS.between(birthday, Main.game.getDateNow()));
 		if(this.isPlayer()) {
 			return Math.max(MINIMUM_AGE, age);
@@ -22712,6 +22715,28 @@ public abstract class GameCharacter implements XMLSaving {
 		}
 	}
 
+	public Set<InventorySlot> getWetSlots() {
+        return inventory.getWetSlots();
+    }
+
+    public boolean isWetSlot(InventorySlot slot) {
+        if(!slot.isPhysicallyAvailable(this)) {
+            removeWetSlot(slot);
+        }
+        return inventory.isWetSlot(slot);
+    }
+
+    public boolean addWetSlot(InventorySlot slot) {
+        if(slot.isPhysicallyAvailable(this)) {
+            return inventory.addWetSlot(slot);
+        }
+        return false;
+    }
+
+    public boolean removeWetSlot(InventorySlot slot) {
+        return inventory.removeWetSlot(slot);
+    }
+
 	// Sex toys:
 	
 	public Map<SexAreaOrifice, AbstractClothing> getSexToyOrificeTooDeep() {
@@ -24312,11 +24337,11 @@ public abstract class GameCharacter implements XMLSaving {
 	
 	public int getMinimumHeight() {
 		if(this.isFeral()) {
-			return Math.min(Height.NEGATIVE_TWO_MINIMUM.getMinimumValue(), (int) (this.getFeralAttributes().getSize()*0.5f));
+			return Math.min(Height.NEGATIVE_THREE_MINIMUM.getMinimumValue(), (int) (this.getFeralAttributes().getSize()*0.5f));
 		}
 		return this.getSubspecies().isShortStature()
-				?Height.NEGATIVE_TWO_MINIMUM.getMinimumValue()
-				:Height.ZERO_TINY.getMinimumValue();
+				?Height.NEGATIVE_THREE_MINIMUM.getMinimumValue()
+				:Height.NEGATIVE_TWO_MINIMUM.getMinimumValue();
 	}
 	
 	public int getMaximumHeight() {

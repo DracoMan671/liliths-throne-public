@@ -24,6 +24,7 @@ import javax.script.ScriptEngine;
 import javax.script.ScriptException;
 
 import jdk.nashorn.api.scripting.NashornScriptEngine;
+import com.lilithsthrone.LolificationProject.ModCommon.TranslationUtils;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 

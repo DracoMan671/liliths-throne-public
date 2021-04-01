@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
+import com.lilithsthrone.LolificationProject.sex.GoldenDrink;
+import com.lilithsthrone.LolificationProject.sex.GoldenShower;
 import com.lilithsthrone.game.sex.SexAreaInterface;
 import com.lilithsthrone.game.sex.SexAreaOrifice;
 import com.lilithsthrone.game.sex.SexAreaPenetration;
@@ -523,8 +525,12 @@ public class SexActionPresets {
 		selfActions.add(PlayerSelfTongueMouth.class);
 		selfActions.add(PlayerSelfTongueNipple.class);
 		selfActions.add(PlayerSelfTongueVagina.class);
-		
-		
+
+
+		//Lolification Actions:
+		sexActions.add(GoldenDrink.class);
+		sexActions.add(GoldenShower.class);
+
 		allCommonActions = Util.mergeLists(miscActions, sexActions, selfActions);
 		
 	}

@@ -22,7 +22,17 @@ import com.lilithsthrone.utils.Util;
  * @author Innoxia
  */
 public class FluidType {
-	
+
+	public static AbstractFluidType URINE = new AbstractFluidType(FluidTypeBase.URINE,
+			FluidFlavour.NECTAR,
+			Race.NONE,
+			null,
+			null,
+			Util.newArrayListOfValues(""),
+			Util.newArrayListOfValues(""),
+			Util.newArrayListOfValues()) {
+	};
+
 	// Cum:
 	
 	 public static AbstractFluidType CUM_HUMAN = new AbstractFluidType(FluidTypeBase.CUM,

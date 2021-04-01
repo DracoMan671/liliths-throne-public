@@ -2699,5 +2699,29 @@ public abstract class AbstractClothing extends AbstractCoreItem implements XMLSa
 		}
 		return clothingType.displacementTypesAvailableWithoutNONE.get(slotEquippedTo);
 	}
-	
+
+	public boolean isWet() {
+		return wet;
+	}
+	public boolean wet;
+	public void setWet(GameCharacter owner, boolean wet) {
+		if(owner!=null) {
+			if(owner.getClothingCurrentlyEquipped().contains(this)) {
+				AbstractClothing c = new AbstractClothing(this) {};
+				owner.forceUnequipClothingIntoVoid(owner, this);
+				c.wet = wet;
+				owner.equipClothingOverride(c, c.getSlotEquippedTo(), false, false);
+
+			} else if(owner.removeClothing(this)) {
+				AbstractClothing c = new AbstractClothing(this) {};
+				c.wet = wet;
+				owner.addClothing(c, false);
+
+			} else {
+				this.wet = wet;
+			}
+		} else {
+			this.wet = wet;
+		}
+	}
 }

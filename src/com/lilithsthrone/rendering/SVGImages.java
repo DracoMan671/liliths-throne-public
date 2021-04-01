@@ -25,7 +25,9 @@ public enum SVGImages {
 	SVG_IMAGE_PROVIDER;
 
 	private String
-	
+
+			wetIcon,
+
 			flagUs,
 			
 			fist,
@@ -133,6 +135,9 @@ public enum SVGImages {
 		try {
 			InputStream is = this.getClass().getResourceAsStream("/com/lilithsthrone/res/UIElements/flag_us.svg");
 			flagUs = Util.inputStreamToString(is);
+
+			is = this.getClass().getResourceAsStream("/com/lilithsthrone/res/InventoryIcons/wetWarningIcon.svg");
+			wetIcon = Util.inputStreamToString(is);
 			
 			is = this.getClass().getResourceAsStream("/com/lilithsthrone/res/UIElements/fist.svg");
 			fist = Util.inputStreamToString(is);
@@ -1642,5 +1647,8 @@ public enum SVGImages {
 	public String getFoxTailDemon(int i) {
 		return youkoTailsDemonMap.get(i);
 	}
-	
+
+	public String getWetIcon() {
+		return wetIcon;
+	}
 }

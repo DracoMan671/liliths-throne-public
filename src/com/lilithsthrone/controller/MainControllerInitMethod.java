@@ -8,6 +8,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 
+import com.lilithsthrone.LolificationProject.ModCommon.ModOptions;
+import com.lilithsthrone.game.inventory.AbstractCoreItem;
 import org.w3c.dom.Document;
 import org.w3c.dom.events.EventTarget;
 
@@ -3060,7 +3062,7 @@ public class MainControllerInitMethod {
 						Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 					}, false);
 				}
-				
+
 
 				// Vagina egg-layer:
 				id = "VAGINA_EGG_LAYER_ON";
@@ -3081,7 +3083,7 @@ public class MainControllerInitMethod {
 						}
 					}, false);
 				}
-				
+
 				// Vagina wetness:
 				for(Wetness wetness: Wetness.values()) {
 					id = "VAGINA_WETNESS_"+wetness;
@@ -7302,20 +7304,20 @@ public class MainControllerInitMethod {
 				}
 			}
 		}
-		
+
 		// Lodger import:
 		if (Main.game.getCurrentDialogueNode() == CityHall.LODGER_IMPORT) {
 			for (File f : Main.getSlavesForImport()) {
 				String fileIdentifier = Util.getFileIdentifier(f);
 				String fileName = Util.getFileName(f);
-				
+
 				if (((EventTarget) MainController.document.getElementById("import_lodger_" + fileIdentifier )) != null) {
 					((EventTarget) MainController.document.getElementById("import_lodger_" + fileIdentifier )).addEventListener("click", e -> {
 						try {
 							Game.importCharacterAsLodger(fileName);
 							MainController.updateUI();
 							Main.game.flashMessage(PresetColour.GENERIC_GOOD, "Imported Character!");
-						
+
 						} catch(Exception ex) {
 							Main.game.flashMessage(PresetColour.GENERIC_BAD, "Import Failed!");
 						}
@@ -7331,7 +7333,7 @@ public class MainControllerInitMethod {
 						CityHall.setupLodger(npc);
 						Main.game.setContent(new Response("", "", CityHall.CITY_HALL_APPROACH_LODGER));
 					}, false);
-					
+
 					MainController.addEventListener(MainController.document, id, "mousemove", MainController.moveTooltipListener, false);
 					MainController.addEventListener(MainController.document, id, "mouseleave", MainController.hideTooltipListener, false);
 
@@ -7342,7 +7344,7 @@ public class MainControllerInitMethod {
 				}
 			}
 		}
-		
+
 		// Save/load enchantment:
 		if (Main.game.getCurrentDialogueNode() == EnchantmentDialogue.ENCHANTMENT_SAVE_LOAD) {
 			for (File f : EnchantmentDialogue.getSavedEnchants()) {
@@ -7457,8 +7459,331 @@ public class MainControllerInitMethod {
 				}
 			}
 		}
-		
-		
+
+
+	if (Main.game.getCurrentDialogueNode() == ModOptions.MOD_CONTENT_PREFERENCE) {
+			Map<String, PropertyValue> settingsMap = Util.newHashMapOfValues(
+					new Value<>("PEE", PropertyValue.peeContent),
+					new Value<>("EXTREME_AGE", PropertyValue.extremeAgeContent),
+					new Value<>("SHOW_AGE", PropertyValue.showAge),
+					new Value<>("SHOW_TRUE_AGE", PropertyValue.showTrueAge),
+					new Value<>("SHOW_HEIGHT_APP_REAL", PropertyValue.scaleHeightBasedOnAgeAppearance),
+					new Value<>("SHOW_HEIGHT_GENDERED", PropertyValue.scaleHeightBasedOnGenderOrAppearance),
+					new Value<>("HEAVY_CPU_HEIGHT_CALC", PropertyValue.extremeCaseCalculations),
+					new Value<>("HUG", PropertyValue.enableHug),
+					new Value<>("ALWAYSMODDED", PropertyValue.importedFlagAsModded)
+			);
+
+			for(Entry<String, PropertyValue> entry : settingsMap.entrySet()) {
+				createToggleListener(entry.getKey()+"_ON", entry.getValue(), true);
+				createToggleListener(entry.getKey()+"_OFF", entry.getValue(), false);
+			}
+
+			id = "XP_MULT_ON";
+			if (((EventTarget) MainController.document.getElementById(id)) != null) {
+				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e -> {
+					Main.getProperties().xpMultiplier = Math.min(1000, Main.getProperties().xpMultiplier+25);
+					Main.saveProperties();
+					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
+				}, false);
+			}
+			id = "XP_MULT_OFF";
+			if (((EventTarget) MainController.document.getElementById(id)) != null) {
+				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e -> {
+					Main.getProperties().xpMultiplier = Math.max(50, Main.getProperties().xpMultiplier-25);
+					Main.saveProperties();
+					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
+				}, false);
+			}
+			id = "MONEY_MULT_ON";
+			if (((EventTarget) MainController.document.getElementById(id)) != null) {
+				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e -> {
+					Main.getProperties().moneyMultiplier = Math.min(1000, Main.getProperties().moneyMultiplier+25);
+					Main.saveProperties();
+					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
+				}, false);
+			}
+			id = "MONEY_MULT_OFF";
+			if (((EventTarget) MainController.document.getElementById(id)) != null) {
+				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e -> {
+					Main.getProperties().moneyMultiplier = Math.max(50, Main.getProperties().moneyMultiplier-25);
+					Main.saveProperties();
+					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
+				}, false);
+			}
+			id = "ESS_MULT_ON";
+			if (((EventTarget) MainController.document.getElementById(id)) != null) {
+				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e -> {
+					Main.getProperties().essenceMultiplier = Math.min(10000, Main.getProperties().essenceMultiplier+50);
+					Main.saveProperties();
+					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
+				}, false);
+			}
+			id = "ESS_MULT_OFF";
+			if (((EventTarget) MainController.document.getElementById(id)) != null) {
+				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e -> {
+					Main.getProperties().essenceMultiplier = Math.max(100, Main.getProperties().essenceMultiplier-50);
+					Main.saveProperties();
+					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
+				}, false);
+			}
+			id = "DROPS_MULT_ON";
+			if (((EventTarget) MainController.document.getElementById(id)) != null) {
+				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e -> {
+					Main.getProperties().itemDropsIncrease = Math.min(100, Main.getProperties().itemDropsIncrease+1);
+					Main.saveProperties();
+					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
+				}, false);
+			}
+			id = "DROPS_MULT_OFF";
+			if (((EventTarget) MainController.document.getElementById(id)) != null) {
+				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e -> {
+					Main.getProperties().itemDropsIncrease = Math.max(0, Main.getProperties().itemDropsIncrease-1);
+					Main.saveProperties();
+					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
+				}, false);
+			}
+			id = "MAX_LEVEL_ON";
+			if (((EventTarget) MainController.document.getElementById(id)) != null) {
+				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e -> {
+					Main.getProperties().maxLevel = Math.min(100, Main.getProperties().maxLevel+5);
+					Main.saveProperties();
+					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
+				}, false);
+			}
+			id = "MAX_LEVEL_OFF";
+			if (((EventTarget) MainController.document.getElementById(id)) != null) {
+				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e -> {
+					Main.getProperties().maxLevel = Math.max(25, Main.getProperties().maxLevel-5);
+					Main.saveProperties();
+					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
+				}, false);
+			}
+			id = "OFFSPRING_AGE_ON";
+			if (((EventTarget) MainController.document.getElementById(id)) != null) {
+				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e -> {
+					Main.getProperties().offspringAge = Math.min(20, Main.getProperties().offspringAge+1);
+					Main.saveProperties();
+					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
+				}, false);
+			}
+			id = "OFFSPRING_AGE_OFF";
+			if (((EventTarget) MainController.document.getElementById(id)) != null) {
+				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e -> {
+					Main.getProperties().offspringAge = Math.max(5, Main.getProperties().offspringAge-1);
+					Main.saveProperties();
+					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
+				}, false);
+			}
+			id = "OFFSPRING_AGE_DEVIATION_ON";
+			if (((EventTarget) MainController.document.getElementById(id)) != null) {
+				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e -> {
+					Main.getProperties().offspringAgeDeviation = Math.min(100, Main.getProperties().offspringAgeDeviation+10);
+					Main.saveProperties();
+					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
+				}, false);
+			}
+			id = "OFFSPRING_AGE_DEVIATION_OFF";
+			if (((EventTarget) MainController.document.getElementById(id)) != null) {
+				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e -> {
+					Main.getProperties().offspringAgeDeviation = Math.max(0, Main.getProperties().offspringAgeDeviation-10);
+					Main.saveProperties();
+					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
+				}, false);
+			}
+			id = "AGE_CONVERT_ON";
+			if (((EventTarget) MainController.document.getElementById(id)) != null) {
+				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e -> {
+					Main.getProperties().ageConversionPercent = Math.min(100, Main.getProperties().ageConversionPercent+5);
+					Main.saveProperties();
+					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
+				}, false);
+			}
+			id = "AGE_CONVERT_OFF";
+			if (((EventTarget) MainController.document.getElementById(id)) != null) {
+				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e -> {
+					Main.getProperties().ageConversionPercent = Math.max(0, Main.getProperties().ageConversionPercent - 5);
+					Main.saveProperties();
+					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
+				}, false);
+			}
+			id = "HUNG_SHOTA_ON";
+			if (((EventTarget) MainController.document.getElementById(id)) != null) {
+				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e -> {
+					Main.getProperties().hungShotasPercent = Math.min(100, Main.getProperties().hungShotasPercent+5);
+					Main.saveProperties();
+					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
+				}, false);
+			}
+			id = "HUNG_SHOTA_OFF";
+			if (((EventTarget) MainController.document.getElementById(id)) != null) {
+				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e -> {
+					Main.getProperties().hungShotasPercent = Math.max(0, Main.getProperties().hungShotasPercent - 5);
+					Main.saveProperties();
+					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
+				}, false);
+			}
+			id = "PREG_LOLI_ON";
+			if (((EventTarget) MainController.document.getElementById(id)) != null) {
+				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e -> {
+					Main.getProperties().pregLolisPercent = Math.min(100, Main.getProperties().pregLolisPercent+5);
+					Main.saveProperties();
+					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
+				}, false);
+			}
+			id = "PREG_LOLI_OFF";
+			if (((EventTarget) MainController.document.getElementById(id)) != null) {
+				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e -> {
+					Main.getProperties().pregLolisPercent = Math.max(0, Main.getProperties().pregLolisPercent - 5);
+					Main.saveProperties();
+					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
+				}, false);
+			}
+			id = "OPPAI_LOLI_ON";
+			if (((EventTarget) MainController.document.getElementById(id)) != null) {
+				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e -> {
+					Main.getProperties().oppaiLolisPercent = Math.min(100, Main.getProperties().oppaiLolisPercent+5);
+					Main.saveProperties();
+					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
+				}, false);
+			}
+			id = "OPPAI_LOLI_OFF";
+			if (((EventTarget) MainController.document.getElementById(id)) != null) {
+				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e -> {
+					Main.getProperties().oppaiLolisPercent = Math.max(0, Main.getProperties().oppaiLolisPercent - 5);
+					Main.saveProperties();
+					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
+				}, false);
+			}
+			id = "VIRGIN_LOVER_ON";
+			if (((EventTarget) MainController.document.getElementById(id)) != null) {
+				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e -> {
+					Main.getProperties().virginsPercent = Math.min(100, Main.getProperties().virginsPercent+5);
+					Main.saveProperties();
+					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
+				}, false);
+			}
+			id = "VIRGIN_LOVER_OFF";
+			if (((EventTarget) MainController.document.getElementById(id)) != null) {
+				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e -> {
+					Main.getProperties().virginsPercent = Math.max(0, Main.getProperties().virginsPercent - 5);
+					Main.saveProperties();
+					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
+				}, false);
+			}
+			id = "HEIGHT_DEVIATION_ON";
+			if (((EventTarget) MainController.document.getElementById(id)) != null) {
+				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e -> {
+					Main.getProperties().heightDeviations = Math.min(50, Main.getProperties().heightDeviations+1);
+					Main.saveProperties();
+					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
+				}, false);
+			}
+			id = "HEIGHT_DEVIATION_OFF";
+			if (((EventTarget) MainController.document.getElementById(id)) != null) {
+				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e -> {
+					Main.getProperties().heightDeviations = Math.max(-50, Main.getProperties().heightDeviations - 1);
+					Main.saveProperties();
+					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
+				}, false);
+			}
+			id = "HEIGHT_AGE_CAP_ON";
+			if (((EventTarget) MainController.document.getElementById(id)) != null) {
+				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e -> {
+					Main.getProperties().heightAgeCap = Math.min(50, Main.getProperties().heightAgeCap + 1);
+					Main.saveProperties();
+					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
+				}, false);
+			}
+			id = "HEIGHT_AGE_CAP_OFF";
+			if (((EventTarget) MainController.document.getElementById(id)) != null) {
+				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e -> {
+					Main.getProperties().heightAgeCap = Math.max(12, Main.getProperties().heightAgeCap - 1);
+					Main.saveProperties();
+					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
+				}, false);
+			}
+			id = "IMP_HMULT_ON";
+			if (((EventTarget) MainController.document.getElementById(id)) != null) {
+				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e -> {
+					Main.getProperties().impHMult = Math.min(100, Main.getProperties().impHMult + 3);
+					Main.saveProperties();
+					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
+				}, false);
+			}
+			id = "IMP_HMULT_OFF";
+			if (((EventTarget) MainController.document.getElementById(id)) != null) {
+				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e -> {
+					Main.getProperties().impHMult = Math.max(10, Main.getProperties().impHMult - 3);
+					Main.saveProperties();
+					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
+				}, false);
+			}
+			id = "A_IMP_HMULT_ON";
+			if (((EventTarget) MainController.document.getElementById(id)) != null) {
+				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e -> {
+					Main.getProperties().aimpHMult = Math.min(100, Main.getProperties().aimpHMult + 3);
+					Main.saveProperties();
+					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
+				}, false);
+			}
+			id = "A_IMP_HMULT_OFF";
+			if (((EventTarget) MainController.document.getElementById(id)) != null) {
+				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e -> {
+					Main.getProperties().aimpHMult = Math.max(10, Main.getProperties().aimpHMult - 3);
+					Main.saveProperties();
+					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
+				}, false);
+			}
+			id = "MINIMUM_AGE_ON";
+			if (((EventTarget) MainController.document.getElementById(id)) != null) {
+				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e -> {
+					Main.getProperties().minAge = Math.min(500, Main.getProperties().minAge + 1);
+					Main.saveProperties();
+					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
+				}, false);
+			}
+			id = "MINIMUM_AGE_OFF";
+			if (((EventTarget) MainController.document.getElementById(id)) != null) {
+				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e -> {
+					Main.getProperties().minAge = Math.max(5, Main.getProperties().minAge - 1);
+					Main.saveProperties();
+					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
+				}, false);
+			}
+			id = "PLAYER_PREG_DUR_ON";
+			if (((EventTarget) MainController.document.getElementById(id)) != null) {
+				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e -> {
+					Main.getProperties().playerPregDuration = Math.min(100000, Main.getProperties().playerPregDuration + 25);
+					Main.saveProperties();
+					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
+				}, false);
+			}
+			id = "PLAYER_PREG_DUR_OFF";
+			if (((EventTarget) MainController.document.getElementById(id)) != null) {
+				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e -> {
+					Main.getProperties().playerPregDuration = Math.max(5, Main.getProperties().playerPregDuration - 15);
+					Main.saveProperties();
+					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
+				}, false);
+			}
+			id = "NPC_PREG_DUR_ON";
+			if (((EventTarget) MainController.document.getElementById(id)) != null) {
+				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e -> {
+					Main.getProperties().NPCPregDuration = Math.min(100000, Main.getProperties().NPCPregDuration + 25);
+					Main.saveProperties();
+					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
+				}, false);
+			}
+			id = "NPC_PREG_DUR_OFF";
+			if (((EventTarget) MainController.document.getElementById(id)) != null) {
+				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e -> {
+					Main.getProperties().NPCPregDuration = Math.max(5, Main.getProperties().NPCPregDuration - 15);
+					Main.saveProperties();
+					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
+				}, false);
+			}
+		}
 		// Dice poker:
 		
 		if(Main.game.isStarted() && DicePoker.progress>0) {

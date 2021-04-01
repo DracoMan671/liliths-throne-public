@@ -13,6 +13,7 @@ import javax.xml.transform.TransformerException;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
 
+import com.lilithsthrone.game.character.npc.NPC;
 import org.w3c.dom.Attr;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
@@ -324,9 +325,27 @@ public class Properties {
 
 			createXMLElementWithValue(doc, settings, "difficultyLevel", difficultyLevel.toString());
 			createXMLElementWithValue(doc, settings, "AIblunderRate", String.valueOf(AIblunderRate));
-			
-			
-			
+
+			createXMLElementWithValue(doc, settings, "randomRacePercentage", String.valueOf(randomRacePercentage));
+			createXMLElementWithValue(doc, settings, "xpMultiplierPercentage", String.valueOf(xpMultiplier));
+			createXMLElementWithValue(doc, settings, "essenceMultiplierPercentage", String.valueOf(essenceMultiplier));
+			createXMLElementWithValue(doc, settings, "moneyMultiplierPercentage", String.valueOf(moneyMultiplier));
+			createXMLElementWithValue(doc, settings, "itemDropsIncrease", String.valueOf(itemDropsIncrease));
+			createXMLElementWithValue(doc, settings, "maxLevel", String.valueOf(maxLevel));
+			createXMLElementWithValue(doc, settings, "offspringAge", String.valueOf(offspringAge));
+			createXMLElementWithValue(doc, settings, "ageConversionPercent", String.valueOf(ageConversionPercent));
+			createXMLElementWithValue(doc, settings, "oppaiLolisPercent", String.valueOf(oppaiLolisPercent));
+			createXMLElementWithValue(doc, settings, "hungShotasPercent", String.valueOf(hungShotasPercent));
+			createXMLElementWithValue(doc, settings, "pregLolisPercent", String.valueOf(pregLolisPercent));
+			createXMLElementWithValue(doc, settings, "virginsPercent", String.valueOf(virginsPercent));
+			createXMLElementWithValue(doc, settings, "heightDeviations", String.valueOf(heightDeviations));
+			createXMLElementWithValue(doc, settings, "heightAgeCap", String.valueOf(heightAgeCap));
+			createXMLElementWithValue(doc, settings, "impHMult", String.valueOf(impHMult));
+			createXMLElementWithValue(doc, settings, "aimpHMult", String.valueOf(aimpHMult));
+			createXMLElementWithValue(doc, settings, "minage", String.valueOf(minAge));
+			createXMLElementWithValue(doc, settings, "playerPregDur", String.valueOf(playerPregDuration));
+			createXMLElementWithValue(doc, settings, "npcPregDur", String.valueOf(NPCPregDuration));
+
 			// Game key binds:
 			Element keyBinds = doc.createElement("keyBinds");
 			properties.appendChild(keyBinds);
@@ -853,7 +872,62 @@ public class Properties {
 					trapPenisSizePreference = Integer.valueOf(((Element)element.getElementsByTagName("trapPenisSizePreference").item(0)).getAttribute("value"));
 				}catch(Exception ex) {
 				}
-				
+
+				if(element.getElementsByTagName("xpMultiplierPercentage").item(0)!=null) {
+					xpMultiplier = Integer.parseInt(((Element)element.getElementsByTagName("xpMultiplierPercentage").item(0)).getAttribute("value"));
+				}
+				if(element.getElementsByTagName("essenceMultiplierPercentage").item(0)!=null) {
+					essenceMultiplier = Integer.parseInt(((Element)element.getElementsByTagName("essenceMultiplierPercentage").item(0)).getAttribute("value"));
+				}
+				if(element.getElementsByTagName("moneyMultiplierPercentage").item(0)!=null) {
+					moneyMultiplier = Integer.parseInt(((Element)element.getElementsByTagName("moneyMultiplierPercentage").item(0)).getAttribute("value"));
+				}
+				if(element.getElementsByTagName("itemDropsIncrease").item(0)!=null) {
+					itemDropsIncrease = Integer.parseInt(((Element)element.getElementsByTagName("itemDropsIncrease").item(0)).getAttribute("value"));
+				}
+				if(element.getElementsByTagName("maxLevel").item(0)!=null) {
+					maxLevel = Integer.parseInt(((Element)element.getElementsByTagName("maxLevel").item(0)).getAttribute("value"));
+				}
+				if(element.getElementsByTagName("offspringAge").item(0)!=null) {
+					offspringAge = Integer.parseInt(((Element)element.getElementsByTagName("offspringAge").item(0)).getAttribute("value"));
+				}
+				if(element.getElementsByTagName("ageConversionPercent").item(0)!=null) {
+					ageConversionPercent = Integer.parseInt(((Element)element.getElementsByTagName("ageConversionPercent").item(0)).getAttribute("value"));
+				}
+				if(element.getElementsByTagName("hungShotasPercent").item(0)!=null) {
+					hungShotasPercent = Integer.parseInt(((Element)element.getElementsByTagName("hungShotasPercent").item(0)).getAttribute("value"));
+				}
+				if(element.getElementsByTagName("oppaiLolisPercent").item(0)!=null) {
+					oppaiLolisPercent = Integer.parseInt(((Element)element.getElementsByTagName("oppaiLolisPercent").item(0)).getAttribute("value"));
+				}
+				if(element.getElementsByTagName("pregLolisPercent").item(0)!=null) {
+					pregLolisPercent = Integer.parseInt(((Element)element.getElementsByTagName("pregLolisPercent").item(0)).getAttribute("value"));
+				}
+				if(element.getElementsByTagName("virginsPercent").item(0)!=null) {
+					virginsPercent = Integer.parseInt(((Element)element.getElementsByTagName("virginsPercent").item(0)).getAttribute("value"));
+				}
+				if(element.getElementsByTagName("heightDeviations").item(0)!=null) {
+					heightDeviations = Integer.parseInt(((Element)element.getElementsByTagName("heightDeviations").item(0)).getAttribute("value"));
+				}
+				if(element.getElementsByTagName("heightAgeCap").item(0)!=null) {
+					heightAgeCap = Integer.parseInt(((Element)element.getElementsByTagName("heightAgeCap").item(0)).getAttribute("value"));
+				}
+				if(element.getElementsByTagName("impHMult").item(0)!=null) {
+					impHMult = Integer.parseInt(((Element)element.getElementsByTagName("impHMult").item(0)).getAttribute("value"));
+				}
+				if(element.getElementsByTagName("aimpHMult").item(0)!=null) {
+					aimpHMult = Integer.parseInt(((Element)element.getElementsByTagName("aimpHMult").item(0)).getAttribute("value"));
+				}
+				if(element.getElementsByTagName("minage").item(0)!=null) {
+					minAge = Integer.parseInt(((Element)element.getElementsByTagName("minage").item(0)).getAttribute("value"));
+				}
+				if(element.getElementsByTagName("playerPregDur").item(0)!=null) {
+					playerPregDuration = Integer.parseInt(((Element)element.getElementsByTagName("playerPregDur").item(0)).getAttribute("value"));
+				}
+				if(element.getElementsByTagName("npcPregDur").item(0)!=null) {
+					NPCPregDuration = Integer.parseInt(((Element)element.getElementsByTagName("npcPregDur").item(0)).getAttribute("value"));
+				}
+
 				// Keys:
 				nodes = doc.getElementsByTagName("keyBinds");
 				element = (Element) nodes.item(0);
@@ -1498,4 +1572,25 @@ public class Properties {
 	public void setUddersLevel(int udders) {
 		this.udders = udders;
 	}
+
+
+	public int xpMultiplier = 100;
+	public int essenceMultiplier = 100;
+	public int moneyMultiplier = 100;
+	public int itemDropsIncrease;
+	public int maxLevel = 50;
+	public int offspringAge = 5;
+	public int offspringAgeDeviation = 20;
+	public int ageConversionPercent = 60;
+	public int pregLolisPercent;
+	public int hungShotasPercent = 10;
+	public int oppaiLolisPercent;
+	public int virginsPercent;
+	public int heightDeviations;
+	public int heightAgeCap = 15;
+	public int impHMult = 65;
+	public int aimpHMult = 85;
+	public int minAge = 5;
+	public int playerPregDuration = 100;
+	public int NPCPregDuration = 100;
 }

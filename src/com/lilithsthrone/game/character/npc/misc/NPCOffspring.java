@@ -5,6 +5,7 @@ import java.time.temporal.ChronoUnit;
 import java.util.List;
 import java.util.Set;
 
+import com.lilithsthrone.LolificationProject.ModCommon.Conversions;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 
@@ -48,7 +49,7 @@ public class NPCOffspring extends NPC {
 	
 	public NPCOffspring(boolean isImported) {
 		super(isImported, null, null, "",
-				18, Month.JUNE, 15,
+				Conversions.getOffspringAge(), Month.JUNE, 15,
 				3, Gender.F_V_B_FEMALE, Subspecies.DOG_MORPH, RaceStage.GREATER, new CharacterInventory(10), WorldType.EMPTY, PlaceType.GENERIC_HOLDING_CELL, true);
 	}
 	
@@ -59,7 +60,7 @@ public class NPCOffspring extends NPC {
 	
 	public NPCOffspring(GameCharacter mother, GameCharacter father, AbstractSubspecies fatherSubspecies, AbstractSubspecies fatherHalfDemonSubspecies) {
 		super(false, null, null, "",
-				0, Main.game.getDateNow().getMonth(), Main.game.getDateNow().getDayOfMonth(),
+				Conversions.getOffspringAge(), Main.game.getDateNow().getMonth(), Main.game.getDateNow().getDayOfMonth(),
 				3,
 				null, null, null,
 				new CharacterInventory(10), WorldType.EMPTY, PlaceType.GENERIC_HOLDING_CELL, true);

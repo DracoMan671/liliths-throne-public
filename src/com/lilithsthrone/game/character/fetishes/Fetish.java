@@ -1748,6 +1748,206 @@ public enum Fetish {
 			return CorruptionLevel.TWO_HORNY;
 		}
 	};
+
+	FETISH_PEE_RECEIVING(60,
+								 "pee lover",
+								 "being pissed on/in",
+								 "fetish_pee_receiving",
+						 FetishExperience.BASE_EXPERIENCE_GAIN,
+						 PresetColour.GENERIC_EXCELLENT,
+			null,
+						 Util.newArrayListOfValues(
+								 "<span style='color:"+ PresetColour.GENERIC_GOOD.toWebHexString()+ ";'>Unlocks</span> <span style='color:"+ PresetColour.GENERIC_SEX.toWebHexString()+ ";'>being pissed on</span>",
+			"<span style='color:"+ PresetColour.GENERIC_BAD.toWebHexString()+ ";'>Weak to</span> <span style='color:"+ PresetColour.GENERIC_SEX.toWebHexString()+ ";'>being pissed on</span>"),
+			null) {
+
+		@Override
+		public String getDescription(GameCharacter owner) {
+			if(owner==null) {
+				return "This fetish relates to a person's desire for receiving a shower of golden fluids from another.";
+			} else if (owner.isPlayer()) {
+				return "You have an obsession with being pissed on. You love nothing more than to be covered by someone elses urine.";
+			} else {
+				return UtilText.parse(owner, "[npc.Name] has a fetish for being pissed on.");
+			}
+		}
+
+		@Override
+		public String getFetishDesireDescription(GameCharacter target, FetishDesire desire) {
+			return getGenericFetishDesireDescription(target, desire, "being pissed on");
+		}
+
+		@Override
+		public CorruptionLevel getAssociatedCorruptionLevel() {
+			return CorruptionLevel.THREE_DIRTY;
+		}
+	},
+
+	FETISH_PEE_GIVING(60,
+							  "pee provider",
+							  "pissing on others",
+							  "fetish_pee_giving",
+					  FetishExperience.BASE_EXPERIENCE_GAIN,
+					  PresetColour.GENERIC_EXCELLENT,
+			null,
+					  Util.newArrayListOfValues(
+							  "<span style='color:"+ PresetColour.GENERIC_GOOD.toWebHexString()+ ";'>Unlocks</span> <span style='color:"+ PresetColour.GENERIC_SEX.toWebHexString()+ ";'>peeing on others</span>",
+			"<span style='color:"+ PresetColour.GENERIC_BAD.toWebHexString()+ ";'>Weak to</span> <span style='color:"+ PresetColour.GENERIC_SEX.toWebHexString()+ ";'>bladder relief</span>"),
+			null) {
+
+		@Override
+		public String getDescription(GameCharacter owner) {
+			if(owner==null) {
+				return "This fetish relates to a person's desire for showering another in a stream of golden fluids.";
+			} else if (owner.isPlayer()) {
+				return "You have an obsession with pissing on others. You love nothing more than to cover someone else in urine.";
+			} else {
+				return UtilText.parse(owner, "[npc.Name] has a fetish for pissing on others.");
+			}
+		}
+
+		@Override
+		public String getFetishDesireDescription(GameCharacter target, FetishDesire desire) {
+			return getGenericFetishDesireDescription(target, desire, "peeing on others");
+		}
+
+		@Override
+		public CorruptionLevel getAssociatedCorruptionLevel() {
+			return CorruptionLevel.THREE_DIRTY;
+		}
+	},
+
+	FETISH_AGE_YOUNGER(60,
+							   "prefers younger",
+							   "younger partners",
+							   "fetish_age_younger",
+					   FetishExperience.BASE_RARE_EXPERIENCE_GAIN,
+					   PresetColour.GENERIC_ARCANE,
+			null,
+					   Util.newArrayListOfValues(
+							   "<span style='color:" + PresetColour.GENERIC_GOOD.toWebHexString()+ ";'>Increases</span> <span style='color:"+ PresetColour.GENERIC_SEX.toWebHexString()+ ";'>lust damage to people 10+ years younger</span>",
+			"<span style='color:" + PresetColour.GENERIC_BAD.toWebHexString() + ";'>Increases</span> <span style='color:" + PresetColour.GENERIC_SEX.toWebHexString() + ";'>lust damage from people 10+ years younger</span>"),
+			null) {
+
+		@Override
+		public String getDescription(GameCharacter owner) {
+			if(owner==null) {
+				return "This fetish relates to a person's desire for younger partners.";
+			} else if (owner.isPlayer()) {
+				return "You love flirting and having sex with those much younger than you.";
+			} else {
+				return UtilText.parse(owner, "[npc.Name] has a fetish for significantly younger partners.");
+			}
+		}
+
+		@Override
+		public String getFetishDesireDescription(GameCharacter target, FetishDesire desire) {
+			return getGenericFetishDesireDescription(target, desire, "younger partners");
+		}
+
+		@Override
+		public CorruptionLevel getAssociatedCorruptionLevel() {
+			return CorruptionLevel.THREE_DIRTY;
+		}
+	},
+
+	FETISH_AGE_OLDER(60,
+							 "prefers older",
+							 "older partners",
+							 "fetish_age_older",
+					 FetishExperience.BASE_RARE_EXPERIENCE_GAIN,
+					 PresetColour.GENERIC_ARCANE,
+			null,
+					 Util.newArrayListOfValues(
+							 "<span style='color:" + PresetColour.GENERIC_GOOD.toWebHexString()+ ";'>Increases</span> <span style='color:"+ PresetColour.GENERIC_SEX.toWebHexString()+ ";'>lust damage to people 10+ years older</span>",
+			"<span style='color:" + PresetColour.GENERIC_BAD.toWebHexString() + ";'>Increases</span> <span style='color:" + PresetColour.GENERIC_SEX.toWebHexString() + ";'>lust damage from people 10+ years older</span>"),
+			null) {
+
+		@Override
+		public String getDescription(GameCharacter owner) {
+			if(owner==null) {
+				return "This fetish relates to a person's desire for older partners.";
+			} else if (owner.isPlayer()) {
+				return "You love flirting and having sex with those much older than you.";
+			} else {
+				return UtilText.parse(owner, "[npc.Name] has a fetish for significantly older partners.");
+			}
+		}
+
+		@Override
+		public String getFetishDesireDescription(GameCharacter target, FetishDesire desire) {
+			return getGenericFetishDesireDescription(target, desire, "older partners");
+		}
+
+		@Override
+		public CorruptionLevel getAssociatedCorruptionLevel() {
+			return CorruptionLevel.THREE_DIRTY;
+		}
+	},
+/*
+	FETISH_LOLI(60,
+			"prefers lolis",
+			"loli partners",
+			"fetish_loli",
+			FetishExperience.BASE_VERY_RARE_EXPERIENCE_GAIN,
+			Colour.GENERIC_ARCANE,
+			null,
+			Util.newArrayListOfValues(
+					"<span style='color:" + Colour.GENERIC_GOOD.toWebHexString()+ ";'>Increases</span> <span style='color:"+ Colour.GENERIC_SEX.toWebHexString()+ ";'>lust damage to lolis</span>",
+					"<span style='color:" + Colour.GENERIC_BAD.toWebHexString() + ";'>Increases</span> <span style='color:" + Colour.GENERIC_SEX.toWebHexString() + ";'>lust damage from lolis</span>"),
+			null) {
+
+		@Override
+		public String getDescription(GameCharacter owner) {
+			if (owner.isPlayer()) {
+				return "You love flirting and having sex with cute lolis.";
+			} else {
+				return UtilText.parse(owner, "[npc.Name] has a fetish for loli partners.");
+			}
+		}
+
+		@Override
+		public String getFetishDesireDescription(GameCharacter target, FetishDesire desire) {
+			return getGenericFetishDesireDescription(target, desire, "loli partners");
+		}
+
+		@Override
+		public CorruptionLevel getAssociatedCorruptionLevel() {
+			return CorruptionLevel.THREE_DIRTY;
+		}
+	},
+
+	FETISH_SHOTA(60,
+			"prefers shotas",
+			"shota partners",
+			"fetish_shota",
+			FetishExperience.BASE_VERY_RARE_EXPERIENCE_GAIN,
+			Colour.GENERIC_ARCANE,
+			null,
+			Util.newArrayListOfValues(
+					"<span style='color:" + Colour.GENERIC_GOOD.toWebHexString()+ ";'>Increases</span> <span style='color:"+ Colour.GENERIC_SEX.toWebHexString()+ ";'>lust damage to shotas</span>",
+					"<span style='color:" + Colour.GENERIC_BAD.toWebHexString() + ";'>Increases</span> <span style='color:" + Colour.GENERIC_SEX.toWebHexString() + ";'>lust damage from shotas</span>"),
+			null) {
+
+		@Override
+		public String getDescription(GameCharacter owner) {
+			if (owner.isPlayer()) {
+				return "You love flirting and having sex with handsome shotas.";
+			} else {
+				return UtilText.parse(owner, "[npc.Name] has a fetish for shota partners.");
+			}
+		}
+
+		@Override
+		public String getFetishDesireDescription(GameCharacter target, FetishDesire desire) {
+			return getGenericFetishDesireDescription(target, desire, "shota partners");
+		}
+
+		@Override
+		public CorruptionLevel getAssociatedCorruptionLevel() {
+			return CorruptionLevel.THREE_DIRTY;
+		}
+	}*/;
 	
 	private int renderingPriority;
 	protected String name;

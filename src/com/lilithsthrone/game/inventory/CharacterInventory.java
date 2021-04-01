@@ -68,8 +68,9 @@ public class CharacterInventory implements XMLSaving {
 
 	protected int essenceCount;
 	protected int money;
-	
+
 	private Set<InventorySlot> dirtySlots;
+	private Set<InventorySlot> wetSlots;
 	
 	// Clothing that's currently blocking this inventory from unequipping/displacing something:
 	private AbstractClothing blockingClothing;
@@ -100,6 +101,7 @@ public class CharacterInventory implements XMLSaving {
 		
 		
 		dirtySlots = new HashSet<>();
+		wetSlots = new HashSet<>();
 		
 		essenceCount = 0;
 		
@@ -2352,8 +2354,33 @@ public class CharacterInventory implements XMLSaving {
 		return dirtySlots.remove(slot);
 	}
 
+public Set<InventorySlot> getWetSlots() {
+		if (wetSlots == null) return null;
+		return wetSlots;
+	}
+
+	public boolean isWetSlot(InventorySlot slot) {
+		if (wetSlots == null) return false;
+		return wetSlots.contains(slot);
+	}
+
+	public boolean addWetSlot(InventorySlot slot) {
+		if (wetSlots == null) return false;
+		return wetSlots.add(slot);
+	}
+
+	public boolean removeWetSlot(InventorySlot slot) {
+		if (wetSlots == null) return false;
+		return wetSlots.remove(slot);
+	}
+
 	public void cleanAllDirtySlots() {
+		// fix null pointer (anon)
+		if (dirtySlots == null || wetSlots == null)
+			return;
+
 		dirtySlots.clear();
+		wetSlots.clear();
 	}
 	
 }

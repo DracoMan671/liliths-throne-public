@@ -1,0 +1,8 @@
+#gender_elder_sibling changes to Onii-san or Onee-chan based on player gender
+#age(</>/= #) only does so for # Age match    < = age less than  > = age greater than    = = age equals
+#Do not put = anywhere other than age() and swap=with
+#Line to Swap=Swap with this line
+#Does not require age()., without age(). it swaps everytime it sees the line regardless of age
+###   Caution It can swap button names too, doing so breaks the window and buttons, make sure it is multiple words as to not cause that
+age(<14).Fuck me=Play with me [gender_elder_sibling]sama
+age(<14).fuck me=play with me [gender_elder_sibling]sama

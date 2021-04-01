@@ -78,7 +78,7 @@ public enum Height {
 	 * If height is less than this value, then that height is short stature.
 	 */
 	public static int getShortStatureCutOff() {
-		return ZERO_TINY.getMinimumValue();
+		return NEGATIVE_THREE_MINIMUM.getMinimumValue();
 	}
 	
 	public boolean isShortStature() {

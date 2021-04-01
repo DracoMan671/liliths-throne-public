@@ -14,7 +14,12 @@ import com.lilithsthrone.utils.colours.PresetColour;
  * @author Innoxia
  */
 public enum FluidFlavour {
-	
+
+	NECTAR("nectar", PresetColour.BASE_YELLOW,
+			Util.newArrayListOfValues(
+					"sweet",
+					"nectar-flavoured")),
+
 	CUM("cum", PresetColour.CUM,
 			Util.newArrayListOfValues(
 					"salty")),

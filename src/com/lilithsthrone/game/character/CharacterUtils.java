@@ -343,9 +343,36 @@ public class CharacterUtils {
 				}
 			}
 			
+			// Offspring shouldn't take into account these preferences, as otherwise it messes up players' perception of genetics.
+//			switch(startingGender.isFeminine()
+//					?Main.getProperties().getSubspeciesFeminineFurryPreferencesMap().get(raceTakesAfter)
+//					:Main.getProperties().getSubspeciesMasculineFurryPreferencesMap().get(raceTakesAfter)) {
+//				case HUMAN:
+//					stage = RaceStage.HUMAN;
+//					break;
+//				case MINIMUM:
+//					if(stage!=RaceStage.HUMAN
+//						|| stage!=RaceStage.PARTIAL) {
+//						stage = RaceStage.PARTIAL;
+//					}
+//					break;
+//				case REDUCED:
+//					if(stage!=RaceStage.HUMAN
+//						|| stage!=RaceStage.PARTIAL
+//						|| stage!=RaceStage.LESSER) {
+//						stage = RaceStage.LESSER;
+//					}
+//					break;
+//				case NORMAL:
+//					break;
+//				case MAXIMUM:
+//					stage = RaceStage.GREATER;
+//					break;
+//			}
+			
 			body = generateBody(linkedCharacter, startingGender, startingBodyType, stage);
 		}
-		
+
 		linkedCharacter.setGenderIdentity(startingGender);
 		body.setBodyMaterial(mother.getBodyMaterial());
 		
@@ -439,7 +466,7 @@ public class CharacterUtils {
 		
 		// Body core:
 		// Height:
-		if(body.getHeightValue()>=Height.ZERO_TINY.getMinimumValue()) {
+		if(body.getHeightValue()>=Height.NEGATIVE_THREE_MINIMUM.getMinimumValue()) {
 //			System.out.println("height adjusted");
 			body.setHeight(getSizeFromGenetics( //TODO check this
 					body.getHeightValue(),
@@ -1887,7 +1914,7 @@ public class CharacterUtils {
 			character.setHeight(Math.min(Height.NEGATIVE_ONE_TINY.getMaximumValue()-1, Math.max(Height.NEGATIVE_ONE_TINY.getMinimumValue(), height)));
 			
 		} else {
-			character.setHeight(Math.max(Height.ZERO_TINY.getMinimumValue(), height));
+			character.setHeight(Math.max(Height.NEGATIVE_THREE_MINIMUM.getMinimumValue(), height));
 		}
 		
 		//Breasts:

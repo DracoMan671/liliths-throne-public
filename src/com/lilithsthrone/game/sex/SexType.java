@@ -14,6 +14,8 @@ import com.lilithsthrone.game.dialogue.utils.UtilText;
 import com.lilithsthrone.main.Main;
 import com.lilithsthrone.utils.XMLSaving;
 
+import static com.lilithsthrone.game.character.fetishes.Fetish.FETISH_PEE_RECEIVING;
+
 /**
  * @since 0.1.53
  * @version 0.3.1
@@ -495,6 +497,12 @@ public class SexType implements XMLSaving {
 					oppositeFetishes.add(Fetish.FETISH_FOOT_GIVING);
 					break;
 				case FETISH_SIZE_QUEEN:
+					break;
+				case FETISH_PEE_RECEIVING:
+					oppositeFetishes.add(Fetish.FETISH_PEE_GIVING);
+					break;
+				case FETISH_PEE_GIVING:
+					oppositeFetishes.add(Fetish.FETISH_PEE_RECEIVING);
 					break;
 			}
 		}

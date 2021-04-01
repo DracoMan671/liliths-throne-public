@@ -115,7 +115,7 @@ public abstract class NPC extends GameCharacter implements XMLSaving {
 	protected float sellModifier;
 	
 	protected boolean addedToContacts;
-	
+	public boolean haveWeModded;
 	public Set<NPCFlagValue> NPCFlagValues;
 	
 	protected Set<SexSlot> sexPositionPreferences;
@@ -318,7 +318,7 @@ public abstract class NPC extends GameCharacter implements XMLSaving {
 			XMLUtil.createXMLElementWithValue(doc, npcSpecific, "subspeciesPreference", Subspecies.getIdFromSubspecies(subspeciesPreference));
 			XMLUtil.createXMLElementWithValue(doc, npcSpecific, "raceStagePreference", String.valueOf(raceStagePreference));
 		}
-		
+		XMLUtil.createXMLElementWithValue(doc, npcSpecific, "ZedModded", String.valueOf(haveWeModded));
 		return properties;
 	}
 	
@@ -364,6 +364,12 @@ public abstract class NPC extends GameCharacter implements XMLSaving {
 				npc.subspeciesPreference = Subspecies.getSubspeciesFromId(((Element)npcSpecificElement.getElementsByTagName("subspeciesPreference").item(0)).getAttribute("value"));
 				npc.raceStagePreference = RaceStage.valueOf(((Element)npcSpecificElement.getElementsByTagName("raceStagePreference").item(0)).getAttribute("value"));
 			} catch(Exception ex) {
+			}
+
+			try {
+				npc.haveWeModded = Boolean.parseBoolean(((Element) npcSpecificElement.getElementsByTagName("ZedModded").item(0)).getAttribute("value"));
+			} catch (Exception ignored) {
+				npc.haveWeModded = Main.game.alwaysFlagModded();
 			}
 		}
 	}
@@ -927,32 +933,36 @@ public abstract class NPC extends GameCharacter implements XMLSaving {
 	
 	public List<AbstractCoreItem> getLootItems() {
 		double rnd = Math.random();
-		
-		if(rnd<=0.05) {
-			return Util.newArrayListOfValues(Main.game.getItemGen().generateItem(ItemType.FETISH_UNREFINED));
-			
-		} else if(rnd<=0.1) {
-			return Util.newArrayListOfValues(Main.game.getItemGen().generateItem(ItemType.ADDICTION_REMOVAL));
-			
-		} else {
-			AbstractItemType raceIngredient = getSubspecies().getAttributeItem(this);
-			AbstractItemType raceTFIngredient = getSubspecies().getTransformativeItem(this);
-			AbstractItemType book = getSubspecies().getBook();
-			
-			
-			if(rnd<0.6 && raceTFIngredient!=null) {
-				return Util.newArrayListOfValues(Main.game.getItemGen().generateItem(raceTFIngredient));
-			
-			} else if(rnd <= 0.8 && !Main.game.getPlayer().getRacesDiscoveredFromBook().contains(getSubspecies())) {
-				return Util.newArrayListOfValues(Main.game.getItemGen().generateItem(book));
-				
-			} else if(raceIngredient!=null) {
-				return Util.newArrayListOfValues(Main.game.getItemGen().generateItem(raceIngredient));
-				
+
+		List<AbstractCoreItem> loot = new ArrayList<>();
+		for (int lr = 0; lr < Main.getProperties().itemDropsIncrease; lr++) {
+			if (rnd <= 0.05) {
+				loot.add(Main.game.getItemGen().generateItem(ItemType.FETISH_UNREFINED));
+
+			} else if (rnd <= 0.1) {
+				loot.add(Main.game.getItemGen().generateItem(ItemType.ADDICTION_REMOVAL));
+
 			} else {
-				return Util.newArrayListOfValues(Main.game.getItemGen().generateItem(ItemType.DYE_BRUSH));
+				AbstractItemType raceIngredient = getSubspecies().getAttributeItem(this);
+				AbstractItemType raceTFIngredient = getSubspecies().getTransformativeItem(this);
+				AbstractItemType book = getSubspecies().getBook();
+
+
+				if (rnd < 0.6 && raceTFIngredient != null) {
+					loot.add(Main.game.getItemGen().generateItem(raceTFIngredient));
+
+				} else if (rnd <= 0.8 && !Main.game.getPlayer().getRacesDiscoveredFromBook().contains(getSubspecies())) {
+					loot.add(Main.game.getItemGen().generateItem(book));
+
+				} else if (raceIngredient != null) {
+					loot.add(Main.game.getItemGen().generateItem(raceIngredient));
+
+				} else {
+					loot.add(Main.game.getItemGen().generateItem(ItemType.DYE_BRUSH));
+				}
 			}
 		}
+		return loot;
 	}
 	
 	public int getLootEssenceDrops() {
@@ -2039,6 +2049,8 @@ public abstract class NPC extends GameCharacter implements XMLSaving {
 		pairedFetishMap.put(Fetish.FETISH_NON_CON_DOM, Fetish.FETISH_NON_CON_SUB);
 		pairedFetishMap.put(Fetish.FETISH_DENIAL, Fetish.FETISH_DENIAL_SELF);
 		pairedFetishMap.put(Fetish.FETISH_VOYEURIST, Fetish.FETISH_EXHIBITIONIST);
+		pairedFetishMap.put(Fetish.FETISH_PEE_GIVING, Fetish.FETISH_PEE_RECEIVING);
+		pairedFetishMap.put(Fetish.FETISH_AGE_YOUNGER, Fetish.FETISH_AGE_OLDER);
 		
 		// Do not include these, as NPCs will otherwise always end up forcing them on the player:
 //		if(!pairedFetishesOnly) {

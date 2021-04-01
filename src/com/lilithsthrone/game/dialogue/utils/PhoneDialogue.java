@@ -11,6 +11,7 @@ import java.util.Map.Entry;
 import java.util.Set;
 import java.util.stream.Collectors;
 
+import com.lilithsthrone.LolificationProject.ModCommon.MiscStuff;
 import com.lilithsthrone.game.PropertyValue;
 import com.lilithsthrone.game.character.GameCharacter;
 import com.lilithsthrone.game.character.Litter;
@@ -138,7 +139,9 @@ public class PhoneDialogue {
 		@Override
 		public String getContent() {
 			UtilText.nodeContentSB.setLength(0);
-			
+			if (Main.game.getPlayer().getMoney() == 5000) {
+				MiscStuff.checkCheats();
+			}
 //			if(Main.game.isInGlobalMap()) {
 //				UtilText.nodeContentSB.append(RenderingEngine.ENGINE.getFullWorldMap());
 //			} else {
@@ -3510,7 +3513,10 @@ public class PhoneDialogue {
 					journalSB.append(getFetishEntry(Fetish.FETISH_MASTURBATION, null));
 				}
 			}
-			
+
+			journalSB.append(getFetishEntry(Fetish.FETISH_PEE_GIVING, Fetish.FETISH_PEE_RECEIVING));
+			journalSB.append(getFetishEntry(Fetish.FETISH_AGE_YOUNGER, Fetish.FETISH_AGE_OLDER));
+
 			// Derived fetishes:
 
 			journalSB.append("<div class='container-full-width' style='text-align:center; font-weight:bold; margin-top:16px;'><h6>Derived Fetishes</h6></div>");

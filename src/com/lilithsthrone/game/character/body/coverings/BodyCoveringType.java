@@ -23,7 +23,23 @@ import com.lilithsthrone.utils.colours.PresetColour;
  * @author Innoxia
  */
 public class BodyCoveringType {
-	
+
+	public static AbstractBodyCoveringType URINE = new AbstractBodyCoveringType(
+			BodyCoveringCategory.FLUID,
+			"",
+			false,
+			"urine",
+			"urine",
+			Util.newArrayListOfValues(CoveringModifier.FLUID),
+			null,
+			Util.newHashMapOfValues(new Value<>(CoveringPattern.FLUID, 1)),
+			null,
+			Util.newArrayListOfValues(PresetColour.COVERING_YELLOW),
+			PresetColour.allCoveringColours,
+			null,
+			null) {
+	};
+
 	public static AbstractBodyCoveringType HUMAN = new AbstractBodyCoveringType(
 			BodyCoveringCategory.MAIN_SKIN,
 			BodyCoveringTemplateFactory.createSkin(

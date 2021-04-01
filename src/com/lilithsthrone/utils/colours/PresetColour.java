@@ -291,7 +291,7 @@ public class PresetColour {
 	public static Colour AGE_FORTIES = new Colour(false, Util.newColour(0xA4D246), Util.newColour(0x41590D), "green", Util.newArrayListOfValues("ageForties")) {};
 	public static Colour AGE_FIFTIES = new Colour(false, Util.newColour(0x8AB92D), Util.newColour(0x334408), "green", Util.newArrayListOfValues("ageFifties")) {};
 	public static Colour AGE_SIXTIES = new Colour(false, Util.newColour(0x6B9023), Util.newColour(0x232E05), "green", Util.newArrayListOfValues("ageSixties")) {};
-	
+
 	public static Colour ALCOHOL = new Colour(false, BaseColour.YELLOW_LIGHT, "light yellow", Util.newArrayListOfValues("alcohol")) {};
 	public static Colour ALCOHOL_LEVEL_ZERO = new Colour(false, Util.newColour(0xF2E8C0), Util.newColour(0x967F22), "light yellow") {};
 	public static Colour ALCOHOL_LEVEL_ONE = new Colour(false, Util.newColour(0xEDDFAB), Util.newColour(0x967F22), "light yellow") {};
@@ -1306,5 +1306,8 @@ public class PresetColour {
 							.map(Map.Entry::getValue)
 							.collect(Collectors.toList());
 	}
-	
+//	public static Colour AGE_CHILD = new Colour(false, Util.newColour(0x00ffff), Util.newColour(0xE1F0C1), "green", Util.newArrayListOfValues("ageChild")) {};
+//	public static Colour AGE_PRETEENS = new Colour(false, Util.newColour(0x66ffcc), Util.newColour(0x00cc88), "green", Util.newArrayListOfValues("agePreTeen")) {};
+//	public static Colour AGE_EARLY_TEENS = new Colour(false, Util.newColour(0x66ff99), Util.newColour(0x00cc44), "green", Util.newArrayListOfValues("ageEarlyTeens")) {};
+//	public static Colour AGE_HUNDREDS = new Colour(false, Util.newColour(0x999966), Util.newColour(0x7a7a52), "green", Util.newArrayListOfValues("ageHundreds")) {};
 }

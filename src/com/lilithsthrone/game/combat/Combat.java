@@ -7,6 +7,7 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Stack;
 
+import com.lilithsthrone.LolificationProject.combat.CombatExtras;
 import com.lilithsthrone.game.character.GameCharacter;
 import com.lilithsthrone.game.character.attributes.AbstractAttribute;
 import com.lilithsthrone.game.character.attributes.Attribute;
@@ -339,6 +340,8 @@ public class Combat {
 				money+=enemy.getLootMoney();
 				enemy.setLostCombatCount(enemy.getLostCombatCount()+1);
 			}
+			xp *= ((float) Main.getProperties().xpMultiplier / 100f);
+			money *= ((float) Main.getProperties().moneyMultiplier / 100f);
 			
 			for(NPC ally : allies) {
 				if(!(ally.isElemental())) {
@@ -384,6 +387,7 @@ public class Combat {
 			for(NPC enemy : enemies) {
 				int essencesGained = enemy.getLootEssenceDrops();
 				totalEssencesGained += essencesGained;
+				totalEssencesGained *= (Main.getProperties().essenceMultiplier * 0.01f);
 				if(essencesGained>0) {
 					if(!Main.game.getDialogueFlags().values.contains(DialogueFlagValue.essencePostCombatDiscovered)) {
 						Main.game.getDialogueFlags().values.add(DialogueFlagValue.essencePostCombatDiscovered);
@@ -1161,7 +1165,8 @@ public class Combat {
 							"Thanks to your [style.boldFetish(masochist fetish)], the arousal you feel from getting critically hit manifests as an arcane essence!<br/>"
 							+Main.game.getPlayer().incrementEssenceCount(1, false));
 		}
-		
+
+		extraAttackEffects.add(CombatExtras.applyExtraAttackEffects(attacker, target, attackType, isHit, isCritical));
 		return extraAttackEffects;
 	}
 

@@ -82,7 +82,17 @@ public enum PropertyValue {
 	newWeaponDiscovered(false),
 	newClothingDiscovered(false),
 	newItemDiscovered(false),
-	newRaceDiscovered(false);
+	newRaceDiscovered(false),
+
+	peeContent(false, true),
+	enableHug(false, false),
+	importedFlagAsModded(true, false),
+	extremeAgeContent(false, true),
+	showAge(true, false),
+	showTrueAge(true, false),
+	scaleHeightBasedOnAgeAppearance(true, false),
+	scaleHeightBasedOnGenderOrAppearance(true, false),
+	extremeCaseCalculations(false, false);
 
 	private boolean defaultValue;
 	private boolean fetishRelated;

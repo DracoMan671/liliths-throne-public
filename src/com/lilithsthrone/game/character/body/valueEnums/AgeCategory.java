@@ -15,8 +15,16 @@ import com.lilithsthrone.utils.colours.PresetColour;
 public enum AgeCategory {
 	
 	// Always at least 18, as returned by valueOf()
-	TEENS_LATE("late teens", 18, 20, PresetColour.AGE_TEENS, ContentPreferenceValue.FOUR_HIGH),
-	
+	CHILD("childhood", 4, 8, PresetColour.EYE_BLUE_LIGHT, ContentPreferenceValue.TWO_LOW),
+
+	PRETEENS("preteens", 8, 12, PresetColour.BASE_BLUE, ContentPreferenceValue.THREE_AVERAGE),
+
+	TEENS_EARLY("early teens", 12, 16, PresetColour.AGE_TEENS, ContentPreferenceValue.FIVE_ABUNDANT),
+
+	TEENS_MIDDLE("mid teens", 16, 18, PresetColour.AGE_TEENS, ContentPreferenceValue.FIVE_ABUNDANT),
+
+	TEENS_LATE("late teens", 18, 20, PresetColour.AGE_TEENS, ContentPreferenceValue.FIVE_ABUNDANT),
+
 	TWENTIES_EARLY("early twenties", 20, 23, PresetColour.AGE_TWENTIES, ContentPreferenceValue.FIVE_ABUNDANT),
 	
 	TWENTIES_MIDDLE("mid-twenties", 23, 27, PresetColour.AGE_TWENTIES, ContentPreferenceValue.FIVE_ABUNDANT),

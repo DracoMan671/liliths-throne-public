@@ -312,6 +312,7 @@ public enum RenderingEngine {
 						
 						equippedPanelSB.append((!clothing.getDisplacedList().isEmpty() ? "<div class='displacedIcon'>" + SVGImages.SVG_IMAGE_PROVIDER.getDisplacedIcon() + "</div>" : ""));
 						equippedPanelSB.append((clothing.isDirty() ? "<div class='cummedIcon'>" + SVGImages.SVG_IMAGE_PROVIDER.getDirtyIcon() + "</div>" : ""));
+						equippedPanelSB.append((clothing.isWet() ? "<div class='pissedIcon'>" + SVGImages.SVG_IMAGE_PROVIDER.getWetIcon() + "</div>" : ""));
 						equippedPanelSB.append((clothing.getClothingType().getFemininityMaximum() < charactersInventoryToRender.getFemininityValue() ? "<div class='femininityIcon'>" + SVGImages.SVG_IMAGE_PROVIDER.getMasculineWarningIcon() + "</div>" : ""));
 						equippedPanelSB.append((clothing.getClothingType().getFemininityMinimum() > charactersInventoryToRender.getFemininityValue() ? "<div class='femininityIcon'>" + SVGImages.SVG_IMAGE_PROVIDER.getFeminineWarningIcon() + "</div>" : ""));
 						
@@ -485,6 +486,7 @@ public enum RenderingEngine {
 	
 						equippedPanelSB.append((!clothing.getDisplacedList().isEmpty() ? "<div class='displacedIcon'>" + SVGImages.SVG_IMAGE_PROVIDER.getDisplacedIcon() + "</div>" : ""));
 						equippedPanelSB.append((clothing.isDirty() ? "<div class='cummedIcon'>" + SVGImages.SVG_IMAGE_PROVIDER.getDirtyIcon() + "</div>" : ""));
+						equippedPanelSB.append((clothing.isWet() ? "<div class='pissedIcon'>" + SVGImages.SVG_IMAGE_PROVIDER.getWetIcon() + "</div>" : ""));
 						equippedPanelSB.append((clothing.getClothingType().getFemininityMaximum() < charactersInventoryToRender.getFemininityValue() ? "<div class='femininityIcon'>" + SVGImages.SVG_IMAGE_PROVIDER.getMasculineWarningIcon() + "</div>" : ""));
 						equippedPanelSB.append((clothing.getClothingType().getFemininityMinimum() > charactersInventoryToRender.getFemininityValue() ? "<div class='femininityIcon'>" + SVGImages.SVG_IMAGE_PROVIDER.getFeminineWarningIcon() + "</div>" : ""));
 						
@@ -505,13 +507,15 @@ public enum RenderingEngine {
 					if (blockedSlots.contains(invSlot)) {
 						equippedPanelSB.append("<div class='"+inventorySlotId+" disabled'>"
 													+ (charactersInventoryToRender.isDirtySlot(invSlot) ? "<div class='cummedIcon'>" + SVGImages.SVG_IMAGE_PROVIDER.getDirtyIcon() + "</div>" : "")
+													+ (charactersInventoryToRender.isWetSlot(invSlot) ? "<div class='pissedIcon'>" + SVGImages.SVG_IMAGE_PROVIDER.getWetIcon() + "</div>" : "")
 													+ "<div class='overlay' id='" + invSlot.toString() + "Slot'></div>"
 												+ "</div>");
-						
+
 					} else if (block != null) {
 						equippedPanelSB.append(
 								"<div class='"+inventorySlotId+" "+(block.getRace()!=null?"disabled-light":"disabled")+"'>"
 									+ (charactersInventoryToRender.isDirtySlot(invSlot) ? "<div class='cummedIcon'>" + SVGImages.SVG_IMAGE_PROVIDER.getDirtyIcon() + "</div>" : "")
+									+ (charactersInventoryToRender.isWetSlot(invSlot) ? "<div class='pissedIcon'>" + SVGImages.SVG_IMAGE_PROVIDER.getWetIcon() + "</div>" : "")
 									+ "<div class='overlay' id='" + invSlot.toString() + "Slot'></div>"
 									+ (block.getRace()!=null
 											?"<div class='raceBlockIcon' style='opacity:0.5;'>" + AbstractSubspecies.getMainSubspeciesOfRace(block.getRace()).getSVGStringDesaturated(charactersInventoryToRender) + "</div>"
@@ -542,6 +546,7 @@ public enum RenderingEngine {
 						
 						equippedPanelSB.append("<div class='"+inventorySlotId+""+(disabled?" disabled":"")+"' id='" + invSlot.toString() + "Slot'>"
 								+ (charactersInventoryToRender.isDirtySlot(invSlot) ? "<div class='cummedIcon'>" + SVGImages.SVG_IMAGE_PROVIDER.getDirtyIcon() + "</div>" : "")
+								+ (charactersInventoryToRender.isWetSlot(invSlot) ? "<div class='pissedIcon'>" + SVGImages.SVG_IMAGE_PROVIDER.getWetIcon() + "</div>" : "")
 								+ "</div>");
 					}
 				}
@@ -938,6 +943,9 @@ public enum RenderingEngine {
 		if (item instanceof AbstractClothing && ((AbstractClothing)item).isDirty()) {
 			itemSB.append("<div class='cummedIcon'>" + SVGImages.SVG_IMAGE_PROVIDER.getDirtyIcon() + "</div>");
 		}
+		if (item instanceof AbstractClothing && ((AbstractClothing)item).isWet()) {
+			itemSB.append("<div class='pissedIcon'>" + SVGImages.SVG_IMAGE_PROVIDER.getWetIcon() + "</div>");
+		}
 		String overlay = "<div class='overlay";
 		String last_layer = "";
 
@@ -1006,6 +1014,9 @@ public enum RenderingEngine {
 
 		if (item instanceof AbstractClothing && ((AbstractClothing)item).isDirty()) {
 			itemSB.append("<div class='cummedIcon'>" + SVGImages.SVG_IMAGE_PROVIDER.getDirtyIcon() + "</div>");
+		}
+		if (item instanceof AbstractClothing && ((AbstractClothing)item).isWet()) {
+			itemSB.append("<div class='pissedIcon'>" + SVGImages.SVG_IMAGE_PROVIDER.getWetIcon() + "</div>");
 		}
 		String overlay = "<div class='overlay";
 		String last_layer = "";

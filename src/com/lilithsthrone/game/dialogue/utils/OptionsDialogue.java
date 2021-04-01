@@ -12,6 +12,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Properties;
 
+import com.lilithsthrone.LolificationProject.ModCommon.ModOptions;
 import com.lilithsthrone.game.Game;
 import com.lilithsthrone.game.PropertyValue;
 import com.lilithsthrone.game.character.attributes.Attribute;
@@ -60,6 +61,7 @@ import com.lilithsthrone.utils.colours.PresetColour;
  * @version 0.3.7
  * @author Innoxia
  */
+@SuppressWarnings("all")
 public class OptionsDialogue {
 	
 	public enum ContentOptionsPage {
@@ -250,7 +252,14 @@ public class OptionsDialogue {
 					}
 				};
 			
-			} else if (index == 0) {
+			} else if (index == 14) {
+				 return new Response("Mod Options", "Set your preferred Mod settings.", ModOptions.MOD_CONTENT_PREFERENCE){
+					 @Override
+					 public void effects() {
+						 confirmNewGame=false;
+					 }
+				 };
+			 } else if (index == 0) {
 				if(Main.game.isStarted()) {
 					return new ResponseEffectsOnly("Resume", "Return to whatever you were doing before opening this menu."){
 						@Override

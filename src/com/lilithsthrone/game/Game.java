@@ -29,6 +29,7 @@ import javax.xml.transform.TransformerException;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
 
+import com.lilithsthrone.LolificationProject.ModCommon.Conversions;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.NodeList;
@@ -4117,8 +4118,11 @@ public class Game implements XMLSaving {
 		List<NPC> offspringSpawned = new ArrayList<>(getOffspring(false));
 		
 		offspringSpawned.removeIf(npc -> npc.getWorldLocation()==WorldType.EMPTY);
-		
-		return offspringSpawned;
+		List<NPC> offspringModified = new ArrayList<>();
+		for (NPC npc : offspringSpawned) {
+			offspringModified.add(Conversions.applyAgeEffects(npc));
+		}
+		return offspringModified;
 	}
 
 	public List<NPC> getOffspringNotSpawned(Predicate<NPC> matcher) {
@@ -4234,6 +4238,7 @@ public class Game implements XMLSaving {
 			} else {
 				int id = npcTally.incrementAndGet();
 				npc.setId(id+","+(npc.getClass().getSimpleName()));
+				npc = Conversions.changeAge(npc);
 			}
 		}
 		
@@ -4799,4 +4804,22 @@ public class Game implements XMLSaving {
 		savedInventories.put(character.getId(), new CharacterInventory(character.getInventory()));
 //		System.out.println("Saved: "+character.getName());
 	}
+
+	public boolean isPeeingEnabled() { return Main.getProperties().hasValue(PropertyValue.peeContent); }
+
+	public boolean isExtremeAgeEnabled() { return Main.getProperties().hasValue(PropertyValue.extremeAgeContent); }
+
+	public boolean isHeightAppearanceBased() { return Main.getProperties().hasValue(PropertyValue.scaleHeightBasedOnAgeAppearance); }
+
+	public boolean isHeightGendered() { return Main.getProperties().hasValue(PropertyValue.scaleHeightBasedOnGenderOrAppearance); }
+
+	public boolean isHugsEnabled() { return Main.getProperties().hasValue(PropertyValue.enableHug); }
+
+	public boolean isHeightExplicitlyCalculated() { return Main.getProperties().hasValue(PropertyValue.extremeCaseCalculations); }
+
+	public boolean isShowAgeEnabled() { return Main.getProperties().hasValue(PropertyValue.showAge); }
+
+	public boolean isShowTrueAgeEnabled() { return Main.getProperties().hasValue(PropertyValue.showTrueAge); }
+
+	public boolean alwaysFlagModded() { return Main.getProperties().hasValue(PropertyValue.importedFlagAsModded); }
 }

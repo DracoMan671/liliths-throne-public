@@ -10,6 +10,7 @@ import java.util.Map.Entry;
 import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 
+import com.lilithsthrone.LolificationProject.ModCommon.Conversions;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.NodeList;
@@ -2167,9 +2168,13 @@ public class Body implements XMLSaving {
 				}
 				break;
 		}
-		
+		/*
 		if(Main.getProperties().hasValue(PropertyValue.ageContent)) {
 			sb.append(" [npc.She] [npc.verb(appear)] to be in [npc.her] <span style='color:"+owner.getAppearsAsAge().getColour().toWebHexString()+";'>"+owner.getAppearsAsAge().getName()+"</span>.");
+		}*/
+
+		if(Main.getProperties().hasValue(PropertyValue.ageContent) && owner != Main.game.getPlayer()) {
+			sb.append(Conversions.getAgeDescriptor(owner));
 		}
 		sb.append("</p>");
 		

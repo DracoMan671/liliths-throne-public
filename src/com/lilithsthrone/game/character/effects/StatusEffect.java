@@ -3627,7 +3627,11 @@ public class StatusEffect {
 			StringBuilder sb = new StringBuilder();
 			
 			if (target.isPregnant()) {
-				target.addStatusEffect(PREGNANT_1, 60 * 60 * (72 + Util.random.nextInt(13)));
+				if (target.isPlayer()) {
+					target.addStatusEffect(PREGNANT_1, (int) (60 * 60 * (72 + Util.random.nextInt(13)) * ((float) Main.getProperties().playerPregDuration * 0.01f)));
+				} else {
+					target.addStatusEffect(PREGNANT_1, (int) (60 * 60 * (72 + Util.random.nextInt(13)) * ((float) Main.getProperties().NPCPregDuration * 0.01f)));
+				}
 				
 				if (target.isPlayer() && !((PlayerCharacter) target).isQuestCompleted(QuestLine.SIDE_FIRST_TIME_PREGNANCY)) {
 					if(target.hasFetish(Fetish.FETISH_PREGNANCY)) {
@@ -3818,9 +3822,12 @@ public class StatusEffect {
 		}
 		@Override
 		public String extraRemovalEffects(GameCharacter target) {
+			if (target.isPlayer()) {
+				target.addStatusEffect(PREGNANT_2, (int) (60 * 60 * (72 + Util.random.nextInt(13)) * ((float) Main.getProperties().playerPregDuration * 0.01f)));
+			} else {
+				target.addStatusEffect(PREGNANT_2, (int) (60 * 60 * (72 + Util.random.nextInt(13)) * ((float) Main.getProperties().NPCPregDuration * 0.01f)));
+			}
 
-			target.addStatusEffect(PREGNANT_2, 60 * 60 * (72 + Util.random.nextInt(13)));
-			
 			boolean breastGrowth = false;
 			if(Main.getProperties().pregnancyBreastGrowth>0 && target.getBreastRawSizeValue()<Main.getProperties().pregnancyBreastGrowthLimit) {
 				int valueIncrease = Math.max(1, Main.getProperties().pregnancyBreastGrowth - Main.getProperties().pregnancyBreastGrowthVariance + Util.random.nextInt(Main.getProperties().pregnancyBreastGrowthVariance*2 + 1));
