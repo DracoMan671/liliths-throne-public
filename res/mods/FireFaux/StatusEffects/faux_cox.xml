@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<statusEffect>
+<!--Faux Fox: 2.1 - The Faux Cox Update, now with less DeBug remnants
+	Feel free to modify to taste.
+	Default works with the Pearl Stud Earring item.
+	
+Variable explanations and descriptions.
+~ Variables have a large range. Try and be reasonable.
+- Variables have a strict range. Going outside of it probably won't do anything, but it might break something.
+$ Variables are special. They can be adjusted, but pay very close attention to the notes.
+X Variables should not be directly changed for any reason. They are probably a result of other variables and can be changed that way.
+2 Variables must be changed in multiple locations
+
+<applicationCondition>
+$ itemID		Item ID: the ID of the item used to apply this effect.
+
+<applyEffect>
+~ interval	Effect Interval:	This should probably be kept 1 higher than the applyEffect interval. But you can change it to scale all other effects.
+					Otherwise this is the magic sauce I use to get an effective update Interval of 0, without having a real Interval of 0. For paranoid performance reasons.
+					20 is the default because a turn sex is 20. Thus the applyEffect Interval is 19.
+		Defult value of 20
+
+~2 mCost 	Mana cost per second:	base value of 0.25, reduced by Spell Efficiency, and multiplied by the interval.
+					Expect (0.25~0.225~0.05) per second, or (15~13.5~3.0) per minute
+				If you change this, be sure you change it in both <description> and <applyEffect>
+		Default value of 0.25
+		
+~2 mReserve	Mana Reserve:	It will leave you with this % of mana as a minimum.
+				If you change this, be sure you change it in both <description> and <applyEffect>
+		Default value of 0.25, representing 25% remaining
+
+~2 cRegen	Cum Regeneration per second: The shining star. Scales based on Cum Regeneration, Cum Expulsion, Cum Capacity, Spell Power, and Spell Efficiency.
+					1.25 * regenPerSecond(0~0.115~5.78) * expulsion(0~0.6~1.0) * SpellDamage(0.2~1.0~2) )
+					+ ( 0.0006 * Capacity(0~30~10000) )
+					This effect of this is a new character can expect 0.955 + 0.018 = 0.1135 ml/Second or 6.809 mL/Minute.
+					Approximatly doubling their regeneration for 10.8 Mana/Minute
+					Expect (0~0.0868~20.467) per second or (0~5.208~1228.05) per minute.
+				If you change this, be sure you change it in both <description> and <applyEffect>
+		Default values of 1.25, and 0.0006
+		
+~ fillRatio	Fall Ratio: Maximum amount of cum that mana will be drained to maintain.
+		Default value of 0.80, representing 80% full
+		
+- minPLength	Minimum Penis Length:	base value of 0.08 multiplied by Character's Height.
+		Recommended range is 0.06~0.15.
+					Oriface depths are (*Uncomfortable Depth Modifier): Vagina = height*0.10 (*1.5), Ass: height*0.12 (*2.0), Mouth: height*0.10 (*2.0)
+					Additionally there are 8 depth modifiers, 0~7: [0.50, 0.75, default:1.00, 1.50, 2.00, 2.50, 3.00, 4.00]
+					
+- minPGirth	Minimum Penis Girth:	base of 3.
+		Valid range is 0~6, Average value is 3.
+		
+- minBSize	Minimum Ball Size:	base of minPGirth.
+		Valid range is 0~7, Average value is 3.
+		
+$2 raceTarget	Race Target: What race to use for penis transformation. Defaults to match the characters Body(Torso) race.
+		Static referances to races are of the form "RACE_*" 	Examples: RACE_HUMAN and RACE_FOX_MORPH  
+		Full List of Races at https://github.com/Innoxia/liliths-throne-public/blob/dev/src/com/lilithsthrone/game/character/race/Race.java
+		If you change this, be sure you change it in both <applyEffect> and <applyRemovalEffect>
+		
+X pSkin		Penis Skin type:	takes raceTarget and gets the proper "PENIS_TYPE_*" for that race.	DO NOT TOUCH!!! MUCH DANGER, MANY BREAK!!!
+
+$ pColor	Penis skin Color:	
+		Static referances are of the form "COLOUR_*" Examples: COLOUR_BASE_WHITE and COLOUR_SKIN_RED
+		The full list is over 250 colors so I recommend using "Ctrl+F" and find something close. Either for searching for something like RED or SKIN
+		Full list of Colors at https://github.com/Innoxia/liliths-throne-public/blob/dev/src/com/lilithsthrone/utils/colours/PresetColour.java
+		Default value of the color of the body(torso) skin color. npc.getCovering(npc.getTorsoCovering()).getPrimaryColour()
+-->
+	<renderingPriority>60</renderingPriority>
+	<renderInEffectsPanel>true</renderInEffectsPanel>
+	<beneficial>BENEFICIAL</beneficial>
+	<combatEffect>false</combatEffect>
+	<sexEffect>false</sexEffect>
+	<name><![CDATA[[#npc.name]'s Faux Cox]]></name>
+	<description><![CDATA[
+		[##var mCost = (0.2 * ((100 - npc.getAttributeValue(ATTRIBUTE_SPELL_COST_MODIFIER)) / 100.0) )]
+		[##var mReserve = (0.25 * npc.getAttributeValue(ATTRIBUTE_MANA_MAXIMUM))]
+		[##var cRegen = 1.25 * npc.getCumRegenerationPerSecond() * (npc.getPenisRawCumExpulsionValue()/100) * (1 + npc.getAttributeValue(ATTRIBUTE_DAMAGE_SPELLS)/100) ]
+		[##cRegen += 0.0006 * npc.getPenisRawCumStorageValue()]
+		#IF(itemId == CT_innoxia_piercing_ear_pearl_studs)
+			[npc.Name(true)] is the bearer of a [style.gMana(Magic Stick)]! <br/>
+		#ELSE
+			[style.gOrange(Someone's having fun with my mod.)]<br/>
+		#ENDIF
+		Consumes [style.cMana([#(60*mCost).toFixed(2)] Mana)] per Minute.<br/>
+		Generates [style.gWhite([#(60*cRegen).toFixed(2)] ml of Cum)] per Minute.<br/>
+		Reserves [style.cMana([#mReserve.toFixed(0)] Mana)] 
+	]]></description> 
+	<imageName>innoxia_cumFull.svg</imageName><!-- Nicked the image from the base game assets.  https://github.com/Innoxia/liliths-throne-public/blob/dev/src/com/lilithsthrone/res/statusEffects/cumFull.svg -->
+	<colourPrimary>BASE_WHITE</colourPrimary>
+	<colourSecondary/>
+	<colourTertiary/>
+	<attributeModifiers/>
+	<combatMoves/>
+	<spells/>
+	<extraEffects>
+		<effect><![CDATA[
+		[npc.Name] [npc.has] a [style.cRainbow(Magic Dick.)]<br/>
+		Burns [style.cMana(Mana)] to make [style.gWhite(Cum)].<br/>
+		]]></effect>
+	</extraEffects>
+<!--To use some other item you must set the Variable itemId with the ID of the item you want to use.
+To get the ID of an equipped item
+	1.	In a default scene, such as a hallway or any time you can save, type out 'buggy' to open the debug menu
+	2.	Open the Parser
+	3.	Paste	[#npc.getClothingInSlot(IS_PIERCING_EAR).getClothingType().getId()]	into the parsers' window
+	4.	Hit Parse
+		It should give you something that looks like 'innoxia_piercing_ear_pearl_studs' This is the internal Id for the type of item in that Inventory Slot.
+		If it doesn't you may not have specified the correct Inventory Slot. They are referanced as 'IS_' and are generally singular: IS_HAND is correct but IS_HANDS is incorrect.
+		Full list of Inventory Slots at https://github.com/Innoxia/liliths-throne-public/blob/dev/src/com/lilithsthrone/game/inventory/InventorySlot.java
+	5. Replace the below assignment with your new itemId, prefixed by 'CT_'
+		Examples:	CT_innoxia_piercing_ear_pearl_studs
+					CT_innoxia_vagina_sticker_anal_only-->
+	<applicationCondition><![CDATA[
+		[##var itemId = CT_innoxia_piercing_ear_pearl_studs]
+		[##var itemId2 = CT_innoxia_vagina_sticker_anal_only]
+		#IF(npc.getInventory().hasEquippedClothingType(itemId))
+			true
+		#ELSEIF(npc.getInventory().hasEquippedClothingType(itemId2))
+			true
+		#ELSE
+			false
+		#ENDIF
+	]]></applicationCondition>
+<!-- Old Example: Anal-Only Pastie
+	<applicationCondition><![CDATA[
+		#IF(npc.getClothingInSlot(IS_VAGINA)!=null)
+			#IF(npc.getClothingInSlot(IS_VAGINA).getClothingType().getId()==CT_innoxia_vagina_sticker_anal_only.getId())
+				true
+			#ENDIF
+		#ELSE
+			false
+		#ENDIF
+	</applicationCondition>-->
+	<applyEffect interval="19"><![CDATA[
+		[##var interval = 20]
+		[##var mCost = (0.2 * ((100 - npc.getAttributeValue(ATTRIBUTE_SPELL_COST_MODIFIER)) / 100.0) )]
+		[##var mReserve = (0.25 * npc.getAttributeValue(ATTRIBUTE_MANA_MAXIMUM))]
+		[##var cRegen = 1.25 * (npc.getPenisRawCumExpulsionValue()/100) * npc.getCumRegenerationPerSecond() * (1 + npc.getAttributeValue(ATTRIBUTE_DAMAGE_SPELLS)/100) ]
+		[##cRegen += 0.0006 * npc.getPenisRawCumStorageValue()]
+		[##var fillRatio = 0.8]
+		[##var minPLength = (0.08 * npc.getHeightValue())]
+		[##var minPGirth = 3]
+		[##var minBSize = minPGirth]
+		[##var raceTarget = npc.getSkinRace()]
+		[##var pSkin = raceTarget.getRacialBody().getPenisType()]
+		[##var pColor = npc.getCovering(npc.getTorsoCovering()).getPrimaryColour()]
+		
+		#IF(TOTAL_SECONDS_PASSED == 0)
+			#IF (npc.getPenisType() == PENIS_TYPE_NONE)
+				[#npc.setPenisType(pSkin)]
+				[##npc.getCovering(npc.getPenisCovering()).setPrimaryColour(pColor)]	
+				[##npc.getCovering(npc.getPenisCovering()).setPrimaryGlowing(true)]
+			#ENDIF
+			#IF	(npc.getPenisRawSizeValue()<minPLength)	
+				[#npc.setPenisSize(minPLength)]
+			#ENDIF
+			#IF (npc.getPenisGirth().getValue()<minPGirth)
+				[#npc.setPenisGirth(minPGirth)]
+			#ENDIF
+			#IF (npc.getTesticleSize().getValue()<minBSize)
+				[#npc.setTesticleSize(minBSize)]
+			#ENDIF
+		#ENDIF
+		#IF(npc.getPenisRawStoredCumValue() < (npc.getPenisRawCumStorageValue() * fillRatio))
+			#IF( npc.getMana() > mReserve )
+				[##npc.incrementPenisStoredCum( cRegen * interval )]
+				[##npc.incrementMana(-1 * mCost * interval)]
+			#ENDIF
+		#ENDIF
+	]]></applyEffect>
+<!--All variables in here exist solely to make -->
+	<applyRemovalEffect><![CDATA[
+		[##var raceTarget = npc.getSkinRace()]
+		[##var pSkin = raceTarget.getRacialBody().getPenisType()]
+		#IF (npc.hasPenisIgnoreDildo())
+			#IF (npc.getPenisType()== pSkin)
+				[#npc.setPenisType(PENIS_TYPE_NONE)]
+			#ENDIF
+		#ENDIF
+	]]></applyRemovalEffect>
+	<applyPostRemovalEffect/>
+</statusEffect>

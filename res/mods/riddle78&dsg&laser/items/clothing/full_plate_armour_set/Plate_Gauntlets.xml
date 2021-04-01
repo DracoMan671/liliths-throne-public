@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<clothing>
+	<coreAtributes>
+		<value>10000</value>
+		<determiner><![CDATA[a pair of]]></determiner>
+		<name><![CDATA[Plate Gauntlets]]></name>
+		<namePlural pluralByDefault="true"><![CDATA[Plate Gauntlets]]></namePlural>
+		<description><![CDATA[A pair of heavy plate gauntlets, designed to protect your arms from elbow to fingertips. On top of offering peerless physical protection for your precious hands. Contrary to popular belief, they do not make your punches hit harder.]]></description>
+		<physicalResistance>7</physicalResistance>
+		<femininity>ANDROGYNOUS</femininity>
+		<slot>HAND</slot>
+		<rarity>RARE</rarity>
+		<clothingSet></clothingSet>
+		<imageName>Plate_Gauntlets.svg</imageName>
+		<imageEquippedName></imageEquippedName>
+		<enchantmentLimit/>
+		<effects/>
+		<blockedPartsList>
+			<blockedParts>
+				<displacementType>REMOVE_OR_EQUIP</displacementType>
+				<clothingAccessRequired />
+				<blockedBodyParts>
+					<bodyPart>HANDS</bodyPart>
+				</blockedBodyParts>
+				<clothingAccessBlocked>
+					<clothingAccess>WRISTS</clothingAccess>
+					<clothingAccess>FINGERS</clothingAccess>
+				</clothingAccessBlocked>
+				<concealedSlots>
+					<slot>WRIST</slot>
+					<slot>FINGER</slot>
+				</concealedSlots>
+			</blockedParts>
+		</blockedPartsList>
+		<incompatibleSlots />
+		<primaryColours values="ALL_METAL" />
+		<primaryColoursDye values="ALL_METAL" />
+		<secondaryColours values="ALL" />
+		<secondaryColoursDye values="ALL" />
+		<tertiaryColours values="" />
+		<tertiaryColoursDye values="" />
+		<itemTags>
+			<tag>SOLD_BY_VICKY</tag>
+		</itemTags>
+	</coreAtributes>
+	<displacementText type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[You unstrap and remove your Plate Gauntlets.]]></playerSelf>
+		<playerNPC><![CDATA[You unstrap and remove [npc.name]'s Plate Gauntlets.]]></playerNPC>
+		<playerNPCRough><![CDATA[You tear [npc.name]'s Plate Gauntlets off of their hands, popping the straps.]]></playerNPCRough>
+		<NPCSelf><![CDATA[[npc.name] unstraps and removes their Plate Gauntlets.]]></NPCSelf>
+		<NPCPlayer><![CDATA[[npc.name] unstraps and removes your Plate Gauntlets.]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[[npc.name] tears your Plate Gauntlets off of your hands, popping the straps.]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[[npc1.name] unstraps and removes [npc2.name]'s Plate Gauntlets.]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[[npc1.name] tears the Plate Gauntlets from [npc2.name]'s hands, popping the straps.]]></NPCOtherNPCRough>
+	</displacementText>
+	<replacementText type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[You pull and and strap up your Plate Gauntlets.]]></playerSelf>
+		<playerNPC><![CDATA[You pull [npc.name]'s Plate Gauntlets over their hands, and strap them up.]]></playerNPC>
+		<playerNPCRough><![CDATA[You shove [npc.name]'s hands into the Plate Gauntlets, and strap them in.]]></playerNPCRough>
+		<NPCSelf><![CDATA[[npc.name] pulls on and straps up their Plate Gauntlets.]]></NPCSelf>
+		<NPCPlayer><![CDATA[[npc.name] slides the PLate Gauntlets over your hands, and straps them up.]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[[npc.name] shoves your hands into the PLate Gauntlets, and straps them in.]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[[npc1.name] pulls the Plate Gauntlets over [npc2.name]'s hands, and straps them up.]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[[npc1.name] shoves [npc2.name]'s hands into the Plate Gauntlets, and straps them in.]]></NPCOtherNPCRough>
+	</replacementText>
+</clothing>

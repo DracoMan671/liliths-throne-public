@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Made by Alicebun! -->
+<clothing>
+	<coreAtributes>
+		<value>400</value>
+		<determiner><![CDATA[a]]></determiner>
+		<name><![CDATA[curse mark]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[curse marks]]></namePlural>
+		<description><![CDATA[A heart-shaped curse mark, imprinted on the lower stomach.]]></description>
+		<physicalResistance>0</physicalResistance>
+		<femininity>ANDROGYNOUS</femininity>
+		<slot>STOMACH</slot>
+		<rarity>EPIC</rarity>
+		<clothingSet/>
+		<imageName>curse_mark.svg</imageName>
+		<imageEquippedName/>
+		<enchantmentLimit/>
+		<effects>
+		  <effect itemEffectType="CLOTHING" limit="0" potency="MINOR_BOOST" primaryModifier="CLOTHING_SEALING" secondaryModifier="ARCANE_BOOST" timer="0"/>
+		</effects>
+		<blockedPartsList>
+			<blockedParts>
+				<displacementType>REMOVE_OR_EQUIP</displacementType>
+				<clothingAccessRequired>
+				</clothingAccessRequired>
+				<blockedBodyParts>
+				</blockedBodyParts>
+				<clothingAccessBlocked/>
+				<concealedSlots>
+				</concealedSlots>
+			</blockedParts>
+		</blockedPartsList>
+		<incompatibleSlots>
+		</incompatibleSlots>
+		<primaryColours values="JUST_PINK"/>
+		<primaryColoursDye values="ALL"/>
+		<secondaryColours values="JUST_PINK"/>
+		<secondaryColoursDye values="ALL"/>
+		<itemTags>
+			<tag>REVEALS_CONCEALABLE_SLOT</tag>
+		</itemTags>
+	</coreAtributes>
+
+	<displacementText type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[
+			You gasp for breath as you break your arcane curse mark and extract it from your [pc.materialName].
+		]]></playerSelf>
+		<playerNPC><![CDATA[
+			[npc.Name] gasps for breath as you break [npc.her] curse mark and extract it from [npc.her] [npc.materialName].
+		]]></playerNPC>
+		<playerNPCRough><![CDATA[
+			[npc.Name] gasps and [npc.moansVerb+] as you shatter [npc.her] curse mark and tear it from [npc.her] [npc.materialName].
+		]]></playerNPCRough>
+		<NPCSelf><![CDATA[
+			[npc.Name] gasps for breath as [npc.she] breaks [npc.her] arcane curse mark and extracts it from [npc.her] [npc.materialName].
+		]]></NPCSelf>
+		<NPCPlayer><![CDATA[
+			You gasp for breath as [npc.name] breaks your arcane curse mark and extracts it from your [pc.materialName].
+		]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[
+			You gasp and [pc.moanVerb+] as [npc.name] shatters your curse mark and tears it from your [pc.materialName].
+		]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[
+			[npc2.Name] gasps for breath as [npc1.name] breaks [npc2.her] curse mark and extracts it from [npc2.her] [npc2.materialName].
+		]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[
+			[npc2.Name] gasps and [npc2.moansVerb+] as [npc1.name] shatters [npc2.her] curse mark and tears it from [npc2.her] [npc2.materialName].
+		]]></NPCOtherNPCRough>
+	</displacementText>
+
+	<replacementText type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[
+			You [pc.moanVerb+] as you etch an arcane curse mark into your [pc.materialName].
+		]]></playerSelf>
+		<playerNPC><![CDATA[
+			[npc.Name] [npc.moansVerb+] as you etch an arcane curse mark into [npc.her] [npc.materialName].
+		]]></playerNPC>
+		<playerNPCRough><![CDATA[
+			[npc.Name] [npc.moansVerb+] as you firmly engrave an arcane curse mark into [npc.her] [npc.materialName].
+		]]></playerNPCRough>
+		<NPCSelf><![CDATA[
+			[npc.Name] [npc.moansVerb+] as [npc.she] etches an arcane curse mark into [npc.her] [npc.materialName].
+		]]></NPCSelf>
+		<NPCPlayer><![CDATA[
+			You [pc.moanVerb+] as [npc.name] etches an arcane curse mark into your [pc.materialName].
+		]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[
+			You [pc.moanVerb+] as [npc.name] firmly engraves an arcane curse mark into your [pc.materialName].
+		]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[
+			[npc2.Name] [npc2.moansVerb+] as [npc1.name] etches an arcane curse mark into [npc2.her] [npc2.materialName].
+		]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[
+			[npc2.Name] [npc2.moansVerb+] as [npc1.name] firmly engraves an arcane curse mark into [npc2.her] [npc2.materialName].
+		]]></NPCOtherNPCRough>
+	</replacementText>
+	
+</clothing>

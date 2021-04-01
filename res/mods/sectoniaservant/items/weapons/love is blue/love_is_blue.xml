@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<weapon>
+	<coreAttributes>
+		
+		<value>170000</value> 
+		
+		<melee>true</melee>
+		
+		<twoHanded>true</twoHanded>
+		
+		<determiner><![CDATA[the]]></determiner>
+		
+		<name><![CDATA["Love is Blue" gun]]></name>
+		
+		<namePlural pluralByDefault="true"><![CDATA["Love is Blue" guns]]></namePlural> 
+		
+		<description><![CDATA[The guns have a strange magic emitting from it. They feel like they came from a foreign dimension. You don't know why, but you think they had a greater purpose. In this world, though, that purpose is lost for now.]]></description>
+		
+		<attackDescriptor>fire</attackDescriptor>
+		
+		<attackTooltipDescription>Shoot [npc2.name] with the "Love is Blue" guns.</attackTooltipDescription>
+		
+		<rarity>LEGENDARY</rarity>
+		
+		<weaponSet/>
+		
+		<equipText><![CDATA[[npc.Name] [npc.verb(attach)] the guns to [npc.her] heels, before holding a gun in [npc.her] hands, ready to fire upon [npc.her] enemies.]]></equipText>
+		
+		<unequipText><![CDATA[[npc.name] [npc.verb(take)] off the guns on {npc.her] heels, and putting the guns away.]]></unequipText>
+		
+		<imageName>love_is_blue.svg</imageName>
+		
+		<imageEquippedName/>
+		
+		<damage>140</damage> 
+		
+		<arcaneCost>15</arcaneCost>
+		
+		<damageVariance>LOW</damageVariance> 
+		
+		<availableDamageTypes>
+			<damageType>PHYSICAL</damageType>
+		</availableDamageTypes>
+		
+		<spells/>
+		
+		<enchantmentLimit>10</enchantmentLimit>
+		
+		<effects> 
+            <effect itemEffectType="CLOTHING" limit="0" potency="MAJOR_BOOST" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="DAMAGE_WEAPON" timer="0"/>
+            <effect itemEffectType="CLOTHING" limit="0" potency="MAJOR_BOOST" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="DAMAGE_WEAPON" timer="0"/>
+		</effects>
+		
+		<primaryColours/>
+		<primaryColoursDye/>
+		<secondaryColours/>
+		<secondaryColoursDye/>
+		<teritaryColours/>
+		<teritaryColoursDye/>
+		
+		<itemTags>
+			<tag>SOLD_BY_VICKY</tag>
+		</itemTags>
+		
+	</coreAttributes>
+	
+	<hitDescriptions>
+		<hitText><![CDATA[
+		Taking aim, [npc.name] [npc.verb(get)] overwhelmed with the urge to put on a show. [npc.She] [npc.verb(begin)] to spin around, firing randomly. [npc.She] also kick up [npc.her] legs and fire the guns on [npc.her] heels. The bullets flying from the guns manage to strike [npc2.name]'s torso!
+		]]></hitText>
+		<hitText><![CDATA[
+		Taking aim, [npc.name] [npc.verb(get)] overwhelmed with the urge to put on a show. [npc.She] [npc.verb(begin)] to spin around, firing randomly. [npc.She] also kick up [npc.her] legs and fire the guns on [npc.her] heels. Although the bullets misses, it's not a problem as suddenly, a portal forms nearby [npc2.name] and strikes [npc2.herHim] with a large demonic fist!
+		]]></hitText>
+		<hitText><![CDATA[
+		Taking aim, [npc.name] [npc.verb(get)] overwhelmed with the urge to put on a show. [npc.She] [npc.verb(begin)] to spin around, firing randomly. [npc.She] also kick up [npc.her] legs and fire the guns on [npc.her] heels. Although the bullets misses, it's not a problem as suddenly, a portal forms nearby [npc2.name] and strikes [npc2.herHim] with a large demonic foot!
+		]]></hitText>
+		<hitText><![CDATA[
+		Darting forward, the guns gets wreathed in blue and black demonic energy, and [npc.name] [npc.verb(begin)] to throw a combo of punches and kicks. The punches and kicks hits [npc2.name], staggering [npc2.herHim]! However, [npc2.she] recovers from [npc2.her] staggering, and gets ready to fight back.
+		]]></hitText>
+		<hitText><![CDATA[
+		Darting forward, the guns gets wreathed in blue and black demonic energy, and [npc.name] [npc.verb(begin)] to throw a combo of punches and kicks. The punches and kicks are too far from [npc2.name], but it's not a problem as suddenly, a portal forms nearby [npc2.herHim], and a large demonic fist strikes [npc2.herHim]!
+		]]></hitText>
+		<hitText><![CDATA[
+		Darting forward, the guns gets wreathed in blue and black demonic energy, and [npc.name] [npc.verb(begin)] to throw a combo of punches and kicks. The punches and kicks are too far from [npc2.name], but it's not a problem as suddenly, a portal forms nearby [npc2.herHim], and a large demonic foot strikes [npc2.herHim]!
+		]]></hitText>
+	</hitDescriptions>
+	
+	<missDescriptions>
+		<missText><![CDATA[
+		Taking aim and firing [npc.her] guns, [npc.name] [npc.verb(miss)] [npc2.name]!
+		]]></missText>
+		<missText><![CDATA[
+		Taking aim and firing [npc.her] guns, [npc.name] [npc.verb(smirk)], despite missing the bullets, when a portal forms. However, [npc.she] [npc.verb(grunt)] in annoyance when the large demonic fist misses anyway.
+		]]></missText>
+		<missText><![CDATA[
+		Taking aim and firing [npc.her] guns, [npc.name] [npc.verb(smirk)], despite missing the bullets, when a portal forms. However, [npc.she] [npc.verb(grunt)] in annoyance when the large demonic foot misses anyway.
+		]]></missText>
+		<missText><![CDATA[
+		Darting forward and entering a combo of punches and kicks, [npc.name] [npc.verb(pant)] pants in exhaustion as they all miss [npc2.name].
+		]]></missText>
+		<missText><![CDATA[
+		Darting forward and entering a combo of punches and kicks, [npc.name] [npc.verb(smirk)], despite being too far for the punches and kicks to connect, when a portal forms. However, [npc.she] [npc.verb(grunt)] in annoyance when the large demonic fist misses anyway. 
+		]]></missText>
+		<missText><![CDATA[
+		Darting forward and entering a combo of punches and kicks, [npc.name] [npc.verb(smirk)], despite being too far for the punches and kicks to connect, when a portal forms. However, [npc.she] [npc.verb(grunt)] in annoyance when the large demonic foot misses anyway. 
+		]]></missText>
+	</missDescriptions>
+</weapon>

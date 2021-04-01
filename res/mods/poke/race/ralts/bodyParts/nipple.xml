@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<nipple>
+	<race>poke_ralts</race>
+	<coveringType>poke_ralts_skin</coveringType>
+	<descriptorsMasculine/>
+	<descriptorsFeminine/>
+	<!--
+	<descriptorsMasculine>
+		<descriptor><![CDATA[hyena-like]]></descriptor>
+	</descriptorsMasculine>
+	-->
+	<!-- PUFFY, RIBBED, TENTACLED, MUSCLE_CONTROL -->
+	<defaultOrificeModifiers/>
+	<!--
+	<defaultOrificeModifiers>
+		<modifier>PUFFY</modifier>
+	</defaultOrificeModifiers>
+	-->
+</nipple>

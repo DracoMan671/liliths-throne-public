@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+
+<clothing>
+  <coreAtributes>
+    <value>540</value>
+    <determiner><![CDATA[an]]></determiner>
+    <name><![CDATA[orichalcum bangle]]></name>
+    <namePlural pluralByDefault="false"><![CDATA[orichalcum bangles]]></namePlural>
+    <description><![CDATA[A bangle made of the highly enchantable material; orichalcum.]]></description>
+    
+    <physicalResistance>0</physicalResistance>
+    <femininity>ANDROGYNOUS</femininity> 
+    <slot>WRIST</slot> 
+    <rarity>EPIC</rarity> 
+    
+    <imageName>wrist_orichalcum_bangle.svg</imageName>
+
+    <clothingSet/>
+    <imageEquippedName/>
+    <enchantmentLimit>100</enchantmentLimit>
+    
+    <effects>
+    </effects>
+
+    <blockedPartsList>
+      <blockedParts>
+        
+        <displacementType>REMOVE_OR_EQUIP</displacementType> 
+        
+        <clothingAccessRequired/>
+        <blockedBodyParts/>
+        <clothingAccessBlocked/>        
+        <concealedSlots/>
+        
+      </blockedParts>
+    </blockedPartsList>
+
+    <incompatibleSlots/>
+    
+    <primaryColours values="ALL_METAL"/>
+    <primaryColoursDye values="ALL_METAL"/>
+    <secondaryColours/>
+    <secondaryColoursDye/>
+    <tertiaryColours/>
+    <tertiaryColoursDye/>
+    
+    <itemTags>
+      <tag>SOLD_BY_KATE</tag>
+    </itemTags>
+    
+  </coreAtributes>
+
+  <displacementText type="REMOVE_OR_EQUIP">
+    <playerSelf>
+      <![CDATA[You take off your bangle.]]>
+    </playerSelf>
+    <playerNPC>
+      <![CDATA[You take off [npc.Name]'s bangle.]]>
+    </playerNPC>
+    <playerNPCRough>
+      <![CDATA[You yank [npc.name]'s bangle off.]]>
+    </playerNPCRough>
+    <NPCSelf>
+      <![CDATA[[npc.Name] takes off [npc.herHis] bangle.]]>
+    </NPCSelf>
+    <NPCPlayer>
+      <![CDATA[[npc.Name] takes off your bangle.]]>
+    </NPCPlayer>
+    <NPCPlayerRough>
+      <![CDATA[[npc.Name] yanks off your bangle.]]>
+    </NPCPlayerRough>
+    <NPCOtherNPC>
+      <![CDATA[[npc1.Name] takes off [npc2.name]'s bangle.]]>
+    </NPCOtherNPC>
+    <NPCOtherNPCRough>
+      <![CDATA[[npc.Name] yanks off [npc2.name]'s bangle.]]>
+    </NPCOtherNPCRough>
+  </displacementText>
+
+  <replacementText type="REMOVE_OR_EQUIP">
+    <playerSelf>
+      <![CDATA[You slide the bangle over your wrist.]]>
+    </playerSelf>
+    <playerNPC>
+      <![CDATA[You slide the bangle over [npc.name]'s wrist.]]>
+    </playerNPC>
+    <playerNPCRough>
+      <![CDATA[You slide the bangle over [npc.name]'s wrist.]]>
+    </playerNPCRough>
+    <NPCSelf>
+      <![CDATA[[npc.Name] slides the bangle over [npc.herHis] wrist.]]>
+    </NPCSelf>
+    <NPCPlayer>
+      <![CDATA[[npc.Name] slides the bangle over your wrist.]]>
+    </NPCPlayer>
+    <NPCPlayerRough>
+      <![CDATA[[npc.Name] slides the bangle over your wrist.]]>
+    </NPCPlayerRough>
+    <NPCOtherNPC>
+      <![CDATA[[npc1.Name] slides the bangle over [npc2.Name]'s wrist.]]>
+    </NPCOtherNPC>
+    <NPCOtherNPCRough>
+      <![CDATA[[npc1.Name] slides the bangle over [npc2.Name]'s wrist.]]>
+    </NPCOtherNPCRough>
+  </replacementText>
+  
+  
+</clothing>

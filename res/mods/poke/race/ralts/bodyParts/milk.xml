@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<fluid>
+	<race>poke_ralts</race>
+	<transformationName><![CDATA[Ralts-line]]></transformationName>
+	<baseFluidType>MILK</baseFluidType>
+	<!-- CUM, MILK, GIRL_CUM, BUBBLEGUM, BEER, VANILLA, STRAWBERRY, CHOCOLATE, PINEAPPLE, HONEY, MINT, CHERRY, COFFEE, TEA, MAPLE, CINNAMON, LEMON, ORANGE, GRAPE, MELON, COCONUT, BLUEBERRY -->
+	<flavour>MILK</flavour>
+	<namesMasculine/>
+	<!--
+	<namesMasculine>
+		<name><![CDATA[milk]]></name>
+	</namesMasculine>
+	-->
+	<namesFeminine/>
+	<descriptorsMasculine>
+		<name><![CDATA[
+		#IF(npc.getSubspecies()==SUBSPECIES_poke_ralts_subspecies_Ralts)
+		Ralts
+		#ELSEIF(npc.getSubspecies()==SUBSPECIES_poke_ralts_subspecies_Kirlia)
+		Kirlia
+		#ELSEIF(npc.getSubspecies()==SUBSPECIES_poke_ralts_subspecies_Gallade)
+		Gallade
+		#ELSEIF(npc.getSubspecies()==SUBSPECIES_poke_ralts_subspecies_Gardevoir)
+		Gardevoir
+		#ENDIF
+		]]></name>
+	</descriptorsMasculine>
+	<descriptorsFeminine>
+		<name><![CDATA[
+		#IF(npc.getSubspecies()==SUBSPECIES_poke_ralts_subspecies_Ralts)
+		Ralts
+		#ELSEIF(npc.getSubspecies()==SUBSPECIES_poke_ralts_subspecies_Kirlia)
+		Kirlia
+		#ELSEIF(npc.getSubspecies()==SUBSPECIES_poke_ralts_subspecies_Gallade)
+		Gallade
+		#ELSEIF(npc.getSubspecies()==SUBSPECIES_poke_ralts_subspecies_Gardevoir)
+		Gardevoir
+		#ENDIF
+		]]></name>
+	</descriptorsFeminine>
+	<!-- MUSKY, VISCOUS, STICKY, SLIMY, BUBBLING, MINERAL_OIL, ALCOHOLIC, ADDICTIVE, HALLUCINOGENIC -->
+	<defaultFluidModifiers/>
+	<!--
+	<defaultFluidModifiers>
+		<modifier>MUSKY</modifier>
+	</defaultFluidModifiers>
+	-->
+</fluid>

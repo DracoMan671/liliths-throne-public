@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<tattoo>
+	<coreAttributes>
+		<value>500</value> 
+		
+		<name><![CDATA[Crest of Timotheos]]></name>
+		
+		<description><![CDATA[A mysterious Crest now carried by an apathetic girl who summons monsters with her sighs.]]></description> 
+		
+		<imageName>crest_of_timotheos.svg</imageName> 
+		
+		<enchantmentLimit>5</enchantmentLimit>
+		
+		<slotAvailability/>
+		
+		<primaryColours values="ALL"/>
+		<secondaryColours values="ALL"/>
+		<tertiaryColours/>
+		
+	</coreAttributes>
+	
+</tattoo>

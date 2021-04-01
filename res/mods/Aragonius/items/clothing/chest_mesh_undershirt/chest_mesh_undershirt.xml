@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- For a version with comments, see "rental_mommy.xml". -->
+<clothing>
+	<coreAtributes>
+		<value>150</value>
+		<determiner><![CDATA[a]]></determiner>
+		<name><![CDATA[Mesh-undershirt]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Mesh-undershirts]]></namePlural>
+		<description><![CDATA[A mesh-undershirt that's well suited for the gym or casual wear.]]></description>
+		<physicalResistance>1</physicalResistance>
+		<femininity>ANDROGYNOUS</femininity>
+		<slot>CHEST</slot>
+		<rarity>COMMON</rarity>
+		<clothingSet/>
+		<imageName>chest_mesh_undershirt.svg</imageName>
+		<imageEquippedName/>
+		<enchantmentLimit/>
+		<effects/>
+		<blockedPartsList>
+			<blockedParts>
+				<displacementType>REMOVE_OR_EQUIP</displacementType>
+				<clothingAccessRequired>
+					<clothingAccess>ARMS_UP_TO_SHOULDER</clothingAccess>
+					<clothingAccess>HEAD</clothingAccess>
+				</clothingAccessRequired>
+				<blockedBodyParts/>
+				<clothingAccessBlocked/>
+				<concealedSlots/>
+			</blockedParts>
+			<blockedParts>
+				<displacementType>PULLS_UP</displacementType>
+				<clothingAccessRequired/>
+				<blockedBodyParts/>
+				<clothingAccessBlocked>
+					<clothingAccess>NIPPLE</clothingAccess>
+					<clothingAccess>WAIST</clothingAccess>
+				</clothingAccessBlocked>
+				<concealedSlots/>
+			</blockedParts>
+		</blockedPartsList>
+		<incompatibleSlots/>
+		<primaryColours values="ALL"/>
+		<primaryColoursDye values="ALL"/>		
+		<itemTags>
+			<tag>SOLD_BY_NYAN</tag>
+			<tag>DOMINION_ALLEYWAY_SPAWN</tag>
+		</itemTags>
+	</coreAtributes>
+
+	<displacementText type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[
+			You take off your mesh-undershirt.
+		]]></playerSelf>
+		<playerNPC><![CDATA[
+			You pull off [npc.name]'s mesh-undershirt.
+		]]></playerNPC>
+		<playerNPCRough><![CDATA[
+			You grab hold of [npc.name]'s mesh-undershirt and roughly pull it off over [npc.her] head.
+		]]></playerNPCRough>
+		<NPCSelf><![CDATA[
+			[npc.Name] takes [npc.her] mesh-undershirt off.
+		]]></NPCSelf>
+		<NPCPlayer><![CDATA[
+			[npc.Name] pulls your mesh-undershirt off.
+		]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[
+			[npc.Name] grabs hold of your mesh-undershirt and roughly pulls it off over your head.
+		]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[
+			[npc1.Name] pulls [npc2.name]'s mesh-undershirt off.
+		]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[
+			[npc.Name] grabs hold of [npc2.name]'s mesh-undershirt and roughly pulls it off over [npc2.her] head.
+		]]></NPCOtherNPCRough>
+	</displacementText>
+
+	<replacementText type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[
+			You pull on the mesh-undershirt.
+		]]></playerSelf>
+		<playerNPC><![CDATA[
+			You guide [npc.name]'s [npc.arms] through the mesh-undershirt's sleeves as you pull it on [npc.herHim].
+		]]></playerNPC>
+		<playerNPCRough><![CDATA[
+			You hold [npc.name] still as you roughly force the mesh-undershirt down over [npc.her] head, before pulling it down over [npc.her] torso.
+		]]></playerNPCRough>
+		<NPCSelf><![CDATA[
+			[npc.Name] pulls on the mesh-undershirt.
+		]]></NPCSelf>
+		<NPCPlayer><![CDATA[
+			[npc.Name] guides your [pc.arms] through the mesh-undershirt's sleeves, before pulling it down over your torso.
+		]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[
+			[npc.Name] holds you still as [npc.she] roughly forces the mesh-undershirt down over your head, before pushing your [pc.arms] through the sleeves.
+		]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[
+			[npc1.Name] guides [npc2.name]'s [npc2.arms] through the mesh-undershirt's sleeves before pulling it down over [npc2.her] torso.
+		]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[
+			[npc1.Name] holds [npc2.name] still as [npc1.she] roughly forces the mesh-undershirt down over [npc2.her] head, before pulling it down over [npc2.her] torso.
+		]]></NPCOtherNPCRough>
+	</replacementText>
+
+	<displacementText type="PULLS_UP">
+		<playerSelf><![CDATA[
+			You pull your mesh-undershirt up to just below your chin.
+		]]></playerSelf>
+		<playerNPC><![CDATA[
+			You pull up [npc.name]'s mesh-undershirt.
+		]]></playerNPC>
+		<playerNPCRough><![CDATA[
+			You roughly yank up [npc.name]'s mesh-undershirt.
+		]]></playerNPCRough>
+		<NPCSelf><![CDATA[
+			[npc.Name] pulls [npc.her] mesh-undershirt up to just below [npc.her] chin.
+		]]></NPCSelf>
+		<NPCPlayer><![CDATA[
+			[npc.Name] pulls up your mesh-undershirt.
+		]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[
+			[npc.Name] roughly yanks up your mesh-undershirt.
+		]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[
+			[npc1.Name] pulls up [npc2.name]'s mesh-undershirt.
+		]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[
+			[npc.Name] roughly pulls up [npc2.name]'s mesh-undershirt.
+		]]></NPCOtherNPCRough>
+	</displacementText>
+	
+	<replacementText type="PULLS_DOWN">
+		<playerSelf><![CDATA[
+			You pull your mesh-undershirt back down, covering your torso.
+		]]></playerSelf>
+		<playerNPC><![CDATA[
+			You pull down [npc.name]'s mesh-undershirt.
+		]]></playerNPC>
+		<playerNPCRough><![CDATA[
+			You roughly pull down [npc.name]'s mesh-undershirt.
+		]]></playerNPCRough>
+		<NPCSelf><![CDATA[
+			[npc.Name] pulls [npc.her] mesh-undershirt back down to cover [npc.her] torso.
+		]]></NPCSelf>
+		<NPCPlayer><![CDATA[
+			[npc.Name] pulls down your mesh-undershirt.
+		]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[
+			[npc.Name] roughly pulls down your mesh-undershirt.
+		]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[
+			[npc1.Name] pulls down [npc2.name]'s mesh-undershirt.
+		]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[
+			[npc.Name] roughly pulls down [npc2.name]'s mesh-undershirt.
+		]]></NPCOtherNPCRough>
+	</replacementText>
+	
+</clothing>

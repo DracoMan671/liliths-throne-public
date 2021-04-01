@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<tattoo>
+	<coreAttributes>
+		<value>500</value> 
+		
+		<name><![CDATA[Crest of Cichol]]></name>
+		
+		<description><![CDATA[The Crest of a Nabatean now carried by a proud nobleman and an archbishop's personal aide.]]></description> 
+		
+		<imageName>crest_of_cichol.svg</imageName> 
+		
+		<enchantmentLimit>5</enchantmentLimit>
+		
+		<slotAvailability/>
+		
+		<primaryColours values="ALL"/> 
+		<secondaryColours values="ALL"/> 
+		<tertiaryColours/>
+		
+	</coreAttributes>
+	
+</tattoo>

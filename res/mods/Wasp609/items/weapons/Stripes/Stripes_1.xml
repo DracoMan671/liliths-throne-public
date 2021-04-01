@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<weapon>
+    <coreAttributes>
+        <authorTag/>
+        <value>5000</value>
+        <melee>true</melee>
+        <twoHanded>false</twoHanded>
+        <determiner><![CDATA[a]]></determiner>
+        <name><![CDATA[Stripes 1]]></name>
+        <namePlural pluralByDefault="false"><![CDATA[Stripes]]></namePlural>
+        <description><![CDATA[An angelic blade formed from an angelics maidens stockings.]]></description>
+        <attackDescriptor>swing</attackDescriptor>
+        <attackTooltipDescription>Swing Perdition at [npc2.name].</attackTooltipDescription>
+        <rarity>LEGENDARY</rarity>
+        <weaponSet/>
+        <equipText><![CDATA[[npc.Name] [npc.verb(unsheathe)] Stripes.]]></equipText>
+        <unequipText><![CDATA[[npc.Name] [npc.verb(sheathe)] Stripes.]]></unequipText>
+        <imageName>Stripes_1.svg</imageName>
+        <imageEquippedName>Stripes_1.svg</imageEquippedName>
+        <damage>25</damage>
+        <arcaneCost>0</arcaneCost>
+        <damageVariance>HIGH</damageVariance>
+        <availableDamageTypes>
+            <damageType>PHYSICAL</damageType>
+            <damageType>POISON</damageType>
+            <damageType>FIRE</damageType>
+            <damageType>ICE</damageType>
+        </availableDamageTypes>
+        <spells/>
+        <enchantmentLimit>0</enchantmentLimit>
+        <effects>
+            <effect timer="0" limit="0" potency="MAJOR_DRAIN" itemEffectType="CLOTHING" secondaryModifier="CRITICAL_DAMAGE" primaryModifier="CLOTHING_ATTRIBUTE"/>
+        </effects>
+        <primaryColours values="ALL_WITH_METALS"/>
+        <primaryColoursDye values="ALL_WITH_METALS"/>
+        <secondaryColours values="ALL_WITH_METALS"/>
+        <secondaryColoursDye values="ALL_WITH_METALS"/>
+        <itemTags/>
+    </coreAttributes>
+    <hitDescriptions>
+        <hitText><![CDATA[Swinging out with [npc.her] sword, [npc.name] [npc.verb(manage)] to hit [npc2.name] in the chest!]]></hitText>
+    </hitDescriptions>
+    <missDescriptions>
+        <missText><![CDATA[Swining out with [npc.her] sword, [npc.name] [npc.verb(attempt)] to hit [npc2.name] in the chest, but [npc.verb(end)] up missing [npc2.herHim]!]]></missText>
+    </missDescriptions>
+</weapon>

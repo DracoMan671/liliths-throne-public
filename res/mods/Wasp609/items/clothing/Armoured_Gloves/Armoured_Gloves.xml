@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- For a version with comments, see "rental_mommy.xml". -->
+<clothing>
+	<coreAtributes>
+		<value>3500</value>
+		<determiner><![CDATA[a]]></determiner>
+		<name><![CDATA[Armoured Gloves]]></name>
+		<namePlural pluralByDefault="true"><![CDATA[Armoured Gloves]]></namePlural>
+		<description><![CDATA[A pair of Armoured fingerless gloves.]]></description>
+		<physicalResistance>10</physicalResistance>
+		<femininity>ANDROGYNOUS</femininity>
+		<slot>HAND</slot>
+		<rarity>EPIC</rarity>
+		<clothingSet/>
+		<imageName>Armoured_Gloves.svg</imageName>
+		<imageEquippedName/>
+		<enchantmentLimit/>
+		<effects>
+              <!-- No effect by design.-->
+		</effects>
+		<blockedPartsList>
+			<blockedParts>
+				<displacementType>REMOVE_OR_EQUIP</displacementType>
+				<clothingAccessRequired>
+					<clothingAccess>ARMS_UP_TO_SHOULDER</clothingAccess>
+					<clothingAccess>WRISTS</clothingAccess>
+				</clothingAccessRequired>
+				<blockedBodyParts/>
+				<clothingAccessBlocked/>
+				<concealedSlots/>
+			</blockedParts>
+		</blockedPartsList>
+		<incompatibleSlots/>
+    <primaryColours values="ALL"/>
+    <primaryColoursDye values="ALL"/>
+    <secondaryColours values="ALL"/>
+    <secondaryColoursDye values="ALL"/>
+	<tertiaryColours values="NONE"/>
+	<tertiaryColoursDye values="NONE"/>
+		<itemTags>
+			<tag>SOLD_BY_VICKY</tag>
+		</itemTags>
+	</coreAtributes>
+
+	<displacementText type="REMOVE_OR_EQUIP">
+	
+	</displacementText>
+
+	<replacementText type="REMOVE_OR_EQUIP">
+
+	</replacementText>
+
+</clothing>

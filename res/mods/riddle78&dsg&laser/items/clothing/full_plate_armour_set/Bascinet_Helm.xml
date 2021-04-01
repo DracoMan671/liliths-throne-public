@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<clothing>
+	<coreAtributes>
+		<value>10000</value>
+		<determiner><![CDATA[a]]></determiner>
+		<name><![CDATA[Bascinet Helm]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Bascinet Helmets]]></namePlural>
+		<description><![CDATA[An armoured plate helmet, complete with a mailed coif and padded leather cap beneath. Offers excellent protection against physical blows to the head, and it's been enchanted to accommodate horns.]]></description>
+		<physicalResistance>7</physicalResistance>
+		<femininity>ANDROGYNOUS</femininity>
+		<slot>HEAD</slot>
+		<rarity>RARE</rarity>
+		<clothingSet></clothingSet>
+		<imageName>Bascinet_Helm.svg</imageName>
+		<imageEquippedName></imageEquippedName>
+		<enchantmentLimit>8</enchantmentLimit>
+		<effects />
+		<blockedPartsList>
+			<blockedParts>
+				<displacementType>REMOVE_OR_EQUIP</displacementType>
+				<clothingAccessRequired />
+				<blockedBodyParts>
+					<bodyPart>MOUTH</bodyPart>
+				</blockedBodyParts>
+				<clothingAccessBlocked>
+					<clothingAccess>EYES</clothingAccess>
+					<clothingAccess>MOUTH</clothingAccess>
+				</clothingAccessBlocked>
+				<concealedSlots>
+					<slot>EYES</slot>
+					<slot>HAIR</slot>
+					<slot>MOUTH</slot>
+					<slot>HORNS</slot>
+					<slot>PIERCING_LIP</slot>
+					<slot>PIERCING_TONGUE</slot>
+					<slot>PIERCING_NOSE</slot>
+					<slot>PIERCING_EAR</slot>
+				</concealedSlots>
+			</blockedParts>
+			<blockedParts>
+				<displacementType>PULLS_UP</displacementType>
+				<clothingAccessRequired />
+				<blockedBodyParts />
+				<clothingAccessBlocked />
+				<concealedSlots>
+					<slot>HAIR</slot>
+					<slot>HORNS</slot>
+				</concealedSlots>
+			</blockedParts>
+		</blockedPartsList>
+		<incompatibleSlots>
+			<slot>EYES</slot>
+			<slot>HAIR</slot>
+			<slot>MOUTH</slot>
+			<slot>HORNS</slot>
+		</incompatibleSlots>
+		<primaryColours values="ALL_METAL" />
+		<primaryColoursDye values="ALL_METAL" />
+		<secondaryColours values="ALL" />
+		<secondaryColoursDye values="ALL" />
+		<tertiaryColours values="" />
+		<tertiaryColoursDye values="" />
+		<itemTags>
+			<tag>SOLD_BY_VICKY</tag>
+		</itemTags>
+	</coreAtributes>
+	<displacementText type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[Undoing the clasps, you open up and remove the Bascinet Helm from your head.]]></playerSelf>
+		<playerNPC><![CDATA[Undoing the clasps, you open up and remove the Bascinet Helm from [npc.name]'s head.]]></playerNPC>
+		<playerNPCRough><![CDATA[Quickly undoing the clasps, you wrench the Bascinet Helm from [npc.name]'s head.]]></playerNPCRough>
+		<NPCSelf><![CDATA[[npc.name] undoes the clasps and removes their Bascinet Helm, after opening it.]]></NPCSelf>
+		<NPCPlayer><![CDATA[[npc.name] undoes the clasps of your Bascinet Helm, and removes it, after opening it.]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[Quickly undoing the clasps, [npc.name] wrenches the Bascinet Helm from your head.]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[[npc1.name] undoes the clasps on [npc2.name]'s Bascinet Helm, before opening it and removing it.]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[[npc1.name] undoes the clasps on the Bascinet Helm, before wrenching it from [npc2.name]'s head.]]></NPCOtherNPCRough>
+	</displacementText>
+	<replacementText type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[You slip on the Bascinet Helm, before closing it and securing the clasps.]]></playerSelf>
+		<playerNPC><![CDATA[You slip the Bascinet Helm onto [npc.name]'s head, before closing it and securing the clasps for them.]]></playerNPC>
+		<playerNPCRough><![CDATA[You hastily slam the Bascinet Helm onto [npc.name]'s head,before leaving them to close and secure it themselves.]]></playerNPCRough>
+		<NPCSelf><![CDATA[[npc.name] slips on the Bascinet Helm, before closing it and securing the clasps.]]></NPCSelf>
+		<NPCPlayer><![CDATA[[npc.name] slips the Bascinet Helm onto your head, before closing it and securing the clasps for you.]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[[npc.name] hastily slams the Bascinet Helm onto your head, before leaving you to close it and secure the clasps for yourself.]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[[npc1.name] slips the Bascinet Helm onto [npc2.name]'s head, before closing it and securing the straps for them.]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[[npc1.name] hastily slams the Bascinet Helm onto [npc2.name]'s head, before leaving them to close it and secure the clasps for themselves.]]></NPCOtherNPCRough>
+	</replacementText>
+	<displacementText type="PULLS_UP">
+		<playerSelf><![CDATA[You lift and lock your visor in place.]]></playerSelf>
+		<playerNPC><![CDATA[You lift and lock [npc.name]'s visor in place.]]></playerNPC>
+		<playerNPCRough><![CDATA[You wrench up [npc.name]'s visor, and lock it in place.]]></playerNPCRough>
+		<NPCSelf><![CDATA[[npc.name] lifts and locks their visor in place.]]></NPCSelf>
+		<NPCPlayer><![CDATA[[npc.name] lifts and locks your visor in place.]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[[npc.name] wrenches up your visor, before locking it in place.]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[[npc1.name] opens and locks [npc2.name]'s visor in place.]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[[npc1.name] wrenches open [npc2.name]'s visor, and locks it in place.]]></NPCOtherNPCRough>
+	</displacementText>
+	<replacementText type="PULLS_DOWN">
+		<playerSelf><![CDATA[You drop and lock your visor in place.]]></playerSelf>
+		<playerNPC><![CDATA[You drop and lock [npc.name]'s visor in place.]]></playerNPC>
+		<playerNPCRough><![CDATA[You slam [npc.name]'s visor down, and lock it in place.]]></playerNPCRough>
+		<NPCSelf><![CDATA[[npc.name] drops and locks their visor in place.]]></NPCSelf>
+		<NPCPlayer><![CDATA[[npc.name] drops and locks your visor in place.]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[[npc.name] slams your visor down, before locking it in place.]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[[npc1.name] closes and locks [npc2.name]'s visor in place.]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[[npc1.name] slams [npc2.name]'s visor shut, and locks it in place.]]></NPCOtherNPCRough>
+	</replacementText>
+</clothing>

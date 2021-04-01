@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<clothing>
+	<coreAttributes>
+		<value>18000</value>
+		<determiner><![CDATA[a pair of]]></determiner>
+		<name appendColourName="false"><![CDATA[Sky Dancer's Glove]]></name>
+		<namePlural pluralByDefault="true"><![CDATA[Sky Dancer's Gloves]]></namePlural>
+
+		<description><![CDATA[A pair of gloves made from a heavenly bird's feathers. Parts of Sky Dancer's costume, these gloves are made so that they can fit into many hand types. The heavenly feathers is said to provide some resistances against the elements.]]></description> 
+
+		<physicalResistance>1</physicalResistance>
+		<femininity>FEMININE</femininity>
+
+		<equipSlots>
+			<slot>HAND</slot>
+		</equipSlots>
+		<rarity>EPIC</rarity>
+		<clothingSet>Faiq_skydancer</clothingSet>
+		<imageName>gloves.svg</imageName>
+		<imageEquippedName/>
+		<stickers/>
+		
+		<enchantmentLimit/>
+		<effects>
+              <effect itemEffectType="CLOTHING" limit="0" potency="MAJOR_BOOST" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="RESISTANCE_FIRE" timer="0"/>
+              <effect itemEffectType="CLOTHING" limit="0" potency="MAJOR_BOOST" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="RESISTANCE_ICE" timer="0"/>
+              <effect itemEffectType="CLOTHING" limit="0" potency="MAJOR_BOOST" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="RESISTANCE_POISON" timer="0"/>
+		</effects>
+
+		<blockedPartsList>
+		<blockedParts>
+		<displacementType>REMOVE_OR_EQUIP</displacementType>
+			<clothingAccessRequired>
+				<clothingAccess>WRISTS</clothingAccess>
+				<clothingAccess>FINGERS</clothingAccess>
+			</clothingAccessRequired>
+			<blockedBodyParts/>
+			<clothingAccessBlocked/>
+			<concealedSlots/>
+		</blockedParts>
+		</blockedPartsList>
+		<incompatibleSlots/>
+
+		<primaryColours values="LINGERIE"/>
+		<primaryColoursDye values="ALL"/>
+		<secondaryColours values="JUST_WHITE"/>
+		<secondaryColoursDye values="ALL_WITH_METAL"/>
+		<tertiaryColours values="JUST_ROSE_GOLD"/>
+		<tertiaryColoursDye values="ALL_WITH_METAL"/>
+
+		<itemTags>
+			<tag>SOLD_BY_NYAN</tag>
+			<tag>FITS_ARM_WINGS</tag>
+		</itemTags>
+	</coreAttributes>
+</clothing>

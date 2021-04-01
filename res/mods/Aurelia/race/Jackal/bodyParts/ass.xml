@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ass>
+	<race>Aurelia_Jackal</race>
+	
+	<transformationName><![CDATA[jackal]]></transformationName>
+	
+	<coveringType>Aurelia_Jackal_fur</coveringType>
+	
+	<anusType>Aurelia_Jackal_anus</anusType>
+	
+	<names/>
+	<namesPlural/>
+	
+	<descriptorsMasculine/>
+	<descriptorsFeminine/>
+	
+	<transformationDescription><![CDATA[
+		[npc.She] now [npc.has] a [style.boldJackalGoldenrod(jackal)], [npc.assholeFullDescription].
+	]]></transformationDescription>
+	
+	<bodyDescription><![CDATA[
+		[npc.SheHasFull] a jackal, [npc.anusFullDescription(true)]
+	]]></bodyDescription>
+	
+</ass>

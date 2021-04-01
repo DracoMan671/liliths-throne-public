@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<colour>
+	<metallic>false</metallic>
+	
+	<name><![CDATA[Goldenrod]]></name>
+	
+	<colour>DAA520</colour>
+
+	<lightColour>DAA520</lightColour>
+
+	<coveringIconColour>DAA520</coveringIconColour>
+	
+	<formattingNames>
+		<name><![CDATA[jackalGoldenRod]]></name>
+	</formattingNames>
+	
+	<tags>
+	</tags>
+	
+</colour>

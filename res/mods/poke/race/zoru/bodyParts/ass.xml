@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ass>
+	<race>poke_zoru</race>
+	<transformationName><![CDATA[Zorua-line]]></transformationName>
+	<coveringType>poke_zoru_fur</coveringType>
+	<anusType>poke_zoru_anus</anusType>
+	<names/>
+	<!--
+	<names>
+		<name><![CDATA[ass]]></name>
+		<name><![CDATA[rear end]]></name>
+		<name><![CDATA[butt]]></name>
+		<name><![CDATA[rump]]></name>
+	</names>
+	-->
+	<namesPlural/>
+	<!--
+	<namesPlural>
+		<name><![CDATA[asses]]></name>
+		<name><![CDATA[rear ends]]></name>
+		<name><![CDATA[butts]]></name>
+		<name><![CDATA[rumps]]></name>
+	</namesPlural>
+	-->
+	<descriptorsMasculine/>
+	<descriptorsFeminine/>
+	<!-- 
+	<descriptorsMasculine>
+		<descriptor><![CDATA[hyena-like]]></descriptor>
+	</descriptorsMasculine>
+	-->
+	<transformationDescription><![CDATA[
+		[npc.She] now [npc.has] a Zorua/Zoroark's, [npc.assholeFullDescription].
+	]]></transformationDescription>
+	<bodyDescription><![CDATA[
+		[npc.SheHasFull] a fox-like, [npc.anusFullDescription(true)]
+	]]></bodyDescription>
+	
+</ass>

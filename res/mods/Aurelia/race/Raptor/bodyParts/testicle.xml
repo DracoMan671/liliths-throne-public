@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testicle>
+	<race>Aurelia_Raptor</race>
+	
+	<coveringType>Aurelia_Raptor_scales</coveringType>
+	
+	<fluidType>Aurelia_Raptor_cum</fluidType>
+	
+	<internal>true</internal>
+	
+	<names/>
+	<namesPlural/>
+	
+	<descriptors/>
+	
+</testicle>

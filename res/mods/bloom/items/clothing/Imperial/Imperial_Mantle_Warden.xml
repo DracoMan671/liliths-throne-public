@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<clothing>
+	
+	<coreAtributes>
+		<authorTag><![CDATA[Stamped into either hull of the mantle reads " FORGED BY TROOPS #P01-Y & #B100-M "]]></authorTag>
+		<value>5500</value> 
+		<determiner><![CDATA[an]]></determiner>
+		<name><![CDATA[Imperial Mantle]]></name>
+		<namePlural pluralByDefault="true"><![CDATA[Imperial Mantle]]></namePlural> 
+		<description><![CDATA[A high sitting type of shoulderpad that has attatched plates and plenty of cosmetic flare. Of the two most common versions of the imperial pauldrons, this variant was made for front line defenders. Known as Wardens. An Imperial standard.]]></description> 
+		<physicalResistance>8</physicalResistance> 
+		<femininity>ANDROGYNOUS</femininity> 
+		<slot>TORSO_OVER</slot> 
+		<rarity>EPIC</rarity> 
+		<clothingSet/>
+		<imageName>Imperial_Mantle_Warden.svg</imageName> 
+		<imageEquippedName/> 
+		<enchantmentLimit/>
+		<effects>
+		    <effect limit="0" mod1="CLOTHING_ATTRIBUTE" mod2="RESISTANCE_PHYSICAL" potency="MAJOR_BOOST" timer="1080" type="WEAPON"/>
+            <effect limit="0" mod1="CLOTHING_ATTRIBUTE" mod2="RESISTANCE_PHYSICAL" potency="MAJOR_BOOST" timer="1080" type="WEAPON"/>
+			<effect limit="0" mod1="CLOTHING_ATTRIBUTE" mod2="RESISTANCE_PHYSICAL" potency="MAJOR_BOOST" timer="1080" type="WEAPON"/>
+		</effects> 
+		
+		<blockedPartsList>
+			<blockedParts>
+				<displacementType>REMOVE_OR_EQUIP</displacementType>
+				<clothingAccessRequired/>
+				<blockedBodyParts/>
+				<clothingAccessBlocked>
+					<clothingAccess>ARMS_UP_TO_SHOULDER</clothingAccess>
+				</clothingAccessBlocked>
+				<concealedSlots/>
+			</blockedParts>
+		</blockedPartsList>
+		
+		<incompatibleSlots/>
+		
+	<primaryColours>
+		<colour>CLOTHING_BLUE_NAVY</colour>
+	</primaryColours>
+	<primaryColoursDye values="ALL_WITH_METAL"/>
+	<secondaryColours>
+		<colour>CLOTHING_BLACK</colour>
+	</secondaryColours>
+	<secondaryColoursDye values="ALL_WITH_METAL"/>
+	<tertiaryColours>
+		<colour>CLOTHING_DESATURATED_BROWN</colour>
+	</tertiaryColours>
+	<tertiaryColoursDye values="ALL"/>
+	
+		<itemTags> 
+			<tag>SOLD_BY_VICKY</tag>
+		</itemTags>
+	</coreAtributes>
+	
+	<displacementText type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[
+			You take off your mantle.
+		]]></playerSelf>
+		<playerNPC><![CDATA[
+			You pull off [npc.name]'s mantle.
+		]]></playerNPC>
+		<playerNPCRough><![CDATA[
+			You grab hold of [npc.name]'s mantle and roughly pull them off [npc.her] shoulders.
+		]]></playerNPCRough>
+		<NPCSelf><![CDATA[
+			[npc.Name] takes [npc.her] mantle off.
+		]]></NPCSelf>
+		<NPCPlayer><![CDATA[
+			[npc.Name] pulls your mantle off.
+		]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[
+			[npc.Name] grabs hold of your mantle and roughly pulls them off your shoulders.
+		]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[
+			[npc1.Name] pulls [npc2.name]'s mantle off.
+		]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[
+			[npc.Name] grabs hold of [npc2.name]'s mantle and roughly pulls them off [npc2.her] shoulders.
+		]]></NPCOtherNPCRough>
+	</displacementText>
+
+	<replacementText type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[
+			You put on the mantle.
+		]]></playerSelf>
+		<playerNPC><![CDATA[
+			You put [npc.name]'s mantle on [npc.her] shoulders.
+		]]></playerNPC>
+		<playerNPCRough><![CDATA[
+			You hold [npc.name] still as you roughly force the mantle on [npc.her] shoulders.
+		]]></playerNPCRough>
+		<NPCSelf><![CDATA[
+			[npc.Name] put on the mantle.
+		]]></NPCSelf>
+		<NPCPlayer><![CDATA[
+			[npc.Name] puts your mantle on your shoulders.
+		]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[
+			[npc.Name] holds you still as [npc.she] roughly puts the mantle on your shoulders.
+		]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[
+			[npc1.Name] puts [npc2.name]'s mantle on their shoulders.
+		]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[
+			[npc.Name] grabs hold of [npc2.name]'s mantle and roughly puts them on [npc2.her] shoulders.
+		]]></NPCOtherNPCRough>
+	</replacementText>
+
+</clothing>

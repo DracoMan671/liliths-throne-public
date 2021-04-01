@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<race>
+	<racialBody>Yoruhime_mantis</racialBody>
+	<applyRaceChanges/>
+	<name><![CDATA[mantis-morph]]></name>
+	<namePlural><![CDATA[mantid-morphs]]></namePlural>
+	<nameFeral>
+		<name legConfiguration="QUADRUPEDAL"><![CDATA[mantis]]></name>
+	</nameFeral>
+	<nameFeralPlural>
+		<name legConfiguration="QUADRUPEDAL"><![CDATA[mantids]]></name>
+	</nameFeralPlural>
+	<defaultTransformName><![CDATA[mantis]]></defaultTransformName>
+	<colour>Yoruhime_mantis</colour>
+	<disposition>UNPREDICTABLE</disposition>
+	<racialClass>MAMMAL</racialClass>
+	<feralPartsAvailable>true</feralPartsAvailable>
+	<ableToSelfTransform>false</ableToSelfTransform>
+	<flyingRace>false</flyingRace>
+	<combatBehaviour>ATTACK</combatBehaviour>
+	<chanceForMaleOffspring>0.5</chanceForMaleOffspring>
+	<numberOfOffspringLow>2</numberOfOffspringLow>
+	<numberOfOffspringHigh>4</numberOfOffspringHigh>
+	<defaultFemininePreference>NORMAL</defaultFemininePreference>
+	<defaultMasculinePreference>NORMAL</defaultMasculinePreference>
+	<affectedByFurryPreference>true</affectedByFurryPreference>
+</race>

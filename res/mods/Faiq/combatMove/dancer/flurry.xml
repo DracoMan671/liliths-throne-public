@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<combatMove>
+	<category>SPECIAL</category>
+	
+	<type>TEASE</type>
+	
+	<equipWeighting>7</equipWeighting>
+	
+	<name><![CDATA[Dance of Flurry]]></name>
+	
+	<description><![CDATA[
+		[npc.Name] [npc.verb(perform)] a dance-like movement to showers [npc.her] opponent with magics and blows, dealing formattedDamageInflicted damage plus additional damage based on own spells and arcane damage
+	]]></description>
+	
+	<damageType><![CDATA[
+		HEALTH
+	]]></damageType>
+
+	<baseDamage><![CDATA[
+		[#npc.getUnarmedDamage() * 3]
+	]]></baseDamage>
+	
+	<blockAmount><![CDATA[
+		0
+	]]></blockAmount>
+	
+	<cooldown><![CDATA[
+		2
+	]]></cooldown>
+	
+	<APcost><![CDATA[
+		2
+	]]></APcost>
+	
+	<canTargetEnemies>true</canTargetEnemies>
+	<canTargetAllies>false</canTargetAllies>
+	<canTargetSelf>false</canTargetSelf>
+	
+	<imageName>flurry.svg</imageName>
+	
+	<colourPrimary>BASE_CRIMSON</colourPrimary>
+	<colourSecondary/>
+	<colourTertiary/>
+	
+	<statusEffects/>
+		
+	<availabilityCondition><![CDATA[
+		[#SET_BONUS_Faiq_skydancer.isCharacterWearingCompleteSet(npc)]
+	]]>
+	</availabilityCondition>
+
+	<availabilityDescription><![CDATA[
+		Available to Sky Dancer.
+	]]></availabilityDescription>
+	
+	<weighting><![CDATA[
+		#IF(npc.hasStatusEffect(SE_Faiq_dancer_dancing))
+		3
+		#ELSE
+		1
+		#ENDIF
+	]]></weighting>
+	
+	Special parsing arguments which can be used here are as follows:
+	'turnIndex' will parse to an integer corresponding to the current turn index. (i.e. The position of this move in the performing character's planned moves.)
+	'damageInflicted' will parse to an integer corresponding to the amount of damage that will be inflicted upon the target during the move's execution.
+	'damageType' will parse to this move's DamageType.
+	-->
+	<criticalCondition><![CDATA[
+		[#npc.hasStatusEffect(SE_Faiq_dancer_dancing)]
+	]]></criticalCondition>
+	
+	<criticalDescription><![CDATA[
+		When the user is in dancing state.
+	]]></criticalDescription>
+	
+	<movePredictionDescriptionWithTarget><![CDATA[
+		[npc.verb(perform)] a dance-like movement to shower [npc2.Name] with magics and blows, dealing formattedDamageInflicted damage plus additional [style.boldHealth([#npc.getAttributeValue(ATTRIBUTE_DAMAGE_SPELLS)*2] bonus damage)] 
+	#IF(isCritical)
+		and [style.boldHealth([#npc.getAttributeValue(ATTRIBUTE_MAJOR_ARCANE)*3] bonus damage)]
+	#ENDIF
+	]]></movePredictionDescriptionWithTarget>
+
+	<movePredictionDescriptionNoTarget><![CDATA[
+		[npc.verb(perform)] a dance-like movement to shower [npc.her] opponent with magics and blows, dealing formattedDamageInflicted damage plus [style.boldHealth([#npc.getAttributeValue(ATTRIBUTE_DAMAGE_SPELLS)*2] bonus damage)] 
+	#IF(isCritical)
+		and [style.boldHealth([#npc.getAttributeValue(ATTRIBUTE_MAJOR_ARCANE)*3] bonus damage)]
+	#ENDIF
+	]]></movePredictionDescriptionNoTarget>
+
+	<performMove>	
+		<execute><![CDATA[
+		[npc.Name] [npc.verb(deliver)] storms of blows and magics to [npc2.Name] with a dance-like movement!
+		[npc2.Name] [npc.verb(take)] [style.boldHealth([#npc.getAttributeValue(ATTRIBUTE_DAMAGE_SPELLS)*2] bonus damage)]
+		[#npc2.incrementHealth(npc.getAttributeValue(ATTRIBUTE_DAMAGE_SPELLS)*-2)]
+		]]></execute>
+		<critDescription><![CDATA[
+			[npc.namePos] dances creates more opening to deal extra damages based on own arcane!
+		]]></critDescription>
+		<critEffectDescription><![CDATA[
+			Wisps of arcane energies follow around [npc.namePos] dances and deal extra damages!
+		[npc2.Name] [npc.verb(take)] [style.boldHealth([#npc.getAttributeValue(ATTRIBUTE_MAJOR_ARCANE)*3] bonus damage)]
+		[#npc2.incrementHealth(npc.getAttributeValue(ATTRIBUTE_MAJOR_ARCANE)*-3)]
+		]]></critEffectDescription>
+	</performMove>
+	
+</combatMove>

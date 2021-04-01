@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- For a version without all of the comments, see "rental_daddy.xml". -->
+<clothing>
+	<coreAttributes>
+		<value>100000</value> 
+		
+		<determiner><![CDATA[a]]></determiner>
+		
+		<name><![CDATA[YoRHa Bodysuit]]></name>
+		
+		<namePlural pluralByDefault="false"><![CDATA[YoRHa Bodysuits]]></namePlural> 
+		
+		<description><![CDATA[A Leather and silk replica Bodysuit of an outfit worn by YoRHa Operatives.]]></description> 
+		
+		<physicalResistance>3</physicalResistance> 
+		
+		<femininity>FEMININE</femininity> 
+		
+		<slot>CHEST</slot> 
+		
+		<rarity>RARE</rarity> 
+		
+		<clothingSet/> 
+		
+		<imageName>2BTorso.svg</imageName> 
+		
+		<imageEquippedName/> 
+		
+		<enchantmentLimit/>
+		
+		<effects/>
+		
+		 
+		
+			<blockedPartsList> 
+		
+			<blockedParts>
+				<displacementType>REMOVE_OR_EQUIP</displacementType> 
+				
+				<clothingAccessRequired> 
+					<clothingAccess>CHEST</clothingAccess>
+					<clothingAccess>LEGS_UP_TO_GROIN_LOW_LEVEL</clothingAccess>
+				</clothingAccessRequired>
+				
+				<blockedBodyParts>
+					<bodyPart>BREASTS</bodyPart>
+					<bodyPart>NIPPLES</bodyPart>
+					<bodyPart>STOMACH</bodyPart>
+					<bodyPart>BACK</bodyPart>
+				</blockedBodyParts>
+				
+				<clothingAccessBlocked>
+					<clothingAccess>GROIN</clothingAccess>
+				</clothingAccessBlocked>
+				
+				<concealedSlots>
+					<slot>CHEST</slot>
+					<slot>NIPPLE</slot>
+					<slot>ANUS</slot>
+					<slot>PENIS</slot>
+					<slot>VAGINA</slot>
+					<slot>PIERCING_STOMACH</slot>
+					<slot>PIERCING_NIPPLE</slot>
+					<slot>PIERCING_VAGINA</slot>
+					<slot>PIERCING_PENIS</slot>
+				</concealedSlots>
+			</blockedParts>
+			
+			<blockedParts>
+				<displacementType>PULLS_DOWN</displacementType> 
+				
+				<clothingAccessRequired>CHEST</clothingAccessRequired>
+				
+				<blockedBodyParts>
+					<bodyPart>BREASTS</bodyPart>
+					<bodyPart>NIPPLES</bodyPart>
+				</blockedBodyParts>
+				
+				<clothingAccessBlocked/>
+				
+				<concealedSlots values="CONCEALED_BREASTS"/>
+			</blockedParts>
+			
+			<blockedParts>
+				<displacementType>SHIFTS_ASIDE</displacementType> 
+				<clothingAccessRequired> 
+					<clothingAccess>GROIN</clothingAccess>
+				</clothingAccessRequired>
+				<blockedBodyParts>
+					<bodyPart>ANUS</bodyPart>
+					<bodyPart>PENIS</bodyPart>
+					<bodyPart>VAGINA</bodyPart>
+				</blockedBodyParts>
+				<clothingAccessBlocked/>
+				<concealedSlots values="CONCEALED_GROIN"/>
+			</blockedParts>
+			</blockedPartsList>
+		
+		
+		<incompatibleSlots>
+			<slot>GROIN</slot>
+			<slot>STOMACH</slot>
+		</incompatibleSlots>
+		
+	<primaryColours values="JUST_BLACK"/> 
+		<primaryColoursDye values="ALL"/>
+		<secondaryColours values="JUST_WHITE"/>
+		<secondaryColoursDye values="ALL"/>
+		<tertiaryColours values="JUST_WHITE"/>
+		<tertiaryColoursDye values="ALL"/>
+		
+		<itemTags>
+			<tag>SOLD_BY_NYAN</tag>
+		</itemTags>
+	</coreAttributes>
+
+	<displacementText type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[
+			You take off your Bodysuit.
+		]]></playerSelf>
+		<playerNPC><![CDATA[
+			You pull off [npc.name]'s Bodysuit.
+		]]></playerNPC>
+		<playerNPCRough><![CDATA[
+			You grab hold of [npc.name]'s Bodysuit and roughly pull it off.
+		]]></playerNPCRough>
+		<NPCSelf><![CDATA[
+			[npc.Name] takes [npc.her] Bodysuit off.
+		]]></NPCSelf>
+		<NPCPlayer><![CDATA[
+			[npc.Name] pulls your Bodysuit off.
+		]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[
+			[npc.Name] grabs hold of your Bodysuit and roughly pulls it off.
+		]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[
+			[npc1.Name] pulls [npc2.name]'s Bodysuit off.
+		]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[
+			[npc.Name] grabs hold of [npc2.name]'s Bodysuit and roughly pulls it off.
+		]]></NPCOtherNPCRough>
+	</displacementText>
+
+	<!-- 'replacementText' is used for equipping and replacements. -->
+	<replacementText type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[
+			You pull on the Bodysuit.
+		]]></playerSelf>
+		<playerNPC><![CDATA[
+			You get [npc.name] to wear the Bodysuit.
+		]]></playerNPC>
+		<playerNPCRough><![CDATA[
+			You hold [npc.name] still as you roughly force [npc.herHim] to wear the Bodysuit.
+		]]></playerNPCRough>
+		<NPCSelf><![CDATA[
+			[npc.Name] pulls on the Bodysuit.
+		]]></NPCSelf>
+		<NPCPlayer><![CDATA[
+			[npc.Name] gets you to wear the Bodysuit.
+		]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[
+			[npc.Name] holds you still as [npc.she] roughly forces you to wear the Bodysuit.
+		]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[
+			[npc1.Name] gets [npc2.name] to wear the Bodysuit.
+		]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[
+			[npc1.Name] holds [npc2.name] still as [npc1.she] roughly forces [npc2.herHim] to wear the Bodysuit.
+		]]></NPCOtherNPCRough>
+	</replacementText>
+	
+</clothing>

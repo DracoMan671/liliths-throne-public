@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<fluid>
+	<race>poke_ralts</race>
+	<transformationName><![CDATA[Ralts-line]]></transformationName>
+	<baseFluidType>CUM</baseFluidType>
+	<flavour>CUM</flavour>
+	<namesMasculine>
+		<name><![CDATA[ral'-]]></name>
+		<name><![CDATA[
+			#IF(npc.getSubspecies()==SUBSPECIES_poke_ralts_subspecies_Ralts)
+			Ralts-cum
+			#ELSEIF(npc.getSubspecies()==SUBSPECIES_poke_ralts_subspecies_Kirlia)
+			Kirlia-cum
+			#ELSEIF(npc.getSubspecies()==SUBSPECIES_poke_ralts_subspecies_Gallade)
+			Gallade-cum
+			#ELSEIF(npc.getSubspecies()==SUBSPECIES_poke_ralts_subspecies_Gardevoir)
+			Gardevoir-cum
+			#ELSE
+			ral-cum
+			#ENDIF
+		]]></name>
+	</namesMasculine>
+	<namesFeminine>
+		<name><![CDATA[ral'-]]></name>
+		<name><![CDATA[
+		#IF(npc.getSubspecies()==SUBSPECIES_poke_ralts_subspecies_Ralts)
+		Ralts-cum
+		#ELSEIF(npc.getSubspecies()==SUBSPECIES_poke_ralts_subspecies_Kirlia)
+		Kirlia-cum
+		#ELSEIF(npc.getSubspecies()==SUBSPECIES_poke_ralts_subspecies_Gallade)
+		Gallade-cum
+		#ELSEIF(npc.getSubspecies()==SUBSPECIES_poke_ralts_subspecies_Gardevoir)
+		Gardevoir-cum
+		#ELSE
+		ral-cum
+		#ENDIF
+		]]></name>
+	</namesFeminine>
+	<descriptorsMasculine/>
+	<descriptorsFeminine/>
+	<defaultFluidModifiers>
+		<modifier>MUSKY</modifier>
+		<modifier>STICKY</modifier>
+		<modifier>SLIMY</modifier>
+	</defaultFluidModifiers>
+</fluid>

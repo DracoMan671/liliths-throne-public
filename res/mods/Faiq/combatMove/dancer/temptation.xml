@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<combatMove>
+	<category>SPECIAL</category>
+	
+	<type>TEASE</type>
+	
+	<equipWeighting>7</equipWeighting>
+	
+	<name><![CDATA[Dance of Temptation]]></name>
+	
+	<description><![CDATA[
+		[npc.Name] [npc.verb(perform)] a devilish dance to ensnare [npc.her] opponent
+	]]></description>
+	
+	<damageType><![CDATA[
+		HEALTH
+	]]></damageType>
+
+	<baseDamage><![CDATA[
+		0
+	]]></baseDamage>
+	
+	<blockAmount><![CDATA[
+		0
+	]]></blockAmount>
+	
+	<cooldown><![CDATA[
+		5
+	]]></cooldown>
+	
+	<APcost><![CDATA[
+		2
+	]]></APcost>
+	
+	<canTargetEnemies>true</canTargetEnemies>
+	<canTargetAllies>false</canTargetAllies>
+	<canTargetSelf>false</canTargetSelf>
+	
+	<imageName>temptation.svg</imageName>
+	
+	<colourPrimary>BASE_PINK</colourPrimary>
+	<colourSecondary/>
+	<colourTertiary/>
+	
+	<statusEffects/>
+		
+	<availabilityCondition><![CDATA[
+		[#SET_BONUS_Faiq_skydancer.isCharacterWearingCompleteSet(npc)]
+	]]>
+	</availabilityCondition>
+
+	<availabilityDescription><![CDATA[
+		Available to Sky Dancer.
+	]]></availabilityDescription>
+	
+	<weighting><![CDATA[
+		#IF(npc.hasStatusEffect(SE_Faiq_dancer_dancing))
+		0
+		#ELSE
+		2
+		#ENDIF
+	]]></weighting>
+	
+	Special parsing arguments which can be used here are as follows:
+	'turnIndex' will parse to an integer corresponding to the current turn index. (i.e. The position of this move in the performing character's planned moves.)
+	'damageInflicted' will parse to an integer corresponding to the amount of damage that will be inflicted upon the target during the move's execution.
+	'damageType' will parse to this move's DamageType.
+	-->
+	<criticalCondition><![CDATA[
+		false
+	]]></criticalCondition>
+	
+	<criticalDescription><![CDATA[
+		Cannot critically hit.
+	]]></criticalDescription>
+	
+	<movePredictionDescriptionWithTarget><![CDATA[
+		[npc.verb(perform)] a devilish dance to ensnare [npc2.Name], raising lust depending on corruption and lust resistance
+	]]></movePredictionDescriptionWithTarget>
+
+	<movePredictionDescriptionNoTarget><![CDATA[
+		[npc.verb(perform)] a devilish dance to ensnare [npc.her] opponent, raising lust depending on corruption and lust resistance
+	]]></movePredictionDescriptionNoTarget>
+
+	<performMove>	
+		<execute><![CDATA[
+		#IF(npc.hasStatusEffect(SE_Faiq_dancer_dancing))
+		[npc.Nameisfull] already dancing!
+		#ELSE
+		[npc.Nameisfull] starting to perform a devilish dance!
+		[##npc.addStatusEffect(SE_Faiq_dancer_dancing, 3)]
+		[##npc2.addStatusEffect(SE_Faiq_dancer_temptation, 3)]
+		#ENDIF
+		]]></execute>
+		<critDescription/>
+		<critEffectDescription/>
+	</performMove>
+	
+</combatMove>

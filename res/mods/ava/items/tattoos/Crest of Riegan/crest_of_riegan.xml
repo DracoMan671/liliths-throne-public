@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<tattoo>
+	<coreAttributes>
+		<value>500</value> 
+		
+		<name><![CDATA[Crest of Riegan]]></name>
+		
+		<description><![CDATA[The Crest of a bow knight now carried by a scheming nobleman.]]></description> 
+		
+		<imageName>crest_of_riegan.svg</imageName> 
+		
+		<enchantmentLimit>5</enchantmentLimit>
+		
+		<slotAvailability/>
+		
+		<primaryColours values="ALL"/> 
+		<secondaryColours values="ALL"/>
+		<tertiaryColours/>
+		
+	</coreAttributes>
+	
+</tattoo>

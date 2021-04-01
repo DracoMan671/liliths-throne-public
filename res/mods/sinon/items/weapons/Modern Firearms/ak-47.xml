@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<weapon>
+	<coreAttributes>
+		<value>1000000</value>
+		<melee>false</melee>
+		<twoHanded>true</twoHanded>
+		<determiner><![CDATA[]]></determiner>
+		<name appendDamageName="false"><![CDATA[AK-47]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[AK-47s]]></namePlural>
+		<description><![CDATA[Chambered in 7.62×39mm, the AK-47 is infamous for its legendary reliability and ease of manufacture. Once the main rifle of the Soviet military, most AK-47s now lie in the hands of criminal groups around the world.]]></description>
+		<attackDescriptor>shoot</attackDescriptor>
+		<attackTooltipDescription>Use your AK to fire a single bullet at your target.</attackTooltipDescription>
+		
+		<rarity>LEGENDARY</rarity> 
+		<weaponSet/> 
+		<equipText><![CDATA[[npc.Name] [npc.verb(take)] out [npc.her] AK and [npc.verb(disengage)] the safety, putting it into a state where it's ready to be used in combat.]]></equipText>
+		<unequipText><![CDATA[[npc.Name] [npc.verb(engage)] the safety and [npc.verb(put)] [npc.her] AK away.]]></unequipText>
+		<imageName>ak.svg</imageName>
+		<imageEquippedName>ak_semi.svg</imageEquippedName> 
+		
+		<damage>50</damage>
+		<arcaneCost>3</arcaneCost>
+		<damageVariance>LOW</damageVariance>
+		<availableDamageTypes>
+			<damageType>PHYSICAL</damageType>
+		</availableDamageTypes>
+		<spells/>
+		<combatMoves>
+			<move>MKAR_MAG_DUMP</move>
+		</combatMoves>
+		<enchantmentLimit>0</enchantmentLimit>
+		<effects/>
+		
+		<primaryColours>
+			<colour>CLOTHING_GUNMETAL</colour>
+		</primaryColours> 
+		<primaryColoursDye values="ALL_WITH_METALS"/>
+		<secondaryColours> 
+			<colour>CLOTHING_BROWN</colour>
+		</secondaryColours> 
+		<secondaryColoursDye values="ALL_WITH_METALS"/>
+		
+		<customColours>
+			<customColour c0="#6C5353" c1="#916F6F" c2="#AC9393" c3="#C8B7B7" c4="#E3DBDB">
+				<defaultColours>
+					<colour>CLOTHING_BROWN</colour>
+				</defaultColours> 
+				<extraColours values="ALL_WITH_METALS"/>
+			</customColour>
+			<customColour c0="#abc837" c1="#bcd35f" c2="#cdde87" c3="#dde9af" c4="#eef4d7">
+				<defaultColours>
+					<colour>CLOTHING_GUNMETAL</colour>
+				</defaultColours> 
+				<extraColours values="ALL_WITH_METALS"/>
+			</customColour>
+		</customColours>
+		
+		<itemTags>
+			<tag>CONTRABAND_HEAVY</tag>
+		</itemTags>
+	</coreAttributes>
+
+	<hitDescriptions>
+		<hitText><![CDATA[
+		[npc.Name] [npc.verb(line)] [npc2.name] up in [npc.her] sights and [npc.verb(pull)] the trigger, sending a burst down their way. The rounds hit, wounding [npc2.her] [npc2.arm].
+		]]></hitText>
+		<hitText><![CDATA[
+		[npc.Name] [npc.verb(line)] [npc2.name] up in [npc.her] sights and [npc.verb(pull)] the trigger, sending a burst down their way. The rounds hit, wounding [npc2.her] [npc2.leg].
+		]]></hitText>
+		<hitText><![CDATA[
+		[npc.Name] [npc.verb(line)] [npc2.name] up in [npc.her] sights and [npc.verb(pull)] the trigger, sending a burst down their way. The rounds hit, wounding [npc2.her] [npc2.face].
+		]]></hitText>
+		<hitText><![CDATA[
+		[npc.Name] [npc.verb(line)] [npc2.name] up in [npc.her] sights and [npc.verb(pull)] the trigger, sending a burst down their way. The rounds hit, wounding [npc2.her] [npc2.arm].
+		]]></hitText>
+		<hitText><![CDATA[
+                [npc.Name] [npc.verb(line)] [npc2.name] up in [npc.her] sights and [npc.verb(pull)] the trigger, sending a burst down their way. The rounds hit, wounding [npc2.her] [npc2.leg].
+		]]></hitText>
+		<hitText><![CDATA[
+
+		[npc.Name] [npc.verb(line)] [npc2.name] up in [npc.her] sights and [npc.verb(pull)] the trigger, sending a burst down their way. The rounds hit, wounding [npc2.her] [npc2.face].
+		]]></hitText>
+        </hitDescriptions>
+
+	<missDescriptions>
+		<missText><![CDATA[
+		Taking aim with [npc.her] AK, [npc.name] [npc.verb(pull)] the trigger and fires a burst at [npc2.name], but [npc.verb(end)] up missing [npc2.herHim]!
+		]]></missText>
+	</missDescriptions>
+	
+</weapon>

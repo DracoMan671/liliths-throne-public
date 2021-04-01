@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<clothing>
+    <coreAttributes>
+        <authorTag><![CDATA[Casul]]></authorTag>
+        <value>15</value>
+        <determiner><![CDATA[a]]></determiner>
+        <name><![CDATA[dildo mask]]></name>
+        <namePlural pluralByDefault="false"><![CDATA[dildo masks]]></namePlural>
+        <description><![CDATA[A plain surgical mask, with a [unit.size(20)] dildo attached to the inside.]]></description>
+        <physicalResistance>0</physicalResistance>
+        <femininity>ANDROGYNOUS</femininity>
+        <equipSlots>
+            <slot>MOUTH</slot>
+        </equipSlots>
+        <rarity>COMMON</rarity>
+        <clothingSet/>
+        <imageName>dildomask.svg</imageName>
+        <imageEquippedName slot="MOUTH">dildomask.svg</imageEquippedName>
+        <enchantmentLimit>0</enchantmentLimit>
+        <effects/>
+        <blockedPartsList slot="MOUTH">
+            <blockedParts>
+                <displacementType>REMOVE_OR_EQUIP</displacementType>
+                <clothingAccessRequired>
+                    <clothingAccess>MOUTH</clothingAccess>
+                </clothingAccessRequired>
+                <blockedBodyParts/>
+                <clothingAccessBlocked/>
+                <concealedSlots/>
+            </blockedParts>
+        </blockedPartsList>
+        <incompatibleSlots slot="MOUTH"/>
+        <primaryColours values="ALL"/>
+        <primaryColoursDye values="ALL"/>
+        <secondaryColours values="ALL"/>
+        <secondaryColoursDye values="ALL"/>
+        <tertiaryColours values="NONE"/>
+        <tertiaryColoursDye/>
+        <defaultPatterns patternChance="0" colourNameDerivedFromPattern="false"/>
+        <patternPrimaryColours values="NONE"/>
+        <patternSecondaryColours values="NULL"/>
+        <patternTertiaryColours values="NULL"/>
+        <itemTags>
+            <tag>SOLD_BY_FINCH</tag>
+            <tag>ENABLE_SEX_EQUIP</tag>
+            <tag>TRANSPARENT</tag>
+        </itemTags>
+        <itemTags slot="MOUTH">
+            <tag>MUFFLES_SPEECH</tag>
+        </itemTags>
+    </coreAttributes>
+    <replacementText type="REMOVE_OR_EQUIP" slot="MOUTH">
+        <self><![CDATA[[npc.Name] [npc.verb(slide)] the dildo into [npc.her] [npc.mouth+].]]></self>
+        <other><![CDATA[[npc.Name] [npc.verb(pull)] the dildo into [npc2.namePos] [npc.mouth+].]]></other>
+        <otherRough><![CDATA[[npc.Name] [npc.verb(force)] the dildo into [npc2.namePos] [npc2.mouth+].]]></otherRough>
+    </replacementText>
+    <displacementText type="REMOVE_OR_EQUIP" slot="MOUTH">
+        <self><![CDATA[[npc.Name] [npc.verb(pull)] the dildo out of [npc.her] [npc.mouth+].]]></self>
+        <other><![CDATA[[npc.Name] [npc.verb(pull)] the dildo out of [npc2.namePos] [npc.mouth+].]]></other>
+        <otherRough><![CDATA[[npc.Name] [npc.verb(grab)] [npc2.namePos] dildo and [npc.verb(yank)] it out of [npc2.her] [npc2.mouth+].]]></otherRough>
+    </displacementText>
+</clothing>

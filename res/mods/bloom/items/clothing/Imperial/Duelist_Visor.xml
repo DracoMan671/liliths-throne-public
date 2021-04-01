@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<clothing>
+	<coreAtributes>
+		<authorTag><![CDATA[Stamped into leather of the band reads "HASTILY CONSTRUCTED BY TROOPS #P01-Y & #B100-M "]]></authorTag>
+		<value>5000</value>
+		<determiner><![CDATA[a]]></determiner>
+		<name><![CDATA[Duelist Visor]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Duelist Visor]]></namePlural>
+		<description><![CDATA[
+		A visor made from the same design as the Imperial Goln's. Normally used for duels to conceal identity, 
+		#IF game.isSillyModeEnabled()
+		#THEN You could swear that itll make you look cool. No joke.
+		#ELSE the mask is not often handed out by the Imperial army unless under specific circumstances.
+		#ENDIF
+		]]></description>
+		<physicalResistance>2</physicalResistance>
+		<femininity>ANDROGYNOUS</femininity>
+		<slot>EYES</slot>
+		<rarity>EPIC</rarity>
+		<clothingSet/>
+		<imageName>Duelist_Visor.svg</imageName>
+		<imageEquippedName/>
+		<enchantmentLimit>10</enchantmentLimit>
+		<effects>
+			  <effect itemEffectType="CLOTHING" limit="0" potency="MAJOR_BOOST" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="CRITICAL_CHANCE" timer="0"/>
+              <effect itemEffectType="CLOTHING" limit="0" potency="MAJOR_BOOST" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="CRITICAL_CHANCE" timer="0"/>
+			  <effect itemEffectType="CLOTHING" limit="0" potency="MAJOR_BOOST" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="CRITICAL_CHANCE" timer="0"/>
+              <effect itemEffectType="CLOTHING" limit="0" potency="MAJOR_BOOST" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="CRITICAL_CHANCE" timer="0"/>
+			  <effect itemEffectType="CLOTHING" limit="0" potency="MAJOR_BOOST" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="CRITICAL_CHANCE" timer="0"/>
+              <effect itemEffectType="CLOTHING" limit="0" potency="MAJOR_BOOST" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="CRITICAL_CHANCE" timer="0"/>
+		</effects>
+		<blockedPartsList>
+			<blockedParts>
+				<displacementType>REMOVE_OR_EQUIP</displacementType>
+				<clothingAccessRequired>
+					<clothingAccess>EYES</clothingAccess>
+				</clothingAccessRequired>
+				<blockedBodyParts>
+					<bodyPart>MOUTH</bodyPart>
+				</blockedBodyParts>
+				<clothingAccessBlocked>
+					<clothingAccess>MOUTH</clothingAccess>
+				</clothingAccessBlocked>
+				<concealedSlots>
+					<slot>MOUTH</slot>
+				</concealedSlots>
+			</blockedParts>
+			<blockedParts>
+				<displacementType>SHIFTS_ASIDE</displacementType>
+				<clothingAccessRequired />
+				<blockedBodyParts>
+					<bodyPart>MOUTH</bodyPart>
+				</blockedBodyParts>
+				<clothingAccessBlocked>
+					<clothingAccess>MOUTH</clothingAccess>
+				</clothingAccessBlocked>
+				<concealedSlots>
+					<slot>MOUTH</slot>
+				</concealedSlots>
+			</blockedParts>
+		</blockedPartsList>
+		<incompatibleSlots />
+	<primaryColours>
+		<colour>CLOTHING_BLACK</colour>
+	</primaryColours>
+	<primaryColoursDye values="ALL_WITH_METAL"/>
+	<secondaryColours>
+		<colour>CLOTHING_DESATURATED_BROWN</colour>
+	</secondaryColours>
+	<secondaryColoursDye values="ALL"/>
+
+		<itemTags>
+			<tag>SOLD_BY_VICKY</tag>
+		</itemTags>
+	</coreAtributes>
+	<displacementText type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[You take off your visor.]]></playerSelf>
+		<playerNPC><![CDATA[You pull [npc.name]'s visor off [npc.her] face.]]></playerNPC>
+		<playerNPCRough><![CDATA[You rip [npc.name]'s visor off [npc.her] face.]]></playerNPCRough>
+		<NPCSelf><![CDATA[[npc.Name] pulls [npc.her] visor off.]]></NPCSelf>
+		<NPCPlayer><![CDATA[[npc.Name] pulls your visor off of your face.]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[[npc.name] rips your visor off your face.]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[[npc1.Name] pulls [npc2.name]'s visor off.]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[[npc.Name] rips [npc2.name]'s visor off]]></NPCOtherNPCRough>
+	</displacementText>
+	<replacementText type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[You fit the visor onto your face]]></playerSelf>
+		<playerNPC><![CDATA[You grab [npc.name]'s head as you roughly force the visor over [npc.her]]]></playerNPC>
+		<playerNPCRough><![CDATA[[npc.Name] dons the visor.]]></playerNPCRough>
+		<NPCSelf><![CDATA[[npc.Name] equips the visor]]></NPCSelf>
+		<NPCPlayer><![CDATA[[npc.Name] pulls the visor over your face.]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[[npc.Name] grabs the side of your head as [npc.she] roughly forces the visor over your face.]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[[npc1.Name] puts the visor over [npc2.name]'s face.]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[[npc1.Name] grabs the side of [npc.name]'s head and roughly forces the visor over [npc2.her] face.]]></NPCOtherNPCRough>
+	</replacementText>
+	<displacementText type="SHIFTS_ASIDE">
+		<playerSelf><![CDATA[You shift your visor to the side of your head.]]></playerSelf>
+		<playerNPC><![CDATA[You shift [npc.Name] visor to the side of [npc.her] head.]]></playerNPC>
+		<playerNPCRough><![CDATA[You roughly shift [npc.Name]'s visor to the side of [npc.her] head.]]></playerNPCRough>
+		<NPCSelf><![CDATA[[npc.Name] shifts [npc.her] visor to the side.]]></NPCSelf>
+		<NPCPlayer><![CDATA[[npc.Name] shifts your visor to the side.]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[You roughly shifts [npc.Name]'s visor to the side of [npc.her] head.]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[[npc.Name] replaces [npc2.Name]'s visor to the side of [npc.her] head.]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[[npc.Name] roughly replaces [npc2.Name]'s visor to the side of [npc.her] head.]]></NPCOtherNPCRough>
+	</displacementText>
+	<replacementText type="SHIFTS_ASIDE">
+		<playerSelf><![CDATA[You replace your visor.]]></playerSelf>
+		<playerNPC><![CDATA[You replace [npc.Name]'s visor]]></playerNPC>
+		<playerNPCRough><![CDATA[You roughly replace [npc.Name]'s visor.]]></playerNPCRough>
+		<NPCSelf><![CDATA[[npc.Name] replaces [npc.her] visor.]]></NPCSelf>
+		<NPCPlayer><![CDATA[[npc.Name] replaces your visor.]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[[npc.Name] roughly replaces your visor.]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[[npc.Name] replaces [npc2.Name]'s visor.]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[[npc.Name] roughly replaces [npc2.Name]'s visor.]]></NPCOtherNPCRough>
+	</replacementText>
+</clothing>

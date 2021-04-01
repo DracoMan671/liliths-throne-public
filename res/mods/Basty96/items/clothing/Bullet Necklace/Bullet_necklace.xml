@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+
+<clothing>
+  <coreAtributes>
+    <value>2000</value>
+    <determiner><![CDATA[a]]></determiner>
+    <name><![CDATA[Bullet chain necklace]]></name>
+    <namePlural pluralByDefault="false"><![CDATA[Bullet chain necklaces]]></namePlural>
+    <description><![CDATA[A chain necklace with a bullet replica attached to it.Someone has put a piece of a Crystal in it.
+ ]]></description>
+    
+    <physicalResistance>2</physicalResistance>
+    <femininity>ANDROGYNOUS</femininity> 
+    <slot>NECK</slot> 
+    <rarity>RARE</rarity> 
+    
+    <imageName>Bullet_necklace.svg</imageName>
+
+    <clothingSet/>
+    <imageEquippedName/>
+    <enchantmentLimit>12</enchantmentLimit>
+    
+    <effects>
+      <effect itemEffectType="CLOTHING" limit="0" potency="MINOR_BOOST" primaryModifier="CLOTHING_MAJOR_ATTRIBUTE" secondaryModifier="INTELLIGENCE" timer="18"/>
+     </effects>
+
+    <blockedPartsList>
+      <blockedParts>
+        
+        <displacementType>REMOVE_OR_EQUIP</displacementType> 
+        
+        <clothingAccessRequired/>
+        <blockedBodyParts/>
+        <clothingAccessBlocked/>        
+        <concealedSlots/>
+        
+      </blockedParts>
+    </blockedPartsList>
+
+    <incompatibleSlots/>
+    
+    <primaryColours values="JUST_STEEL"/>
+    <primaryColoursDye values="ALL_METAL"/>
+    <secondaryColours values="JUST_GOLD"/>
+    <secondaryColoursDye values="ALL_METAL"/>
+    <tertiaryColours values="JUST_COPPER"/>
+    <tertiaryColoursDye values="ALL"/>
+    
+    <itemTags>
+      <tag>SOLD_BY_KATE</tag>
+    </itemTags>
+    
+  </coreAtributes>
+
+  <displacementText type="REMOVE_OR_EQUIP">
+    <playerSelf>
+      <![CDATA[You take off your Chain necklace.]]>
+    </playerSelf>
+    <playerNPC>
+      <![CDATA[You take off [npc.Name]'s Chain necklace.]]>
+    </playerNPC>
+    <playerNPCRough>
+      <![CDATA[You yank [npc.name]'s Chain necklace off.]]>
+    </playerNPCRough>
+    <NPCSelf>
+      <![CDATA[[npc.Name] takes off [npc.herHis] Chain necklace.]]>
+    </NPCSelf>
+    <NPCPlayer>
+      <![CDATA[[npc.Name] takes off your Chain necklace.]]>
+    </NPCPlayer>
+    <NPCPlayerRough>
+      <![CDATA[[npc.Name] yanks off your Chain necklace.]]>
+    </NPCPlayerRough>
+    <NPCOtherNPC>
+      <![CDATA[[npc1.Name] takes off [npc2.name]'s Chain necklace.]]>
+    </NPCOtherNPC>
+    <NPCOtherNPCRough>
+      <![CDATA[[npc.Name] yanks off [npc2.name]'s Chain necklace.]]>
+    </NPCOtherNPCRough>
+  </displacementText>
+
+  <replacementText type="REMOVE_OR_EQUIP">
+    <playerSelf>
+      <![CDATA[You clasp the Chain necklace around your neck.]]>
+    </playerSelf>
+    <playerNPC>
+      <![CDATA[You clasp the Chain necklace around [npc.name]'s neck.]]>
+    </playerNPC>
+    <playerNPCRough>
+      <![CDATA[You clasp the Chain necklace around [npc.name]'s neck.]]>
+    </playerNPCRough>
+    <NPCSelf>
+      <![CDATA[[npc.Name] clasps the Chain necklace around [npc.herHis] neck.]]>
+    </NPCSelf>
+    <NPCPlayer>
+      <![CDATA[[npc.Name] clasps the Chain necklace around your neck.]]>
+    </NPCPlayer>
+    <NPCPlayerRough>
+      <![CDATA[[npc.Name] clasps the Chain necklace around your neck.]]>
+    </NPCPlayerRough>
+    <NPCOtherNPC>
+      <![CDATA[[npc1.Name] clasps the Chain necklace around [npc2.Name]'s neck.]]>
+    </NPCOtherNPC>
+    <NPCOtherNPCRough>
+      <![CDATA[[npc1.Name] clasps the Chain necklace around [npc2.Name]'s neck.]]>
+    </NPCOtherNPCRough>
+  </replacementText>
+  
+  
+</clothing>

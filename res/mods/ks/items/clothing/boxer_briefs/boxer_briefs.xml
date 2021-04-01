@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- For a version with comments, see "rental_mommy.xml". -->
+<clothing>
+	<coreAttributes>
+		<value>150</value>
+		<determiner><![CDATA[a]]></determiner>
+		<name><![CDATA[Boxer Briefs]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Boxer Briefs]]></namePlural>
+		<description><![CDATA[A pair of snug fitting men's underwear.]]></description>
+		<physicalResistance>1</physicalResistance>
+		<femininity>MASCULINE</femininity>
+		<slot>GROIN</slot>
+		<rarity>COMMON</rarity>
+		<clothingSet/>
+		<imageName>boxer_briefs.svg</imageName>
+		<imageEquippedName/>
+		<enchantmentLimit/>
+		<effects>
+		</effects>
+		<blockedPartsList>
+			<blockedParts>
+				<displacementType>REMOVE_OR_EQUIP</displacementType>
+				<clothingAccessRequired>
+					<clothingAccess>LEGS_UP_TO_GROIN_LOW_LEVEL</clothingAccess>
+					<clothingAccess>LEGS_UP_TO_GROIN</clothingAccess>
+					<clothingAccess>GROIN</clothingAccess>
+				</clothingAccessRequired>
+				<blockedBodyParts>
+				</blockedBodyParts>
+				<clothingAccessBlocked/>
+				<concealedSlots>
+				</concealedSlots>
+			</blockedParts>
+			<blockedParts>
+				<displacementType>UNBUTTONS</displacementType>
+				<clothingAccessRequired>
+					<clothingAccess>GROIN</clothingAccess>
+				</clothingAccessRequired>
+				<blockedBodyParts>
+					<bodyPart>PENIS</bodyPart>
+				</blockedBodyParts>
+				<clothingAccessBlocked/>
+				<concealedSlots>
+				</concealedSlots>
+			</blockedParts>
+			<blockedParts>
+				<displacementType>SHIFTS_ASIDE</displacementType>
+				<clothingAccessRequired>
+				</clothingAccessRequired>
+				<blockedBodyParts>
+					<bodyPart>ANUS</bodyPart>
+				</blockedBodyParts>
+				<clothingAccessBlocked/>
+				<concealedSlots>
+				</concealedSlots>
+			</blockedParts>
+			<blockedParts>
+				<displacementType>PULLS_DOWN</displacementType>
+				<clothingAccessRequired>
+				</clothingAccessRequired>
+				<blockedBodyParts>
+					<bodyPart>ANUS</bodyPart>
+					<bodyPart>PENIS</bodyPart>
+					<bodyPart>VAGINA</bodyPart>
+				</blockedBodyParts>
+				<clothingAccessBlocked/>
+				<concealedSlots>
+				</concealedSlots>
+			</blockedParts>
+		</blockedPartsList>
+		<incompatibleSlots/>
+		<primaryColours values="ALL"/> 
+		<primaryColoursDye values="ALL"/>
+		<secondaryColours values="JUST_BLACK"/>
+		<secondaryColoursDye values="ALL"/>
+		<tertiaryColours values="JUST_WHITE"/>
+		<tertiaryColoursDye values="ALL"/>
+		<itemTags>
+			<tag>SOLD_BY_NYAN</tag>
+		</itemTags>
+	</coreAttributes>
+
+  <replacementText type="REMOVE_OR_EQUIP">
+    <self>
+      <![CDATA[[npc.Name] [npc.verb(step)] into the boxer briefs, before pulling them up to cover [npc.her] private parts.]]>
+    </self>
+    <other>
+      <![CDATA[[npc.Name] [npc.verb(get)] [npc2.name] to step into the boxer briefs, before pulling them up to cover [npc2.her] private parts.]]>
+    </other>
+    <otherRough>
+      <![CDATA[[npc.Name] [npc.verb(forces)] [npc2.name] to step into the boxer briefs, before roughly yanking them up to cover [npc2.her] private parts.]]>
+    </otherRough>
+  </replacementText>
+
+  <displacementText type="REMOVE_OR_EQUIP">
+    <self>
+      <![CDATA[[npc.Name] [npc.verb(pull)] down [npc.her] boxer briefs, before slipping them off.]]>
+    </self>
+    <other>
+      <![CDATA[[npc.Name] [npc.verb(pull)] down [npc2.namePos] boxer briefs, before slipping them off.]]>
+    </other>
+    <otherRough>
+      <![CDATA[[npc.Name] grab a hold of and roughly [npc.verb(pull)] down [npc2.namePos] boxer briefs, before yanking them off.]]>
+    </otherRough>
+  </displacementText>
+  
+  <replacementText type="UNBUTTONS">
+    <self>
+      <![CDATA[[npc.Name] [npc.verb(pull)] the fly closed on [npc.her] boxer briefs.]]>
+    </self>
+    <other>
+      <![CDATA[[npc.Name] [npc.verb(pull)] the fly closed on [npc2.namePos] boxer briefs.]]>
+    </other>
+    <otherRough>
+      <![CDATA[[npc.Name] grab a hold of [npc2.namePos] boxer briefs before rougly [npc.verb(pulling)] the fly closed.]]>
+    </otherRough>
+  </replacementText>
+
+  <displacementText type="UNBUTTONS">
+    <self>
+      <![CDATA[[npc.Name] [npc.verb(pulls)] open the fly on [npc.her] boxer briefs.]]>
+    </self>
+    <other>
+      <![CDATA[[npc.Name] [npc.verb(pulls)] open the fly on [npc2.namePos] boxer briefs.]]>
+    </other>
+    <otherRough>
+      <![CDATA[[npc.Name] grabs a hold of [npc2.namePos] boxer briefs before rougly [npc.verb(pulling)] open the fly.]]>
+    </otherRough>
+  </displacementText>
+	
+  	<replacementText type="SHIFTS_ASIDE">
+    <self>
+      <![CDATA[[npc.Name] [npc.verb(pull)] up the back of [npc.her] boxer briefs.]]>
+    </self>
+    <other>
+      <![CDATA[[npc.Name] [npc.verb(pull)] up the back of [npc2.namePos] boxer briefs.]]>
+    </other>
+    <otherRough>
+      <![CDATA[[npc.Name] [npc.verb(grab)] the back of [npc2.namePos] boxer briefs, roughly yanking them back up.]]>
+    </otherRough>
+	</replacementText>
+	
+	<displacementText type="SHIFTS_ASIDE">
+    <self>
+      <![CDATA[[npc.Name] [npc.verb(pull)] down the back of [npc.her] boxer briefs. Exposing [npc.her] [npc.assSize] ass to the cold air.]]>
+    </self>
+    <other>
+      <![CDATA[[npc.Name] [npc.verb(pull)] down the back of [npc2.namePos] boxer briefs. Exposing [npc2.her] [npc2.assSize] ass to the cold air.]]>
+    </other>
+    <otherRough>
+      <![CDATA[[npc.Name] [npc.verb(grab)] the back of [npc2.namePos] boxer briefs, roughly yanking them down. Exposing [npc2.her] [npc2.assSize] ass to the cold air.]]>
+    </otherRough>
+	</displacementText>
+	
+	<replacementText type="PULLS_DOWN">
+    <self>
+      <![CDATA[[npc.Name] [npc.verb(pull)] up [npc.her] boxer briefs.]]>
+    </self>
+    <other>
+      <![CDATA[[npc.Name] [npc.verb(pull)] up [npc2.namePos] boxer briefs.]]>
+    </other>
+    <otherRough>
+      <![CDATA[[npc.Name] [npc.verb(grab)] the waistband of [npc2.namePos] boxer briefs, roughly yanking them back up.]]>
+    </otherRough>
+	</replacementText>
+	
+	<displacementText type="PULLS_DOWN">
+    <self>
+      <![CDATA[[npc.Name] [npc.verb(pull)] down [npc.her] boxer briefs.]]>
+    </self>
+    <other>
+      <![CDATA[[npc.Name] [npc.verb(pull)] down [npc2.namePos] boxer briefs.]]>
+    </other>
+    <otherRough>
+      <![CDATA[[npc.Name] [npc.verb(grab)] the waistband of [npc2.namePos] boxer briefs, roughly yanking them down.]]>
+    </otherRough>
+	</displacementText>
+	
+</clothing>

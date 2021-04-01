@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<leg>
+	<race>Yoruhime_butterfly</race>
+	<transformationName><![CDATA[butterfly]]></transformationName>
+	<coveringType>Yoruhime_butterfly_fur</coveringType>
+	<defaultFootStructure>DIGITIGRADE</defaultFootStructure>
+	<footType>HUMANOID</footType>
+	<spinneret>false</spinneret>
+	<tentacleType>NONE</tentacleType>
+	<tentacleCount>0</tentacleCount>
+	<allowedLegConfigurations>
+		<configuration>BIPEDAL</configuration>
+	</allowedLegConfigurations>
+	<name><![CDATA[leg]]></name>
+	<namePlural><![CDATA[legs]]></namePlural>
+	<descriptorsMasculine>
+		<descriptor>masculine</descriptor>
+		<descriptor>butterfly-like</descriptor>
+	</descriptorsMasculine>
+	<descriptorsFeminine>
+		<descriptor>feminine</descriptor>
+		<descriptor>butterfly-like</descriptor>
+	</descriptorsFeminine>
+	<footDescriptorsMasculine>
+		<descriptor>butterfly-like</descriptor>
+	</footDescriptorsMasculine>
+	<footDescriptorsFeminine>
+		<descriptor>butterfly-like</descriptor>
+	</footDescriptorsFeminine>
+	<toeDescriptorsMasculine>
+		<descriptor>butterfly-like</descriptor>
+	</toeDescriptorsMasculine>
+	<toeDescriptorsFeminine>
+		<descriptor>butterfly-like</descriptor>
+	</toeDescriptorsFeminine>
+	<transformationDescription><![CDATA[
+		A layer of butterfly-like fur quickly cover [npc.her] legs as they shift into a new form. As the transformation ends, [npc.she] [npc.verb(see)] that [npc.her] new fur smoothly transitions into the [npc.skin] covering the rest of [npc.her] body at [npc.her] upper-thigh.
+		<br/>[npc.Name] now [npc.has] [style.boldNyto(butterfly-like legs and feet)], which are [npc.materialDescriptor] [npc.legFullDescription].
+	]]></transformationDescription>
+	<bodyDescription><![CDATA[
+		[npc.Her] legs are [npc.materialCompositionDescriptor] [npc.legFullDescription(true)], and [npc.her] feet are formed into butterfly-like feets.
+	]]></bodyDescription>
+</leg>

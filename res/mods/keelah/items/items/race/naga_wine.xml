@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<item>
+	<coreAttributes>
+		<value>500</value> 
+		<determiner><![CDATA[a glass of]]></determiner>
+		<name><![CDATA[Naga Fine Wine]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Naga Fine Wine]]></namePlural>
+		<description><![CDATA[A glass containing a very fine and delicate wine.]]></description> 
+
+		<useDescriptor>drink</useDescriptor>
+
+		<sexUse>true</sexUse>
+		<combatUseAllies>true</combatUseAllies>
+		<combatUseEnemies>false</combatUseEnemies>
+		<consumedOnUse>true</consumedOnUse>
+
+		<rarity>RARE</rarity> 
+
+		<imageName zLayer="0" imageRotation="0" imageSize="100">background_bottom.svg</imageName>
+		<imageName zLayer="1" imageRotation="0" imageSize="70">venom_wine.svg</imageName>
+		<imageName zLayer="2" imageRotation="0" imageSize="100">background_top.svg</imageName>
+
+		<colourPrimary>BASE_CRIMSON</colourPrimary>
+		<colourSecondary/>
+		<colourTertiary/>
+
+		<potionDescriptor><![CDATA[naga]]></potionDescriptor>
+		<associatedRace>keelah_naga</associatedRace>
+		<enchantmentItemTypeId>POTION</enchantmentItemTypeId>
+		<enchantmentEffectId>ATTRIBUTE_SEXUAL</enchantmentEffectId>
+
+		<effectTooltipLines>
+			<line><![CDATA[[style.boldGood(Increases)] [style.boldHealth([#ATTRIBUTE_AROUSAL.getName()])] by 25%]]></line>
+			<line><![CDATA[[style.boldGood(Increases)] [style.boldHealth([#ATTRIBUTE_LUST.getName()])] by 25%]]></line>
+		</effectTooltipLines>
+
+		<applyEffects><![CDATA[
+			[##npc.incrementArousal(25)]
+			[##npc.incrementLust(25, false)]
+			<p style='margin-bottom:0; padding-bottom:0;'>
+				[npc.Name] [npc.verb(feel)] a wave of heat invading [npc.her] body...
+			</p>
+		]]></applyEffects>
+
+		<itemTags>
+			<tag>RACIAL_TF_ITEM</tag>
+			<tag>SOLD_BY_RALPH</tag>
+		</itemTags>
+	</coreAttributes>
+
+	<useDescriptions>
+		<selfUse><![CDATA[
+		[npc.Name] [npc.verb(take)] the glass and [npc.verb(admire)] the fine red wine inside. [npc.She] then [npc.verb(smell)] the wine's sweet aroma before [npc.verb(sipping)] the content. [npc.Name] can feel the taste of alcohol in [npc.her] mouth and down [npc.her] throat.
+		]]></selfUse>
+		<otherUse><![CDATA[
+		[npc.Name] [npc.verb(take)] the glass [npc.verb(hold)] it out to [npc2.name], allowing [npc2.herHim] to see the fine red wine inside. [npc2.she] then [npc2.verb(smell)]the wine's sweet aroma before [npc2.verb(sipping)] the content. [npc2.Name] can feel the taste of alcohol in [npc.her] mouth and down [npc.her] throat.
+		]]></otherUse>
+	</useDescriptions>
+</item>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- For a version with comments, see "rental_mommy.xml". -->
+<clothing>
+	<coreAttributes>
+		<value>50</value>
+		<determiner><![CDATA[a roll of]]></determiner>
+		<name><![CDATA[Flex Tape - Penis]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Rolls of Flex Tape - Penis]]></namePlural>
+		<description><![CDATA[FLEX TAPE is a super strong, rubberized, waterproof tape that can patch, bond, seal and repair virtually anything, even your virginity! It is specially formulated with a thick, flexible, rubberized backing that conforms to any shape or object. This durable adhesive tape instantly seals out water, air and cum to create a super strong, flexible, watertight barrier.]]></description>
+		<physicalResistance>1</physicalResistance>
+		<femininity>ANDROGYNOUS</femininity>
+		<slot>PENIS</slot>
+		<rarity>EPIC</rarity>
+		<clothingSet/>
+		<imageName>FlexRollP.svg</imageName>
+		<imageEquippedName>FlexTapeP.svg</imageEquippedName>
+		<enchantmentLimit>4</enchantmentLimit>
+		<effects>
+              <effect itemEffectType="CLOTHING" limit="0" potency="MAJOR_DRAIN" primaryModifier="CLOTHING_SEALING" secondaryModifier="ARCANE_BOOST" timer="0"/>
+              <effect itemEffectType="CLOTHING" limit="0" potency="MINOR_DRAIN" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="VIRILITY" timer="0"/>     
+		</effects>
+		<blockedPartsList>
+			<blockedParts>
+				<displacementType>REMOVE_OR_EQUIP</displacementType>
+				<clothingAccessRequired>
+					<clothingAccess>GROIN</clothingAccess>								
+				</clothingAccessRequired>
+				<blockedBodyParts>
+					<bodyPart>PENIS</bodyPart>
+				</blockedBodyParts>
+				<clothingAccessBlocked/>
+				<concealedSlots/>
+			</blockedParts>
+			
+		</blockedPartsList>
+		<incompatibleSlots/>
+		<primaryColours values="JUST_BLACK"/>
+		<primaryColoursDye values="JUST_BLACK"/>
+		<secondaryColours values="JUST_BLACK"/>
+		<secondaryColoursDye values="JUST_BLACK"/>
+		<tertiaryColours values="JUST_BLACK"/>
+		<tertiaryColoursDye values="JUST_BLACK"/>
+		<itemTags>
+			<tag>SOLD_BY_RALPH</tag>
+			<tag>TRANSPARENT</tag>
+			<tag>ENABLE_SEX_EQUIP</tag>		
+			<tag>REQUIRES_PENIS</tag>
+			<tag>PREVENTS_ERECTION_PHYSICAL</tag>
+			<tag>DISCARDED_WHEN_UNEQUIPPED</tag>
+		</itemTags>
+	</coreAttributes>
+
+	<displacementText type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[
+			You very, very, VERY slowly peel the tape off your [pc.cock+] and throw it away.
+		]]></playerSelf>
+		<playerNPC><![CDATA[
+			You very, very slowly peel the tape off [npc.name]'s [npc.cock+] and throw it away.
+		]]></playerNPC>
+		<playerNPCRough><![CDATA[
+			You pinch a corner of the tape, giving it a few frustrated tugs, before using your magic tear the tape on either side of [npc.name]'s [npc.cock+]. [npc.Name] can remove the rest [npc.herHim]self later. Not your problem.
+		]]></playerNPCRough>
+		<NPCSelf><![CDATA[
+			[npc.Name] very, very, VERY slowly peels the tape off [npc.her] [npc.cock+] and throws it away. It takes a lot of effort.
+		]]></NPCSelf>
+		<NPCPlayer><![CDATA[
+			[npc.Name] very, very slowly peels the tape off your [pc.cock+] and throws it away. It takes a lot of effort.
+		]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[
+			[npc.Name] pinches a corner of the tape, giving it a few frustrated tugs, before managing to tear it off, leaving your [pc.cock+] banded up and sore. That's a lotta damage!
+		]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[
+			[npc1.Name] very, very slowly peels the tape off [npc2.name]'s [npc2.cock+] and throws is away. It takes a lot of effort.
+		]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[
+			[npc.Name] pinches a corner of the tape, giving it a few frustrated tugs, before managing to tear it off, leaving [npc2.name]'s [pc.cock+] banded and sore. That's a lotta damage!
+		]]></NPCOtherNPCRough>
+	</displacementText>
+
+	<replacementText type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[#IF (!pc.isPenisVirgin())
+		#THEN   
+			#IF (pc.setPenisVirgin(1)!=null)
+			#THEN
+				You lift your [pc.cock+] up with one hand, and tape it down to your belly with two strips of Flex Tape. You then pap some squares on your balls for decoration.
+			#ELSE
+				You lift your [pc.cock+] up with one hand, and tape it down to your belly with two strips of Flex Tape. You then pap some squares on your balls for decoration.
+			#ENDIF
+		#ELSE
+			You lift your [pc.cock+] up with one hand, and tape it down to your belly with two strips of Flex Tape. You then pap some squares on your balls for decoration.
+		#ENDIF
+		]]></playerSelf>
+		<playerNPC><![CDATA[#IF (!npc.isPenisVirgin())
+		#THEN   
+			#IF (npc.setPenisVirgin(1)!=null)
+			#THEN
+				You lift [npc.name]'s [npc.cock+] up with one hand, and tape it down to [npc.herHis] belly with two strips of Flex Tape. You then pap some squares on [nps.herHis] balls for decoration.
+			#ELSE
+				You lift [npc.name]'s [npc.cock+] up with one hand, and tape it down to [npc.herHis] belly with two strips of Flex Tape. You then pap some squares on [nps.herHis] balls for decoration.
+			#ENDIF
+		#ELSE
+			You lift [npc.name]'s [npc.cock+] up with one hand, and tape it down to [npc.herHis] belly with two strips of Flex Tape. You then pap some squares on [nps.herHis] balls for decoration.
+		#ENDIF
+		]]></playerNPC>
+		<playerNPCRough><![CDATA[#IF (!npc.isPenisVirgin())
+		#THEN   
+			#IF (npc.setPenisVirgin(1)!=null)
+			#THEN
+				You mash the Flex Tape down on [npc.name]'s [npc.cock+], taping it down to [npc.herHis] belly.
+			#ELSE
+				You mash the Flex Tape down on [npc.name]'s [npc.cock+], taping it down to [npc.herHis] belly.
+			#ENDIF
+		#ELSE
+			You mash the Flex Tape down on [npc.name]'s [npc.cock+], taping it down to [npc.herHis] belly.
+		#ENDIF
+		]]></playerNPCRough>
+		<NPCSelf><![CDATA[#IF (!npc.isPenisVirgin())
+		#THEN   
+			#IF (npc.setPenisVirgin(1)!=null)
+			#THEN
+				[npc.Name] lifts [npc.herHis] [npc.cock+] up with one hand, and tapes it down to [npc.herHis] belly with two strips of Flex Tape. [npc.She] then paps some squares on [nps.herHis] balls for decoration.
+			#ELSE
+				[npc.Name] lifts [npc.herHis] [npc.cock+] up with one hand, and tapes it down to [npc.herHis] belly with two strips of Flex Tape. [npc.She] then paps some squares on [nps.herHis] balls for decoration.
+			#ENDIF
+		#ELSE
+			[npc.Name] lifts [npc.herHis] [npc.cock+] up with one hand, and tapes it down to [npc.herHis] belly with two strips of Flex Tape. [npc.She] then paps some squares on [nps.herHis] balls for decoration.
+		#ENDIF
+		]]></NPCSelf>
+		<NPCPlayer><![CDATA[#IF (!pc.isPenisVirgin())
+		#THEN   
+			#IF (pc.setPenisVirgin(1)!=null)
+			#THEN
+				[npc.Name] lifts your [pc.cock+] up with one hand, and tapes it down to your belly with two strips of Flex Tape. [npc.She] then paps some squares on your balls for decoration.
+			#ELSE
+				[npc.Name] lifts your [pc.cock+] up with one hand, and tapes it down to your belly with two strips of Flex Tape. [npc.She] then paps some squares on your balls for decoration.
+			#ENDIF
+		#ELSE
+			[npc.Name] lifts your [pc.cock+] up with one hand, and tapes it down to your belly with two strips of Flex Tape. [npc.She] then paps some squares on your balls for decoration.
+		#ENDIF
+		]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[#IF (!pc.isPenisVirgin())
+		#THEN   
+			#IF (pc.setPenisVirgin(1)!=null)
+			#THEN
+				[npc.Name] mashes the Flex Tape down on your [pc.cock+], taping it down to your belly.
+			#ELSE
+				[npc.Name] mashes the Flex Tape down on your [pc.cock+], taping it down to your belly.
+			#ENDIF
+		#ELSE
+			[npc.Name] mashes the Flex Tape down on your [pc.cock+], taping it down to your belly.
+		#ENDIF
+		]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[#IF (!npc2.isPenisVirgin())
+		#THEN   
+			#IF (npc2.setPenisVirgin(1)!=null)
+			#THEN
+				[npc1.Name] lifts [npc2.name]'s [npc2.cock+] up with one hand, and tapes it down to [npc2.herHis] belly with two strips of Flex Tape. [npc1.She] then paps some squares on [npc2.herHis] balls for decoration.
+			#ELSE
+				[npc1.Name] lifts [npc2.name]'s [npc2.cock+] up with one hand, and tapes it down to [npc2.herHis] belly with two strips of Flex Tape. [npc1.She] then paps some squares on [npc2.herHis] balls for decoration.
+			#ENDIF
+		#ELSE
+			[npc1.Name] lifts [npc2.name]'s [npc2.cock+] up with one hand, and tapes it down to [npc2.herHis] belly with two strips of Flex Tape. [npc1.She] then paps some squares on [npc2.herHis] balls for decoration.
+		#ENDIF
+		]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[#IF (!npc2.isPenisVirgin())
+		#THEN   
+			#IF (npc2.setPenisVirgin(1)!=null)
+			#THEN
+				[npc1.Name] mashes the Flex Tape down on [npc2.name]'s [npc.cock+], taping it down to [npc.herHis] belly.
+			#ELSE
+				[npc1.Name] mashes the Flex Tape down on [npc2.name]'s [npc.cock+], taping it down to [npc.herHis] belly.
+			#ENDIF
+		#ELSE
+			[npc1.Name] mashes the Flex Tape down on [npc2.name]'s [npc.cock+], taping it down to [npc.herHis] belly.
+		#ENDIF
+		]]></NPCOtherNPCRough>
+	</replacementText>
+
+	
+</clothing>

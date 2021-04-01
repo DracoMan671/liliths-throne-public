@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+This mod was made by coping and hacking (editing) files in the game. 
+Thanks Innoxia for the great game.
+
+I made this mod because someone asked for it.
+If you can draw better than me please redo the mod or send me a better svg file.
+By Wizard^^ -->
+<clothing>
+	<coreAttributes>
+		<value>280</value>
+		<determiner><![CDATA[a pair of]]></determiner>
+		<name><![CDATA[leather pants]]></name>
+		<namePlural pluralByDefault="true"><![CDATA[leather pants]]></namePlural>
+		<description><![CDATA[A pair of skin tight leather pants which show of the shape of the wearer's lower abdomen.]]></description>
+		<physicalResistance>0</physicalResistance>
+		<femininity>FEMININE</femininity>
+		<slot>LEG</slot> 
+		<rarity>COMMON</rarity>
+		<clothingSet/> 
+		<imageName>tight_leather_pants.svg</imageName>
+		<imageEquippedName/>
+		<enchantmentLimit/>
+		<effects/>		
+		<blockedPartsList>
+			<blockedParts>
+				<displacementType>REMOVE_OR_EQUIP</displacementType> 
+				<clothingAccessRequired> 
+					<clothingAccess>FEET</clothingAccess>
+					<clothingAccess>CALVES</clothingAccess>
+					<clothingAccess>LEGS_UP_TO_GROIN</clothingAccess>
+				</clothingAccessRequired>
+				<blockedBodyParts>
+					<bodyPart>FEET</bodyPart>
+				</blockedBodyParts>
+				<clothingAccessBlocked>
+					<clothingAccess>LEGS_UP_TO_GROIN_LOW_LEVEL</clothingAccess>
+				</clothingAccessBlocked>
+				<concealedSlots/>
+			</blockedParts>
+			<blockedParts>
+				<displacementType>PULLS_DOWN</displacementType> 
+				<clothingAccessRequired> 
+					<clothingAccess>GROIN</clothingAccess>
+				</clothingAccessRequired>
+				<blockedBodyParts>
+					<bodyPart>ANUS</bodyPart>
+					<bodyPart>PENIS</bodyPart>
+					<bodyPart>VAGINA</bodyPart>
+				</blockedBodyParts>
+				<clothingAccessBlocked>
+					<clothingAccess>GROIN</clothingAccess>
+					<clothingAccess>ANUS</clothingAccess>
+				</clothingAccessBlocked>
+				<concealedSlots/>
+			</blockedParts>
+			<blockedParts>
+				<displacementType>UNZIPS</displacementType>				
+				<clothingAccessRequired/>				
+				<blockedBodyParts>
+					<bodyPart>PENIS</bodyPart>
+				</blockedBodyParts>				
+				<clothingAccessBlocked>
+					<clothingAccess>GROIN</clothingAccess>
+				</clothingAccessBlocked>				
+				<concealedSlots values="CONCEALED_UNZIPS_GROIN"/>
+			</blockedParts>
+		</blockedPartsList>
+		<incompatibleSlots/> 		
+		<primaryColours values="JUST_BLACK"/>
+		<primaryColoursDye values="ALL"/>
+		<secondaryColours values="JUST_STEEL"/>
+		<secondaryColoursDye values="ALL_METAL"/>
+		<tertiaryColours/>
+		<tertiaryColoursDye/>
+		<itemTags> 
+			<tag>SOLD_BY_NYAN</tag>
+		</itemTags>
+	</coreAttributes>
+  <replacementText type="REMOVE_OR_EQUIP">
+    <self>
+      <![CDATA[[npc.Name] [npc.verb(step)] into the leather pants, before pulling them up and fastening the button at [npc.her] waist.]]>
+    </self>
+    <other>
+      <![CDATA[[npc.Name] [npc.verb(get)] [npc2.name] to step into the leather pants, before pulling them up and fastening the button at [npc2.her] waist.]]>
+    </other>
+    <otherRough>
+      <![CDATA[[npc.Name] [npc.verb(force)] [npc2.name] to step into the leather pants, before yanking them up and fastening the button at [npc2.her] waist.]]>
+    </otherRough>
+  </replacementText>
+  <displacementText type="REMOVE_OR_EQUIP">
+    <self>
+      <![CDATA[[npc.Name] [npc.verb(unfasten)] the button on [npc.her] leather pants, before slipping them off.]]>
+    </self>
+    <other>
+      <![CDATA[[npc.Name] [npc.verb(unfasten)] the button on [npc2.namePos] leather pants, before slipping them off.]]>
+    </other>
+    <otherRough>
+      <![CDATA[[npc.Name] [npc.verb(unfasten)] the button on [npc2.namePos] leather pants, before yanking them off.]]>
+    </otherRough>
+  </displacementText>  
+   <replacementText type="PULLS_DOWN">
+    <self>
+      <![CDATA[[npc.Name] [npc.verb(pull)] the top of [npc.her] leather pants back up to sit around [npc.her] waist.]]>
+    </self>
+    <other>
+      <![CDATA[[npc.Name] [npc.verb(pull)] the top of [npc2.namePos] leather pants back up to sit around [npc2.her] waist.]]>
+    </other>
+    <otherRough>
+      <![CDATA[[npc.Name] roughly [npc.verb(pull)] the top of [npc2.namePos] leather pants back up to sit around [npc2.her] waist.]]>
+    </otherRough>
+  </replacementText>
+  <displacementText type="PULLS_DOWN">
+    <self>
+      <![CDATA[[npc.Name] [npc.verb(pull)] down the top of [npc.her] leather pants.]]>
+    </self>
+    <other>
+      <![CDATA[[npc.Name] [npc.verb(pull)] down the top of [npc2.namePos] leather pants.]]>
+    </other>
+    <otherRough>
+      <![CDATA[[npc.Name] roughly [npc.verb(pull)] down the top of [npc2.namePos] leather pants.]]>
+    </otherRough>
+  </displacementText>	
+</clothing>

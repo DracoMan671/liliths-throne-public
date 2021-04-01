@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<weapon>
+	<coreAttributes>
+	
+		<value>25000</value> 
+		
+		<melee>false</melee>
+		
+		<twoHanded>false</twoHanded>
+		
+		<determiner><![CDATA[]]></determiner>
+		
+		<name><![CDATA[Gun Drone]]></name>
+		
+		<namePlural pluralByDefault="true"><![CDATA[Gun Drones]]></namePlural>
+		
+		<description><![CDATA[Oh, so you thought it was just a floating disk? WRONG! This gun drone is powered by your own arcane aura and will fight on your behalf.  Obviously, this is in the wrong game. But we're not sorry..]]></description> 
+		
+		<attackDescriptor>Fire</attackDescriptor>
+		
+		<attackTooltipDescription><![CDATA[fire at [npc2.name] with the gun drone.]]></attackTooltipDescription>
+		
+		<rarity>RARE</rarity> 
+		
+		<weaponSet/> 
+		
+		<equipText><![CDATA[[npc.Name] motion for the drone to follow, It [npc.verb(position)] itself by [npc.her] shoulder, awaiting it's next command.]]></equipText>
+		
+		<unequipText><![CDATA[[npc.Name] command [npc.her] drone to stop following and enter power save mode, before putting it away.]]></unequipText>
+		
+		<imageName>TauGunDrone.svg</imageName> 
+		
+		<imageEquippedName>TauGunDrone.svg</imageEquippedName> 
+		
+		<physicalResistance>0</physicalResistance>
+		<damage>30</damage> 
+		
+		<arcaneCost>1</arcaneCost> 
+		
+		<damageVariance>LOW</damageVariance> 
+		
+		<availableDamageTypes>
+			<damageType>PHYSICAL</damageType>
+			<damageType>FIRE</damageType>
+			<damageType>ICE</damageType>
+			<damageType>POISON</damageType>
+		</availableDamageTypes>
+		
+		<spells/>
+		
+		<enchantmentLimit>5</enchantmentLimit>
+		
+		<effects> 
+              <effect itemEffectType="CLOTHING" limit="0" potency="MAJOR_BOOST" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="DAMAGE_WEAPON" timer="0"/>
+              <effect itemEffectType="CLOTHING" limit="0" potency="MAJOR_BOOST" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="CRITICAL_DAMAGE" timer="0"/>
+		</effects>
+		
+		<primaryColours values="ALL"/> 
+		<primaryColoursDye values="ALL_WITH_METALS"/>
+		<secondaryColours values = "ALL"/> 
+		<secondaryColoursDye values="ALL_WITH_METALS"/>
+		
+		<itemTags> 
+			<tag>SOLD_BY_VICKY</tag>
+		</itemTags>
+		
+	</coreAttributes>
+	
+	<hitDescriptions>
+		<hitText><![CDATA[
+		[npc.namePos] drone [npc.verb(line)] up [npc2.name] in [npc.namePos] sights and [npc.verb(fires)]. A spray of ethereal rounds strikes [npc2.name], causing [npc2.her] to lose energy.
+		]]></hitText>
+	</hitDescriptions>
+
+	<!-- Descriptions that are used when missing an enemy. One of the missText values will be randomly selected each time the attacker misses their target. Follow the same guidelines as equipText. -->
+	<missDescriptions>
+		<missText><![CDATA[
+		[npc.namePos]] drone [npc.verb(line)] up [npc2.name] in [npc.namePos] sights and [npc.verb(pull)]. The spray of shots goes wide! hitting the ground uselessly.
+		]]></missText>
+	</missDescriptions>
+	
+</weapon>

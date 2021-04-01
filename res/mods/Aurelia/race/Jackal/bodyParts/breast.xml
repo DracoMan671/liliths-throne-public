@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<breast>
+	<race>Aurelia_Jackal</race>
+	
+	<transformationName><![CDATA[jackal]]></transformationName>
+	
+	<coveringType>Aurelia_Jackal_fur</coveringType>
+	
+	<nippleType>Aurelia_Jackal_nipple</nippleType>
+	
+	<fluidType>Aurelia_Jackal_milk</fluidType>
+	
+	<names/>
+	
+	<namesPlural/>
+	
+	<descriptors/>
+	
+	
+	<namesFlat/>
+	
+	<namesPluralFlat/>
+	
+	<descriptorsFlat/>
+	
+	
+	<transformationDescription><![CDATA[
+		[npc.She] now [npc.has] [style.boldJackalGoldenrod(jackal)], [npc.nipplesFullDescription], and when lactating, [npc.she] will produce [style.boldJackalGoldenrod(jackal milk)].
+	]]></transformationDescription>
+	
+	<bodyDescription><![CDATA[
+		On each of [npc.her] [npc.breastSize] [npc.breasts], [npc.she] [npc.has] [npc.nipplesPerBreast] jackal, [npc.nipplesFullDescription].
+	]]></bodyDescription>
+	
+	
+	<crotchBoobsTransformationDescription><![CDATA[
+		[npc.She] now [npc.has] [style.boldJackalGoldenrod(jackal)], [npc.crotchNipplesFullDescription], and when lactating, [npc.she] will produce [style.boldJackalGoldenrod(jackal milk)].
+	]]></crotchBoobsTransformationDescription>
+	
+	<crotchBoobsBodyDescription><![CDATA[
+		On each of [npc.her] [npc.crotchBoobSize] [npc.crotchBoobs], [npc.she] [npc.has] [npc.crotchNipplesPerBreast] jackal, [npc.crotchNipplesFullDescription].
+	]]></crotchBoobsBodyDescription>
+	
+</breast>

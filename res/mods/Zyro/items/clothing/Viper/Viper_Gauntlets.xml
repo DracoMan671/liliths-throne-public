@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<clothing>
+    <coreAttributes>
+        <authorTag><![CDATA[A small sticker informs you that this was made by a 'Zyro'.]]></authorTag>
+        <value>2500</value>
+        <determiner><![CDATA[a pair of]]></determiner>
+        <name><![CDATA[Viper Gauntlet]]></name>
+        <namePlural pluralByDefault="true"><![CDATA[Viper Gauntlets]]></namePlural>
+        <description><![CDATA[The Viper Gauntlets are composed of extraterrestrial materials designed to be worn by snake women from another world.]]></description>
+        <physicalResistance>3</physicalResistance>
+        <femininity>FEMININE</femininity>
+        <equipSlots>
+            <slot>HAND</slot>
+        </equipSlots>
+        <rarity>UNCOMMON</rarity>
+        <clothingSet/>
+        <imageName>Viper_Gauntlets.svg</imageName>
+        <imageEquippedName slot="HAND">Viper_Gauntlets.svg</imageEquippedName>
+        <enchantmentLimit>100</enchantmentLimit>
+        <effects/>
+        <blockedPartsList slot="HAND">
+            <blockedParts>
+                <displacementType>REMOVE_OR_EQUIP</displacementType>
+                <clothingAccessRequired/>
+                <blockedBodyParts/>
+                <clothingAccessBlocked/>
+                <concealedSlots/>
+            </blockedParts>
+        </blockedPartsList>
+        <incompatibleSlots slot="HAND"/>
+    <primaryColours>
+      <colour>CLOTHING_BLACK</colour>
+    </primaryColours>
+    <primaryColoursDye values="ALL" />
+    <secondaryColours>
+      <colour>CLOTHING_GREY</colour>
+    </secondaryColours>
+    <secondaryColoursDye values="ALL" />
+    <tertiaryColours />
+    <tertiaryColoursDye />
+        <defaultPatterns colourNameDerivedFromPattern="true" patternChance="0"/>
+        <patternPrimaryColours values="NONE"/>
+        <patternSecondaryColours values="NONE"/>
+        <patternTertiaryColours values="NONE"/>
+        <itemTags/>
+        <itemTags slot="HAND">
+            <tag>SOLD_BY_NYAN</tag>
+        </itemTags>
+    </coreAttributes>
+</clothing>

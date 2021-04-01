@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- For a version with comments, see "rental_mommy.xml". -->
+<clothing>
+	<coreAtributes>
+		<value>250</value>
+		<determiner><![CDATA[a]]></determiner>
+		<name><![CDATA[Bimbo Collar]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Bimbo Collars]]></namePlural>
+		<description><![CDATA[This collar is like, totally cute! It’s definitely not going to cause your mind to melt away and your body to expand to an unrecognizably oversexualized caricature of your previous self teehee!]]></description>
+		<physicalResistance>0</physicalResistance>
+		<femininity>FEMININE</femininity>
+		<slot>NECK</slot>
+		<rarity>LEGENDARY</rarity>
+		<clothingSet/>
+		<imageName>bimboCollar.svg</imageName>
+		<imageEquippedName/>
+		<enchantmentLimit>7</enchantmentLimit>
+		<effects>
+			<effect itemEffectType="CLOTHING" limit="0" potency="MAJOR_BOOST" primaryModifier="TF_MOD_FETISH_BEHAVIOUR" secondaryModifier="TF_MOD_FETISH_BIMBO" timer="0"/>
+            <effect itemEffectType="CLOTHING" limit="0" potency="MINOR_BOOST" primaryModifier="CLOTHING_SEALING" secondaryModifier="ARCANE_BOOST" timer="0"/>
+            <effect itemEffectType="CLOTHING" limit="100" potency="MAJOR_BOOST" primaryModifier="TF_CORE" secondaryModifier="TF_MOD_FEMININITY" timer="0"/>
+            <effect itemEffectType="CLOTHING" limit="17" potency="BOOST" primaryModifier="TF_BREASTS" secondaryModifier="TF_MOD_SIZE" timer="0"/>
+            <effect itemEffectType="CLOTHING" limit="4" potency="BOOST" primaryModifier="TF_FACE" secondaryModifier="TF_MOD_SIZE" timer="0"/>
+			<effect itemEffectType="CLOTHING" limit="4" potency="BOOST" primaryModifier="TF_ASS" secondaryModifier="TF_MOD_SIZE_SECONDARY" timer="0"/>
+            <effect itemEffectType="CLOTHING" limit="4" potency="BOOST" primaryModifier="TF_ASS" secondaryModifier="TF_MOD_SIZE" timer="0"/>
+		</effects>
+		<blockedPartsList>
+			<blockedParts>
+				<displacementType>REMOVE_OR_EQUIP</displacementType>
+				<clothingAccessRequired/>
+				<blockedBodyParts/>
+				<clothingAccessBlocked/>
+				<concealedSlots/>
+			</blockedParts>
+		</blockedPartsList>
+		<incompatibleSlots/>
+		<primaryColours><colour>CLOTHING_SILVER</colour></primaryColours>
+		<primaryColoursDye values="METAL"/>
+		<secondaryColours values="JUST_PINK"/>
+		<secondaryColoursDye>
+			<colour>CLOTHING_WHITE</colour>
+			<colour>CLOTHING_PURPLE</colour>
+			<colour>CLOTHING_PURPLE_LIGHT</colour>
+			<colour>CLOTHING_PINK</colour>
+			<colour>CLOTHING_PINK_LIGHT</colour>
+		</secondaryColoursDye>
+		<tertiaryColours/>
+		<tertiaryColoursDye/>
+		<itemTags>
+			<tag>SOLD_BY_NYAN</tag>
+		</itemTags>
+	</coreAtributes>
+
+	<displacementText type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[
+			You unfasten the collar's buckle and remove it from around your neck.
+		]]></playerSelf>
+		<playerNPC><![CDATA[
+			You unfasten the collar's buckle and remove it from around [npc.name]'s neck.
+		]]></playerNPC>
+		<playerNPCRough><![CDATA[
+			You unfasten the collar's buckle and remove it from around [npc.name]'s neck.
+		]]></playerNPCRough>
+		<NPCSelf><![CDATA[
+			[npc.Name] unfastens the collar's buckle and removes it from around [npc.her] neck.
+		]]></NPCSelf>
+		<NPCPlayer><![CDATA[
+			[npc.Name] unfastens the collar's buckle and removes it from around your neck.
+		]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[
+			[npc.Name] unfastens the collar's buckle and removes it from around your neck.
+		]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[
+			[npc1.Name] unfastens the collar's buckle and removes it from around [npc2.name]'s neck.
+		]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[
+			[npc1.Name] unfastens the collar's buckle and removes it from around [npc2.name]'s neck.
+		]]></NPCOtherNPCRough>
+	</displacementText>
+
+	<replacementText type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[
+			You wrap the choker around your neck and fasten the buckle.
+		]]></playerSelf>
+		<playerNPC><![CDATA[
+			You wrap the choker around [npc.name]'s neck and fasten the buckle.
+		]]></playerNPC>
+		<playerNPCRough><![CDATA[
+			You wrap the choker around [npc.name]'s neck and fasten the buckle.
+		]]></playerNPCRough>
+		<NPCSelf><![CDATA[
+			[npc.Name] wraps the choker around [npc.her] neck and fastens the buckle.
+		]]></NPCSelf>
+		<NPCPlayer><![CDATA[
+			[npc.Name] wraps the choker around your neck and fastens the buckle.
+		]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[
+			[npc.Name] holds you still as [npc.she] roughly forces the T-shirt down over your head, before pushing your [pc.arms] through the sleeves.
+		]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[
+			[npc1.name] wraps the choker around [npc2.name]'s neck and fastens the buckle.
+		]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[
+			[npc1.name] wraps the choker around [npc2.name]'s neck and fastens the buckle.
+		]]></NPCOtherNPCRough>
+	</replacementText>
+	
+</clothing>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<tattoo>	
+	<coreAttributes>
+		<value>800</value> 
+		<name><![CDATA[tribal phoenix]]></name>
+		<description><![CDATA[Rise from the ashes once more.]]></description> 
+		<imageName>tribal_phoenix.svg</imageName>
+		<enchantmentLimit>10</enchantmentLimit>
+		<slotAvailability/>
+		<primaryColours values="ALL_WITH_METALS"/> 
+		<secondaryColours values="ALL_WITH_METALS"/>
+		<tertiaryColours/>
+	</coreAttributes>
+</tattoo>

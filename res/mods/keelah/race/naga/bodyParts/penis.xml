@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<penis>
+	<race>keelah_naga</race>
+
+	<transformationName><![CDATA[naga]]></transformationName>
+
+	<coveringType>PENIS</coveringType>
+
+	<testicleType>keelah_naga_testicle</testicleType>
+
+	<additionalTransformationEffect/>
+
+	<namesMasculine/>
+	<namesPluralMasculine/>
+
+	<namesFeminine/>
+	<namesPluralFeminine/>
+
+	<descriptors/>
+
+	<defaultPenetrationModifiers>
+		<modifier>PREHENSILE</modifier>
+	</defaultPenetrationModifiers>
+
+	<transformationDescription><![CDATA[
+		"Letting out an involuntary moan, [npc.name] [npc.verb(feel)] [npc.her] penis shifting into a new form, and [npc.sheIs] hit by a wave of overwhelming arousal as [npc.her] shaft grows erect and the head smoothes over.<br/>"
+		"[npc.She] now [npc.has] an [style.boldHyena(naga penis)], [npc.materialDescriptor] [npc.penisFullDescription].<br/>"
+		<br/>[npc.She] [npc.has] [style.boldHyena([npc.ballsCount]#IF(npc.isInternalTesticles()) internal#ENDIF balls)], [npc.materialDescriptor] [npc.ballsFullDescription(true)], which produce [npc.cumColour(true)] [style.boldHyena(cum)].
+	]]></transformationDescription>
+
+	<bodyDescription><![CDATA[
+		[npc.She] [npc.has] [npc.a_cockGirth], [npc.cockLengthValue] cock, which is [npc.materialCompositionDescriptor] [npc.cockFullDescription(true)].
+	]]></bodyDescription>
+	
+</penis>

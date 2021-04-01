@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<weapon>
+	<coreAttributes>
+	
+		<value>600</value>
+		<melee>true</melee>
+		<twoHanded>false</twoHanded>
+		<determiner><![CDATA[]]></determiner>
+		<name><![CDATA[tits bat]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[tits bat]]></namePlural>
+		<description><![CDATA[A smooth wooden club hides the ancient power of the breast shamans of old.]]></description> 
+		
+		<attackDescriptor>whack</attackDescriptor>
+		
+		<attackTooltipDescription><![CDATA[Whack [npc2.name] with your ancient bat.]]></attackTooltipDescription>
+		
+		<rarity>COMMON</rarity> 
+		
+		<weaponSet/> 
+		
+		<equipText><![CDATA[[npc.Name] [npc.verb(ready)] [npc.her] wooden bat in anticipation of bigger tits.]]></equipText>
+		
+		<unequipText><![CDATA[[npc.Name] [npc.verb(put)] away [npc.her] tits bat.]]></unequipText>
+		
+		<imageName>Titsbat.svg</imageName> 
+		
+		<imageEquippedName/> 
+		
+		<damage>10</damage> 
+		
+		<arcaneCost>0</arcaneCost> 
+		
+		<damageVariance>LOW</damageVariance> 
+		
+		<availableDamageTypes>
+			<damageType>PHYSICAL</damageType>
+		</availableDamageTypes>
+		
+		<spells/>
+		
+		<enchantmentLimit>5</enchantmentLimit>
+		
+		<effects/>
+		
+		<primaryColours>
+			<colour>CLOTHING_DESATURATED_BROWN</colour>
+			<colour>CLOTHING_TAN</colour>
+			<colour>CLOTHING_BROWN_VERY_DARK</colour>
+			<colour>CLOTHING_KHAKI</colour>
+		</primaryColours>
+		<primaryColoursDye values="ALL"/>
+		<secondaryColours>
+			<colour>CLOTHING_BLACK</colour>
+		</secondaryColours>		
+		<secondaryColoursDye values="ALL"/>
+		
+		<itemTags> 
+			<tag>SOLD_BY_VICKY</tag>
+			<tag>DOMINION_ALLEYWAY_SPAWN</tag>
+		</itemTags>
+		
+	</coreAttributes>
+	
+	<hitDescriptions>
+		<hitText><![CDATA[
+
+                #IF (2 + npc2.getBreastRawSizeValue() < 80) 
+		#THEN						
+                [#npc2.incrementBreastSize(2)]
+                #ELSE
+                #ENDIF
+		[npc.Name] [npc.verb(swing)] [npc.her] wooden bat at [npc2.name], grinning as it connects with [npc2.her] body!
+		]]></hitText>
+		<hitText><![CDATA[
+                #IF (2 + npc2.getBreastRawSizeValue() < 80)
+		#THEN						
+                [#npc2.incrementBreastSize(2)]
+                #ELSE
+                #ENDIF
+		Striking out at [npc2.name] with [npc.her] wooden bat, [npc.name] [npc.verb(grin)] as it strikes [npc2.herHim] on the [npc2.arm]!
+		]]></hitText>
+		<hitText><![CDATA[
+                #IF (2 + npc2.getBreastRawSizeValue() < 80)  
+		#THEN						
+                [#npc2.incrementBreastSize(2)]
+                #ELSE
+                #ENDIF
+		[npc.Name] [npc.verb(swipe)] at [npc2.name] with [npc.her] wooden bat, causing [npc2.herHim] to stagger back as [npc2.she] [npc2.verb(get)] whacked in the [npc2.arm]!
+		]]></hitText>
+	</hitDescriptions>
+
+	<missDescriptions>
+		<missText><![CDATA[
+		[npc.Name] [npc.verb(swing)] [npc.her] wooden bat at [npc2.name], but [npc.verb(end)] up missing [npc2.herHim]!
+		]]></missText>
+		<missText><![CDATA[
+		Striking out at [npc2.name] with [npc.her] wooden bat, [npc.name] [npc.verb(let)] out a frustrated cry as [npc.she] [npc.verb(miss)] [npc.her] target!
+		]]></missText>
+		<missText><![CDATA[
+		With a quick step forwards, [npc.name] [npc.verb(swipe)] at [npc2.name] with [npc.her] wooden bat, but [npc.she] [npc.verb(miss)] [npc.her] target!
+		]]></missText>
+	</missDescriptions>
+	
+</weapon>

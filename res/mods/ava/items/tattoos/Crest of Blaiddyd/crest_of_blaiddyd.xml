@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<tattoo>
+	<coreAttributes>
+		<value>500</value> 
+		
+		<name><![CDATA[Crest of Blaiddyd]]></name>
+		
+		<description><![CDATA[The Crest of a dark knight now carried by a young prince seeking revenge.]]></description> 
+		
+		<imageName>crest_of_blaiddyd.svg</imageName> 
+		
+		<enchantmentLimit>5</enchantmentLimit>
+		
+		<slotAvailability/>
+		
+		<primaryColours values="ALL"/> 
+		<secondaryColours values="ALL"/> 
+		<tertiaryColours/>
+		
+	</coreAttributes>
+	
+</tattoo>

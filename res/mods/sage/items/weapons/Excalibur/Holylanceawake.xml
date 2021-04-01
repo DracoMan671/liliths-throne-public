@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<weapon>
+	<coreAttributes>
+	
+		<value>300000</value> 
+		
+		<melee>true</melee>
+		
+		<twoHanded>true</twoHanded>
+		
+		<determiner><![CDATA[]]></determiner>
+		
+		<name><![CDATA[Awakened Rhongomyniad]]></name>
+		
+		<namePlural pluralByDefault="false"><![CDATA[Rhongomyniad]]></namePlural>
+		
+		<description><![CDATA[Awakened Rhongomyniad is regarded as the "spear of the end", the light of destruction coming down from the heavens.]]></description> 
+		
+		<attackDescriptor>Pierce</attackDescriptor>
+		
+		<attackTooltipDescription><![CDATA[Deliver a pierceing blow to [npc2.name] with Rhongomyniad.]]></attackTooltipDescription>
+		
+		<rarity>LEGENDARY</rarity> 
+		
+		<weaponSet/> 
+		
+		<equipText><![CDATA[[npc.Name] [npc.verb(position)] [npc.her] holy Lance at [npc.her] side from the aether, so that [npc.she] may strike with it at a moment's notice.]]></equipText>
+		
+		<unequipText><![CDATA[[npc.Name] [npc.verb(sheath)] [npc.her] holy lance away into the aether.]]></unequipText>
+		
+		<imageName>Holylanceawake.svg</imageName> 
+		
+		<imageEquippedName>Holylanceawake.svg</imageEquippedName> 
+		
+		<physicalResistance>15</physicalResistance>
+		<damage>700</damage> 
+		
+		<arcaneCost>100</arcaneCost> 
+		
+		<damageVariance>LOW</damageVariance> 
+		
+		<availableDamageTypes>
+			<damageType>FIRE</damageType>
+			<damageType>ICE</damageType>
+			<damageType>POISON</damageType>
+			<damageType>LUST</damageType>
+		</availableDamageTypes>
+		
+		<spells/>
+		
+		<enchantmentLimit>5</enchantmentLimit>
+		
+		<effects> 
+              <effect itemEffectType="CLOTHING" limit="0" potency="MAJOR_BOOST" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="DAMAGE_WEAPON" timer="0"/>
+              <effect itemEffectType="CLOTHING" limit="0" potency="MAJOR_BOOST" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="CRITICAL_DAMAGE" timer="0"/>
+		</effects>
+		
+		<primaryColours/> 
+		<primaryColoursDye/>
+		<secondaryColours values = "JUST_WHITE"/> 
+		<secondaryColoursDye values="ALL_WITH_METALS"/>
+		
+		<itemTags> 
+
+		</itemTags>
+		
+	</coreAttributes>
+	
+	<hitDescriptions>
+		<hitText><![CDATA[
+		[npc.Name] leap upward high into the air with the holy lance radiating a powerful arcane energy trailing behind [npc.Name]. At the summet of your ascent you aim the lance down at you opponent and [npc.verb(pierce)] the sky downwards, striking the ground with a blinding light. [npc.Name] look up satisfied to see [npc2.name] knocked backwards!
+		]]></hitText>
+		<hitText><![CDATA[
+		Striking out at [npc2.name] with [npc.her] holy lance, [npc.name] [npc.verb(smile)] playfully as [npc.she] [npc.verb(see)] the lance catches [npc2.her] unprepared!
+		]]></hitText>
+		<hitText><![CDATA[
+		[npc.Name] leap forwards and quickly close in upon [npc2.name] [npc.verb(Piercing)] [npc.her] with the holy lance, causing [npc2.herHim] to stagger back as the ethereal blade passes right through [npc2.her] chest!
+		]]></hitText>
+	</hitDescriptions>
+
+	<!-- Descriptions that are used when missing an enemy. One of the missText values will be randomly selected each time the attacker misses their target. Follow the same guidelines as equipText. -->
+	<missDescriptions>
+		<missText><![CDATA[
+		[npc.Name] [npc.verb(thrusts)] [npc.her] holy lance at [npc2.name], but [npc.verb(end)] up missing [npc2.herHim]!
+		]]></missText>
+		<missText><![CDATA[
+		Striking out at [npc2.name] with [npc.her] holy lance, [npc.name] [npc.verb(let)] out a frustrated cry as [npc.she] [npc.verb(miss)] [npc.her] target!
+		]]></missText>
+		<missText><![CDATA[
+		With a quick step forwards, [npc.name] [npc.verb(slash)] at [npc2.name] with [npc.her] holy lance, but [npc.she] [npc.verb(miss)] [npc.her] target!
+		]]></missText>
+	</missDescriptions>
+	
+</weapon>

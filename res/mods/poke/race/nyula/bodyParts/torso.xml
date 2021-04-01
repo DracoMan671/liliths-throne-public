@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<torso>
+	<race>poke_nyula</race>
+	<transformationName><![CDATA[Sneasel-line]]></transformationName>
+	<coveringType>poke_nyula_fur</coveringType>
+	<descriptorsMasculine/>
+	<descriptorsFeminine/>
+	<!-- 
+	<descriptorsMasculine>
+		<descriptor><![CDATA[hyena-like]]></descriptor>
+	</descriptorsMasculine>
+	-->
+	<transformationDescription><![CDATA[
+		After just a few moments, the transformation comes to an end, and [npc.she] [npc.verb(let)] out a deep sigh as the itching finally stops, leaving [npc.her] torso covered with smooth fur resembling Weavile and Sneasel. [npc.Her] new fur is silken and cool to the touch.
+		<br/>[npc.Name] now [npc.has] Weavile/Sneasel, [npc.skinFullDescription].
+	]]></transformationDescription>
+	<bodyDescription><![CDATA[
+		[npc.Her] torso has [npc.a_femininity(true)] appearance, and is [npc.materialCompositionDescriptor] [npc.skinFullDescription(true)].
+	]]></bodyDescription>
+	<!-- TORSO_DORSAL_FIN, ALLOWS_FLIGHT -->
+	<tags/>
+</torso>

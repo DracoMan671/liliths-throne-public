@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ear>
+	<race>Yoruhime_beetle</race>
+	<transformationName><![CDATA[beetle]]></transformationName>
+	<coveringType>Yoruhime_beetle_chitin</coveringType>
+	<tags/>
+	<name><![CDATA[ear]]></name>
+	<namePlural><![CDATA[ears]]></namePlural>
+	<descriptorsMasculine>
+		<descriptor>beetle-like</descriptor>
+		<descriptor>internal</descriptor>
+	</descriptorsMasculine>
+	<descriptorsFeminine>
+		<descriptor>feminine</descriptor>
+		<descriptor>beetle-like</descriptor>
+		<descriptor>internal</descriptor>
+	</descriptorsFeminine>
+	<transformationDescription><![CDATA[
+		[npc.Name] now [npc.has] [style.boldBeetle(large, beetle-like ears)], which are [npc.materialCompositionDescriptor] [npc.earFullDescription].
+	]]></transformationDescription>
+	<bodyDescription><![CDATA[
+		[npc.She] [npc.has] a pair of #IF(npc.isPiercedEar()) pierced,#ENDIF beetle-like ears that are [npc.materialCompositionDescriptor] [npc.earFullDescription(true)].
+	]]></bodyDescription>
+</ear>

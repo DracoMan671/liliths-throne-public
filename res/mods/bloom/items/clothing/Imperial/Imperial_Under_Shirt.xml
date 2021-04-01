@@ -1,0 +1,321 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<clothing>
+	<coreAtributes>
+		<authorTag><![CDATA[Sewn into one of the sides is a tag that reads "STITCHED WITH LOVE AND MALICE BY TROOPS #P01-Y & #B100-M "]]></authorTag>
+		<value>750</value>
+		<determiner><![CDATA[an]]></determiner>
+		<name><![CDATA[Imperial under-shirt]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Undershirts]]></namePlural>
+		<description><![CDATA[
+		A common frilled under shirt. The sleeves and abdominal area are skintight as to fit under armor, Its also normal for it to be worn as a regular shirt.
+		#IF game.isSillyModeEnabled()
+		#THEN However the gods will be constantly judging you for wearing stripes.
+		#ELSE It has a common wide stripe pattern which is an imperial standard.
+		#ENDIF
+		]]></description>
+		<physicalResistance>0</physicalResistance>
+		<femininity>ANDROGYNOUS</femininity>
+		<equipSlots>
+			<slot>CHEST</slot>
+			<slot>TORSO_UNDER</slot>
+		</equipSlots>
+		<rarity>EPIC</rarity>
+		<clothingSet></clothingSet>
+		<imageName>Imperial_Under_Shirt.svg</imageName>
+		<imageEquippedName slot="CHEST">Imperial_Under_Shirt.svg</imageEquippedName>
+		<imageEquippedName slot="TORSO_UNDER">Imperial_Under_Shirt.svg</imageEquippedName>
+		<enchantmentLimit>5</enchantmentLimit>
+		<effects/>
+		<blockedPartsList slot="CHEST">
+			<blockedParts>
+				<displacementType>REMOVE_OR_EQUIP</displacementType> 
+				<clothingAccessRequired> 
+					<clothingAccess>ARMS_UP_TO_SHOULDER</clothingAccess>
+					<clothingAccess>HEAD</clothingAccess>
+				</clothingAccessRequired>
+				<blockedBodyParts/>
+				<clothingAccessBlocked/>
+				<concealedSlots/>
+			</blockedParts>
+			
+			<blockedParts>
+				<displacementType>UNBUTTONS</displacementType>
+				<clothingAccessRequired/>
+				<blockedBodyParts>
+					<bodyPart>BREASTS</bodyPart>
+					<bodyPart>NIPPLES</bodyPart>
+					<bodyPart>STOMACH</bodyPart>
+				</blockedBodyParts>
+				<clothingAccessBlocked>
+					<clothingAccess>CHEST</clothingAccess>
+					<clothingAccess>WAIST</clothingAccess>
+				</clothingAccessBlocked>
+				<concealedSlots values="CONCEALED_PARTIAL_TORSO"/>
+			</blockedParts>
+			
+		</blockedPartsList>
+
+		<blockedPartsList slot="TORSO_UNDER">
+			<blockedParts>
+				<displacementType>REMOVE_OR_EQUIP</displacementType> 
+				<clothingAccessRequired> 
+					<clothingAccess>ARMS_UP_TO_SHOULDER</clothingAccess>
+					<clothingAccess>HEAD</clothingAccess>
+				</clothingAccessRequired>
+				<blockedBodyParts/>
+				<clothingAccessBlocked/>
+				<concealedSlots/>
+			</blockedParts>
+			<blockedParts>
+				<displacementType>UNBUTTONS</displacementType>
+				<clothingAccessRequired/>
+				<blockedBodyParts>
+					<bodyPart>BREASTS</bodyPart>
+					<bodyPart>NIPPLES</bodyPart>
+					<bodyPart>STOMACH</bodyPart>
+				</blockedBodyParts>
+				<clothingAccessBlocked>
+					<clothingAccess>CHEST</clothingAccess>
+					<clothingAccess>WAIST</clothingAccess>
+				</clothingAccessBlocked>
+				<concealedSlots values="CONCEALED_PARTIAL_TORSO"/>
+			</blockedParts>
+		</blockedPartsList>
+		
+		<incompatibleSlots slot="CHEST"/>
+		<incompatibleSlots slot="TORSO_UNDER"/>
+		
+		<primaryColours>
+		<colour>CLOTHING_BLACK_JET</colour>
+		</primaryColours>
+		<primaryColoursDye values="ALL"/>
+		<secondaryColours>
+		<colour>CLOTHING_BLACK</colour>
+		</secondaryColours>
+		<secondaryColoursDye values="ALL"/>
+		<tertiaryColours>
+		<colour>CLOTHING_BLACK_JET</colour>
+		</tertiaryColours>
+		<tertiaryColoursDye values="ALL"/>
+		<itemTags>
+			<tag>SOLD_BY_NYAN</tag>
+		</itemTags>
+	</coreAtributes>
+
+	<displacementText slot="CHEST" type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[
+			You take off your undershirt.
+		]]></playerSelf>
+		<playerNPC><![CDATA[
+			You pull off [npc.name]'s undershirt.
+		]]></playerNPC>
+		<playerNPCRough><![CDATA[
+			You grab hold of [npc.name]'s undershirt and roughly pull it off over [npc.her] head.
+		]]></playerNPCRough>
+		<NPCSelf><![CDATA[
+			[npc.Name] takes [npc.her] undershirt off.
+		]]></NPCSelf>
+		<NPCPlayer><![CDATA[
+			[npc.Name] pulls your undershirt off.
+		]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[
+			[npc.Name] grabs hold of your undershirt and roughly pulls it off over your head.
+		]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[
+			[npc1.Name] pulls [npc2.name]'s undershirt off.
+		]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[
+			[npc.Name] grabs hold of [npc2.name]'s undershirt and roughly pulls it off over [npc2.her] head.
+		]]></NPCOtherNPCRough>
+	</displacementText>
+
+	<replacementText slot="CHEST" type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[
+			You pull on the undershirt.
+		]]></playerSelf>
+		<playerNPC><![CDATA[
+			You guide [npc.name]'s [npc.arms] up as you pull the undershirt on [npc.herHim].
+		]]></playerNPC>
+		<playerNPCRough><![CDATA[
+			You hold [npc.name] still as you roughly force the undershirt down over [npc.her] head, before pulling it down over [npc.her] torso.
+		]]></playerNPCRough>
+		<NPCSelf><![CDATA[
+			[npc.Name] pulls on the undershirt.
+		]]></NPCSelf>
+		<NPCPlayer><![CDATA[
+			[npc.Name] guides your [pc.arms] in the undershirt, before pulling it down over your torso.
+		]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[
+			[npc.Name] holds you still as [npc.she] roughly forces the undershirt down over your head, before pushing your [pc.arms] through the sleeves.
+		]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[
+			[npc1.Name] guides [npc2.name]'s [npc2.arms] in the undershirt before pulling it down over [npc2.her] torso.
+		]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[
+			[npc1.Name] holds [npc2.name] still as [npc1.she] roughly forces the undershirt down over [npc2.her] head, before pulling it down over [npc2.her] torso.
+		]]></NPCOtherNPCRough>
+	</replacementText>
+
+	<displacementText slot="CHEST" type="UNBUTTONS">
+		<playerSelf><![CDATA[
+			You unbutton your shirt.
+		]]></playerSelf>
+		<playerNPC><![CDATA[
+			You unbutton [npc.name]'s shirt.
+		]]></playerNPC>
+		<playerNPCRough><![CDATA[
+			You pop open the buttons on [npc.name]'s shirt.
+		]]></playerNPCRough>
+		<NPCSelf><![CDATA[
+			[npc.Name] unbuttons [npc.her] shirt.
+		]]></NPCSelf>
+		<NPCPlayer><![CDATA[
+			[npc.Name] unbuttons your shirt.
+		]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[
+			[npc.Name] pops open the buttons on your shirt.
+		]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[
+			[npc1.Name] unbuttons [npc2.name]'s shirt.
+		]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[
+			[npc.Name] pops open the buttons on [npc2.name]'s shirt.
+		]]></NPCOtherNPCRough>
+	</displacementText>
+	
+	<replacementText slot="CHEST" type="UNBUTTONS">
+		<playerSelf><![CDATA[
+			You button up your shirt.
+		]]></playerSelf>
+		<playerNPC><![CDATA[
+			You button up [npc.name]'s shirt.
+		]]></playerNPC>
+		<playerNPCRough><![CDATA[
+			You roughly button up [npc.name]'s shirt.
+		]]></playerNPCRough>
+		<NPCSelf><![CDATA[
+			[npc.Name] buttons up [npc.her] shirt to cover [npc.her] torso.
+		]]></NPCSelf>
+		<NPCPlayer><![CDATA[
+			[npc.Name] buttons up your shirt.
+		]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[
+			[npc.Name] roughly buttons up your shirt.
+		]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[
+			[npc1.Name] buttons up [npc2.name]'s shirt.
+		]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[
+			[npc.Name] roughly buttons up [npc2.name]'s shirt.
+		]]></NPCOtherNPCRough>
+	</replacementText>
+			
+	<displacementText slot="TORSO_UNDER" type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[
+			You take off your undershirt.
+		]]></playerSelf>
+		<playerNPC><![CDATA[
+			You pull off [npc.name]'s undershirt.
+		]]></playerNPC>
+		<playerNPCRough><![CDATA[
+			You grab hold of [npc.name]'s undershirt and roughly pull it off over [npc.her] head.
+		]]></playerNPCRough>
+		<NPCSelf><![CDATA[
+			[npc.Name] takes [npc.her] undershirt off.
+		]]></NPCSelf>
+		<NPCPlayer><![CDATA[
+			[npc.Name] pulls your undershirt off.
+		]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[
+			[npc.Name] grabs hold of your undershirt and roughly pulls it off over your head.
+		]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[
+			[npc1.Name] pulls [npc2.name]'s undershirt off.
+		]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[
+			[npc.Name] grabs hold of [npc2.name]'s undershirt and roughly pulls it off over [npc2.her] head.
+		]]></NPCOtherNPCRough>
+	</displacementText>
+
+	<replacementText slot="TORSO_UNDER" type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[
+			You pull on the undershirt.
+		]]></playerSelf>
+		<playerNPC><![CDATA[
+			You guide [npc.name]'s [npc.arms] up as you pull the undershirt on [npc.herHim].
+		]]></playerNPC>
+		<playerNPCRough><![CDATA[
+			You hold [npc.name] still as you roughly force the undershirt down over [npc.her] head, before pulling it down over [npc.her] torso.
+		]]></playerNPCRough>
+		<NPCSelf><![CDATA[
+			[npc.Name] pulls on the undershirt.
+		]]></NPCSelf>
+		<NPCPlayer><![CDATA[
+			[npc.Name] guides your [pc.arms] in the undershirt, before pulling it down over your torso.
+		]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[
+			[npc.Name] holds you still as [npc.she] roughly forces the undershirt down over your head, before pushing your [pc.arms] through the sleeves.
+		]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[
+			[npc1.Name] guides [npc2.name]'s [npc2.arms] in the undershirt before pulling it down over [npc2.her] torso.
+		]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[
+			[npc1.Name] holds [npc2.name] still as [npc1.she] roughly forces the undershirt down over [npc2.her] head, before pulling it down over [npc2.her] torso.
+		]]></NPCOtherNPCRough>
+	</replacementText>
+
+	<displacementText slot="TORSO_UNDER" type="UNBUTTONS">
+		<playerSelf><![CDATA[
+			You unbutton your shirt.
+		]]></playerSelf>
+		<playerNPC><![CDATA[
+			You unbutton [npc.name]'s shirt.
+		]]></playerNPC>
+		<playerNPCRough><![CDATA[
+			You pop open the buttons on [npc.name]'s shirt.
+		]]></playerNPCRough>
+		<NPCSelf><![CDATA[
+			[npc.Name] unbuttons [npc.her] shirt.
+		]]></NPCSelf>
+		<NPCPlayer><![CDATA[
+			[npc.Name] unbuttons your shirt.
+		]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[
+			[npc.Name] pops open the buttons on your shirt.
+		]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[
+			[npc1.Name] unbuttons [npc2.name]'s shirt.
+		]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[
+			[npc.Name] pops open the buttons on [npc2.name]'s shirt.
+		]]></NPCOtherNPCRough>
+	</displacementText>
+	
+	<replacementText slot="TORSO_UNDER" type="UNBUTTONS">
+		<playerSelf><![CDATA[
+			You button up your shirt.
+		]]></playerSelf>
+		<playerNPC><![CDATA[
+			You button up [npc.name]'s shirt.
+		]]></playerNPC>
+		<playerNPCRough><![CDATA[
+			You roughly button up [npc.name]'s shirt.
+		]]></playerNPCRough>
+		<NPCSelf><![CDATA[
+			[npc.Name] buttons up [npc.her] shirt to cover [npc.her] torso.
+		]]></NPCSelf>
+		<NPCPlayer><![CDATA[
+			[npc.Name] buttons up your shirt.
+		]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[
+			[npc.Name] roughly buttons up your shirt.
+		]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[
+			[npc1.Name] buttons up [npc2.name]'s shirt.
+		]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[
+			[npc.Name] roughly buttons up [npc2.name]'s shirt.
+		]]></NPCOtherNPCRough>
+	</replacementText>
+	
+</clothing>

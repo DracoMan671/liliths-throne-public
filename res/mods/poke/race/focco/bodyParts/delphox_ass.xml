@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ass>
+	<race>poke_focco</race>
+	<transformationName><![CDATA[Delphox]]></transformationName>
+	<coveringType>poke_focco_delphox_coat</coveringType>
+	<anusType>poke_focco_anus</anusType>
+	<names/>
+	<!--
+	<names>
+		<name><![CDATA[ass]]></name>
+		<name><![CDATA[rear end]]></name>
+		<name><![CDATA[butt]]></name>
+		<name><![CDATA[rump]]></name>
+	</names>
+	-->
+	<namesPlural/>
+	<!--
+	<namesPlural>
+		<name><![CDATA[asses]]></name>
+		<name><![CDATA[rear ends]]></name>
+		<name><![CDATA[butts]]></name>
+		<name><![CDATA[rumps]]></name>
+	</namesPlural>
+	-->
+	<descriptorsMasculine/>
+	<descriptorsFeminine/>
+	<!-- 
+	<descriptorsMasculine>
+		<descriptor><![CDATA[hyena-like]]></descriptor>
+	</descriptorsMasculine>
+	-->
+	<transformationDescription><![CDATA[
+		[npc.She] now [npc.has] a Delphox's, [npc.assholeFullDescription].
+	]]></transformationDescription>
+	<bodyDescription><![CDATA[
+		[npc.SheHasFull] a fox-like, [npc.anusFullDescription(true)]
+	]]></bodyDescription>
+	
+</ass>

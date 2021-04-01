@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<eye>
+	<race>keelah_naga</race>
+
+	<transformationName><![CDATA[naga]]></transformationName>
+
+	<coveringType>keelah_naga_eye</coveringType>
+
+	<defaultPairCount>1</defaultPairCount>
+
+	<defaultIrisShape>ROUND</defaultIrisShape>
+
+	<defaultPupilShape>VERTICAL</defaultPupilShape>
+
+	<tags>
+		<tag>NIGHT_VISION</tag>
+	</tags>
+
+	<name><![CDATA[eye]]></name>
+	<namePlural><![CDATA[eyes]]></namePlural>
+
+	<descriptorsMasculine>
+		<descriptor><![CDATA[naga-like]]></descriptor>
+	</descriptorsMasculine>
+	<descriptorsFeminine>
+		<descriptor><![CDATA[naga-like]]></descriptor>
+	</descriptorsFeminine>
+
+	<transformationDescription><![CDATA[
+		By the time [npc.she] hesitantly [npc.verb(open)] them again, they've changed into snake eyes.
+		<br/>[npc.Name] now [npc.has] [style.boldHyena(naga eyes)] with [style.boldGenericTF([npc.irisShape])], [npc.irisFullDescription(true)] and [style.boldGenericTF([npc.pupilShape])], [npc.pupilFullDescription(true)].
+	]]></transformationDescription>
+
+	<bodyDescription><![CDATA[
+		[npc.SheHasFull] [npc.eyePairs] naga eyes. They have [npc.irisShape], [npc.irisColour(true)] irises, [npc.pupilShape], [npc.pupilColour(true)] pupils, and [npc.scleraColour(true)] sclerae.
+	]]></bodyDescription>
+</eye>

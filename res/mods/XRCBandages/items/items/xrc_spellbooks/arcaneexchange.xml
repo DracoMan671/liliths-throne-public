@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<item>
+	<coreAttributes>
+		
+		<authorTag><![CDATA[The spine of the spell book reveals that it was written by 'XRC.']]></authorTag>
+		<value>2800</value>
+		<determiner><![CDATA[]]></determiner>
+		
+		<!-- The name of this item. -->
+		<name><![CDATA[Spellbook: Arcane Exchange]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Spellbooks: Arcane Exchange]]></namePlural>
+		<description><![CDATA[An arcane tome which, when opened, casts a spell through the reader.]]></description> 
+		<useDescriptor>read</useDescriptor>
+		<sexUse>false</sexUse>
+		<combatUseAllies>true</combatUseAllies>
+		<combatUseEnemies>false</combatUseEnemies>
+		<consumedOnUse>false</consumedOnUse>
+		<rarity>LEGENDARY</rarity>
+		<imageName>arcaneexchange.svg</imageName> 
+		<colourPrimary>CLOTHING_RED_DARK</colourPrimary>
+		<colourSecondary>CLOTHING_KHAKI</colourSecondary>
+		<colourTertiary/>
+
+		<effectTooltipLines>
+			<line><![CDATA[[style.boldGood(Converts)] 60% [style.boldMana(aura)] to [style.boldHealth(health)]]]></line>
+		</effectTooltipLines>
+		
+		<applyEffects><![CDATA[
+		[##npc.setHealth(npc.getHealth()+(npc.getMana()*0.60))]
+		[##npc.setMana(npc.getMana()*0.60)]
+			<p style='text-align:center; margin-top:0; padding-top:0;'>
+				[npc.Name] converted <b>60% of [npc.her] [style.boldMana(aura)] to [style.boldHealth(health)]!</b><br>
+			</p>
+		]]></applyEffects>
+		
+		<itemTags>
+			<tag>SOLD_BY_VICKY</tag>
+		</itemTags>
+		
+	</coreAttributes>
+
+	<useDescriptions>
+		<selfUse><![CDATA[
+		Opening the spell book, you cast its spell...
+		]]></selfUse>
+		<otherUse><![CDATA[
+		Opening the spell book, [npc.Name] [npc.verb(cast)] its spell...
+		]]></otherUse>
+	</useDescriptions>
+
+	
+</item>

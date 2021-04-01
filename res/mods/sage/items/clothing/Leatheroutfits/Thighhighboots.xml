@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<clothing>	
+	<coreAtributes>
+		<value>1800</value> 
+		<determiner><![CDATA[a pair of]]></determiner>
+		<name><![CDATA[thigh-high leather boots]]></name>		
+		<namePlural pluralByDefault="true"><![CDATA[thigh-high leather boots]]></namePlural> 	
+		<description><![CDATA[A pair of shiny, fuck me thigh high platform high-heeled leather boots.]]></description> 
+		<physicalResistance>1</physicalResistance> 
+		<femininity>FEMININE</femininity> 
+		<slot>FOOT</slot> 
+		<rarity>UNCOMMON</rarity> 
+		<clothingSet/> 
+		<imageName>Thighhighboots.svg</imageName> 
+		<imageEquippedName/> 
+		<enchantmentLimit/>
+		<effects/>
+		<blockedPartsList>
+			<blockedParts>
+				<displacementType>REMOVE_OR_EQUIP</displacementType> 
+				<clothingAccessRequired> 
+					<clothingAccess>FEET</clothingAccess>
+				</clothingAccessRequired>
+				<blockedBodyParts>
+					<bodyPart>FEET</bodyPart>
+				</blockedBodyParts>
+				<clothingAccessBlocked> 
+					<clothingAccess>FEET</clothingAccess>
+				</clothingAccessBlocked>
+				<concealedSlots/>
+			</blockedParts>
+		</blockedPartsList>
+		<incompatibleSlots/> 
+		<primaryColours values="JUST_BLACK"/> 
+		<primaryColoursDye values="ALL"/>
+		<secondaryColours values="ALL_METAL"/>
+		<secondaryColoursDye values="ALL_METAL"/>
+		<itemTags> 
+			<tag>SOLD_BY_NYAN</tag>
+			<tag>DOMINION_ALLEYWAY_SPAWN</tag>
+		</itemTags>
+	</coreAtributes>
+	<displacementText type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[
+			You pull off your boots.
+		]]></playerSelf>
+		<playerNPC><![CDATA[
+			You pull off [npc.name]'s boots.
+		]]></playerNPC>
+		<playerNPCRough><![CDATA[
+			You grab [npc.name]'s [npc.feet] and roughly pull [npc.her] boots off.
+		]]></playerNPCRough>
+		<NPCSelf><![CDATA[
+			[npc.Name] pulls [npc.her] boots off.
+		]]></NPCSelf>
+		<NPCPlayer><![CDATA[
+			[npc.Name] pulls your boots off.
+		]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[
+			[npc.Name] grabs your [pc.feet] and roughly pulls your boots off.
+		]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[
+			[npc1.Name] pulls [npc2.name]'s boots off.
+		]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[
+			[npc.Name] grabs [npc2.name]'s [npc2.feet] and roughly pulls [npc2.name]'s boots off.
+		]]></NPCOtherNPCRough>
+	</displacementText>
+	<replacementText type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[
+			You push your feet into the boots and pull them up to your thighs.
+		]]></playerSelf>
+		<playerNPC><![CDATA[
+			You guide [npc.name]'s [npc.feet] into the boots and pull them up to [npc.her] thighs.
+		]]></playerNPC>
+		<playerNPCRough><![CDATA[
+			You hold [npc.name] still as you roughly force [npc.her] [npc.feet] into the boots and pull them up to [npc.her] thighs.
+		]]></playerNPCRough>
+		<NPCSelf><![CDATA[
+			[npc.Name] puts [npc.her] [npc.feet] into the boots and pulls them up to [npc.her] thighs.
+		]]></NPCSelf>
+		<NPCPlayer><![CDATA[
+			[npc.Name] guides your [pc.feet] into the boots, before pulling up to your thighs.
+		]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[
+			[npc.Name] holds you still as [npc.she] roughly forces your [pc.feet] into the boots and pull them up to your thighs.
+		]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[
+			[npc1.Name] guides [npc2.name]'s [npc2.feet] into the boots, before pulling up to [npc2.her] thighs.
+		]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[
+			[npc1.Name] holds [npc2.name] still as [npc1.she] roughly forces [npc2.name]'s [npc2.feet] into the boots, before pulling up to [npc2.her] thighs.
+		]]></NPCOtherNPCRough>
+	</replacementText>
+	
+</clothing>

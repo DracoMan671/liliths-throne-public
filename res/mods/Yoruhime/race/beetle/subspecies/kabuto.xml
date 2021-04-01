@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<subspecies>
+	<race>Yoruhime_beetle</race>
+	<colour>Yoruhime_beetle</colour>
+	<secondaryColour>Yoruhime_beetle</secondaryColour>
+	<tertiaryColour>Yoruhime_beetle</tertiaryColour>
+	<mainSubspecies>false</mainSubspecies>
+	<baseSlaveValue>10000</baseSlaveValue>
+	<attributeItemId>innoxia_race_human_vanilla_water</attributeItemId>
+	<transformativeItemId>Yoruhime_race_beetle_salad</transformativeItemId>
+	<subspeciesOverridePriority>0</subspeciesOverridePriority>
+	<shortStature>false</shortStature>
+	<bipedalSubspecies>true</bipedalSubspecies>
+	<aquatic>false</aquatic>
+	<applySubspeciesChanges><![CDATA[
+		[#targetedBody.getCovering(BODY_COVERING_TYPE_Yoruhime_beetle_chitin, true).setPrimaryColour(COLOUR_COVERING_BROWN)]
+		[#targetedBody.getCovering(BODY_COVERING_TYPE_Yoruhime_beetle_chitin, true).setPattern(COVERING_PATTERN_NONE)]
+		[#targetedBody.getCovering(BODY_COVERING_TYPE_PENIS, true).setPrimaryColour(COLOUR_SKIN_RED)]
+		#IF(targetedBody.getHorn().getType()!=HORN_TYPE_Yoruhime_beetle_hornk)
+			[#targetedBody.getHorn().setType(null, HORN_TYPE_Yoruhime_beetle_hornk)]
+			[#targetedBody.getHorn().setHornRows(null, 1)]
+			[#targetedBody.getHorn().setHornsPerRow(null, 1)]
+		#ENDIF
+		#IF(npc.hasPenis())
+			[#targetedBody.getPenis().setType(null, PENIS_TYPE_Yoruhime_beetle_penis)]
+		#ENDIF
+		#IF(npc.hasVagina())
+			[#targetedBody.getVagina().setType(null, VAGINA_TYPE_Yoruhime_beetle_vagina)]
+		#ENDIF
+		[#targetedBody.getAss().setType(null, ASS_TYPE_Yoruhime_beetle_ass)]
+		#ENDIF
+	]]></applySubspeciesChanges>
+	<subspeciesWeighting><![CDATA[
+		#IF(targetedRace==RACE_Yoruhime_beetle &&
+		targetedBody.getHorn().getType()==HORN_TYPE_Yoruhime_beetle_hornk)
+			150
+		#ELSE
+			0
+		#ENDIF
+	]]></subspeciesWeighting>
+	<iconName displaySize="75">beetle</iconName>
+	<backgroundName>background_kabuto</backgroundName>
+	<bookIconName>beetle</bookIconName>
+	<bookName>Iron-clad Defenders</bookName>
+	<basicDescriptionId>BEETLE_BASIC</basicDescriptionId>
+	<advancedDescriptionId>BEETLE_ADVANCED</advancedDescriptionId>
+	<defaultPreference>TWO_AVERAGE</defaultPreference>
+	<name><![CDATA[kabuto beetle-morph]]></name>
+	<namePlural><![CDATA[kabuto beetle-morphs]]></namePlural>
+	<singularMaleName><![CDATA[kabuto beetle-boy]]></singularMaleName>
+	<singularFemaleName><![CDATA[kabuto beetle-girl]]></singularFemaleName>
+	<pluralMaleName><![CDATA[kabuto beetle-boys]]></pluralMaleName>
+	<pluralFemaleName><![CDATA[kabuto beetle-girls]]></pluralFemaleName>
+	<description><![CDATA[An anthropomorphic kabuto beetle, known as a 'kabuto beetle-morph' when bipedal, and a 'kabuto beetaur' when the lower body is that of a typically-oversized feral kabuto beetle. It is needed to possess a single horn in order to be identified as a beetle-morph.]]></description>
+	<nameHalfDemon><![CDATA[demonic kabuto beetle-morph]]></nameHalfDemon>
+	<namePluralHalfDemon><![CDATA[demonic kabuto beetle-morphs]]></namePluralHalfDemon>
+	<singularMaleNameHalfDemon><![CDATA[demonic kabuto beetle-boy]]></singularMaleNameHalfDemon>
+	<singularFemaleNameHalfDemon><![CDATA[demonic kabuto beetle-girl]]></singularFemaleNameHalfDemon>
+	<pluralMaleNameHalfDemon><![CDATA[demonic kabuto beetle-boys]]></pluralMaleNameHalfDemon>
+	<pluralFemaleNameHalfDemon><![CDATA[demonic kabuto beetle-girls]]></pluralFemaleNameHalfDemon>
+	<feralAttributes>
+		<feralName><![CDATA[kabuto beetle]]></feralName>
+		<feralNamePlural><![CDATA[kabuto beetles]]></feralNamePlural>
+		<feralSingularMaleName><![CDATA[kabuto beetle]]></feralSingularMaleName>
+		<feralSingularFemaleName><![CDATA[kabuto beetle]]></feralSingularFemaleName>
+		<feralPluralMaleName><![CDATA[kabuto beetles]]></feralPluralMaleName>
+		<feralPluralFemaleName><![CDATA[kabuto beetles]]></feralPluralFemaleName>
+		<legConfiguration>QUADRUPEDAL</legConfiguration>
+		<sizeHeight>true</sizeHeight>
+		<size>35</size>
+		<breastRowCount>0</breastRowCount>
+		<nipplesPerBreastCount>1</nipplesPerBreastCount>
+		<crotchBreastRowCount>5</crotchBreastRowCount>
+		<nipplesPerCrotchBreastCount>1</nipplesPerCrotchBreastCount>
+		<armsOrWingsPresent>false</armsOrWingsPresent>
+		<fingerActionsAvailable>false</fingerActionsAvailable>
+		<hairPresent>false</hairPresent>
+	</feralAttributes>
+	<statusEffectDescription><![CDATA[
+		[npc.NamePos] beetle-like body predisposes [npc.herHim] towards offense and speed, resulting in better physical abilities.
+	]]></statusEffectDescription>
+	<statusEffectAttributeModifiers>
+		<attribute value="25">MAJOR_PHYSIQUE</attribute>
+		<attribute value="15">DAMAGE_PHYSICAL</attribute>
+		<attribute value="3">ENERGY_SHIELDING</attribute>
+	</statusEffectAttributeModifiers>
+	<extraEffects/>
+	<perkWeightings>
+		<category masculineWeighting="0" feminineWeighting="5">PHYSICAL</category>
+		<category masculineWeighting="1" feminineWeighting="1">LUST</category>
+		<category masculineWeighting="5" feminineWeighting="0">ARCANE</category>
+	</perkWeightings>
+	<regionLocations>
+		<region rarity="TWO_RARE">WOODLAND</region>
+		<region rarity="ONE_VERY_RARE">FIELDS</region>
+		<region rarity="ZERO_EXTREMELY_RARE">DOMINION</region>
+	</regionLocations>
+	<worldLocations>
+		<world rarity="ONE_VERY_RARE">NIGHTLIFE_CLUB</world>
+	</worldLocations>
+	<placeLocations>
+	</placeLocations>
+	<flags/>
+</subspecies>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<weapon>
+	<coreAttributes>
+	
+		<value>1500</value> 
+		
+		<melee>true</melee>
+		
+		<twoHanded>false</twoHanded>
+		
+		<determiner><![CDATA[a]]></determiner>
+		
+		<name><![CDATA[Riding Whip]]></name>
+		
+		<namePlural pluralByDefault="false"><![CDATA[short Whips]]></namePlural>
+		
+		<description><![CDATA[This riding whip is embossed for grip and to help channel aura into attacks, but it seems better suited for the dervy back home. Something tells you dominion didn't make these for a races.]]></description> 
+		
+		<attackDescriptor>Whiplash</attackDescriptor>
+		
+		<attackTooltipDescription><![CDATA[Strike at [npc2.name] with your whip.]]></attackTooltipDescription>
+		
+		<rarity>EPIC</rarity> 
+		
+		<weaponSet/> 
+		
+		<equipText><![CDATA[[npc.Name] [npc.verb(slide)] the  strap around [npc.her] wrist, keeping it ready for use and [npc.her] hand free.]]></equipText>
+		
+		<unequipText><![CDATA[[npc.Name] [npc.verb(slide)] the strap off [npc.her] wrist.]]></unequipText>
+		
+		<imageName>Short_Whip.svg</imageName> 
+		<imageEquippedName>Short_Whip.svg</imageEquippedName> 
+		
+		<damage>8</damage> 
+		
+		<arcaneCost>0</arcaneCost> 
+		
+		<damageVariance>HIGH</damageVariance> 
+		
+		<availableDamageTypes>
+			<damageType>ICE</damageType>
+			<damageType>FIRE</damageType>
+			<damageType>POISON</damageType>
+			<damageType>LUST</damageType>
+		</availableDamageTypes>
+		 
+		<spells>
+			<spell>STEAL</spell>
+		</spells>
+		
+		<enchantmentLimit>10</enchantmentLimit>
+		
+		<effects/>
+		
+		<primaryColours values="JUST_JET_BLACK"/>
+		<primaryColoursDye values="ALL_WITH_METAL"/>
+		<secondaryColours values="JUST_PERIWINKLE"/> 
+		<secondaryColoursDye values="ALL_WITH_METAL"/>
+		<tertiaryColours values="JUST_DARK_BROWN"/> 
+		<tertiaryColoursDye values="ALL_WITH_METAL"/>
+		
+		<itemTags> 
+			<tag>SOLD_BY_VICKY</tag>
+		</itemTags>
+		
+	</coreAttributes>
+	
+	<hitDescriptions>
+		<hitText><![CDATA[[npc.Name] [npc.verb(slap)] [npc.her] whip against [npc2.name], [npc.her] aura leaving brief marks.]]></hitText>
+		<hitText><![CDATA[Swinging at [npc2.name] , [npc.name] [npc.verb(grin)] as the magic laced strands zap against [npc2.her] body! ]]></hitText>
+		<hitText><![CDATA[[npc.Name] [npc.verb(whip)] [npc2.name] upside [npc2.her] head, causing [npc2.her] to lean momentarily! ]]></hitText>
+	</hitDescriptions>
+
+	<!-- Descriptions that are used when missing an enemy. One of the missText values will be randomly selected each time the attacker misses their target. Follow the same guidelines as equipText. -->
+	<missDescriptions>
+		<missText>
+		<![CDATA[[npc.Name] [npc.verb(whip)] at [npc2.name], but [npc.verb(end)] up connecting with air.]]>
+		</missText>
+		<missText>
+		<![CDATA[Swinging out at [npc2.name] with [npc.her] whip, [npc.name] [npc.verb(let)] out a frustrated cry as [npc.she] [npc.verb(miss)] [npc.her] target! ]]>
+		</missText>
+		<missText>
+		<![CDATA[With a quick step forwards, [npc.name] [npc.verb(slaps)] at [npc2.name] with [npc.her] whip, but [npc.she] [npc.verb(miss)] [npc.her] target! ]]>
+		</missText>
+	</missDescriptions>
+	
+</weapon>

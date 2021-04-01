@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<bookText>
+	
+	<htmlContent tag="RATH_BASIC"><![CDATA[
+	<p>
+		Rathalos and rathians are known as "King of the skies" due to their potent fire and aerial agility.
+	</p>
+	]]>
+	</htmlContent>
+
+	<htmlContent tag="RATH_ADVANCED"><![CDATA[
+	<p>
+		Rathalos and Rathians , as the title implies, are flying wyverns that have a great dexterity in the air. They possess strong muscles and multiple flame sacs allowing them to fire fireballs one after another.
+	</p>
+	]]>
+	</htmlContent>
+	
+</bookText>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+
+<clothing>
+  <coreAtributes>
+    <value>2500</value>
+    <determiner><![CDATA[an]]></determiner>
+    <name><![CDATA[Orichalcum Anklet]]></name>
+    <namePlural pluralByDefault="false"><![CDATA[Orichalcum Anklets]]></namePlural>
+    <description><![CDATA[An anklet with a gemstone of the highly enchantable material; orichalcum.]]></description>
+    
+    <physicalResistance>0</physicalResistance>
+    <femininity>ANDROGYNOUS</femininity> 
+    <slot>ANKLE</slot> 
+    <rarity>EPIC</rarity> 
+    
+    <imageName>ankle_orichalcum_bracelet_optimized.svg</imageName>
+
+    <clothingSet/>
+    <imageEquippedName/>
+    <enchantmentLimit>25</enchantmentLimit>
+    
+    <effects/>
+
+    <blockedPartsList>
+      <blockedParts>
+        
+        <displacementType>REMOVE_OR_EQUIP</displacementType> 
+        
+        <clothingAccessRequired/>
+        <blockedBodyParts/>
+        <clothingAccessBlocked/>        
+        <concealedSlots/>
+        
+      </blockedParts>
+    </blockedPartsList>
+
+    <incompatibleSlots/>
+    
+    <primaryColours values="JUST_WHITE"/>
+    <primaryColoursDye values="ALL_METAL"/>
+    <secondaryColours values="JUST_DARK_RED"/>
+    <secondaryColoursDye values="ALL"/>
+    <tertiaryColours values="JUST_YELLOW"/>
+    <tertiaryColoursDye values="ALL"/>
+    
+    <itemTags>
+      <tag>SOLD_BY_KATE</tag>
+    </itemTags>
+    
+  </coreAtributes>
+
+  <displacementText type="REMOVE_OR_EQUIP">
+    <playerSelf>
+      <![CDATA[You take off your anklet.]]>
+    </playerSelf>
+    <playerNPC>
+      <![CDATA[You take off [npc.Name]'s anklet.]]>
+    </playerNPC>
+    <playerNPCRough>
+      <![CDATA[You yank [npc.name]'s anklet off.]]>
+    </playerNPCRough>
+    <NPCSelf>
+      <![CDATA[[npc.Name] takes off [npc.herHis] anklet.]]>
+    </NPCSelf>
+    <NPCPlayer>
+      <![CDATA[[npc.Name] takes off your anklet.]]>
+    </NPCPlayer>
+    <NPCPlayerRough>
+      <![CDATA[[npc.Name] yanks off your anklet.]]>
+    </NPCPlayerRough>
+    <NPCOtherNPC>
+      <![CDATA[[npc1.Name] takes off [npc2.name]'s anklet.]]>
+    </NPCOtherNPC>
+    <NPCOtherNPCRough>
+      <![CDATA[[npc.Name] yanks off [npc2.name]'s anklet.]]>
+    </NPCOtherNPCRough>
+  </displacementText>
+
+  <replacementText type="REMOVE_OR_EQUIP">
+    <playerSelf>
+      <![CDATA[You slide the anklet over your ankle.]]>
+    </playerSelf>
+    <playerNPC>
+      <![CDATA[You slide the anklet over [npc.name]'s ankle.]]>
+    </playerNPC>
+    <playerNPCRough>
+      <![CDATA[You slide the anklet over [npc.name]'s ankle.]]>
+    </playerNPCRough>
+    <NPCSelf>
+      <![CDATA[[npc.Name] slides the anklet over [npc.herHis] ankle.]]>
+    </NPCSelf>
+    <NPCPlayer>
+      <![CDATA[[npc.Name] slides the anklet over your ankle.]]>
+    </NPCPlayer>
+    <NPCPlayerRough>
+      <![CDATA[[npc.Name] slides the anklet over your ankle.]]>
+    </NPCPlayerRough>
+    <NPCOtherNPC>
+      <![CDATA[[npc1.Name] slides the anklet over [npc2.Name]'s ankle.]]>
+    </NPCOtherNPC>
+    <NPCOtherNPCRough>
+      <![CDATA[[npc1.Name] slides the anklet over [npc2.Name]'s ankle.]]>
+    </NPCOtherNPCRough>
+  </replacementText>
+  
+  
+</clothing>

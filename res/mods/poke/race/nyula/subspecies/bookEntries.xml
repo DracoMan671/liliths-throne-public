@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<bookText>
+	<htmlContent tag="NYULA_BASIC"><![CDATA[
+	<p>
+		Out of all the monsters that have migrated to this world, Sneasel and Weavile have taken to Lilith's Realm especially well. Clad in shadow and ice, the traits these fiends are most infamous for are their razor-sharp claws.
+	</p>
+	]]>
+	</htmlContent>
+	<htmlContent tag="NYULA_ADVANCED"><![CDATA[
+	<p style='text-align:center;'>
+		[style.boldDARKRED(Weavile)]
+	</p>
+	<p>
+		These feather-maned creatures travel in tight communities, working in units of four or five with impeccable cooperation. They communicate in secret through a series of claw markings composing a full 500-sign cant.
+	</p>
+	<p>
+		Weavile are known as the "Razor Claw" for a reason. Even a glancing scratch is enough to cause frostbite, disregarding the physical damage a mortal swipe can deal. Their cunning were able to bring down quarries several times their size in their home world, and the powers of Lilith's Domain have only made them even stronger.
+	</p>
+	<p>
+		These creatures are everywhere now, almost as numerous as the native demons. The youko have even taken to calling them "Demon Prowlers". It's hard to say whether they're in a turf war or a polyamorous fling with Demon Home and the rest of Dominion's demons.
+	</p>
+	<p>
+		Unlike most mammals, Weavile deliver their offspring by laying eggs. Their Sneasel form can briefly be seen before Lilith's magic forces them to grow.
+	</p>
+	<p>
+		Even so, using an Everstone will still cause them to regress into pre-evolved state.
+	</p>
+	<br/>
+	<p style='text-align:center;'>
+		[style.boldDARKGREY(Sneasel)]
+	</p>
+	<p>
+		While shorter and more juvenile than their counterparts, a Sneasel's claws are just as sharp, and their skills still dangerous. They often brandish said claws as a warning to potential foes.
+	</p>
+	<p>
+		They strike from the darkness, often stealing eggs from unguarded nests. In this new world, harpies have become their latest prey. The Harpy Nests consider them a dangerous pest, and do their damndest to drive them out on sight (unless they get off to that sort of thing).
+	</p>
+	<p>
+		While less numerous than Weavile, Sneasel can still be found prowling the same dark corners they tread, albeit less mobilized.
+	</p>
+	<p>
+		Like Weavile, Sneasel deliver their young with laid eggs. However, Lilith's magic doesn't appear to affect the newborns' growth, as they seem to hatch fully intelligent and capable of fighting and mating.
+	</p>
+	<p>
+		Consuming a Rare Candy under the shadow of night will evolve a Sneasel into a Weavile.
+	</p>
+	]]>
+	</htmlContent>
+</bookText>

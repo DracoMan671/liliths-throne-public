@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<bookText>
+
+	<htmlContent tag="BEETLE_BASIC"><![CDATA[
+	<p>
+		Beetle-morphs are commonly found in forests or plains, where they fight each other to protect their territory.
+	</p>
+	]]>
+	</htmlContent>
+
+	<htmlContent tag="BEETLE_ADVANCED"><![CDATA[
+	<p>
+		As their name suggest, beetle-morphs are insectoids, with a hard shell providing them a good defense. Ther are very territorial, and never back down from a fight.
+	</p>
+	<p>
+		Like most other races, beetle-morphs are affected by arcane storms and experience heightened libidos. Due to the weight of their shell, escaping them will prove difficult if they manage to pin down their prey, so caution is advised when dealing with them.
+	</p>
+	<p>
+		A beetle-morph's offspring will be a mixture of beetle-morphs and offspring of their partner's race.
+	</p>
+	]]>
+	</htmlContent>
+
+</bookText>

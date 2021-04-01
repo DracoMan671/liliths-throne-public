@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<fluid>
+	<race>poke_ralts</race>
+	<transformationName><![CDATA[Ralts-line]]></transformationName>
+	<baseFluidType>GIRLCUM</baseFluidType>
+	<flavour>GIRL_CUM</flavour>
+	<namesMasculine/>
+	<namesFeminine/>
+	<descriptorsMasculine>
+		<name><![CDATA[
+		#IF(npc.getSubspecies()==SUBSPECIES_poke_ralts_subspecies_Ralts)
+		Ralts
+		#ELSEIF(npc.getSubspecies()==SUBSPECIES_poke_ralts_subspecies_Kirlia)
+		Kirlia
+		#ELSEIF(npc.getSubspecies()==SUBSPECIES_poke_ralts_subspecies_Gallade)
+		Gallade
+		#ELSEIF(npc.getSubspecies()==SUBSPECIES_poke_ralts_subspecies_Gardevoir)
+		Gardevoir
+		#ENDIF
+		]]></name>
+	</descriptorsMasculine>
+	<descriptorsFeminine>
+		<name><![CDATA[
+		#IF(npc.getSubspecies()==SUBSPECIES_poke_ralts_subspecies_Ralts)
+		Ralts
+		#ELSEIF(npc.getSubspecies()==SUBSPECIES_poke_ralts_subspecies_Kirlia)
+		Kirlia
+		#ELSEIF(npc.getSubspecies()==SUBSPECIES_poke_ralts_subspecies_Gallade)
+		Gallade
+		#ELSEIF(npc.getSubspecies()==SUBSPECIES_poke_ralts_subspecies_Gardevoir)
+		Gardevoir
+		#ENDIF
+		]]></name>
+	</descriptorsFeminine>
+	<defaultFluidModifiers>
+		<modifier>SLIMY</modifier>
+	</defaultFluidModifiers>
+</fluid>

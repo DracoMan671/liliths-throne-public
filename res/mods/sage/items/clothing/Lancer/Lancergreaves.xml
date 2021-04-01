@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<clothing>
+	<coreAttributes>
+		<value>1000000</value>
+		<determiner><![CDATA[a pair of]]></determiner>
+		<name><![CDATA[Royal Knight Greave]]></name>
+		<namePlural pluralByDefault="true"><![CDATA[Royal Knight Greaves]]></namePlural>
+		<description><![CDATA[A pair of arcane constructed steel thigh-high Greaves based of the appearance of a legendary King, with the heel being raised off the ground in order to make the wearer taller, as well as to accentuate their calf muscles and the overall length of their legs.]]></description>
+		<physicalResistance>5</physicalResistance>
+		<femininity>ANDROGYNOUS</femininity>
+		<slot>FOOT</slot> 
+		<rarity>LEGENDARY</rarity>
+		<clothingSet/> 
+		<imageName>Lancergreaves.svg</imageName>
+		<imageEquippedName/>
+		<enchantmentLimit/>
+		<effects/>
+		
+		<blockedPartsList>
+			<blockedParts>
+				<displacementType>REMOVE_OR_EQUIP</displacementType> 
+				<clothingAccessRequired> 
+					<clothingAccess>FEET</clothingAccess>
+				</clothingAccessRequired>
+				<blockedBodyParts>
+					<bodyPart>FEET</bodyPart>
+				</blockedBodyParts>
+				<clothingAccessBlocked> 
+					<clothingAccess>FEET</clothingAccess>
+				</clothingAccessBlocked>
+				<concealedSlots/>
+			</blockedParts>
+		</blockedPartsList>
+		
+		<incompatibleSlots/> 
+		
+		<primaryColours values="JUST_STEEL"/> 
+		<primaryColoursDye values="ALL_WITH_METALS"/>
+		
+		<itemTags> 
+			<tag>SOLD_BY_VICKY</tag>
+			<tag>FITS_NON_BIPED_BODY_HUMANOID</tag>
+		</itemTags>
+	</coreAttributes>
+
+  <replacementText type="REMOVE_OR_EQUIP">
+    <self>
+      <![CDATA[[npc.Name] [npc.verb(push)] [npc.her] [npc.feet] into the greaves and [npc.verb(pull)] them up to [npc.her] mid-thigh.]]>
+    </self>
+    <other>
+      <![CDATA[[npc.Name] [npc.verb(push)] [npc2.namePos] [npc2.feet] into the greaves and [npc.verb(pull)] them up to [npc2.her] mid-thigh.]]>
+    </other>
+    <otherRough>
+      <![CDATA[[npc.Name] roughly [npc.verb(push)] [npc2.namePos] [npc2.feet] into the greaves and [npc.verb(yank)] them up to [npc2.her] mid-thigh.]]>
+    </otherRough>
+  </replacementText>
+
+  <displacementText type="REMOVE_OR_EQUIP">
+    <self>
+      <![CDATA[[npc.Name] [npc.verb(pull)] down the tops of [npc.her] thigh-high greaves before tugging them off.]]>
+    </self>
+    <other>
+      <![CDATA[[npc.Name] [npc.verb(pull)] down the tops of [npc2.namePos] thigh-high greaves before tugging them off.]]>
+    </other>
+    <otherRough>
+      <![CDATA[[npc.Name] roughly [npc.verb(yank)] down the tops of [npc2.namePos] thigh-high greaves before tugging them off.]]>
+    </otherRough>
+  </displacementText>
+	
+</clothing>

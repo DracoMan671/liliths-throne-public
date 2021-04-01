@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<clothing>
+<coreAtributes>
+		<value>200</value>
+		<determiner><![CDATA[a]]></determiner>
+		<name><![CDATA[choker]]></name>
+<namePlural pluralByDefault="false"><![CDATA[chokers]]></namePlural>
+<description><![CDATA[A simple choker, with a metal clasp at the rear.]]></description>
+<physicalResistance>0</physicalResistance>
+<femininity>ANDROGYNOUS</femininity>
+<slot>NECK</slot>
+<rarity>COMMON</rarity>
+<clothingSet/>
+<imageName>choker.svg</imageName>
+<imageEquippedName/>
+<enchantmentLimit/>
+<effects/>
+<blockedPartsList>
+<blockedParts>
+<displacementType>REMOVE_OR_EQUIP</displacementType>
+<clothingAccessRequired>
+</clothingAccessRequired>
+<blockedBodyParts>
+</blockedBodyParts>
+<clothingAccessBlocked>
+</clothingAccessBlocked>
+<concealedSlots>
+</concealedSlots>
+</blockedParts>
+</blockedPartsList>
+<incompatibleSlots/>
+<primaryColours values="ALL_WITH_METALS"/>
+<primaryColoursDye values="ALL_WITH_METALS"/>
+<secondaryColours values="ALL_METAL"/>
+<secondaryColoursDye values="ALL_METAL"/>
+<tertiaryColours values=""/>
+<tertiaryColoursDye values=""/>
+<itemTags>
+<tag>SOLD_BY_FINCH</tag>
+<tag>SOLD_BY_NYAN</tag>
+</itemTags>
+</coreAtributes>
+<displacementText type="REMOVE_OR_EQUIP">
+<playerSelf>
+<![CDATA[You unclasp your choker.]]>
+</playerSelf>
+<playerNPC>
+<![CDATA[You unclasp [npc.name]'s choker.]]>
+</playerNPC>
+<playerNPCRough>
+<![CDATA[You roughly unclasp [npc.name]'s choker.]]>
+</playerNPCRough>
+<NPCSelf>
+<![CDATA[[npc.Name] unclasps [npc.her] choker.]]>
+</NPCSelf>
+<NPCPlayer>
+<![CDATA[[npc.Name] unclasps your choker.]]>
+</NPCPlayer>
+<NPCPlayerRough>
+<![CDATA[[npc.Name] roughly unclasps your choker.]]>
+</NPCPlayerRough>
+<NPCOtherNPC>
+<![CDATA[[npc.Name] unclasps [npc2.name]'s choker.]]>
+</NPCOtherNPC>
+<NPCOtherNPCRough>
+<![CDATA[[npc.Name] roughly unclasps [npc2.name]'s choker.]]>
+</NPCOtherNPCRough>
+</displacementText>
+<replacementText type="REMOVE_OR_EQUIP">
+<playerSelf>
+<![CDATA[You clasp your choker closed around your neck.]]>
+</playerSelf>
+<playerNPC>
+<![CDATA[You clasp [npc.name]'s choker closed around [npc.her] neck.]]>
+</playerNPC>
+<playerNPCRough>
+<![CDATA[You roughly clasp [npc.name]'s choker closed around your neck.]]>
+</playerNPCRough>
+<NPCSelf>
+<![CDATA[[npc.Name] clasps [npc.her] choker closed around [npc.her] neck.]]>
+</NPCSelf>
+<NPCPlayer>
+<![CDATA[[npc.Name] clasps your choker closed around your neck.]]>
+</NPCPlayer>
+<NPCPlayerRough>
+<![CDATA[[npc.Name] roughly clasps your choker closed around your neck.]]>
+</NPCPlayerRough>
+<NPCOtherNPC>
+<![CDATA[[npc.Name] clasps [npc2.name]'s choker closed around [npc2.her] neck.]]>
+</NPCOtherNPC>
+<NPCOtherNPCRough>
+<![CDATA[[npc.Name] roughly clasps [npc2.name]'s choker closed around [npc2.her] neck.]]>
+</NPCOtherNPCRough>
+</replacementText>
+</clothing>

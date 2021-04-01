@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<clothing>
+	<coreAtributes>
+		<value>10000</value>
+		<determiner><![CDATA[a pair of]]></determiner>
+		<name><![CDATA[Greaves]]></name>
+		<namePlural pluralByDefault="true"><![CDATA[Greaves]]></namePlural>
+		<description><![CDATA[A set of armoured plates to bedeck the thighs, and protect them from blades and points. Comes with a layer of mail, as well.]]></description>
+		<physicalResistance>7</physicalResistance>
+		<femininity>ANDROGYNOUS</femininity>
+		<slot>LEG</slot>
+		<rarity>RARE</rarity>
+		<clothingSet></clothingSet>
+		<imageName>Greaves.svg</imageName>
+		<imageEquippedName></imageEquippedName>
+		<enchantmentLimit>8</enchantmentLimit>
+		<effects />
+		<blockedPartsList>
+			<blockedParts>
+				<displacementType>REMOVE_OR_EQUIP</displacementType>
+				<clothingAccessRequired />
+				<blockedBodyParts>
+					<bodyPart>LEGS</bodyPart>
+					<bodyPart>THIGHS</bodyPart>
+				</blockedBodyParts>
+				<clothingAccessBlocked>
+					<clothingAccess>CALVES</clothingAccess>
+				</clothingAccessBlocked>
+				<concealedSlots />
+			</blockedParts>
+		</blockedPartsList>
+		<incompatibleSlots />
+		<primaryColours values="ALL_METAL"/>
+		<primaryColoursDye values="ALL_METAL"/>
+		<secondaryColours values="ALL"/>
+		<secondaryColoursDye values="ALL"/>
+		<tertiaryColours values="ALL_METAL"/>
+		<tertiaryColoursDye values="ALL_METAL"/>
+		<itemTags>
+			<tag>SOLD_BY_VICKY</tag>
+		</itemTags>
+	</coreAtributes>
+	<displacementText type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[You unstrap and remove your Greaves.]]></playerSelf>
+		<playerNPC><![CDATA[You unstrap and remove [npc.name]'s Greaves.]]></playerNPC>
+		<playerNPCRough><![CDATA[You tear [npc.name]'s Greaves from their thighs.]]></playerNPCRough>
+		<NPCSelf><![CDATA[[npc.name] unstraps and removes their Greaves.]]></NPCSelf>
+		<NPCPlayer><![CDATA[[npc.name] unstraps and removes your Greaves.]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[[npc.name] tears your Greaves from your thighs.]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[[npc1.name] unstraps and removes [npc2.name]'s Greaves.]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[[npc1.name] tears [npc2.name]'s Greaves from their thighs.]]></NPCOtherNPCRough>
+	</displacementText>
+	<replacementText type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[You strap your Greaves to your thighs.]]></playerSelf>
+		<playerNPC><![CDATA[You strap [npc.name]'s Greaves to their thighs.]]></playerNPC>
+		<playerNPCRough><![CDATA[You slap [npc.name]'s Greaves to their thighs and strap them on.]]></playerNPCRough>
+		<NPCSelf><![CDATA[[npc.name] straps their Greaves onto their thighs.]]></NPCSelf>
+		<NPCPlayer><![CDATA[[npc.name] straps your Greaves to your thighs.]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[[npc.name] slaps your Greaves to your thighs and straps them on.]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[[npc1.name] straps [npc2.name]'s Greaves to their thighs.]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[[npc1.name] slaps [npc2.name]'s Greaves to their thighs and straps them on.]]></NPCOtherNPCRough>
+	</replacementText>
+</clothing>

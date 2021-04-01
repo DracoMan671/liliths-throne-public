@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<clothing>
+	<coreAttributes>
+		<value>5000</value>
+		<determiner><![CDATA[a pair of]]></determiner>
+		<name><![CDATA[Slave Master's Shades]]></name>
+		<namePlural pluralByDefault="true"><![CDATA[Slave Master's Shades]]></namePlural>
+		<description><![CDATA[A pair of shades. Narrow oval reflective lenses filter out a significant portion of incoming light.]]></description>
+		<physicalResistance>0</physicalResistance>
+		<femininity>ANDROGYNOUS</femininity>
+		<slot>EYES</slot>
+		<rarity>EPIC</rarity>
+		<clothingSet>Iron_slave_master</clothingSet>
+		<imageName>shades.svg</imageName>
+		<imageEquippedName/>
+		<enchantmentLimit/>
+		<effects>
+			<effect limit="0" mod1="TF_MOD_FETISH_BEHAVIOUR" mod2="TF_MOD_FETISH_SADIST" potency="MAJOR_BOOST" timer="2229" type="CLOTHING"/>
+            <effect limit="0" mod1="TF_MOD_FETISH_BEHAVIOUR" mod2="TF_MOD_FETISH_NON_CON_DOM" potency="MAJOR_BOOST" timer="2229" type="CLOTHING"/>
+            <effect limit="0" mod1="TF_MOD_FETISH_BEHAVIOUR" mod2="TF_MOD_FETISH_DOMINANT" potency="MAJOR_BOOST" timer="2229" type="CLOTHING"/>
+		</effects>
+		
+		<blockedPartsList>
+			<blockedParts>
+				<displacementType>REMOVE_OR_EQUIP</displacementType>
+				<clothingAccessRequired>
+					<clothingAccess>EYES</clothingAccess>
+				</clothingAccessRequired>
+				<blockedBodyParts/>
+				<clothingAccessBlocked/>
+				<concealedSlots/>
+			</blockedParts>
+		</blockedPartsList>
+		
+		<incompatibleSlots/>
+		
+		<primaryColours values="ALL_METALLIC"/>
+		<primaryColoursDye values="ALL_METALLIC"/>
+		<secondaryColours values="ALL"/>
+		<secondaryColoursDye values="ALL"/>
+		<tertiaryColours/>
+		<tertiaryColoursDye/>
+	
+		<itemTags> 
+			<tag>SOLD_BY_NYAN</tag>
+		</itemTags>
+	</coreAttributes>
+
+	<replacementText type="REMOVE_OR_EQUIP">
+		<self>
+			<![CDATA[[npc.Name] [npc.verb(put)] on the shades.]]>
+		</self>
+		<other>
+			<![CDATA[[npc.Name] [npc.verb(push)] the shades onto [npc2.namePos] face.]]>
+		</other>
+		<otherRough>
+			<![CDATA[[npc.Name] roughly [npc.verb(push)] the shades onto [npc2.namePos] face.]]>
+		</otherRough>
+	</replacementText>
+
+	<displacementText type="REMOVE_OR_EQUIP">
+		<self>
+			<![CDATA[[npc.Name] [npc.verb(take)] off [npc.her] shades.]]>
+		</self>
+		<other>
+			<![CDATA[[npc.Name] [npc.verb(take)] off [npc2.namePos] shades.]]>
+		</other>
+		<otherRough>
+			<![CDATA[[npc.Name] [npc.verb(grabs)] [npc2.namePos] shades and roughly [npc.verb(pull)] them off.]]>
+		</otherRough>
+	</displacementText>
+  
+</clothing>

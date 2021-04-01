@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<clothing>
+	<coreAtributes>
+	
+		<authorTag><![CDATA[Carefuly etched into the back of the wing reads "CAREFULY FORGED BY TROOPS #P01-Y & #B100-M "]]></authorTag>
+
+		<value>2450</value> 
+		
+		<determiner><![CDATA[a]]></determiner>
+		
+		<name><![CDATA[Bat wing barrette]]></name>
+		
+		<namePlural pluralByDefault="false"><![CDATA[bat wing barrettes]]></namePlural> 
+		
+		<description><![CDATA[A black steel barrette issued by the imperial military for the soldiers that cant keep hair out of their eyes. Its modeled after an imperial bat's wing.]]></description> 
+		
+		<physicalResistance>1</physicalResistance> 
+		
+		<femininity>FEMININE</femininity> 
+		
+		<slot>HAIR</slot> 
+		
+		<rarity>EPIC</rarity> 
+		
+		<clothingSet/>
+		
+		<imageName>Bat_Wing_Barrette.svg</imageName> 
+		
+		<imageEquippedName/> 
+		
+		<enchantmentLimit>25</enchantmentLimit>
+		
+		<effects>
+			<effect itemEffectType="CLOTHING" limit="0" potency="MAJOR_BOOST" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="CRITICAL_DAMAGE" timer="54"/>
+			<effect itemEffectType="CLOTHING" limit="0" potency="MAJOR_BOOST" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="CRITICAL_CHANCE" timer="54"/>
+		</effects>
+		
+		<blockedPartsList> 
+		
+			<blockedParts>
+				<displacementType>REMOVE_OR_EQUIP</displacementType> 
+				
+				<clothingAccessRequired/>
+				
+				<blockedBodyParts/>
+				
+				<clothingAccessBlocked/>
+				
+				<concealedSlots/>
+			</blockedParts>
+			
+		</blockedPartsList>
+		
+		<incompatibleSlots/> 
+		
+		<primaryColours>
+			<colour>CLOTHING_BLUE_NAVY</colour>
+		</primaryColours>
+		<primaryColoursDye values="ALL_WITH_METAL"/>
+		<secondaryColours>
+			<colour>CLOTHING_BLACK</colour>
+		</secondaryColours>
+		<secondaryColoursDye values="ALL_WITH_METAL"/>
+		<tertiaryColours values="JUST_YELLOW"/>
+		<tertiaryColoursDye values="ALL"/>
+		
+		<itemTags> 
+			<tag>SOLD_BY_NYAN</tag>
+		</itemTags>
+	</coreAtributes>
+
+	<displacementText type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[
+			You un-clip your barrette.
+		]]></playerSelf>
+		<playerNPC><![CDATA[
+			You un-clip [npc.name]'s barrette.
+		]]></playerNPC>
+		<playerNPCRough><![CDATA[
+			You grab hold of [npc.name]'s barrette and [npc.verb(flick)] it to the side.
+		]]></playerNPCRough>
+		<NPCSelf><![CDATA[
+			[npc.Name] takes off [npc.her] barrette.
+		]]></NPCSelf>
+		<NPCPlayer><![CDATA[
+			[npc.Name] un-clips your barrette.
+		]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[
+			[npc.Name] grabs hold of your barrette and [npc.verb(flick)] it to the side.
+		]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[
+			[npc1.Name] un-clips [npc2.name]'s barrette.
+		]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[
+			[npc.Name] grabs hold of [npc2.name]'s barrette and [npc.verb(flick)] it to the side.
+		]]></NPCOtherNPCRough>
+	</displacementText>
+
+	<!-- 'replacementText' is used for equipping and replacements. -->
+	<replacementText type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[
+			You clip the barrette to your hair.
+		]]></playerSelf>
+		<playerNPC><![CDATA[
+			You clip the barrette onto [npc.name]'s hair.
+		]]></playerNPC>
+		<playerNPCRough><![CDATA[
+			You hold [npc.name] still as you roughly force [npc.her] to wear the barrette.
+		]]></playerNPCRough>
+		<NPCSelf><![CDATA[
+			[npc.Name] clips the barrette in [npc.her] hair.
+		]]></NPCSelf>
+		<NPCPlayer><![CDATA[
+			[npc.Name] clips the barrette in your hair.
+		]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[
+			[npc.Name] holds you still as [npc.she] forces the barrette onto your hair.
+		]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[
+			[npc1.Name] clips the barrette on [npc2.name]'s hair.
+		]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[
+			[npc1.Name] holds [npc2.name] still as [npc1.she] roughly forces the barrette in [npc2.her] hair.
+		]]></NPCOtherNPCRough>
+	</replacementText>
+	
+</clothing>

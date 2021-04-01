@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<item>
+	<coreAttributes>
+		<value>40</value> 
+		<determiner><![CDATA[a bottle of]]></determiner>
+		<name><![CDATA[Otherworldly Draught]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Otherworldly Draughts]]></namePlural>
+		<description><![CDATA[A glass jar, filled with sloshing purple fluid. The label shows a bimbofied greater sergal girl chugging the bottle while a male pounds her from the back.]]></description> 
+		
+		<useDescriptor>drink</useDescriptor>
+		
+		<sexUse>true</sexUse>
+		<combatUseAllies>true</combatUseAllies>
+		<combatUseEnemies>false</combatUseEnemies>
+		<consumedOnUse>true</consumedOnUse>
+		
+		<rarity>UNCOMMON</rarity> 
+		
+		<imageName zLayer="0" imageRotation="0" imageSize="100">background_bottom.svg</imageName>
+		<imageName zLayer="1" imageRotation="-15" imageSize="80">Sergal_otherworldly_draught.svg</imageName>
+		<imageName zLayer="2" imageRotation="0" imageSize="100">background_top.svg</imageName>
+		
+		<colourPrimary>ATTRIBUTE_PHYSIQUE</colourPrimary>
+		<colourSecondary/>
+		<colourTertiary/>
+		
+		<enchantmentItemTypeId>POTION</enchantmentItemTypeId>
+		<enchantmentEffectId>ATTRIBUTE_PHYSIQUE</enchantmentEffectId>
+		
+		<effectTooltipLines>
+			<line><![CDATA[[style.boldGood(Restores)] 5% [style.boldHealth([#ATTRIBUTE_HEALTH_MAXIMUM.getName()])]]]></line>
+			<line><![CDATA[[#ATTRIBUTE_MAJOR_PHYSIQUE.getFormattedValue(1)] to 'potion effects']]></line>
+		</effectTooltipLines>
+		
+		<applyEffects><![CDATA[
+			[##npc.incrementHealth(npc.getAttributeValue(ATTRIBUTE_HEALTH_MAXIMUM)/20)]
+			
+			<p style='margin-bottom:0; padding-bottom:0;'>
+				A burst of refreshment soothes [npc.name] and bolsters [npc.her] strength.
+			</p>
+			[#npc.addPotionEffect(ATTRIBUTE_MAJOR_PHYSIQUE, 1)]
+		]]></applyEffects>
+		
+		<itemTags>
+			<tag>ATTRIBUTE_TF_ITEM</tag>
+			<tag>SOLD_BY_RALPH</tag>
+		</itemTags>
+	</coreAttributes>
+
+	<useDescriptions>
+		<selfUse><![CDATA[
+		[npc.Name] [npc.verb(remove)] the purple fluid from [npc.her] inventory, the draught sloshing about. Uncapping the bottle, [npc.she] [npc.verb(start)] drinking from it, the fluid disappearing into [npc.her] throat, leaving a warm feeling between [npc.her] legs. The taste dominates [npc.her] mouth, but [npc.she] [npc.do]n't mind one bit.
+		]]></selfUse>
+		<otherUse><![CDATA[
+		[npc.Name] [npc.verb(remove)] the purple fluid from [npc.her] inventory, the draught sloshing about. [npc.she] [npc.verb(hold)] if out to [npc2.name], letting them take the bottle. Uncapping the bottle, [npc2.she] [npc2.verb(start)] drinking from it, the fluid disappearing into [npc2.her] throat, leaving a warm feeling between [npc2.her] legs. The taste dominates [npc2.her] mouth, but [npc2.she] [npc2.do]n't mind one bit.
+		]]></otherUse>
+	</useDescriptions>
+
+	
+</item>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- For a version with comments, see "rental_mommy.xml". -->
+<clothing>
+	<coreAtributes>
+		<value>200</value>
+		<determiner><![CDATA[a pair of]]></determiner>
+		<name><![CDATA[Vintage Goggles]]></name>
+		<namePlural pluralByDefault="true"><![CDATA[Vintage Goggles]]></namePlural>
+		<description><![CDATA[A pair of old vintage goggles from the Victorian era.]]></description>
+		<physicalResistance>1</physicalResistance>
+		<femininity>ANDROGYNOUS</femininity>
+		<slot>EYES</slot>
+		<rarity>UNCOMMON</rarity>
+		<clothingSet/>
+		<imageName>eye_victorian_goggles.svg</imageName>
+		<imageEquippedName/>
+		<enchantmentLimit/>
+		<effects>
+		</effects>
+		<blockedPartsList>
+			<blockedParts>
+				<displacementType>REMOVE_OR_EQUIP</displacementType>
+				<clothingAccessRequired>
+					<clothingAccess>HEAD</clothingAccess>
+				</clothingAccessRequired>
+				<blockedBodyParts/>
+				<clothingAccessBlocked/>
+				<concealedSlots/>
+			</blockedParts>
+			<blockedParts>
+				<displacementType>PULLS_UP</displacementType>
+				<clothingAccessRequired>
+					<clothingAccess>EYES</clothingAccess>
+				</clothingAccessRequired>
+				<blockedBodyParts/>
+				<clothingAccessBlocked/>
+				<concealedSlots>
+					<slot>EYES</slot>
+				</concealedSlots>
+			</blockedParts>
+		</blockedPartsList>
+		<incompatibleSlots/>
+		<primaryColours values="ALL_WITH_METALS"/>
+		<primaryColoursDye values="ALL_WITH_METALS"/>
+		<secondaryColours values="ALL"/>
+		<secondaryColoursDye values="ALL_WITH_METALS"/>
+		<tertiaryColours values="ALL"/>
+		<tertiaryColoursDye values="ALL"/>
+		<itemTags>
+			<tag>SOLD_BY_NYAN</tag>
+			<tag>DOMINION_ALLEYWAY_SPAWN</tag>
+			<tag>SUBMISSION_TUNNEL_SPAWN</tag>
+			<tag>BAT_CAVERNS_SPAWN</tag>
+		</itemTags>
+	</coreAtributes>
+
+	<displacementText type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[
+			You take off your goggles.
+		]]></playerSelf>
+		<playerNPC><![CDATA[
+			You slide off [npc.name]'s goggles.
+		]]></playerNPC>
+		<playerNPCRough><![CDATA[
+			You grab hold of [npc.name]'s goggles and roughly pull them off [npc.her].
+		]]></playerNPCRough>
+		<NPCSelf><![CDATA[
+			[npc.Name] takes [npc.her] goggles off.
+		]]></NPCSelf>
+		<NPCPlayer><![CDATA[
+			[npc.Name] slips your goggles off.
+		]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[
+			[npc.Name] grabs hold of your goggles and roughly pulls them off.
+		]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[
+			[npc1.Name] takes [npc2.name]'s goggles off.
+		]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[
+			[npc.Name] grabs hold of [npc2.name]'s goggles and roughly pulls them off [npc2.her].
+		]]></NPCOtherNPCRough>
+	</displacementText>
+
+	<replacementText type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[
+			You slip on your goggles.
+		]]></playerSelf>
+		<playerNPC><![CDATA[
+			You slip the goggles onto [npc.her] face.
+		]]></playerNPC>
+		<playerNPCRough><![CDATA[
+			You hold [npc.name] still as you roughly pull the goggles down over [npc.her] eyes.
+		]]></playerNPCRough>
+		<NPCSelf><![CDATA[
+			[npc.Name] slips the goggles on.
+		]]></NPCSelf>
+		<NPCPlayer><![CDATA[
+			[npc.Name] slips the goggles onto your face.
+		]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[
+			[npc.Name] holds you still as [npc.she] roughly pulls the goggles over your eyes.
+		]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[
+			[npc1.Name] slips the goggles onto [npc2.name]'s face.
+		]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[
+			[npc1.Name] holds [npc2.name] still as [npc1.she] roughly pulls the goggles down over [npc2.her] eyes.
+		]]></NPCOtherNPCRough>
+	</replacementText>
+
+	<displacementText type="PULLS_UP">
+		<playerSelf><![CDATA[
+			You pull up your goggles.
+		]]></playerSelf>
+		<playerNPC><![CDATA[
+			You slide up [npc.name]'s goggles.
+		]]></playerNPC>
+		<playerNPCRough><![CDATA[
+			You grab hold of [npc.name]'s goggles and roughly pull them up.
+		]]></playerNPCRough>
+		<NPCSelf><![CDATA[
+			[npc.Name] pulls [npc.her] goggles up.
+		]]></NPCSelf>
+		<NPCPlayer><![CDATA[
+			[npc.Name] slips your goggles up.
+		]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[
+			[npc.Name] grabs hold of your goggles and roughly pulls them up.
+		]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[
+			[npc1.Name] pulls [npc2.name]'s goggles up.
+		]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[
+			[npc.Name] grabs hold of [npc2.name]'s goggles and roughly pulls them up.
+		]]></NPCOtherNPCRough>
+	</displacementText>
+
+	<replacementText type="PULLS_UP">
+		<playerSelf><![CDATA[
+			You pull down your goggles.
+		]]></playerSelf>
+		<playerNPC><![CDATA[
+			You pull the goggles down over [npc.her] eyes.
+		]]></playerNPC>
+		<playerNPCRough><![CDATA[
+			You hold [npc.name] still as you roughly pull the goggles down over [npc.her] eyes.
+		]]></playerNPCRough>
+		<NPCSelf><![CDATA[
+			[npc.Name] pulls down [npc.Her] goggles.
+		]]></NPCSelf>
+		<NPCPlayer><![CDATA[
+			[npc.Name] slips the goggles back over your eyes.
+		]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[
+			[npc.Name] holds you still as [npc.she] roughly pulls the goggles down over your eyes.
+		]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[
+			[npc1.Name] slips the goggles back over [npc2.name]'s eyes.
+		]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[
+			[npc1.Name] holds [npc2.name] still as [npc1.she] roughly pulls the goggles down over [npc2.her] eyes.
+		]]></NPCOtherNPCRough>
+	</replacementText>
+	
+</clothing>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- For a version with comments, see "rental_mommy.xml". -->
+<clothing>
+	<coreAtributes>
+		<value>500</value>
+		<determiner><![CDATA[a]]></determiner>
+		<name><![CDATA[Power Scouter]]></name>
+		<namePlural pluralByDefault="true"><![CDATA[ Power Scouters]]></namePlural>
+		<description><![CDATA[A power scouter, the display is broken na dhas a faint image of 9000 burned into the screen.]]></description>
+		<physicalResistance>1</physicalResistance>
+		<femininity>ANDROGYNOUS</femininity>
+		<slot>EYES</slot>
+		<rarity>UNCOMMON</rarity>
+		<clothingSet/>
+		<imageName>scouter.svg</imageName>
+		<imageEquippedName/>
+		<enchantmentLimit/>
+		<effects>
+		</effects>
+		<blockedPartsList>
+			<blockedParts>
+				<displacementType>REMOVE_OR_EQUIP</displacementType>
+				<clothingAccessRequired>
+					<clothingAccess>EYES</clothingAccess>
+					<clothingAccess>HEAD</clothingAccess>
+				</clothingAccessRequired>
+				<blockedBodyParts/>
+				<clothingAccessBlocked/>
+				<concealedSlots/>
+			</blockedParts>
+		</blockedPartsList>
+		<incompatibleSlots/>
+		<primaryColours values="ALL_WITH_METALS"/>
+		<primaryColoursDye values="ALL_WITH_METALS"/>
+		<secondaryColours values="ALL_WITH_METALS"/>
+		<secondaryColoursDye values="ALL_WITH_METALS"/>
+		<tertiaryColours values="ALL_WITH_METALS"/>
+		<tertiaryColoursDye values="ALL_WITH_METALS"/>
+		<itemTags>
+			<tag>SOLD_BY_NYAN</tag>
+			<tag>DOMINION_ALLEYWAY_SPAWN</tag>
+			<tag>SUBMISSION_TUNNEL_SPAWN</tag>
+			<tag>BAT_CAVERNS_SPAWN</tag>
+		</itemTags>
+	</coreAtributes>
+
+	<displacementText type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[
+			You take off your power scouter.
+		]]></playerSelf>
+		<playerNPC><![CDATA[
+			You slide off [npc.name]'s power scouter.
+		]]></playerNPC>
+		<playerNPCRough><![CDATA[
+			You grab hold of [npc.name]'s power scouter and roughly pulls it off [npc.her].
+		]]></playerNPCRough>
+		<NPCSelf><![CDATA[
+			[npc.Name] takes [npc.her] power scouter off.
+		]]></NPCSelf>
+		<NPCPlayer><![CDATA[
+			[npc.Name] slips your power scouter off.
+		]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[
+			[npc.Name] grabs hold of your power scouter and roughly pulls it off.
+		]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[
+			[npc1.Name] takes [npc2.name]'s power scouter off.
+		]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[
+			[npc.Name] grabs hold of [npc2.name]'s power scouter and roughly pulls it off [npc2.her].
+		]]></NPCOtherNPCRough>
+	</displacementText>
+
+	<replacementText type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[
+			You slip on your power scouter.
+		]]></playerSelf>
+		<playerNPC><![CDATA[
+			You slip the power scouter onto [npc.her] face.
+		]]></playerNPC>
+		<playerNPCRough><![CDATA[
+			You hold [npc.name] still as you roughly push the power scouter onto [npc.her] face.
+		]]></playerNPCRough>
+		<NPCSelf><![CDATA[
+			[npc.Name] slips the power scouter on.
+		]]></NPCSelf>
+		<NPCPlayer><![CDATA[
+			[npc.Name] slips the power scouter onto your face.
+		]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[
+			[npc.Name] holds you still as [npc.she] roughly pushes the power scouter onto your face.
+		]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[
+			[npc1.Name] slips the power scouter onto [npc2.name]'s face.
+		]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[
+			[npc1.Name] holds [npc2.name] still as [npc1.she] roughly pushes the power scouter onto [npc2.her] face.
+		]]></NPCOtherNPCRough>
+	</replacementText>
+	
+</clothing>

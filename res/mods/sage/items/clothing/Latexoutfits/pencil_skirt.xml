@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Made by Alicebun! -->
+<clothing>
+	<coreAtributes>
+		<value>500</value>
+		<determiner><![CDATA[a]]></determiner>
+		<name><![CDATA[latex pencil skirt]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[latex pencil skirts]]></namePlural>
+		<description><![CDATA[A skin-tight skirt made of shiny, synthetic material.]]></description>
+		<physicalResistance>1</physicalResistance>
+		<femininity>FEMININE</femininity>
+		<slot>LEG</slot>
+		<rarity>COMMON</rarity>
+		<clothingSet>sage_ltxset</clothingSet> 
+		<imageName>pencil_skirt.svg</imageName>
+		<imageEquippedName/>
+		<enchantmentLimit/>
+		<effects>
+		</effects>
+		<blockedPartsList>
+			<blockedParts>
+				<displacementType>REMOVE_OR_EQUIP</displacementType>
+				<clothingAccessRequired>
+				</clothingAccessRequired>
+				<blockedBodyParts>
+				</blockedBodyParts>
+				<clothingAccessBlocked/>
+				<concealedSlots>
+				</concealedSlots>
+			</blockedParts>
+			<blockedParts>
+				<displacementType>PULLS_UP</displacementType>
+				<clothingAccessRequired/>
+				<blockedBodyParts>
+					<bodyPart>ASS</bodyPart>
+					<bodyPart>ANUS</bodyPart>
+					<bodyPart>VAGINA</bodyPart>
+					<bodyPart>MOUND</bodyPart>
+					<bodyPart>PENIS</bodyPart>
+					<bodyPart>TESTICLES</bodyPart>
+					<bodyPart>THIGHS</bodyPart>
+				</blockedBodyParts>
+				<clothingAccessBlocked>
+					<clothingAccess>GROIN</clothingAccess>
+				</clothingAccessBlocked>
+				<concealedSlots>
+					<slot>ANUS</slot>
+					<slot>VAGINA</slot>
+					<slot>GROIN</slot>
+					<slot>PIERCING_VAGINA</slot>
+					<slot>PIERCING_PENIS</slot>
+					<slot>PENIS</slot>
+				</concealedSlots>
+			</blockedParts>
+		</blockedPartsList>
+		<incompatibleSlots>
+		</incompatibleSlots>
+		<primaryColours values="JUST_BLACK"/>
+		<primaryColoursDye values="ALL"/>
+		<itemTags>
+			<tag>SOLD_BY_NYAN</tag>
+		</itemTags>
+	</coreAtributes>
+	
+<displacementText type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[
+			You pull down your skirt and kick it off your feet.
+		]]></playerSelf>
+		<playerNPC><![CDATA[
+			You pull [npc.name]'s skirt down and slide it off [npc.her] feet.
+		]]></playerNPC>
+		<playerNPCRough><![CDATA[
+			You pull [npc.name]'s skirt down and slide it off [npc.her] feet.
+		]]></playerNPCRough>
+		<NPCSelf><![CDATA[
+			[npc.Name] pulls down [npc.her] skirt, kicking it off [npc.her] feet.
+		]]></NPCSelf>
+		<NPCPlayer><![CDATA[
+			[npc.Name] pulls your skirt down and slides it off your feet.
+		]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[
+			[npc.Name] pulls your skirt down and slides it off your feet.
+		]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[
+			[npc1.Name] pulls [npc2.name]'s skirt down and slides it off [npc2.her] feet..
+		]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[
+			[npc1.Name] pulls [npc2.name]'s skirt down and slides it off [npc2.her] feet..
+		]]></NPCOtherNPCRough>
+	</displacementText>
+	
+	<replacementText type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[
+			You step into the skirt before pulling it up to your waist.
+		]]></playerSelf>
+		<playerNPC><![CDATA[
+			You guide [npc.name] into the skirt before pulling it up to [npc.her] waist.
+		]]></playerNPC>
+		<playerNPCRough><![CDATA[
+			You force [npc.name] into the skirt before pulling it up to [npc.her] waist.
+		]]></playerNPCRough>
+		<NPCSelf><![CDATA[
+			[npc.Name] steps into the skirt before pulling it up to [npc.her] waist.
+		]]></NPCSelf>
+		<NPCPlayer><![CDATA[
+			[npc.Name] guides you into the skirt before pulling it up to your waist.
+		]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[
+			[npc.Name] forces you into the skirt before pulling it up to your waist.
+		]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[
+			[npc1.Name] guides [npc2.name] into the skirt before pulling it up to [npc2.her] waist.
+		]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[
+			[npc1.Name] forces [npc2.name] into the skirt before pulling it up to [npc2.her] waist.
+		]]></NPCOtherNPCRough>
+	</replacementText>
+	
+</clothing>

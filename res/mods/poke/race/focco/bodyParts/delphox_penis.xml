@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<penis>
+	<race>poke_focco</race>
+	<transformationName><![CDATA[Delphox]]></transformationName>
+	<coveringType>PENIS</coveringType>
+	<pubicHairAllowed>true</pubicHairAllowed>
+	<testicleType>poke_focco_delphox_testicle</testicleType>
+	<additionalTransformationEffect/>
+	<!--
+	<additionalTransformationEffect><![CDATA[
+		[#npc.setSkinCovering(BODY_COVERING_TYPE_PENIS, COLOUR_SKIN_EBONY, false)]
+	]]></additionalTransformationEffect>
+	-->
+	<namesMasculine>
+		<name><![CDATA[Delphox-]]></name>
+	</namesMasculine>
+	<namesPluralMasculine>
+		<name><![CDATA[Delphox-]]></name>
+	</namesPluralMasculine>
+	<namesFeminine>
+		<name><![CDATA[Delphox-]]></name>
+	</namesFeminine>
+	<namesPluralFeminine>
+		<name><![CDATA[Delphox-]]></name>
+	</namesPluralFeminine>
+	<descriptors/>
+	<!--
+	<descriptors>
+		<descriptor><![CDATA[hyaenidae]]></descriptor>
+	</descriptors>
+	-->
+	<!-- SHEATHED, RIBBED, TENTACLED, KNOTTED, TAPERED, BLUNT, FLARED, BARBED, VEINY, PREHENSILE, OVIPOSITOR -->
+	<defaultPenetrationModifiers>
+		<modifier>SHEATHED</modifier>
+		<modifier>KNOTTED</modifier>
+		<modifier>TAPERED</modifier>
+	</defaultPenetrationModifiers>
+	<transformationDescription><![CDATA[
+		Letting out an involuntary moan, [npc.name] [npc.verb(feel)] [npc.her] penis shifting into a new form, and [npc.sheIs] hit by a wave of overwhelming arousal as a sheath grows at the base of [npc.her] cock and a thick knot suddenly presses out the base of [npc.her] shaft. As [npc.she] [npc.verb(pant)] and [npc.verb(gasp)] for air, the tip of [npc.her] cock narrows down as it tapers into its new form.
+		<br/>[npc.She] now [npc.has] a Delphox penis, [npc.materialDescriptor] [npc.penisFullDescription(true)].
+		<br/>[npc.She] [npc.has] [npc.ballsCount]#IF(npc.isInternalTesticles()) internal#ENDIF balls)], [npc.materialDescriptor] [npc.ballsFullDescription(true)], which produce [npc.cumColour(true)] 'chu-cum)].
+	]]></transformationDescription>
+	<bodyDescription><![CDATA[
+		[npc.She] [npc.has] [npc.a_cockGirth], [npc.cockLengthValue] Delphox-cock, which is [npc.materialCompositionDescriptor] [npc.cockFullDescription(true)].
+	]]></bodyDescription>
+</penis>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+
+<clothing>
+  <coreAttributes>
+    <value>1500</value>
+    <determiner><![CDATA[an]]></determiner>
+    <name><![CDATA[sissification cage]]></name>
+    <namePlural pluralByDefault="false"><![CDATA[sissification cages]]></namePlural>
+    <description><![CDATA[An ornate metal cage, designed to be fit in place around someone's penis in order to prevent it from being used in penetrative sex. When worn, it will physically prevent an erection from occurring.]]></description>
+
+    <physicalResistance>0</physicalResistance>
+    <femininity>ANDROGYNOUS</femininity>
+    <slot>PENIS</slot>
+    <rarity>EPIC</rarity>
+
+    <imageName>sissification_cage.svg</imageName>
+
+	<clothingSet/>
+  <imageEquippedName/>
+  <enchantmentLimit/>
+	
+	<effects> 
+		<effect itemEffectType="CLOTHING" limit="0" potency="MAJOR_DRAIN" primaryModifier="CLOTHING_SPECIAL" secondaryModifier="CLOTHING_SEALING" timer="0"/>
+	</effects>
+
+    <blockedPartsList>
+      <blockedParts>
+
+        <displacementType>REMOVE_OR_EQUIP</displacementType>
+
+        <clothingAccessRequired>
+          <clothingAccess>GROIN</clothingAccess>
+        </clothingAccessRequired>
+		<blockedBodyParts>
+          <bodyPart>PENIS</bodyPart>
+        </blockedBodyParts>
+		<clothingAccessBlocked/>
+        <concealedSlots/>
+
+      </blockedParts>
+    </blockedPartsList>
+
+    <incompatibleSlots/>
+
+    <primaryColours values="ALL_METAL"/>
+    <primaryColoursDye values="ALL_METAL"/>
+    <secondaryColours>
+			<colour>CLOTHING_PINK</colour>
+			<colour>CLOTHING_PINK_LIGHT</colour>
+			<colour>CLOTHING_PINK_DARK</colour>
+			<colour>CLOTHING_PINK_HOT</colour>
+   </secondaryColours>
+    <secondaryColoursDye values="ALL"/>
+    <tertiaryColours>
+		<colour>CLOTHING_BRASS</colour>
+    </tertiaryColours>
+    <tertiaryColoursDye values="ALL_METAL"/>
+
+    <itemTags>
+      <tag>SOLD_BY_FINCH</tag>
+      <tag>ENABLE_SEX_EQUIP</tag>
+      <tag>REQUIRES_PENIS</tag>
+      <tag>PREVENTS_ERECTION_PHYSICAL</tag>
+      <tag>TRANSPARENT</tag>
+      <tag>RIGID_MATERIAL</tag>
+      <tag>PROVIDES_KEY</tag>
+    </itemTags>
+
+  </coreAttributes>
+
+  <replacementText type="REMOVE_OR_EQUIP">
+    <self>
+      <![CDATA[[npc.Name] [npc.verb(lock)] the sissification cage in place around [npc.her] [npc.penis].
+      #IF (!npc.hasStatusEffect(SE_subsophie_sissification_cage))
+			#THEN [##npc.addStatusEffect(SE_subsophie_sissification_cage, 31)]<br/>[npc.Name] [npc.verb(feel)] a [style.boldBad(strange feeling)] in [npc.her] [npc.penis]...
+			#ENDIF
+      ]]>
+    </self>
+    <other>
+      <![CDATA[[npc.Name] [npc.verb(lock)] the sissification cage in place around [npc2.namePos] [npc2.penis].
+      #IF (!npc2.hasStatusEffect(SE_subsophie_sissification_cage))
+			#THEN [##npc2.addStatusEffect(SE_subsophie_sissification_cage, 31)]<br/>[npc2.Name] [npc2.verb(feel)] a [style.boldBad(strange feeling)] in [npc2.her] [npc2.penis]...
+			#ENDIF
+      ]]>
+    </other>
+    <otherRough>
+      <![CDATA[[npc.Name] roughly squeezes [npc2.namePos] [npc2.penis] before locking it inside the sissification cage.
+      #IF (!npc2.hasStatusEffect(SE_subsophie_sissification_cage))
+			#THEN [##npc2.addStatusEffect(SE_subsophie_sissification_cage, 31)]<br/>[npc2.Name] [npc2.verb(feel)] a [style.boldBad(strange feeling)] in [npc2.her] [npc2.penis]...
+			#ENDIF
+      ]]>
+    </otherRough>
+  </replacementText>
+
+  <displacementText type="REMOVE_OR_EQUIP">
+    <self>
+      <![CDATA[[npc.Name] [npc.verb(unlock)] and [npc.verb(remove)] the sissification cage that was imprisoning [npc.her] [npc.penis].
+      [##npc.removeStatusEffect(SE_subsophie_sissification_cage)]<br/>[npc.Name] no longer [npc.verb(feel)] the strange feeling in [npc.her] [npc.penis].]]>
+    </self>
+    <other>
+      <![CDATA[[npc.Name] [npc.verb(unlock)] and [npc.verb(remove)] the sissification cage that was imprisoning [npc2.namePos] [npc2.penis].
+      [##npc2.removeStatusEffect(SE_subsophie_sissification_cage)]<br/>[npc2.Name] no longer [npc2.verb(feel)] the strange feeling in [npc2.her] [npc2.penis].]]>
+    </other>
+    <otherRough>
+      <![CDATA[[npc.Name] impatiently [npc.verb(unlock)] and [npc.verb(pull)] off the sissification cage that was imprisoning [npc2.namePos] [npc2.penis].
+      [##npc2.removeStatusEffect(SE_subsophie_sissification_cage)]<br/>[npc2.Name] no longer [npc2.verb(feel)] the strange feeling in [npc2.her] [npc2.penis].]]>
+    </otherRough>
+  </displacementText>
+
+
+</clothing>

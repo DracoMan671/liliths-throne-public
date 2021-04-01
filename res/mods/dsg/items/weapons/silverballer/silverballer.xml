@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<weapon>
+	<coreAttributes>
+		
+		<authorTag><![CDATA[On the underside of the barrel housing, a small engraving reads "MFD by DSG Forgeworks."]]></authorTag>
+	
+		<value>5000</value> 
+		
+		<melee>false</melee>
+		
+		<twoHanded>false</twoHanded>
+		
+		<determiner><![CDATA[an]]></determiner>
+		
+		<name><![CDATA[ICA Silverballer]]></name>
+		
+		<namePlural pluralByDefault="false"><![CDATA[ICA Silverballers]]></namePlural> 
+		
+		<description><![CDATA[An extenstively customized AMT 1911 Hardballer, this short recoil gas-operated pistol fires the powerful .45 ACP round from its seven round magazine. The barrel has been threaded for a suppressor.]]></description> 
+		
+		<attackDescriptor>shoot</attackDescriptor>
+		
+		<attackTooltipDescription>Shoot [npc2.name] with your Silverballer.</attackTooltipDescription>
+		
+		<rarity>LEGENDARY</rarity> 
+		
+		<equipText><![CDATA[[npc.Name] [npc.verb(unholster)] the Silverballer, [npc.verb(slap)] in a fresh magazine, and [npc.verb(turn)] the safety off.]]></equipText>
+		
+		<unequipText><![CDATA[[npc.Name] [npc.verb(take)] out the magazine, and [npc.verb(turn)] the safety on, and [npc.verb(holster)] the Silverballer.]]></unequipText>
+		
+		<imageName>silverballer_uneq.svg</imageName> 
+		
+		<imageEquippedName>silverballer.svg</imageEquippedName>
+		
+		<damage>30</damage> 
+		
+		<arcaneCost>2</arcaneCost> 
+		
+		<damageVariance>LOW</damageVariance> 
+		
+		<availableDamageTypes>
+			<damageType>FIRE</damageType>
+			<damageType>PHYSICAL</damageType>
+		</availableDamageTypes>
+		
+		<spells/>
+		
+		<enchantmentLimit>5</enchantmentLimit>
+		
+		<effects/> 
+		
+		<primaryColours values="JUST_SILVER"/> 
+		<primaryColoursDye values="ALL_METAL"/>
+		<secondaryColours>
+			<colour>CLOTHING_BROWN</colour>
+		</secondaryColours>
+		<secondaryColoursDye values="ALL"/>
+		
+		<itemTags>
+			<tag>SOLD_BY_VICKY</tag>
+		</itemTags>
+		
+	</coreAttributes>
+
+	<!-- Descriptions that are used when hitting an enemy. One of the hitText values will be randomly selected each time the attacker hits their target. Follow the same guidelines as equipText. -->
+		<hitDescriptions>
+		<hitText><![CDATA[
+		[npc.Name] [npc.verb(line)] up [npc2.namePos] in the Silverballer's sights and [npc.verb(squeeze)] the trigger. While the bullet hits its mark, [npc2.namePos] aura protects [npc2.her].
+		]]></hitText>
+	</hitDescriptions>
+
+	<!-- Descriptions that are used when missing an enemy. One of the missText values will be randomly selected each time the attacker misses their target. Follow the same guidelines as equipText. -->
+	<missDescriptions>
+		<missText><![CDATA[
+		[npc.Name] [npc.verb(line)] up [npc2.namePos] in the Silverballer's sights and [npc.verb(squeeze)] the trigger. The bullet whistles past [npc2.name].
+		]]></missText>
+	</missDescriptions>
+	
+</weapon>

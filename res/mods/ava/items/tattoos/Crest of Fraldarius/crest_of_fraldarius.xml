@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<tattoo>
+	<coreAttributes>
+		<value>500</value> 
+		
+		<name><![CDATA[Crest of Fraldarius]]></name>
+		
+		<description><![CDATA[The Crest of a falcon knight now carried by an aggressive swordsman.]]></description> 
+		
+		<imageName>crest_of_fraldarius.svg</imageName> 
+		
+		<enchantmentLimit>5</enchantmentLimit>
+		
+		<slotAvailability/>
+		
+		<primaryColours values="ALL"/> 
+		<secondaryColours values="ALL"/>
+		<tertiaryColours/>
+		
+	</coreAttributes>
+	
+</tattoo>

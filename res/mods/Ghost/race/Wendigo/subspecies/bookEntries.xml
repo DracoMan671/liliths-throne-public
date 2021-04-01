@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<bookText>
+	
+	<htmlContent tag="WENDIGO_BASIC"><![CDATA[
+	<p>
+		Wendigos are hostile morphs that like to live in woods. Recently they have been seen stalking the streets of Dominion...
+	</p>
+	]]>
+	</htmlContent>
+
+	<htmlContent tag="WENDIGO_ADVANCED"><![CDATA[
+	<p>
+		Wendigos are the perfect hunter. They can change their body to look just like their prey, and when the time is right, they will pounce and attack their prey.
+	</p>
+	]]>
+	</htmlContent>
+	
+</bookText>

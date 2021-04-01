@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- For a version with comments, see "rental_mommy.xml". -->
+<clothing>
+	<coreAtributes>
+		<value>750</value>
+		<determiner><![CDATA[a]]></determiner>
+		<name><![CDATA[waitress dress]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[waitress dresses]]></namePlural>
+		<description><![CDATA[A waitress dress that harkens back to the style of the 1950s.]]></description>
+		<physicalResistance>1</physicalResistance>
+		<femininity>FEMININE</femininity>
+		<slot>TORSO_UNDER</slot>
+		<rarity>UNCOMMON</rarity>
+		<clothingSet/>
+		<imageName>waitress.svg</imageName>
+		<imageEquippedName/>
+		<enchantmentLimit/>
+		<effects/>
+		<blockedPartsList>
+			<blockedParts>
+				<displacementType>REMOVE_OR_EQUIP</displacementType>
+				<clothingAccessRequired>
+					<clothingAccess>ARMS_UP_TO_SHOULDER</clothingAccess>
+					<clothingAccess>HEAD</clothingAccess>
+				</clothingAccessRequired>
+				<blockedBodyParts>
+					<bodyPart>BACK</bodyPart>
+				</blockedBodyParts>
+				<clothingAccessBlocked>
+					<clothingAccess>WAIST</clothingAccess>
+				</clothingAccessBlocked>
+				<concealedSlots/>
+			</blockedParts>
+			<blockedParts>
+				<displacementType>PULLS_UP</displacementType>
+				<clothingAccessRequired/>
+				<blockedBodyParts>
+					<bodyPart>ANUS</bodyPart>
+					<bodyPart>PENIS</bodyPart>
+					<bodyPart>VAGINA</bodyPart>
+				</blockedBodyParts>
+				<clothingAccessBlocked>
+					<clothingAccess>GROIN</clothingAccess>
+					<clothingAccess>ANUS</clothingAccess>
+				</clothingAccessBlocked>
+				<concealedSlots>
+					<slot>GROIN</slot>
+					<slot>VAGINA</slot>
+					<slot>ANUS</slot>
+					<slot>PENIS</slot>
+					<slot>PIERCING_PENIS</slot>
+					<slot>PIERCING_VAGINA</slot>
+				</concealedSlots>
+			</blockedParts>
+			<blockedParts>
+				<displacementType>UNBUTTONS</displacementType>
+				<clothingAccessRequired>
+					<clothingAccess>CHEST</clothingAccess>
+				</clothingAccessRequired>
+				<blockedBodyParts>
+					<bodyPart>BREASTS</bodyPart>
+					<bodyPart>NIPPLES</bodyPart>
+					<bodyPart>STOMACH</bodyPart>
+				</blockedBodyParts>
+				<clothingAccessBlocked>
+					<clothingAccess>CHEST</clothingAccess>
+				</clothingAccessBlocked>
+				<concealedSlots>
+					<slot>STOMACH</slot>
+					<slot>CHEST</slot>
+					<slot>NIPPLE</slot>
+					<slot>PIERCING_NIPPLE</slot>
+					<slot>PIERCING_STOMACH</slot>
+				</concealedSlots>
+			</blockedParts>
+		</blockedPartsList>
+		
+		<incompatibleSlots/>
+		
+		<primaryColours values="All"/>
+		<primaryColoursDye values="ALL"/>
+		<secondaryColours values="ALL"/>
+		<secondaryColoursDye values="ALL"/>
+		<tertiaryColours values="ALL"/>
+		<tertiaryColoursDye values="ALL"/>
+		<itemTags>
+			<tag>DRESS</tag>
+			<tag>SOLD_BY_NYAN</tag>
+		</itemTags>
+	</coreAtributes>
+
+  <replacementText type="REMOVE_OR_EQUIP">
+    <self>
+      <![CDATA[[npc.Name] [npc.verb(guide)] [npc.her] [npc.arms] through the waitress dress's sleeves as [npc.she] [npc.verb(pull)] it down over [npc.her] head and buttoning up the shirt.]]>
+    </self>
+    <other>
+      <![CDATA[[npc.Name] [npc.verb(guide)] [npc2.namePos] [npc2.arms] through the waitress dress's sleeves as [npc.she] [npc.verb(pull)] it down over [npc2.her] head and buttoning up the shirt.]]>
+    </other>
+    <otherRough>
+      <![CDATA[[npc.Name] roughly [npc.verb(force)] [npc2.namePos] [npc2.arms] through the waitress dress's sleeves as [npc.she] [npc.verb(pull)] it down over [npc2.her] head and harshly buttons up the shirt.]]>
+    </otherRough>
+  </replacementText>
+
+  <displacementText type="REMOVE_OR_EQUIP">
+    <self>
+      <![CDATA[[npc.Name] unbuttons [npc.her] shirt and [npc.verb(pull)] off [npc.her] waitress dress.]]>
+    </self>
+    <other>
+      <![CDATA[[npc.Name] unbuttons [npc2.namePos] shirt and [npc.verb(pull)] off [npc2.her] waitress dress.]]>
+    </other>
+    <otherRough>
+      <![CDATA[[npc.Name] roughly unbuttons [npc2.namePos] shirt and [npc.verb(pull)] off [npc2.her] waitress dress.]]>
+    </otherRough>
+  </displacementText>
+	
+  <replacementText type="PULLS_UP">
+    <self>
+      <![CDATA[[npc.Name] [npc.verb(pull)] [npc.her] waitress dress back down, covering [npc.her] groin.]]>
+    </self>
+    <other>
+      <![CDATA[[npc.Name] [npc.verb(pull)] [npc2.namePos] waitress dress back down, covering [npc2.her] groin.]]>
+    </other>
+    <otherRough>
+      <![CDATA[[npc.Name] roughly [npc.verb(yank)] [npc2.namePos] waitress dress back down, covering [npc2.her] groin.]]>
+    </otherRough>
+  </replacementText>
+
+  <displacementText type="PULLS_UP">
+    <self>
+      <![CDATA[[npc.Name] [npc.verb(pull)] [npc.her] waitress dress up to around [npc.her] waist, fully exposing [npc.her] groin.]]>
+    </self>
+    <other>
+      <![CDATA[[npc.Name] [npc.verb(pull)] [npc2.namePos] waitress dress up around [npc2.her] waist, fully exposing [npc2.her] groin.]]>
+    </other>
+    <otherRough>
+      <![CDATA[[npc.Name] roughly [npc.verb(push)] [npc2.namePos] waitress dress up around [npc2.her] waist, fully exposing [npc2.her] groin.]]>
+    </otherRough>
+  </displacementText>
+  
+  <replacementText type="UNBUTTONS">
+    <self>
+      <![CDATA[[npc.Name] buttons up [npc.her] shirt and slips the apron on, covering [npc.her] chest and stomach.]]>
+    </self>
+    <other>
+      <![CDATA[[npc.Name] buttons up [npc2.namePos] shirt and slips the apron on, covering [npc.her] chest and stomach.]]>
+    </other>
+    <otherRough>
+      <![CDATA[[npc.Name] roughly buttons up [npc2.namePos] shirt and [npc.verb(push)] the apron over her head, covering [npc2.her] chest and stomach.]]>
+    </otherRough>
+  </replacementText>
+
+  <displacementText type="UNBUTTONS">
+    <self>
+      <![CDATA[[npc.Name] unbuttons [npc.her] shirt and slips out of the apron, fully exposing [npc.her] chest and stomach.]]>
+    </self>
+    <other>
+      <![CDATA[[npc.Name] unbuttons [npc2.namePos] shirt and slips out of the apron, fully exposing [npc.her] chest and stomach.]]>
+	</other>
+    <otherRough>
+      <![CDATA[[npc.Name] roughly unbuttons [npc2.namePos] shirt and [npc.verb(yank)] her head out of the apron, fully exposing [npc2.her] chest and stomach.]]>
+    </otherRough>
+  </displacementText>
+	
+</clothing>

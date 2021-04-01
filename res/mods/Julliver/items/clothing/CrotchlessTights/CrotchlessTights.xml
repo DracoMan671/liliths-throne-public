@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<clothing>
+	<coreAtributes>
+		<value>420</value>
+		<determiner><![CDATA[a pair of]]></determiner>
+		<name><![CDATA[Crotchless tights]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Crotchless tights]]></namePlural>
+		<description><![CDATA[These tights feature a gap around the wearer's groin]]></description>
+		<physicalResistance>1</physicalResistance>
+		<femininity>FEMININE</femininity>
+		<slot>SOCK</slot>
+		<rarity>RARE</rarity>
+		<clothingSet></clothingSet>
+		<imageName>CrotchlessTights.svg</imageName>
+		<imageEquippedName>CrotchlessTights.svg</imageEquippedName>
+		<enchantmentLimit></enchantmentLimit>
+		<effects />
+		<blockedPartsList>
+			<blockedParts>
+				<displacementType>REMOVE_OR_EQUIP</displacementType>
+				<clothingAccessRequired>
+					<clothingAccess>LEGS_UP_TO_GROIN</clothingAccess>
+					<clothingAccess>CALVES</clothingAccess>
+					<clothingAccess>FEET</clothingAccess>
+				</clothingAccessRequired>
+				<blockedBodyParts />
+				<clothingAccessBlocked>
+					<clothingAccess>GROIN</clothingAccess>
+				</clothingAccessBlocked>
+				<concealedSlots />
+			</blockedParts>
+		</blockedPartsList>
+		<incompatibleSlots />
+		<primaryColours values="JUST_BLACK" />
+		<primaryColoursDye values="ALL" />
+		<secondaryColours values="" />
+		<secondaryColoursDye values="" />
+		<tertiaryColours values="" />
+		<tertiaryColoursDye values="" />
+		<itemTags>
+			<tag>SOLD_BY_NYAN</tag>
+			<tag>DOMINION_ALLEYWAY_SPAWN</tag>
+		</itemTags>
+	</coreAtributes>
+	<displacementText type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[You take off your pair of tights.]]></playerSelf>
+		<playerNPC><![CDATA[You strip [Npc.name] of [npc.her] tights.]]></playerNPC>
+		<playerNPCRough><![CDATA[You rip a pair of tights off [Npc.name].]]></playerNPCRough>
+		<NPCSelf><![CDATA[[Npc.name] takes off their pair of tights.]]></NPCSelf>
+		<NPCPlayer><![CDATA[[Npc.name] takes off your pair of tights.]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[[Npc.name] rips off your pair of tights.]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[[Npc1.name] takes off [Npc2.name]'s pair of tights.]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[[Npc1.name] rips off [Npc2.name]'s pair of tights.]]></NPCOtherNPCRough>
+	</displacementText>
+	<replacementText type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[You slip a pair of tights over your legs.]]></playerSelf>
+		<playerNPC><![CDATA[You slip a pair of tights over [Npc.name]'s legs.]]></playerNPC>
+		<playerNPCRough><![CDATA[You force a pair of tights over [Npc.name]'s legs.]]></playerNPCRough>
+		<NPCSelf><![CDATA[[Npc.name] puts on a pair of tights.]]></NPCSelf>
+		<NPCPlayer><![CDATA[[Npc.name] slips a pair of tights over your legs.]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[[Npc.name] forces a pair of tights over your legs.]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[[Npc1.name] slips a pair of tights over [Npc2.name]'s legs.]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[[Npc1.name] forces a pair of tights over [Npc2.name]'s legs.]]></NPCOtherNPCRough>
+	</replacementText>
+</clothing>

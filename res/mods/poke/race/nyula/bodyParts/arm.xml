@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<arm>
+	<race>poke_nyula</race>
+	<transformationName><![CDATA[Sneasel-line]]></transformationName>
+	<coveringType>poke_nyula_fur</coveringType>
+	<allowsFlight>false</allowsFlight>	
+	<!-- ARM_STANDARD, ARM_WINGS, ARM_WINGS_FEATHERED, ARM_WINGS_LEATHERY -->
+	<tags>
+		<tag>ARM_STANDARD</tag>
+	</tags>
+	<name><![CDATA[arm]]></name>
+	<namePlural><![CDATA[arms]]></namePlural> 
+	<descriptorsMasculine>
+		<descriptor>furry</descriptor>
+		<descriptor>fur-coated</descriptor>
+	</descriptorsMasculine>
+	<descriptorsFeminine>
+		<descriptor>furry</descriptor>
+		<descriptor>fur-coated</descriptor>
+	</descriptorsFeminine>
+	<handName><![CDATA[claw]]></handName>
+	<handNamePlural><![CDATA[claws]]></handNamePlural>
+	<handDescriptorsMasculine>
+		<descriptor>sharp</descriptor>
+		<descriptor>razor-sharp</descriptor>
+		<descriptor>furry</descriptor>
+	</handDescriptorsMasculine>
+	<handDescriptorsFeminine>
+		<descriptor>sharp</descriptor>
+		<descriptor>feminine</descriptor>
+		<descriptor>razor-sharp</descriptor>
+		<descriptor>furry</descriptor>
+	</handDescriptorsFeminine>
+	<fingerName><![CDATA[finger]]></fingerName>
+	<fingerNamePlural><![CDATA[fingers]]></fingerNamePlural>
+	<fingerDescriptorsMasculine>
+		<descriptor>cold</descriptor>
+	</fingerDescriptorsMasculine>
+	<fingerDescriptorsFeminine>
+		<descriptor>cold</descriptor>
+		<descriptor>feminine</descriptor>
+	</fingerDescriptorsFeminine>
+	<transformationDescription><![CDATA[
+		The transformation leaves [npc.nameIsFull] with Weavile/Sneasel claws, which are [npc.materialDescriptor] [npc.armFullDescription].
+	]]></transformationDescription>
+	<bodyDescription><![CDATA[
+	[npc.She] [npc.has] [npc.armRows] arms, which are [npc.materialCompositionDescriptor] [npc.armFullDescription(true)]. [npc.her] claws are razor-sharp, much befitting of a Weavile/Sneasel.
+	]]></bodyDescription>
+</arm>

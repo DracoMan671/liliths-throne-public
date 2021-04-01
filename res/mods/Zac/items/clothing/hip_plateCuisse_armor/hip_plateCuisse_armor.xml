@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<clothing>
+	
+	<coreAtributes>
+		<value>2000</value> 
+		<determiner><![CDATA[a]]></determiner>
+		<name><![CDATA[Platemail Cuisse]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Platemail Cuisses]]></namePlural> 
+		<description><![CDATA[A set of hip armor made up of multiple metal plates layered on top of one another.]]></description> 
+		<physicalResistance>4</physicalResistance> 
+		<femininity>ANDROGYNOUS</femininity> 
+		<slot>HIPS</slot> 
+		<rarity>RARE</rarity> 
+		<clothingSet/>
+		<imageName>hip_plateCuisse_armor.svg</imageName> 
+		<imageEquippedName/>  
+		<enchantmentLimit/>
+		<effects/> 
+		<blockedPartsList>
+			<blockedParts>
+				<displacementType>REMOVE_OR_EQUIP</displacementType>
+				<clothingAccessRequired/>
+				<blockedBodyParts/>
+					<bodyPart>ANUS</bodyPart>
+				<clothingAccessBlocked>
+					<clothingAccess>LEGS_UP_TO_GROIN</clothingAccess>
+				</clothingAccessBlocked>
+				<concealedSlots/>
+			</blockedParts>
+			<blockedParts>
+				<displacementType>PULLS_OFF</displacementType>
+				<clothingAccessRequired/>
+				<blockedBodyParts/>
+					<bodyPart>ANUS</bodyPart>
+				<clothingAccessBlocked>
+					<clothingAccess>LEGS_UP_TO_GROIN</clothingAccess>
+				</clothingAccessBlocked>
+				<concealedSlots/>
+			</blockedParts>
+		</blockedPartsList>
+		<incompatibleSlots/>
+		<primaryColours values="JUST_BROWN"/>
+		<primaryColoursDye values="ALL"/>
+		<secondaryColours values="JUST_STEEL"/>
+		<secondaryColoursDye values="ALL_METAL"/>
+		<tertiaryColours values="NONE"/>
+		<tertiaryColoursDye values="NONE"/>
+		<itemTags> 
+			<tag>SOLD_BY_NYAN</tag>
+			<tag>DOMINION_ALLEYWAY_SPAWN</tag>
+		</itemTags>
+	</coreAtributes>
+	<displacementText type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[
+			You take off your platemail cuisse.
+		]]></playerSelf>
+		<playerNPC><![CDATA[
+			You pull off [npc.name]'s platemail cuisse.
+		]]></playerNPC>
+		<playerNPCRough><![CDATA[
+			You grab hold of [npc.name]'s platemail cuisse and roughly pull them off [npc.her] hips.
+		]]></playerNPCRough>
+		<NPCSelf><![CDATA[
+			[npc.Name] takes [npc.her] platemail cuisse off.
+		]]></NPCSelf>
+		<NPCPlayer><![CDATA[
+			[npc.Name] pulls your platemail cuisse off.
+		]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[
+			[npc.Name] grabs hold of your platemail cuisse and roughly pulls them off your hips.
+		]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[
+			[npc1.Name] pulls [npc2.name]'s platemail cuisse off.
+		]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[
+			[npc.Name] grabs hold of [npc2.name]'s platemail cuisse and roughly pulls them off [npc2.her] hips.
+		]]></NPCOtherNPCRough>
+	</displacementText>
+
+	<replacementText type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[
+			You put on the platemail cuisse.
+		]]></playerSelf>
+		<playerNPC><![CDATA[
+			You put [npc.name]'s platemail cuisse on [npc.her] hips.
+		]]></playerNPC>
+		<playerNPCRough><![CDATA[
+			You hold [npc.name] still as you roughly force the platemail cuisse on [npc.her] hips.
+		]]></playerNPCRough>
+		<NPCSelf><![CDATA[
+			[npc.Name] put on the platemail cuisse.
+		]]></NPCSelf>
+		<NPCPlayer><![CDATA[
+			[npc.Name] puts your platemail cuisse on your hips.
+		]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[
+			[npc.Name] holds you still as [npc.she] roughly puts the platemail cuisse on your hips.
+		]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[
+			[npc1.Name] puts [npc2.name]'s platemail cuisse on their hips.
+		]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[
+			[npc.Name] grabs hold of [npc2.name]'s platemail cuisse and roughly puts them on [npc2.her] hips.
+		]]></NPCOtherNPCRough>
+	</replacementText>
+
+	<displacementText type="PULLS_OFF">
+		<playerSelf><![CDATA[
+			You take off your platemail cuisse.
+		]]></playerSelf>
+		<playerNPC><![CDATA[
+			You pull off [npc.name]'s platemail cuisse.
+		]]></playerNPC>
+		<playerNPCRough><![CDATA[
+			You grab hold of [npc.name]'s platemail cuisse and roughly pull them off [npc.her] hips.
+		]]></playerNPCRough>
+		<NPCSelf><![CDATA[
+			[npc.Name] takes [npc.her] platemail cuisse off.
+		]]></NPCSelf>
+		<NPCPlayer><![CDATA[
+			[npc.Name] pulls your platemail cuisse off.
+		]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[
+			[npc.Name] grabs hold of your platemail cuisse and roughly pulls them off your hips.
+		]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[
+			[npc1.Name] pulls [npc2.name]'s platemail cuisse off.
+		]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[
+			[npc.Name] grabs hold of [npc2.name]'s platemail cuisse and roughly pulls them off [npc2.her] hips.
+		]]></NPCOtherNPCRough>
+	</displacementText>
+	
+	<replacementText type="PULLS_BACK_ON">
+		<playerSelf><![CDATA[
+			You put on the platemail cuisse.
+		]]></playerSelf>
+		<playerNPC><![CDATA[
+			You put [npc.name]'s platemail cuisse on [npc.her] hips.
+		]]></playerNPC>
+		<playerNPCRough><![CDATA[
+			You hold [npc.name] still as you roughly force the platemail cuisse on [npc.her] hips.
+		]]></playerNPCRough>
+		<NPCSelf><![CDATA[
+			[npc.Name] put on the platemail cuisse.
+		]]></NPCSelf>
+		<NPCPlayer><![CDATA[
+			[npc.Name] puts your platemail cuisse on your hips.
+		]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[
+			[npc.Name] holds you still as [npc.she] roughly puts the platemail cuisse on your hips.
+		]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[
+			[npc1.Name] puts [npc2.name]'s platemail cuisse on their hips.
+		]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[
+			[npc.Name] grabs hold of [npc2.name]'s platemail cuisse and roughly puts them on [npc2.her] hips.
+		]]></NPCOtherNPCRough>
+	</replacementText>
+	
+</clothing>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<face>
+	<race>Yoruhime_mantis</race>
+	<transformationName><![CDATA[mantis]]></transformationName>
+	<coveringType>Yoruhime_mantis_chitin</coveringType>
+	<mouthType>Yoruhime_mantis_mouth</mouthType>
+	<tags>
+		<tag>FACE_STANDARD</tag>
+	</tags>
+	<names/>
+	<namesPlural/>
+	<descriptorsMasculine>
+		<descriptor>mantis-like</descriptor>
+		<descriptor>mantis-like</descriptor>
+	</descriptorsMasculine>
+	<descriptorsFeminine>
+		<descriptor>mantis-like</descriptor>
+		<descriptor>mantis-like</descriptor>
+	</descriptorsFeminine>
+	<noseName><![CDATA[nose]]></noseName>
+	<noseNamePlural><![CDATA[noses]]></noseNamePlural>
+	<noseDescriptorsMasculine/>
+	<noseDescriptorsFeminine/>
+	<transformationDescription><![CDATA[
+		[npc.Her] nose and mouth twitch and transform as they shift into a mantis-like face.
+		#IF(npc.getBodyMaterial()==BODY_MATERIAL_FLESH)
+			 A layer of [npc.faceSkin+] quickly grows to cover [npc.her] new face,
+		#ELSE
+			 Just like the rest of [npc.her] body, [npc.her] new face is [npc.materialDescriptor] [npc.faceSkin+],
+		#ENDIF
+		and as the transformation finally comes to an end, [npc.sheIs] left panting and sighing as [npc.she] [npc.verb(try)] to catch [npc.her] breath.
+		<br/>[npc.Name] now [npc.has] an [style.boldMantis(mantis-like face)], [npc.materialDescriptor] [npc.faceFullDescription]. Within [npc.her] [npc.mouth], [npc.she] [npc.has] a [style.boldMantis(mantis-like tongue)].
+	]]></transformationDescription>
+	<bodyDescription><![CDATA[
+		[npc.SheHasFull] [npc.a_feminineDescriptor(true)], mantis-like face [npc.materialCompositionDescriptor] [npc.faceFullDescription(true)].
+	]]></bodyDescription>
+	<bodyDescriptionFeral><![CDATA[
+		[npc.SheHasFull] the [npc.feminineDescriptor(true)] face of a feral [npc.legRace], which is [npc.materialDescriptor] [npc.faceFullDescription(true)].
+	]]></bodyDescriptionFeral>
+</face>

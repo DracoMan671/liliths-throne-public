@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!-- A fan-made mod for Innoxia's Lilith's Throne. Feel free to edit these files however you want, same goes for the svg's. Thanks to Innoxia for making Lilith's Throne, it's great. //Zyro-->
+<clothing>
+  <coreAtributes>
+    <value>850</value>
+    <determiner>a</determiner>
+    <name>Quarian Envirosuit</name>
+    <namePlural pluralByDefault="false"><![CDATA[Quarian Envirosuits]]></namePlural>
+    <description>A tight, alien body-suit.</description>
+    <physicalResistance>1</physicalResistance>
+    <femininity>FEMININE</femininity>
+    <slot>TORSO_UNDER</slot>
+    <rarity>UNCOMMON</rarity>
+    <clothingSet />
+    <imageName>Quarian_Suit.svg</imageName>
+    <imageEquippedName />
+    <enchantmentLimit />
+    <effects>5</effects>
+<blockedPartsList>
+      <blockedParts>
+        <displacementType>REMOVE_OR_EQUIP</displacementType>
+        <clothingAccessRequired>
+          <clothingAccess>ARMS_UP_TO_SHOULDER</clothingAccess>
+		</clothingAccessRequired>
+		<blockedBodyParts>
+          <bodyPart>NIPPLES</bodyPart>
+          <bodyPart>STOMACH</bodyPart>
+          <bodyPart>BACK</bodyPart>
+          <bodyPart>VAGINA</bodyPart>
+          <bodyPart>PENIS</bodyPart>
+          <bodyPart>ANUS</bodyPart>
+        </blockedBodyParts>
+        <clothingAccessBlocked />
+        <concealedSlots />
+      </blockedParts>
+      <blockedParts>
+        <displacementType>SHIFTS_ASIDE</displacementType>
+        <clothingAccessRequired />
+		<blockedBodyParts />
+        <clothingAccessBlocked>
+          <clothingAccess>CHEST</clothingAccess>
+        </clothingAccessBlocked>
+        <concealedSlots />
+      </blockedParts>
+    </blockedPartsList>
+    <incompatibleSlots />
+    <primaryColours values="ALL_WITH_METALS" />
+    <primaryColoursDye values="ALL_WITH_METALS" />
+    <secondaryColours values="ALL_WITH_METALS" />
+    <secondaryColoursDye values="ALL_WITH_METALS" />
+    <tertiaryColours values="ALL_WITH_METALS" />
+    <tertiaryColoursDye values="ALL_WITH_METALS" />
+    <itemTags>
+      <tag>SOLD_BY_NYAN</tag>
+    </itemTags>
+  </coreAtributes>
+  <displacementText type="REMOVE_OR_EQUIP">
+    <playerSelf>
+			You take off the Quarian Envirosuit.
+		</playerSelf>
+    <playerNPC>
+			You remove [npc.name]'s Quarian Envirosuit.
+		</playerNPC>
+    <playerNPCRough>
+			You grab hold of [npc.name]'s Quarian Envirosuit and tear it off [npc.her] body.
+		</playerNPCRough>
+    <NPCSelf>
+			[npc.Name] takes off [npc.her] Quarian Envirosuit.
+		</NPCSelf>
+    <NPCPlayer>
+			[npc.Name] takes off your Quarian Envirosuit.
+		</NPCPlayer>
+    <NPCPlayerRough>
+			[npc.Name] grabs hold of your Quarian Envirosuit and roughly tear it off your body.
+		</NPCPlayerRough>
+    <NPCOtherNPC>
+			[npc1.Name] takes off [npc2.name]'s Quarian Envirosuit.
+		</NPCOtherNPC>
+    <NPCOtherNPCRough>
+			[npc1.Name] grabs hold of [npc2.name]'s Quarian Envirosuit and roughly tear it off from [npc2.her] body.
+		</NPCOtherNPCRough>
+  </displacementText>
+  <replacementText type="REMOVE_OR_EQUIP">
+    <playerSelf>
+			You put on the Quarian Envirosuit.
+		</playerSelf>
+    <playerNPC>
+			You put the Quarian Envirosuit on [npc.name]'s body.
+		</playerNPC>
+    <playerNPCRough>
+			You hold [npc.name] still as you roughly force the Quarian Envirosuit onto [npc.her] body.
+		</playerNPCRough>
+    <NPCSelf>
+			[npc.Name] puts on the Quarian Envirosuit.
+		</NPCSelf>
+    <NPCPlayer>
+			[npc.Name] puts the Quarian Envirosuit on you.
+		</NPCPlayer>
+    <NPCPlayerRough>
+			[npc.Name] holds you still as [npc.she] roughly forces the Quarian Envirosuit onto your body.
+		</NPCPlayerRough>
+    <NPCOtherNPC>
+			[npc1.Name] puts on the Quarian Envirosuit on [npc2.name] body.
+		</NPCOtherNPC>
+    <NPCOtherNPCRough>
+			[npc1.Name] holds [npc2.name] still as [npc1.she] roughly forces the Quarian Envirosuit onto [npc2.name]'s body.
+		</NPCOtherNPCRough>
+  </replacementText>
+  <displacementText type="SHIFTS_ASIDE">
+    <playerSelf>
+			You spend some time opening the valves in your Quarian Envirosuit.
+		</playerSelf>
+    <playerNPC>
+			You spend some time opening the valves on [npc.name]'s Quarian Envirosuit.
+		</playerNPC>
+    <playerNPCRough>
+			You grab hold of [npc.name] and start to open the valves in [npc.her] Quarian Envirosuit.
+		</playerNPCRough>
+    <NPCSelf>
+			[npc.Name] spends some time opening the valves in [npc.her] Quarian Envirosuit.
+		</NPCSelf>
+    <NPCPlayer>
+			[npc.Name] spends some time opening the valves in your Quarian Envirosuit.
+		</NPCPlayer>
+    <NPCPlayerRough>
+			[npc.Name] grabs hold of you and starts to open the valves in your Quarian Envirosuit.
+		</NPCPlayerRough>
+    <NPCOtherNPC>
+			[npc1.Name] spends some time opening the valves in [npc2.name]'s Quarian Envirosuit.
+		</NPCOtherNPC>
+    <NPCOtherNPCRough>
+			[npc1.Name] grabs hold of [npc2.name] and starts to open the valves in [npc2.name]'s Quarian Envirosuit.
+		</NPCOtherNPCRough>
+  </displacementText>
+  <replacementText type="SHIFTS_ASIDE">
+    <playerSelf>
+			You close the valves to your Quarian Envirosuit.
+		</playerSelf>
+    <playerNPC>
+			You close the valves on [npc.name]'s Quarian Envirosuit.
+		</playerNPC>
+    <playerNPCRough>
+			You hold [npc.name] still as you close the valves on [npc.her] Quarian Envirosuit.
+		</playerNPCRough>
+    <NPCSelf>
+			[npc.Name] closes the valves on her Quarian Envirosuit.
+		</NPCSelf>
+    <NPCPlayer>
+			[npc.Name] closes the valves on your Quarian Envirosuit.
+		</NPCPlayer>
+    <NPCPlayerRough>
+			[npc.Name] holds you still as [npc.she] close the valves on your Quarian Envirosuit.
+		</NPCPlayerRough>
+    <NPCOtherNPC>
+			[npc1.Name] closes the valves on [npc2.name]'s Quarian Envirosuit.
+		</NPCOtherNPC>
+    <NPCOtherNPCRough>
+			[npc1.Name] grabs hold [npc2.name] and starts to close the valves on [npc2.name]'s Quarian Envirosuit.
+		</NPCOtherNPCRough>
+  </replacementText>
+</clothing>

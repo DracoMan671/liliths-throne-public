@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<face>
+	<race>poke_focco</race>
+	<transformationName><![CDATA[Fennekin-line]]></transformationName>
+	<coveringType>poke_focco_fur</coveringType>
+	<mouthType>poke_focco_mouth</mouthType>
+	<!-- FACE_STANDARD, FACE_MUZZLE, FACE_FANGS, FACE_BEAK, FACE_SHARK_TEETH, FACE_VENOMOUS_TEETH, FACE_VENOMOUS_TEETH_LUST, THERMAL_VISION
+	FACE_NATURAL_BALDNESS_FURRY, FACE_NATURAL_BALDNESS_AVIAN, FACE_NATURAL_BALDNESS_SCALY, FACE_NATURAL_BALDNESS_SKIN -->
+	<tags>
+		<tag>FACE_MUZZLE</tag>
+		<tag>FACE_NATURAL_BALDNESS_FURRY</tag>
+	</tags>
+	<!--
+	<names>
+		<name><![CDATA[face]]></name>
+	</names>
+	-->
+	<names/>
+	<namesPlural/> 
+	<descriptorsMasculine>
+		<descriptor>fennec-like</descriptor>
+	</descriptorsMasculine>
+	<descriptorsFeminine>
+		<descriptor>fennec-like</descriptor>
+	</descriptorsFeminine>
+	<noseName><![CDATA[nose]]></noseName>
+	<noseNamePlural><![CDATA[noses]]></noseNamePlural>
+	<!--
+	<noseDescriptorsMasculine>
+		<descriptor>hyena-like</descriptor>
+	</noseDescriptorsMasculine>
+	-->
+	<noseDescriptorsMasculine/>
+	<noseDescriptorsFeminine/>
+	<transformationDescription><![CDATA[
+		[npc.Her] face starts to extend into a long muzzle.
+		#IF(npc.getBodyMaterial()==BODY_MATERIAL_FLESH)
+			 A layer of [npc.faceSkin+] quickly grows to cover [npc.her] new face, 
+		#ELSE
+			 Just like the rest of [npc.her] body, [npc.her] new face is [npc.materialDescriptor] [npc.faceSkin+], 
+		#ENDIF
+		and as the transformation finally comes to an end, [npc.sheIs] left panting and sighing as [npc.she] [npc.verb(try)] to catch [npc.her] breath.
+		<br/>[npc.Name] now [npc.has] a Fennekin-line face, [npc.materialDescriptor] [npc.faceFullDescription].
+	]]></transformationDescription>
+	<bodyDescription><![CDATA[
+		[npc.SheHasFull] [npc.a_feminineDescriptor(true)] Fennekin-line face [npc.materialCompositionDescriptor] [npc.faceFullDescription(true)].
+	]]></bodyDescription>
+	<bodyDescriptionFeral><![CDATA[
+		[npc.SheHasFull] the [npc.feminineDescriptor(true)] face of a feral [npc.legRace], which is [npc.materialDescriptor] [npc.faceFullDescription(true)].
+	]]></bodyDescriptionFeral>
+	
+</face>

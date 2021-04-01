@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<racialBody>
+	<!-- CONFIDENT, SHY, KIND, SELFISH, NAIVE, CYNICAL, BRAVE, COWARDLY, LEWD, INNOCENT, PRUDE, LISP, STUTTER, MUTE, SLOVENLY -->
+	<personalityChances>
+		<entry chance="0.9">CONFIDENT</entry> <!-- The 'chance' attribute corresponds to a percentage chance of this personality trait being selected, and is of a range of 0.0 to 1.0, with the defined 0.25 corresponding to 25%. -->
+		<entry chance="0.5">KIND</entry>
+		<entry chance="0.8">LEWD</entry>
+		<entry chance="0.9">BRAVE</entry>
+	</personalityChances>
+	<orientationFeminineGynephilic>10</orientationFeminineGynephilic>
+	<orientationFeminineAmbiphilic>70</orientationFeminineAmbiphilic>
+	<orientationFeminineAndrophilic>20</orientationFeminineAndrophilic>
+	<orientationMasculineGynephilic>20</orientationMasculineGynephilic>
+	<orientationMasculineAmbiphilic>70</orientationMasculineAmbiphilic>
+	<orientationMasculineAndrophilic>10</orientationMasculineAndrophilic>
+	<!-- FLESH, SLIME, FIRE, WATER, ICE, AIR, STONE, RUBBER, ARCANE -->
+	<bodyMaterial>FLESH</bodyMaterial>
+	<bodyHair>poke_nyula_fur</bodyHair>
+	<!-- NORMAL, CLOACA, CLOACA_BEHIND -->
+	<genitalArrangement>NORMAL</genitalArrangement>
+	<!-- The following values are slightly randomised upon a character of this race being spawned to give some variation.
+	Height is defined in cm, and should be no smaller than 61 and no larger than 366.
+	Heights: 61-106 NEGATIVE_TWO_MINIMUM, 106-122 NEGATIVE_ONE_TINY, 122-152 ZERO_TINY, 152-166 ONE_SHORT, 166-183 TWO_AVERAGE, 183-198 THREE_TALL, 198-214 FOUR_VERY_TALL, 214-228 FIVE_ENORMOUS, 228-274 SIX_GIANT, 274-366 SEVEN_COLOSSAL)
+	Femininity: 0-19 MASCULINE_STRONG, 20-39 MASCULINE, 40-59 ANDROGYNOUS, 60-79 FEMININE, 80-100 FEMININE_STRONG
+	Body Size: 0-20 ZERO_SKINNY, 20-40 ONE_SLENDER, 40-60 TWO_AVERAGE, 60-80 THREE_LARGE, 80-100 FOUR_HUGE
+	Muscle: 0-20 ZERO_SOFT, 20-40 ONE_LIGHTLY_MUSCLED, 40-60 TWO_TONED, 60-80 THREE_MUSCULAR, 80-100 FOUR_RIPPED
+	Body Shape: https://github.com/Innoxia/liliths-throne-public/blob/dev/src/com/lilithsthrone/game/character/body/valueEnums/BodyShape.java -->
+	<maleHeight>165</maleHeight>
+	<maleFemininity>15</maleFemininity>
+	<maleBodySize>35</maleBodySize>
+	<maleMuscle>65</maleMuscle>
+	<femaleHeight>165</femaleHeight>
+	<femaleFemininity>75</femaleFemininity>
+	<femaleBodySize>35</femaleBodySize>
+	<femaleMuscle>65</femaleMuscle>
+	<!-- Multiple antenna types can be defined for one race, from which a random type will be selected upon spawning an instance of this race.
+	NONE, custom type -->
+	<antennaTypes>
+		<type>NONE</type>
+	</antennaTypes>
+	<!-- Antenna length is from 0 to 75, measured in cm.
+	0-5 ZERO_TINY, 5-15 ONE_SMALL, 15-30 TWO_LONG, 30-50 THREE_HUGE, 50-75 FOUR_MASSIVE -->
+	<maleAntennaLength>0</maleAntennaLength>
+	<femaleAntennaLength>0</femaleAntennaLength>
+	<armType>poke_nyula_arm</armType>
+	<armRows>1</armRows>
+	<assType>poke_nyula_ass</assType>
+	<!-- Ass sizes are from 0 to 7.
+	ZERO_FLAT, ONE_TINY, TWO_SMALL, THREE_NORMAL, FOUR_LARGE, FIVE_HUGE, SIX_MASSIVE, SEVEN_GIGANTIC -->
+	<maleAssSize>3</maleAssSize>
+	<femaleAssSize>3</femaleAssSize>
+	<!-- Hip sizes are from 0 to 7.
+	ZERO_NO_HIPS, ONE_VERY_NARROW, TWO_NARROW, THREE_GIRLY, FOUR_WOMANLY, FIVE_VERY_WIDE, SIX_EXTREMELY_WIDE, SEVEN_ABSURDLY_WIDE -->
+	<maleHipSize>3</maleHipSize>
+	<femaleHipSize>4</femaleHipSize>
+	<!-- Capacity is a float from 0.0 to 25.0.
+	0.0-1.0 ZERO_IMPENETRABLE, 1.0-2.5 ONE_EXTREMELY_TIGHT, 2.5-5.0 TWO_TIGHT, 5.0-7.5 THREE_SLIGHTLY_LOOSE, 7.5-10.0 FOUR_LOOSE, 10.0-12.5 FIVE_ROOMY, 12.5-15.0 SIX_STRETCHED_OPEN, 15.0-25.0 SEVEN_GAPING -->
+	<anusCapacity>1.5</anusCapacity>
+	<!-- Depth is from 0 to 7.
+	ZERO_EXTREMELY_SHALLOW, ONE_SHALLOW, TWO_AVERAGE, THREE_SPACIOUS, FOUR_DEEP, FIVE_VERY_DEEP, SIX_CAVERNOUS, SEVEN_FATHOMLESS -->
+	<anusDepth>2</anusDepth>
+	<!-- Wetness is from 0 to 7.
+	ZERO_DRY, ONE_SLIGHTLY_MOIST, TWO_MOIST, THREE_WET, FOUR_SLIMY, FIVE_SLOPPY, SIX_SOPPING_WET, SEVEN_DROOLING -->
+	<anusWetness>0</anusWetness>
+	<!-- Elasticity is from 0 to 7.
+	ZERO_UNYIELDING, ONE_RIGID, TWO-FIRM, THREE_FLEXIBLE, FOUR_LIMBER, FIVE_STRETCHY, SIX_SUPPLE, SEVEN_ELASTIC -->
+	<anusElasticity>3</anusElasticity>
+	<!-- Plasticity is from 0 to 7.
+	ZERO_RUBBERY, ONE_SPRINGY, TWO_TENSILE, THREE_RESILIENT, FOUR_ACCOMMODATING, FIVE_YIELDING, SIX_MALLEABLE, SEVEN_MOULDABLE -->
+	<anusPlasticity>3</anusPlasticity>
+	<breastType>poke_nyula_breast</breastType>
+	<!-- You can leave 'breastShapes' empty and use the boolean attribute 'udderShapes' to automatically select all udder shapes or all non-udder shapes.
+	e.g. Instead of what's defined below, you could use: <breastShapes udderShapes="false"/> -->
+	<breastShapes>
+		<shape>ROUND</shape>
+		<shape>POINTY</shape>
+		<shape>PERKY</shape>
+		<shape>SIDE_SET</shape>
+		<shape>WIDE</shape>
+		<shape>NARROW</shape>
+	</breastShapes>
+	<!-- Breast size is from 0 to 91. Values: https://github.com/Innoxia/liliths-throne-public/blob/dev/src/com/lilithsthrone/game/character/body/valueEnums/CupSize.java -->
+	<maleBreastSize>0</maleBreastSize>
+	<!-- From 1 to 6. -->
+	<maleBreastRows>4</maleBreastRows>
+	<!-- Nipple size is from 0 to 4.
+	ZERO_TINY, ONE_SMALL, TWO_BIG, THREE_LARGE, FOUR_MASSIVE -->
+	<maleNippleSize>0</maleNippleSize>
+	<!-- NORMAL, INVERTED, VAGINA, LIPS -->
+	<maleNippleShape>NORMAL</maleNippleShape>
+	<!-- Areolae size is from 0 to 4. Values:
+	ZERO_TINY, ONE_SMALL, TWO_BIG, THREE_LARGE, FOUR_MASSIVE -->
+	<maleAreolaeSize>0</maleAreolaeSize>
+	<!-- NORMAL, HEART, STAR -->
+	<maleAreolaeShape>NORMAL</maleAreolaeShape>
+	<!-- Values from 1 to 4. -->
+	<maleNippleCountPerBreast>1</maleNippleCountPerBreast>
+	<!-- How many ml of milk this race's breasts hold, from 0 to 100000.
+	0-1 ZERO_NONE, 1-30 ONE_TRICKLE, 30-100 TWO_SMALL_AMOUNT, 100-600 THREE_DECENT_AMOUNT, 600-1000 FOUR_LARGE_AMOUNT, 1000-2000 FIVE_VERY_LARGE_DROOLING, 2000-10000 SIX_EXTREME_AMOUNT_DRIPPING, 10000-100000 SEVEN_MONSTROUS_AMOUNT_POURING -->
+	<maleLactationRate>0</maleLactationRate>
+	<!-- These values correspond to the attributes of the breasts when nipples are penetrated.
+	Nipples can only be penetrated if capacity is greater than 0 and breasts are of size 7 (C-cups) or greater.-->
+	<maleBreastCapacity>0</maleBreastCapacity>
+	<maleBreastDepth>2</maleBreastDepth>
+	<maleBreastElasticity>3</maleBreastElasticity>
+	<maleBreastPlasticity>3</maleBreastPlasticity>
+	<femaleBreastSize>3</femaleBreastSize>
+	<femaleBreastRows>4</femaleBreastRows>
+	<femaleNippleSize>2</femaleNippleSize>
+	<femaleNippleShape>NORMAL</femaleNippleShape>
+	<femaleAreolaeSize>2</femaleAreolaeSize>
+	<femaleAreolaeShape>NORMAL</femaleAreolaeShape>
+	<femaleNippleCountPerBreast>1</femaleNippleCountPerBreast>
+	<femaleLactationRate>0</femaleLactationRate>
+	<femaleBreastCapacity>0</femaleBreastCapacity>
+	<femaleBreastDepth>2</femaleBreastDepth>
+	<femaleBreastElasticity>3</femaleBreastElasticity>
+	<femaleBreastPlasticity>3</femaleBreastPlasticity>
+	<!-- Define the 'breastCrotchType' as NONE if you want this race to always spawn without crotch boobs. -->
+	<breastCrotchType>NONE</breastCrotchType>
+	<breastCrotchShapes udderShapes="false"/>
+	<breastCrotchSize>0</breastCrotchSize>
+	<breastCrotchRows>0</breastCrotchRows>
+	<breastCrotchNippleSize>2</breastCrotchNippleSize>
+	<breastCrotchNippleShape>NORMAL</breastCrotchNippleShape>
+	<breastCrotchAreolaeSize>2</breastCrotchAreolaeSize>
+	<breastCrotchAreolaeShape>NORMAL</breastCrotchAreolaeShape>
+	<nippleCountPerBreastCrotch>1</nippleCountPerBreastCrotch>
+	<breastCrotchLactationRate>0</breastCrotchLactationRate>
+	<breastCrotchCapacity>0</breastCrotchCapacity>
+	<breastCrotchDepth>2</breastCrotchDepth>
+	<breastCrotchElasticity>3</breastCrotchElasticity>
+	<breastCrotchPlasticity>3</breastCrotchPlasticity>
+	<faceType>poke_nyula_face</faceType>
+	<eyeType>poke_nyula_eye</eyeType>
+	<earType>poke_nyula_ear</earType>
+	<!-- Lip size is from 0 to 7.
+	ZERO_THIN, ONE_AVERAGE, TWO_FULL, THREE_PLUMP, FOUR_HUGE, FIVE_MASSIVE, SIX_GIGANTIC, SEVEN_ABSURD -->
+	<maleLipSize>1</maleLipSize>
+	<femaleLipSize>2</femaleLipSize>
+	<hairType>poke_nyula_hair</hairType>
+	<!-- Hair length is from 0 to 350, measured in cm.
+	0-1 ZERO_BALD, 1-8 ONE_VERY_SHORT, 8-15 TWO_SHORT, 15-30 THREE_SHOULDER_LENGTH, 30-60 FOUR_MID_BACK, 60-100 FIVE_ABOVE_ASS, 100-180 SIX_BELOW_ASS, 180-350 SEVEN_TO_FLOOR -->
+	<maleHairLength>20</maleHairLength>
+	<femaleHairLength>20</femaleHairLength>
+	<hornTypes>
+		<type>NONE</type>
+	</hornTypes>
+	<!-- Horn length is from 0 to 75, measured in cm.
+	0-5 ZERO_TINY, 5-15 ONE_SMALL, 15-30 TWO_LONG, 30-50 THREE_HUGE, 50-75 FOUR_MASSIVE -->
+	<maleHornLength>0</maleHornLength>
+	<femaleHornLength>0</femaleHornLength>
+	<legType>poke_nyula_leg</legType>
+	<!-- BIPEDAL, QUADRUPEDAL, TAIL_LONG (serpent-tailed), TAIL (mer-tailed), ARACHNID, CEPHALOPOD, AVIAN -->
+	<legConfiguration>BIPEDAL</legConfiguration>
+	<penisType>poke_nyula_penis</penisType>
+	<!-- Values from 0 to 100, measured in cm (don't use -1).
+	0-5 ZERO_MICROSCOPIC, 5-10 ONE_TINY, 10-20 TWO_AVERAGE, 20-30 THREE_LARGE, 30-40 FOUR_HUGE, 40-50 FIVE_ENORMOUS, 50-60 SIX_GIGANTIC, 60-100 SEVEN_STALLION -->
+	<penisLength>18</penisLength>
+	<!-- Values from 0 to 6.
+	ZERO_THIN, ONE_SLENDER, TWO_NARROW, THREE_AVERAGE, FOUR_GIRTHY, FIVE_THICK, SIX_CHUBBY -->
+	<penisGirth>2</penisGirth>
+	<!-- Values from 0 to 7.
+	ZERO_VESTIGIAL, ONE_TINY, TWO_AVERAGE, THREE_LARGE, FOUR_HUGE, FIVE_MASSIVE, SIX_GIGANTIC, SEVEN_ABSURD -->
+	<testicleSize>3</testicleSize>
+	<!-- Values from 2 to 8, representing the number of testicles this race has. -->
+	<testicleQuantity>2</testicleQuantity>
+	<!-- How many ml of cum this race's testicles hold, from 0 to 10000.
+	0-1 ZERO_NONE, 1-3 ONE_TRICKLE, 3-6 TWO_SMALL_AMOUNT, 6-16 THREE_AVERAGE, 16-30 FOUR_LARGE, 30-100 FIVE_HUGE, 100-1000 SIX_EXTREME, 1000-10000 SEVEN_MONSTROUS -->
+	<cumProduction>80</cumProduction>
+	<!-- Multiple tail types can be defined for one race, from which a random type will be selected upon spawning an instance of this race. -->
+	<tailTypes>
+		<type>poke_nyula_tail</type>
+	</tailTypes>
+	<!-- Tentacles are currently only used when a character's LegConfiguration is set to CEPHALOPOD. -->
+	<tentacleType>NONE</tentacleType>
+	<torsoType>poke_nyula_torso</torsoType>
+	<vaginaType>poke_nyula_vagina</vaginaType>
+	<!-- Values from 0 to 100, with any value over 4 enabling the clit to be used as a penetrative object in sex (i.e. as a pseudo-penis).
+	0-1 ZERO_AVERAGE, 1-5 ONE_BIG, 5-10 TWO_LARGE, 10-25 THREE_HUGE, 25-40 FOUR_MASSIVE, 40-50 FIVE_ENORMOUS, 50-60 SIX_GIGANTIC, 60-100 SEVEN_STALLION -->
+	<clitSize>0</clitSize> <!-- As with all other values, this can be changed in the individual subspecies XML files -->
+	<!-- Values from 0 to 6.
+	ZERO_THIN, ONE_SLENDER, TWO_NARROW, THREE_AVERAGE, FOUR_GIRTHY, FIVE_THICK, SIX_CHUBBY, SEVEN_FAT -->
+	<clitGirth>0</clitGirth>
+	<!-- All of these attributes use the same value definitions as those for anus in the Ass section above. -->
+	<vaginaCapacity>2.5</vaginaCapacity>
+	<vaginaDepth>2</vaginaDepth>
+	<vaginaWetness>2</vaginaWetness>
+	<vaginaElasticity>4</vaginaElasticity>
+	<vaginaPlasticity>3</vaginaPlasticity>
+	<wingTypes>
+		<type>NONE</type>
+	</wingTypes>
+	<!-- Values from 0 to 4.
+	ZERO_TINY, ONE_SMALL, TWO_AVERAGE, THREE_LARGE, FOUR_HUGE -->
+	<maleWingSize>0</maleWingSize>
+	<femaleWingSize>0</femaleWingSize>
+</racialBody>

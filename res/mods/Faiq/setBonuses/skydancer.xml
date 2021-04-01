@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<setBonus>
+
+	<name><![CDATA[Sky Dancer]]></name>
+	
+	<statusEffect>Faiq_set_skydancer</statusEffect>
+	
+	<numberRequiredForCompleteSet>5</numberRequiredForCompleteSet>
+
+	<blockedSlotsCountingTowardsFullSet>
+		<slot>FOOT</slot>
+		<slot>HAND</slot>
+		<slot>HAIR</slot>
+	</blockedSlotsCountingTowardsFullSet>
+	
+</setBonus>

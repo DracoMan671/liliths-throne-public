@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<item>
+	<coreAttributes>
+		<value>250</value> 
+		<determiner><![CDATA[a bottle of]]></determiner>
+		<name><![CDATA[Pixie Klim]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Pixie Klim]]></namePlural>
+		<description><![CDATA[A small bottle of pixie klim, a tag written "drink me" is attached to it, the.]]></description> 
+		
+		<useDescriptor>drink</useDescriptor>
+		
+		<sexUse>true</sexUse>
+		<combatUseAllies>true</combatUseAllies>
+		<combatUseEnemies>false</combatUseEnemies>
+		<consumedOnUse>true</consumedOnUse>
+		
+		<rarity>RARE</rarity> 
+		
+		<imageName zLayer="0" imageRotation="0" imageSize="100">background_bottom.svg</imageName>
+		<imageName zLayer="1" imageRotation="0" imageSize="70" target1='stroke="#000"' replacement1='stroke="#ff5555"' target2='#ff8080' replacement2='#ff5555'>res/mods/jujuteux/race/pixie/subspecies/icon.svg</imageName>
+		<imageName zLayer="2" imageRotation="0" imageSize="70">pixie_klim.svg</imageName>
+		<imageName zLayer="3" imageRotation="0" imageSize="100">background_top.svg</imageName>
+		
+		<colourPrimary>jujuteux_jujuteux_pixie_pink</colourPrimary>
+		<colourSecondary/>
+		<colourTertiary/>
+		
+		<potionDescriptor><![CDATA[pixie]]></potionDescriptor>
+		<associatedRace>jujuteux_pixie</associatedRace>
+		<enchantmentItemTypeId>ELIXIR</enchantmentItemTypeId>
+		<enchantmentEffectId>RACE</enchantmentEffectId>
+		
+		<effectTooltipLines>
+			<line><![CDATA[[style.boldGood(Restores)] 15% [style.boldArcane([#ATTRIBUTE_MANA_MAXIMUM.getName()])]]]></line>
+			<line><![CDATA[[#ATTRIBUTE_MAJOR_ARCANE.getFormattedValue(3)] to 'potion effects']]></line>
+		</effectTooltipLines>
+		
+		<applyEffects><![CDATA[
+			[##npc.incrementMana(npc.getAttributeValue(ATTRIBUTE_MANA_MAXIMUM)/6.66)]
+			
+			<p style='margin-bottom:0; padding-bottom:0;'>
+				[npc.Name] [npc.verb(start)] to feel more inline with the arcane...
+			</p>
+			#IF(npc.getRac()==RACE_jujuteux_pixie) [#npc.addPotionEffect(MAJOR_ARCANE, 25)]#ELSE [#npc.addPotionEffect(MAJOR_ARCANE, 3)]#ENDIF
+		]]></applyEffects>
+		
+		<itemTags>
+			<tag>RACIAL_TF_ITEM</tag>
+			<tag>SOLD_BY_RALPH</tag>
+		</itemTags>
+	</coreAttributes>
+
+	<useDescriptions>
+		<selfUse><![CDATA[
+		[npc.Name] [npc.verb(open)] the top of the brown paper bag and [npc.verb(breathe)] in the rich, meaty smell of its contents. Unable to resist the delicious-looking pieces of roasted bone found inside, [npc.she]
+		#IF(npc.getFaceType()==FACE_TYPE_innoxia_hyena)
+			 [npc.verb(start)] using [npc.her] powerful hyena jaws to crunch each of them into pieces, and in a matter of moments [npc.has] completely devoured the entire bag.
+		#ELSE
+			 [npc.verb(start)] eagerly sucking the delicious marrow out of each of them, and in a matter of moments [npc.has] completely devoured the entire bag.
+		#ENDIF
+		]]></selfUse>
+		<otherUse><![CDATA[
+		[npc.Name] [npc.verb(open)] the top of the brown paper bag and [npc.verb(hold)] it out to [npc2.name], allowing [npc2.herHim] to breathe in the rich, meaty smell of its contents. Unable to resist the delicious-looking pieces of roasted bone found inside, [npc2.she]
+		#IF(npc.getFaceType()==FACE_TYPE_innoxia_hyena)
+			 [npc2.verb(start)] using [npc2.her] powerful hyena jaws to crunch each of them into pieces, and in a matter of moments [npc2.has] completely devoured the entire bag.
+		#ELSE
+			 [npc2.verb(start)] eagerly sucking the delicious marrow out of each of them, and in a matter of moments [npc2.has] completely devoured the entire bag.
+		#ENDIF
+		]]></otherUse>
+	</useDescriptions>
+
+	
+</item>

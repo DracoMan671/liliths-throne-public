@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<weapon>
+	<coreAttributes>
+	
+		<value>5000</value> 
+		
+		<melee>true</melee>
+		
+		<twoHanded>false</twoHanded>
+		
+		<determiner><![CDATA[]]></determiner>
+		
+		<name><![CDATA[Leather Whip]]></name>
+		
+		<namePlural pluralByDefault="false"><![CDATA[Leather Whips]]></namePlural> 
+		
+		<description><![CDATA[A sleek whip made from woven leather.]]></description> 
+		
+		<attackDescriptor>Whip</attackDescriptor>
+		
+		<attackTooltipDescription>Strike [npc2.name] with your Leather Whip.</attackTooltipDescription>
+		
+		<rarity>EPIC</rarity> 
+		
+		<weaponSet></weaponSet> 
+		
+		<equipText><![CDATA[[npc.Name] [npc.verb(position)] [npc.her] Leather Whip around [npc.her] shoulder, so that [npc.she] may ready it at a moment's notice.]]></equipText>
+		
+		<unequipText><![CDATA[[npc.Name] coil up [npc.her] Leather Whip, before putting it away.]]></unequipText>
+		
+		<imageName>leatherwhip.svg</imageName> 
+		
+		<imageEquippedName>leatherwhip.svg</imageEquippedName> 
+		
+		<damage>15</damage> 
+		
+		<arcaneCost>0</arcaneCost> 
+		
+		<damageVariance>LOW</damageVariance> 
+		
+		<availableDamageTypes>
+			<damageType>PHYSICAL</damageType>
+			<damageType>ICE</damageType>
+			<damageType>FIRE</damageType>
+			<damageType>POISON</damageType>
+		</availableDamageTypes>
+		
+		<spells/>
+		
+		<enchantmentLimit>10</enchantmentLimit>
+		
+		<effects> 
+              <effect itemEffectType="CLOTHING" limit="0" potency="MAJOR_BOOST" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="DAMAGE_WEAPON" timer="0"/>
+              <effect itemEffectType="CLOTHING" limit="0" potency="MAJOR_BOOST" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="DAMAGE_WEAPON" timer="0"/>
+              <effect itemEffectType="CLOTHING" limit="0" potency="MAJOR_BOOST" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="DAMAGE_MELEE_WEAPON" timer="0"/>
+              <effect itemEffectType="CLOTHING" limit="0" potency="MAJOR_BOOST" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="DAMAGE_MELEE_WEAPON" timer="0"/>
+		</effects>
+		
+		<primaryColours values="JUST_BLACK"/> 
+		<primaryColoursDye values="ALL"/>
+		<secondaryColours values="JUST_BLACK"/>
+		<secondaryColoursDye values="ALL"/>
+		
+		<itemTags> 
+			<tag>SOLD_BY_VICKY</tag>
+			<tag>WEAPON_BLADE</tag>
+		</itemTags>
+		
+	</coreAttributes>
+	
+	<hitDescriptions>
+		<hitText><![CDATA[
+		Lashing out with [npc.her] Leather whip, [npc.name] [npc.verb(manage)] to strike [npc2.name] in the chest; the whip hits [npc2.her], draining [npc2.her] energy!
+		]]></hitText>
+		<hitText><![CDATA[
+		Lashing out with [npc.her] Leather whip, [npc.name] [npc.verb(hit)] [npc2.name] in the side.  The whip coils around [npc2.name] waist tightly squeezing and draining [npc2.her] energy!
+		]]></hitText>
+		<hitText><![CDATA[
+		With a wide swing of [npc.her] Leather whip, [npc.name] [npc.verb(hit)] [npc2.name] with a glancing lash, allowing the whip to drain [npc2.her] energy!
+		]]></hitText>
+	</hitDescriptions>
+
+	<!-- Descriptions that are used when missing an enemy. One of the missText values will be randomly selected each time the attacker misses their target. Follow the same guidelines as equipText. -->
+	<missDescriptions>
+		<missText><![CDATA[
+		[npc.name] wildly [npc.verb(swing)] [npc.her] Leather whip, but [npc2.name] [npc2.verb(avoid)] the strike!
+		]]></missText>
+		<missText><![CDATA[
+		Lashing out with [npc.her] Leather whip, [npc.name] [npc.verb(swing)] short, missing [npc2.name] entirely!
+		]]></missText>
+		<missText><![CDATA[
+		Lashing out with [npc.her] Leather whip, [npc.name] [npc.verb(stumble)] causing the strike to go wide, missing [npc2.name] entirely!
+		]]></missText>
+	</missDescriptions>
+	
+</weapon>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<horn>
+	<race>innoxia_hyena</race>
+	<transformationName><![CDATA[hyena]]></transformationName>
+	<!-- HORN, ANTLER, custom -->
+	<coveringType>HORN</coveringType>
+	<defaultHornsPerRow>2</defaultHornsPerRow>
+	<name><![CDATA[horn]]></name>
+	<namePlural><![CDATA[horns]]></namePlural> 
+	<descriptorsMasculine>
+		<descriptor>straight</descriptor>
+	</descriptorsMasculine>
+	<descriptorsFeminine>
+		<descriptor>straight</descriptor>
+	</descriptorsFeminine>
+	<!-- This description immediately follows the text:
+		' Hard nubs suddenly push out from the sides of [npc.her] head, and [npc.she] [npc.verb(gasp)] as [npc.she] [npc.verb(feel)] them quickly grow out into '-->
+	<transformationDescription><![CDATA[
+		sleek, straight [npc.horns].
+		<br/>[npc.Name] now [npc.has] [npc.hornsDeterminer] [style.boldTfGeneric(straight [npc.horns])].
+	]]></transformationDescription>
+	<bodyDescription><![CDATA[
+		[npc.HornsDeterminer] [npc.hornSize], [npc.hornColour(true)], straight
+		#IF(npc.getTotalHorns()==1)
+			 [npc.horn] grows
+		#ELSE
+			 [npc.horns] grow
+		#ENDIF
+		 out of the
+		#IF(npc.getHornsPerRow()==1)
+			 middle
+		#ELSE
+			 upper sides
+		#ENDIF
+		 of [npc.her] forehead.
+	]]></bodyDescription>
+</horn>

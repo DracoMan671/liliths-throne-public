@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<tail>
+	<race>poke_nyula</race>
+	<transformationName><![CDATA[Sneasel-line]]></transformationName>
+	<coveringType>poke_nyula_feather</coveringType>
+	<spinneret>false</spinneret>
+	<!-- ZERO_THIN, ONE_SLENDER, TWO_NARROW, THREE_AVERAGE, FOUR_GIRTHY, FIVE_THICK, SIX_CHUBBY, SEVEN_FAT -->
+	<defaultGirth>3</defaultGirth>
+	<!-- The length of this tail in relation to the owner's height, defined as a percentage from 0.05 (5%) to 2.5 (250%). -->
+	<defaultLengthAsPercentageOfHeight>0.2</defaultLengthAsPercentageOfHeight>
+	<!-- TAIL_PREHENSILE, TAIL_SUITABLE_FOR_PENETRATION, TAIL_SLEEP_HUGGING, ALLOWS_FLIGHT
+	TAIL_TYPE_SKIN, TAIL_TYPE_SCALES, TAIL_TYPE_FUR, TAIL_TYPE_TUFT, TAIL_TYPE_HAIR, TAIL_TYPE_FEATHER, TAIL_TYPE_GENERIC
+	TAIL_TAPERING_EXPONENTIAL, TAIL_TAPERING_LINEAR, TAIL_TAPERING_BULBOUS, TAIL_TAPERING_NONE -->
+	<tags>
+		<tag>TAIL_TYPE_FEATHER</tag>
+		<tag>TAIL_TAPERING_NONE</tag>
+	</tags>
+	<!-- The singular and plural determiners of this tail type.
+	These are used in the format 'Lilaya has one X tail.', where X is the determiner.
+	As such the determiner should almost always be left blank.
+	For an example of where determiners need to be defined, harpy tails are called 'tail feathers', so the determiner should be 'plume of'/'plumes of', to fit into: 'Helena has one X tail feathers.' -->
+	<determiner><![CDATA[]]></determiner>
+	<determinerPlural><![CDATA[]]></determinerPlural> 
+	<name><![CDATA[tail]]></name>
+	<namePlural><![CDATA[tails]]></namePlural> 
+	<descriptorsMasculine>
+		<descriptor>silken</descriptor>
+		<descriptor>plumed</descriptor>
+	</descriptorsMasculine>
+	<descriptorsFeminine>
+		<descriptor>silken</descriptor>
+		<descriptor>plumed</descriptor>
+	</descriptorsFeminine>
+	<tipName><![CDATA[tip]]></tipName>
+	<tipNamePlural><![CDATA[tips]]></tipNamePlural>
+	<tipDescriptorsMasculine/>
+	<tipDescriptorsFeminine/>
+	<transformationDescription><![CDATA[
+		#IF(npc.getTailCount()==1)
+			A feathery tail sprouts from just above [npc.her] ass, rapidly growing in size until it's about [npc.tailLength] long.
+			<br/>[npc.Name] now [npc.has] a Weavile/Sneasel tail, [npc.materialDescriptor] [npc.tailFullDescription(true)].
+		#ELSE
+			[npc.TailCount] feathery Weavile/Sneasel tails sprout from just above [npc.her] ass, rapidly growing in size until they're each about [npc.tailLength] long.
+			<br/>[npc.Name] now [npc.has] [npc.tailCount] Weavile/Sneasel tails, [npc.materialDescriptor] [npc.tailFullDescription(true)].
+		#ENDIF
+	]]></transformationDescription>
+	<bodyDescription><![CDATA[
+		Growing out from just above [npc.her] ass, [npc.sheHasFull]
+		#IF(npc.getTailCount()==1)
+			 a [npc.tailColour(true)] Weavile/Sneasel tail.
+		#ELSE
+			 [npc.tailCount] [npc.tailColour(true)] Weavile/Sneasel tails.
+		#ENDIF
+	]]></bodyDescription>
+</tail>

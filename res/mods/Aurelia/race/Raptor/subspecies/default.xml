@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<subspecies>
+	<race>Aurelia_Raptor</race>
+	
+	<colour>Aurelia_Raptor</colour>
+	<secondaryColour>Aurelia_Raptor</secondaryColour>
+	<tertiaryColour>Aurelia_Raptor</tertiaryColour>
+	
+	<mainSubspecies>true</mainSubspecies>
+	
+	<baseSlaveValue>75000</baseSlaveValue>
+	
+	<attributeItemId>Aurelia_race_raptor_vile_serum</attributeItemId>
+	
+	<transformativeItemId>Aurelia_race_raptor_unspeakable_meat</transformativeItemId>
+	
+	<subspeciesOverridePriority>0</subspeciesOverridePriority>
+	
+	<shortStature>false</shortStature>
+	
+	<bipedalSubspecies>true</bipedalSubspecies>
+	
+	<aquatic>false</aquatic>
+	
+	<applySubspeciesChanges><![CDATA[
+		[#targetedBody.getVagina().getClitoris().setGirth(null, 0)]
+		[#targetedBody.getVagina().getClitoris().setClitorisSize(null, 0)]
+	]]></applySubspeciesChanges>
+	
+	<subspeciesWeighting><![CDATA[
+		#IF(targetedRace==RACE_Aurelia_Raptor)
+			100
+		#ELSE
+			0
+		#ENDIF
+	]]></subspeciesWeighting>
+	
+	<iconName displaySize="80">icon</iconName>
+	
+	<backgroundName>background</backgroundName>
+	
+	<bookIconName>icon</bookIconName>
+	
+	<bookName>Eyes of the Stalkers</bookName>
+	
+	<basicDescriptionId>RAPTOR_BASIC</basicDescriptionId>
+	<advancedDescriptionId>RAPTOR_ADVANCED</advancedDescriptionId>
+	
+	<defaultPreference>TWO_AVERAGE</defaultPreference>
+	
+	<name><![CDATA[velociraptor-morph]]></name>
+	<namePlural><![CDATA[velociraptor-morphs]]></namePlural>
+	<singularMaleName><![CDATA[velociraptor-boy]]></singularMaleName>
+	<singularFemaleName><![CDATA[velociraptor-girl]]></singularFemaleName>
+	<pluralMaleName><![CDATA[velociraptor-boys]]></pluralMaleName>
+	<pluralFemaleName><![CDATA[velociraptor-girls]]></pluralFemaleName>
+	
+	<description><![CDATA[An anthropomorphic velociraptor, known as a 'velociraptor-morph' when bipedal, and a 'velociraptor-amalgam' when the lower body is that of a typically-oversized feral raptor.]]></description>
+	
+	<nameHalfDemon><![CDATA[nether-raptor]]></nameHalfDemon>
+	<namePluralHalfDemon><![CDATA[nether-raptors]]></namePluralHalfDemon>
+	<singularMaleNameHalfDemon><![CDATA[nether-raptor]]></singularMaleNameHalfDemon>
+	<singularFemaleNameHalfDemon><![CDATA[nether-raptor]]></singularFemaleNameHalfDemon>
+	<pluralMaleNameHalfDemon><![CDATA[nether-raptors]]></pluralMaleNameHalfDemon>
+	<pluralFemaleNameHalfDemon><![CDATA[nether-raptors]]></pluralFemaleNameHalfDemon>
+	
+	<feralAttributes>
+		<!-- Naming: -->
+		<feralName><![CDATA[velociraptor]]></feralName>
+		<feralNamePlural><![CDATA[velociraptors]]></feralNamePlural>
+		<feralSingularMaleName><![CDATA[velociraptor]]></feralSingularMaleName>
+		<feralSingularFemaleName><![CDATA[velociraptor]]></feralSingularFemaleName>
+		<feralPluralMaleName><![CDATA[velociraptors]]></feralPluralMaleName>
+		<feralPluralFemaleName><![CDATA[velociraptors]]></feralPluralFemaleName>
+		
+		<legConfiguration>AVIAN</legConfiguration>
+		<sizeHeight>true</sizeHeight>
+		<size>90</size>
+		
+		<breastRowCount>0</breastRowCount>
+		<nipplesPerBreastCount>1</nipplesPerBreastCount>
+		<crotchBreastRowCount>1</crotchBreastRowCount>
+		<nipplesPerCrotchBreastCount>1</nipplesPerCrotchBreastCount>
+		
+		<armsOrWingsPresent>true</armsOrWingsPresent>
+		<fingerActionsAvailable>true</fingerActionsAvailable>
+		<hairPresent>false</hairPresent>
+	</feralAttributes>
+	
+	<statusEffectDescription><![CDATA[
+		[npc.NamePos] velociraptor-like body is very strong, and [npc.she] [npc.has] a primal urge to make the most of opportunities which present themselves to [npc.herHim].
+	]]></statusEffectDescription>
+	
+	<statusEffectAttributeModifiers>
+		<attribute value="15">MAJOR_PHYSIQUE</attribute>
+		<attribute value="50">MAJOR_CORRUPTION</attribute>
+		<attribute value="75">CRITICAL_DAMAGE</attribute>
+	</statusEffectAttributeModifiers>
+	
+	<extraEffects/>
+	
+	<perkWeightings>
+		<category masculineWeighting="10" feminineWeighting="10">PHYSICAL</category>
+		<category masculineWeighting="0" feminineWeighting="0">LUST</category>
+		<category masculineWeighting="0" feminineWeighting="0">ARCANE</category>
+	</perkWeightings>
+	
+	<regionLocations>
+		<region rarity="ONE_VERY_RARE">DOMINION</region>
+	</regionLocations>
+	
+	<worldLocations>
+			<world rarity="ONE_VERY_RARE">NIGHTLIFE_CLUB</world>
+	</worldLocations>
+	
+	<flags/>
+	
+</subspecies>

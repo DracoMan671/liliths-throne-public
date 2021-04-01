@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<weapon>
+    <coreAttributes>
+        <authorTag/>
+        <value>5000</value>
+        <melee>false</melee>
+        <twoHanded>false</twoHanded>
+        <determiner><![CDATA[a]]></determiner>
+        <name><![CDATA[AGL Arms 45 Long Colt]]></name>
+        <namePlural pluralByDefault="false"><![CDATA[Long Colts]]></namePlural>
+        <description><![CDATA[A strange set revolver found in a desert of a far away land.  It appears worn as if having been used many times.]]></description>
+        <attackDescriptor>shoot</attackDescriptor>
+        <attackTooltipDescription>Shoot Long Colt at [npc2.name].</attackTooltipDescription>
+        <rarity>LEGENDARY</rarity>
+        <weaponSet/>
+        <equipText><![CDATA[[npc.Name] [npc.verb(ready)]  Long Colt and load the cylinder.]]></equipText>
+        <unequipText><![CDATA[[npc.Name] [npc.verb(lower)] Long Colt and empty the cylinde.]]></unequipText>
+        <imageName>AGL_Arms_45_Long_Colt.svg</imageName>
+        <imageEquippedName>AGL_Arms_45_Long_Colt.svg</imageEquippedName>
+        <damage>25</damage>
+        <arcaneCost>5</arcaneCost>
+        <damageVariance>HIGH</damageVariance>
+        <availableDamageTypes>
+            <damageType>PHYSICAL</damageType>
+            <damageType>POISON</damageType>
+            <damageType>FIRE</damageType>
+            <damageType>ICE</damageType>
+        </availableDamageTypes>
+        <spells/>
+        <enchantmentLimit>0</enchantmentLimit>
+        <effects>
+            <effect limit="0" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="CRITICAL_DAMAGE" timer="0" potency="MAJOR_DRAIN" itemEffectType="CLOTHING"/>
+        </effects>
+        <primaryColours values="ALL_METAL"/>
+        <primaryColoursDye values="ALL_METAL"/>
+        <secondaryColours values="ALL"/>
+        <secondaryColoursDye values="ALL"/>
+        <itemTags/>
+    </coreAttributes>
+    <hitDescriptions>
+        <hitText><![CDATA[[npc.Name] [npc.verb(line)] up [npc2.name] in [npc.namePos] sights and [npc.verb(pull)] the trigger. Ethereal rounds strike [npc2.name], causing [npc2.her] to lose energy.]]></hitText>
+    </hitDescriptions>
+    <missDescriptions>
+        <missText><![CDATA[[npc.Name] [npc.verb(line)] up [npc2.name] in [npc.namePos] sights and [npc.verb(pull)] the trigger. The shot goes wide! The round hits the ground uselessly]]></missText>
+    </missDescriptions>
+</weapon>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- For a version with comments, see "rental_mommy.xml". -->
+<clothing>
+	<coreAtributes>
+		<value>500</value>
+		<determiner><![CDATA[a]]></determiner>
+		<name><![CDATA[Slim Sweater]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Slim Sweater]]></namePlural>
+		<description><![CDATA[A long-sleeved sweater that seems to push back on your belly. The tag says 'Why work out when you can wear a sweater? Get slim now!']]></description>
+		<physicalResistance>1</physicalResistance>
+		<femininity>ANDROGYNOUS</femininity>
+		<slot>TORSO_OVER</slot>
+		<rarity>UNCOMMON</rarity>
+		<clothingSet/>
+		<imageName>oversized_sweater.svg</imageName>
+		<imageEquippedName/>
+		<enchantmentLimit/>
+		<effects>
+              <effect itemEffectType="CLOTHING" limit="10" potency="MINOR_DRAIN" primaryModifier="TF_CORE" secondaryModifier="TF_MOD_SIZE_TERTIARY" timer="0"/>
+              <!-- If there was a chub kink, I'd add it here.-->
+		</effects>
+		<blockedPartsList>
+			<blockedParts>
+				<displacementType>REMOVE_OR_EQUIP</displacementType>
+				<clothingAccessRequired>
+					<clothingAccess>ARMS_UP_TO_SHOULDER</clothingAccess>
+					<clothingAccess>HEAD</clothingAccess>
+				</clothingAccessRequired>
+				<blockedBodyParts/>
+				<clothingAccessBlocked/>
+				<concealedSlots/>
+			</blockedParts>
+			<blockedParts>
+				<displacementType>PULLS_UP</displacementType>
+				<clothingAccessRequired/>
+				<blockedBodyParts>
+					<bodyPart>BREASTS</bodyPart>
+					<bodyPart>NIPPLES</bodyPart>
+					<bodyPart>STOMACH</bodyPart>
+					<bodyPart>BACK</bodyPart>
+					<bodyPart>ARMS</bodyPart>
+				</blockedBodyParts>
+				<clothingAccessBlocked>
+					<clothingAccess>CHEST</clothingAccess>
+					<clothingAccess>WAIST</clothingAccess>
+				</clothingAccessBlocked>
+				<concealedSlots>
+					<slot>CHEST</slot>
+					<slot>NIPPLE</slot>
+					<slot>STOMACH</slot>
+					<slot>PIERCING_STOMACH</slot>
+					<slot>PIERCING_NIPPLE</slot>
+				</concealedSlots>
+			</blockedParts>
+		</blockedPartsList>
+		<incompatibleSlots/>
+		<primaryColours values="JUST_BLACK"/>
+		<primaryColoursDye values="ALL"/>
+		<secondaryColours values="JUST_BLACK"/>
+		<secondaryColoursDye values="ALL"/>
+		<tertiaryColours values="JUST_BLACK"/>
+		<tertiaryColoursDye values="ALL"/>
+		<itemTags>
+			<tag>SOLD_BY_NYAN</tag>
+		</itemTags>
+	</coreAtributes>
+
+	<displacementText type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[
+			You take off your sweater.
+		]]></playerSelf>
+		<playerNPC><![CDATA[
+			You pull off [npc.name]'s sweater.
+		]]></playerNPC>
+		<playerNPCRough><![CDATA[
+			You grab hold of [npc.name]'s sweater and roughly pull it off over [npc.her] head.
+		]]></playerNPCRough>
+		<NPCSelf><![CDATA[
+			[npc.Name] takes [npc.her] sweater off.
+		]]></NPCSelf>
+		<NPCPlayer><![CDATA[
+			[npc.Name] pulls your sweater off.
+		]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[
+			[npc.Name] grabs hold of your sweater and roughly pulls it off over your head.
+		]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[
+			[npc1.Name] pulls [npc2.name]'s sweater off.
+		]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[
+			[npc.Name] grabs hold of [npc2.name]'s sweater and roughly pulls it off over [npc2.her] head.
+		]]></NPCOtherNPCRough>
+	</displacementText>
+
+	<replacementText type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[
+			You pull on the sweater.
+		]]></playerSelf>
+		<playerNPC><![CDATA[
+			You guide [npc.name]'s [npc.arms] through the sweater's sleeves as you pull it on [npc.herHim].
+		]]></playerNPC>
+		<playerNPCRough><![CDATA[
+			You hold [npc.name] still as you roughly force the sweater down over [npc.her] head, before pulling it down over [npc.her] torso.
+		]]></playerNPCRough>
+		<NPCSelf><![CDATA[
+			[npc.Name] pulls on the sweater.
+		]]></NPCSelf>
+		<NPCPlayer><![CDATA[
+			[npc.Name] guides your [pc.arms] through the sweater's sleeves, before pulling it down over your torso.
+		]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[
+			[npc.Name] holds you still as [npc.she] roughly forces the sweater down over your head, before pushing your [pc.arms] through the sleeves.
+		]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[
+			[npc1.Name] guides [npc2.name]'s [npc2.arms] through the sweater's sleeves before pulling it down over [npc2.her] torso.
+		]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[
+			[npc1.Name] holds [npc2.name] still as [npc1.she] roughly forces the sweater down over [npc2.her] head, before pulling it down over [npc2.her] torso.
+		]]></NPCOtherNPCRough>
+	</replacementText>
+
+	<displacementText type="PULLS_UP">
+		<playerSelf><![CDATA[
+			You pull your sweater up to just below your chin.
+		]]></playerSelf>
+		<playerNPC><![CDATA[
+			You pull up [npc.name]'s sweater.
+		]]></playerNPC>
+		<playerNPCRough><![CDATA[
+			You roughly yank up [npc.name]'s sweater.
+		]]></playerNPCRough>
+		<NPCSelf><![CDATA[
+			[npc.Name] pulls [npc.her] sweater up to just below [npc.her] chin.
+		]]></NPCSelf>
+		<NPCPlayer><![CDATA[
+			[npc.Name] pulls up your sweater.
+		]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[
+			[npc.Name] roughly yanks up your sweater.
+		]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[
+			[npc1.Name] pulls up [npc2.name]'s sweater.
+		]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[
+			[npc.Name] roughly pulls up [npc2.name]'s sweater.
+		]]></NPCOtherNPCRough>
+	</displacementText>
+
+	<replacementText type="PULLS_DOWN">
+		<playerSelf><![CDATA[
+			You pull your sweater back down, covering your torso.
+		]]></playerSelf>
+		<playerNPC><![CDATA[
+			You pull down [npc.name]'s sweater.
+		]]></playerNPC>
+		<playerNPCRough><![CDATA[
+			You roughly pull down [npc.name]'s sweater.
+		]]></playerNPCRough>
+		<NPCSelf><![CDATA[
+			[npc.Name] pulls [npc.her] sweater back down to cover [npc.her] torso.
+		]]></NPCSelf>
+		<NPCPlayer><![CDATA[
+			[npc.Name] pulls down your sweater.
+		]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[
+			[npc.Name] roughly pulls down your sweater.
+		]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[
+			[npc1.Name] pulls down [npc2.name]'s sweater.
+		]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[
+			[npc.Name] roughly pulls down [npc2.name]'s sweater.
+		]]></NPCOtherNPCRough>
+	</replacementText>
+
+</clothing>

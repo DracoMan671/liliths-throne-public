@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<breast>
+	<race>keelah_naga</race>
+
+	<transformationName><![CDATA[naga]]></transformationName>
+
+	<coveringType>keelah_naga_fur</coveringType>
+
+	<nippleType>keelah_naga_nipple</nippleType>
+
+	<fluidType>keelah_naga_milk</fluidType>
+
+	<!-- Naming: -->
+	<names/>
+
+	<namesPlural/>
+
+	<descriptors/>
+
+	<namesFlat/>
+
+	<namesPluralFlat/>
+
+	<descriptorsFlat/>
+
+	<!-- Chest-located breasts: -->
+	<transformationDescription><![CDATA[
+		[npc.She] now [npc.has] [style.boldHyena(scaly)], [npc.nipplesFullDescription], and when lactating, [npc.she] will produce [style.boldHyena(milk)].
+	]]></transformationDescription>
+
+	<bodyDescription><![CDATA[
+		On each of [npc.her] [npc.breastSize] [npc.breasts], [npc.she] [npc.has] [npc.nipplesPerBreast] scaly, [npc.nipplesFullDescription].
+	]]></bodyDescription>
+
+	<!-- Crotch-located breasts: -->
+	<crotchBoobsTransformationDescription><![CDATA[
+		[npc.She] now [npc.has] [style.boldHyena(scaly)], [npc.crotchNipplesFullDescription], and when lactating, [npc.she] will produce [style.boldHyena(milk)].
+	]]></crotchBoobsTransformationDescription>
+
+	<crotchBoobsBodyDescription><![CDATA[
+		On each of [npc.her] [npc.crotchBoobSize] [npc.crotchBoobs], [npc.she] [npc.has] [npc.crotchNipplesPerBreast] scaly, [npc.crotchNipplesFullDescription].
+	]]></crotchBoobsBodyDescription>
+</breast>

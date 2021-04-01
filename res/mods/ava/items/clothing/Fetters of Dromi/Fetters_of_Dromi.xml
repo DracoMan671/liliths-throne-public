@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<clothing>
+	<coreAttributes>
+		<value>2500</value>
+		<determiner><![CDATA[a]]></determiner>
+		<name><![CDATA[Rafail Gem]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Rafail Gems]]></namePlural>
+		<description><![CDATA[Legendary relics once worn by a mysterious, scheming young man.]]></description>
+		<physicalResistance>0</physicalResistance>
+		<femininity>ANDROGYNOUS</femininity>
+    <equipSlots>
+      <slot>HAND</slot>
+    </equipSlots>
+
+    <rarity>EPIC</rarity>
+	<clothingSet/>
+	<imageName>Rafail_Gem.svg</imageName>
+    <imageEquippedName/>
+	<enchantmentLimit>20</enchantmentLimit>
+		<effects>
+		<effect itemEffectType="CLOTHING" limit="0" potency="MAJOR_BOOST" primaryModifier="CLOTHING_MAJOR_ATTRIBUTE" secondaryModifier="MANA_MAXIMUM" timer="0"/>
+		<effect itemEffectType="CLOTHING" limit="0" potency="MAJOR_BOOST" primaryModifier="CLOTHING_MAJOR_ATTRIBUTE" secondaryModifier="MANA_MAXIMUM" timer="0"/>
+		<effect itemEffectType="CLOTHING" limit="0" potency="MAJOR_BOOST" primaryModifier="CLOTHING_MAJOR_ATTRIBUTE" secondaryModifier="MANA_MAXIMUM" timer="0"/>
+		<effect itemEffectType="CLOTHING" limit="0" potency="MINOR_BOOST" primaryModifier="CLOTHING_MAJOR_ATTRIBUTE" secondaryModifier="MANA_MAXIMUM" timer="0"/>
+		</effects>
+		<blockedPartsList> 
+			<blockedParts>
+				<displacementType>REMOVE_OR_EQUIP</displacementType>
+				<clothingAccessRequired/>
+				<blockedBodyParts/>
+				<clothingAccessBlocked/>
+				<concealedSlots/>
+			</blockedParts>
+		</blockedPartsList>
+		
+		<incompatibleSlots/> 
+		
+		<primaryColours values="ALL"/> 
+		<primaryColoursDye/>
+		<secondaryColours/>
+		<secondaryColoursDye/>
+		<tertiaryColours/>
+		<tertiaryColoursDye/>
+		
+		<itemTags> 
+			<tag>SOLD_BY_VICKY</tag>
+		</itemTags>
+	</coreAttributes>
+
+	<replacementText type="REMOVE_OR_EQUIP">
+		<self>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] the relics onto [npc.her] [npc.hands], already feeling more cunning.]>
+		</self>
+		<other>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] the relics onto [npc2.namePos] [npc2.hands].]]>
+		</other>
+		<otherRough>
+		  <![CDATA[[npc.Name] roughly [npc.verb(force)] the relics onto [npc2.namePos] [npc2.hands].]]>
+	  </otherRough>
+	</replacementText>
+
+	<displacementText type="REMOVE_OR_EQUIP">
+		<self>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] off [npc.her] relics.]]>
+		</self>
+		<other>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] off [npc2.namePos] relics.]]>
+		</other>
+		<otherRough>
+		  <![CDATA[[npc.Name] roughly [npc.verb(yank)] off [npc2.namePos] relics.]]>
+		</otherRough>
+	</displacementText>
+	
+</clothing>

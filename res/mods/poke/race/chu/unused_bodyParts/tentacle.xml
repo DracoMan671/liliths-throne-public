@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<tentacle>
+	<race>innoxia_hyena</race>
+	<transformationName><![CDATA[hyena]]></transformationName>
+	<coveringType>innoxia_hyena_fur</coveringType>
+	<!-- ZERO_THIN, ONE_SLENDER, TWO_NARROW, THREE_AVERAGE, FOUR_GIRTHY, FIVE_THICK, SIX_CHUBBY, SEVEN_FAT -->
+	<defaultGirth>4</defaultGirth>
+	<!-- The length of this tentacle in relation to the owner's height, defined as a percentage from 1.0 (100%) to 5.0 (500%). -->
+	<defaultLengthAsPercentageOfHeight>2.5</defaultLengthAsPercentageOfHeight>
+	<!-- TAIL_PREHENSILE, TAIL_NEVER_SUITABLE_FOR_PENETRATION, TAIL_SUITABLE_FOR_PENETRATION, TAIL_SLEEP_HUGGING, ALLOWS_FLIGHT
+	TAIL_TYPE_SKIN, TAIL_TYPE_SCALES, TAIL_TYPE_FUR, TAIL_TYPE_TUFT, TAIL_TYPE_HAIR, TAIL_TYPE_FEATHER, TAIL_TYPE_GENERIC
+	TAIL_TAPERING_EXPONENTIAL, TAIL_TAPERING_LINEAR, TAIL_TAPERING_BULBOUS, TAIL_TAPERING_NONE -->
+	<tags>
+		<tag>TAIL_TAPERING_NONE</tag>
+		<tag>TAIL_SUTABLE_FOR_PENETRATION</tag>
+		<tag>TAIL_PREHENSILE</tag>
+		<tag>TAIL_SLEEP_HUGGING</tag>
+	</tags>
+	<determiner><![CDATA[]]></determiner>
+	<determinerPlural><![CDATA[]]></determinerPlural> 
+	<name><![CDATA[tentacle]]></name>
+	<namePlural><![CDATA[tentacles]]></namePlural> 
+	<descriptorsMasculine>
+		<descriptor>strong</descriptor>
+	</descriptorsMasculine>
+	<descriptorsFeminine>
+		<descriptor>strong</descriptor>
+	</descriptorsFeminine>
+	<tipName><![CDATA[tip]]></tipName>
+	<tipNamePlural><![CDATA[tips]]></tipNamePlural>
+	<tipDescriptorsMasculine>
+		<descriptor>rounded</descriptor>
+	</tipDescriptorsMasculine>
+	<tipDescriptorsFeminine>
+		<descriptor>rounded</descriptor>
+	</tipDescriptorsFeminine>
+	<!-- As tentacles are limited to taking the place of legs, there is no need to fill out this section, as it is never used in-game... -->
+	<transformationDescription><![CDATA[
+	]]></transformationDescription>
+	<bodyDescription><![CDATA[
+		In place of legs, [npc.sheHasFull] [npc.tentacleCount] [npc.tentacleColour(true)] tentacles, over which [npc.sheHasFull] complete control, allowing [npc.herHim] to use them to grip and hold objects.
+	]]></bodyDescription>
+</tentacle>

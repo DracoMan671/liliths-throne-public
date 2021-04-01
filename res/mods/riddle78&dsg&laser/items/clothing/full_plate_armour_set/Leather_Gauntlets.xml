@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<clothing>
+	<coreAtributes>
+		<value>10000</value>
+		<determiner><![CDATA[a pair of]]></determiner>
+		<name><![CDATA[Leather Gauntlets]]></name>
+		<namePlural pluralByDefault="true"><![CDATA[Leather Gauntlets]]></namePlural>
+		<description><![CDATA[A pair of heavy leather gloves, meant to be worn under plate armour gauntlets, but perfectly serviceable as work gloves. They're also capable of protecting your hands and forearms from minor physical assault, to boot.]]></description>
+		<physicalResistance>2</physicalResistance>
+		<femininity>ANDROGYNOUS</femininity>
+		<slot>WRIST</slot>
+		<rarity>RARE</rarity>
+		<clothingSet></clothingSet>
+		<imageName>Leather_Gauntlets.svg</imageName>
+		<imageEquippedName></imageEquippedName>
+		<enchantmentLimit>8</enchantmentLimit>
+		<effects />
+		<blockedPartsList>
+			<blockedParts>
+				<displacementType>REMOVE_OR_EQUIP</displacementType>
+				<clothingAccessRequired />
+				<blockedBodyParts />
+				<clothingAccessBlocked>
+					<clothingAccess>FINGERS</clothingAccess>
+				</clothingAccessBlocked>
+				<concealedSlots>
+					<slot>FINGER</slot>
+				</concealedSlots>
+			</blockedParts>
+		</blockedPartsList>
+		<incompatibleSlots />
+		<primaryColours values="LEATHER" />
+		<primaryColoursDye values="LEATHER" />
+		<secondaryColours values="ALL_METAL" />
+		<secondaryColoursDye values="ALL_METAL" />
+		<tertiaryColours values="" />
+		<tertiaryColoursDye values="" />
+		<itemTags />
+	</coreAtributes>
+	<displacementText type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[You pull off your Leather Gauntlets.]]></playerSelf>
+		<playerNPC><![CDATA[You pull off [npc.name]'s Leather Gauntlets.]]></playerNPC>
+		<playerNPCRough><![CDATA[You rip off [npc.name]'s Leather Gauntlets.]]></playerNPCRough>
+		<NPCSelf><![CDATA[[npc.name] pulls off their Leather Gauntlets.]]></NPCSelf>
+		<NPCPlayer><![CDATA[[npc.name] pulls off your Leather Gauntlets.]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[[npc.name] rips off your Leather Gauntlets.]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[[npc1.name] pulls off [npc2.name]'s Leather Gauntlets.]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[[npc1.name] rips off [npc2.name]'s Leather Gauntlets.]]></NPCOtherNPCRough>
+	</displacementText>
+	<replacementText type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[You pull on your Leather Gauntlets.]]></playerSelf>
+		<playerNPC><![CDATA[You pull [npc.name]'s Leather Gauntlets onto their hands.]]></playerNPC>
+		<playerNPCRough><![CDATA[You shove [npc.name]'s hands into their Leather Gauntlets.]]></playerNPCRough>
+		<NPCSelf><![CDATA[[npc.name] pulls off their Leather Gauntlets.]]></NPCSelf>
+		<NPCPlayer><![CDATA[[npc.name] pulls your Leather Gauntlets onto your hands.]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[[npc.name] shoves your hands into your Leather Gauntlets.]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[[npc1.name] pulls the Leather Gauntlets over [npc2.name]'s hands.]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[[npc1.name] shoves [npc2.name]'s hands into the Leather Gauntlets.]]></NPCOtherNPCRough>
+	</replacementText>
+</clothing>

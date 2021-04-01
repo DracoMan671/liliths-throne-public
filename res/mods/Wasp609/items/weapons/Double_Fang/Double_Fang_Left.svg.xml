@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<weapon>
+    <coreAttributes>
+        <authorTag/>
+        <value>5000</value>
+        <melee>false</melee>
+        <twoHanded>false</twoHanded>
+        <determiner><![CDATA[a]]></determiner>
+        <name><![CDATA[Double Fang Left]]></name>
+        <namePlural pluralByDefault="false"><![CDATA[Double Fang]]></namePlural>
+        <description><![CDATA[A strange set of machine guns.  Several relgious inscriptions are found on it.]]></description>
+        <attackDescriptor>shoot</attackDescriptor>
+        <attackTooltipDescription>Shoot Double Fang at [npc2.name].</attackTooltipDescription>
+        <rarity>LEGENDARY</rarity>
+        <weaponSet/>
+        <equipText><![CDATA[[npc.Name] [npc.verb(ready)] Double Fang and load a magazine.]]></equipText>
+        <unequipText><![CDATA[[npc.Name] [npc.verb(lower)] Double Fang and remove the magazine and clear the chamber.]]></unequipText>
+        <imageName>Double_Fang_Left.svg</imageName>
+        <imageEquippedName>Double_Fang_Left.svg</imageEquippedName>
+        <damage>25</damage>
+        <arcaneCost>5</arcaneCost>
+        <damageVariance>HIGH</damageVariance>
+        <availableDamageTypes>
+            <damageType>PHYSICAL</damageType>
+            <damageType>POISON</damageType>
+            <damageType>FIRE</damageType>
+            <damageType>ICE</damageType>
+        </availableDamageTypes>
+        <spells/>
+        <enchantmentLimit>0</enchantmentLimit>
+        <effects>
+            <effect primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="CRITICAL_DAMAGE" itemEffectType="CLOTHING" potency="MAJOR_DRAIN" timer="0" limit="0"/>
+        </effects>
+        <primaryColours values="ALL_METAL"/>
+        <primaryColoursDye values="ALL_METAL"/>
+        <secondaryColours values="ALL"/>
+        <secondaryColoursDye values="ALL"/>
+        <itemTags/>
+    </coreAttributes>
+    <hitDescriptions>
+        <hitText><![CDATA[[npc.Name] [npc.verb(line)] up [npc2.name] in [npc.namePos] sights and [npc.verb(pull)] the trigger. Ethereal rounds strike [npc2.name], causing [npc2.her] to lose energy.]]></hitText>
+    </hitDescriptions>
+    <missDescriptions>
+        <missText><![CDATA[[npc.Name] [npc.verb(line)] up [npc2.name] in [npc.namePos] sights and [npc.verb(pull)] the trigger. The shot goes wide! The round hits the ground uselessly]]></missText>
+    </missDescriptions>
+</weapon>

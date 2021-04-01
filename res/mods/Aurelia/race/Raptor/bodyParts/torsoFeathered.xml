@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<torso>
+	<race>Aurelia_Raptor</race>
+	
+	<transformationName><![CDATA[raptor (feathered)]]></transformationName>
+	
+	<coveringType>Aurelia_Raptor_feathers</coveringType>
+	
+	<descriptorsMasculine/>
+	<descriptorsFeminine/>
+	
+	
+	<transformationDescription><![CDATA[
+		After just a few moments, the transformation comes to an end, and [npc.she] [npc.verb(let)] out a deep sigh as the itching finally stops, leaving [npc.her] torso covered with bambiraptor feathers. [npc.Her] new feathers are a little soft and densely packed around [npc.her] joints and offers little added protection.
+		<br/>[npc.Name] now [npc.has] [style.boldRaptorLime(avian raptor-like)], [npc.skinFullDescription].
+	]]></transformationDescription>
+	
+	<bodyDescription><![CDATA[
+		[npc.Her] torso has [npc.a_femininity(true)] appearance, and is [npc.materialCompositionDescriptor] [npc.skinFullDescription(true)].
+	]]></bodyDescription>
+	
+	<tags/>
+	
+</torso>

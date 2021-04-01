@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<eye>
+	<race>Yoruhime_butterfly</race>
+	<transformationName><![CDATA[butterfly]]></transformationName>
+	<coveringType>Yoruhime_butterfly_eye</coveringType>
+	<tags>
+		<tag>NIGHT_VISION</tag>
+	</tags>
+	<defaultPairCount>1</defaultPairCount>
+	<defaultIrisShape>ROUND</defaultIrisShape>
+	<defaultPupilShape>ROUND</defaultPupilShape>
+	<name><![CDATA[compound eye]]></name>
+	<namePlural><![CDATA[compound eyes]]></namePlural>
+	<descriptorsMasculine>
+		<descriptor><![CDATA[glittery]]></descriptor>
+	</descriptorsMasculine>
+	<descriptorsFeminine>
+		<descriptor><![CDATA[glittery]]></descriptor>
+	</descriptorsFeminine>
+	<transformationDescription><![CDATA[
+		By the time [npc.she] hesitantly [npc.verb(open)] them again, they've changed into butterfly-like compound eyes.
+		<br/>[npc.Name] now [npc.has] [style.boldButterfly(butterfly-like eyes)] with [style.boldGenericTF([npc.irisShape])], [npc.irisFullDescription(true)] and [style.boldGenericTF([npc.pupilShape])], [npc.pupilFullDescription(true)].
+	]]></transformationDescription>
+	<bodyDescription><![CDATA[
+		[npc.SheHasFull] [npc.eyePairs] butterfly-like compound eyes. They have [npc.irisShape], [npc.irisColour(true)] irises, [npc.pupilShape], [npc.pupilColour(true)] pupils, and [npc.scleraColour(true)] sclerae.
+	]]></bodyDescription>
+</eye>

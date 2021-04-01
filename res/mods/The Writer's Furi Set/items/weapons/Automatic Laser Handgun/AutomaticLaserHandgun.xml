@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<weapon>
+	<coreAttributes>
+	
+		<!-- How much this weapon is worth. -->
+		<value>100000</value> 
+		
+				<melee>false</melee>
+		
+				<twoHanded>false</twoHanded>
+		
+				<determiner><![CDATA[an]]></determiner>
+		
+		<!-- The name of this weapon. -->
+		<name><![CDATA[Automatic Laser Handgun]]></name>
+		
+				<namePlural pluralByDefault="false"><![CDATA[Laser Handgun's]]></namePlural> 
+		
+				<description><![CDATA[It doesn't belong to this world, it belonged to a stranger who visited, pseudonymously known as The Rider. It seems he left it behind, every little thing about the handgun is unknown.]]></description>
+		
+				<attackDescriptor>Unload</attackDescriptor>
+		
+				<attackTooltipDescription>Unload at[npc2.name]with your ALH.</attackTooltipDescription>
+		
+				<rarity>LEGENDARY</rarity> 
+		
+				<equipText><![CDATA[[npc.Name] [npc.verb(Equip)] the Automatic Laser Handgun.]]></equipText>
+		
+				<unequipText><![CDATA[[npc.Name] [npc.verb(Holdster)] the Automatic Laser Handgun.]]></unequipText>
+		
+				<imageName>RiderPistol.svg</imageName> 
+		
+		
+		<imageEquippedName>RiderPistol.svg</imageEquippedName>
+		
+				<damage>93</damage> 
+		
+				<arcaneCost>5</arcaneCost> 
+		
+				<damageVariance>LOW</damageVariance> 
+		
+				<availableDamageTypes>
+
+			<damageType>PHYSICAL</damageType>
+              
+					</availableDamageTypes>
+		
+				<enchantmentLimit>0</enchantmentLimit>
+		
+				<effects> 
+              		</effects>
+		
+				<primaryColours values="?"/> 
+		<primaryColoursDye values="?"/>
+		<secondaryColours values="?"/> 
+		<secondaryColoursDye values="?"/>
+		
+				<itemTags> 
+			<tag>SOLD_BY_VICKY</tag>
+		</itemTags>
+		
+	</coreAttributes>
+
+		<hitDescriptions>
+		<hitText><![CDATA[
+		[npc.name] [npc.verb(unload)] into [npc2.name], and send them sprawling to the ground, thankfully, the concussive bullets didn't cause any serious harm.
+		]]></hitText>
+		<hitText><![CDATA[
+		[npc.Name] [npc.verb(fire)] at [npc2.name] with [npc.her] ALH, [npc2.name] tries to move away, but you end up striking [npc2.her] [npc2.arm] with concussive blast.
+		]]></hitText>
+			</hitDescriptions>
+
+		<missDescriptions>
+		<missText><![CDATA[
+		[npc.name] [npc.verb(unload)] at [npc2.name] but drastically miss your target and the concussive bullets explode mid-air.
+		]]></missText>
+		<missText><![CDATA[
+		[npc.name] [npc.verb(Try)] to blast off at [npc2.name] but the ALH malfunctions!
+		]]></missText>
+			</missDescriptions>
+	
+</weapon>

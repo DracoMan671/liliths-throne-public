@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<weapon>
+	<coreAttributes>
+	
+		<value>25000</value> 
+		
+		<melee>true</melee>
+		
+		<twoHanded>false</twoHanded>
+		
+		<determiner><![CDATA[]]></determiner>
+		
+		<name><![CDATA[Renamon]]></name>
+		
+		<namePlural pluralByDefault="false"><![CDATA[Renamon]]></namePlural>
+		
+		<description><![CDATA[At first you think its a greater fox stood very still, but this is a battle doll, nothing more than a a golem built to fight on behalf brought to life by your arcane power, It does not measure up to elementals that demons can summon but it does take its strength from you. This this battle doll certainly looks familiar, something you watched from when you were younger???]]></description> 
+		
+		<attackDescriptor>Attack</attackDescriptor>
+		
+		<attackTooltipDescription><![CDATA[attack the [npc2.name] with the battle doll.]]></attackTooltipDescription>
+		
+		<rarity>UNCOMMON</rarity> 
+		
+		<weaponSet/> 
+		
+		<equipText><![CDATA[[npc.Name] motion towards the shadows for the doll to follow, It fades into view and [npc.verb(position)] itself by [npc.her] side, awaiting it's next command.]]></equipText>
+		
+		<unequipText><![CDATA[[npc.Name] command [npc.her] Doll to stop following, the battle doll nods and fades back into your shadow.]]></unequipText>
+		
+		<imageName>DIGIRena.svg</imageName> 
+		
+		<imageEquippedName>DIGIRenaEQ.svg</imageEquippedName> 
+		
+		<physicalResistance>0</physicalResistance>
+		<damage>30</damage> 
+		
+		<arcaneCost>0</arcaneCost> 
+		
+		<damageVariance>LOW</damageVariance> 
+		
+		<availableDamageTypes>
+			<damageType>PHYSICAL</damageType>
+			<damageType>FIRE</damageType>
+			<damageType>ICE</damageType>
+			<damageType>POISON</damageType>
+		</availableDamageTypes>
+		
+		<spells/>
+		
+		<enchantmentLimit>5</enchantmentLimit>
+		
+		<effects> 
+              <effect itemEffectType="CLOTHING" limit="0" potency="MAJOR_BOOST" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="DAMAGE_WEAPON" timer="0"/>
+              <effect itemEffectType="CLOTHING" limit="0" potency="MAJOR_BOOST" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="CRITICAL_DAMAGE" timer="0"/>
+		</effects>
+		
+		<primaryColours values="CLOTHING_YELLOW"/> 
+		<primaryColoursDye values="ALL_WITH_METALS"/>
+		<secondaryColours values = "ALL"/> 
+		<secondaryColoursDye values="ALL_WITH_METALS"/>
+		
+		<itemTags> 
+			<tag>SOLD_BY_VICKY</tag>
+		</itemTags>
+		
+	</coreAttributes>
+	
+	<hitDescriptions>
+		<hitText><![CDATA[
+		[npc.namePos] Renamon doll readies itself into a confident stance as it [npc.verb(lines)] up [npc2.name] in [npc.namePos] sights and [npc.verb(charges)]. Renamon manages to land a solid punch on [npc2.namePos] [npc2.arm].
+		]]></hitText>
+		<hitText><![CDATA[
+		[npc.namePos] Renamon doll readies itself into a confident stance as it [npc.verb(lines)] up [npc2.name] in [npc.namePos] sights and [npc.verb(charges)]. Renamon manages to land a solid kick on [npc2.namePos] [npc2.arm].
+		]]></hitText>
+	</hitDescriptions>
+
+	<!-- Descriptions that are used when missing an enemy. One of the missText values will be randomly selected each time the attacker misses their target. Follow the same guidelines as equipText. -->
+	<missDescriptions>
+		<missText><![CDATA[
+		[npc.namePos] Renamon doll readies iteself into a unsure stance as it [npc.verb(lines)] up [npc2.name] in [npc.namePos] sights and [npc.verb(charges)]. Renamon strikes out to punch [npc2.name] on the [npc2.arm], but [npc.verb(end)] up missing [npc2.herHim]!
+		]]></missText>
+		<missText><![CDATA[
+		[npc.namePos] Renamon doll readies iteself into a unsure stance as it [npc.verb(lines)] up [npc2.name] in [npc.namePos] sights and [npc.verb(charges)]. Renamon strikes out to kick [npc2.name] on the [npc2.arm], but [npc.verb(end)] up missing [npc2.herHim]!
+		]]></missText>
+	</missDescriptions>
+	
+</weapon>

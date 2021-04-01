@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<torso>
+	<race>poke_focco</race>
+	<transformationName><![CDATA[Fennekin-line]]></transformationName>
+	<coveringType>poke_focco_fur</coveringType>
+	<descriptorsMasculine>
+		<descriptor><![CDATA[fluffy]]></descriptor>
+	</descriptorsMasculine>
+	<descriptorsFeminine>
+		<descriptor><![CDATA[fluffy]]></descriptor>
+	</descriptorsFeminine>
+	<transformationDescription><![CDATA[
+		After just a few moments, the transformation comes to an end, and [npc.she] [npc.verb(let)] out a deep sigh as the itching finally stops, leaving [npc.her] torso covered with fox-like, Fennekin-line fur.
+		<br/>[npc.Name] now [npc.has] Fennekin-line, [npc.skinFullDescription].
+	]]></transformationDescription>
+	<bodyDescription><![CDATA[
+		[npc.Her] torso has [npc.a_femininity(true)] appearance, and is [npc.materialCompositionDescriptor] [npc.skinFullDescription(true)].
+	]]></bodyDescription>
+	<!-- TORSO_DORSAL_FIN, ALLOWS_FLIGHT -->
+	<tags/>
+</torso>

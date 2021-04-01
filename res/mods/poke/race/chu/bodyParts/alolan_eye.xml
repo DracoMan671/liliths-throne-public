@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<eye>
+	<race>poke_chu</race>
+	<transformationName><![CDATA[Alolan 'chu-line]]></transformationName>
+	<coveringType>poke_chu_eye</coveringType>
+	<!--
+	<tags>
+		<tag>NIGHT_VISION</tag>
+	</tags>
+	-->
+	<tags/>
+	<defaultPairCount>1</defaultPairCount>
+	<!-- ROUND, HORIZONTAL, VERTICAL, HEART, STAR -->
+	<defaultIrisShape>ROUND</defaultIrisShape>
+	<defaultPupilShape>ROUND</defaultPupilShape>
+	<name><![CDATA[eye]]></name>
+	<namePlural><![CDATA[eyes]]></namePlural>
+	<descriptorsMasculine>
+		<descriptor><![CDATA[beady]]></descriptor>
+	</descriptorsMasculine>
+	<descriptorsFeminine>
+		<descriptor><![CDATA[beady]]></descriptor>
+	</descriptorsFeminine>
+	<transformationDescription><![CDATA[
+		By the time [npc.she] hesitantly [npc.verb(open)] them again, they've changed into beady Pikachu-line eyes.
+		<br/>[npc.Name] now [npc.has] Raichu/Pikachu eyes with [style.boldGenericTF([npc.irisShape])], [npc.irisFullDescription(true)] and [style.boldGenericTF([npc.pupilShape])], [npc.pupilFullDescription(true)].
+		<br/>Looking deep into [npc.Name]'s irises, a faint wavy pattern can be seen, indicating a longing for the tropics of home.
+	]]></transformationDescription>
+	<bodyDescription><![CDATA[
+		[npc.SheHasFull] [npc.eyePairs] Raichu/Pikachu eyes, the irises and pupils of which are larger than a regular human's. They have [npc.irisShape], [npc.irisColour(true)] irises, [npc.pupilShape], [npc.pupilColour(true)] pupils, and [npc.scleraColour(true)] sclerae.
+		<br/>Looking deep into [npc.Name]'s irises, a faint wavy pattern can be seen, indicating a longing for the tropics of home.
+	]]></bodyDescription>
+	
+</eye>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Made by Alicebun! -->
+<clothing>
+	<coreAtributes>
+		<value>50</value>
+		<determiner><![CDATA[a pair of]]></determiner>
+		<name><![CDATA[heart pasty]]></name>
+		<namePlural pluralByDefault="true"><![CDATA[heart pasties]]></namePlural>
+		<description><![CDATA[A pair of heart-shaped nipple pasties.]]></description>
+		<physicalResistance>1</physicalResistance>
+		<femininity>ANDROGYNOUS</femininity>
+		<slot>NIPPLE</slot>
+		<rarity>COMMON</rarity>
+		<clothingSet/>
+		<imageName>heart_pasties.svg</imageName>
+		<imageEquippedName/>
+		<enchantmentLimit/>
+		<effects>
+		</effects>
+		<blockedPartsList>
+			<blockedParts>
+				<displacementType>REMOVE_OR_EQUIP</displacementType>
+				<clothingAccessRequired>
+					<clothingAccess>CHEST</clothingAccess>
+				</clothingAccessRequired>
+				<blockedBodyParts>
+					<bodyPart>NIPPLES</bodyPart>
+				</blockedBodyParts>
+				<clothingAccessBlocked/>
+				<concealedSlots>
+					<slot>PIERCING_NIPPLE</slot>
+				</concealedSlots>
+			</blockedParts>
+		</blockedPartsList>
+		<incompatibleSlots>
+		</incompatibleSlots>
+		<primaryColours values="JUST_DARK_RED"/>
+		<primaryColoursDye values="ALL"/>
+		<itemTags>
+			<tag>PLUGS_NIPPLES</tag>
+			<tag>SOLD_BY_NYAN</tag>
+		</itemTags>
+	</coreAtributes>
+
+	<displacementText type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[
+			You wince as you peel the heart pasties off your [pc.nipples].
+		]]></playerSelf>
+		<playerNPC><![CDATA[
+			[npc.Name] winces and lets out a little cry as you peel the heart pasties off [npc.her] [npc.nipples].
+		]]></playerNPC>
+		<playerNPCRough><![CDATA[
+			[npc.Name] winces and [npc.moansVerb+] as you roughly tear the heart pasties off [npc.her] [npc.nipples].
+		]]></playerNPCRough>
+		<NPCSelf><![CDATA[
+			[npc.Name] winces as [npc.she] peels the heart pasties off [npc.her] [npc.nipples].
+		]]></NPCSelf>
+		<NPCPlayer><![CDATA[
+			You wince and let out a little cry as [npc.name] peels the heart pasties off your [pc.nipples].
+		]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[
+			You wince and [pc.moanVerb+] as [npc.name] roughly tears the heart pasties off your [pc.nipples].
+		]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[
+			[npc2.Name] winces and lets out a little cry as [npc1.name] peels the heart pasties off [npc2.her] [npc2.nipples].
+		]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[
+			[npc2.Name] winces and [npc2.moansVerb+] as [npc1.name] roughly tears the heart pasties off [npc2.her] [npc2.nipples].
+		]]></NPCOtherNPCRough>
+	</displacementText>
+
+	<replacementText type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[
+			You stick the heart pasties over your [pc.nipples].
+		]]></playerSelf>
+		<playerNPC><![CDATA[
+			You stick the heart pasties over [npc.name]'s [npc.nipples].
+		]]></playerNPC>
+		<playerNPCRough><![CDATA[
+			You stick the heart pasties over [npc.name]'s [npc.nipples].
+		]]></playerNPCRough>
+		<NPCSelf><![CDATA[
+			[npc.Name] sticks the heart pasties over [npc.her] [npc.nipples].
+		]]></NPCSelf>
+		<NPCPlayer><![CDATA[
+			[npc.Name] sticks the heart pasties over your [pc.nipples].
+		]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[
+			[npc.Name] sticks the heart pasties over your [pc.nipples].
+		]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[
+			[npc1.Name] sticks the heart pasties over [npc2.name]'s [npc2.nipples].
+		]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[
+			[npc1.Name] sticks the heart pasties over [npc2.name]'s [npc2.nipples].
+		]]></NPCOtherNPCRough>
+	</replacementText>
+	
+</clothing>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<clothing>
+    <coreAttributes>
+        <authorTag><![CDATA[Casul]]></authorTag>
+        <value>50</value>
+        <determiner><![CDATA[a]]></determiner>
+        <name><![CDATA[half-hoodie]]></name>
+        <namePlural pluralByDefault="false"><![CDATA[half-hoodies]]></namePlural>
+        <description><![CDATA[A hoodie, cut to cover nothing but the shoulders, arms and back. Seems... counter-intuitive.]]></description>
+        <physicalResistance>0</physicalResistance>
+        <femininity>FEMININE</femininity>
+        <equipSlots>
+            <slot>TORSO_OVER</slot>
+        </equipSlots>
+        <rarity>UNCOMMON</rarity>
+        <clothingSet/>
+        <imageName>halfhoodie.svg</imageName>
+        <imageEquippedName slot="TORSO_OVER">halfhoodie.svg</imageEquippedName>
+        <enchantmentLimit>1</enchantmentLimit>
+        <effects/>
+        <blockedPartsList slot="TORSO_OVER">
+            <blockedParts>
+                <displacementType>REMOVE_OR_EQUIP</displacementType>
+                <clothingAccessRequired>
+                    <clothingAccess>CHEST</clothingAccess>
+                </clothingAccessRequired>
+                <blockedBodyParts/>
+                <clothingAccessBlocked/>
+                <concealedSlots/>
+            </blockedParts>
+        </blockedPartsList>
+        <incompatibleSlots slot="TORSO_OVER"/>
+        <primaryColours values="ALL"/>
+        <primaryColoursDye values="ALL"/>
+        <secondaryColours values="NONE"/>
+        <secondaryColoursDye values="NONE"/>
+        <tertiaryColours values="NONE"/>
+        <tertiaryColoursDye values="NONE"/>
+        <defaultPatterns colourNameDerivedFromPattern="true" patternChance="0"/>
+        <patternPrimaryColours values="NONE"/>
+        <patternSecondaryColours values="NONE"/>
+        <patternTertiaryColours values="NONE"/>
+        <itemTags/>
+        <itemTags slot="TORSO_OVER"/>
+    </coreAttributes>
+    <replacementText slot="TORSO_OVER" type="REMOVE_OR_EQUIP">
+        <self><![CDATA[[npc.Name] [npc.verb(guide)] [npc.her] [npc.arms] through the half-hoodie's sleeves as [npc.she] [npc.verb(pull)] it down over [npc.her] head.]]></self>
+        <other><![CDATA[[npc.Name] [npc.verb(guide)] [npc2.namePos] [npc2.arms] through the half-hoodie's sleeves as [npc.she] [npc.verb(pull)] it down over [npc2.her]]]></other>
+        <otherRough><![CDATA[[npc.Name] roughly [npc.verb(force)] [npc2.namePos] [npc2.arms] through the half-hoodie's sleeves as [npc.she] [npc.verb(pull)] it down over [npc2.her] head.]]></otherRough>
+    </replacementText>
+    <displacementText slot="TORSO_OVER" type="REMOVE_OR_EQUIP">
+        <self><![CDATA[[npc.Name] [npc.verb(slip)] the half-hoodie over [npc.her] head and off [npc.her] [npc.arms].]]></self>
+        <other><![CDATA[[npc.Name] [npc.verb(slip)] the half-hoodie over [npc2.namePos] head and off [npc2.her] [npc2.arms].]]></other>
+        <otherRough><![CDATA[[npc.Name] forcefully [npc.verb(yank)] the half-hoodie over [npc2.namePos] head and off [npc2.her] [npc2.arms].]]></otherRough>
+    </displacementText>
+</clothing>

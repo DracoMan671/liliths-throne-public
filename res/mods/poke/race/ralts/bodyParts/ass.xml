@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ass>
+	<race>poke_ralts</race>
+	<transformationName><![CDATA[Ralts-line]]></transformationName>
+	<coveringType>poke_ralts_skin</coveringType>
+	<anusType>poke_ralts_anus</anusType>
+	<names/>
+	<!--
+	<names>
+		<name><![CDATA[ass]]></name>
+		<name><![CDATA[rear end]]></name>
+		<name><![CDATA[butt]]></name>
+		<name><![CDATA[rump]]></name>
+	</names>
+	-->
+	<namesPlural/>
+	<!--
+	<namesPlural>
+		<name><![CDATA[asses]]></name>
+		<name><![CDATA[rear ends]]></name>
+		<name><![CDATA[butts]]></name>
+		<name><![CDATA[rumps]]></name>
+	</namesPlural>
+	-->
+	<descriptorsMasculine/>
+	<descriptorsFeminine/>
+	<!-- 
+	<descriptorsMasculine>
+		<descriptor><![CDATA[hyena-like]]></descriptor>
+	</descriptorsMasculine>
+	-->
+	<transformationDescription><![CDATA[
+		[npc.She] now [npc.has] a Ralts-line's, [npc.assholeFullDescription].
+	]]></transformationDescription>
+	<bodyDescription><![CDATA[
+		[npc.SheHasFull] an ethereal, [npc.anusFullDescription(true)]
+	]]></bodyDescription>
+	
+</ass>

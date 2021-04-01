@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<clothing>
+	<coreAttributes>
+		<value>1000</value>
+		<determiner><![CDATA[a pair of]]></determiner>
+		<name><![CDATA[Belted Gloves]]></name>
+		<namePlural pluralByDefault="True"><![CDATA[Belted Gloves]]></namePlural>
+		<description><![CDATA[Belted Leather Gloves.]]></description>
+		<physicalResistance>2</physicalResistance>
+		<femininity>FEMININE</femininity>
+		<slot>HAND</slot>
+		<rarity>EPIC</rarity>
+		<clothingSet/>
+		<imageName>Belted Gloves.svg</imageName>
+		<imageEquippedName/>
+		<enchantmentLimit/>
+		<effects/>
+		
+		<blockedPartsList>
+			<blockedParts>
+			    <displacementType>REMOVE_OR_EQUIP</displacementType>
+				<clothingAccessRequired>
+					<clothingAccess>FINGERS</clothingAccess>
+					<clothingAccess>WRISTS</clothingAccess>
+				</clothingAccessRequired>
+				<blockedBodyParts>
+				    <bodypart>HANDS</bodypart>
+				</blockedBodyParts>
+				<clothingAccessBlocked>
+					<clothingAccess>FINGERS</clothingAccess>
+					<clothingAccess>WRISTS</clothingAccess>
+				</clothingAccessBlocked>
+				<concealedSlots>
+					<slot>FINGER</slot>
+					<slot>WRIST</slot>
+				</concealedSlots>
+			</blockedParts>
+		</blockedPartsList>
+		
+		<incompatibleSlots/>
+		
+		<primaryColours values="JUST_DARK_BROWN"/>
+		<primaryColoursDye values="ALL"/>
+		<secondaryColours values="JUST_MIDNIGHT_BROWN"/>
+		<secondaryColoursDye values="ALL"/>
+		<tertiaryColours values="JUST_GOLD"/>
+		<tertiaryColoursDye values="ALL_METAL"/>
+		
+		<itemTags>
+			<tag>SOLD_BY_NYAN</tag>
+		</itemTags>
+	</coreAttributes>
+
+  <replacementText type="REMOVE_OR_EQUIP">
+    <self>
+      <![CDATA[[npc.Name] [npc.verb(slide)] the belted gloves over [npc.her] [npc.hands].]]>
+    </self>
+    <other>
+      <![CDATA[[npc.Name] [npc.verb(slide)] the belted gloves over [npc2.namePos] [npc2.hands].]]>
+    </other>
+    <otherRough>
+      <![CDATA[[npc.Name] roughly [npc.verb(forces)] the belted gloves onto [npc2.namePos] [npc2.hands].]]>
+    </otherRough>
+  </replacementText>
+
+  <displacementText type="REMOVE_OR_EQUIP">
+    <self>
+      <![CDATA[[npc.Name] [npc.verb(slide)] the belted gloves off [npc.her] [npc.hands].]]>
+    </self>
+    <other>
+      <![CDATA[[npc.Name] [npc.verb(slide)] the belted gloves off [npc2.namePos] [npc2.hands].]]>
+    </other>
+    <otherRough>
+      <![CDATA[[npc.Name] roughly [npc.verb(yank)] the belted gloves off [npc2.namePos] [npc2.hands].]]>
+    </otherRough>
+  </displacementText>
+	
+
+	
+</clothing>

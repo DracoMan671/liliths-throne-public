@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!-- A fan-made mod for Innoxia's Lilith's Throne. Feel free to edit these files however you want, same goes for the svg's. Thanks to Innoxia for making Lilith's Throne, it's great. //Zyro-->
+<clothing>
+  <coreAtributes>
+    <value>1500</value>
+    <determiner>a</determiner>
+    <name>Stormtrooper Helmet</name>
+    <namePlural pluralByDefault="false"><![CDATA[E832 Helmet's]]></namePlural>
+    <description>A Stormtrooper Helmet, sleek and shiny.</description>
+    <physicalResistance>2</physicalResistance>
+    <femininity>ANDROGYNOUS</femininity>
+    <slot>HEAD</slot>
+    <rarity>UNCOMMON</rarity>
+    <clothingSet />
+    <imageName>Stormtrooper_Helmet.svg</imageName>
+    <imageEquippedName />
+    <enchantmentLimit>5</enchantmentLimit>
+    <effects></effects>
+    <blockedPartsList>
+      <blockedParts>
+        <displacementType>REMOVE_OR_EQUIP</displacementType>
+        <clothingAccessRequired>
+          <clothingAccess>HEAD</clothingAccess>
+        </clothingAccessRequired>
+        <blockedBodyParts>
+          <bodyPart>HAIR</bodyPart>
+          <bodyPart>MOUTH</bodyPart>
+        </blockedBodyParts>
+        <clothingAccessBlocked />
+        <concealedSlots>
+          <slot>HAIR</slot>
+          <slot>MOUTH</slot>
+        </concealedSlots>
+      </blockedParts>
+    </blockedPartsList>
+    <incompatibleSlots />
+    <primaryColours values="JUST_WHITE" />
+    <primaryColoursDye values="ALL" />
+    <secondaryColours values="JUST_BLACK" />
+    <secondaryColoursDye values="ALL" />
+    <tertiaryColours values="JUST_WHITE" />
+    <tertiaryColoursDye values="ALL" />
+    <itemTags>
+      <tag>SOLD_BY_NYAN</tag>
+    </itemTags>
+  </coreAtributes>
+  <displacementText type="REMOVE_OR_EQUIP">
+    <playerSelf>
+			You take off the Stormtrooper Helmet.
+		</playerSelf>
+    <playerNPC>
+			You remove [npc.name]'s Stormtrooper Helmet.
+		</playerNPC>
+    <playerNPCRough>
+			You grab hold of [npc.name]'s Stormtrooper Helmet and tear it off [npc.her] head.
+		</playerNPCRough>
+    <NPCSelf>
+			[npc.Name] takes [npc.her] Stormtrooper Helmet off.
+		</NPCSelf>
+    <NPCPlayer>
+			[npc.Name] takes off your Stormtrooper Helmet.
+		</NPCPlayer>
+    <NPCPlayerRough>
+			[npc.Name] grabs hold of your Stormtrooper Helmet and roughly tears it off your head.
+		</NPCPlayerRough>
+    <NPCOtherNPC>
+			[npc1.Name] takes off [npc2.name]'s Stormtrooper Helmet.
+		</NPCOtherNPC>
+    <NPCOtherNPCRough>
+			[npc.Name] grabs hold of [npc2.name]'s Stormtrooper Helmet and roughly tears it off from [npc2.her] head.
+		</NPCOtherNPCRough>
+  </displacementText>
+  <replacementText type="REMOVE_OR_EQUIP">
+    <playerSelf>
+			You put on the Stormtrooper Helmet.
+		</playerSelf>
+    <playerNPC>
+			You put the Stormtrooper Helmet on [npc.name]'s [npc.head].
+		</playerNPC>
+    <playerNPCRough>
+			You hold [npc.name] still as you roughly force the Stormtrooper Helmet onto [npc.her] head.
+		</playerNPCRough>
+    <NPCSelf>
+			[npc.Name] puts on the Stormtrooper Helmet.
+		</NPCSelf>
+    <NPCPlayer>
+			[npc.Name] puts the Stormtrooper Helmet on your head.
+		</NPCPlayer>
+    <NPCPlayerRough>
+			[npc.Name] holds you still as [npc.she] roughly forces the Stormtrooper Helmet on top of your head.
+		</NPCPlayerRough>
+    <NPCOtherNPC>
+			[npc1.Name] puts the Stormtrooper Helmet on [npc2.name]'s head.
+		</NPCOtherNPC>
+    <NPCOtherNPCRough>
+			[npc1.Name] holds [npc2.name] still as [npc1.she] roughly forces the Stormtrooper Helmet onto [npc2.her] head.
+		</NPCOtherNPCRough>
+  </replacementText>
+</clothing>

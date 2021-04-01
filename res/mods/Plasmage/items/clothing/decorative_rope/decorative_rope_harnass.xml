@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<clothing>
+	<coreAttributes>
+		<value>400</value> 
+		<determiner><![CDATA[a bundle of]]></determiner>
+		<name><![CDATA[animated rope harnass]]></name>
+		<namePlural pluralByDefault="false">
+      <![CDATA[arcane decorative harnass rope]]>
+    </namePlural> 
+    
+    <description><![CDATA[A bundle of rope specially enchanted to twist itself into a rope harnass, or bundle back up.]]></description> 
+    
+		<physicalResistance>1</physicalResistance> 
+		<femininity>ANDROGYNOUS</femininity> 
+		
+			<slot>CHEST</slot>
+		
+		<rarity>EPIC</rarity>
+    <clothingSet/>
+		
+	  <imageName>rope_bundle.svg</imageName>
+		
+		<imageEquippedName slot="CHEST">rope_chest.svg</imageEquippedName>
+		
+		<enchantmentLimit/>
+		
+		<effects/>
+    <blockedPartsList slot="CHEST">
+      <blockedParts>
+        <displacementType>REMOVE_OR_EQUIP</displacementType>
+        <clothingAccessRequired>
+          <clothingAccess>CHEST</clothingAccess>
+        </clothingAccessRequired>
+        <blockedBodyParts/>
+        <clothingAccessBlocked/>
+        <concealedSlots/>
+      </blockedParts>
+    </blockedPartsList>
+
+		<incompatibleSlots slot="CHEST"/>
+		
+		<primaryColours values="JUST_SILVER"/> 
+		<primaryColoursDye values="ALL_PLUS_METAL"/>
+		<secondaryColours/>
+		<secondaryColoursDye/>
+		<tertiaryColours/>
+    <tertiaryColoursDye/>
+		
+	<itemTags>
+		<tag>SOLD_BY_FINCH</tag>
+		<tag>ENABLE_SEX_EQUIP</tag>
+		<tag>TRANSPARENT</tag>
+		<tag>REVEALS_CONCEALABLE_SLOT</tag>
+    </itemTags>
+
+  </coreAttributes>
+	<replacementText slot="CHEST" type="REMOVE_OR_EQUIP">
+		<self>
+			<![CDATA[[npc.Name] [npc.verb(rest)] the arcane rope on [npc.her] [npc.breasts+], watching as it quickly ties itself into a decorative harness.]]>
+		</self>
+		<other>
+			<![CDATA[[npc.Name] [npc.verb(rest)] the arcane rope on [npc2.namePos] [npc2.breasts+], watching as it quickly ties itself into a decorative harness.]]>
+		</other>
+		<otherRough>
+			<![CDATA[[npc.Name] roughly [npc.verb(force)] the arcane rope against [npc2.namePos] [npc2.breasts+], watching as it squeezes itself into a secure harness.]]>
+		</otherRough>
+	</replacementText>
+	<displacementText slot="CHEST" type="REMOVE_OR_EQUIP">
+		<self>
+			<![CDATA[[npc.Name] [npc.verb(untie)] the rope around [npc.her] [npc.breasts+], watching as it neatly bundles itself up.]]>
+		</self>
+		<other>
+			<![CDATA[[npc.Name] [npc.verb(untie)] the rope around [npc2.namePos] [npc2.breasts+], watching as it neatly bundles itself up.]]>
+		</other>
+		<otherRough>
+			<![CDATA[[npc.Name] [npc.verb(yank)] on the rope around [npc2.namePos] [npc2.breasts+], causing it to cruely untie with snap before bundling itself up.]]>
+		</otherRough>
+	</displacementText>
+
+</clothing>

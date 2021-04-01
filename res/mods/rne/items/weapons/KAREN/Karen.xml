@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<weapon>
+	<coreAttributes>
+	
+		<value>328811</value> 
+		
+		<melee>true</melee>
+		
+		<twoHanded>false</twoHanded>
+		
+		<determiner><![CDATA[]]></determiner>
+		
+		<name><![CDATA[Karen]]></name>
+		
+		<namePlural pluralByDefault="false"><![CDATA[Karen]]></namePlural> 
+		
+		<description><![CDATA[The weakest of the 4 Days Series, it's name is thanks to the Person whose Body was used as a Base, Kamine Renegade, at his Prime he was one of the most Powerful Demons rivalled only by Lilith in her Prime.]]></description> 
+		
+		<attackDescriptor>slash</attackDescriptor>
+		
+		<attackTooltipDescription>Slash your Karen at [npc2.name]'s Face.</attackTooltipDescription>
+		
+		<rarity>LEGENDARY</rarity> 
+		
+		<weaponSet></weaponSet> 
+		
+		<equipText><![CDATA[As you take hold of Karen you can feel an enormous amount of demonic energy seeping into your Body]]></equipText>
+		
+		<!--<unequipText><![CDATA[[npc.Name] [npc.verb(sheath)] [npc.her] Recyclum, before putting it away.]]></unequipText>-->
+		<unequipText><![CDATA[As you Sheath Karen the Immeasurable Amount of Energy suddenly fades straight off into nothingness]]></unequipText>
+		<imageName>Karen.svg</imageName> 
+		
+		<imageEquippedName>Karen.svg</imageEquippedName> 
+		
+		<damage>345345982</damage> 
+		
+		<arcaneCost>0</arcaneCost> 
+		
+		<damageVariance>LOW</damageVariance> 
+		
+		<availableDamageTypes>
+			<damageType>ICE</damageType>
+         <damageType>PHYSICAL</damageType>
+         <damageType>FIRE</damageType>
+         <damageType>POISON</damageType>
+		</availableDamageTypes>
+		
+		<spells>
+         <spell>FIREBALL</spell>
+      </spells>
+		
+		<enchantmentLimit>38</enchantmentLimit>
+		
+		<effects> 
+      
+		</effects>
+		
+		<primaryColours>
+			<colour>CLOTHING_TAN</colour>
+		</primaryColours> 
+		<primaryColoursDye values="ALL"/>
+		<secondaryColours> 
+			<colour>CLOTHING_GREEN_VERY_DARK</colour>
+		</secondaryColours> 
+		<secondaryColoursDye values="ALL"/>
+		
+		<itemTags> 
+			<tag>WEAPON_BLADE</tag>
+         <tag>SOLD_BY_VICKY</tag>
+		</itemTags>
+		
+	</coreAttributes>
+	
+	<hitDescriptions>
+		<hitText><![CDATA[
+		[npc.Name] [npc.verb(slash)] [npc.her] Karen at [npc2.name], grinning as the ethereal arcane blade travels through [npc2.her] body! due to it being a Mythic Sword it leaves no Damage on the Body of [npc2.name] and only affects their Energy
+		]]></hitText>
+		<hitText><![CDATA[
+		Slashing out at [npc2.name] with [npc.her] Karen, [npc.name] [npc.verb(grin)] as [npc.she] [npc.verb(see)] the Demonic blade travel straight through [npc2.her] body!
+		]]></hitText>
+		<hitText><![CDATA[
+		[npc.Name] [npc.verb(slash)] at [npc2.name] with [npc.her] Karen, causing [npc2.herHim] to stagger back as the Demonic blade passes right through [npc2.her] chest!
+		]]></hitText>
+	</hitDescriptions>
+
+	<!-- Descriptions that are used when missing an enemy. One of the missText values will be randomly selected each time the attacker misses their target. Follow the same guidelines as equipText. -->
+	<missDescriptions>
+		<missText><![CDATA[
+		[npc.Name] [npc.verb(slash)] [npc.her] Karen at [npc2.name], but [npc.verb(end)] up missing [npc2.herHim]!
+		]]></missText>
+		<missText><![CDATA[
+		Slashing out at [npc2.name] with [npc.her] Karen, [npc.name] [npc.verb(let)] out a frustrated cry as [npc.she] [npc.verb(miss)] [npc.her] target!
+		]]></missText>
+		<missText><![CDATA[
+		With a quick step forwards, [npc.name] [npc.verb(slash)] at [npc2.name] with [npc.her] Karen, but [npc.she] [npc.verb(miss)] [npc.her] target!
+		]]></missText>
+	</missDescriptions>
+	
+</weapon>

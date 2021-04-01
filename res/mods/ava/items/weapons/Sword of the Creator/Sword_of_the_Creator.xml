@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<weapon>
+    <coreAttributes>
+        <value>25000</value>
+        <melee>true</melee>
+        <twoHanded>false</twoHanded>
+        <determiner><![CDATA[a]]></determiner>
+        <name><![CDATA[Sword of the Creator]]></name>
+        <namePlural pluralByDefault="false"><![CDATA[Swords of the Creator]]></namePlural>
+        <description><![CDATA[A legendary sword once wielded by a professor whose heart was that of a goddess.]]></description>
+        <attackDescriptor>swing</attackDescriptor>
+        <attackTooltipDescription>you swing at [npc2.name].</attackTooltipDescription>
+        <rarity>EPIC</rarity>
+        <equipText><![CDATA[[npc.Name] [npc.verb(ready)] the sword, preparing to teach [npc.her] enemies a lesson.]]></equipText>
+        <unequipText><![CDATA[[npc.Name] [npc.verb(lower)] the sword.]]></unequipText>
+        <imageName>Sword_of_the_Creator.svg</imageName>
+        <imageEquippedName/>
+        <damage>38</damage>
+        <arcaneCost>0</arcaneCost>
+        <damageVariance>MEDIUM</damageVariance>
+        <availableDamageTypes>
+            <damageType>PHYSICAL</damageType>
+            <damageType>POISON</damageType>
+            <damageType>FIRE</damageType>
+            <damageType>ICE</damageType>
+        </availableDamageTypes>
+        <spells/>
+        <enchantmentLimit>10</enchantmentLimit>
+        <effects>
+            <effect itemEffectType="CLOTHING" primaryModifier="CLOTHING_ATTRIBUTE" timer="0" limit="0" potency="BOOST" secondaryModifier="CRITICAL_DAMAGE"/>
+        </effects>
+        <primaryColours values="JUST_TAN"/>
+        <primaryColoursDye values="JUST_TAN"/>
+        <secondaryColours values="JUST_TAN"/>
+        <secondaryColoursDye values="JUST_TAN"/>
+        <itemTags>
+            <tag>SOLD_BY_VICKY</tag>
+        </itemTags>
+    </coreAttributes>
+    <hitDescriptions>
+        <hitText><![CDATA[Swinging [npc.her] sword, [npc.name] [npc.verb(manage)] to land a hit on [npc2.name] in the chest!]]></hitText>
+        <hitText><![CDATA[Swinging [npc.her] sword, [npc.name] [npc.verb(manage)] to land a hit on [npc2.name]'s body!]]></hitText>
+    </hitDescriptions>
+    <missDescriptions>
+        <missText><![CDATA[Swinging [npc.her] sword, [npc.name] [npc.verb(attempt)] towards [npc2.name] chest, but [npc.verb(end)] attack went wide past [npc2.herHim]!]]></missText>
+    </missDescriptions>
+</weapon>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<statusEffect>
+
+	<renderingPriority>50</renderingPriority>
+
+	<renderInEffectsPanel>false</renderInEffectsPanel>
+	
+	<category>INVENTORY</category>
+	
+	<beneficial>NEUTRAL</beneficial>
+
+	<combatEffect>true</combatEffect>
+
+	<sexEffect>false</sexEffect>
+
+	<tags/>
+	
+	<name><![CDATA[Dancer of the Heaven]]></name>
+	
+	<description><![CDATA[
+		The Sky Dancer's costume enflame [npc.namePos] lust, causing [npc.her] to  take lust damage every turn in combat but increasing [npc.herhis] speed and charms!.
+	]]></description>
+	
+	<imageName>skydancer.svg</imageName>
+	
+	<colourPrimary>DESIRE_STAGE_FOUR</colourPrimary>
+	<colourSecondary>DESIRE_STAGE_FOUR</colourSecondary>
+	<colourTertiary/>
+	
+	<attributeModifiers/>
+	
+	<combatMoves/>
+	
+	<spells/>
+	
+	<extraEffects>
+		<effect><![CDATA[10 [style.boldLust(Lust damage)] every turn in combat]]></effect>
+	</extraEffects>
+
+	<applicationCondition><![CDATA[
+		[#SET_BONUS_Faiq_skydancer.isCharacterWearingCompleteSet(npc)]
+	]]></applicationCondition>
+
+	<applyEffect interval="0"><![CDATA[
+	The aphrodisiacs seep into [npc.namePos] body!
+	[#npc.incrementLust(10,false)]
+	]]></applyEffect>
+
+	<applyRemovalEffect/>
+
+	<applyPostRemovalEffect/>
+	
+</statusEffect>

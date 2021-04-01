@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- For a version without all of the comments, see "rental_daddy.xml". -->
+<clothing>
+	<coreAttributes>
+		<authorTag><![CDATA[A tag discreetly sewn onto the inner seams reads 'CosHouse Jet'.]]></authorTag>
+		<value>5000</value> 
+		<determiner><![CDATA[a]]></determiner>
+		<name><![CDATA[long qipao v2]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[long qipaos v2]]></namePlural>
+		<description><![CDATA[Primarily worn by the elusive ryus, these one-piece dress closely hugs onto the wearer's body, accentuating their body line.]]></description>
+		<physicalResistance>0</physicalResistance> 
+		<femininity>FEMININE</femininity>
+		<slot>TORSO_UNDER</slot>
+		<rarity>UNCOMMON</rarity>
+		<clothingSet/>
+		<imageName>long_qipao.svg</imageName>
+		<imageEquippedName/>
+		<enchantmentLimit/>
+		<effects/>
+		
+		<stickers>
+			<category id="version" priority="1">
+				<categoryName><![CDATA[Version]]></categoryName>
+				<sticker id="sleeves" priority="1" defaultSticker="true" zLayer="1" colourDisabled="" colourSelected="">
+					<stickerName><![CDATA[Sleeves]]></stickerName>
+					<imageName>long_qipao_slevees.svg</imageName>
+					<itemTagsAdded/>
+					<itemTagsRemoved/>
+					<unavailabilityText/>
+					<availabilityText/>
+				</sticker>
+				<sticker id="sleeveless" priority="2" defaultSticker="false" zLayer="1">
+					<stickerName><![CDATA[Sleeveless]]></stickerName>
+					<namePostfix/>
+					<imageName>long_qipao_sleeveless.svg</imageName>
+					<itemTagsAdded/>
+					<itemTagsRemoved/>
+					<unavailabilityText/>
+					<availabilityText/>
+				</sticker>
+			</category>
+		</stickers>
+
+		<blockedPartsList>
+			<blockedParts>
+				<displacementType>REMOVE_OR_EQUIP</displacementType>
+				<clothingAccessRequired>
+					<clothingAccess>ARMS_UP_TO_SHOULDER</clothingAccess>
+					<clothingAccess>HEAD</clothingAccess>
+				</clothingAccessRequired>
+				<blockedBodyParts>
+					<bodyPart>BREASTS</bodyPart>
+					<bodyPart>NIPPLES</bodyPart>
+					<bodyPart>STOMACH</bodyPart>
+					<bodyPart>BACK</bodyPart>
+				</blockedBodyParts>
+				<clothingAccessBlocked>
+					<clothingAccess>CHEST</clothingAccess>
+					<clothingAccess>WAIST</clothingAccess>
+				</clothingAccessBlocked>
+				<concealedSlots>
+					<slot>STOMACH</slot>
+					<slot>CHEST</slot>
+					<slot>NIPPLE</slot>
+					<slot>PIERCING_NIPPLE</slot>
+					<slot>PIERCING_STOMACH</slot>
+				</concealedSlots>
+			</blockedParts>
+			<blockedParts>
+				<displacementType>UNBUTTONS</displacementType> 
+				<clothingAccessRequired/>
+				<blockedBodyParts>
+					<bodyPart>BREASTS</bodyPart>
+					<bodyPart>NIPPLES</bodyPart>
+				</blockedBodyParts>
+				<clothingAccessBlocked>
+					<clothingAccess>CHEST</clothingAccess>
+					<clothingAccess>WAIST</clothingAccess>
+				</clothingAccessBlocked>
+				<concealedSlots values="CONCEALED_PARTIAL_TORSO"/>
+			</blockedParts>
+			<blockedParts>
+				<displacementType>PULLS_UP</displacementType>
+				<clothingAccessRequired/>
+				<blockedBodyParts>
+					<bodyPart>ANUS</bodyPart>
+					<bodyPart>PENIS</bodyPart>
+					<bodyPart>VAGINA</bodyPart>
+				</blockedBodyParts>
+				<clothingAccessBlocked>
+					<clothingAccess>GROIN</clothingAccess>
+					<clothingAccess>ANUS</clothingAccess>
+				</clothingAccessBlocked>
+				<concealedSlots>
+					<slot>GROIN</slot>
+					<slot>VAGINA</slot>
+					<slot>ANUS</slot>
+					<slot>PENIS</slot>
+					<slot>PIERCING_PENIS</slot>
+					<slot>PIERCING_VAGINA</slot>
+				</concealedSlots>
+			</blockedParts>
+		</blockedPartsList>
+		
+		<incompatibleSlots/> 
+		
+		<primaryColours values="ALL"/>
+		<primaryColoursDye values="ALL"/>
+		<secondaryColours values="JUST_YELLOW"/>
+		<secondaryColoursDye values="ALL"/>
+		<itemTags>
+			<tag>DRESS</tag>
+			<tag>SOLD_BY_NYAN</tag>
+		</itemTags>
+	</coreAttributes>
+	<replacementText type="REMOVE_OR_EQUIP">
+	    <self>
+	      <![CDATA[[npc.Name] [npc.verb(pull)] the long qipao up to [npc.her] shoulders and buttons up the top flap securing it.]]>
+	    </self>
+	    <other>
+	      <![CDATA[[npc.Name] [npc.verb(guide)] the long qipao up to [npc2.namePos] shoulders and buttons up the top flap securing it.]]>
+	    </other>
+	    <otherRough>
+	      <![CDATA[[npc.Name] roughly [npc.verb(force)] the long qipao up to [npc2.namePos] shoulders and buttons up the top flap securing it.]]>
+	    </otherRough>
+	</replacementText>
+
+	<displacementText type="REMOVE_OR_EQUIP">
+	    <self>
+	      <![CDATA[[npc.Name] [npc.verb(unbutton)] the long qipao's top flap and slips it off [npc.her].]]>
+	    </self>
+	    <other>
+	      <![CDATA[[npc.Name] [npc.verb(unbutton)] the long qipao's top flap and slips it off [npc2.namePos].]]>
+	    </other>
+	    <otherRough>
+	      <![CDATA[[npc.Name] roughly [npc.verb(pull)] off the long qipao's top flap and slips it off [npc2.namePos].]]>
+	    </otherRough>
+	</displacementText>
+	
+	<replacementText type="UNBUTTONS">
+	    <self>
+	      <![CDATA[[npc.Name] [npc.verb(button)] up [npc.her] long qipao's top flap , covering [npc.her] chest.]]>
+	    </self>
+	    <other>
+	      <![CDATA[[npc.Name] [npc.verb(button)] up [npc2.namePos] long qipao's top flap, covering [npc2.her] chest.]]>
+	    </other>
+	    <otherRough>
+	      <![CDATA[[npc.Name] roughly [npc.verb(button)] [npc2.namePos] long qipao's top flap, covering [npc2.her] chest.]]>
+	    </otherRough>
+	</replacementText>
+
+  	<displacementText type="UNBUTTONS">
+	    <self>
+	      <![CDATA[[npc.Name] [npc.verb(unbutton)] [npc.her] long qipao's top flap, fully exposing [npc.her] chest.]]>
+	    </self>
+	    <other>
+	      <![CDATA[[npc.Name] [npc.verb(unbutton)] [npc2.namePos] long qipao's top flap, fully exposing [npc2.her] chest.]]>
+	    </other>
+	    <otherRough>
+	      <![CDATA[[npc.Name] roughly [npc.verb(unbutton)] [npc2.namePos] long qipao's top flap, fully exposing [npc2.her] chest.]]>
+	    </otherRough>
+  	</displacementText>
+
+  	<replacementText type="PULLS_UP">
+	    <self>
+	      <![CDATA[[npc.Name] [npc.verb(pull)] [npc.her] long qipao's bottom flap back down, covering [npc.her] lower half.]]>
+	    </self>
+	    <other>
+	      <![CDATA[[npc.Name] [npc.verb(pull)] [npc2.namePos] long qipao's bottom flap back down, covering [npc2.her] lower half.]]>
+	    </other>
+	    <otherRough>
+	      <![CDATA[[npc.Name] roughly [npc.verb(yank)] [npc2.namePos] long qipao's bottom flap back down, covering [npc2.her] lower half.]]>
+	    </otherRough>
+	</replacementText>
+
+  	<displacementText type="PULLS_UP">
+	    <self>
+	      <![CDATA[[npc.Name] [npc.verb(pull)] [npc.her] long qipao's bottom flap up to just below [npc.her] waist, fully exposing [npc.her] lower half.]]>
+	    </self>
+	    <other>
+	      <![CDATA[[npc.Name] [npc.verb(pull)] [npc2.namePos] long qipao's bottom flap up to just below [npc2.her] waist, fully exposing [npc2.her] lower half.]]>
+	    </other>
+	    <otherRough>
+	      <![CDATA[[npc.Name] roughly [npc.verb(pull)] [npc2.namePos] long qipao's bottom flap up to just below [npc2.her] waist, fully exposing [npc2.her] lower half.]]>
+	    </otherRough>
+  	</displacementText>
+</clothing>

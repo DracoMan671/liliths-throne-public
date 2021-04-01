@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<clothing>
+	<coreAtributes>
+		<value>30</value>
+		<determiner><![CDATA[a]]></determiner>
+		<name><![CDATA[loincloth]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[lioncloths]]></namePlural> 
+		<description><![CDATA[A strip of cloth attached to a waist band to drape over the wearer's groin, leaving their ass uncovered.]]></description>
+		<physicalResistance>1</physicalResistance>
+		<femininity>ANDROGYNOUS</femininity>
+		<slot>GROIN</slot>
+		<rarity>COMMON</rarity>
+		<clothingset/>
+		<imageName>groin_loincloth.svg</imageName>
+		<imageEquippedName/>
+		<enchantmentLimit/>
+		<effects/>
+		<blockedPartsList>
+			<blockedParts>
+				<displacementType>REMOVE_OR_EQUIP</displacementType>
+				<clothingAccessRequired>
+					<clothingAccess>LEGS_UP_TO_GROIN_LOW_LEVEL</clothingAccess>
+					<clothingAccess>LEGS_UP_TO_GROIN</clothingAccess>
+					<clothingAccess>GROIN</clothingAccess>
+				</clothingAccessRequired>
+				<blockedBodyParts> </blockedBodyParts>
+				<clothingAccessBlocked> </clothingAccessBlocked>
+				<concealedSlots> </concealedSlots>
+			</blockedParts>
+			<blockedParts>
+				<displacementType>SHIFTS_ASIDE</displacementType>
+				<clothingAccessRequired>
+					<clothingAccess>GROIN</clothingAccess>
+				</clothingAccessRequired>
+				<blockedBodyParts>
+					<bodyPart>PENIS</bodyPart>
+					<bodyPart>VAGINA</bodyPart>
+				</blockedBodyParts>
+				<clothingAccessBlocked> </clothingAccessBlocked>
+				<concealedSlots>
+					<slot>VAGINA</slot>
+					<slot>PENIS</slot>
+					<slot>PIERCING_PENIS</slot>
+					<slot>PIERCING_VAGINA</slot>
+				</concealedSlots>
+			</blockedParts>
+		</blockedPartsList>
+		<incompatibleSlots/>
+		<primaryColours values="ALL"/>
+		<primaryColoursDye values="ALL"/>
+		<secondaryColours values="ALL"/>
+		<secondaryColoursDye values="ALL"/>
+		<itemTags>
+			<tag>SOLD_BY_NYAN</tag>
+		</itemTags>
+		</coreAtributes>
+		
+		<displacementText type="REMOVE_OR_EQUIP">
+			<playerSelf>
+				<![CDATA[You pull down your loincloth and kick them off your feet.?.]]>
+			</playerSelf>
+			<playerNPC>
+				<![CDATA[You pull down the loincloth from [npc.Name]'s hips.]]>
+			</playerNPC>
+			<playerNPCRough>
+				<![CDATA[You jerk the loincloth down off of [npc.Name]'s waist.]]>
+			</playerNPCRough>
+			<NPCSelf>
+				<![CDATA[[npc.Name] pulls the loincloth down from [npc.herHis] hips].]]>
+			</NPCSelf>
+			<NPCPlayer>
+				<![CDATA[[npc.Name] pulls down the loincloth from your hips.]]>
+			</NPCPlayer>
+			<NPCPlayerRough>
+				<![CDATA[[npc.Name] jerks the loincloth down off your waist.]]>
+			</NPCPlayerRough>
+			<NPCOtherNPC>
+				<![CDATA[[npc1.Name] pulls the loincloth down from [npc2.name]'s waist.]]>
+			</NPCOtherNPC>
+			<NPCOtherNPCRough>
+				<![CDATA[[npc.Name] yanks the loincloth down off [npc2.name]'s waist.]]>
+			</NPCOtherNPCRough>
+		</displacementText>
+		<displacementText type="SHIFTS_ASIDE">
+			<playerSelf>
+				<![CDATA[You shift your loincloth to one side.]]>
+			</playerSelf>
+			<playerNPC>
+				<![CDATA[You shift your loincloth to one side.]]>
+			</playerNPC>
+			<playerNPCRough>
+				<![CDATA[You shift [npc.name]'s loincloth to one side.]]>
+			</playerNPCRough>
+			<NPCSelf>
+				<![CDATA[[npc.Name] shifts [npc.her] loincloth to one side.]]>
+			</NPCSelf>
+			<NPCPlayer>
+				<![CDATA[[npc.Name] shifts your loincloth to one side.]]>
+			</NPCPlayer>
+			<NPCPlayerRough>
+				<![CDATA[[npc.Name] shifts your loincloth to one side.]]>
+			</NPCPlayerRough>
+			<NPCOtherNPC>
+				<![CDATA[[npc.Name] shifts [npc.her] loincloth to one side.]]>
+			</NPCOtherNPC>
+			<NPCOtherNPCRough>
+				<![CDATA[[npc.Name] shifts [npc.her] loincloth to one side.]]>
+			</NPCOtherNPCRough>
+		</displacementText>
+
+</clothing>

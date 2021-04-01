@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<clothing>
+	<coreAtributes>
+		<value>10000</value>
+		<determiner><![CDATA[a]]></determiner>
+		<name><![CDATA[Tail Sleeve]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Tail Sleeves]]></namePlural>
+		<description><![CDATA[A specialized piece of armour, designed to protect the wearer's tail from physical harm. Consists of a layer of plates, over a layer of mail, over a sleeve of thick, quilted cloth. Enchanted to fit any tail, and inexplicably multiplies to adorn multiple tails on the same wearer.]]></description>
+		<physicalResistance>7</physicalResistance>
+		<femininity>ANDROGYNOUS</femininity>
+		<slot>TAIL</slot>
+		<rarity>RARE</rarity>
+		<clothingSet></clothingSet>
+		<imageName>Tail_Sleeve.svg</imageName>
+		<imageEquippedName></imageEquippedName>
+		<enchantmentLimit>8</enchantmentLimit>
+		<effects />
+		<blockedPartsList>
+			<blockedParts>
+				<displacementType>REMOVE_OR_EQUIP</displacementType>
+				<clothingAccessRequired />
+				<blockedBodyParts />
+				<clothingAccessBlocked />
+				<concealedSlots />
+			</blockedParts>
+		</blockedPartsList>
+		<incompatibleSlots />
+		<primaryColours values="ALL_METAL" />
+		<primaryColoursDye values="ALL_METAL" />
+		<secondaryColours values="ALL" />
+		<secondaryColoursDye values="ALL" />
+		<tertiaryColours values="ALL_METAL" />
+		<tertiaryColoursDye values="ALL_METAL" />
+		<itemTags>
+			<tag>SOLD_BY_VICKY</tag>
+		</itemTags>
+	</coreAtributes>
+	<displacementText type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[You unfasten and remove your Tail Sleeve.]]></playerSelf>
+		<playerNPC><![CDATA[You unfasten and remove [npc.name]'s Tail Sleeve.]]></playerNPC>
+		<playerNPCRough><![CDATA[You tear [npc.name]'s Tail Sleeve from their tail.]]></playerNPCRough>
+		<NPCSelf><![CDATA[[npc.name] unfastens and removes their Tail Sleeve.]]></NPCSelf>
+		<NPCPlayer><![CDATA[[npc.name] unfastens and removes your Tail Sleeve.]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[[npc.name] tears your Tail Sleeve from your tail.]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[[npc1.name] unfastens and removes [npc2.name]'s Tail Sleeve]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[[npc1.name] tears [npc2.name]'s Tail Sleeve from their tail.]]></NPCOtherNPCRough>
+	</displacementText>
+	<replacementText type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[You fasten your Tail Sleeve to your tail.]]></playerSelf>
+		<playerNPC><![CDATA[You fasten [npc.name]'s Tail Sleeve to their tail.]]></playerNPC>
+		<playerNPCRough><![CDATA[You pin [npc.name]'s wriggling tail in place, and fasten their Tail Sleeve to it.]]></playerNPCRough>
+		<NPCSelf><![CDATA[[npc.name] fastens their Tail Sleeve to their tail.]]></NPCSelf>
+		<NPCPlayer><![CDATA[[npc.name] fastens your Tail Sleeve to your tail.]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[[npc.name] pins your wriggling tail in place, and fastens your Tail Sleeve to it.]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[[npc1.name] fastens [npc2.name]'s Tail Sleeve to their tail.]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[[npc1.name] pins [npc2.name]'s wriggling tail in place, and fastens their Tail Sleeve to it.]]></NPCOtherNPCRough>
+	</replacementText>
+</clothing>

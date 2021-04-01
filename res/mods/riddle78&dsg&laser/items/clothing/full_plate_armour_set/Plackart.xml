@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<clothing>
+	<coreAtributes>
+		<value>10000</value>
+		<determiner><![CDATA[a]]></determiner>
+		<name><![CDATA[Plackart]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Plackarts]]></namePlural>
+		<description><![CDATA[A plate to protect one's abdomen from physical abuse, separate from a breastplate.]]></description>
+		<physicalResistance>7</physicalResistance>
+		<femininity>ANDROGYNOUS</femininity>
+		<slot>STOMACH</slot>
+		<rarity>RARE</rarity>
+		<clothingSet></clothingSet>
+		<imageName>Plackart.svg</imageName>
+		<imageEquippedName></imageEquippedName>
+		<enchantmentLimit>8</enchantmentLimit>
+		<effects />
+		<blockedPartsList>
+			<blockedParts>
+				<displacementType>REMOVE_OR_EQUIP</displacementType>
+				<clothingAccessRequired />
+				<blockedBodyParts>
+					<bodyPart>STOMACH</bodyPart>
+				</blockedBodyParts>
+				<clothingAccessBlocked />
+				<concealedSlots />
+			</blockedParts>
+		</blockedPartsList>
+		<incompatibleSlots />
+		<primaryColours values="ALL_METAL" />
+		<primaryColoursDye values="ALL_METAL" />
+		<secondaryColours values="ALL" />
+		<secondaryColoursDye values="ALL" />
+		<tertiaryColours values="" />
+		<tertiaryColoursDye values="" />
+		<itemTags>
+			<tag>SOLD_BY_VICKY</tag>
+		</itemTags>
+	</coreAtributes>
+	<displacementText type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[You unstrap and remove your Plackart.]]></playerSelf>
+		<playerNPC><![CDATA[You unstrap and remove [npc.name]'s Plackart.]]></playerNPC>
+		<playerNPCRough><![CDATA[You yank open the straps holding [npc.name]'s Plackart on.]]></playerNPCRough>
+		<NPCSelf><![CDATA[[npc.name] unstraps and removes their Plackart.]]></NPCSelf>
+		<NPCPlayer><![CDATA[[npc.name] unstraps and removes your Plackart.]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[[npc.name] yanks open the straps holding your Plackart on.]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[[npc1.name] unstraps and removes [npc2.name]'s Plackart.]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[[npc1.name] yanks open the straps holding [npc2.name]'s Plackart on.]]></NPCOtherNPCRough>
+	</displacementText>
+	<replacementText type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[You strap on your Plackart.]]></playerSelf>
+		<playerNPC><![CDATA[You strap [npc.name] into their Plackart.]]></playerNPC>
+		<playerNPCRough><![CDATA[You hastily, and roughly, strap [npc.name] into their Plackart.]]></playerNPCRough>
+		<NPCSelf><![CDATA[[npc.name] straps on their Plackart.]]></NPCSelf>
+		<NPCPlayer><![CDATA[[npc.name] straps you into your Plackart.]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[[npc.name] hastily, and roughly, straps you into your Plackart.]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[[npc1.name] straps [npc2.name] into their Plackart.]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[[npc1.name] hastily, and roughly, straps [npc2.name] into their Plackart.]]></NPCOtherNPCRough>
+	</replacementText>
+</clothing>

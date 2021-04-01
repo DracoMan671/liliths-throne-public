@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 256 256">
+    <defs>
+        <linearGradient id="innoGrad5">
+            <stop offset="0" stop-color="#233038"/>
+            <stop offset=".197" stop-color="#38444b"/>
+            <stop offset=".8" stop-color="#38444b"/>
+            <stop offset="1" stop-color="#233038"/>
+        </linearGradient>
+        <linearGradient id="innoGrad4">
+            <stop offset="0" stop-color="#cc0273"/>
+            <stop offset=".5" stop-color="#ff0290"/>
+            <stop offset="1" stop-color="#cc0273"/>
+        </linearGradient>
+        <linearGradient id="innoGrad3">
+            <stop offset="0" stop-color="#a6cc01"/>
+            <stop offset=".5" stop-color="#d0ff01"/>
+            <stop offset="1" stop-color="#a6cc01"/>
+        </linearGradient>
+        <linearGradient id="innoGrad2">
+            <stop offset="0" stop-color="#233038"/>
+            <stop offset=".5" stop-color="#4e595f"/>
+            <stop offset="1" stop-color="#233038"/>
+        </linearGradient>
+        <linearGradient id="innoGrad1">
+            <stop offset="0" stop-color="#233038"/>
+            <stop offset=".5" stop-color="#38444b"/>
+            <stop offset="1" stop-color="#233038"/>
+        </linearGradient>
+        <linearGradient id="linearGradient858" x1="6.12" x2="249.884" y1="115.433" y2="115.433" gradientUnits="userSpaceOnUse" xlink:href="#innoGrad1"/>
+        <linearGradient id="linearGradient868" x1="5.5" x2="250.5" y1="125.999" y2="125.999" gradientUnits="userSpaceOnUse" xlink:href="#innoGrad2"/>
+        <linearGradient id="linearGradient884" x1="74.181" x2="148.854" y1="23.075" y2="23.075" gradientUnits="userSpaceOnUse" xlink:href="#innoGrad3"/>
+        <linearGradient id="linearGradient895" x1="6.126" x2="249.884" y1="125.999" y2="125.999" gradientUnits="userSpaceOnUse" xlink:href="#innoGrad4"/>
+        <linearGradient id="linearGradient905" x1="95.114" x2="160.892" y1="132.426" y2="132.426" gradientUnits="userSpaceOnUse" xlink:href="#innoGrad5"/>
+    </defs>
+    <path fill="url(#linearGradient858)" stroke="#000" stroke-linejoin="round" stroke-miterlimit="10" d="M10.595 107.371c3.032-4.06 60.224.07 117.41-.319 57.385-.388 114.764-5.268 117.407.32l3.972 18.786H6.62z"/>
+    <path fill="url(#linearGradient868)" stroke="#000" stroke-linejoin="round" stroke-miterlimit="10" d="M245.412 107.371c-1.108-2.604-62.728 11.677-117.41 11.677-54.682 0-116.302-14.281-117.41-11.677-1.469 3.45-5.476 24.644-4.416 26.035 0 0 62.795 11.538 121.823 11.538 59.027 0 121.822-11.538 121.822-11.538 1.07-1.395-2.94-22.585-4.41-26.035z"/>
+    <path fill="none" stroke="url(#linearGradient884)" stroke-linejoin="round" stroke-miterlimit="10" stroke-width=".31" d="M74.424 17.324l-.166 8.123 3.585-7.916.092 8.484 3.878-7.908.315 8.491 4.927-7.736 1.223 8.478 4.225-7.771 1.509 8.339 4.467-7.7 1.958 8.182 3.317-7.771 2.625 8.048 2.875-7.815 2.264 7.898 2.263-7.898 2.876 7.815 2.624-8.048 3.318 7.771 1.957-8.182 4.467 7.7 1.509-8.339 4.225 7.771 1.223-8.478 4.927 7.736.315-8.491 3.879 7.908.091-8.484 3.585 7.916-.166-8.123" transform="matrix(3.1652 0 0 3.28838 -224.972 50.403)"/>
+    <path fill="url(#linearGradient895)" d="M128.005 141.863c-27.243 0-60.183-2.055-121.88-11.723l.058 3.266s62.794 11.538 121.822 11.538c59.028 0 121.822-11.538 121.822-11.538l.057-3.266c-61.7 9.668-94.636 11.723-121.879 11.723zm117.407-34.492c-1.108-2.604-62.728 11.677-117.41 11.677-54.682 0-116.302-14.281-117.41-11.677l-1.193 4.187c13.806.503 88.008 12.012 118.603 12.012 30.598 0 104.793-11.51 118.603-12.012z"/>
+    <path fill="none" stroke="#000" stroke-linejoin="round" stroke-miterlimit="10" d="M245.412 107.371c-1.108-2.604-62.728 11.677-117.41 11.677-54.682 0-116.302-14.281-117.41-11.677-1.469 3.45-5.476 24.644-4.416 26.035 0 0 62.795 11.538 121.823 11.538 59.027 0 121.822-11.538 121.822-11.538 1.07-1.395-2.94-22.585-4.41-26.035z"/>
+    <path fill="url(#linearGradient905)" stroke="#000" stroke-linejoin="round" stroke-miterlimit="10" d="M96.907 115.165c-1.538 2.137-1.9 32.604 0 34.617 1.899 2.012 60.294 2.012 62.193 0 1.899-2.013 1.538-32.48 0-34.617-1.538-2.138-60.655-2.138-62.193 0z"/>
+    <path fill="#d0ff01" stroke="#000" stroke-linejoin="round" stroke-miterlimit="10" stroke-width=".5" d="M124.624 117.473c.903-.914 12.541 1.977 12.99 3.101.453 1.122-8.112 10.31-8.112 10.31s8.366 3.005 8.046 4.452c-.32 1.443-16.089 9.553-19.175 12.223l7.606-11.825s-6.16-1.625-6.618-3.108c-.453-1.483 4.365-14.238 5.263-15.153z"/>
+</svg>

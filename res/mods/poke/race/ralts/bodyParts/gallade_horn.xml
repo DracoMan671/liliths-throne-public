@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<horn>
+	<race>poke_ralts</race>
+	<transformationName><![CDATA[Gallade]]></transformationName>
+	<!-- HORN, ANTLER, custom -->
+	<coveringType>poke_ralts_chitin</coveringType>
+	<defaultHornsPerRow>1</defaultHornsPerRow>
+	<name><![CDATA[horn]]></name>
+	<namePlural><![CDATA[horns]]></namePlural> 
+	<descriptorsMasculine>
+		<descriptor>large</descriptor>
+		<descriptor>sharp</descriptor>
+		<descriptor>sensitive</descriptor>
+	</descriptorsMasculine>
+	<descriptorsFeminine>
+		<descriptor>large</descriptor>
+		<descriptor>sharp</descriptor>
+		<descriptor>sensitive</descriptor>
+	</descriptorsFeminine>
+	<!-- This description immediately follows the text:
+		' Hard nubs suddenly push out from the sides of [npc.her] head, and [npc.she] [npc.verb(gasp)] as [npc.she] [npc.verb(feel)] them quickly grow out into '-->
+	<transformationDescription><![CDATA[
+		a sharp [npc.horns] that stretches over the back of [npc.her] head.
+		<br/>[npc.Name] now [npc.has] [npc.hornsDeterminer] [style.boldTfGeneric(straight [npc.horns])].
+	]]></transformationDescription>
+	<bodyDescription><![CDATA[
+		[npc.HornsDeterminer] [npc.hornSize], [npc.hornColour(true)], overarching
+		#IF(npc.getTotalHorns()==1)
+			 [npc.horn] grows
+		#ELSE
+			 [npc.horns] grow
+		#ENDIF
+		 out of the
+		#IF(npc.getHornsPerRow()==1)
+			 middle
+		#ELSE
+			 upper sides
+		#ENDIF
+		 of [npc.her] forehead.
+	]]></bodyDescription>
+</horn>

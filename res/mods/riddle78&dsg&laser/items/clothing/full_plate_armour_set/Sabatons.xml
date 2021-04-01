@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<clothing>
+	<coreAtributes>
+		<value>10000</value>
+		<determiner><![CDATA[a pair of]]></determiner>
+		<name><![CDATA[Sabatons]]></name>
+		<namePlural pluralByDefault="true"><![CDATA[Sabatons]]></namePlural>
+		<description><![CDATA[A collection of articulated, lobstered plates to be strapped to the front of a pair of boots, to provide protection without sacrificing range of movement.]]></description>
+		<physicalResistance>7</physicalResistance>
+		<femininity>ANDROGYNOUS</femininity>
+		<slot>ANKLE</slot>
+		<rarity>RARE</rarity>
+		<clothingSet></clothingSet>
+		<imageName>Sabatons.svg</imageName>
+		<imageEquippedName></imageEquippedName>
+		<enchantmentLimit>8</enchantmentLimit>
+		<effects />
+		<blockedPartsList>
+			<blockedParts>
+				<displacementType>REMOVE_OR_EQUIP</displacementType>
+				<clothingAccessRequired />
+				<blockedBodyParts>
+					<bodyPart>NONE</bodyPart>
+				</blockedBodyParts>
+				<clothingAccessBlocked>
+					<clothingAccess>LEGS_UP_TO_GROIN</clothingAccess>
+					<clothingAccess>CALVES</clothingAccess>
+					<clothingAccess>FEET</clothingAccess>
+				</clothingAccessBlocked>
+				<concealedSlots />
+			</blockedParts>
+		</blockedPartsList>
+		<incompatibleSlots />
+		<primaryColours values="ALL_METAL" />
+		<primaryColoursDye values="ALL_METAL" />
+		<secondaryColours values="ALL" />
+		<secondaryColoursDye values="ALL" />
+		<tertiaryColours values="ALL" />
+		<tertiaryColoursDye values="ALL" />
+		<itemTags>
+			<tag>SOLD_BY_VICKY</tag>
+		</itemTags>
+	</coreAtributes>
+	<displacementText type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[You unstrap your Sabatons and remove them.]]></playerSelf>
+		<playerNPC><![CDATA[You unstrap [npc.name]'s Sabatons and remove them.]]></playerNPC>
+		<playerNPCRough><![CDATA[You tear off [npc.name]'s Sabatons.]]></playerNPCRough>
+		<NPCSelf><![CDATA[[npc.name] unstraps and removes their Sabatons.]]></NPCSelf>
+		<NPCPlayer><![CDATA[[npc.name] unstraps and removes your Sabatons.]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[[npc.name] tears off your Sabatons.]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[[npc1.name] unstraps [npc2.name]'s Sabatons and removes them.]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[[npc1.name] tears off [npc2.name]'s Sabatons.]]></NPCOtherNPCRough>
+	</displacementText>
+	<replacementText type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[You strap on your Sabatons.]]></playerSelf>
+		<playerNPC><![CDATA[You strap on [npc.name]'s Sabatons for them.]]></playerNPC>
+		<playerNPCRough><![CDATA[You roughly strap [npc.name]'s Sabatons to their feet.]]></playerNPCRough>
+		<NPCSelf><![CDATA[[npc.name] straps on their Sabatons.]]></NPCSelf>
+		<NPCPlayer><![CDATA[[npc.name] straps on your Sabatons for you.]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[[npc.name] roughly straps your Sabatons to your feet.]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[[npc1.name] straps on [npc2.name]'s Sabatons for them.]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[[npc1.name] roughly straps [npc2.name]'s Sabatons to their feet.]]></NPCOtherNPCRough>
+	</replacementText>
+</clothing>

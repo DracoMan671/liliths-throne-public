@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<clothing>
+	<coreAttributes>
+		<value>400</value> 
+		<determiner><![CDATA[a bundle of]]></determiner>
+		<name><![CDATA[arcane rope shorts]]></name>
+		<namePlural pluralByDefault="false">
+      <![CDATA[arcane decorative rope shorts]]>
+    </namePlural> 
+    
+    <description><![CDATA[A bundle of rope specially enchanted to become decorative rope shorts, or rebundle itself.]]></description> 
+    
+		<physicalResistance>1</physicalResistance> 
+		<femininity>ANDROGYNOUS</femininity> 
+		
+      <slot>GROIN</slot>
+		
+		<rarity>EPIC</rarity>
+    <clothingSet/>
+		
+	  <imageName>rope_bundle.svg</imageName>
+		
+	
+    <imageEquippedName slot="GROIN">rope_crotch_drums.svg</imageEquippedName>
+		
+		<enchantmentLimit/>
+		<effects/>
+		
+    <blockedPartsList slot="GROIN">
+      <blockedParts>
+        <displacementType>REMOVE_OR_EQUIP</displacementType>
+        <clothingAccessRequired>
+          <clothingAccess>GROIN</clothingAccess>
+        </clothingAccessRequired>
+        <blockedBodyParts/>
+        <clothingAccessBlocked/>
+        <concealedSlots/>
+      </blockedParts>
+    </blockedPartsList>
+	
+    <incompatibleSlots slot="GROIN"/>
+		
+		<primaryColours values="JUST_SILVER"/> 
+		<primaryColoursDye values="ALL_PLUS_METAL"/>
+		<secondaryColours/>
+		<secondaryColoursDye/>
+		<tertiaryColours/>
+    <tertiaryColoursDye/>
+		
+	<itemTags>
+		<tag>SOLD_BY_FINCH</tag>
+		<tag>ENABLE_SEX_EQUIP</tag>
+		<tag>TRANSPARENT</tag>
+		<tag>REVEALS_CONCEALABLE_SLOT</tag>
+    </itemTags>
+</coreAttributes>
+  <replacementText slot="GROIN" type="REMOVE_OR_EQUIP">
+    <self>
+      <![CDATA[[npc.Name] [npc.verb(rest)] the arcane rope on [npc.her] hips, watching as it quickly ties itself into decorative shorts.]]>
+    </self>
+    <other>
+      <![CDATA[[npc.Name] [npc.verb(rest)] the arcane rope on [npc2.namePos] hips, watching as it quickly ties itself into decrative shorts.]]>
+    </other>
+    <otherRough>
+      <![CDATA[[npc.Name] roughly [npc.verb(force)] the arcane rope against [npc2.namePos] hips, watching as it tightly ties itself tight rope shorts.]]>
+    </otherRough>
+  </replacementText>
+  <displacementText slot="GROIN" type="REMOVE_OR_EQUIP">
+    <self>
+      <![CDATA[[npc.Name] [npc.verb(untie)] the rope around [npc.her] hips, watching as it neatly bundles itself up.]]>
+    </self>
+    <other>
+      <![CDATA[[npc.Name] [npc.verb(untie)] the rope around [npc2.namePos] hips, watching as it neatly bundles itself up.]]>
+    </other>
+    <otherRough>
+      <![CDATA[[npc.Name] [npc.verb(yank)] on the rope around [npc2.namePos] hips, causing it to quickly untie with a parting pinch before bundling itself up.]]>
+    </otherRough>
+  </displacementText>
+</clothing>

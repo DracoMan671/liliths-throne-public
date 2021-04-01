@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<bookText>
+	
+	<htmlContent tag="fatalis_BASIC"><![CDATA[
+	<p>
+		Fatalis are said to have conquered kingdoms in a single night.
+	</p>
+	]]>
+	</htmlContent>
+
+	<htmlContent tag="fatalis_ADVANCED"><![CDATA[
+	<p>
+		Fatalis are able to fly like most winged creature. Fatalis are elder dragons and because of that, should never be underestimated. Fatalis' nova is a constant stream of fiery death that melts cloth, wood, stone and even metals with little difficulty.
+	</p>
+	]]>
+	</htmlContent>
+	
+</bookText>

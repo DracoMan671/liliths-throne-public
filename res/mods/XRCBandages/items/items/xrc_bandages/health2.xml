@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<item>
+	<coreAttributes>
+		
+		<authorTag><![CDATA['Enchanted & produced by XRC' is inscribed on the corner of the parchment.]]></authorTag>
+		<value>240</value>
+		<determiner><![CDATA[a]]></determiner>
+		
+		<!-- The name of this item. -->
+		<name><![CDATA[Scroll of Healing]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Scrolls of Healing]]></namePlural>
+		<description><![CDATA[An arcane scroll which, when read, imbues the reader with a brief wave of energy.]]></description> 
+		<useDescriptor>read</useDescriptor>
+		<sexUse>false</sexUse>
+		<combatUseAllies>true</combatUseAllies>
+		<combatUseEnemies>false</combatUseEnemies>
+		<consumedOnUse>true</consumedOnUse>
+		<rarity>UNCOMMON</rarity>
+		<imageName>scroll.svg</imageName> 
+		<colourPrimary>CLOTHING_RED_BRIGHT</colourPrimary>
+		<colourSecondary/>
+		<colourTertiary/>
+
+		<effectTooltipLines>
+			<line><![CDATA[[style.boldGood(Restores)] 150 [style.boldHealth(health)]]]></line>
+		</effectTooltipLines>
+		
+		<applyEffects><![CDATA[
+[##npc.setHealth(npc.getHealth()+150)]
+			<p style='text-align:center; margin-top:0; padding-top:0;'>
+				[npc.Name] recovered <b>150 [style.boldHealth(health)]!</b><br>
+				<i>Having served its purpose, the scroll disappears in a flash of green light!</i>
+			</p>
+		]]></applyEffects>
+		
+		<itemTags>
+			<tag>SUBMISSION_TUNNEL_SPAWN</tag>
+			<tag>BAT_CAVERNS_SPAWN</tag>
+			<tag>SOLD_BY_VICKY</tag>
+		</itemTags>
+		
+	</coreAttributes>
+
+	<useDescriptions>
+		<selfUse><![CDATA[
+		Unravelling the scroll, you read its contents...
+		]]></selfUse>
+		<otherUse><![CDATA[
+		Unravelling the scroll, [npc.Name] [npc.verb(read)] its contents...
+		]]></otherUse>
+	</useDescriptions>
+
+	
+</item>

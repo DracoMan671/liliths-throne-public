@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<weapon>
+	<coreAttributes>
+	
+		<value>120000</value> 
+		
+		<melee>true</melee>
+		
+		<twoHanded>true</twoHanded>
+		
+		<determiner><![CDATA[the]]></determiner>
+		
+		<name><![CDATA[Reppu]]></name>
+		
+		<namePlural pluralByDefault="false"><![CDATA[Reppae]]></namePlural>
+		
+		<description><![CDATA[An absurdly large and heavy experimental driveblade made much more maneuverable by the forces of the arcane at massive cost. Used by a mad prince who had the intentions of slaying a god with fire. <br/><span style='font-style:bold;'><span style='color:#ff903cff;'>Non enim te prohibere ad me respice te Titanas]]></description> 
+		
+		<attackDescriptor>Ignition</attackDescriptor>
+		
+		<attackTooltipDescription>Load a flame cartridge into the Reppu
+		and obliterate [npc2.Name].</attackTooltipDescription>
+		
+		<rarity>LEGENDARY</rarity> 
+		
+		<weaponSet/>
+		
+		<equipText><![CDATA[[npc.Name] [npc.verb(fasten)] the Reppu across [npc.her] back, With the safety on for later use.]]></equipText>
+		
+		<unequipText><![CDATA[[npc.Name] [npc.verb(unfasten)] the Reppu from [npc.her] back, [npc.verb(unload)] it's active cartridge and [npc.verb(store)] it for later.]]></unequipText>
+		
+		<imageName>Reppu.svg</imageName> 
+		
+		<imageEquippedName>Reppu.svg</imageEquippedName>
+		
+		<damage>400</damage> 
+		
+		<arcaneCost>20</arcaneCost> 
+		
+		<damageVariance>LOW</damageVariance> 
+		
+		<availableDamageTypes>
+			<damageType>FIRE</damageType>
+		</availableDamageTypes>
+		
+		<spells>
+			<spell>CLOAK_OF_FLAMES</spell>
+		</spells>
+		
+		<enchantmentLimit>15</enchantmentLimit>
+		
+		<effects> 
+            <effect itemEffectType="WEAPON" limit="0" potency="MAJOR_BOOST" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="DAMAGE_FIRE" timer="0" />
+			<effect itemEffectType="WEAPON" limit="0" potency="MAJOR_BOOST" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="DAMAGE_FIRE" timer="0" />
+			<effect itemEffectType="WEAPON" limit="0" potency="MAJOR_BOOST" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="DAMAGE_FIRE" timer="0" />
+			<effect itemEffectType="WEAPON" limit="0" potency="MAJOR_BOOST" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="DAMAGE_FIRE" timer="0" />
+			<effect itemEffectType="WEAPON" limit="0" potency="MAJOR_BOOST" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="DAMAGE_FIRE" timer="0" />
+			<effect itemEffectType="WEAPON" limit="0" potency="MAJOR_BOOST" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="DAMAGE_FIRE" timer="0" />
+			<effect itemEffectType="WEAPON" limit="0" potency="MAJOR_BOOST" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="DAMAGE_FIRE" timer="0" />
+			<effect itemEffectType="WEAPON" limit="0" potency="MAJOR_BOOST" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="DAMAGE_FIRE" timer="0" />
+			<effect itemEffectType="WEAPON" limit="0" potency="MAJOR_BOOST" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="DAMAGE_FIRE" timer="0" />
+			<effect itemEffectType="WEAPON" limit="0" potency="MAJOR_BOOST" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="DAMAGE_FIRE" timer="0" />
+			<effect itemEffectType="WEAPON" limit="0" potency="MAJOR_BOOST" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="DAMAGE_FIRE" timer="0" />
+			<effect itemEffectType="WEAPON" limit="0" potency="MAJOR_BOOST" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="DAMAGE_FIRE" timer="0" />
+			<effect itemEffectType="WEAPON" limit="0" potency="MAJOR_BOOST" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="DAMAGE_FIRE" timer="0" />
+			<effect itemEffectType="WEAPON" limit="0" potency="MAJOR_BOOST" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="DAMAGE_FIRE" timer="0" />
+		</effects>
+		
+		<primaryColours>
+			<colour>CLOTHING_BLACK_STEEL</colour>
+		</primaryColours> 
+		<primaryColoursDye values="ALL_METAL"/>
+		<secondaryColours> 
+			<colour>CLOTHING_GOLD</colour>
+		</secondaryColours> 
+		<secondaryColoursDye values="ALL_METAL"/>
+		
+		<itemTags> 
+			<tag>SOLD_BY_VICKY</tag>
+			<tag>WEAPON_BLADE</tag>
+		</itemTags>
+		
+	</coreAttributes>
+	
+	<hitDescriptions>
+		<hitText><![CDATA[
+		[npc.Name] [npc.verb(cock)] [npc.her] blade before sweeping out at [npc2.name], coating the ethereal blade in fire before passing through [npc2.her] body, a loud metalic pop rings through the air as the blade's cartridge auto ejects.
+		]]></hitText>
+		<hitText><![CDATA[
+		[npc.Name] [npc.verb(swing)] [npc.her] driveblade down at [npc2.Name] sending the blade and its gout of fire through them vertically and punging into the ground, the blades cartridge ejects itself to the floor.
+		]]></hitText>
+		<hitText><![CDATA[
+		[npc.Name] [npc.verb(thrust)] your ethereal blade through [npc2.name] leaving flames in your wake. As [npc.name] [npc.verb(pull)] the blade from [npc2.name], it loudly ejects it's cartridge.]]></hitText>
+	</hitDescriptions>
+
+	<!-- Descriptions that are used when missing an enemy. One of the missText values will be randomly selected each time the attacker misses their target. Follow the same guidelines as equipText. -->
+	<missDescriptions>
+		<missText><![CDATA[
+		[npc.Name] [npc.verb(cock)] [npc.her] blade before sweeping out at [npc2.name], coating the ethereal blade in fire before missing [npc2.Name] completely. The blade's cartridge, expended, ejects anyways.
+		]]></missText>
+		<missText><![CDATA[
+		[npc.Name] [npc.verb(swing)] [npc.her] driveblade down at [npc.Name] but narrowly misses, pluging the tip of the blade into the ground. The blade's cartridge ejects next to it anyways. Mocking [npc.Name].
+		]]></missText>
+		<missText><![CDATA[
+		[npc.Name] [npc.verb(thrust)] [npc.her] sword at [npc2.name], but loses [npc.her] balance falling well short of [npc.her] target, [Npc2.name]. The blade sounds off, ejecting it's spent cartridge.
+		]]></missText>
+	</missDescriptions>
+	
+</weapon>

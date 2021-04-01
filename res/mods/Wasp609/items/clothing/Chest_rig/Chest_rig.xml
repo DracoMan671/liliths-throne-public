@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- For a version with comments, see "rental_mommy.xml". -->
+<clothing>
+	<coreAtributes>
+		<value>3500</value>
+		<determiner><![CDATA[a]]></determiner>
+		<name><![CDATA[Chest Rig]]></name>
+		<namePlural pluralByDefault="true"><![CDATA[Chest Rigs]]></namePlural>
+		<description><![CDATA[A Recon Chest Rig.]]></description>
+		<physicalResistance>30</physicalResistance>
+		<femininity>ANDROGYNOUS</femininity>
+		<slot>CHEST</slot>
+		<rarity>EPIC</rarity>
+		<clothingSet/>
+		<imageName>Chest_rig.svg</imageName>
+		<imageEquippedName/>
+		<enchantmentLimit/>
+		<effects>
+              <!-- No effect by design.-->
+		</effects>
+		<blockedPartsList>
+			<blockedParts>
+				<displacementType>REMOVE_OR_EQUIP</displacementType>
+				<clothingAccessRequired>
+
+				</clothingAccessRequired>
+				<blockedBodyParts/>
+				<clothingAccessBlocked/>
+				<concealedSlots/>
+			</blockedParts>
+		</blockedPartsList>
+		<incompatibleSlots/>
+    <primaryColours values="ALL"/>
+    <primaryColoursDye values="ALL"/>
+	<tertiaryColours values="ALL"/>
+	<tertiaryColoursDye values="ALL"/>
+		<itemTags>
+			<tag>SOLD_BY_VICKY</tag>
+		</itemTags>
+	</coreAtributes>
+
+	<displacementText type="REMOVE_OR_EQUIP">
+	
+	</displacementText>
+
+	<replacementText type="REMOVE_OR_EQUIP">
+
+	</replacementText>
+
+</clothing>

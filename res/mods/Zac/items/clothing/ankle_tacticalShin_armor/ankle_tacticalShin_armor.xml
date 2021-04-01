@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<clothing>
+	
+	<coreAtributes>
+		<value>1200</value> 
+		<determiner><![CDATA[a pair of]]></determiner>
+		<name><![CDATA[Tactical Shin Guards]]></name>
+		<namePlural pluralByDefault="true"><![CDATA[Tactical Shin Guards]]></namePlural> 
+		<description><![CDATA[A pair of hevay fabric shin guards reinforced with metal.]]></description> 
+		<physicalResistance>2</physicalResistance> 
+		<femininity>ANDROGYNOUS</femininity> 
+		<slot>ANKLE</slot> 
+		<rarity>RARE</rarity> 
+		<clothingSet/>
+		<imageName>ankle_tacticalShin_armor.svg</imageName> 
+		<imageEquippedName/> 
+		<enchantmentLimit/>
+		<effects/> 
+		<blockedPartsList>
+			<blockedParts>
+				<displacementType>REMOVE_OR_EQUIP</displacementType>
+				<clothingAccessRequired/>
+				<blockedBodyParts/>
+				<clothingAccessBlocked>
+					<clothingAccess>CALVES</clothingAccess>
+					<clothingAccess>LEGS_UP_TO_GROIN</clothingAccess>
+				</clothingAccessBlocked>
+				<concealedSlots/>
+			</blockedParts>
+			<blockedParts>
+				<displacementType>PULLS_OFF</displacementType>
+				<clothingAccessRequired/>
+				<blockedBodyParts/>
+				<clothingAccessBlocked>
+					<clothingAccess>CALVES</clothingAccess>
+					<clothingAccess>LEGS_UP_TO_GROIN</clothingAccess>
+				</clothingAccessBlocked>
+				<concealedSlots/>
+			</blockedParts>
+		</blockedPartsList>
+		<incompatibleSlots/>
+		<primaryColours values="DENIM"/>
+		<primaryColoursDye values="ALL"/>
+		<secondaryColours values="JUST_STEEL"/>
+		<secondaryColoursDye values="ALL_METAL"/>
+		<tertiaryColours values="NONE"/>
+		<tertiaryColoursDye values="NONE"/>
+		<itemTags> 
+			<tag>SOLD_BY_NYAN</tag>
+			<tag>DOMINION_ALLEYWAY_SPAWN</tag>
+		</itemTags>
+	</coreAtributes>
+	<displacementText type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[
+			You take off your tactical shin guards.
+		]]></playerSelf>
+		<playerNPC><![CDATA[
+			You pull off [npc.name]'s tactical shin guards.
+		]]></playerNPC>
+		<playerNPCRough><![CDATA[
+			You grab hold of [npc.name]'s tactical shin guards and roughly pull them off [npc.her] legs.
+		]]></playerNPCRough>
+		<NPCSelf><![CDATA[
+			[npc.Name] takes [npc.her] tactical shin guards off.
+		]]></NPCSelf>
+		<NPCPlayer><![CDATA[
+			[npc.Name] pulls your tactical shin guards off.
+		]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[
+			[npc.Name] grabs hold of your tactical shin guards and roughly pulls them off your legs.
+		]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[
+			[npc1.Name] pulls [npc2.name]'s tactical shin guards off.
+		]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[
+			[npc.Name] grabs hold of [npc2.name]'s tactical shin guards and roughly pulls them off [npc2.her] legs.
+		]]></NPCOtherNPCRough>
+	</displacementText>
+
+	<replacementText type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[
+			You put on the tactical shin guards.
+		]]></playerSelf>
+		<playerNPC><![CDATA[
+			You put [npc.name]'s tactical shin guards on [npc.her] legs.
+		]]></playerNPC>
+		<playerNPCRough><![CDATA[
+			You hold [npc.name] still as you roughly force the tactical shin guards on [npc.her] legs.
+		]]></playerNPCRough>
+		<NPCSelf><![CDATA[
+			[npc.Name] put on the tactical shin guards.
+		]]></NPCSelf>
+		<NPCPlayer><![CDATA[
+			[npc.Name] puts your tactical shin guards on your legs.
+		]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[
+			[npc.Name] holds you still as [npc.she] roughly puts the tactical shin guards on your legs.
+		]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[
+			[npc1.Name] puts [npc2.name]'s tactical shin guards on their legs.
+		]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[
+			[npc.Name] grabs hold of [npc2.name]'s tactical shin guards and roughly puts them on [npc2.her] legs.
+		]]></NPCOtherNPCRough>
+	</replacementText>
+
+	<displacementText type="PULLS_OFF">
+		<playerSelf><![CDATA[
+			You take off your tactical shin guards.
+		]]></playerSelf>
+		<playerNPC><![CDATA[
+			You pull off [npc.name]'s tactical shin guards.
+		]]></playerNPC>
+		<playerNPCRough><![CDATA[
+			You grab hold of [npc.name]'s tactical shin guards and roughly pull them off [npc.her] legs.
+		]]></playerNPCRough>
+		<NPCSelf><![CDATA[
+			[npc.Name] takes [npc.her] tactical shin guards off.
+		]]></NPCSelf>
+		<NPCPlayer><![CDATA[
+			[npc.Name] pulls your tactical shin guards off.
+		]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[
+			[npc.Name] grabs hold of your tactical shin guards and roughly pulls them off your legs.
+		]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[
+			[npc1.Name] pulls [npc2.name]'s tactical shin guards off.
+		]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[
+			[npc.Name] grabs hold of [npc2.name]'s tactical shin guards and roughly pulls them off [npc2.her] legs.
+		]]></NPCOtherNPCRough>
+	</displacementText>
+	
+	<replacementText type="PULLS_BACK_ON">
+		<playerSelf><![CDATA[
+			You put on the tactical shin guards.
+		]]></playerSelf>
+		<playerNPC><![CDATA[
+			You put [npc.name]'s tactical shin guards on [npc.her] legs.
+		]]></playerNPC>
+		<playerNPCRough><![CDATA[
+			You hold [npc.name] still as you roughly force the tactical shin guards on [npc.her] legs.
+		]]></playerNPCRough>
+		<NPCSelf><![CDATA[
+			[npc.Name] put on the tactical shin guards.
+		]]></NPCSelf>
+		<NPCPlayer><![CDATA[
+			[npc.Name] puts your tactical shin guards on your legs.
+		]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[
+			[npc.Name] holds you still as [npc.she] roughly puts the tactical shin guards on your legs.
+		]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[
+			[npc1.Name] puts [npc2.name]'s tactical shin guards on their legs.
+		]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[
+			[npc.Name] grabs hold of [npc2.name]'s tactical shin guards and roughly puts them on [npc2.her] legs.
+		]]></NPCOtherNPCRough>
+	</replacementText>
+	
+</clothing>

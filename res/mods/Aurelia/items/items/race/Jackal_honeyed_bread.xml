@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<item>
+	<coreAttributes>
+		<value>100</value> 
+		<determiner><![CDATA[a piece of]]></determiner>
+		<name><![CDATA[Honeyed Bread]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Honeyed Bread]]></namePlural>
+		<description><![CDATA[A small traditional Egyptian treat; a circular mound of dough with an aroma not unlike honey.]]></description> 
+		
+		<useDescriptor>eat</useDescriptor>
+		
+		<sexUse>true</sexUse>
+		<combatUseAllies>true</combatUseAllies>
+		<combatUseEnemies>false</combatUseEnemies>
+		<consumedOnUse>true</consumedOnUse>
+		
+		<rarity>RARE</rarity> 
+		
+		<imageName zLayer="0" imageRotation="0" imageSize="100">background_bottom.svg</imageName>
+		<imageName zLayer="1" imageRotation="0" imageSize="70" target1='stroke="#000"' replacement1='stroke="#ff5555"' target2='#ff8080' replacement2='#ff5555'>res/mods/Aurelia/race/Jackal/subspecies/icon.svg</imageName>
+		<imageName zLayer="2" imageRotation="0" imageSize="70">Jackal_honeyed_bread.svg</imageName>
+		<imageName zLayer="3" imageRotation="0" imageSize="100">background_top.svg</imageName>
+		
+		<colourPrimary>Aurelia_Jackal</colourPrimary>
+		<colourSecondary/>
+		<colourTertiary/>
+		
+		<potionDescriptor><![CDATA[jackal]]></potionDescriptor>
+		<associatedRace>Aurelia_Jackal</associatedRace>
+		<enchantmentItemTypeId>ELIXIR</enchantmentItemTypeId>
+		<enchantmentEffectId>RACE</enchantmentEffectId>
+		
+		<effectTooltipLines>
+			<line><![CDATA[[style.boldGood(Restores)] 10% [style.boldHealth([#ATTRIBUTE_HEALTH_MAXIMUM.getName()])]]]></line>
+			<line><![CDATA[[#ATTRIBUTE_MAJOR_PHYSIQUE.getFormattedValue(5)] to 'potion effects']]></line>
+		</effectTooltipLines>
+		
+		<applyEffects><![CDATA[
+			[##npc.incrementHealth(npc.getAttributeValue(ATTRIBUTE_HEALTH_MAXIMUM)/10)]
+			
+			<p style='margin-bottom:0; padding-bottom:0;'>
+				[npc.Name] [npc.verb(start)] to feel a little bit more comfortable from the sweet taste.
+			</p>
+			[#npc.addPotionEffect(ATTRIBUTE_MAJOR_PHYSIQUE, 5)]
+		]]></applyEffects>
+		
+		<itemTags>
+			<tag>RACIAL_TF_ITEM</tag>
+			<tag>SOLD_BY_RALPH</tag>
+		</itemTags>
+	</coreAttributes>
+
+	<useDescriptions>
+		<selfUse><![CDATA[
+		Pulling the bread from [npc.her] bag, [npc.name] [npc.verb(take)] a bite of the circular treat. The taste of honey is dominant in [npc.her] mouth, and [npc.she] [npc.verb(savor)] each bite, moaning as [npc.her] jaws knead and crush the dough. [npc.Her] [npc.tongue+] wrestles with the bread ball created and [npc.she]
+		#IF(npc.getFaceType()==FACE_TYPE_Aurelia_Jackal_face)
+			 [npc.verb(start)] reaching for another to keep the taste coming, using [npc.her] canine teeth to tear the bread apart each time.
+		#ELSE
+			 [npc.verb(lick)] the bread, the delicious taste bringing out a feel of home cooking. It is not long before [npc.she] [npc.has] finished the bread off entirely.
+		#ENDIF
+		]]></selfUse>
+		<otherUse><![CDATA[
+		Pulling the bread from [npc.her] bag, [npc.name] [npc.verb(offer)] the doughy treat to [npc2.namePos] waiting [npc2.lips] and [npc.verb(get)] [npc2.herHim] to consume it. The taste of honey is dominant in [npc2.her] mouth, and [npc2.she] [npc.verb(savor)] each bite, moaning as [npc2.her] jaws knead and crush the dough. [npc2.Her] [npc2.tongue+] wrestles with the bread ball created and [npc2.she]
+		#IF(npc.getFaceType()==FACE_TYPE_Aurelia_Jackal_face)
+			 [npc2.verb(start)] reaching for another to keep the taste coming, using [npc2.her] canine teeth to tear the bread apart each time.
+		#ELSE
+			 [npc2.verb(lick)] the bread, the delicious taste bringing out a feel of home cooking. It is not long before [npc2.she] [npc2.has] finished the bread off entirely.
+		#ENDIF
+		]]></otherUse>
+	</useDescriptions>
+	
+</item>

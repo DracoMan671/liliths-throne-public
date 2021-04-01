@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!-- A fan-made mod for Innoxia's Lilith's Throne. Feel free to edit these files however you want, same goes for the svg's. Thanks to Innoxia for making Lilith's Throne, it's great. //Zyro-->
+<clothing>
+  <coreAtributes>
+    <value>500</value>
+    <determiner>a</determiner>
+    <name>Quarian Mask</name>
+    <namePlural pluralByDefault="false"><![CDATA[Quarian Mask]]></namePlural>
+    <description>An alien mask, it filters the air and prevents others from seeing your face.<!--...for 3 games just to disappoint me. I mean, it's a secret for three games why not put a little bang behind the buck and make sure it's done right?--></description>
+    <physicalResistance>1</physicalResistance>
+    <femininity>FEMININE</femininity>
+    <slot>MOUTH</slot>
+    <rarity>UNCOMMON</rarity>
+    <clothingSet />
+    <imageName>Quarian_Mask.svg</imageName>
+    <imageEquippedName />
+    <enchantmentLimit />
+    <effects></effects>
+    <blockedPartsList>
+      <blockedParts>
+        <displacementType>REMOVE_OR_EQUIP</displacementType>
+        <clothingAccessRequired>
+          <clothingAccess>HEAD</clothingAccess>
+        </clothingAccessRequired>
+        <blockedBodyParts>
+          <bodyPart>HAIR</bodyPart>
+          <bodyPart>MOUTH</bodyPart>
+        </blockedBodyParts>
+        <clothingAccessBlocked />
+        <concealedSlots>
+          <slot>HAIR</slot>
+          <slot>MOUTH</slot>		  
+        </concealedSlots>
+      </blockedParts>
+    </blockedPartsList>
+    <incompatibleSlots />
+    <primaryColours values="ALL_WITH_METALS" />
+    <primaryColoursDye values="ALL_WITH_METALS" />
+    <secondaryColours values="ALL_WITH_METALS" />
+    <secondaryColoursDye values="ALL_WITH_METALS" />
+    <tertiaryColours values="ALL_WITH_METALS" />
+    <tertiaryColoursDye values="ALL_WITH_METALS" />
+    <itemTags>
+      <tag>SOLD_BY_NYAN</tag>
+    </itemTags>
+  </coreAtributes>
+  <displacementText type="REMOVE_OR_EQUIP">
+    <playerSelf>
+			You take off the Quarian Mask.
+		</playerSelf>
+    <playerNPC>
+			You remove [npc.name]'s Quarian Mask.
+		</playerNPC>
+    <playerNPCRough>
+			You grab hold of [npc.name]'s Quarian Mask and tear it off [npc.her] face.
+		</playerNPCRough>
+    <NPCSelf>
+			[npc.Name] takes off [npc.her] Quarian Mask.
+		</NPCSelf>
+    <NPCPlayer>
+			[npc.Name] takes off your Quarian Mask.
+		</NPCPlayer>
+    <NPCPlayerRough>
+			[npc.Name] grabs hold of your Quarian Mask and roughly tears it off your face.
+		</NPCPlayerRough>
+    <NPCOtherNPC>
+			[npc1.Name] takes off [npc2.name]'s Quarian Mask.
+		</NPCOtherNPC>
+    <NPCOtherNPCRough>
+			[npc.Name] grabs hold of [npc2.name]'s Quarian Mask and roughly tears it off from [npc2.her] face.
+		</NPCOtherNPCRough>
+  </displacementText>
+  <replacementText type="REMOVE_OR_EQUIP">
+    <playerSelf>
+			You put on the Quarian Mask.
+		</playerSelf>
+    <playerNPC>
+			You put the Quarian Mask on [npc.name]'s face.
+		</playerNPC>
+    <playerNPCRough>
+			You hold [npc.name] still as you roughly force the Quarian Mask onto [npc.her] face.
+		</playerNPCRough>
+    <NPCSelf>
+			[npc.Name] puts on the Quarian Mask.
+		</NPCSelf>
+    <NPCPlayer>
+			[npc.Name] puts the Quarian Mask on your face.
+		</NPCPlayer>
+    <NPCPlayerRough>
+			[npc.Name] holds you still as [npc.she] roughly forces the Quarian Mask onto your face.
+		</NPCPlayerRough>
+    <NPCOtherNPC>
+			[npc1.Name] puts the Quarian Mask on [npc2.her]'s face.
+		</NPCOtherNPC>
+    <NPCOtherNPCRough>
+			[npc1.Name] holds [npc2.name] still as [npc1.she] roughly forces the Quarian Mask onto [npc2.her] face.
+		</NPCOtherNPCRough>
+  </replacementText>
+</clothing>

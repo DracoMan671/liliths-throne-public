@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<fluid>
+	<!-- GENERAL INFORMATION: If you are unsure of anything, please use the LT Discord to ask for help! -->
+	
+	<!-- For a commented example of a fluid type, see 'milk.xml'. -->
+	
+	<race>Ghost_Narga</race>
+	
+	<transformationName><![CDATA[Nargacuga]]></transformationName>
+	
+	<baseFluidType>CUM</baseFluidType>
+	
+	<flavour>CUM</flavour>
+	
+	<namesMasculine>
+		<name><![CDATA[nargacuga-]]></name>
+	</namesMasculine>
+	
+	<namesFeminine>
+		<name><![CDATA[nargacuga-]]></name>
+	</namesFeminine>
+	
+	<descriptorsMasculine/>
+	
+	<descriptorsFeminine/> VISCOUS
+	
+	<defaultFluidModifiers>
+		<modifier>MUSKY</modifier>
+		<modifier>VISCOUS</modifier>
+		<modifier>STICKY</modifier>
+		<modifier>SLIMY</modifier>
+	</defaultFluidModifiers>
+	
+</fluid>

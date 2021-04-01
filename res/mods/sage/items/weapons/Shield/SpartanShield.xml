@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<weapon>
+	<coreAttributes>
+	
+		<value>10000</value> 
+		<melee>true</melee>
+		<twoHanded>false</twoHanded>
+		<determiner><![CDATA[a]]></determiner>
+		<name><![CDATA[Hoplite Shield]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Hoplite shields]]></namePlural> 
+		
+		<description><![CDATA[The hoplite shield, or aspis (although it is commonly called a 'hoplon'), was heavy, weighing about 30 pounds. They were constructed out of wood with an outer layer of bronze. Due to its defensive nature, using it as a weapon could gain the advantage of surprise..]]></description> 
+		
+		<attackDescriptor>shield-bash</attackDescriptor>
+		<attackTooltipDescription>Bash [npc2.name] with your shield.</attackTooltipDescription>
+		<rarity>EPIC</rarity> 
+		
+		<equipText><![CDATA[[npc.Name] [npc.verb(take)] hold of [npc.her] Hoplite, and [npc.verb(prepare)] to use it to defend [npc.herself] in combat.]]></equipText>
+		<unequipText><![CDATA[[npc.Name] [npc.verb(put)] [npc.her] Hoplite away.]]></unequipText>
+		
+		<imageName>SpartanShield.svg</imageName> 
+		<imageEquippedName>SpartanShield.svg</imageEquippedName>
+		
+		<physicalResistance>40</physicalResistance> 
+		<damage>12</damage> 
+		<arcaneCost>0</arcaneCost>
+		<damageVariance>HIGH</damageVariance> 
+		
+		<availableDamageTypes>
+			<damageType>PHYSICAL</damageType>
+			<damageType>ICE</damageType>
+			<damageType>FIRE</damageType>
+			<damageType>POISON</damageType>
+		</availableDamageTypes>
+		
+		<spells/>
+		
+		<enchantmentLimit>5</enchantmentLimit>
+		
+		<effects> 
+              <effect itemEffectType="CLOTHING" limit="0" potency="MAJOR_BOOST" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="RESISTANCE_WEAPON" timer="0"/>
+              <effect itemEffectType="CLOTHING" limit="0" potency="MAJOR_BOOST" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="RESISTANCE_PHYSICAL" timer="0"/>
+              <effect itemEffectType="CLOTHING" limit="0" potency="MAJOR_BOOST" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="RESISTANCE_PHYSICAL" timer="0"/>
+		</effects>
+		
+		<primaryColours values="JUST_BRASS"/> 
+		<primaryColoursDye values="ALL_WITH_METALS"/>
+		<secondaryColours values = "JUST_BRASS"/> 
+		<secondaryColoursDye values="ALL_WITH_METALS"/>
+
+		
+		<itemTags>
+			<tag>SOLD_BY_VICKY</tag>
+		</itemTags>
+	</coreAttributes>
+
+	<hitDescriptions>
+		<hitText><![CDATA[
+		Swinging [npc.her] Hoplite, [npc.name] [npc.verb(manage)] to whack [npc2.name] on the [npc2.arm], which causes [npc2.herHim] to let out a surprised yelp!
+		]]></hitText>
+		<hitText><![CDATA[
+		Striking out at [npc2.name] with [npc.her] Hoplite, [npc.name] [npc.verb(manage)] to land a solid hit on [npc2.her] [npc2.arm]!
+		]]></hitText>
+		<hitText><![CDATA[
+		With a quick step forwards, [npc.name] [npc.verb(lunge)] out at [npc2.name] with [npc.her] Hoplite, whacking the boss against [npc2.her] shoulder!
+		]]></hitText>
+	</hitDescriptions>
+
+	<missDescriptions>
+		<missText><![CDATA[
+		Thrusting out with [npc.her] buckler, [npc.name] [npc.verb(attempt)] to whack [npc2.name] on the [npc2.arm], but [npc.verb(end)] up missing [npc2.herHim]!
+		]]></missText>
+		<missText><![CDATA[
+		Striking out at [npc2.name] with [npc.her] buckler, [npc.name] [npc.verb(let)] out a frustrated cry as [npc.she] [npc.verb(miss)] [npc.her] target!
+		]]></missText>
+		<missText><![CDATA[
+		With a quick step forwards, [npc.name] [npc.verb(lunge)] out at [npc2.name] with [npc.her] buckler, but [npc.she] [npc.verb(miss)] [npc.her] target!
+		]]></missText>
+	</missDescriptions>
+	
+</weapon>

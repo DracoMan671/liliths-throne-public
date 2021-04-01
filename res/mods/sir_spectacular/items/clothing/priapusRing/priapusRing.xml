@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- For a version with comments, see "rental_mommy.xml". -->
+<clothing>
+	<coreAtributes>
+		<value>1000</value>
+		<determiner><![CDATA[a]]></determiner>
+		<name><![CDATA[Priapus' Cock Ring of Power]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Priapus' Cock Rings of Power]]></namePlural>
+		<description><![CDATA[The origin of this ancient ring is unknown, but when touched by an open flame, the name of the craftsman, Priapus, glows briefly on ring’s surface. When placed around your cock, the ring’s dark magic causes your masculine anatomy to increase in size.]]></description>
+		<physicalResistance>2</physicalResistance>
+		<femininity>ANDROGYNOUS</femininity>
+		<slot>PENIS</slot>
+		<rarity>LEGENDARY</rarity>
+		<clothingSet/>
+		<imageName>priapusRing.svg</imageName>
+		<imageEquippedName/>
+		<enchantmentLimit/>
+		<effects>
+            <effect itemEffectType="CLOTHING" limit="40" potency="MAJOR_BOOST" primaryModifier="TF_PENIS" secondaryModifier="TF_MOD_SIZE" timer="0"/>
+            <effect itemEffectType="CLOTHING" limit="10000" potency="MAJOR_BOOST" primaryModifier="TF_PENIS" secondaryModifier="TF_MOD_WETNESS" timer="0"/>
+            <effect itemEffectType="CLOTHING" limit="7" potency="BOOST" primaryModifier="TF_PENIS" secondaryModifier="TF_MOD_SIZE_SECONDARY" timer="0"/>
+		</effects>
+		<blockedPartsList>
+			<blockedParts>
+				<displacementType>REMOVE_OR_EQUIP</displacementType>
+				<clothingAccessRequired>
+					<clothingAccess>GROIN</clothingAccess>
+				</clothingAccessRequired>
+				<blockedBodyParts/>
+				<clothingAccessBlocked/>
+				<concealedSlots/>
+			</blockedParts>
+		</blockedPartsList>
+		<incompatibleSlots/>
+		<primaryColours><colour>CLOTHING_GOLD</colour></primaryColours>
+		<primaryColoursDye><colour>CLOTHING_GOLD</colour></primaryColoursDye>
+		<secondaryColours/>
+		<secondaryColoursDye/>
+		<tertiaryColours/>
+		<tertiaryColoursDye/>
+		<itemTags>
+			<tag>SOLD_BY_NYAN</tag>
+		</itemTags>
+	</coreAtributes>
+
+	<displacementText type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[
+			You pull off the cock ring. You're filled with an inexplicable feeling of loss. This ring feels "precious" to you.
+		]]></playerSelf>
+		<playerNPC><![CDATA[
+			You pull off [npc.name]'s cock ring.
+		]]></playerNPC>
+		<playerNPCRough><![CDATA[
+			You pull off [npc.name]'s cock ring.
+		]]></playerNPCRough>
+		<NPCSelf><![CDATA[
+			[npc.Name] pulls off [npc.her] cock ring.
+		]]></NPCSelf>
+		<NPCPlayer><![CDATA[
+			[npc.Name] pulls off your cock ring. You're filled with an inexplicable feeling of loss. This ring feels "precious" to you.
+		]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[
+			[npc.Name] pulls off your cock ring. You're filled with an inexplicable feeling of loss. This ring feels "precious" to you.
+		]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[
+			[npc1.Name] pulls off [npc2.name]'s cock ring.
+		]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[
+			[npc1.Name] pulls off [npc2.name]'s cock ring.
+		]]></NPCOtherNPCRough>
+	</displacementText>
+
+	<replacementText type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[
+			You slide the ring onto your cock. The metal is warm to the touch and your skin feels an inexplicable tingle.
+		]]></playerSelf>
+		<playerNPC><![CDATA[
+			You slide the ring onto [npc.name]'s cock.
+		]]></playerNPC>
+		<playerNPCRough><![CDATA[
+			You slide the ring onto [npc.name]'s cock.
+		]]></playerNPCRough>
+		<NPCSelf><![CDATA[
+			[npc.Name] slides the ring onto [npc.her] cock.
+		]]></NPCSelf>
+		<NPCPlayer><![CDATA[
+			[npc.Name] slides the ring onto your cock. The metal is warm to the touch and your skin feels an inexplicable tingle.
+		]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[
+			[npc.Name] slides the ring onto your cock. The metal is warm to the touch and your skin feels an inexplicable tingle.
+		]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[
+			[npc1.Name] slides the ring onto [npc2.name]'s cock.
+		]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[
+			[npc1.Name] slides the ring onto [npc2.name]'s cock.
+		]]></NPCOtherNPCRough>
+	</replacementText>
+
+
+	
+</clothing>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<weapon>
+	<coreAttributes>
+	
+		<!-- How much this weapon is worth. -->
+		<value>35000</value> 
+		
+				<melee>true</melee>
+		
+				<twoHanded>false</twoHanded>
+		
+				<determiner><![CDATA[an]]></determiner>
+		
+		<!-- The name of this weapon. -->
+		<name><![CDATA[Dragon Blade]]></name>
+		
+				<namePlural pluralByDefault="false"><![CDATA[Dragon Blade's]]></namePlural> 
+		
+				<description><![CDATA[Forged in the fires of dying dragons, this blade crackles in the hands of it's user.]]></description>
+		
+				<attackDescriptor>Let it out.</attackDescriptor>
+		
+				<attackTooltipDescription>[npc.verb(slash)] at [npc2.name] with your Dragon Blade.</attackTooltipDescription>
+		
+				<rarity>LEGENDARY</rarity> 
+		
+				<equipText><![CDATA[[npc.Name] [npc.verb(take out)] the Dragon Blade.]]></equipText>
+		
+				<unequipText><![CDATA[[npc.Name] [npc.verb(sheathe)]Dragon Blade.]]></unequipText>
+		
+				<imageName>DragonBlade.svg</imageName> 
+		
+		
+		<imageEquippedName>DragonBlade.svg</imageEquippedName>
+		
+				<damage>56</damage> 
+		
+				<arcaneCost>0</arcaneCost> 
+		
+				<damageVariance>MEDIUM</damageVariance> 
+		
+				<availableDamageTypes>
+					<damageType>PHYSICAL</damageType>
+					<damageType>ICE</damageType>
+					<damageType>FIRE</damageType>
+					<damageType>POISON</damageType>
+				</availableDamageTypes>
+		
+				<enchantmentLimit>0</enchantmentLimit>
+		
+				<effects> 
+              		</effects>
+		
+		<primaryColours values="CLOTHING_BLACK_STEEL"/> 
+		<primaryColoursDye values="ALL_WITH_METALS"/>
+		<secondaryColours values="CLOTHING_GUNMETAL"/> 
+		<secondaryColoursDye values="ALL_WITH_METALS"/>
+		
+				<itemTags> 
+			<tag>SOLD_BY_VICKY</tag>
+		</itemTags>
+		
+	</coreAttributes>
+
+		<hitDescriptions>
+		<hitText><![CDATA[
+		You [npc.verb(slash)] at [npc2.name] with the Dragon Blade leaving a huge gash on their chest.
+		]]></hitText>
+		<hitText><![CDATA[
+		Plunging the Dragon blade into [npc2.name]'s side, [npc2.she] jumps back and holds a hand against [npc2.her] [npc.verb(stab)] wound.
+		]]></hitText>
+			</hitDescriptions>
+
+		<missDescriptions>
+		<missText><![CDATA[
+		[npc.name] [npc.verb(swipe)] at [npc2.name] only to miss and hit a nearby wall.
+		]]></missText>
+		<missText><![CDATA[
+		[npc.name] [npc.verb(attempt)] to plunge the blade into [npc2.name] but they sidestep your attack.
+		]]></missText>
+			</missDescriptions>
+	
+</weapon>

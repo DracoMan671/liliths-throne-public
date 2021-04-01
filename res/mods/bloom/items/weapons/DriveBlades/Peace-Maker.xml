@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<weapon>
+	<coreAttributes>
+	
+		<value>25000</value> 
+		
+		<melee>true</melee>
+		
+		<twoHanded>true</twoHanded>
+		
+		<determiner><![CDATA[]]></determiner>
+		
+		<name><![CDATA[Peace-Maker]]></name>
+		
+		<namePlural pluralByDefault="false"><![CDATA[Peace-makers]]></namePlural>
+		
+		<description><![CDATA[A streamlined driveblade that has incredible potential to be modified manually. Its an enhanced version of the original default imperial blade, so it still lacks most elemental capability with a tradeoff for physical damage output. Its widely used by the imperial royal guard for its reliability.]]></description> 
+		
+		<attackDescriptor>Make Peace</attackDescriptor>
+		
+		<attackTooltipDescription>Load a cartridge into the peacemaker and cleave into [npc2.Name] with it.</attackTooltipDescription>
+		
+		<rarity>EPIC</rarity> 
+		
+		<weaponSet/>
+		
+		<equipText><![CDATA[[npc.Name] [npc.verb(fasten)] the Peace-Maker to [npc.her] back, With the cartridge in,safety on, with its gears locked for later use.]]></equipText>
+		
+		<unequipText><![CDATA[[npc.Name] [npc.verb(unfasten)] the Peace-Maker from [npc.her] back, [npc.verb(unload)] it's active cartridge and [npc.verb(store)] it for later.]]></unequipText>
+		
+		<imageName>Peace-Maker.svg</imageName> 
+		
+		<imageEquippedName>Peace-Maker.svg</imageEquippedName>
+		
+		<damage>80</damage> 
+		
+		<arcaneCost>5</arcaneCost> 
+		
+		<damageVariance>LOW</damageVariance> 
+		
+		<availableDamageTypes>
+			<damageType>PHYSICAL</damageType>
+			<damageType>ICE</damageType>
+			<damageType>FIRE</damageType>
+			<damageType>POISON</damageType>
+		</availableDamageTypes>
+		
+		<spells/>
+		
+		<enchantmentLimit>25</enchantmentLimit>
+		
+		<effects> 
+              <effect itemEffectType="CLOTHING" limit="0" potency="MAJOR_BOOST" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="CRITICAL_CHANCE" timer="0"/>
+              <effect itemEffectType="CLOTHING" limit="0" potency="MAJOR_BOOST" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="CRITICAL_CHANCE" timer="0"/>
+              <effect itemEffectType="CLOTHING" limit="0" potency="MAJOR_BOOST" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="CRITICAL_CHANCE" timer="0"/>
+              <effect itemEffectType="CLOTHING" limit="0" potency="MAJOR_BOOST" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="CRITICAL_CHANCE" timer="0"/>
+              <effect itemEffectType="CLOTHING" limit="0" potency="MAJOR_BOOST" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="CRITICAL_CHANCE" timer="0"/>
+              <effect itemEffectType="CLOTHING" limit="0" potency="MAJOR_BOOST" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="CRITICAL_CHANCE" timer="0"/>
+              <effect itemEffectType="CLOTHING" limit="0" potency="MAJOR_BOOST" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="CRITICAL_CHANCE" timer="0"/>
+              <effect itemEffectType="CLOTHING" limit="0" potency="MAJOR_BOOST" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="CRITICAL_CHANCE" timer="0"/>
+		</effects>
+		
+		<primaryColours>
+			<colour>CLOTHING_COPPER</colour>
+		</primaryColours> 
+		<primaryColoursDye values="ALL_WITH_METALS"/>
+		<secondaryColours> 
+			<colour>CLOTHING_GOLD</colour>
+		</secondaryColours> 
+		<secondaryColoursDye values="ALL_METAL"/>
+		
+		<itemTags> 
+			<tag>SOLD_BY_VICKY</tag>
+			<tag>WEAPON_BLADE</tag>
+		</itemTags>
+		
+	</coreAttributes>
+	
+	<hitDescriptions>
+		<hitText><![CDATA[
+		[npc.Name] [npc.verb(prime)] [npc.her] blade before slicing [npc2.name], the sword passing through [npc2.her] body while expelling its element and heating to its bright molten orange phase. The heavy whiriling of the gears slow to a hum before the cartridge unlocks.
+		]]></hitText>
+		<hitText><![CDATA[
+		[npc.Name] [npc.verb(cleave)] [npc.her] blade through [npc2.Name]'s chest causing the Peace-Maker to expel its elemental charge before the blade heats to a molten orange. The blade's gears slow to a soft hum before the cartridge unlocks.
+		]]></hitText>
+		<hitText><![CDATA[
+		With an swift step forwards,[npc.Name] [npc.verb(thrust)] the blade through [npc2.name] piercing [npc2.her] diffusing the blade's elemental charge. As the blade finishes its initial burst it flairs into its usual molten orange. The blade's gears slow to a dull whir before its cartridge unlocks.
+		]]></hitText>
+	</hitDescriptions>
+
+	<!-- Descriptions that are used when missing an enemy. One of the missText values will be randomly selected each time the attacker misses their target. Follow the same guidelines as equipText. -->
+	<missDescriptions>
+		<missText><![CDATA[
+		[npc.Name] [npc.verb(prime)] [npc.her] blade before slicing at [npc2.name], The blade discharges early turning the blade molten orange before missing completely. The gears whir to almost a stop before the cartridge unlocks.
+		]]></missText>
+		<missText><![CDATA[
+		[npc.Name] [npc.verb(cleave)] [npc.her] blade at [npc2.Name], but [npc.verb(miss)] [npc2.her] narrowly, not long after the blade super heats and the cartridge unlocks.
+		]]></missText>
+		<missText><![CDATA[
+		[npc.Name] [npc.verb(thrust)] [npc.her] sword at [npc2.name], but [npc.verb(lose)] [npc.her] balance, [npc.her] strike falling well short of [npc.her] target, [Npc2.name]. The blade glows into a molten orange before slowing its hum and unlocking its cartridge.
+		]]></missText>
+	</missDescriptions>
+	
+</weapon>

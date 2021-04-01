@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<clothing>
+	<coreAttributes>
+		<authorTag><![CDATA[A tag discreetly sewn into the veil's inner lining informs you that it was made by 'SectoniaServant'.]]></authorTag>
+		<value>180</value>
+		<determiner><![CDATA[a]]></determiner>
+		<name><![CDATA[Gerudo veil]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Gerudo veils]]></namePlural>
+		<description><![CDATA[A veil and hood that seems to come from a special race called the Gerudo. It's meant for vai. It's designed to provide protection against the desert heat.]]></description>
+		<physicalResistance>0</physicalResistance>
+		<femininity>FEMININE</femininity>
+		<slot>HEAD</slot>
+		<rarity>UNCOMMON</rarity>
+		<clothingSet/>
+		<imageName>gerudo_veil.svg</imageName>
+		<imageEquippedName/>
+		<enchantmentLimit/>
+		<effects>
+			<effect itemEffectType="CLOTHING" limit="0" potency="MAJOR_BOOST" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="DAMAGE_LUST" timer="0" />
+			<effect itemEffectType="CLOTHING" limit="0" potency="MAJOR_BOOST" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="DAMAGE_LUST" timer="0" />
+			<effect itemEffectType="CLOTHING" limit="0" potency="MINOR_BOOST" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="RESISTANCE_FIRE" timer="0" />
+		</effects>
+		<blockedPartsList>
+			<blockedParts>
+				<displacementType>REMOVE_OR_EQUIP</displacementType>
+				<clothingAccessRequired>
+					<clothingAccess>HEAD</clothingAccess>
+				</clothingAccessRequired>
+				<blockedBodyParts/>
+				<clothingAccessBlocked/>
+				<concealedSlots/>
+			</blockedParts>
+			<blockedParts>
+				<displacementType>PULLS_DOWN</displacementType>
+				<clothingAccessRequired/>
+				<blockedBodyParts>
+					<bodyPart>MOUTH</bodyPart>
+				</blockedBodyParts>
+				<clothingAccessBlocked>
+					<clothingAccess>MOUTH</clothingAccess>
+				</clothingAccessBlocked>
+				<concealedSlots>
+					<slot>MOUTH</slot>
+				</concealedSlots>
+			</blockedParts>
+		</blockedPartsList>
+		<incompatibleSlots/>
+		<primaryColours>
+			 <colour>CLOTHING_BLUE_LIGHT</colour>
+		</primaryColours>
+		<primaryColoursDye>
+			<colour>CLOTHING_WHITE</colour>
+			<colour>CLOTHING_BLACK</colour>
+			<colour>CLOTHING_GREY</colour>
+			<colour>CLOTHING_RED</colour>
+			<colour>CLOTHING_RED_DARK</colour>
+			<colour>CLOTHING_BROWN</colour>
+			<colour>CLOTHING_GREEN</colour>
+			<colour>CLOTHING_PURPLE</colour>
+			<colour>CLOTHING_YELLOW</colour>
+			<colour>CLOTHING_BLUE</colour>
+			<colour>CLOTHING_BLUE_LIGHT</colour>
+			<colour>CLOTHING_BLUE_DARK</colour>
+			<colour>CLOTHING_PINK</colour>
+			<colour>CLOTHING_TAN</colour>
+			<colour>CLOTHING_ORANGE</colour>
+		</primaryColoursDye>
+		<secondaryColours values="JUST_WHITE"/>
+		<secondaryColourDye values="ALL"/>
+		<tertiaryColours values="JUST_BLACK"/>
+		<tertiaryColoursDye values="ALL"/>
+		<itemTags>
+			<tag>SOLD_BY_NYAN</tag>
+			<tag>DOMINION_ALLEYWAY_SPAWN</tag>
+		</itemTags>
+	</coreAttributes>
+	
+	<displacementText type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[
+			You take off your veil and hood.
+		]]></playerSelf>
+		<playerNPC><![CDATA[
+			You pull off [npc.name]'s veil and hood.
+		]]></playerNPC>
+		<playerNPCRough><![CDATA[
+			You grab [npc.name]'s veil and hood and roughly pulls it off [npc.her] head.
+		]]></playerNPCRough>
+		<NPCSelf><![CDATA[
+			[npc.Name] takes [npc.her] veil and hood off.
+		]]></NPCSelf>
+		<NPCPlayer><![CDATA[
+			[npc.Name] pulls your veil and hood off.
+		]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[
+			[npc.Name] grabs hold of your veil and hood and roughly pulls it off your head.
+		]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[
+			[npc1.Name] pulls [npc2.name]'s veil and hood off.
+		]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[
+			[npc1.Name] grabs hold of [npc2.name]'s veil and hood and roughly pulls it off [npc2.her] head.
+		]]></NPCOtherNPCRough>
+	</displacementText>
+	
+	<replacementText type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[
+			You pull on the veil and hood.
+		]]></playerSelf>
+		<playerNPC><![CDATA[
+			You guide [npc.name]'s head into the veil and hood.
+		]]></playerNPC>
+		<playerNPCRough><![CDATA[
+			You hold [npc.name] still as you roughly force the veil and hood onto [npc.her] head.
+		]]></playerNPCRough>
+		<NPCSelf><![CDATA[
+			[npc.Name] pulls on the veil and hood.
+		]]></NPCSelf>
+		<NPCPlayer><![CDATA[
+			[npc.Name] guides your head into the veil and hood.
+		]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[
+			[npc.Name] holds you still as [npc.she] roughly forces the veil and hood onto your head.
+		]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[
+			[npc1.Name] guides [npc2.name]'s head onto the veil and hood.
+		]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[
+			[npc1.Name] holds [npc2.name] still as [npc1.she] roughly forces the veil and hood onto [npc2.her] head.
+		]]></NPCOtherNPCRough>
+	</replacementText>
+	
+	<displacementText type="PULLS_DOWN">
+		<playerSelf><![CDATA[
+			You pull your veil down to just below your chin.
+		]]></playerSelf>
+		<playerNPC><![CDATA[
+			You pull down [npc.name]'s veil.
+		]]></playerNPC>
+		<playerNPCRough><![CDATA[
+			You roughly yank down [npc.name]'s veil.
+		]]></playerNPCRough>
+		<NPCSelf><![CDATA[
+			[npc.Name] pulls [npc.her] veil down to just below [npc.her] chin.
+		]]></NPCSelf>
+		<NPCPlayer><![CDATA[
+			[npc.Name] pulls down your veil.
+		]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[
+			[npc.Name] roughly yanks down your veil.
+		]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[
+			[npc1.Name] pulls down [npc2.name]'s veil.
+		]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[
+			[npc1.Name] roughly yanks down [npc2.name]'s veil.
+		]]></NPCOtherNPCRough>
+	</displacementText>
+	
+	<replacementText type="PULLS_UP">
+		<playerSelf><![CDATA[
+			You pull your veil back up, covering your mouth.
+		]]></playerSelf>
+		<playerNPC><![CDATA[
+			You pull up [npc.name]'s veil.
+		]]></playerNPC>
+		<playerNPCRough><![CDATA[
+			You roughly yank up [npc.name]'s veil.
+		]]></playerNPCRough>
+		<NPCSelf><![CDATA[
+			[npc.Name] pulls [npc.her] veil back up to cover [npc.her] mouth.
+		]]></NPCSelf>
+		<NPCPlayer><![CDATA[
+			[npc.Name] pulls up your veil.
+		]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[
+			[npc.Name] roughly yanks up your veil.
+		]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[
+			[npc1.Name] pulls up [npc2.name]'s veil.
+		]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[
+			[npc1.Name] roughly yanks up [npc2.name]'s veil.
+		]]></NPCOtherNPCRough>
+	</replacementText>
+
+</clothing>

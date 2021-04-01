@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<clothing>
+	<coreAttributes>
+		<authorTag><![CDATA[Delicately etched into the back of one of the studs reads "Lovingly Crafted by Troop #P01-Y"]]></authorTag>
+		<value>99000</value>
+		<determiner><![CDATA[a set of]]></determiner>
+		<name><![CDATA[Light Pyroxine Earrings]]></name>
+		<namePlural pluralByDefault="true"><![CDATA[Light Pyroxine Earrings]]></namePlural>
+		<description><![CDATA[A set of earrings made of Pyroxine. A rare type of emerald that develops deep under ground. Earrings like these are a favorite of the Nobles of tharsis and the world over, a display of wealth like this are for the type of folk who can afford not to fight their own battles.]]></description>
+		<physicalResistance>1</physicalResistance>
+		<femininity>ANDROGYNOUS</femininity>
+		<slot>PIERCING_EAR</slot> 
+		<rarity>EPIC</rarity>
+		<clothingSet/> 
+		<imageName>Light_Pyroxine_Earrings.svg</imageName>
+		<imageEquippedName/>
+		<enchantmentLimit/>
+		<effects> 
+              <effect itemEffectType="CLOTHING" limit="0" potency="MAJOR_BOOST" primaryModifier="CLOTHING_MAJOR_ATTRIBUTE" secondaryModifier="INTELLIGENCE" timer="0"/>
+		</effects>
+		
+		<blockedPartsList>
+			<blockedParts>
+				<displacementType>REMOVE_OR_EQUIP</displacementType> 
+				<clothingAccessRequired/>
+				<blockedBodyParts/>
+				<clothingAccessBlocked/>
+				<concealedSlots/>
+			</blockedParts>
+		</blockedPartsList>
+		
+		<incompatibleSlots/>
+
+    <primaryColours>
+      <colour>CLOTHING_GOLD</colour>
+    </primaryColours> 
+		<primaryColoursDye values="ALL_WITH_METALS"/>
+    <secondaryColours>
+      <colour>CLOTHING_GREEN</colour>
+    </secondaryColours>
+		<secondaryColoursDye values ="ALL"/>
+    <tertiaryColours/>
+    <tertiaryColoursDye/>
+		
+		<itemTags> 
+			<tag>SOLD_BY_KATE</tag>
+		</itemTags>
+	</coreAttributes>
+
+  <replacementText type="REMOVE_OR_EQUIP">
+    <self>
+      <![CDATA[[npc.Name] [npc.verb(clip)] the earrings to [npc.her] [npc.ears].]]>
+    </self>
+    <other>
+      <![CDATA[[npc.Name] [npc.verb(clip)] the earrings to [npc2.namePos] [npc2.ears].]]>
+    </other>
+    <otherRough>
+      <![CDATA[[npc.Name] roughly [npc.verb(clip)] the earrings to [npc2.namePos] [npc2.ears].]]>
+    </otherRough>
+  </replacementText>
+
+  <displacementText type="REMOVE_OR_EQUIP">
+    <self>
+      <![CDATA[[npc.Name] [npc.verb(unclip)] [npc.her] earrings and [npc.verb(put)] them away.]]>
+    </self>
+    <other>
+      <![CDATA[[npc.Name] [npc.verb(unclip)] [npc2.namePos] earrings and [npc.verb(put)] them away.]]>
+    </other>
+    <otherRough>
+      <![CDATA[[npc.Name] [npc.verb(unclip)] [npc2.namePos] earrings and quickly [npc.verb(put)] them away.]]>
+    </otherRough>
+  </displacementText>
+	
+</clothing>

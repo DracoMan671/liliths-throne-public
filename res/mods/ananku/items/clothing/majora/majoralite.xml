@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<clothing>
+  <coreAttributes>
+  <authorTag><![CDATA[An ancient glyph discreetly etched on the inner lip of the mask informs you that it was made by a certain "ananku".]]></authorTag>
+    <value>32000</value>
+    <determiner><![CDATA[a]]></determiner>
+    <name><![CDATA[hexing mask]]></name>
+    <namePlural pluralByDefault="false"><![CDATA[hexing masks]]></namePlural>
+    <description><![CDATA[An accursed item that is said to have been used in ancient hexing rituals. According to legend... the troubles caused by this mask were so great... the ancient ones, fearing such catastrophe, sealed the mask in shadow forever, preventing its misuse.]]></description>
+    <physicalResistance>1.0</physicalResistance>
+    <femininity>ANDROGYNOUS</femininity>
+    <slot>EYES</slot>
+    <rarity>LEGENDARY</rarity>
+    <clothingSet/>
+    <imageName>majora.svg</imageName>
+    <imageEquippedName/>
+    <enchantmentLimit/>
+    <effects>
+      <effect itemEffectType="CLOTHING" limit="0" potency="DRAIN" primaryModifier="CLOTHING_SPECIAL" secondaryModifier="CLOTHING_SEALING" timer="0"/>
+      <effect itemEffectType="CLOTHING" limit="0" potency="MAJOR_BOOST" primaryModifier="TF_MOD_FETISH_BEHAVIOUR" secondaryModifier="TF_MOD_FETISH_TRANSFORMATION_GIVING" timer="0"/>
+      <effect itemEffectType="CLOTHING" limit="0" potency="BOOST" primaryModifier="TF_MOD_FETISH_BEHAVIOUR" secondaryModifier="TF_MOD_FETISH_NON_CON_DOM" timer="0"/>
+      <effect itemEffectType="CLOTHING" limit="0" potency="BOOST" primaryModifier="TF_MOD_FETISH_BEHAVIOUR" secondaryModifier="TF_MOD_FETISH_SADIST" timer="0"/>
+      <effect itemEffectType="CLOTHING" limit="0" potency="BOOST" primaryModifier="TF_MOD_FETISH_BEHAVIOUR" secondaryModifier="TF_MOD_FETISH_KINK_GIVING" timer="0"/>
+      <effect itemEffectType="CLOTHING" limit="0" potency="DRAIN" primaryModifier="TF_MOD_FETISH_BEHAVIOUR" secondaryModifier="TF_MOD_FETISH_SUBMISSIVE" timer="0"/>
+    </effects>    
+    <blockedPartsList>
+      <blockedParts>
+        <displacementType>REMOVE_OR_EQUIP</displacementType>
+        <clothingAccessRequired>
+          <clothingAccess>EYES</clothingAccess>
+        </clothingAccessRequired>
+        <blockedBodyParts/>
+        <clothingAccessBlocked/>
+        <concealedSlots/>
+      </blockedParts>  		
+  		
+			<blockedParts>
+				<displacementType>PULLS_UP</displacementType>
+				<clothingAccessRequired>
+					<clothingAccess>MOUTH</clothingAccess>
+				</clothingAccessRequired>
+				<blockedBodyParts>
+					<bodyPart>MOUTH</bodyPart>
+				</blockedBodyParts>
+				<clothingAccessBlocked>
+					<clothingAccess>MOUTH</clothingAccess>
+				</clothingAccessBlocked>
+				<concealedSlots>
+					<slot>PIERCING_TONGUE</slot>
+					<slot>PIERCING_LIP</slot>
+				</concealedSlots>
+			</blockedParts>
+		</blockedPartsList>
+    
+    <incompatibleSlots/>
+    
+    <primaryColours values="DARK_SHADES"/>
+    <primaryColoursDye values="ALL_WITH_METALS"/>
+    <secondaryColours values="LINGERIE"/>
+    <secondaryColoursDye values="ALL_WITH_METALS"/>
+    <tertiaryColours>
+			<colour>CLOTHING_GREEN_LIME</colour>
+			<colour>CLOTHING_GOLD</colour>
+			<colour>CLOTHING_YELLOW</colour>
+			<colour>CLOTHING_BRASS</colour>
+			<colour>CLOTHING_KHAKI</colour>
+			<colour>CLOTHING_TAN</colour>
+    </tertiaryColours>
+    <tertiaryColoursDye values="ALL_WITH_METALS"/>
+  
+    <itemTags> 
+      <tag>SOLD_BY_VICKY</tag>
+      <tag>RIGID_MATERIAL</tag>
+    </itemTags>
+  </coreAttributes>
+  
+	<replacementText type="PULLS_UP">
+		<self>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] [npc.her] mask back down over [npc.her] whole [npc.face].]]>
+		</self>
+		<other>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] [npc2.namePos] mask back down over [npc2.her] [npc2.face].]]>
+		</other>
+		<otherRough>
+		  <![CDATA[[npc.Name] roughly [npc.verb(pull)] [npc2.namePos] mask back down over [npc2.her] [npc2.face].]]>
+	  </otherRough>
+	</replacementText>
+
+	<displacementText type="PULLS_UP">
+		<self>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] [npc.her] mask up onto [npc.her] forehead, revealing [npc.her] [npc.mouth].]]>
+		</self>
+		<other>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] [npc2.namePos] mask up onto [npc2.her] forehead, revealing [npc.her] [npc.mouth].]]>
+		</other>
+		<otherRough>
+		  <![CDATA[[npc.Name] [npc.verb(grab)] hold [npc2.namePos] mask and roughly [npc.verb(pull)] them up onto [npc2.her] forehead, revealing [npc.her] [npc.mouth].]]]>
+		</otherRough>
+	</displacementText>
+</clothing>

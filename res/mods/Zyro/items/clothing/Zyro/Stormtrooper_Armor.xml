@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!-- A fan-made mod for Innoxia's Lilith's Throne. Feel free to edit these files however you want, same goes for the svg's. Thanks to Innoxia for making Lilith's Throne, it's great. //Zyro-->
+<clothing>
+  <coreAtributes>
+    <value>2000</value>
+    <determiner>a</determiner>
+    <name>Stormtrooper Armor</name>
+    <namePlural pluralByDefault="false"><![CDATA[Stormtrooper Armors]]></namePlural>
+    <description>A standard Stormtrooper Armor, shiny!</description>
+    <physicalResistance>2</physicalResistance>
+    <femininity>ANDROGYNOUS</femininity>
+    <slot>TORSO_OVER</slot>
+    <rarity>UNCOMMON</rarity>
+    <clothingSet />
+    <imageName>Stormtrooper_Armor.svg</imageName>
+    <imageEquippedName />
+    <enchantmentLimit />
+    <effects>5</effects>
+<blockedPartsList>
+      <blockedParts>
+        <displacementType>REMOVE_OR_EQUIP</displacementType>
+        <clothingAccessRequired>
+          <clothingAccess>ARMS_UP_TO_SHOULDER</clothingAccess>
+		</clothingAccessRequired>
+		<blockedBodyParts>
+          <bodyPart>NIPPLES</bodyPart>
+          <bodyPart>STOMACH</bodyPart>
+          <bodyPart>BACK</bodyPart>
+          <bodyPart>VAGINA</bodyPart>
+          <bodyPart>PENIS</bodyPart>
+          <bodyPart>ANUS</bodyPart>
+        </blockedBodyParts>
+        <clothingAccessBlocked />
+        <concealedSlots />
+      </blockedParts>
+      <blockedParts>
+        <displacementType>SHIFTS_ASIDE</displacementType>
+        <clothingAccessRequired />
+		<blockedBodyParts />
+        <clothingAccessBlocked>
+          <clothingAccess>CHEST</clothingAccess>
+        </clothingAccessBlocked>
+        <concealedSlots />
+      </blockedParts>
+    </blockedPartsList>
+    <incompatibleSlots />
+    <primaryColours values="JUST_WHITE" />
+    <primaryColoursDye values="ALL_WITH_METALS" />
+    <secondaryColours values="JUST_BLACK" />
+    <secondaryColoursDye values="ALL_WITH_METALS" />
+    <tertiaryColours values="JUST_WHITE" />
+    <tertiaryColoursDye values="ALL_WITH_METALS" />
+    <itemTags>
+      <tag>SOLD_BY_NYAN</tag>
+    </itemTags>
+  </coreAtributes>
+  <displacementText type="REMOVE_OR_EQUIP">
+    <playerSelf>
+			You take off the Stormtrooper Armor.
+		</playerSelf>
+    <playerNPC>
+			You remove [npc.name]'s Stormtrooper Armor.
+		</playerNPC>
+    <playerNPCRough>
+			You grab hold of [npc.name]'s Stormtrooper Armor and start to tear it apart piece by piece.
+		</playerNPCRough>
+    <NPCSelf>
+			[npc.Name] takes off [npc.her] Stormtrooper Armor.
+		</NPCSelf>
+    <NPCPlayer>
+			[npc.Name] takes off your Stormtrooper Armor.
+		</NPCPlayer>
+    <NPCPlayerRough>
+			[npc.Name] grabs hold of your Stormtrooper Armor and starts to tear it apart piece by piece.
+		</NPCPlayerRough>
+    <NPCOtherNPC>
+			[npc1.Name] takes off [npc2.name]'s Stormtrooper Armor.
+		</NPCOtherNPC>
+    <NPCOtherNPCRough>
+			[npc.Name] grabs hold of [npc2.name]'s Stormtrooper Armor starts to tear it apart piece by piece.
+		</NPCOtherNPCRough>
+  </displacementText>
+  <replacementText type="REMOVE_OR_EQUIP">
+    <playerSelf>
+			You put on the Stormtrooper Armor.
+		</playerSelf>
+    <playerNPC>
+			You put the Stormtrooper Armor on [npc.name]'s body.
+		</playerNPC>
+    <playerNPCRough>
+			You hold [npc.name] still as you roughly force the Stormtrooper Armor onto [npc.her] body.
+		</playerNPCRough>
+    <NPCSelf>
+			[npc.Name] puts on the Stormtrooper Armor.
+		</NPCSelf>
+    <NPCPlayer>
+			[npc.Name] equips you with the Stormtrooper Armor.
+		</NPCPlayer>
+    <NPCPlayerRough>
+			[npc.Name] holds you still as [npc.she] roughly forces the Stormtrooper Armor onto your body.
+		</NPCPlayerRough>
+    <NPCOtherNPC>
+			[npc1.Name] equips the Stormtrooper Armor on [npc2.name].
+		</NPCOtherNPC>
+    <NPCOtherNPCRough>
+			[npc1.Name] holds [npc2.name] still as [npc1.she] roughly forces the Stormtrooper Armor onto [npc2.name]'s body.
+		</NPCOtherNPCRough>
+  </replacementText>
+  <displacementText type="SHIFTS_ASIDE">
+    <playerSelf>
+			You shift the Stormtrooper Armor to the side.
+		</playerSelf>
+    <playerNPC>
+			You shift [npc.name]'s Stormtrooper Armor to the side.
+		</playerNPC>
+    <playerNPCRough>
+			You grab hold of [npc.name] and start to tear off the pieces of [npc.her] Stormtrooper Armor.
+		</playerNPCRough>
+    <NPCSelf>
+			[npc.Name] shifts [npc.her] Stormtrooper Armor to the side.
+		</NPCSelf>
+    <NPCPlayer>
+			[npc.Name] shifts your Stormtrooper Armor to the side.
+		</NPCPlayer>
+    <NPCPlayerRough>
+			[npc.Name] grabs hold of you and starts to tear off the pieces of your Stormtrooper Armor.
+		</NPCPlayerRough>
+    <NPCOtherNPC>
+			[npc1.Name] shifts [npc2.name]'s Stormtrooper Armor to the side.
+		</NPCOtherNPC>
+    <NPCOtherNPCRough>
+			[npc1.Name] grabs hold of [npc2.name] and starts to tear off the pieces of [npc2.her]'s Stormtrooper Armor.
+		</NPCOtherNPCRough>
+  </displacementText>
+  <replacementText type="SHIFTS_ASIDE">
+    <playerSelf>
+			You shift your Stormtrooper Armor back into place.
+		</playerSelf>
+    <playerNPC>
+			You shift [npc.name]'s Stormtrooper Armor back into place.
+		</playerNPC>
+    <playerNPCRough>
+			You hold [npc.name] still as you shift back [npc.her] Stormtrooper Armor into place.
+		</playerNPCRough>
+    <NPCSelf>
+			[npc.Name] shifts [npc.her] Stormtrooper Armor back into place.
+		</NPCSelf>
+    <NPCPlayer>
+			[npc.Name] shifts back your Stormtrooper Armor into place.
+		</NPCPlayer>
+    <NPCPlayerRough>
+			[npc.Name] holds you still as [npc.she] shifts back your Stormtrooper Armor into place.
+		</NPCPlayerRough>
+    <NPCOtherNPC>
+			[npc1.Name] shifts [npc2.name]'s Stormtrooper Armor back into place.
+		</NPCOtherNPC>
+    <NPCOtherNPCRough>
+			[npc1.Name] grabs hold [npc2.name] and starts to shift back [npc2.her] Stormtrooper Armor back into place.
+		</NPCOtherNPCRough>
+  </replacementText>
+</clothing>

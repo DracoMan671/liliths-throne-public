@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<hair>
+	<race>keelah_naga</race>
+
+	<transformationName><![CDATA[naga]]></transformationName>
+
+	<coveringType>keelah_naga_hair</coveringType>
+
+	<tags>
+		<tag>HAIR_HANDLES_IN_SEX</tag>
+	</tags>
+
+	<determiner><![CDATA[a]]></determiner>
+
+	<name><![CDATA[cowl]]></name>
+
+	<namePlural pluralByDefault="false"><![CDATA[cowls]]></namePlural> 
+
+	<descriptorsMasculine/>
+	<descriptorsFeminine/>
+
+	<transformationDescription><![CDATA[
+		The transformation only lasts a matter of moments, leaving [npc.herHim] with a big cowl behind [npc.herHim] head.
+		<br/>[npc.Name] now [npc.has] [npc.hairColour] [style.boldHyena(scaly cowl)].
+	]]></transformationDescription>
+
+	<bodyDescription><![CDATA[
+		[npc.SheHasFull] [npc.hairDeterminer] [npc.hairLength], [npc.hairColour(true)] cowl
+	]]></bodyDescription>
+</hair>

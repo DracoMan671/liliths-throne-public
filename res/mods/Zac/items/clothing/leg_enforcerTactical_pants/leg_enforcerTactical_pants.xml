@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<clothing>
+	<coreAtributes>
+		<value>2000</value> 
+		<determiner><![CDATA[a]]></determiner>
+		<name><![CDATA[Enforcer Pants]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Enforcer Pants]]></namePlural> 
+		<description><![CDATA[A pair of tactical pants used by Enforcers]]></description> 
+		<physicalResistance>1</physicalResistance> 
+		<femininity>ANDROGYNOUS</femininity> 
+		<slot>LEG</slot> 
+		<rarity>RARE</rarity> 
+		<clothingSet>ENFORCER</clothingSet>
+		<imageName>leg_enforcerTactical_pants.svg</imageName> 
+		<imageEquippedName/> 
+		<enchantmentLimit/>
+		<effects/> 
+		<blockedPartsList> 
+			<blockedParts>
+				<displacementType>REMOVE_OR_EQUIP</displacementType> 
+				<clothingAccessRequired>
+					<clothingAccess>LEGS_UP_TO_GROIN</clothingAccess>				
+				</clothingAccessRequired>	
+				<blockedBodyParts>
+				</blockedBodyParts>
+				<clothingAccessBlocked/>
+				<concealedSlots>
+				</concealedSlots>
+			</blockedParts>
+			<blockedParts>
+				<displacementType>UNZIPS</displacementType>
+				<clothingAccessRequired/>
+				<blockedBodyParts>
+					<bodyPart>VAGINA</bodyPart>
+					<bodyPart>PENIS</bodyPart>
+				</blockedBodyParts>
+				<clothingAccessBlocked>
+					<clothingAccess>GROIN</clothingAccess>
+				</clothingAccessBlocked>
+				<concealedSlots>
+					<slot>GROIN</slot>
+					<slot>PENIS</slot>
+					<slot>VAGINA</slot>
+					<slot>PIERCING_PENIS</slot>
+					<slot>PIERCING_VAGINA</slot>
+				</concealedSlots>
+			</blockedParts>
+			<blockedParts>
+				<displacementType>PULLS_DOWN</displacementType>
+				<clothingAccessRequired/>
+				<blockedBodyParts>
+					<bodyPart>VAGINA</bodyPart>
+					<bodyPart>PENIS</bodyPart>
+					<bodyPart>ANUS</bodyPart>
+				</blockedBodyParts>
+				<clothingAccessBlocked>
+					<clothingAccess>GROIN</clothingAccess>
+				</clothingAccessBlocked>
+				<concealedSlots>
+					<slot>GROIN</slot>
+					<slot>PENIS</slot>
+					<slot>VAGINA</slot>
+					<slot>PIERCING_PENIS</slot>
+					<slot>PIERCING_VAGINA</slot>
+				</concealedSlots>
+			</blockedParts>
+		</blockedPartsList>
+		<incompatibleSlots/>
+		<primaryColours values="DENIM"/>
+		<primaryColoursDye values="ALL"/>
+		<secondaryColours values="NONE"/>
+		<secondaryColoursDye values="NONE"/>
+		<tertiaryColours values="NONE"/>
+		<tertiaryColoursDye values="NONE"/>
+		<itemTags> 
+			<tag>SOLD_BY_NYAN</tag>
+			<tag>DOMINION_ALLEYWAY_SPAWN</tag>
+		</itemTags>
+	</coreAtributes>
+
+	<displacementText type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[
+			You take off your leg armor.
+		]]></playerSelf>
+		<playerNPC><![CDATA[
+			You pull off [npc.name]'s leg armor.
+		]]></playerNPC>
+		<playerNPCRough><![CDATA[
+			You grab hold of [npc.name]'s leg armor and roughly pull it off [npc.her] legs.
+		]]></playerNPCRough>
+		<NPCSelf><![CDATA[
+			[npc.Name] takes [npc.her] leg armor off.
+		]]></NPCSelf>
+		<NPCPlayer><![CDATA[
+			[npc.Name] pulls your leg armor off.
+		]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[
+			[npc.Name] grabs hold of your leg armor and roughly pulls it off your legs.
+		]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[
+			[npc1.Name] pulls [npc2.name]'s leg armor off.
+		]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[
+			[npc.Name] grabs hold of [npc2.name]'s armor and roughly pulls it off [npc2.her] legs.
+		]]></NPCOtherNPCRough>
+	</displacementText>
+	<replacementText type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[
+			You put on your leg armor.
+		]]></playerSelf>
+		<playerNPC><![CDATA[
+			You guide [npc.name]'s [npc.legs] through their armor as you pull it onto [npc.herHim].
+		]]></playerNPC>
+		<playerNPCRough><![CDATA[
+			You hold [npc.name] still as you roughly pull up [npc.her] pants, before securing the cuisse onto [npc.her] legs.
+		]]></playerNPCRough>
+		<NPCSelf><![CDATA[
+			[npc.Name] puts on their leg armor.
+		]]></NPCSelf>
+		<NPCPlayer><![CDATA[
+			[npc.Name] guides your [pc.legs] through your pants, before securing the cuisse.
+		]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[
+			[npc.Name] holds you still as [npc.she] roughly forces on your pants, before restapping the metal cuisse tightly.
+		]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[
+			[npc1.Name] guides [npc2.name]'s [npc2.legs] through their pants before securing the cuisse onto [npc2.her] legs.
+		]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[
+			[npc1.Name] holds [npc2.name] still as [npc1.she] roughly pull up [npc2.her] pants, before securing the cuisse onto [npc2.her] legs.
+		]]></NPCOtherNPCRough>
+	</replacementText>
+	<displacementText type="UNZIP">
+		<playerSelf><![CDATA[
+			You unzip your enforcer pants.
+		]]></playerSelf>
+		<playerNPC><![CDATA[
+			You unzip [npc.name]'s enforcer pants.
+		]]></playerNPC>
+		<playerNPCRough><![CDATA[
+			You grab hold of [npc.name] and roughly unzip [npc.her] enforcer pants.
+		]]></playerNPCRough>
+		<NPCSelf><![CDATA[
+			[npc.Name] unzips [npc.her] enforcer pants.
+		]]></NPCSelf>
+		<NPCPlayer><![CDATA[
+			[npc.Name] unzips your enforcer pants.
+		]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[
+			[npc.Name] grabs hold of you and roughly unzip your enforcer pants.
+		]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[
+			[npc1.Name] unzips [npc2.name]'s enforcer pants.
+		]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[
+			[npc.Name] grabs hold of [npc2.name] and roughly unzip [npc2.her] enforcer pants.
+		]]></NPCOtherNPCRough>
+	</displacementText>
+	<replacementText type="ZIP_UP">
+		<playerSelf><![CDATA[
+			You zip up your enforcer pants.
+		]]></playerSelf>
+		<playerNPC><![CDATA[
+			You zip up [npc.name]'s enforcer pants.
+		]]></playerNPC>
+		<playerNPCRough><![CDATA[
+			You grab hold of [npc.name] and roughly zip up [npc.her] enforcer pants.
+		]]></playerNPCRough>
+		<NPCSelf><![CDATA[
+			[npc.Name] zips up [npc.her] enforcer pants.
+		]]></NPCSelf>
+		<NPCPlayer><![CDATA[
+			[npc.Name] zip up your enforcer pants.
+		]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[
+			[npc.Name] grabs hold of you and roughly zips up your enforcer pants.
+		]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[
+			[npc1.Name] zips up [npc2.name]'s enforcer pants.
+		]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[
+			[npc.Name] grabs hold of [npc2.name] and roughly zips up [npc2.her] enforcer pants.
+		]]></NPCOtherNPCRough>
+	</replacementText>	
+	<displacementText type="PULLS_DOWN">
+		<playerSelf><![CDATA[
+			You pull down your enforcer pants.
+		]]></playerSelf>
+		<playerNPC><![CDATA[
+			You pull down [npc.name]'s enforcer pants.
+		]]></playerNPC>
+		<playerNPCRough><![CDATA[
+			You grab hold of [npc.name] and roughly pull down [npc.her] enforcer pants.
+		]]></playerNPCRough>
+		<NPCSelf><![CDATA[
+			[npc.Name] pulls down [npc.her] enforcer pants.
+		]]></NPCSelf>
+		<NPCPlayer><![CDATA[
+			[npc.Name] pulls down your enforcer pants.
+		]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[
+			[npc.Name] grabs hold of you and roughly pulls down your enforcer pants.
+		]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[
+			[npc1.Name] pulls down [npc2.name]'s enforcer pants.
+		]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[
+			[npc.Name] grabs hold of [npc2.name] and roughly pulls down [npc2.her] enforcer pants.
+		]]></NPCOtherNPCRough>
+	</displacementText>
+	<replacementText type="PULLS_UP">
+		<playerSelf><![CDATA[
+			You pull up your enforcer pants.
+		]]></playerSelf>
+		<playerNPC><![CDATA[
+			You pull up [npc.name]'s enforcer pants.
+		]]></playerNPC>
+		<playerNPCRough><![CDATA[
+			You grab hold of [npc.name] and roughly pull up [npc.her] enforcer pants.
+		]]></playerNPCRough>
+		<NPCSelf><![CDATA[
+			[npc.Name] pulls up [npc.her] enforcer pants.
+		]]></NPCSelf>
+		<NPCPlayer><![CDATA[
+			[npc.Name] pulls up your enforcer pants.
+		]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[
+			[npc.Name] grabs hold of you and roughly pulls up your enforcer pants.
+		]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[
+			[npc1.Name] pulls up [npc2.name]'s enforcer pants.
+		]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[
+			[npc.Name] grabs hold of [npc2.name] and roughly pulls up [npc2.her] enforcer pants.
+		]]></NPCOtherNPCRough>
+	</replacementText>
+	
+</clothing>

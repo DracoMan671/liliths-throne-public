@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<clothing>
+	<coreAtributes>
+		<value>100</value>
+		<determiner><![CDATA[a pair of]]></determiner>
+		<name><![CDATA[piped sheer pantyhose]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[sheer pantyhoses]]></namePlural>
+		<description><![CDATA[A pair of piped sheer pantyhose that reach up to the wearer's lower abdomen.]]></description>
+		<physicalResistance>1</physicalResistance>
+		<femininity>FEMININE</femininity>
+		<slot>SOCK</slot>
+		<rarity>COMMON</rarity>
+		<clothingSet></clothingSet>
+		<imageName>sock_sheerpiped_tights.svg</imageName>
+		<imageEquippedName></imageEquippedName>
+		<enchantmentLimit></enchantmentLimit>
+		<effects />
+		<blockedPartsList>
+			<blockedParts>
+				<displacementType>REMOVE_OR_EQUIP</displacementType>
+				<clothingAccessRequired>
+					<clothingAccess>LEGS_UP_TO_GROIN</clothingAccess>
+					<clothingAccess>CALVES</clothingAccess>
+					<clothingAccess>FEET</clothingAccess>
+				</clothingAccessRequired>
+				<blockedBodyParts />
+				<clothingAccessBlocked>
+					<clothingAccess>LEGS_UP_TO_GROIN_LOW_LEVEL</clothingAccess>
+				</clothingAccessBlocked>
+				<concealedSlots />
+			</blockedParts>
+			<blockedParts>
+				<displacementType>PULLS_DOWN</displacementType>
+				<clothingAccessRequired>
+					<clothingAccess>GROIN</clothingAccess>
+				</clothingAccessRequired>
+				<blockedBodyParts />
+				<clothingAccessBlocked>
+					<clothingAccess>GROIN</clothingAccess>
+					<clothingAccess>ANUS</clothingAccess>
+				</clothingAccessBlocked>
+				<concealedSlots />
+			</blockedParts>
+		</blockedPartsList>
+		<incompatibleSlots />
+		<primaryColours values="ALL_WITH_METALS" />
+		<primaryColoursDye values="ALL_WITH_METALS" />
+		<secondaryColours values="ALL_WITH_METALS" />
+		<secondaryColoursDye values="ALL_WITH_METALS" />
+		<tertiaryColours values="" />
+		<tertiaryColoursDye values="" />
+		<itemTags>
+			<tag>SOLD_BY_NYAN</tag>
+		</itemTags>
+	</coreAtributes>
+	<displacementText type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[You pull your sheer pantyhose down and step out of them.]]></playerSelf>
+		<playerNPC><![CDATA[You pull [Npc.name]'s sheer pantyhose down and lift [npc.her] out of them.]]></playerNPC>
+		<playerNPCRough><![CDATA[You grab [Npc.name]'s sheer pantyhose and roughly pull them down and lift [npc.her] out of them.]]></playerNPCRough>
+		<NPCSelf><![CDATA[[Npc.name] pulls [npc.her] sheer pantyhose down and step out of them.]]></NPCSelf>
+		<NPCPlayer><![CDATA[[Npc.name] pulls your sheer pantyhose down and lifts you out of them.]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[[Npc.name] grabs your sheer pantyhose and roughly pulls them down and lifts you out of them.]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[[Npc1.name] pulls [Npc2.name]'s sheer pantyhose down and lifts [npc2.her] of them.]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[[Npc1.name] grabs [Npc2.name]'s sheer pantyhose and roughly pulls them down and lifts [npc2.her] out of them.]]></NPCOtherNPCRough>
+	</displacementText>
+	<replacementText type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[You step into your sheer pantyhose and pull them up.]]></playerSelf>
+		<playerNPC><![CDATA[You lift [Npc.name] into [npc.her] sheer pantyhose and pull them up.]]></playerNPC>
+		<playerNPCRough><![CDATA[You lift [Npc.name] into [npc.her] sheer pantyhose and roughly pull them up.]]></playerNPCRough>
+		<NPCSelf><![CDATA[[Npc.name] steps into [npc.her] sheer pantyhose and pulls them up.]]></NPCSelf>
+		<NPCPlayer><![CDATA[[Npc.name] lifts you into your sheer pantyhose and pulls them up.]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[[Npc.name] lifts you into your sheer pantyhose and roughly pulls them up.]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[[Npc1.name] lifts [Npc2.name] into [npc2.her] sheer pantyhose and pulls them up.]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[[Npc1.name] lifts [Npc2.name] into [npc2.her] sheer pantyhose and roughly pulls them up.]]></NPCOtherNPCRough>
+	</replacementText>
+	<displacementText type="PULLS_DOWN">
+		<playerSelf><![CDATA[You pull your sheer pantyhose down to your knees.]]></playerSelf>
+		<playerNPC><![CDATA[You pull [Npc.name]'s sheer pantyhose down to [npc.her] knees.]]></playerNPC>
+		<playerNPCRough><![CDATA[You grab [Npc.name]'s sheer pantyhose and roughly pull them down down to [npc.her] knees.]]></playerNPCRough>
+		<NPCSelf><![CDATA[[Npc.name] pulls [npc.her] sheer pantyhose down to [npc.her] knees.]]></NPCSelf>
+		<NPCPlayer><![CDATA[[Npc.name] pulls your sheer pantyhose down to your knees.]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[[Npc.name] roughly pulls your sheer pantyhose down to your knees.]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[[Npc1.name] pulls [Npc2.name]'s sheer pantyhose down to [npc2.her] knees.]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[[Npc1.name] roughly pulls [Npc2.name]'s sheer pantyhose down to [npc2.her] knees.]]></NPCOtherNPCRough>
+	</displacementText>
+	<replacementText type="PULLS_UP">
+		<playerSelf><![CDATA[You pull your sheer pantyhose back up to your waist.]]></playerSelf>
+		<playerNPC><![CDATA[You pull [Npc.name]'s sheer pantyhose back up to [npc.her] waist.]]></playerNPC>
+		<playerNPCRough><![CDATA[You roughly pull [Npc.name]'s sheer pantyhose back up to [npc.her] waist.]]></playerNPCRough>
+		<NPCSelf><![CDATA[[Npc.name] pulls [npc.her] sheer pantyhose back up to [npc.her] waist.]]></NPCSelf>
+		<NPCPlayer><![CDATA[[Npc.name] pulls your sheer pantyhose back up to your waist.]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[[Npc.name] roughly pulls your sheer pantyhose back up to your waist.]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[[Npc1.name] pulls [Npc2.name]'s sheer pantyhose back up to [npc2.her] waist.]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[[Npc1.name] roughly pulls [Npc2.name]'s sheer pantyhose back up to [npc2.her] waist.]]></NPCOtherNPCRough>
+	</replacementText>
+</clothing>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<bookText>
+	
+	<htmlContent tag="SYNTH_BASIC"><![CDATA[
+	<p>
+		Synthetic morphs are the product of an advancement in synthetic lifeform science, Prof. Ghostie figured out how to generate a synthetic arcane field by [REDACTED] with the [REDACTED].
+	</p>
+	]]>
+	</htmlContent>
+
+	<htmlContent tag="SYNTH_ADVANCED"><![CDATA[
+	<p>
+		Synthetic Life experiment #[DATA EXPUNGED], Adendum 3.54, The first case of a synthetic prototype, nicknamed 3MM4, Produced a subitle but not negligable case of being selfaware.
+	</p>
+	]]>
+	</htmlContent>
+	
+</bookText>

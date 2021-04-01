@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- For a version with comments, see "rental_mommy.xml". -->
+<clothing>
+	<coreAtributes>
+		<value>500</value>
+		<determiner><![CDATA[a]]></determiner>
+		<name><![CDATA[Breastplate]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Breastplates]]></namePlural>
+		<description><![CDATA[A breastplate with an arcane symbol on the chest for protection.]]></description>
+		<physicalResistance>5</physicalResistance>
+		<femininity>ANDROGYNOUS</femininity>
+		<slot>CHEST</slot>
+		<rarity>RARE</rarity>
+		<clothingSet/>
+		<imageName>armour_chestplate.svg</imageName>
+		<imageEquippedName/>
+		<enchantmentLimit>10</enchantmentLimit>
+		<effects>
+		</effects>
+		<blockedPartsList>
+			<blockedParts>
+				<displacementType>REMOVE_OR_EQUIP</displacementType>
+				<clothingAccessRequired>
+					<clothingAccess>CHEST</clothingAccess>
+				</clothingAccessRequired>
+				<blockedBodyParts>
+					<bodyPart>BREASTS</bodyPart>
+					<bodyPart>NIPPLES</bodyPart>
+					<bodyPart>STOMACH</bodyPart>
+					<bodyPart>BACK</bodyPart>
+				</blockedBodyParts>
+				<clothingAccessBlocked>
+					<clothingAccess>WAIST</clothingAccess>
+				</clothingAccessBlocked>
+				<concealedSlots values="CONCEALED_PARTIAL_TORSO_STOMACH_VISIBLE"/>
+			</blockedParts>
+		</blockedPartsList>
+		<incompatibleSlots/>
+		<primaryColours values="ALL_WITH_METALS"/>
+		<primaryColoursDye values="ALL_WITH_METALS"/>
+		<secondaryColours values="ALL_WITH_METALS"/>
+		<secondaryColoursDye values="ALL_WITH_METALS"/>
+		<tertiaryColours values="" />
+		<tertiaryColoursDye values="" />
+		<itemTags>
+			<tag>SOLD_BY_NYAN</tag>
+		</itemTags>
+	</coreAtributes>
+	<displacementText type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[
+			You pull off your breastplate and drop it next to your feet.
+		]]></playerSelf>
+		<playerNPC><![CDATA[
+			You pull off [npc.name]'s breastplate and drop it at [npc.her] feet.
+		]]></playerNPC>
+		<playerNPCRough><![CDATA[
+			You grab hold of [npc.name]'s breastplate and roughly pull it off [npc.her] before dropping it at [npc.her] feet.
+		]]></playerNPCRough>
+		<NPCSelf><![CDATA[
+			[npc.Name] pulls off [npc.her] breastplate and drops it next to [npc.her] feet.
+		]]></NPCSelf>
+		<NPCPlayer><![CDATA[
+			[npc.Name] pulls off your breastplate and drops it at your feet.
+		]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[
+			[npc.Name] grabs hold of your breastplate and roughly pulls it off, before dropping it next to you.
+		]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[
+			[npc1.Name] pulls off [npc2.name]'s breastplate and drops it next to [npc2.her] feet.
+		]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[
+			[npc.Name] grabs hold of [npc2.name]'s breastplate and roughly pulls it off, before dropping it at [npc2.her] feet.
+		]]></NPCOtherNPCRough>
+	</displacementText>
+
+	<replacementText type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[
+			You pull on your breastplate.
+		]]></playerSelf>
+		<playerNPC><![CDATA[
+			You pull the breastplate down onto [npc.her].
+		]]></playerNPC>
+		<playerNPCRough><![CDATA[
+			You hold [npc.name] still as you roughly pull the breastplate onto [npc.her].
+		]]></playerNPCRough>
+		<NPCSelf><![CDATA[
+			[npc.Name] pulls the breastplate on.
+		]]></NPCSelf>
+		<NPCPlayer><![CDATA[
+			[npc.Name] pulls the breastplate down onto you.
+		]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[
+			[npc.Name] holds you still as [npc.she] roughly pulls the breastplate onto you.
+		]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[
+			[npc1.Name] pulls the breastplate down over [npc2.name]'s head.
+		]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[
+			[npc1.Name] holds [npc2.name] still as [npc1.she] roughly pulls the breastplate onto [npc2.her].
+		]]></NPCOtherNPCRough>
+	</replacementText>
+	
+</clothing>

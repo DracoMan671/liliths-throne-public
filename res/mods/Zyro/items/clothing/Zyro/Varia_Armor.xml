@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!-- A fan-made mod for Innoxia's Lilith's Throne. Feel free to edit these files however you want, same goes for the svg's. Thanks to Innoxia for making Lilith's Throne, it's great. //Zyro-->
+<clothing>
+  <coreAtributes>
+    <value>5000</value>
+    <determiner><![CDATA[a]]></determiner>
+    <name><![CDATA[Varia Suit]]></name>
+    <namePlural pluralByDefault="false"><![CDATA[Varia Suit]]></namePlural>
+    <description><![CDATA[She who wears armor today is she who may wear armor tomorrow.]]></description>
+    <physicalResistance>4</physicalResistance>
+    <femininity>FEMININE</femininity>
+    <slot>TORSO_OVER</slot>
+    <rarity>UNCOMMON</rarity>
+    <clothingSet />
+    <imageName>Varia_Suit.svg</imageName>
+    <imageEquippedName />
+    <enchantmentLimit />
+    <effects />
+    <blockedPartsList>
+      <blockedParts>
+        <displacementType>REMOVE_OR_EQUIP</displacementType>
+        <clothingAccessRequired>
+          <clothingAccess>ARMS_UP_TO_SHOULDER</clothingAccess>
+		</clothingAccessRequired>
+		<blockedBodyParts>
+          <bodyPart>NIPPLES</bodyPart>
+          <bodyPart>STOMACH</bodyPart>
+          <bodyPart>BACK</bodyPart>
+          <bodyPart>VAGINA</bodyPart>
+          <bodyPart>PENIS</bodyPart>
+          <bodyPart>ANUS</bodyPart>
+        </blockedBodyParts>
+        <clothingAccessBlocked />
+        <concealedSlots />
+      </blockedParts>
+      <blockedParts>
+        <displacementType>SHIFTS_ASIDE</displacementType>
+        <clothingAccessRequired />
+		<blockedBodyParts />
+        <clothingAccessBlocked>
+          <clothingAccess>CHEST</clothingAccess>
+        </clothingAccessBlocked>
+        <concealedSlots />
+      </blockedParts>
+    </blockedPartsList>
+    <incompatibleSlots />
+    <primaryColours values="JUST_WHITE" />
+    <primaryColoursDye values="ALL" />
+    <secondaryColours values="JUST_BLACK" />
+    <secondaryColoursDye values="ALL" />
+    <tertiaryColours values="JUST_WHITE" />
+    <tertiaryColoursDye values="ALL" />
+    <itemTags>
+      <tag>SOLD_BY_NYAN</tag>
+    </itemTags>
+  </coreAtributes>
+  <displacementText type="REMOVE_OR_EQUIP">
+    <playerSelf>
+			You take off the Varia suit.
+		</playerSelf>
+    <playerNPC>
+			You remove [npc.name]'s Varia suit.
+		</playerNPC>
+    <playerNPCRough>
+			You grab hold of [npc.name]'s Varia suit and start to tear it apart piece by piece.
+		</playerNPCRough>
+    <NPCSelf>
+			[npc.Name] takes off [npc.her] Varia suit.
+		</NPCSelf>
+    <NPCPlayer>
+			[npc.Name] takes off your Varia suit.
+		</NPCPlayer>
+    <NPCPlayerRough>
+			[npc.Name] grabs hold of your Varia suit and starts to tear it apart piece by piece.
+		</NPCPlayerRough>
+    <NPCOtherNPC>
+			[npc1.Name] takes off [npc2.name]'s Varia suit.
+		</NPCOtherNPC>
+    <NPCOtherNPCRough>
+			[npc.Name] grabs hold of [npc2.name]'s Varia suit and starts to tear it apart piece by piece.
+		</NPCOtherNPCRough>
+  </displacementText>
+  <replacementText type="REMOVE_OR_EQUIP">
+    <playerSelf>
+			You put on the Varia suit.
+		</playerSelf>
+    <playerNPC>
+			You put the Varia suit on [npc.Name].
+		</playerNPC>
+    <playerNPCRough>
+			You hold [npc.Name] still as you roughly force the Varia suit onto [npc.her].
+		</playerNPCRough>
+    <NPCSelf>
+			[npc.Name] puts on the Varia suit.
+		</NPCSelf>
+    <NPCPlayer>
+			[npc.Name] equips you with the Varia suit.
+		</NPCPlayer>
+    <NPCPlayerRough>
+			[npc.Name] holds you still as [npc.she] roughly forces the Varia suit onto you.
+		</NPCPlayerRough>
+    <NPCOtherNPC>
+			[npc1.Name] equips the Varia suit on [npc2.name].
+		</NPCOtherNPC>
+    <NPCOtherNPCRough>
+			[npc1.Name] holds [npc2.name] still as [npc1.she] roughly forces the Varia suit onto [npc2.name].
+		</NPCOtherNPCRough>
+  </replacementText>
+  <displacementText type="SHIFTS_ASIDE">
+    <playerSelf>
+			You spend some time removing parts of your Varia suit.
+		</playerSelf>
+    <playerNPC>
+			You spend some time removing parts of [npc.name]'s Varia suit.
+		</playerNPC>
+    <playerNPCRough>
+			You grab hold of [npc.name] and start to tear off the pieces of [npc.her] Varia suit.
+		</playerNPCRough>
+    <NPCSelf>
+			[npc.Name] spends some time removing parts of [npc.her] Varia suit.
+		</NPCSelf>
+    <NPCPlayer>
+			[npc.Name] spends some time removing parts of your Varia suit.
+		</NPCPlayer>
+    <NPCPlayerRough>
+			[npc.Name] grabs hold of you and starts to tear off the pieces of your Varia suit.
+		</NPCPlayerRough>
+    <NPCOtherNPC>
+			[npc1.Name] spends some time removing parts of [npc2.name]'s Varia suit.
+		</NPCOtherNPC>
+    <NPCOtherNPCRough>
+			[npc1.Name] grabs hold of [npc2.name] and starts to tear off the pieces of [npc2.her] Varia suit.
+		</NPCOtherNPCRough>
+  </displacementText>
+  <replacementText type="SHIFTS_ASIDE">
+    <playerSelf>
+			You put back the missing pieces on your Varia suit.
+		</playerSelf>
+    <playerNPC>
+			You put back the missing pieces on [npc.name]'s Varia suit.
+		</playerNPC>
+    <playerNPCRough>
+			You hold [npc.name] still as you haphazardly piece together [npc.her] Varia suit.
+		</playerNPCRough>
+    <NPCSelf>
+			[npc.Name] puts back the missing pieces on her Varia suit.
+		</NPCSelf>
+    <NPCPlayer>
+			[npc.Name] puts back the missing pieces of your Varia suit.
+		</NPCPlayer>
+    <NPCPlayerRough>
+			[npc.Name] holds you still as [npc.she] haphazardly piece together your Varia suit.
+		</NPCPlayerRough>
+    <NPCOtherNPC>
+			[npc1.Name] puts back the missing pieces together [npc2.name]'s Varia suit.
+		</NPCOtherNPC>
+    <NPCOtherNPCRough>
+			[npc1.Name] grabs hold [npc2.name] and starts to haphazardly piece together [npc2.her] Varia suit.
+		</NPCOtherNPCRough>
+  </replacementText>
+</clothing>

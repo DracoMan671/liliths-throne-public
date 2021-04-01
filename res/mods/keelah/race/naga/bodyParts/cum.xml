@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<fluid>
+	<race>keelah_naga</race>
+
+	<transformationName><![CDATA[naga]]></transformationName>
+
+	<baseFluidType>CUM</baseFluidType>
+
+	<flavour>CUM</flavour>
+
+	<namesMasculine>
+		<name><![CDATA[naga-]]></name>
+	</namesMasculine>
+
+	<namesFeminine>
+		<name><![CDATA[naga-]]></name>
+	</namesFeminine>
+
+	<descriptorsMasculine/>
+
+	<descriptorsFeminine/>
+
+	<defaultFluidModifiers>
+		<modifier>VISCOUS</modifier>
+		<modifier>SLIMY</modifier>
+		<!-- <modifier>MINERAL_OIL</modifier> --> <!-- Uncomment if you want to spice things up a little! -->
+	</defaultFluidModifiers>
+</fluid>

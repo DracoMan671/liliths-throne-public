@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+
+<clothing>
+  <coreAtributes>
+    <value>2500</value>
+    <determiner><![CDATA[an]]></determiner>
+    <name><![CDATA[Orichalcum Cock Ring]]></name>
+    <namePlural pluralByDefault="false"><![CDATA[Orichalcum Cock Rings]]></namePlural>
+    <description><![CDATA[A cock ring embedded with a ring of the highly enchantable material; orichalcum.]]></description>
+    
+    <physicalResistance>0</physicalResistance>
+    <femininity>ANDROGYNOUS</femininity> 
+    <slot>PENIS</slot> 
+    <rarity>EPIC</rarity> 
+    
+    <imageName>penis_orichalcum_ring_optimized.svg</imageName>
+
+    <clothingSet/>
+    <imageEquippedName/>
+    <enchantmentLimit>25</enchantmentLimit>
+    
+    <effects/>
+
+    <blockedPartsList>
+      <blockedParts>
+        
+        <displacementType>REMOVE_OR_EQUIP</displacementType> 
+        
+        <clothingAccessRequired/>
+        <blockedBodyParts/>
+        <clothingAccessBlocked/>        
+        <concealedSlots/>
+        
+      </blockedParts>
+    </blockedPartsList>
+
+    <incompatibleSlots/>
+    
+    <primaryColours values="JUST_WHITE"/>
+    <primaryColoursDye values="ALL_METAL"/>
+    <secondaryColours values="JUST_DARK_RED"/>
+    <secondaryColoursDye values="ALL"/>
+    <tertiaryColours/>
+    <tertiaryColoursDye/>
+    
+    <itemTags>
+      <tag>SOLD_BY_KATE</tag>
+	  <tag>REQUIRES_PENIS</tag>
+    </itemTags>
+    
+  </coreAtributes>
+
+  <displacementText type="REMOVE_OR_EQUIP">
+    <playerSelf>
+      <![CDATA[You work the cock ring off your penis.
+	  ]]>
+    </playerSelf>
+    <playerNPC>
+      <![CDATA[You work the ring off [npc.Name]'s penis.  
+	  ]]>
+    </playerNPC>
+    <playerNPCRough>
+      <![CDATA[You painfully yank [npc.name]'s cock ring off [npc.herHis] penis.
+	  ]]>
+    </playerNPCRough>
+    <NPCSelf>
+      <![CDATA[[npc.Name] works the ring off [npc.herHis] penis.
+	  ]]>
+    </NPCSelf>
+    <NPCPlayer>
+      <![CDATA[[npc.Name] works the ring off your penis.
+	  ]]>
+    </NPCPlayer>
+    <NPCPlayerRough>
+      <![CDATA[[npc.Name] painfully yanks your cock ring off your penis.
+	  ]]>
+    </NPCPlayerRough>
+    <NPCOtherNPC>
+      <![CDATA[[npc1.Name] works the ring off [npc2.name]'s penis.
+	  ]]>
+    </NPCOtherNPC>
+    <NPCOtherNPCRough>
+      <![CDATA[[npc1.Name] painfully yanks the cock ring off [npc2.name]'s penis.
+	  ]]>
+    </NPCOtherNPCRough>
+  </displacementText>
+
+  <replacementText type="REMOVE_OR_EQUIP">
+    <playerSelf>
+      <![CDATA[You slide the cock ring down to the base of your penis.]]>
+    </playerSelf>
+    <playerNPC>
+      <![CDATA[You slide the cock ring down to the base of [npc.name]'s penis.]]>
+    </playerNPC>
+    <playerNPCRough>
+      <![CDATA[You slide the cock ring down to the base of [npc.name]'s penis.]]>
+    </playerNPCRough>
+    <NPCSelf>
+      <![CDATA[[npc.Name] slides the cock ring down to the base of [npc.herHis] penis.]]>
+    </NPCSelf>
+    <NPCPlayer>
+      <![CDATA[[npc.Name] slides the cock ring down to the base of your penis.]]>
+    </NPCPlayer>
+    <NPCPlayerRough>
+      <![CDATA[[npc.Name] slides the cock ring down to the base of your penis.]]>
+    </NPCPlayerRough>
+    <NPCOtherNPC>
+      <![CDATA[[npc1.Name] slides the cock ring down to the base of [npc2.Name]'s penis.]]>
+    </NPCOtherNPC>
+    <NPCOtherNPCRough>
+      <![CDATA[[npc1.Name] slides the cock ring down to the base of [npc2.Name]'s penis.]]>
+    </NPCOtherNPCRough>
+  </replacementText>
+  
+  
+</clothing>

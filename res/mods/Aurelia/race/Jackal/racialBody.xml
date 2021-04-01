@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<racialBody>
+	<personalityChances>
+		<entry chance="0.5">CONFIDENT</entry>
+		<entry chance="0.5">SHY</entry>
+		<entry chance="0.5">KIND</entry>
+		<entry chance="0.5">SELFISH</entry>
+		<entry chance="0.5">CYNICAL</entry>
+		<entry chance="0.5">NAIVE</entry>
+		<entry chance="0.5">BRAVE</entry>
+		<entry chance="0.5">COWARDLY</entry>
+		<entry chance="0.5">LEWD</entry>
+		<entry chance="0.5">INNOCENT</entry>
+		<entry chance="0.1">MUTE</entry>
+	</personalityChances>
+	
+	
+	<orientationFeminineGynephilic>20</orientationFeminineGynephilic>
+	<orientationFeminineAmbiphilic>40</orientationFeminineAmbiphilic>
+	<orientationFeminineAndrophilic>40</orientationFeminineAndrophilic>
+	<orientationMasculineGynephilic>60</orientationMasculineGynephilic>
+	<orientationMasculineAmbiphilic>30</orientationMasculineAmbiphilic>
+	<orientationMasculineAndrophilic>10</orientationMasculineAndrophilic>
+	
+	
+	<bodyMaterial>FLESH</bodyMaterial>
+	
+	<bodyHair>Aurelia_Jackal_fur</bodyHair>
+	
+	<genitalArrangement>NORMAL</genitalArrangement>
+	
+	<maleHeight>180</maleHeight>
+	<maleFemininity>30</maleFemininity>
+	<maleBodySize>50</maleBodySize>
+	<maleMuscle>70</maleMuscle>
+	
+	<femaleHeight>165</femaleHeight>
+	<femaleFemininity>100</femaleFemininity>
+	<femaleBodySize>50</femaleBodySize>
+	<femaleMuscle>90</femaleMuscle>
+	
+	
+	<antennaTypes>
+		<type>NONE</type>
+	</antennaTypes>
+	
+	<maleAntennaLength>0</maleAntennaLength>
+	<femaleAntennaLength>0</femaleAntennaLength>
+	
+	<armType>Aurelia_Jackal_arm</armType>
+	
+	<armRows>1</armRows>
+	
+	<assType>Aurelia_Jackal_ass</assType>
+	
+	<maleAssSize>1</maleAssSize>
+	<femaleAssSize>4</femaleAssSize>
+	
+	<maleHipSize>1</maleHipSize>
+	<femaleHipSize>4</femaleHipSize>
+	
+	<anusCapacity>1.5</anusCapacity>
+	<anusDepth>2</anusDepth>
+	<anusWetness>0</anusWetness>
+	<anusElasticity>7</anusElasticity>
+	<anusPlasticity>0</anusPlasticity>	
+	
+	<breastType>Aurelia_Jackal_breast</breastType>
+	
+	<breastShapes>
+		<shape>ROUND</shape>
+		<shape>POINTY</shape>
+		<shape>PERKY</shape>
+		<shape>SIDE_SET</shape>
+		<shape>WIDE</shape>
+		<shape>NARROW</shape>
+	</breastShapes>
+	
+	<maleBreastSize>0</maleBreastSize>
+	<maleBreastRows>1</maleBreastRows>
+	<maleNippleSize>0</maleNippleSize>
+	<maleNippleShape>NORMAL</maleNippleShape>
+	<maleAreolaeSize>0</maleAreolaeSize>
+	<maleAreolaeShape>NORMAL</maleAreolaeShape>
+	<maleNippleCountPerBreast>1</maleNippleCountPerBreast>
+	<maleLactationRate>0</maleLactationRate>
+	<maleBreastCapacity>0</maleBreastCapacity>
+	<maleBreastDepth>2</maleBreastDepth>
+	<maleBreastElasticity>3</maleBreastElasticity>
+	<maleBreastPlasticity>3</maleBreastPlasticity>
+	
+	<femaleBreastSize>13</femaleBreastSize>
+	<femaleBreastRows>1</femaleBreastRows>
+	<femaleNippleSize>3</femaleNippleSize>
+	<femaleNippleShape>NORMAL</femaleNippleShape>
+	<femaleAreolaeSize>3</femaleAreolaeSize>
+	<femaleAreolaeShape>NORMAL</femaleAreolaeShape>
+	<femaleNippleCountPerBreast>1</femaleNippleCountPerBreast>
+	<femaleLactationRate>100</femaleLactationRate>
+	<femaleBreastCapacity>0</femaleBreastCapacity>
+	<femaleBreastDepth>2</femaleBreastDepth>
+	<femaleBreastElasticity>3</femaleBreastElasticity>
+	<femaleBreastPlasticity>3</femaleBreastPlasticity>
+	
+	
+	<breastCrotchType>Aurelia_Jackal_breast</breastCrotchType>
+	<breastCrotchShapes udderShapes="false"/>
+	
+	<breastCrotchSize>13</breastCrotchSize>
+	<breastCrotchRows>4</breastCrotchRows>
+	<breastCrotchNippleSize>3</breastCrotchNippleSize>
+	<breastCrotchNippleShape>NORMAL</breastCrotchNippleShape>
+	<breastCrotchAreolaeSize>3</breastCrotchAreolaeSize>
+	<breastCrotchAreolaeShape>NORMAL</breastCrotchAreolaeShape>
+	<nippleCountPerBreastCrotch>1</nippleCountPerBreastCrotch>
+	<breastCrotchLactationRate>100</breastCrotchLactationRate>
+	<breastCrotchCapacity>0</breastCrotchCapacity>
+	<breastCrotchDepth>2</breastCrotchDepth>
+	<breastCrotchElasticity>3</breastCrotchElasticity>
+	<breastCrotchPlasticity>3</breastCrotchPlasticity>
+	
+	
+	<faceType>Aurelia_Jackal_face</faceType>
+	
+	<eyeType>Aurelia_Jackal_eye</eyeType>
+	
+	<earType>Aurelia_Jackal_ear</earType>
+	
+	<maleLipSize>0</maleLipSize>
+	<femaleLipSize>3</femaleLipSize>
+	
+	
+	<hairType>Aurelia_Jackal_hair</hairType>
+	
+	<maleHairLength>0</maleHairLength>
+	<femaleHairLength>50</femaleHairLength>
+	
+	
+	<hornTypes>
+		<type>NONE</type>
+	</hornTypes>
+	
+	<maleHornLength>0</maleHornLength>
+	<femaleHornLength>0</femaleHornLength>
+	
+	
+	<legType>Aurelia_Jackal_leg</legType>
+	
+	<legConfiguration>BIPEDAL</legConfiguration>
+	
+	
+	<penisType>Aurelia_Jackal_penis</penisType>
+	
+	<penisLength>20</penisLength>
+	<penisGirth>5</penisGirth>
+	<testicleSize>4</testicleSize>
+	<testicleQuantity>2</testicleQuantity>
+	<cumProduction>100</cumProduction>
+	
+	
+	<tailTypes>
+		<type>Aurelia_Jackal_tail</type>
+	</tailTypes>
+	
+	
+	<tentacleType>NONE</tentacleType>
+	
+	
+	<torsoType>Aurelia_Jackal_torso</torsoType>
+	
+	
+	<vaginaType>Aurelia_Jackal_vagina</vaginaType>
+	
+	<clitSize>0</clitSize>
+	
+	<clitGirth>0</clitGirth>
+	
+	<vaginaCapacity>2.5</vaginaCapacity>
+	<vaginaDepth>2</vaginaDepth>
+	<vaginaWetness>3</vaginaWetness>
+	<vaginaElasticity>2</vaginaElasticity>
+	<vaginaPlasticity>0</vaginaPlasticity>
+	
+	
+	<wingTypes>
+		<type>NONE</type>
+	</wingTypes>
+	
+	<maleWingSize>0</maleWingSize>
+	<femaleWingSize>0</femaleWingSize>
+	
+</racialBody>

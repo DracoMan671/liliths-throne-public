@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<clothing>
+	<coreAttributes>
+		<value>180</value>
+		<determiner><![CDATA[a]]></determiner>
+		<name><![CDATA[Gerudo top]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Gerudo tops]]></namePlural>
+		<description><![CDATA[A top that seems to come from a special race called the Gerudo. It's meant for vai. It's designed to provide protection against the desert heat.]]></description>
+		<physicalResistance>0</physicalResistance>
+		<femininity>FEMININE</femininity>
+		<slot>TORSO_UNDER</slot>
+		<rarity>UNCOMMON</rarity>
+		<clothingSet/>
+		<imageName>gerudo_top.svg</imageName>
+		<imageEquippedName/>
+		<enchancementLimit/>
+		<effects>
+			<effect itemEffectType="CLOTHING" limit="0" potency="MAJOR_BOOST" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="DAMAGE_LUST" timer="0"/>
+			<effect itemEffectType="CLOTHING" limit="0" potency="MAJOR_BOOST" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="DAMAGE_LUST" timer="0"/>
+			<effect itemEffectType="CLOTHING" limit="0" potency="MINOR_BOOST" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="RESISTANCE_FIRE" timer="0" />
+		</effects>
+		<blockedPartsList>
+			<blockedParts>
+				<displacementType>REMOVE_OR_EQUIP</displacementType>
+				<clothingAccessRequired>
+					<clothingAccess>HEAD</clothingAccess>
+					<clothingAccess>ARMS_UP_TO_SHOULDER</clothingAccess>
+				</clothingAccessRequired>
+				<blockedBodyParts/>
+				<clothingAccessBlocked/>
+				<concealedSlots/>
+			</blockedParts>
+			<blockedParts>
+				<displacementType>PULLS_UP</displacementType>
+				<clothingAccessRequired/>
+				<blockedBodyParts>
+					<bodyPart>BREASTS</bodyPart>
+					<bodyPart>NIPPLES</bodyPart>
+				</blockedBodyParts>
+				<clothingAccessBlocked>
+					<clothingAccess>CHEST</clothingAccess>
+				</clothingAccessBlocked>
+				<concealedSlots>
+					<slot>CHEST</slot>
+					<slot>NIPPLE</slot>
+					<slot>PIERCING_NIPPLE</slot>
+				</concealedSlots>
+			</blockedParts>
+		</blockedPartsList>
+		<incompatibleSlots/>
+		<primaryColours>
+			 <colour>CLOTHING_BLUE_LIGHT</colour>
+		</primaryColours>
+		<primaryColoursDye>
+			<colour>CLOTHING_WHITE</colour>
+			<colour>CLOTHING_BLACK</colour>
+			<colour>CLOTHING_GREY</colour>
+			<colour>CLOTHING_RED</colour>
+			<colour>CLOTHING_RED_DARK</colour>
+			<colour>CLOTHING_BROWN</colour>
+			<colour>CLOTHING_GREEN</colour>
+			<colour>CLOTHING_PURPLE</colour>
+			<colour>CLOTHING_YELLOW</colour>
+			<colour>CLOTHING_BLUE</colour>
+			<colour>CLOTHING_BLUE_LIGHT</colour>
+			<colour>CLOTHING_BLUE_DARK</colour>
+			<colour>CLOTHING_PINK</colour>
+			<colour>CLOTHING_TAN</colour>
+			<colour>CLOTHING_ORANGE</colour>
+		</primaryColoursDye>
+		<secondaryColours/>
+		<secondaryColourDye/>
+		<tertiaryColours/>
+		<tertiaryColoursDye/>
+		<itemTags>
+			<tag>SOLD_BY_NYAN</tag>
+			<tag>DOMINION_ALLEYWAY_SPAWN</tag>
+		</itemTags>
+	</coreAttributes>
+	
+	<displacementText type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[
+			You take off your top.
+		]]></playerSelf>
+		<playerNPC><![CDATA[
+			You pull off [npc.name]'s top.
+		]]></playerNPC>
+		<playerNPCRough><![CDATA[
+			You roughly yank up [npc.name]'s top.
+		]]></playerNPCRough>
+		<NPCSelf><![CDATA[
+			[npc.Name] takes [npc.her] top off.
+		]]></NPCSelf>
+		<NPCPlayer><![CDATA[
+			[npc.Name] pulls your top off.
+		]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[
+			[npc.Name] roughly yanks up your top.
+		]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[
+			[npc1.Name] pulls [npc2.name]'s top off.
+		]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[
+			[npc.Name] roughly pulls up [npc2.name]'s top.
+		]]></NPCOtherNPCRough>
+	</displacementText>
+	
+	<replacementText type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[
+			You pull on the top.
+		]]></playerSelf>
+		<playerNPC><![CDATA[
+			You guide [npc.name]'s [npc.arms] through the sleeves of the top as you pull it on [npc.herHim].
+		]]></playerNPC>
+		<playerNPCRough><![CDATA[
+			You hold [npc.name] still as you roughly force the top over [npc.her] head, before pulling it down over [npc.her] torso.
+		]]></playerNPCRough>
+		<NPCSelf><![CDATA[
+			[npc.Name] pulls on the top.
+		]]></NPCSelf>
+		<NPCPlayer><![CDATA[
+			[npc.Name] guides your [pc.arms] through the sleeves of the top, before pulling it down over your torso.
+		]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[
+			[npc.Name] holds you still as [npc.she] roughly forces the top down over your head, before pushing your [pc.arms] through the sleeves.
+		]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[
+			[npc1.Name] guides [npc2.name]'s [npc2.arms] through the top's sleeves before pulling it down over [npc2.her] torso.
+		]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[
+			[npc1.Name] holds [npc2.name] still as [npc1.she] roughly forces the top down over [npc2.her] head, before pulling it down over [npc2.her] torso.
+		]]></NPCOtherNPCRough>
+	</replacementText>
+	
+	<displacementText type="PULLS_UP">
+		<playerSelf><![CDATA[
+			You pull your top up to just below your chin.
+		]]></playerSelf>
+		<playerNPC><![CDATA[
+			You pull up [npc.name]'s top.
+		]]></playerNPC>
+		<playerNPCRough><![CDATA[
+			You roughly yank up [npc.name]'s top.
+		]]></playerNPCRough>
+		<NPCSelf><![CDATA[
+			[npc.Name] pulls [npc.her] top up to just below [npc.her] chin.
+		]]></NPCSelf>
+		<NPCPlayer><![CDATA[
+			[npc.Name] pulls up your top.
+		]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[
+			[npc.Name] roughly yanks up your top.
+		]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[
+			[npc1.Name] pulls up [npc2.name]'s top.
+		]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[
+			[npc.Name] roughly yanks up [npc2.name]'s top.
+		]]></NPCOtherNPCRough>
+	</displacementText>
+	
+	<replacementText type="PULLS_DOWN">
+		<playerSelf><![CDATA[
+			You pull your top back down, covering your chest.
+		]]></playerSelf>
+		<playerNPC><![CDATA[
+			You pull down [npc.name]'s top.
+		]]></playerNPC>
+		<playerNPCRough><![CDATA[
+			You roughly yank down [npc.name]'s top.
+		]]></playerNPCRough>
+		<NPCSelf><![CDATA[
+			[npc.Name] pulls [npc.her] top back down to cover [npc.her] chest.
+		]]></NPCSelf>
+		<NPCPlayer><![CDATA[
+			[npc.Name] pulls down your top.
+		]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[
+			[npc.Name] roughly yanks down your top.
+		]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[
+			[npc1.Name] pulls down [npc2.name]'s top.
+		]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[
+			[npc.Name] roughly yanks down [npc2.name]'s top.
+		]]></NPCOtherNPCRough>
+	</replacementText>
+
+</clothing>

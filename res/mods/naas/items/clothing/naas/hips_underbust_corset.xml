@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<clothing>
+	<coreAttributes>
+		<value>200</value> 
+		
+		<determiner><![CDATA[an]]></determiner>
+		
+		<clothingAuthorTag><![CDATA[]]></clothingAuthorTag>
+		
+		<name><![CDATA[underbust corset]]></name>
+		
+		<namePlural pluralByDefault="false"><![CDATA[underbust corsets]]></namePlural> 
+		
+		<description><![CDATA[A corset designed to be worn over a shirt and cinch the waist of the wearer, while leaving their breasts and stomach totally exposed. It has a series of laces at the front that are used to tighten it.]]></description> 
+		
+		<physicalResistance>1</physicalResistance> 
+		
+		<femininity>FEMININE</femininity> 
+		
+		<slot>HIPS</slot> 
+		
+		<rarity>COMMON</rarity> 
+		
+		<clothingSet/> 
+		
+		<imageName>hips_underbust_corset.svg</imageName> 
+		
+		<imageEquippedName/> 
+		
+		<enchantmentLimit>10</enchantmentLimit>
+		
+		<effects/>
+		
+		<blockedPartsList> 
+			<blockedParts>
+				<displacementType>REMOVE_OR_EQUIP</displacementType> 
+				
+				<clothingAccessRequired> 
+					<clothingAccess>WAIST</clothingAccess>
+				</clothingAccessRequired>
+				
+				<blockedBodyParts>
+					<bodyPart>BACK</bodyPart>
+				</blockedBodyParts>
+				
+				<clothingAccessBlocked/>
+				
+				<concealedSlots/>
+			</blockedParts>
+		</blockedPartsList>
+		
+		<incompatibleSlots>
+			<slot>STOMACH</slot>
+		</incompatibleSlots> 
+		
+		<primaryColours values="LINGERIE"/>
+		<primaryColoursDye values="ALL_WITH_METALS"/>
+		<secondaryColours values="LINGERIE"/>
+		<secondaryColoursDye values="ALL_WITH_METALS"/>
+		<tertiaryColours/>
+		<tertiaryColoursDye/>
+		
+		<itemTags> 
+			<tag>SOLD_BY_NYAN</tag>
+		</itemTags>
+	</coreAttributes>
+
+	<replacementText type="REMOVE_OR_EQUIP">
+		<self>
+			<![CDATA[[npc.Name] [npc.verb(place)] the underbust corset under[npc.her] breasts before tying the laces up.]]>
+		</self>
+		<other>
+			<![CDATA[[npc.Name] [npc.verb(place)] the underbust corset under [npc2.her] breasts before tying the laces up.]]>
+		</other>
+		<otherRough>
+			<![CDATA[[npc.Name] roughly [npc.verb(force)] the underbust corset under [npc2.her] breasts before roughly tightening the laces up.]]>
+		</otherRough>
+	</replacementText>
+	
+	<displacementText type="REMOVE_OR_EQUIP">
+		<self>
+			<![CDATA[[npc.Name] [npc.verb(untie)] [npc.her] corset's laces and [npc.verb(remove)] it from under [npc.her] breasts.]]>
+		</self>
+		<other>
+			<![CDATA[[npc.Name] [npc.verb(untie)] [npc2.namePos] corset's laces and [npc.verb(remove)] it from under [npc2.her] breasts.]]>
+		</other>
+		<otherRough>
+			<![CDATA[[npc.Name] roughly [npc.verb(undo)] [npc2.namePos] corset's laces and let's it drop to the floor.]]>
+		</otherRough>
+	</displacementText>
+</clothing>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<clothing>
+	<coreAttributes>
+		<value>69000</value>
+		<determiner><![CDATA[a]]></determiner>
+		<name appendColourName="false"><![CDATA[Sky Dancer's String]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Sky Dancer's Strings]]></namePlural>
+
+		<description><![CDATA[A string that compose the main component of a sky dancer's costume. For some reasons, it doesn't covers the wearer's breasts and ass. It is said that this string is soaked in aphrodisiacs when created, though the effects should not manifest until you wear the majority of the costume.]]></description> 
+
+		<physicalResistance>0</physicalResistance>
+		<femininity>FEMININE</femininity>
+
+		<equipSlots>
+			<slot>GROIN</slot>
+		</equipSlots>
+
+		<rarity>EPIC</rarity>
+		<clothingSet>Faiq_skydancer</clothingSet>
+		<imageName>main.svg</imageName>
+		<imageEquippedName/>
+		
+		<stickers/>
+		
+		<enchantmentLimit/>
+		<effects>
+              <effect itemEffectType="CLOTHING" limit="0" potency="MAJOR_BOOST" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="DAMAGE_LUST" timer="0"/>
+              <effect itemEffectType="CLOTHING" limit="0" potency="MAJOR_BOOST" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="DAMAGE_LUST" timer="0"/>
+              <effect itemEffectType="CLOTHING" limit="0" potency="MAJOR_BOOST" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="DAMAGE_LUST" timer="0"/>
+              <effect itemEffectType="CLOTHING" limit="0" potency="MAJOR_BOOST" primaryModifier="TF_MOD_FETISH_BEHAVIOUR" secondaryModifier="TF_MOD_FETISH_EXHIBITIONIST" timer="0"/>
+              <effect itemEffectType="CLOTHING" limit="0" potency="MAJOR_BOOST" primaryModifier="TF_MOD_FETISH_BEHAVIOUR" secondaryModifier="TF_MOD_FETISH_MASTURBATION" timer="0"/>
+		</effects>
+
+		<blockedPartsList>
+		<blockedParts>
+		<displacementType>REMOVE_OR_EQUIP</displacementType>
+
+			<clothingAccessRequired>
+				<clothingAccess>GROIN</clothingAccess>
+				<clothingAccess>WAIST</clothingAccess>
+				<clothingAccess>ARMS_UP_TO_SHOULDER</clothingAccess>
+<clothingAccess>LEGS_UP_TO_GROIN_LOW_LEVEL</clothingAccess>
+					<clothingAccess>LEGS_UP_TO_GROIN</clothingAccess>
+			</clothingAccessRequired>
+
+			<blockedBodyParts/>
+			<clothingAccessBlocked/>
+			<concealedSlots/>
+			</blockedParts>
+
+		<blockedParts>
+			<displacementType>SHIFTS_ASIDE</displacementType> 
+			<clothingAccessRequired> 
+				<clothingAccess>GROIN</clothingAccess>
+			</clothingAccessRequired>
+			<blockedBodyParts>
+				<bodyPart>PENIS</bodyPart>
+				<bodyPart>VAGINA</bodyPart>
+			</blockedBodyParts>
+			<clothingAccessBlocked/>
+			<concealedSlots values="CONCEALED_GENITALS"/>
+		</blockedParts>
+		</blockedPartsList>
+
+		<incompatibleSlots/>
+
+		<primaryColours values="LINGERIE"/>
+		<primaryColoursDye values="ALL"/>
+		<secondaryColours values="JUST_WHITE"/>
+		<secondaryColoursDye values="ALL_WITH_METAL"/>
+		<tertiaryColours values="JUST_ROSE_GOLD"/>
+		<tertiaryColoursDye values="ALL_WITH_METAL"/>
+
+		<itemTags>
+			<tag>SOLD_BY_NYAN</tag>
+		</itemTags>
+	</coreAttributes>
+
+  <replacementText type="REMOVE_OR_EQUIP">
+    <self>
+      <![CDATA[[npc.Name] [npc.verb(guide)] [npc.her] [npc.arms] through the Sky Dancer's String as [npc.she] [npc.verb(put)] it on [npc.her] body.]]>
+    </self>
+    <other>
+      <![CDATA[[npc.Name] [npc.verb(guide)] [npc2.namePos] [npc2.arms] through the Sky Dancer's String as [npc.she] [npc.verb(put)] it on [npc2.her] body.]]>
+    </other>
+    <otherRough>
+      <![CDATA[[npc.Name] roughly [npc.verb(put)] [npc2.namePos] Sky Dancer's String on [npc2.her] body.]]>
+    </otherRough>
+  </replacementText>
+
+  <displacementText type="REMOVE_OR_EQUIP">
+    <self>
+      <![CDATA[[npc.Name] [npc.verb(pull)] off [npc.her] Sky Dancer's String.]]>
+    </self>
+    <other>
+      <![CDATA[[npc.Name] [npc.verb(pull)] off [npc2.namePos] Sky Dancer's String.]]>
+    </other>
+    <otherRough>
+      <![CDATA[[npc.Name] roughly [npc.verb(strip)] off [npc2.namePos] Sky Dancer's String.]]>
+    </otherRough>
+  </displacementText>
+	
+  <replacementText type="SHIFTS_ASIDE">
+    <self>
+      <![CDATA[[npc.Name] [npc.verb(shift)] [npc.her] Sky Dancer's String back on, covering [npc.her] groin.]]>
+    </self>
+    <other>
+      <![CDATA[[npc.Name] [npc.verb(shift)] [npc2.namePos] Sky Dancer's String back on, covering [npc2.her] groin.]]>
+    </other>
+    <otherRough>
+      <![CDATA[[npc.Name] roughly [npc.verb(shift)] [npc2.namePos] Sky Dancer's String back on, covering [npc2.her] groin.]]>
+    </otherRough>
+  </replacementText>
+
+  <displacementText type="SHIFTS_ASIDE">
+    <self>
+      <![CDATA[[npc.Name] [npc.verb(shift)] [npc.her] Sky Dancer's Panty, fully exposing [npc.her] groin.]]>
+    </self>
+    <other>
+      <![CDATA[[npc.Name] [npc.verb(shift)] [npc2.namePos] Sky Dancer's Panty, fully exposing [npc2.her] groin.]]>
+    </other>
+    <otherRough>
+      <![CDATA[[npc.Name] roughly [npc.verb(shift)] [npc2.namePos] Sky Dancer's Panty, fully exposing [npc2.her] groin.]]>
+    </otherRough>
+  </displacementText>
+	
+</clothing>

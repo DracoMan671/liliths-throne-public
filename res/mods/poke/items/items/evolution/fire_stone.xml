@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<item>
+	<coreAttributes>
+		<value>15000</value> 
+		<determiner><![CDATA[a]]></determiner>
+		<name><![CDATA[Fire Stone]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Fire Stones]]></namePlural>
+		<description><![CDATA[A mysterious, warm stone from another world. Apparently it has the power to evolve certain creatures]]></description> 
+		<useDescriptor>use</useDescriptor>
+		<sexUse>true</sexUse>
+		<combatUseAllies>true</combatUseAllies>
+		<combatUseEnemies>false</combatUseEnemies>
+		<consumedOnUse>false</consumedOnUse>
+		<!-- COMMON, UNCOMMON, RARE, EPIC, LEGENDARY -->
+		<rarity>RARE</rarity> 
+		<imageName zLayer="0" imageRotation="0" imageSize="100">background_bottom.svg</imageName>
+		<imageName zLayer="1" imageRotation="0" imageSize="60">fire_stone.svg</imageName>
+		<imageName zLayer="2" imageRotation="0" imageSize="100">background_top.svg</imageName>
+		<colourPrimary>BASE_GINGER</colourPrimary>
+		<colourSecondary/>
+		<colourTertiary/>
+		<enchantmentItemTypeId/>
+		<enchantmentEffectId/>
+		<effectTooltipLines>
+			<line><![CDATA[[style.boldBad(Does not affect unique characters)]]]></line>
+			<line><![CDATA[[style.boldTfGeneric(Transforms)] Eevee into Flareon]]></line>
+		</effectTooltipLines>
+		<applyEffects><![CDATA[
+		<p style='text-align:center'>
+			#IF(!npc.isPlayer() && npc.isUnique() && (!npc.isSlave() || npc.getOwner().isPlayer()))
+				[style.italicsDisabled(This item does not work on non-slave unique characters...)]
+			#ELSEIF(npc.getSubspecies()==SUBSPECIES_Phobos_Eevee_subspecies_Eevee)
+				[##game.getCharacterUtils().reassignBody(npc, npc.getBody(), npc.getGender(), SUBSPECIES_Phobos_Eevee_subspecies_Flareon, RACE_STAGE_GREATER, true)]
+				[style.italics([npc.Name] evolved into [npc.a_race]!)]
+			#ELSE
+			Nothing seems to happen...
+			#ENDIF
+		</p>
+		]]></applyEffects>
+		<!-- REINDEER_GIFT, SOLD_BY_RALPH, SOLD_BY_NYAN, SOLD_BY_KATE, SOLD_BY_FINCH, SOLD_BY_VICKY
+		SPELL_BOOK, SPELL_SCROLL, ESSENCE, ATTRIBUTE_TF_ITEM, RACIAL_TF_ITEM, MISC_TF_ITEM, BOOK, GIFT, DOMINION_ALLEYWAY_SPAWN, SUBMISSION_TUNNEL_SPAWN, BAT_CAVERNS_SPAWN, ALCOHOLIC
+		CONTRABAND_LIGHT, CONTRABAND_MEDIUM- CONTRABAND_HEAVY -->
+		<itemTags>
+			<tag>DOMINION_ALLEYWAY_SPAWN</tag>
+			<tag>SUBMISSION_TUNNEL_SPAWN</tag>
+			<tag>SOLD_BY_VICKY</tag>
+		</itemTags>
+	</coreAttributes>
+	<useDescriptions>
+		<selfUse><![CDATA[
+		[npc.Name] [npc.verb(clutch)] the Fire Stone close to [npc.her] body, letting its mysterious energy mingle with [npc.her] own essence.
+		]]></selfUse>
+		<otherUse><![CDATA[
+		[npc.Name] [npc.verb(hold)] the Fire Stone up to [npc2.namePos] body, prompting its mysterious energy to mingle with [npc2.her] essence.
+		]]></otherUse>
+	</useDescriptions>
+</item>

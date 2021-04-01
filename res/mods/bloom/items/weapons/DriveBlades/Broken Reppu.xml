@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<weapon>
+	<coreAttributes>
+	
+		<authorTag><![CDATA[Carved into the hilt of the blade reads RETRIEVED BY TROOPS #P01-Y & #B100-M "]]></authorTag>
+	
+		<value>4500</value> 
+		
+		<melee>true</melee>
+		
+		<twoHanded>true</twoHanded>
+		
+		<determiner><![CDATA[]]></determiner>
+		
+		<name><![CDATA[Broken Reppu]]></name>
+		
+		<namePlural pluralByDefault="false"><![CDATA[Broken Reppae]]></namePlural>
+		
+		<description><![CDATA[
+		A once proud driveblade that can no longer serve its original purpose. It could be used as a weapon as a last resort however. The tip of it has been broken clean off, and it no longer has its port or hammer
+		#IF game.isSillyModeEnabled()
+		#THEN <br/><span style='font-style:bold;'><span style='color:#0066ff;'>" Did you just hit me with a broken sword? Why tho? "
+		#ELSE <br/><span style='font-style:bold;'><span style='color:#ff903cff;'>" You fool, you cant defeat me with a weapon like that..."
+		#ENDIF
+		]]></description> 
+		
+		<attackDescriptor>Chop</attackDescriptor>
+		
+		<attackTooltipDescription>Try to attack [npc2.name] using the remaining chunk of the blade.</attackTooltipDescription>
+		
+		<rarity>LEGENDARY</rarity> 
+		
+		<weaponSet/>
+		
+		<equipText><![CDATA[[npc.Name] [npc.verb(fasten)] the Broken Reppu across [npc.her] back.]]></equipText>
+		
+		<unequipText><![CDATA[[npc.Name] [npc.verb(unfasten)] the Broken Reppu from [npc.her] back.]]></unequipText>
+		
+		<imageName>Broken Reppu.svg</imageName> 
+		
+		<imageEquippedName>Broken Reppu.svg</imageEquippedName>
+		
+		<damage>25</damage> 
+		
+		<arcaneCost>0</arcaneCost> 
+		
+		<damageVariance>HIGH</damageVariance> 
+		
+		<availableDamageTypes>
+			<damageType>FIRE</damageType>
+			<damageType>PHYSICAL</damageType>
+			<damageType>ICE</damageType>
+			<damageType>MISC</damageType>
+		</availableDamageTypes>
+		
+		<spells/>
+		
+		<enchantmentLimit>15</enchantmentLimit>
+		
+		<effects> 
+              <effect itemEffectType="CLOTHING" limit="0" potency="MAJOR_BOOST" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="DAMAGE_MELEE_WEAPON" timer="0"/>
+		</effects>
+		
+		<primaryColours>
+			<colour>CLOTHING_BLACK_STEEL</colour>
+		</primaryColours> 
+		<primaryColoursDye values="ALL_METAL"/>
+		<secondaryColours> 
+			<colour>CLOTHING_SILVER</colour>
+		</secondaryColours> 
+		<secondaryColoursDye values="ALL_METAL"/>
+		
+		<itemTags> 
+			<tag>SOLD_BY_VICKY</tag>
+			<tag>WEAPON_BLADE</tag>
+		</itemTags>
+		
+	</coreAttributes>
+	
+	<hitDescriptions>
+		<hitText><![CDATA[[npc.Name] [npc.verb(slash)] [npc.her] blade at [npc2.name], slicing the blade along [npc2.her] torso!]]></hitText>
+		<hitText><![CDATA[[npc.Name] [npc.verb(slash)] at [npc2.name] with [npc.her] blade, causing [npc2.herHim] to flinch back as the edge passes through [npc2.her] shoulder!]]></hitText>
+		<hitText><![CDATA[With a quick step forwards, [npc.name] [npc.verb(slash)] at [npc2.name] with [npc.her] blade, forcing the blade into [npc.her] chest!]]></hitText>
+	</hitDescriptions>
+	
+	<missDescriptions>
+		<missText><![CDATA[[npc.Name] [npc.verb(slash)] [npc.her] blade at [npc2.name], but [npc.verb(end)] up missing [npc2.herHim] by an inch!]]></missText>
+		<missText><![CDATA[Slashing out at [npc2.name] with [npc.her] blade, [npc.name] [npc.verb(let)] out a frustrated cry as [npc.she] [npc.verb(miss)] [npc.her] target!]]></missText>
+		<missText><![CDATA[[npc.Name] [npc.verb(slash)] at [npc2.name] with [npc.her] blade, but [npc.verb(miss)] narrowly!]]></missText>
+	</missDescriptions>
+	
+	
+</weapon>

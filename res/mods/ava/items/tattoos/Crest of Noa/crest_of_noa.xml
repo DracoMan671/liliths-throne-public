@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<tattoo>
+	<coreAttributes>
+		<value>500</value> 
+		
+		<name><![CDATA[Crest of Noa]]></name>
+		
+		<description><![CDATA[A mysterious crest now carried by a noblewoman seeking to revive her family's former status]]></description> 
+		
+		<imageName>crest_of_noa.svg</imageName> 
+		
+		<enchantmentLimit>5</enchantmentLimit>
+		
+		<slotAvailability/>
+		
+		<primaryColours values="ALL"/> 
+		<secondaryColours values="ALL"/>
+		<tertiaryColours/>
+		
+	</coreAttributes>
+	
+</tattoo>

@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<clothing>
+	<coreAtributes>
+		<authorTag><![CDATA[Stamped into the tread of the boot reads "CAREFULY FORGED BY TROOPS #P01-Y & #B100-M "]]></authorTag>
+		<value>15000</value>
+		<determiner><![CDATA[a pair of]]></determiner>
+		<name><![CDATA[Imperial Brogue]]></name>
+		<namePlural pluralByDefault="true"><![CDATA[Imperial Brogue]]></namePlural>
+		<description><![CDATA[A pair of plate brogue, a hard set of metal boots made for protection as well as mobility. A standard of the cloudy stronghold's Imperials, the basic design has been improved with special materials. They're quite snug, but not uncomfortably so.]]></description>
+		<physicalResistance>11</physicalResistance>
+		<femininity>ANDROGYNOUS</femininity>
+		<slot>FOOT</slot> 
+		<rarity>EPIC</rarity>
+		<clothingSet></clothingSet>
+		<imageName>Imperial_Brogue.svg</imageName>
+		<imageEquippedName></imageEquippedName>
+		<enchantmentLimit>10</enchantmentLimit>
+		<effects />
+		<blockedPartsList>
+			<blockedParts>
+				<displacementType>REMOVE_OR_EQUIP</displacementType> 
+				<clothingAccessRequired> 
+					<clothingAccess>FEET</clothingAccess>
+				</clothingAccessRequired>
+				<blockedBodyParts>
+					<bodyPart>FEET</bodyPart>
+				</blockedBodyParts>
+				<clothingAccessBlocked> 
+					<clothingAccess>FEET</clothingAccess>
+				</clothingAccessBlocked>
+				<concealedSlots/>
+			</blockedParts>
+		</blockedPartsList>
+		<incompatibleSlots/>
+	<primaryColours>
+		<colour>CLOTHING_BLUE_NAVY</colour>
+	</primaryColours>
+	<primaryColoursDye values="ALL_WITH_METAL"/>
+	<secondaryColours>
+		<colour>CLOTHING_BLACK</colour>
+	</secondaryColours>
+	<secondaryColoursDye values="ALL_WITH_METAL"/>
+		<itemTags>
+			<tag>SOLD_BY_VICKY</tag>
+		</itemTags>
+	</coreAtributes>
+	<displacementText type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[You unfasten your Brogue and remove them.]]></playerSelf>
+		<playerNPC><![CDATA[You unfasten [npc.name]'s Brogue and remove them.]]></playerNPC>
+		<playerNPCRough><![CDATA[You tear off [npc.name]'s Brogue.]]></playerNPCRough>
+		<NPCSelf><![CDATA[[npc.name] unfastens and removes their Brogue.]]></NPCSelf>
+		<NPCPlayer><![CDATA[[npc.name] unfastens and removes your Brogue.]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[[npc.name] tears off your Brogue.]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[[npc1.name] unfastens [npc2.name]'s Brogue and removes them.]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[[npc1.name] tears off [npc2.name]'s Brogue.]]></NPCOtherNPCRough>
+	</displacementText>
+	<replacementText type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[You fasten on your Brogue.]]></playerSelf>
+		<playerNPC><![CDATA[You fasten on [npc.name]'s Brogue for them.]]></playerNPC>
+		<playerNPCRough><![CDATA[You roughly fasten [npc.name]'s Brogue to their feet.]]></playerNPCRough>
+		<NPCSelf><![CDATA[[npc.name] fastens on their Brogue.]]></NPCSelf>
+		<NPCPlayer><![CDATA[[npc.name] fastens on your Brogue for you.]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[[npc.name] roughly fastens your Brogue to your feet.]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[[npc1.name] fastens on [npc2.name]'s Brogue for them.]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[[npc1.name] roughly fastens [npc2.name]'s Brogue to their feet.]]></NPCOtherNPCRough>
+	</replacementText>
+</clothing>

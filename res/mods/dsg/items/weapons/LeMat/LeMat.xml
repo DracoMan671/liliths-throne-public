@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<weapon>
+	<coreAttributes>
+	
+		<!-- How much this weapon is worth. -->
+		<value>9000</value> 
+		
+				<melee>false</melee>
+		
+				<twoHanded>false</twoHanded>
+		
+				<determiner><![CDATA[an]]></determiner>
+		
+		<!-- The name of this weapon. -->
+		<name><![CDATA[Arcane Revolver]]></name>
+		
+				<namePlural pluralByDefault="false"><![CDATA[Arcane Revolvers]]></namePlural> 
+		
+				<description><![CDATA[The Arcane Revolver, unlike the earlier Muskets, is able to shoot multiple times in quick succession by drawing on only a negligible amount of the wielder's essence. The cost of such an advantage is decreased combat effectiveness and a higher price tag as manufacturing these weapons is neither cheap nor simple.]]></description>
+		
+				<attackDescriptor>Fire</attackDescriptor>
+		
+				<attackTooltipDescription>Shoot at [npc2.name]with your Arcane Revolver.</attackTooltipDescription>
+		
+				<rarity>RARE</rarity> 
+		
+				<equipText><![CDATA[[npc.Name] [npc.verb(draw)] the revolver.]]></equipText>
+		
+				<unequipText><![CDATA[[npc.Name] [npc.verb(holster)] the revolver.]]></unequipText>
+		
+				<imageName>LeMat.svg</imageName> 
+		
+		
+		<imageEquippedName>LeMat.svg</imageEquippedName>
+		
+				<damage>14</damage> 
+		
+				<arcaneCost>0</arcaneCost> 
+		
+				<damageVariance>LOW</damageVariance> 
+		
+				<availableDamageTypes>
+
+			<damageType>PHYSICAL</damageType>
+              
+					</availableDamageTypes>
+		
+				<enchantmentLimit>5</enchantmentLimit>
+		
+				<effects> 
+              		</effects>
+		
+				<primaryColours values="JUST_STEEL"/> 
+		<primaryColoursDye values="ALL_METAL"/>
+		<secondaryColours values="JUST_STEEL"/> 
+		<secondaryColoursDye values="ALL_METAL"/>
+		
+				<itemTags> 
+			<tag>SOLD_BY_VICKY</tag>
+		</itemTags>
+		
+	</coreAttributes>
+
+		<hitDescriptions>
+		<hitText><![CDATA[
+		[npc.name] [npc.verb(shoot)] at [npc2.name] and hit them in the chest. The arcane energy is distributed around their body, staggering them but not inflicting any permanent damage.
+		]]></hitText>
+		<hitText><![CDATA[
+		[npc.Name] [npc.verb(shoot)] at [npc2.name] with [npc.her] revolver, [npc.name] [npc.verb(manage)] to graze [npc2.her] [npc2.arm] with the arcane projectile.
+		]]></hitText>
+			</hitDescriptions>
+
+		<missDescriptions>
+		<missText><![CDATA[
+		[npc.name] [npc.verb(shoot)] at [npc2.name] but the arcane projectile flies off course.
+		]]></missText>
+		<missText><![CDATA[
+		[npc.name] [npc.verb(attempt)] to shoot at [npc2.name] but the gun jams!
+		]]></missText>
+			</missDescriptions>
+	
+</weapon>

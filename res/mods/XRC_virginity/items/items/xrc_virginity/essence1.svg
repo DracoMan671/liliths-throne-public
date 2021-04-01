@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   cursor="default"
+   viewBox="0 0 256 256"
+   version="1.1"
+   id="svg64"
+   sodipodi:docname="bdsm_mouth_ballgag.svg"
+   inkscape:version="0.92.2 5c3e80d, 2017-08-06">
+  <metadata
+     id="metadata68">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="640"
+     inkscape:window-height="480"
+     id="namedview66"
+     showgrid="false"
+     inkscape:zoom="0.921875"
+     inkscape:cx="128"
+     inkscape:cy="128"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg64" />
+  <defs
+     id="defs8">
+    <linearGradient
+       id="linearGradient4350">
+      <stop
+         offset="0"
+         stop-color="#faa"
+         id="stop2" />
+      <stop
+         offset="1"
+         stop-color="#f55"
+         id="stop4" />
+    </linearGradient>
+    <radialGradient
+       id="radialGradient4356"
+       cx="159.388"
+       cy="162.73"
+       r="34.706"
+       fx="159.388"
+       fy="162.73"
+       gradientTransform="matrix(2.7828871,0,0,2.6366698,-294.34509,-325.59587)"
+       gradientUnits="userSpaceOnUse"
+       xlink:href="#linearGradient4350" />
+  </defs>
+  <path
+     d="M 126.56659,38.835945 C 0.3125567,39.325461 1.9015852,219.90487 128.05822,219.2409 256.26026,218.56912 253.60817,38.341221 126.56659,38.835945 Z"
+     id="path36"
+     style="fill:url(#radialGradient4356);fill-rule:evenodd;stroke:#000000;stroke-width:2.69185972"
+     inkscape:connector-curvature="0" />
+</svg>

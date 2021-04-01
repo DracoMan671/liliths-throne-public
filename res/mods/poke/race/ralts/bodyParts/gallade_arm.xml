@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<arm>
+	<race>poke_ralts</race>
+	<transformationName><![CDATA[Gallade]]></transformationName>
+	<coveringType>poke_ralts_skin</coveringType>
+	<allowsFlight>false</allowsFlight>	
+	<!-- ARM_STANDARD, ARM_WINGS, ARM_WINGS_FEATHERED, ARM_WINGS_LEATHERY -->
+	<tags>
+		<tag>ARM_STANDARD</tag>
+	</tags>
+	<name><![CDATA[arm]]></name>
+	<namePlural><![CDATA[arms]]></namePlural> 
+	<descriptorsMasculine>
+		<descriptor>bladed</descriptor>
+		<descriptor>sharp</descriptor>
+		<descriptor>ethereal</descriptor>
+	</descriptorsMasculine>
+	<descriptorsFeminine>
+		<descriptor>bladed</descriptor>
+		<descriptor>sharp</descriptor>
+		<descriptor>ethereal</descriptor>
+	</descriptorsFeminine>
+	<handName><![CDATA[hand]]></handName>
+	<handNamePlural><![CDATA[hands]]></handNamePlural>
+	<handDescriptorsMasculine>
+		<descriptor>firm</descriptor>
+		<descriptor>ethereal</descriptor>
+	</handDescriptorsMasculine>
+	<handDescriptorsFeminine>
+		<descriptor>firm</descriptor>
+		<descriptor>effeminate</descriptor>
+		<descriptor>ethereal</descriptor>
+	</handDescriptorsFeminine>
+	<fingerName><![CDATA[finger]]></fingerName>
+	<fingerNamePlural><![CDATA[fingers]]></fingerNamePlural>
+	<fingerDescriptorsMasculine>
+		<descriptor>delicate</descriptor>
+		<descriptor>ethereal</descriptor>
+	</fingerDescriptorsMasculine>
+	<fingerDescriptorsFeminine>
+		<descriptor>effeminate</descriptor>
+		<descriptor>delicate</descriptor>
+		<descriptor>ethereal</descriptor>
+	</fingerDescriptorsFeminine>
+	<transformationDescription><![CDATA[
+		The transformation leaves [npc.nameIsFull] with a Gallade's powerful bladed arms, which are [npc.materialDescriptor] [npc.armFullDescription].
+	]]></transformationDescription>
+	<bodyDescription><![CDATA[
+	[npc.She] [npc.has] [npc.armRows] Gallade blade-arms and hands, which are [npc.materialCompositionDescriptor] [npc.armFullDescription(true)].
+	]]></bodyDescription>
+</arm>

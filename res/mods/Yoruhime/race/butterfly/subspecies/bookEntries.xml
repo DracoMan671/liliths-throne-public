@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<bookText>
+
+	<htmlContent tag="BUTTERFLY_BASIC"><![CDATA[
+	<p>
+		Butterfly-morphs are commonly found in forests or plains, where they live peacefully, although some found their way into the city.
+	</p>
+	]]>
+	</htmlContent>
+
+	<htmlContent tag="BUTTERFLY_ADVANCED"><![CDATA[
+	<p>
+		Butterfly-morphs are peaceful insectoids, spending their days fluttering carelessly from flower to flower, seeking the purest nectar to feed upon. Closely related to them, moth-morphs are almost identical to them, except that their wings emit a poisonous mist, which they use to protect themselves.
+	</p>
+	<p>
+		Like most other races, butterfly-morphs are affected by arcane storms and experience heightened libidos. They use their natural charms and quick reflexes to secure a mate when aroused by the storm.
+	</p>
+	<p>
+		A butterfly-morph's offspring will be a mixture of butterfly-morphs and offspring of their partner's race.
+	</p>
+	]]>
+	</htmlContent>
+
+</bookText>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<statusEffect>
+	<!-- 
+	Default works with the heart-shaped barbell item. Requires changing the Item ID in applicationCondition and the Inventory Slot twice in applicationCondition and twice in applyEffect
+	-->
+	
+	<!-- GENERAL INFORMATION: If you are unsure of anything, please use the LT Discord to ask for help!-->
+	<renderingPriority>75</renderingPriority>
+	<renderInEffectsPanel>true</renderInEffectsPanel>
+	
+	<!-- 'BENEFICIAL' if this is a good status effect for a character to have, 'NEUTRAL' if it's neither, or 'DETRIMENTAL' if it's a bad one. -->
+	<beneficial>NEUTRAL</beneficial>
+	<combatEffect>false</combatEffect>
+	
+	<sexEffect>true</sexEffect>
+	<name><![CDATA[Heart of Infertility]]></name>
+	<description><![CDATA[
+		[npc.Name] [npc.has] equipped an item that renders [npc.name] completly infertile.
+	]]></description>
+	
+	<!-- image recklessly stolen from the base game -->
+	<imageName>barren.svg</imageName>
+	<colourPrimary>CLOTHING_PINK</colourPrimary>
+	<colourSecondary/>
+	<colourTertiary/>
+	
+	<attributeModifiers>
+	<modifier value="-1000">FERTILITY</modifier>
+	</attributeModifiers>
+	<combatMoves/>
+	<spells/>
+	
+	<extraEffects>
+		<effect><![CDATA[
+        [#npc.name] is rendered completly infertile.
+		]]></effect>
+	</extraEffects>
+	
+	<!-- Checks if a heart-shaped barbell is equipped as an vaginal piercing
+	Inventory Slot enum referenced as IS_slot
+	getId() on heart-shaped barbell returns norin_piercings_heart_clit
+	prefix an item Id with "CT_" to use any other item-->
+	<applicationCondition><![CDATA[
+		#IF(npc.getClothingInSlot(IS_PIERCING_VAGINA)!=null)
+			#IF(npc.getClothingInSlot(IS_PIERCING_VAGINA).getClothingType().getId() == CT_norin_piercings_heart_clit.getId())
+				true
+			#ENDIF
+		#ELSE
+			false
+		#ENDIF
+	]]></applicationCondition>
+
+<applyEffect/>
+	
+<applyPostRemovalEffect/>
+	
+</statusEffect>

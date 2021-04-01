@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<clothing>
+	<coreAtributes>
+		<value>150</value> 
+		
+		<determiner><![CDATA[a]]></determiner>
+
+		<name><![CDATA[low cut blouse]]></name>
+
+		<namePlural pluralByDefault="false"><![CDATA[[low cut blouses]]></namePlural> 
+
+		<description><![CDATA[A blouse with a particularly low cut, which can result in large breasts being in a precarious situation. This blouse also does nothing to conceal the wearer's bra stap or even the top of the cup, letting everyone see what you have on underneath.]]></description> 
+
+		<physicalResistance>1</physicalResistance> 
+
+		<femininity>FEMININE</femininity> 
+
+		<slot>TORSO_UNDER</slot> 
+
+		<rarity>COMMON</rarity> 
+		
+		<clothingSet/> 
+		
+		<imageName>torso_lowcutblouse.svg</imageName> 
+		
+		<imageEquippedName/> 
+
+		<enchantmentLimit/>
+
+		<effects/> 
+
+		<blockedPartsList> 
+		
+			<blockedParts>
+
+				<displacementType>REMOVE_OR_EQUIP</displacementType> 
+
+				<clothingAccessRequired> 
+					<clothingAccess>ARMS_UP_TO_SHOULDER</clothingAccess>
+					<clothingAccess>HEAD</clothingAccess>
+				</clothingAccessRequired>
+
+				<blockedBodyParts>
+				<bodyPart>BACK</bodyPart>
+				</blockedBodyParts>
+
+				<clothingAccessBlocked/>
+
+				<concealedSlots/>
+			</blockedParts>
+			
+			<blockedParts>
+				<displacementType>PULLS_DOWN</displacementType>
+				<clothingAccessRequired/>
+				<blockedBodyParts>
+					<bodyPart>BREASTS</bodyPart>
+					<bodyPart>NIPPLES</bodyPart>
+				</blockedBodyParts>
+				<clothingAccessBlocked>
+					<clothingAccess>CHEST</clothingAccess>
+				</clothingAccessBlocked>
+				<concealedSlots>
+					<slot>NIPPLE</slot>
+					<slot>PIERCING_NIPPLE</slot>
+				</concealedSlots>
+			</blockedParts>
+			
+			<blockedParts>
+				<displacementType>PULLS_UP</displacementType>
+				<clothingAccessRequired/>
+				<blockedBodyParts>
+					<bodyPart>STOMACH</bodyPart>
+				</blockedBodyParts>
+				<clothingAccessBlocked>
+					<clothingAccess>STOMACH</clothingAccess>
+				</clothingAccessBlocked>
+				<concealedSlots>
+					<slot>STOMACH</slot>
+					<slot>PIERCING_STOMACH</slot>
+				</concealedSlots>
+			</blockedParts>
+		</blockedPartsList>
+
+		<incompatibleSlots/> 
+
+		<primaryColours values="ALL"/> 
+		<primaryColoursDye values="ALL"/>
+		<secondaryColours values="ALL"/>
+		<secondaryColoursDye values="ALL"/>
+		<tertiaryColours values="ALL"/>
+		<!-- You can also make your own, custom list of colours to be used. The following colours in 'tertiaryColoursDye' are all found within the list preset 'ALL', but this is for a demonstration.
+		 If you want to include custom colours, do not define a 'values' attribute, and instead, list each Colour.
+		 Colour types can be found here: https://github.com/Innoxia/liliths-throne-public/blob/master/src/com/lilithsthrone/utils/Colour.java
+		 PLEASE USE THE 'Colour' VALUES THAT SATRT WITH 'CLOTHING-'-->
+		<tertiaryColoursDye>
+			<colour>CLOTHING_WHITE</colour>
+			<colour>CLOTHING_BLACK</colour>
+			<colour>CLOTHING_GREY</colour>
+			<colour>CLOTHING_RED</colour>
+			<colour>CLOTHING_RED_BRIGHT</colour>
+			<colour>CLOTHING_RED_DARK</colour>
+			<colour>CLOTHING_ORANGE</colour>
+			<colour>CLOTHING_ORANGE_BRIGHT</colour>
+			<colour>CLOTHING_ORANGE_DARK</colour>
+			<colour>CLOTHING_BROWN</colour>
+			<colour>CLOTHING_TAN</colour>
+			<colour>CLOTHING_YELLOW</colour>
+			<colour>CLOTHING_GREEN_LIME</colour>
+			<colour>CLOTHING_GREEN</colour>
+			<colour>CLOTHING_GREEN_DARK</colour>
+			<colour>CLOTHING_TURQUOISE</colour>
+			<colour>CLOTHING_BLUE_LIGHT</colour>
+			<colour>CLOTHING_BLUE</colour>
+			<colour>CLOTHING_BLUE_DARK</colour>
+			<colour>CLOTHING_PURPLE</colour>
+			<colour>CLOTHING_PURPLE_DARK</colour>
+			<colour>CLOTHING_PURPLE_LIGHT</colour>
+			<colour>CLOTHING_PINK</colour>
+			<colour>CLOTHING_PINK_LIGHT</colour>
+		</tertiaryColoursDye>
+		
+		<itemTags> 
+			<tag>SOLD_BY_NYAN</tag>
+			<tag>DOMINION_ALLEYWAY_SPAWN</tag>
+		</itemTags>
+	</coreAtributes>
+
+	<displacementText type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[
+			You take off your blouse.
+		]]></playerSelf>
+		<playerNPC><![CDATA[
+			You pull off [npc.name]'s blouse.
+		]]></playerNPC>
+		<playerNPCRough><![CDATA[
+			You grab hold of [npc.name]'s blouse and roughly pull it off over [npc.her] head.
+		]]></playerNPCRough>
+		<NPCSelf><![CDATA[
+			[npc.Name] takes [npc.her] blouse off.
+		]]></NPCSelf>
+		<NPCPlayer><![CDATA[
+			[npc.Name] pulls your blouse off.
+		]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[
+			[npc.Name] grabs hold of your blouse and roughly pulls it off over your head.
+		]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[
+			[npc1.Name] pulls [npc2.name]'s blouse off.
+		]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[
+			[npc.Name] grabs hold of [npc2.name]'s blouse and roughly pulls it off over [npc2.her] head.
+		]]></NPCOtherNPCRough>
+	</displacementText>
+
+	<replacementText type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[
+			You pull on the blouse.
+		]]></playerSelf>
+		<playerNPC><![CDATA[
+			You guide [npc.name]'s [npc.arms] through the blouse's sleeves as you pull it on [npc.herHim].
+		]]></playerNPC>
+		<playerNPCRough><![CDATA[
+			You hold [npc.name] still as you roughly force the blouse down over [npc.her] head, before pulling it down over [npc.her] torso.
+		]]></playerNPCRough>
+		<NPCSelf><![CDATA[
+			[npc.Name] pulls on the blouse.
+		]]></NPCSelf>
+		<NPCPlayer><![CDATA[
+			[npc.Name] guides your [pc.arms] through the blouse's sleeves, before pulling it down over your torso.
+		]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[
+			[npc.Name] holds you still as [npc.she] roughly forces the blouse down over your head, before pushing your [pc.arms] through the sleeves.
+		]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[
+			[npc1.Name] guides [npc2.name]'s [npc2.arms] through the blouse's sleeves before pulling it down over [npc2.her] torso.
+		]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[
+			[npc1.Name] holds [npc2.name] still as [npc1.she] roughly forces the blouse down over [npc2.her] head, before pulling it down over [npc2.her] torso.
+		]]></NPCOtherNPCRough>
+	</replacementText>
+
+	<displacementText type="PULLS_DOWN">
+		<playerSelf><![CDATA[
+			You pull down your blouse, exposing your ​​​​​​​​​[​​​​​​​​​pc.breasts+].
+		]]></playerSelf>
+		<playerNPC><![CDATA[
+			You pull down [npc.namePos] blouse, exposing [npc.her] [npc.breasts+].
+		]]></playerNPC>
+		<playerNPCRough><![CDATA[
+			You roughly snatch at [npc.namePos] blouse, exposing [npc.her] [npc.breasts+].
+		]]></playerNPCRough>
+		<NPCSelf><![CDATA[
+			[npc.Name] pulls down their blouse, exposing [npc.her] [npc.breasts+].
+		]]></NPCSelf>
+		<NPCPlayer><![CDATA[
+			[npc.Name] pulls down your blouse, exposing your ​​​​​​​​​[​​​​​​​​​pc.breasts+].
+		]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[
+			[npc.Name] roughly snatches at [pc.namePos] blouse, exposing your [pc.breasts+].
+		]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[
+			[npc1.Name] pulls at [npc2.namePos] blouse, exposing [npc2.her] [npc2.breasts+].
+		]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[
+			[npc.Name] roughly claws at [npc2.namePos] blouse, exposing [npc2.her] [npc2.breasts+].
+		]]></NPCOtherNPCRough>
+	</displacementText>
+	
+	<replacementText type="PULLS_DOWN">
+		<playerSelf><![CDATA[
+			You pull your blouse back up, covering your [​​​​​​​​​pc.breasts+].
+		]]></playerSelf>
+		<playerNPC><![CDATA[
+			You pull up [npc.name]'s blouse, covering their [​​​​​​​​​pc.breasts+].
+		]]></playerNPC>
+		<playerNPCRough><![CDATA[
+			#IF npc.hasBreasts()
+			#THEN
+				You roughly force [npc.namePos] [​​​​​​​​​npc.​​​​​​​​​breasts+] back into [npc.her] blouse.
+			#ELSE 
+				You roughly pull [npc.namePos] blouse back up to cover [npc.her] flat chest.
+			#ENDIF
+		]]></playerNPCRough>
+		<NPCSelf><![CDATA[
+			[npc.Name] pulls [npc.her] blouse back up to cover [npc.her] [​​​​​​​​​pc.breasts+].
+		]]></NPCSelf>
+		<NPCPlayer><![CDATA[
+			[npc.Name] pulls up your blouse.
+		]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[
+			#IF pc.hasBreasts()
+			#THEN
+				[npc.Name] roughly forces your [​​​​​​​​​pc.​​​​​​​​​breasts+] back into [pc.namePos] blouse.
+			#ELSE 
+				[npc.Name] roughly pulls your blouse back up to cover [pc.namePos] flat chest.
+			#ENDIF
+		]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[
+			[npc1.Name] pulls up [npc2.namePos] blouse.
+		]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[
+			#IF npc2.hasBreasts()
+			#THEN
+				[npc1.Name] roughly forces [npc2.namePos] [​​​​​​​​​npc2.​​​​​​​​​breasts+] back into [npc2.her] blouse.
+			#ELSE 
+				[npc1.Name] roughly pulls [npc2.namePos] blouse back up to cover [npc2.her] flat chest.
+			#ENDIF
+		]]></NPCOtherNPCRough>
+	</replacementText>
+	
+	<displacementText type="PULLS_UP">
+		<playerSelf><![CDATA[
+			#IF pc.isVisiblyPregnant()
+			#THEN
+				You pull up your blouse, exposing your pregnant belly.
+			#ELSE 
+				You pull up your blouse.
+			#ENDIF
+		]]></playerSelf>
+		<playerNPC><![CDATA[
+			#IF npc.isVisiblyPregnant()
+			#THEN
+				You pull up [npc.namePos] blouse, exposing [npc.namePos] pregnant belly.
+			#ELSE 
+				You pull up [npc.namePos] blouse.
+			#ENDIF
+		]]></playerNPC>
+		<playerNPCRough><![CDATA[
+			#IF npc.isVisiblyPregnant()
+			#THEN
+				You roughly grab [npc.namePos] blouse, exposing [npc.namePos] pregnant belly.
+			#ELSE 
+				You roughly pull up [npc.namePos] blouse.
+			#ENDIF
+		]]></playerNPCRough>
+		<NPCSelf><![CDATA[
+			#IF npc.isVisiblyPregnant()
+			#THEN
+				[npc.name] pulls up [npc.her] blouse, exposing [npc.her] pregnant belly.
+			#ELSE 
+				[npc.name] pull up [npc.her] blouse.
+			#ENDIF
+		]]></NPCSelf>
+		<NPCPlayer><![CDATA[
+			#IF pc.isVisiblyPregnant()
+			#THEN
+				[npc.name] pulls up your blouse, exposing your pregnant belly.
+			#ELSE 
+				[npc.name] pulls up your blouse.
+			#ENDIF
+		]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[
+			#IF pc.isVisiblyPregnant()
+			#THEN
+				[npc1.name] roughly grabs your blouse, exposing your pregnant belly.
+			#ELSE 
+				[npc1.name] roughly pulls up your blouse.
+			#ENDIF
+		]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[
+			#IF npc2.isVisiblyPregnant()
+			#THEN
+				[npc1.name] pulls up [npc2.namePos] blouse, exposing [npc2.namePos] pregnant belly.
+			#ELSE 
+				[npc1.name] pulls up [npc2.namePos] blouse.
+			#ENDIF
+		]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[
+			#IF npc2.isVisiblyPregnant()
+			#THEN
+				[npc1.name] roughly grabs [npc2.namePos] blouse, exposing [npc2.namePos] pregnant belly.
+			#ELSE 
+				[npc1.name] roughly pulls up [npc2.namePos] blouse.
+			#ENDIF
+		]]></NPCOtherNPCRough>
+	</displacementText>
+	
+	<replacementText type="PULLS_UP">
+		<playerSelf><![CDATA[
+			You pull your blouse back down, covering your stomach.
+		]]></playerSelf>
+		<playerNPC><![CDATA[
+			You pull down [npc.name]'s blouse.
+		]]></playerNPC>
+		<playerNPCRough><![CDATA[
+			You roughly pull down [npc.name]'s blouse.
+		]]></playerNPCRough>
+		<NPCSelf><![CDATA[
+			[npc.Name] pulls [npc.her] blouse back down to cover [npc.her] stomach.
+		]]></NPCSelf>
+		<NPCPlayer><![CDATA[
+			[npc.Name] pulls down your blouse.
+		]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[
+			[npc.Name] roughly pulls down your blouse.
+		]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[
+			[npc1.Name] pulls down [npc2.name]'s blouse.
+		]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[
+			[npc.Name] roughly pulls down [npc2.name]'s blouse.
+		]]></NPCOtherNPCRough>
+	</replacementText>
+	
+</clothing>

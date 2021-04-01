@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<subspecies>
+	<race>poke_ralts</race>
+	<colour>BASE_GREEN_LIGHT</colour>
+	<secondaryColour>BASE_WHITE</secondaryColour>
+	<tertiaryColour>BASE_PURPLE_LIGHT</tertiaryColour>
+	<mainSubspecies>false</mainSubspecies>
+	<baseSlaveValue>25000</baseSlaveValue>
+	<attributeItemId>innoxia_race_human_vanilla_water</attributeItemId>
+	<transformativeItemId>poke_race_psychic_embrace_energy</transformativeItemId>
+	<!-- A Subspecies which has a higher value than a character's current Subspecies Override will replace the current Override with this one.
+	This is only used for demons, and should always be left as 0 unless you know what you're doing. -->
+	<subspeciesOverridePriority>0</subspeciesOverridePriority>
+	<shortStature>true</shortStature>
+	<bipedalSubspecies>true</bipedalSubspecies>
+	<aquatic>false</aquatic>
+	<applySubspeciesChanges><![CDATA[
+		[#targetedBody.getArm().setType(null, ARM_TYPE_poke_ralts_arm)]
+		[#targetedBody.getHorn().setType(null, HORN_TYPE_poke_ralts_ralts_horn)]
+		[#targetedBody.getHorn().setHornRows(null, 1)]
+		[#targetedBody.getHorn().setHornsPerRow(null, 1)]
+		[#targetedBody.getTorso().setType(null, TORSO_TYPE_poke_ralts_torso)]
+		[#targetedBody.getCovering(BODY_COVERING_TYPE_poke_ralts_skin, true).setPrimaryColour(COLOUR_COVERING_WHITE)]
+		[#targetedBody.getCovering(BODY_COVERING_TYPE_poke_ralts_skin, true).setSecondaryColour(COLOUR_COVERING_GREEN)]
+		[#targetedBody.getCovering(BODY_COVERING_TYPE_poke_ralts_chitin, true).setPrimaryColour(COLOUR_COVERING_RED)]
+		[#targetedBody.getCovering(BODY_COVERING_TYPE_ANUS, true).setPrimaryColour(COLOUR_SKIN_IVORY)]
+		[#targetedBody.getCovering(BODY_COVERING_TYPE_VAGINA, true).setPrimaryColour(COLOUR_SKIN_IVORY)]
+		[#targetedBody.getCovering(BODY_COVERING_TYPE_PENIS, true).setPrimaryColour(COLOUR_SKIN_IVORY)]
+	]]></applySubspeciesChanges>
+	<!-- This conditional statement determines if a body is detected as being an instance of this subspecies.
+	It should return an integer value, with 0 being returned if this subspecies' requirements are not met by the supplied body/race.
+	You should usually return a value of 100 if the requirements are met, or something higher if this subspecies should have a higher priority than other subspecies which may also detect this body as being an instance of their subspecies.
+	The body that's being checked can be accessed via using 'targetedBody'.
+	The race of the body that's being checked SHOULD NOT be accessed via targetedBody.getRace(), and should instead be accessed via using 'targetedRace'. -->
+	<subspeciesWeighting><![CDATA[
+		#IF(targetedRace==RACE_poke_ralts && 
+		targetedBody.getArm().getType()==ARM_TYPE_poke_ralts_arm &&
+		targetedBody.getHorn().getType()==HORN_TYPE_poke_ralts_ralts_horn &&
+		targetedBody.getTorso().getType()==TORSO_TYPE_poke_ralts_torso)
+			100
+		#ELSE
+			0
+		#ENDIF
+	]]></subspeciesWeighting>
+	<!-- The name of the svg file which represents this subspecies' icon.
+	It should be located in the same folder as this xml file.
+	The 'displaySize' attribute defines how much (if any) this icon should be shrunk to fit onto the background image.
+		This is so that you can make your icon a full-sized svg, so that it's a full size for use in other places (such as for the book image or item backgrounds) and resize it just for this subspecies icon.
+		The default value I use is 80 (corresponding to 80% of the image's full size), but you can define it however you like, or even omit it entirely (in which case a value of 100 is used).
+		A setting of 100 means that no resizing will be made to your icon image. -->
+	<iconName displaySize="80">psychic</iconName>
+	<!-- The name of the svg file which represents the background for this subspecies' icon.
+	It should be located in the same folder as this xml file.
+	You can leave this blank to use the game's default background. -->
+	<backgroundName>background</backgroundName>
+	<!-- Book information:
+	Books are automatically-generated items which reveal information about the game's subspecies.
+	There is a unique book created for every unique value defined for each subspecies' 'advancedDescriptionId' field. -->
+	<!-- The icon to be used on the book's front cover.
+	It should be located in the same folder as this xml file. -->
+	<bookIconName>psychic</bookIconName>
+	<bookName>PokéDex Chapter 280-282, 475</bookName>
+	<!-- These should be entered into the 'bookEntries.xml' file in the same folder location as this file. -->
+	<basicDescriptionId>RALTS_BASIC</basicDescriptionId>
+	<advancedDescriptionId>RALTS_ADVANCED</advancedDescriptionId>
+	<!-- ZERO_NONE, ONE_LOW, TWO_AVERAGE, THREE_HIGH, FOUR_ABUNDANT -->
+	<defaultPreference>TWO_AVERAGE</defaultPreference>
+		<name><![CDATA[Ralts-morph]]></name>
+		<namePlural><![CDATA[Ralts-morph]]></namePlural>
+		<singularMaleName><![CDATA[Ralts-boy]]></singularMaleName>
+		<singularFemaleName><![CDATA[Ralts-girl]]></singularFemaleName>
+		<pluralMaleName><![CDATA[Ralts-boys]]></pluralMaleName>
+		<pluralFemaleName><![CDATA[Ralts-girls]]></pluralFemaleName>
+	<description><![CDATA[A Ralts-morph, with its naturally flowy legs.]]></description>
+	<feralAttributes>
+		<name><![CDATA[Ralts]]></name>
+		<namePlural><![CDATA[Ralts]]></namePlural>
+		<singularMaleName><![CDATA[Ralts]]></singularMaleName>
+		<singularFemaleName><![CDATA[Ralts]]></singularFemaleName>
+		<pluralMaleName><![CDATA[Ralts]]></pluralMaleName>
+		<pluralFemaleName><![CDATA[Ralts]]></pluralFemaleName>
+		<legConfiguration>BIPEDAL</legConfiguration>
+		<!-- Whether or not this feral form's size is measured as height from floor to head, as for most mammals (true), or from head to tail (false), as for alligators and other low-lying animals which are far longer than they are tall. -->
+		<sizeHeight>true</sizeHeight>
+		<!-- The height/length of this subspecies' feral form, measured in cm. -->
+		<size>40</size>
+		<!-- The length of this feral form's tail when in the form of a serpent.
+		Values are defined as a percentage of the character's 'size', with this percentage being added onto their size to generate their total length.
+		As most of a snake's length is in fact their body, not their tail, the usual value for this element is a lot lower than you might expect, and is by default 0.1 (which represents 10%). -->
+		<serpentTailLength>0.1</serpentTailLength>
+		<!-- This will usually be 0, as it refers to breasts in the position of humans, which most animals lack. -->
+		<breastRowCount>1</breastRowCount>
+		<nipplesPerBreastCount>1</nipplesPerBreastCount>
+		<!-- The number of breast rows this feral form has near their crotch. -->
+		<crotchBreastRowCount>0</crotchBreastRowCount>
+		<nipplesPerCrotchBreastCount>1</nipplesPerCrotchBreastCount>
+		<!-- Whether this feral form has arms or wings. -->
+		<armsOrWingsPresent>true</armsOrWingsPresent>
+		<fingerActionsAvailable>true</fingerActionsAvailable>
+		<hairPresent>true</hairPresent>
+	</feralAttributes>
+	<statusEffectDescription><![CDATA[
+		[npc.NamePos] Ralts body is soft, nimble, and delicate. [npc.Her] horn is receptive to the emotions of people around [npc.her].
+	]]></statusEffectDescription>
+	<!-- MAJOR_PHYSIQUE, MAJOR_ARCANE, MAJOR_CORRUPTION, FERTILITY, VIRILITY, CRITICAL_DAMAGE
+	RESISTANCE_PHYSICAL, RESISTANCE_LUST, RESISTANCE_FIRE, RESISTANCE_ICE, RESISTANCE_POISON
+	DAMAGE_UNARMED, DAMAGE_MELEE_WEAPON, DAMAGE_RANGED_WEAPON, DAMAGE_SPELLS, DAMAGE_PHYSICAL, DAMAGE_LUST, DAMAGE_FIRE, DAMAGE_ICE, DAMAGE_POISON  
+	The 'value' field corresponds to a float of the magnitude of that Attribute. -->
+	<statusEffectAttributeModifiers>
+		<attribute value="11">MAJOR_PHYSIQUE</attribute>
+		<attribute value="14">MAJOR_ARCANE</attribute>
+		<attribute value="0">MAJOR_CORRUPTION</attribute>
+		<attribute value="10">DAMAGE_PHYSICAL</attribute>
+		<attribute value="18">DAMAGE_SPELLS</attribute>
+		<attribute value="110">RESISTANCE_PHYSICAL</attribute>
+		<attribute value="50">DAMAGE_LUST</attribute>
+		<attribute value="-50">RESISTANCE_POISON</attribute>
+		<attribute value="50">RESISTANCE_LUST</attribute>
+	</statusEffectAttributeModifiers>
+	<extraEffects>
+		<effect><![CDATA[Eating a Rare Candy will turn a Ralts into a Kirlia.]]></effect>
+	</extraEffects>
+	<!-- The likelihood of an AI of this subspecies choosing to select a perk from each of the three main perk categories.
+	The weightings are relative to each other, and so you can use whatever values you want, but be aware that negative numbers, or a total number weight greater than 2,147,483,647 will produce unexpected results. -->
+	<perkWeightings>
+		<category masculineWeighting="0" feminineWeighting="0">PHYSICAL</category>
+		<category masculineWeighting="10" feminineWeighting="10">LUST</category>
+		<category masculineWeighting="20" feminineWeighting="20">ARCANE</category>
+	</perkWeightings>
+	<!-- Along with 'worldLocations' below, this determines in what areas of the game this subspecies can spawn.
+	'regionLocations' covers a more general spawn area, whereas 'worldLocations' is a lot more precise in which areas should see this subspecies spawning.
+	World Regions: DOMINION, SUBMISSION, FIELD_CITY, DESERT_CITY, JUNGLE_CITY, SEA_CITY
+	FIELDS, WOODLAND, RIVER, SAVANNAH, DESERT, VOLCANO, JUNGLE, SEA, YOUKO_FOREST, MOUNTAINS, SNOW 
+	Rarity: NEGATIVE_THREE_ZERO, NEGATIVE_TWO_MYTHICAL, NEGATIVE_ONE_LEGENDARY, ZERO_EXTREMELY_RARE, ONE_VERY_RARE, TWO_RARE, THREE_UNCOMMON, FOUR_COMMON -->
+	<regionLocations>
+		<region rarity="ONE_VERY_RARE">FIELDS</region>
+	</regionLocations>
+	<!-- World Locations: DOMINION, HARPY_NEST, NIGHTLIFE_CLUB, SUBMISSION, BAT_CAVERNS -->
+	<worldLocations>
+		<world rarity="TWO_RARE">NIGHTLIFE_CLUB</world>
+		<world rarity="THREE_UNCOMMON">DOMINION</world>
+	</worldLocations>
+	<!-- Place Locations: DOMINION_BACK_ALLEYS, DOMINION_DARK_ALLEYS, DOMINION_ALLEYS_CANAL_CROSSING, DOMINION_CANAL
+	BAT_CAVERN_DARK, BAT_CAVERN_LIGHT, BAT_CAVERN_RIVER -->
+	<!-- 
+	<placeLocations>
+		<place rarity="TWO_RARE">DOMINION_CANAL</place>
+		<place rarity="TWO_RARE">DOMINION_ALLEYS_CANAL_CROSSING</place>
+	</placeLocations>
+	-->
+	<placeLocations/>
+	<!-- HIDDEN_FROM_PREFERENCES, DISABLE_FURRY_PREFERENCE, DISABLE_SPAWN_PREFERENCE -->
+	<flags>
+		<flag>HIDDEN_FROM_PREFERENCES</flag>
+	</flags>
+</subspecies>

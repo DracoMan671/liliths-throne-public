@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<clothing>
+	<coreAttributes>
+		<authorTag><![CDATA[An insignia discreetly stitched into the skirt's washing instructions tag informs you that someone by the name of 'Boondock' did the tailoring.]]></authorTag>
+		
+		<value>975</value> 
+		
+		<determiner><![CDATA[a]]></determiner>
+		
+		<name><![CDATA[Enforcer's taur-skirt]]></name>
+		
+		<namePlural pluralByDefault="false"><![CDATA[Enforcer's taur-skirts]]></namePlural> 
+		
+		<description><![CDATA[A specially-designed enforcer skirt, suitable to be fit onto the lower body of any taur race.]]></description> 
+		
+		<physicalResistance>3</physicalResistance> 
+		
+		<femininity>FEMININE</femininity> 
+		
+		<slot>LEG</slot> 
+		
+		<rarity>EPIC</rarity> 
+		
+		<clothingSet>ENFORCER</clothingSet>
+		
+		<imageName>taur_enforcer_skirt.svg</imageName> 
+		
+		<imageEquippedName/> 
+		
+		<enchantmentLimit>10</enchantmentLimit>
+		<effects>
+		<effect itemEffectType="CLOTHING" limit="0" potency="MAJOR_BOOST" primaryModifier="CLOTHING_MAJOR_ATTRIBUTE" secondaryModifier="STRENGTH" timer="0"/>
+		<effect itemEffectType="CLOTHING" limit="0" potency="MAJOR_BOOST" primaryModifier="CLOTHING_MAJOR_ATTRIBUTE" secondaryModifier="DAMAGE_WEAPON" timer="0"/>		
+		</effects>		
+		
+		
+		<blockedPartsList>
+			<blockedParts>
+				<displacementType>REMOVE_OR_EQUIP</displacementType> 
+				
+				<clothingAccessRequired>
+					<clothingAccess>LEGS_UP_TO_GROIN</clothingAccess>
+				</clothingAccessRequired>
+				
+				<blockedBodyParts>
+					<bodyPart>BACK</bodyPart>
+				</blockedBodyParts>
+				
+				<clothingAccessBlocked>
+					<clothingAccess>LEGS_UP_TO_GROIN</clothingAccess>
+				</clothingAccessBlocked>
+				<concealedSlots/>
+			</blockedParts>
+			
+			<blockedParts>
+				<displacementType>PULLS_UP</displacementType> 
+				
+				<clothingAccessRequired/>
+				
+				<blockedBodyParts>
+					<bodyPart>PENIS</bodyPart>
+					<bodyPart>ANUS</bodyPart>
+					<bodyPart>PENIS</bodyPart>
+					<bodyPart>VAGINA</bodyPart>
+					<bodyPart>THIGHS</bodyPart>
+					<bodyPart>STOMACH</bodyPart>
+					<bodyPart>BREASTS_CROTCH</bodyPart>
+					<bodyPart>NIPPLES_CROTCH</bodyPart>
+				</blockedBodyParts>
+				
+				<clothingAccessBlocked>
+					<clothingAccess>GROIN</clothingAccess>
+				</clothingAccessBlocked>
+				
+				<concealedSlots values="CONCEALED_TAUR"/>
+			</blockedParts>
+		</blockedPartsList>
+		
+		<incompatibleSlots/> 
+		
+		<primaryColours>
+			<colour>CLOTHING_BLUE</colour>
+		</primaryColours>
+		<primaryColoursDye values="ALL"/>
+		<secondaryColours>
+			<colour>CLOTHING_BLACK</colour>
+		</secondaryColours>
+		<secondaryColoursDye values="ALL"/>	
+		<tertiaryColours>
+			<colour>CLOTHING_STEEL</colour>
+		</tertiaryColours>
+		<tertiaryColoursDye values="ALL_METAL"/>
+
+				
+		<itemTags>		
+			<tag>FITS_TAUR_BODY</tag>
+			<tag>SOLD_BY_VICKY</tag>
+		</itemTags>
+	</coreAttributes>
+
+  <replacementText type="REMOVE_OR_EQUIP">
+    <self>
+      <![CDATA[[npc.Name] [npc.verb(pull)] the taur-skirt down over [npc.her] head, before allowing it to settle into place over [npc.her] [npc.legRace]'s body and buckling the duty belt.]]>
+    </self>
+    <other>
+      <![CDATA[[npc.Name] [npc.verb(pull)] the enforcer taur-skirt down over [npc2.namePos] head, before allowing it to settle into place over [npc2.her] [npc2.legRace]'s body and buckle's the duty belt.]]>
+    </other>
+    <otherRough>
+      <![CDATA[[npc.Name] [npc.verb(yank)] the enforcer taur-skirt down over [npc2.namePos] head, before firmly pulling it down over [npc2.her] [npc2.legRace]'s body and tightly buckles the duty belt around their waist.]]>
+    </otherRough>
+
+  </replacementText>
+
+  <displacementText type="REMOVE_OR_EQUIP">
+    <self>
+      <![CDATA[[npc.Name] [npc.verb(take)] hold of [npc.her] enforcer taur-skirt, and unbuckles the duty belt before pulling it up and over [npc2.her] head.]]>
+    </self>
+    <other>
+      <![CDATA[[npc.Name] [npc.verb(take)] hold of [npc2.namePos] enforcer taur-skirt, and unbuckle's the duty belt before pulling it up and over [npc2.her] head.]]>
+    </other>
+    <otherRough>
+      <![CDATA[[npc.Name] [npc.verb(grab)] hold of [npc2.namePos] enforcer taur-skirt, before yanking it up and over [npc2.her] head without unbuckling the duty belt.]]>
+    </otherRough>
+
+  </displacementText>
+	
+</clothing>

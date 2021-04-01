@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- For a version with comments, see "rental_mommy.xml". -->
+<clothing>
+	<coreAtributes>
+		<value>150</value>
+		<determiner><![CDATA[a]]></determiner>
+		<name><![CDATA[Backless Boxer Briefs]]></name>
+		<namePlural pluralByDefault="true"><![CDATA[Backless Boxer Briefs]]></namePlural>
+		<description><![CDATA[A pair of Boxer Briefs, with the crotch removed for complete access.]]></description>
+		<physicalResistance>1</physicalResistance>
+		<femininity>ANDROGYNOUS</femininity>
+		<slot>GROIN</slot>
+		<rarity>COMMON</rarity>
+		<clothingSet/>
+		<imageName>groin_boxerbriefs_backless.svg</imageName>
+		<imageEquippedName/>
+		<enchantmentLimit/>
+		<effects>
+		</effects>
+		<blockedPartsList>
+			<blockedParts>
+				<displacementType>REMOVE_OR_EQUIP</displacementType>
+				<clothingAccessRequired>
+					<clothingAccess>LEGS_UP_TO_GROIN_LOW_LEVEL</clothingAccess>
+					<clothingAccess>LEGS_UP_TO_GROIN</clothingAccess>
+					<clothingAccess>GROIN</clothingAccess>
+				</clothingAccessRequired>
+				<blockedBodyParts />
+				<clothingAccessBlocked/>
+				<concealedSlots>
+				</concealedSlots>
+			</blockedParts>
+			<blockedParts>
+				<displacementType>PULLS_DOWN</displacementType>
+				<clothingAccessRequired>
+					<clothingAccess>GROIN</clothingAccess>
+				</clothingAccessRequired>
+				<blockedBodyParts/>
+				<clothingAccessBlocked/>
+				<concealedSlots>
+				</concealedSlots>
+			</blockedParts>
+		</blockedPartsList>
+		<incompatibleSlots/>
+		<primaryColours values="ALL_WITH_METALS"/>
+		<primaryColoursDye values="ALL_WITH_METALS"/>
+		<secondaryColours values="ALL_WITH_METALS"/>
+		<secondaryColoursDye values="ALL_WITH_METALS"/>
+		<itemTags>
+			<tag>SOLD_BY_NYAN</tag>
+		</itemTags>
+	</coreAtributes>
+
+	<displacementText type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[
+			You pull down your boxer briefs and kick them off your feet.
+		]]></playerSelf>
+		<playerNPC><![CDATA[
+			You pull down [npc.name]'s boxer briefs and slide them off [npc.her] feet.
+		]]></playerNPC>
+		<playerNPCRough><![CDATA[
+			You grab hold of [npc.name]'s boxer briefs and roughly pull them down [npc.her] before lifting [npc.her] out of them.
+		]]></playerNPCRough>
+		<NPCSelf><![CDATA[
+			[npc.Name] pulls down [npc.her] boxer briefs and kick them off [npc.her] feet.
+		]]></NPCSelf>
+		<NPCPlayer><![CDATA[
+			[npc.Name] pulls down your boxer briefs and slides them off your feet.
+		]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[
+			[npc.Name] grabs hold of your boxer briefs and roughly pulls them down, before lifting you out of them.
+		]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[
+			[npc1.Name] pulls down [npc2.name]'s boxer briefs and slides them off [npc2.her] feet.
+		]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[
+			[npc.Name] grabs hold of [npc2.name]'s boxer briefs and roughly pulls them down, before lifting [npc2.her] out of them.
+		]]></NPCOtherNPCRough>
+	</displacementText>
+
+	<replacementText type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[
+			You pull up your boxer briefs and kick them off your feet.
+		]]></playerSelf>
+		<playerNPC><![CDATA[
+			You pull up [npc.name]'s boxer briefs and slide them off [npc.her] feet.
+		]]></playerNPC>
+		<playerNPCRough><![CDATA[
+			You grab hold of [npc.name]'s boxer briefs and roughly pull them up [npc.her] legs, lifting [npc.her] off the ground for a moment as you do so.
+		]]></playerNPCRough>
+		<NPCSelf><![CDATA[
+			[npc.Name] steps into [npc.her] boxer briefs and pulls up [npc.her] legs.
+		]]></NPCSelf>
+		<NPCPlayer><![CDATA[
+			[npc.Name] pulls up your boxer briefs once you step into them.
+		]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[
+			[npc.Name] grabs hold of your boxer briefs and roughly pulls them up your legs, lifting you off the ground for a moment as [npc.she] does.
+		]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[
+			[npc1.Name] pulls up [npc2.name]'s boxer briefs once [npc2.she] steps back into them.
+		]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[
+			[npc1.Name] grabs hold of [npc2.name]'s boxer briefs and roughly pulls them up [npc2.her] legs, lifting [npc2.her] off the ground for a moment as [npc1.she] does..
+		]]></NPCOtherNPCRough>
+	</replacementText>
+	
+</clothing>

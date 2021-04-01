@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<item>
+	<coreAttributes>
+		<value>15000</value> 
+		<determiner><![CDATA[a]]></determiner>
+		<name><![CDATA[Rare Candy]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Rare Candies]]></namePlural>
+		<description><![CDATA[An odd candy from another world. Apparently it can make certain creatures stronger.]]></description> 
+		<useDescriptor>eat</useDescriptor>
+		<sexUse>true</sexUse>
+		<combatUseAllies>true</combatUseAllies>
+		<combatUseEnemies>false</combatUseEnemies>
+		<consumedOnUse>true</consumedOnUse>
+		<!-- COMMON, UNCOMMON, RARE, EPIC, LEGENDARY -->
+		<rarity>RARE</rarity> 
+		<imageName zLayer="0" imageRotation="0" imageSize="100">background_bottom.svg</imageName>
+		<imageName zLayer="1" imageRotation="0" imageSize="60">rare_candy.svg</imageName>
+		<imageName zLayer="2" imageRotation="0" imageSize="100">background_top.svg</imageName>
+		<colourPrimary>BASE_INDIGO</colourPrimary>
+		<colourSecondary/>
+		<colourTertiary/>
+		<enchantmentItemTypeId/>
+		<enchantmentEffectId/>
+		<effectTooltipLines>
+			<line><![CDATA[[style.boldBad(Does not affect unique characters)]]]></line>
+			<line><![CDATA[[style.boldTfGeneric(Transforms)] Sneasel into Weavile at night]]></line>
+		</effectTooltipLines>
+		<applyEffects><![CDATA[
+		<p style='text-align:center'>
+			#IF(!npc.isPlayer() && npc.isUnique() && (!npc.isSlave() || npc.getOwner().isPlayer()))
+				[style.italicsDisabled(This item does not work on non-slave unique characters...)]
+			#ELSEIF(npc.getSubspecies()==SUBSPECIES_poke_nyula_subspecies_Sneasel)
+				#IF(game.getHourOfDay()<=6 || game.getHourOfDay()>=20)
+					[##game.getCharacterUtils().reassignBody(npc, npc.getBody(), npc.getGender(), SUBSPECIES_poke_nyula_subspecies_Weavile, RACE_STAGE_GREATER, true)]
+					[style.italics([npc.Name] evolved into [npc.a_race]!)]
+				#ENDIF
+			#ELSEIF(npc.getSubspecies()==SUBSPECIES_poke_ralts_subspecies_Kirlia)
+				[##game.getCharacterUtils().reassignBody(npc, npc.getBody(), npc.getGender(), SUBSPECIES_poke_ralts_subspecies_Gardevoir, RACE_STAGE_GREATER, true)]
+				[style.italics([npc.Name] evolved into [npc.a_race]!)]
+			#ELSEIF(npc.getSubspecies()==SUBSPECIES_poke_ralts_subspecies_Ralts)
+				[##game.getCharacterUtils().reassignBody(npc, npc.getBody(), npc.getGender(), SUBSPECIES_poke_ralts_subspecies_Kirlia, RACE_STAGE_GREATER, true)]
+				[style.italics([npc.Name] evolved into [npc.a_race]!)]
+			#ELSEIF(npc.getSubspecies()==SUBSPECIES_poke_focco_subspecies_Braixen)
+				[##game.getCharacterUtils().reassignBody(npc, npc.getBody(), npc.getGender(), SUBSPECIES_poke_focco_subspecies_Delphox, RACE_STAGE_GREATER, true)]
+				[style.italics([npc.Name] regressed into [npc.a_race]!)]
+			#ELSEIF(npc.getSubspecies()==SUBSPECIES_poke_focco_subspecies_Fennekin)
+				[##game.getCharacterUtils().reassignBody(npc, npc.getBody(), npc.getGender(), SUBSPECIES_poke_focco_subspecies_Braixen, RACE_STAGE_GREATER, true)]
+				[style.italics([npc.Name] regressed into [npc.a_race]!)]
+			#ELSEIF(npc.getSubspecies()==SUBSPECIES_poke_zoru_subspecies_Zorua)
+				[##game.getCharacterUtils().reassignBody(npc, npc.getBody(), npc.getGender(), SUBSPECIES_poke_zoru_subspecies_Zoroark, RACE_STAGE_GREATER, true)]
+				[style.italics([npc.Name] regressed into [npc.a_race]!)]
+			#ELSE
+			Nothing seems to happen...
+			#ENDIF
+		</p>
+		]]></applyEffects>
+		<!-- REINDEER_GIFT, SOLD_BY_RALPH, SOLD_BY_NYAN, SOLD_BY_KATE, SOLD_BY_FINCH, SOLD_BY_VICKY
+		SPELL_BOOK, SPELL_SCROLL, ESSENCE, ATTRIBUTE_TF_ITEM, RACIAL_TF_ITEM, MISC_TF_ITEM, BOOK, GIFT, DOMINION_ALLEYWAY_SPAWN, SUBMISSION_TUNNEL_SPAWN, BAT_CAVERNS_SPAWN, ALCOHOLIC
+		CONTRABAND_LIGHT, CONTRABAND_MEDIUM- CONTRABAND_HEAVY -->
+		<itemTags>
+			<tag>DOMINION_ALLEYWAY_SPAWN</tag>
+			<tag>SUBMISSION_TUNNEL_SPAWN</tag>
+			<tag>REINDEER_GIFT</tag>
+			<tag>SOLD_BY_RALPH</tag>
+		</itemTags>
+	</coreAttributes>
+	<useDescriptions>
+		<selfUse><![CDATA[
+		[npc.Name] [npc.verb(unwrap)] the Rare Candy and [npc.verb(pop)] it into [npc.her] mouth. The taste is nothing to write home about, but [npc.she] [npc.verb(feel)] a rush of energy flow through [npc.her] body.
+		]]></selfUse>
+		<otherUse><![CDATA[
+		[npc.Name] [npc.verb(unwrap)] the Rare Candy and [npc.verb(pop)] it into [npc2.NamePos] mouth. The taste is nothing to write home about, but [npc2.she] [npc2.verb(feel)] a rush of energy flow through [npc2.her] body.
+		]]></otherUse>
+	</useDescriptions>
+</item>

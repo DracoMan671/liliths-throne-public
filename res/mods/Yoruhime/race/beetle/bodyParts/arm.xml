@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<arm>
+	<race>Yoruhime_beetle</race>
+	<transformationName><![CDATA[beetle]]></transformationName>
+	<coveringType>Yoruhime_beetle_chitin</coveringType>
+	<allowsFlight>false</allowsFlight>
+	<tags>
+		<tag>ARM_STANDARD</tag>
+	</tags>
+	<name><![CDATA[arm]]></name>
+	<namePlural><![CDATA[arms]]></namePlural>
+	<descriptorsMasculine>
+		<descriptor>sleek</descriptor>
+		<descriptor>chitin-coated</descriptor>
+		<descriptor>armored</descriptor>
+	</descriptorsMasculine>
+	<descriptorsFeminine>
+		<descriptor>sleek</descriptor>
+		<descriptor>chitin-coated</descriptor>
+		<descriptor>armored</descriptor>
+	</descriptorsFeminine>
+	<handName><![CDATA[hand]]></handName>
+	<handNamePlural><![CDATA[hands]]></handNamePlural>
+	<handDescriptorsMasculine>
+		<descriptor>beetle-like</descriptor>
+	</handDescriptorsMasculine>
+	<handDescriptorsFeminine>
+		<descriptor>soft</descriptor>
+		<descriptor>feminine</descriptor>
+		<descriptor>beetle-like</descriptor>
+	</handDescriptorsFeminine>
+	<fingerName><![CDATA[finger]]></fingerName>
+	<fingerNamePlural><![CDATA[fingers]]></fingerNamePlural>
+	<fingerDescriptorsMasculine>
+		<descriptor>beetle-like</descriptor>
+	</fingerDescriptorsMasculine>
+	<fingerDescriptorsFeminine>
+		<descriptor>soft</descriptor>
+		<descriptor>feminine</descriptor>
+		<descriptor>beetle-like</descriptor>
+	</fingerDescriptorsFeminine>
+	<transformationDescription><![CDATA[
+		Within a matter of moments, a layer of [npc.armFullDescription] has quickly grown over them, and, looking down, [npc.she] [npc.verb(see)] [npc.her] new chitin recover the backs of [npc.her] hands. At [npc.her] upper-biceps, [npc.her] chitin smoothly transitions into the [npc.skin] that's covering the rest of [npc.her] body.
+		<br/>As the transformation comes to an end, [npc.nameIsFull] left with [style.boldBeetle(beetle-like arms and hands)], which are [npc.materialDescriptor] [npc.armFullDescription].
+	]]></transformationDescription>
+	<bodyDescription><![CDATA[
+	[npc.She] [npc.has] [npc.armRows] arms, which are [npc.materialCompositionDescriptor] [npc.armFullDescription(true)]. [npc.Her] hands are formed into beetle-like hands, with sharp fingertips.
+	]]></bodyDescription>
+</arm>

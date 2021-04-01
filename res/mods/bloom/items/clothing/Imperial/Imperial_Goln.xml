@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<clothing>
+	<coreAtributes>
+		<authorTag><![CDATA[Stamped into the back of the helmet reads "FORGED BY TROOPS #P01-Y & #B100-M"]]></authorTag>
+		<value>17000</value>
+		<determiner><![CDATA[an]]></determiner>
+		<name><![CDATA[Imperial Goln]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Imperial Golna]]></namePlural>
+		<description><![CDATA[A scaled plate helmet based off of statues that litter the cloudy stronghold. It has impressive defence, and an odd aesthetic due to the 'jaw' of the helmets visor. While not commonplace in the outcroppings of imperial explorers, its quite common in their army.]]></description>
+		<physicalResistance>8</physicalResistance>
+		<femininity>ANDROGYNOUS</femininity>
+		<slot>HEAD</slot>
+		<rarity>EPIC</rarity>
+		<clothingSet></clothingSet>
+		<imageName>Imperial_Goln.svg</imageName>
+		<imageEquippedName></imageEquippedName>
+		<enchantmentLimit>8</enchantmentLimit>
+		<effects />
+		<blockedPartsList>
+			<blockedParts>
+				<displacementType>REMOVE_OR_EQUIP</displacementType>
+				<clothingAccessRequired />
+				<blockedBodyParts>
+					<bodyPart>MOUTH</bodyPart>
+				</blockedBodyParts>
+				<clothingAccessBlocked>
+					<clothingAccess>EYES</clothingAccess>
+					<clothingAccess>MOUTH</clothingAccess>
+				</clothingAccessBlocked>
+				<concealedSlots>
+					<slot>EYES</slot>
+					<slot>HAIR</slot>
+					<slot>MOUTH</slot>
+					<slot>HORNS</slot>
+					<slot>PIERCING_LIP</slot>
+					<slot>PIERCING_TONGUE</slot>
+					<slot>PIERCING_NOSE</slot>
+					<slot>PIERCING_EAR</slot>
+				</concealedSlots>
+			</blockedParts>
+			<blockedParts>
+				<displacementType>PULLS_UP</displacementType>
+				<clothingAccessRequired/>
+				<blockedBodyParts>
+					<bodyPart>MOUTH</bodyPart>
+				</blockedBodyParts>
+				<clothingAccessBlocked>
+					<clothingAccess>HEAD</clothingAccess>
+				</clothingAccessBlocked>
+				<concealedSlots>
+					<slot>HAIR</slot>
+					<slot>PIERCING_EAR</slot>
+				</concealedSlots>
+			</blockedParts>
+		</blockedPartsList>
+		<incompatibleSlots>
+			<slot>HAIR</slot>
+			<slot>MOUTH</slot>
+			<slot>HORNS</slot>
+		</incompatibleSlots>
+	<primaryColours>
+		<colour>CLOTHING_BLUE_NAVY</colour>
+	</primaryColours>
+	<primaryColoursDye values="ALL_WITH_METAL"/>
+	<secondaryColours>
+		<colour>CLOTHING_BLACK</colour>
+	</secondaryColours>
+	<secondaryColoursDye values="ALL_WITH_METAL"/>
+
+		<itemTags>
+			<tag>SOLD_BY_VICKY</tag>
+		</itemTags>
+	</coreAtributes>
+	<displacementText type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[Unbinding the straps, you remove the goln from your head.]]></playerSelf>
+		<playerNPC><![CDATA[unbinding the straps, you open up and remove the goln from [npc.name]'s head.]]></playerNPC>
+		<playerNPCRough><![CDATA[Quickly unbinding the straps, you wrench the goln from [npc.name]'s head.]]></playerNPCRough>
+		<NPCSelf><![CDATA[[npc.name] unbinds the straps and removes their goln, after opening it.]]></NPCSelf>
+		<NPCPlayer><![CDATA[[npc.name] unbinds the straps of your goln, and removes it, after opening it.]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[Quickly unbinding the straps, [npc.name] wrenches the goln from your head.]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[[npc1.name] unbinds the straps on [npc2.name]'s goln, before opening it and removing it.]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[[npc1.name] unbinds the straps on the goln, before wrenching it from [npc2.name]'s head.]]></NPCOtherNPCRough>
+	</displacementText>
+	<replacementText type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[You place the goln on your head, before binding the straps.]]></playerSelf>
+		<playerNPC><![CDATA[You place the goln onto [npc.name]'s head, before binding straps for them.]]></playerNPC>
+		<playerNPCRough><![CDATA[You dunk the goln onto [npc.name]'s head.]]></playerNPCRough>
+		<NPCSelf><![CDATA[[npc.name] dons the goln, before binding the straps.]]></NPCSelf>
+		<NPCPlayer><![CDATA[[npc.name] places the goln onto your head, before binding the straps for you.]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[[npc.name] dunks the goln onto your head.]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[[npc1.name] places the goln onto [npc2.name]'s head, before binding it for them.]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[[npc1.name] hastily slams the goln onto [npc2.name]'s head, before leaving them to close it and secure the straps for themselves.]]></NPCOtherNPCRough>
+	</replacementText>
+	<displacementText type="PULLS_UP">
+		<playerSelf><![CDATA[You lift your visor.]]></playerSelf>
+		<playerNPC><![CDATA[You lift [npc.name]'s visor.]]></playerNPC>
+		<playerNPCRough><![CDATA[You pry up [npc.name]'s visor.]]></playerNPCRough>
+		<NPCSelf><![CDATA[[npc.name] lifts their visor.]]></NPCSelf>
+		<NPCPlayer><![CDATA[[npc.name] lifts your visor.]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[[npc.name] pries up your visor.]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[[npc1.name] opens [npc2.name]'s visor.]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[[npc1.name] pries open [npc2.name]'s visor.]]></NPCOtherNPCRough>
+	</displacementText>
+	<replacementText type="PULLS_DOWN">
+		<playerSelf><![CDATA[You drop your visor.]]></playerSelf>
+		<playerNPC><![CDATA[You drop [npc.name]'s visor.]]></playerNPC>
+		<playerNPCRough><![CDATA[You slap [npc.name]'s visor down.]]></playerNPCRough>
+		<NPCSelf><![CDATA[[npc.name] drops their visor.]]></NPCSelf>
+		<NPCPlayer><![CDATA[[npc.name] drops your visor.]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[[npc.name] slaps your visor down.]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[[npc1.name] closes [npc2.name]'s visor.]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[[npc1.name] slaps [npc2.name]'s visor shut.]]></NPCOtherNPCRough>
+	</replacementText>
+</clothing>

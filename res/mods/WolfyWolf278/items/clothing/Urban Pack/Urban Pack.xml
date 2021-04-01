@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<clothing>
+    <coreAttributes>
+        <authorTag><![CDATA[Made by WolfyWolf278]]></authorTag>
+        <value>300</value>
+        <determiner><![CDATA[an Urban Pack]]></determiner>
+        <name><![CDATA[Urban Pack]]></name>
+        <namePlural pluralByDefault="false"><![CDATA[Urban Packs]]></namePlural>
+        <description><![CDATA[A lightweight backpack for carrying all your adventuring gear and loot comfortably. Inside there are a few extra pockets to keep everything contained well sorted. The pack is made of a strong, durable material; sure to keep your belongings safe.]]></description>
+        <physicalResistance>0</physicalResistance>
+        <femininity>ANDROGYNOUS</femininity>
+        <equipSlots>
+            <slot>TORSO_OVER</slot>
+            <slot>TORSO_UNDER</slot>
+        </equipSlots>
+        <rarity>COMMON</rarity>
+        <clothingSet/>
+        <imageName>pack.svg</imageName>
+        <imageEquippedName slot="TORSO_OVER">pack.svg</imageEquippedName>
+        <imageEquippedName slot="TORSO_UNDER">pack.svg</imageEquippedName>
+        <enchantmentLimit>100</enchantmentLimit>
+        <effects/>
+        <blockedPartsList slot="TORSO_OVER">
+            <blockedParts>
+                <displacementType>REMOVE_OR_EQUIP</displacementType>
+                <clothingAccessRequired/>
+                <blockedBodyParts/>
+                <clothingAccessBlocked/>
+                <concealedSlots/>
+            </blockedParts>
+        </blockedPartsList>
+        <blockedPartsList slot="TORSO_UNDER">
+            <blockedParts>
+                <displacementType>REMOVE_OR_EQUIP</displacementType>
+                <clothingAccessRequired/>
+                <blockedBodyParts/>
+                <clothingAccessBlocked/>
+                <concealedSlots/>
+            </blockedParts>
+        </blockedPartsList>
+        <incompatibleSlots slot="TORSO_OVER"/>
+        <incompatibleSlots slot="TORSO_UNDER"/>
+        <primaryColours values="ALL"/>
+        <primaryColoursDye values="ALL"/>
+        <secondaryColours values="ALL"/>
+        <secondaryColoursDye values="NONE"/>
+        <tertiaryColours values="ALL_METAL"/>
+        <tertiaryColoursDye values="DARK_SHADES"/>
+        <defaultPatterns patternChance="0" colourNameDerivedFromPattern="true"/>
+        <patternPrimaryColours values="NONE"/>
+        <patternSecondaryColours values="NONE"/>
+        <patternTertiaryColours values="NONE"/>
+        <itemTags>
+            <tag>REVEALS_CONCEALABLE_SLOT</tag>
+        </itemTags>
+        <itemTags slot="TORSO_OVER">
+            <tag>REVEALS_CONCEALABLE_SLOT</tag>
+            <tag>SOLD_BY_NYAN</tag>
+            <tag>DOMINION_ALLEYWAY_SPAWN</tag>
+        </itemTags>
+        <itemTags slot="TORSO_UNDER">
+            <tag>REVEALS_CONCEALABLE_SLOT</tag>
+            <tag>SOLD_BY_NYAN</tag>
+            <tag>DOMINION_ALLEYWAY_SPAWN</tag>
+        </itemTags>
+    </coreAttributes>
+</clothing>

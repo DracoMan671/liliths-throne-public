@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<weapon>
+	<coreAttributes>
+	
+		<value>10000</value> 
+		
+		<melee>true</melee>
+		
+		<twoHanded>true</twoHanded>
+		
+		<determiner><![CDATA[]]></determiner>
+		
+		<name><![CDATA[Imperial Blade]]></name>
+		
+		<namePlural pluralByDefault="false"><![CDATA[Imperial Blade]]></namePlural>
+		
+		<description><![CDATA[A standard-issue but heavy driveblade. The first type of sucsessful driveblade ever made. Favored by the male imperial knights for its consistant damage, it also bares consistantly lower elemental capibility.]]></description> 
+		
+		<attackDescriptor>Drive</attackDescriptor>
+		
+		<attackTooltipDescription>Prime your blade and perform a drive attack on [npc2.Name] with it.</attackTooltipDescription>
+		
+		<rarity>RARE</rarity> 
+		
+		<weaponSet/>
+		
+		<equipText><![CDATA[[npc.Name] [npc.verb(fasten)] the driveblade to [npc.her] back, With the cartridge in, and gears locked on for later use.]]></equipText>
+		
+		<unequipText><![CDATA[[npc.Name] [npc.verb(unfasten)] the bat blade from [npc.her] waist, [npc.verb(unload)] it's active cartridge and [npc.verb(store)] it for later.]]></unequipText>
+		
+		<imageName>Imperial Blade.svg</imageName> 
+		
+		<imageEquippedName>Imperial Blade.svg</imageEquippedName>
+		
+		<damage>50</damage> 
+		
+		<arcaneCost>1</arcaneCost> 
+		
+		<damageVariance>LOW</damageVariance> 
+		
+		<availableDamageTypes>
+			<damageType>PHYSICAL</damageType>
+			<damageType>ICE</damageType>
+			<damageType>FIRE</damageType>
+			<damageType>POISON</damageType>
+		</availableDamageTypes>
+		
+		<spells/>
+		
+		<enchantmentLimit>15</enchantmentLimit>
+		
+		<effects> 
+              <effect itemEffectType="CLOTHING" limit="0" potency="MAJOR_BOOST" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="DAMAGE_MELEE_WEAPON" timer="0"/>
+              <effect itemEffectType="CLOTHING" limit="0" potency="MAJOR_BOOST" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="DAMAGE_MELEE_WEAPON" timer="0"/>
+              <effect itemEffectType="CLOTHING" limit="0" potency="MAJOR_BOOST" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="DAMAGE_MELEE_WEAPON" timer="0"/>
+              <effect itemEffectType="CLOTHING" limit="0" potency="MAJOR_BOOST" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="DAMAGE_MELEE_WEAPON" timer="0"/>
+			  <effect itemEffectType="CLOTHING" limit="0" potency="MAJOR_BOOST" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="CRITICAL_CHANCE" timer="0"/>
+              <effect itemEffectType="CLOTHING" limit="0" potency="MAJOR_BOOST" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="CRITICAL_CHANCE" timer="0"/>
+		</effects>
+		
+		<primaryColours>
+			<colour>CLOTHING_GREY</colour>
+		</primaryColours> 
+		<primaryColoursDye values="ALL_WITH_METALS"/>
+		<secondaryColours> 
+			<colour>CLOTHING_GOLD</colour>
+		</secondaryColours> 
+		<secondaryColoursDye values="ALL_METAL"/>
+		
+		<itemTags> 
+			<tag>SOLD_BY_VICKY</tag>
+			<tag>WEAPON_BLADE</tag>
+		</itemTags>
+		
+	</coreAttributes>
+	
+	<hitDescriptions>
+		<hitText><![CDATA[
+		[npc.Name] [npc.verb(prime)] [npc.her] blade before slicing [npc2.name], the sword passing through [npc2.her] body before weakly expelling its element, heating to its bright molten yellow phase. The heavy whiriling of the gears slow to a hum before the cartridge disengages and falls to the ground, Spent.
+		]]></hitText>
+		<hitText><![CDATA[
+		[npc.Name] [npc.verb(cleave)] [npc.her] blade through [npc2.Name]'s chest causing the cutter to weakly discharge its element before the blade heats to a bright molten yellow. The blade's gears slow to a soft hum before the cartridge disengages and falls away.
+		]]></hitText>
+		<hitText><![CDATA[
+		With an swift step forwards,[npc.Name] [npc.verb(thrust)] the blade through [npc2.name] piercing [npc2.her] diffusing the blade's elemental charge. As the blade finishes its initial burst it flairs into its usual bright molten yellow. The blade's gears slow to a dull whir before its cartridge disengages and falls out of it's socket.
+		]]></hitText>
+	</hitDescriptions>
+
+	<!-- Descriptions that are used when missing an enemy. One of the missText values will be randomly selected each time the attacker misses their target. Follow the same guidelines as equipText. -->
+	<missDescriptions>
+		<missText><![CDATA[
+		[npc.Name] [npc.verb(prime)] [npc.her] blade before slicing at [npc2.name], The blade discharges early turning the blade molten yellow before missing completely. The gears whir to almost a stop before the cartridge unlocks.
+		]]></missText>
+		<missText><![CDATA[
+		[npc.Name] [npc.verb(cleave)] [npc.her] blade at [npc2.Name], but [npc.verb(miss)] [npc2.her] narrowly, not long after the blade super heats and the cartridge deactivates before falling to the ground.
+		]]></missText>
+		<missText><![CDATA[
+		[npc.Name] [npc.verb(thrust)] [npc.her] sword at [npc2.name], but [npc.verb(lose)] [npc.her] balance, [npc.her] strike falling well short of [npc.her] target, [Npc2.name]. The blade glows into its molten phase before slowing its hum and discharging its cartridge.
+		]]></missText>
+	</missDescriptions>
+	
+</weapon>

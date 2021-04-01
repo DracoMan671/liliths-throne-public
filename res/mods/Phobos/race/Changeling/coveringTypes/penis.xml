@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<coveringType>
+	<!-- GENERAL INFORMATION: If you are unsure of anything, please use the LT Discord to ask for help! -->
+	
+	<!-- See fur.xml for a fully-commented coveringType example. -->
+	
+	<category>PENIS</category>
+	
+	<determiner><![CDATA[inside]]></determiner>
+	<name><![CDATA[penis]]></name>
+	<namePlural pluralByDefault="true"><![CDATA[penis]]></namePlural> 
+	
+	<naturalCoveringModifiers>
+		<modifier>SMOOTH</modifier>
+	</naturalCoveringModifiers>
+	
+	<extraCoveringModifiers/>
+	
+	<naturalPatterns/>
+
+	<extraPatterns/>
+	
+	<naturalColoursPrimary>
+	<colour>COVERING_BLUE_LIGHT</colour>
+	</naturalColoursPrimary> 
+	<extraColoursPrimary values="allCoveringColours"/>
+	
+	<naturalColoursPrimary>
+	<colour>COVERING_BLUE_LIGHT</colour>
+	</naturalColoursPrimary> 
+	<extraColoursSecondary values="allCoveringColours"/>
+	
+</coveringType>

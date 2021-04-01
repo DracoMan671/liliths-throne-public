@@ -20,7 +20,10 @@
 	<!-- Tags which are associated with this ear type.
 	You should most likely only be using the 'ears' tags for your ear type, which is just: EAR_HANDLES_IN_SEX
 	Values can be found here: https://github.com/Innoxia/liliths-throne-public/blob/dev/src/com/lilithsthrone/game/character/body/tags/BodyPartTag.java -->
-	<tags/>
+	<tags>
+	<tag>EAR_HANDLES_IN_SEX</tag>
+	<tag>ECHO_LOCATION</tag>
+	</tags>
 	<!-- Hyena ears don't have any special tags, but if they did, this section would look like this:
 	<tags>
 		<tag>EAR_HANDLES_IN_SEX</tag>

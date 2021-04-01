@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<race>
+	<racialBody>Aurelia_Raptor</racialBody>
+	
+	<applyRaceChanges><![CDATA[
+		[#targetedBody.getVagina().getClitoris().setGirth(null, 4)]
+	]]></applyRaceChanges>
+	
+	<name><![CDATA[raptor-morph]]></name>
+	<namePlural><![CDATA[raptor-morphs]]></namePlural>
+	
+	<nameFeral>
+		<name legConfiguration="AVIAN"><![CDATA[raptor]]></name>
+	</nameFeral>
+	<nameFeralPlural>
+		<name legConfiguration="AVIAN"><![CDATA[raptors]]></name>
+	</nameFeralPlural>
+	
+	<defaultTransformName><![CDATA[raptor]]></defaultTransformName>
+	
+	<colour>Aurelia_Raptor</colour>
+	
+	<disposition>UNPREDICTABLE</disposition>
+	
+	<racialClass>REPTILE</racialClass>
+	
+	<feralPartsAvailable>true</feralPartsAvailable>
+	
+	<ableToSelfTransform>false</ableToSelfTransform>
+
+	<flyingRace>false</flyingRace>
+	
+	<combatBehaviour>ATTACK</combatBehaviour>
+	
+	<chanceForMaleOffspring>0.9</chanceForMaleOffspring>
+	
+	<numberOfOffspringLow>5</numberOfOffspringLow>
+	<numberOfOffspringHigh>8</numberOfOffspringHigh>
+	
+	<defaultFemininePreference>NORMAL</defaultFemininePreference>
+	<defaultMasculinePreference>NORMAL</defaultMasculinePreference>
+	
+	<affectedByFurryPreference>true</affectedByFurryPreference>
+	
+</race>

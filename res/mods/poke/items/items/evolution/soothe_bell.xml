@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<item>
+	<coreAttributes>
+		<value>15000</value> 
+		<determiner><![CDATA[a]]></determiner>
+		<name><![CDATA[Soothe Bell]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Soothe Bells]]></namePlural>
+		<description><![CDATA[A bell from another world with a tranquil sound. Apparently it has the power to evolve certain creatures.]]></description> 
+		<useDescriptor>ring</useDescriptor>
+		<sexUse>true</sexUse>
+		<combatUseAllies>true</combatUseAllies>
+		<combatUseEnemies>false</combatUseEnemies>
+		<consumedOnUse>false</consumedOnUse>
+		<!-- COMMON, UNCOMMON, RARE, EPIC, LEGENDARY -->
+		<rarity>RARE</rarity> 
+		<imageName zLayer="0" imageRotation="0" imageSize="100">background_bottom.svg</imageName>
+		<imageName zLayer="1" imageRotation="0" imageSize="45">soothe_bell.svg</imageName>
+		<imageName zLayer="2" imageRotation="0" imageSize="100">background_top.svg</imageName>
+		<colourPrimary>BASE_LILAC</colourPrimary>
+		<colourSecondary/>
+		<colourTertiary/>
+		<enchantmentItemTypeId/>
+		<enchantmentEffectId/>
+		<effectTooltipLines>
+			<line><![CDATA[[style.boldBad(Does not affect unique characters)]]]></line>
+			<line><![CDATA[[style.boldTfGeneric(Transforms)] Eevee into Espeon during the day]]></line>
+			<line><![CDATA[[style.boldTfGeneric(Transforms)] Eevee into Umbreon at night]]></line>
+			<line><![CDATA[[style.boldTfGeneric(Transforms)] Eevee into Sylveon during an Arcane Storm]]></line>
+		</effectTooltipLines>
+		<applyEffects><![CDATA[
+		<p style='text-align:center'>
+			#IF(!npc.isPlayer() && npc.isUnique() && (!npc.isSlave() || npc.getOwner().isPlayer()))
+				[style.italicsDisabled(This item does not work on non-slave unique characters...)]
+			#ELSEIF(npc.getSubspecies()==SUBSPECIES_Phobos_Eevee_subspecies_Eevee)
+				#IF(game.getCurrentWeather()!=WEATHER_MAGIC_STORM)
+					#IF(game.getHourOfDay()>=6 && game.getHourOfDay()<=20)
+						[##game.getCharacterUtils().reassignBody(npc, npc.getBody(), npc.getGender(), SUBSPECIES_Phobos_Eevee_subspecies_Espeon, RACE_STAGE_GREATER, true)]
+						[style.italics([npc.Name] evolved into [npc.a_race]!)]
+					#ELSE
+					[##game.getCharacterUtils().reassignBody(npc, npc.getBody(), npc.getGender(), SUBSPECIES_Phobos_Eevee_subspecies_Umbreon, RACE_STAGE_GREATER, true)]
+					[style.italics([npc.Name] evolved into [npc.a_race]!)]
+					#ENDIF
+				#ELSE
+				[##game.getCharacterUtils().reassignBody(npc, npc.getBody(), npc.getGender(), SUBSPECIES_Phobos_Eevee_subspecies_Sylveon, RACE_STAGE_GREATER, true)]
+				[style.italics([npc.Name] evolved into [npc.a_race]!)]
+				#ENDIF
+			#ELSE
+			Nothing seems to happen...
+			#ENDIF
+		</p>
+		]]></applyEffects>
+		<!-- REINDEER_GIFT, SOLD_BY_RALPH, SOLD_BY_NYAN, SOLD_BY_KATE, SOLD_BY_FINCH, SOLD_BY_VICKY
+		SPELL_BOOK, SPELL_SCROLL, ESSENCE, ATTRIBUTE_TF_ITEM, RACIAL_TF_ITEM, MISC_TF_ITEM, BOOK, GIFT, DOMINION_ALLEYWAY_SPAWN, SUBMISSION_TUNNEL_SPAWN, BAT_CAVERNS_SPAWN, ALCOHOLIC
+		CONTRABAND_LIGHT, CONTRABAND_MEDIUM- CONTRABAND_HEAVY -->
+		<itemTags>
+			<tag>DOMINION_ALLEYWAY_SPAWN</tag>
+			<tag>REINDEER_GIFT</tag>
+			<tag>SOLD_BY_NYAN</tag>
+		</itemTags>
+	</coreAttributes>
+	<useDescriptions>
+		<selfUse><![CDATA[
+		[npc.Name] gently [npc.verb(ring)] the Soothe Bell. It lets out a faint chime that soothes [npc.her] to the core.
+		]]></selfUse>
+		<otherUse><![CDATA[
+		[npc.Name] [npc.verb(hold)] the Soothe Bell up to [npc2.name] and ring it. It lets out a faint chime that soothes [npc2.her] to the core.
+		]]></otherUse>
+	</useDescriptions>
+</item>

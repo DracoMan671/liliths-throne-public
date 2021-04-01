@@ -1,0 +1,38 @@
+Version A.1.1 fix
+
+-Fixed vagina covering parsing errors
+-Fixed Ralts-line horns when evolving/devolving
+
+
+-x-x-x-
+
+
+Version A.1.0
+FOXY MORPH UPDATE
+
+Moving forward, all Pokémon will have morph and feral variations.
+Past Pokémon will be changed to reflect this.
+
+Added the following Pokémon:
+Fennekin, Braixen, Delphox
+Zorua, Zoroark
+
+-Edited Ralts-line book entries slightly
+-Edited Sneasel-line energy description slightly
+-Fixed typo in Lucario torso description
+-Fixed typo in Ralts subspecies description
+-Fixed Gallade torso name
+
+
+-x-x-x-
+
+
+Version A.0.1
+
+-Fixed Ralts-line horn sizes breaking saves
+-Fixed Ralts-line leg description
+-Fixed colour formatting for all races
+-Set Lucario race color to darker, more befitting shade of blue
+-Restored Ralts-line genital coverings
+-Set genital covering colors for Sneasel and Ralts line races
+-Fixed the silly problem of names not appearing in Silly Mode

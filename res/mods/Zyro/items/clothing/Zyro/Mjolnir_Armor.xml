@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!-- A fan-made mod for Innoxia's Lilith's Throne. Feel free to edit these files however you want, same goes for the svg's. Thanks to Innoxia for making Lilith's Throne, it's great. //Zyro-->
+<clothing>
+  <coreAtributes>
+    <value>5000</value>
+    <determiner><![CDATA[a]]></determiner>
+    <name><![CDATA[Mjolnir Armor]]></name>
+    <namePlural pluralByDefault="false"><![CDATA[Mjolnir Armor]]></namePlural>
+    <description><![CDATA[The Mjolnir Powered Assault Armor is a technologically-advanced combat exoskeleton system designed to vastly improve the strength, speed and agility of the wearer. This is not one of them.]]></description>
+    <physicalResistance>4</physicalResistance>
+    <femininity>ANDROGYNOUS</femininity>
+    <slot>TORSO_OVER</slot>
+    <rarity>UNCOMMON</rarity>
+    <clothingSet />
+    <imageName>Mjolnir_Armor.svg</imageName>
+    <imageEquippedName />
+    <enchantmentLimit />
+    <effects />
+    <blockedPartsList>
+      <blockedParts>
+        <displacementType>REMOVE_OR_EQUIP</displacementType>
+        <clothingAccessRequired>
+          <clothingAccess>ARMS_UP_TO_SHOULDER</clothingAccess>
+		</clothingAccessRequired>
+		<blockedBodyParts>
+          <bodyPart>NIPPLES</bodyPart>
+          <bodyPart>STOMACH</bodyPart>
+          <bodyPart>BACK</bodyPart>
+          <bodyPart>VAGINA</bodyPart>
+          <bodyPart>PENIS</bodyPart>
+          <bodyPart>ANUS</bodyPart>
+        </blockedBodyParts>
+        <clothingAccessBlocked />
+        <concealedSlots />
+      </blockedParts>
+      <blockedParts>
+        <displacementType>SHIFTS_ASIDE</displacementType>
+        <clothingAccessRequired />
+		<blockedBodyParts />
+        <clothingAccessBlocked>
+          <clothingAccess>CHEST</clothingAccess>
+        </clothingAccessBlocked>
+        <concealedSlots />
+      </blockedParts>
+    </blockedPartsList>
+    <incompatibleSlots />
+    <primaryColours values="ALL_WITH_METALS" />
+    <primaryColoursDye values="ALL_WITH_METALS" />
+    <secondaryColours values="ALL_WITH_METALS" />
+    <secondaryColoursDye values="ALL_WITH_METALS" />
+    <tertiaryColours values="ALL_WITH_METALS" />
+    <tertiaryColoursDye values="ALL_WITH_METALS" />
+    <itemTags>
+      <tag>SOLD_BY_NYAN</tag>
+    </itemTags>
+  </coreAtributes>
+  <displacementText type="REMOVE_OR_EQUIP">
+    <playerSelf>
+			You take off the Mjolnir Armor, it takes quite a while.
+		</playerSelf>
+    <playerNPC>
+			You remove [npc.name]'s Mjolnir Armor, it takes quite a while.
+		</playerNPC>
+    <playerNPCRough>
+			You grab hold of [npc.name]'s Mjolnir Armor and start to tear it apart piece by piece.
+		</playerNPCRough>
+    <NPCSelf>
+			[npc.Name] takes off [npc.her] Mjolnir Armor, it takes quite a while.
+		</NPCSelf>
+    <NPCPlayer>
+			[npc.Name] takes off your Mjolnir Armor, it takes quite a while.
+		</NPCPlayer>
+    <NPCPlayerRough>
+			[npc.Name] grabs hold of your Mjolnir Armor and starts to tear it apart piece by piece.
+		</NPCPlayerRough>
+    <NPCOtherNPC>
+			[npc1.Name] takes off [npc2.name]'s Mjolnir Armor, it takes quite a while.
+		</NPCOtherNPC>
+    <NPCOtherNPCRough>
+			[npc.Name] grabs hold of [npc2.name]'s Mjolnir Armor starts to tear it apart piece by piece.
+		</NPCOtherNPCRough>
+  </displacementText>
+  <replacementText type="REMOVE_OR_EQUIP">
+    <playerSelf>
+			You put on the Mjolnir Armor, it takes quite a while.
+		</playerSelf>
+    <playerNPC>
+			You put the Mjolnir Armor on [npc.name]'s body, it takes quite a while.
+		</playerNPC>
+    <playerNPCRough>
+			You hold [npc.name] still as you roughly force the Mjolnir Armor onto [npc.her] body, it takes quite a while.
+		</playerNPCRough>
+    <NPCSelf>
+			[npc.Name] puts on the Mjolnir Armor, it takes quite a while.
+		</NPCSelf>
+    <NPCPlayer>
+			[npc.Name] equips you with the Mjolnir Armor, it takes quite a while.
+		</NPCPlayer>
+    <NPCPlayerRough>
+			[npc.Name] holds you still as [npc.she] roughly forces the Mjolnir Armor onto your body, it takes quite a while.
+		</NPCPlayerRough>
+    <NPCOtherNPC>
+			[npc1.Name] equips the Mjolnir Armor on [npc2.name], it takes quite a while.
+		</NPCOtherNPC>
+    <NPCOtherNPCRough>
+			[npc1.Name] holds [npc2.name] still as [npc1.she] roughly forces the Mjolnir Armor onto [npc2.name]'s body, it takes quite a while.
+		</NPCOtherNPCRough>
+  </replacementText>
+  <displacementText type="SHIFTS_ASIDE">
+    <playerSelf>
+			You spend some time removing parts of your Mjolnir Armor, careful not to kill yourself in the process.
+		</playerSelf>
+    <playerNPC>
+			You spend some time removing parts of [npc.name]'s Mjolnir Armor, careful not to kill both of you in the process.
+		</playerNPC>
+    <playerNPCRough>
+			You grab hold of [npc.name] and start to tear off the pieces of [npc.her] Mjolnir Armor.
+		</playerNPCRough>
+    <NPCSelf>
+			[npc.Name] spends some time removing parts of [npc.her] Mjolnir Armor, careful not to kill [npc.her]self in the process.
+		</NPCSelf>
+    <NPCPlayer>
+			[npc.Name] spends some time removing parts of your Mjolnir Armor, careful not to kill both of you in the process.
+		</NPCPlayer>
+    <NPCPlayerRough>
+			[npc.Name] grabs hold of you and starts to tear off the pieces of your Mjolnir Armor.
+		</NPCPlayerRough>
+    <NPCOtherNPC>
+			[npc1.Name] spends some time removing parts of [npc2.name]'s Mjolnir Armor, careful not to kill both of you in the process.
+		</NPCOtherNPC>
+    <NPCOtherNPCRough>
+			[npc1.Name] grabs hold of [npc2.name] and starts to tear off the pieces of [npc2.her]'s Mjolnir Armor.
+		</NPCOtherNPCRough>
+  </displacementText>
+  <replacementText type="SHIFTS_ASIDE">
+    <playerSelf>
+			You put back the missing pieces on your Mjolnir Armor.
+		</playerSelf>
+    <playerNPC>
+			You put back the missing pieces on [npc.name]'s Mjolnir Armor.
+		</playerNPC>
+    <playerNPCRough>
+			You hold [npc.name] still as you haphazardly piece together [npc.her] Mjolnir Armor.
+		</playerNPCRough>
+    <NPCSelf>
+			[npc.Name] puts back the missing pieces on her Mjolnir Armor.
+		</NPCSelf>
+    <NPCPlayer>
+			[npc.Name] puts back the missing pieces of your Mjolnir Armor.
+		</NPCPlayer>
+    <NPCPlayerRough>
+			[npc.Name] holds you still as [npc.she] haphazardly piece together your Mjolnir Armor.
+		</NPCPlayerRough>
+    <NPCOtherNPC>
+			[npc1.Name] puts back the missing pieces together [npc2.name]'s Mjolnir Armor.
+		</NPCOtherNPC>
+    <NPCOtherNPCRough>
+			[npc1.Name] grabs hold [npc2.name] and starts to haphazardly piece together [npc2.her] Mjolnir Armor.
+		</NPCOtherNPCRough>
+  </replacementText>
+</clothing>

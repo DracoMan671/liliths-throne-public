@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<hair>
+	<race>poke_nyula</race>
+	<transformationName><![CDATA[Sneasel]]></transformationName>
+	<coveringType>poke_nyula_fur</coveringType>
+	<!-- HAIR_HANDLES_IN_SEX, HAIR_NATURAL_MANE -->
+	<tags/>
+	<determiner><![CDATA[a head of]]></determiner>
+	<name><![CDATA[hair]]></name>
+	<namePlural pluralByDefault="false"><![CDATA[hairs]]></namePlural> 
+	<descriptorsMasculine>
+		<descriptor>furry</descriptor>
+	</descriptorsMasculine>
+	<descriptorsFeminine>
+		<descriptor>furry</descriptor>
+	</descriptorsFeminine>
+	<transformationDescription><![CDATA[
+		The transformation only lasts a matter of moments, leaving [npc.herHim] with furry hair.
+		<br/>[npc.Name] now [npc.has] [npc.hairColour] Sneasel hair.
+	]]></transformationDescription>
+	<bodyDescription><![CDATA[
+		[npc.SheHasFull] [npc.hairDeterminer] [npc.hairLength], [npc.hairColour(true)], Sneasel hair.
+	]]></bodyDescription>
+	
+</hair>

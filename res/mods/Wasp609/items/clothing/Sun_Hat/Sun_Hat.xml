@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<clothing>
+    <coreAttributes>
+        <authorTag/>
+        <value>1</value>
+        <determiner><![CDATA[a]]></determiner>
+        <name><![CDATA[Sun Hat]]></name>
+        <namePlural pluralByDefault="false"><![CDATA[Sun Hats]]></namePlural>
+        <description><![CDATA[A simple sun hat to keep the sun out of the eyes.]]></description>
+        <physicalResistance>0</physicalResistance>
+        <femininity>FEMININE</femininity>
+        <equipSlots>
+            <slot>HEAD</slot>
+        </equipSlots>
+        <rarity>COMMON</rarity>
+        <clothingSet/>
+        <imageName>Sun_Hat.svg</imageName>
+        <imageEquippedName slot="HEAD"/>
+        <enchantmentLimit>1</enchantmentLimit>
+        <effects>
+            <effect limit="0" timer="0" itemEffectType="CLOTHING" primaryModifier="CLOTHING_ATTRIBUTE" potency="BOOST" secondaryModifier="DAMAGE_UNARMED"/>
+        </effects>
+        <blockedPartsList slot="HEAD">
+            <blockedParts>
+                <displacementType>REMOVE_OR_EQUIP</displacementType>
+                <clothingAccessRequired>
+                    <clothingAccess>HEAD</clothingAccess>
+                </clothingAccessRequired>
+                <blockedBodyParts/>
+                <clothingAccessBlocked/>
+                <concealedSlots/>
+            </blockedParts>
+        </blockedPartsList>
+        <incompatibleSlots slot="HEAD">
+            <slot>EYES</slot>
+            <slot>MOUTH</slot>
+        </incompatibleSlots>
+        <primaryColours values="ALL"/>
+        <primaryColoursDye values="ALL"/>
+        <secondaryColours values="ALL"/>
+        <secondaryColoursDye values="ALL"/>
+        <itemTags>
+            <tag>DOMINION_ALLEYWAY_SPAWN</tag>
+            <tag>SOLD_BY_NYAN</tag>
+            <tag>SUBMISSION_TUNNEL_SPAWN</tag>
+        </itemTags>
+        <itemTags slot="HEAD"/>
+    </coreAttributes>
+</clothing>

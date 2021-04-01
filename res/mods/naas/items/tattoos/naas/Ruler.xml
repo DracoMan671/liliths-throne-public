@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<tattoo>	
+	<coreAttributes>
+		<value>800</value> 
+		<name><![CDATA[ruler]]></name>
+		<description><![CDATA[A ruler's tattoo, sometimes used by magicians to mark their servant.]]></description> 
+		<imageName>ruler.svg</imageName>
+		<enchantmentLimit>10</enchantmentLimit>
+		<slotAvailability/>
+		<primaryColours values="ALL_WITH_METALS"/> 
+		<secondaryColours values="ALL_WITH_METALS"/>
+		<tertiaryColours/>
+	</coreAttributes>
+</tattoo>

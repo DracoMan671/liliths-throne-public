@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ass>
+	<race>Yoruhime_butterfly</race>
+	<transformationName><![CDATA[butterfly]]></transformationName>
+	<coveringType>Yoruhime_butterfly_skin</coveringType>
+	<anusType>Yoruhime_butterfly_anus</anusType>
+	<names/>
+	<namesPlural/>
+	<descriptorsMasculine/>
+	<descriptorsFeminine/>
+	<transformationDescription><![CDATA[
+		[npc.She] now [npc.has] a [style.boldButterfly(butterfly-like)], [npc.assholeFullDescription].
+	]]></transformationDescription>
+	<bodyDescription><![CDATA[
+		[npc.SheHasFull] a butterfly-like, [npc.anusFullDescription(true)]
+	]]></bodyDescription>
+</ass>

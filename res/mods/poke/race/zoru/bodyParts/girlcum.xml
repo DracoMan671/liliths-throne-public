@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<fluid>
+	<race>poke_zoru</race>
+	<transformationName><![CDATA[Zorua-line]]></transformationName>
+	<baseFluidType>GIRLCUM</baseFluidType>
+	<flavour>GIRL_CUM</flavour>
+	<namesMasculine/>
+	<namesFeminine/>
+	<descriptorsMasculine>
+		<name><![CDATA[
+		#IF(npc.getSubspecies()==SUBSPECIES_poke_zoru_subspecies_Zorua)
+		Zorua
+		#ELSEIF(npc.getSubspecies()==SUBSPECIES_poke_zoru_subspecies_Zoroark)
+		Zoroark
+		#ENDIF
+		]]></name>
+	</descriptorsMasculine>
+	<descriptorsFeminine>
+		<name><![CDATA[
+		#IF(npc.getSubspecies()==SUBSPECIES_poke_zoru_subspecies_Zorua)
+		Zorua
+		#ELSEIF(npc.getSubspecies()==SUBSPECIES_poke_zoru_subspecies_Zoroark)
+		Zoroark
+		#ENDIF
+		]]></name>
+	</descriptorsFeminine>
+	<defaultFluidModifiers>
+		<modifier>SLIMY</modifier>
+	</defaultFluidModifiers>
+</fluid>

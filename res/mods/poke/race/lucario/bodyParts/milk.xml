@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<fluid>
+	<race>poke_lucario</race>
+	<transformationName><![CDATA[Lucario]]></transformationName>
+	<baseFluidType>MILK</baseFluidType>
+	<!-- CUM, MILK, GIRL_CUM, BUBBLEGUM, BEER, VANILLA, STRAWBERRY, CHOCOLATE, PINEAPPLE, HONEY, MINT, CHERRY, COFFEE, TEA, MAPLE, CINNAMON, LEMON, ORANGE, GRAPE, MELON, COCONUT, BLUEBERRY -->
+	<flavour>MILK</flavour>
+	<namesMasculine/>
+	<!--
+	<namesMasculine>
+		<name><![CDATA[milk]]></name>
+	</namesMasculine>
+	-->
+	<namesFeminine/>
+	<descriptorsMasculine>
+		<name><![CDATA[Lucario]]></name>
+	</descriptorsMasculine>
+	<descriptorsFeminine>
+		<name><![CDATA[Lucario]]></name>
+	</descriptorsFeminine>
+	<!-- MUSKY, VISCOUS, STICKY, SLIMY, BUBBLING, MINERAL_OIL, ALCOHOLIC, ADDICTIVE, HALLUCINOGENIC -->
+	<defaultFluidModifiers/>
+	<!--
+	<defaultFluidModifiers>
+		<modifier>MUSKY</modifier>
+	</defaultFluidModifiers>
+	-->
+</fluid>

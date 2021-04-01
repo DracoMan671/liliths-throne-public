@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ass>
+	<race>Aurelia_Sergal</race>
+	
+	<transformationName><![CDATA[sergal]]></transformationName>
+	
+	<coveringType>Aurelia_Sergal_fur</coveringType>
+	
+	<anusType>Aurelia_Sergal_anus</anusType>
+	
+	<names/>
+	<namesPlural/>
+	
+	<descriptorsMasculine/>
+	<descriptorsFeminine/>
+	
+	<transformationDescription><![CDATA[
+		[npc.She] now [npc.has] a [style.boldSergalSlate(sergal)], [npc.assholeFullDescription].
+	]]></transformationDescription>
+	
+	<bodyDescription><![CDATA[
+		[npc.SheHasFull] a sergal, [npc.anusFullDescription(true)]
+	]]></bodyDescription>
+	
+</ass>

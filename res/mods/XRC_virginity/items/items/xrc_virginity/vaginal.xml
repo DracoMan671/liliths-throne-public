@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<item>
+	<coreAttributes>
+		<authorTag><![CDATA[Occasionally, the essence forms the sentence <i>"made from authentic virgins; produced by XRC!"</i>.]]></authorTag>
+		<value>40000</value>
+		<determiner><![CDATA[]]></determiner>
+		<name><![CDATA[essence of virginity]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[essences of virginity]]></namePlural>
+		<description><![CDATA[The essence of virginity itself. By absorbing it, one can restore their virginity.]]></description>
+		<useDescriptor>absorb</useDescriptor>
+		<sexUse>false</sexUse>
+		<combatUseAllies>false</combatUseAllies>
+		<combatUseEnemies>false</combatUseEnemies>
+		<consumedOnUse>true</consumedOnUse>
+		<rarity>RARE</rarity> 
+		<imageName>essence1.svg</imageName> 
+		<colourPrimary>CLOTHING_PINK</colourPrimary>
+		<colourSecondary/>
+		<colourTertiary/>
+		<effectTooltipLines>
+			<line><![CDATA[[style.boldExcellent(Restores virginity!)]]]></line>
+		</effectTooltipLines>
+<!-- TODO: separate into single-virginity items when we can check enabled content. ie anal-->
+		<applyEffects><![CDATA[
+	#IF(npc.isAssVirgin()
+		&&npc.isNippleVirgin()
+		&&npc.isNippleCrotchVirgin()
+		&&npc.isFaceVirgin()
+		&&npc.isPenisVirgin()
+		&&npc.isUrethraVirgin()
+		&&npc.isSecondUrethraVirgin()
+		&&npc.isVaginaVirgin()
+		&&npc.hasHymen()
+		&&npc.isVaginaUrethraVirgin())
+		#THEN <i>Nothing happens, as there's nothing to restore...</i>
+	#ELSE
+
+#IF(!npc.isAssVirgin()) #THEN[##npc.setAssVirgin(1)]<br>[npc.Name] regained [npc.her] anal virginity! #ENDIF
+#IF(!npc.isNippleVirgin()) #THEN[##npc.setNippleVirgin(1)]<br>[npc.Name] regained [npc.her] titular virginity! #ENDIF
+#IF(!npc.isNippleCrotchVirgin()) #THEN[##npc.setNippleCrotchVirgin(1)]<br>[npc.Name] regained [npc.her] titular crotch virginity! #ENDIF
+#IF(!npc.isFaceVirgin()) #THEN[##npc.setFaceVirgin(1)]<br>[npc.Name] regained [npc.her] oral virginity! #ENDIF
+#IF(!npc.isPenisVirgin()) #THEN[##npc.setPenisVirgin(1)]<br>[npc.Name] regained [npc.her] penile virginity! #ENDIF
+#IF(!npc.isUrethraVirgin()) #THEN[##npc.setUrethraVirgin(1)]<br>[npc.Name] regained [npc.her] penile urethral virginity! #ENDIF
+#IF(!npc.isSecondUrethraVirgin()) #THEN[##npc.setSecondUrethraVirgin(1)]<br>[npc.Name] regained [npc.her] second penile urethral virginity! #ENDIF
+#IF(!npc.isVaginaVirgin()) #THEN[##npc.setVaginaVirgin(1)]<br>[npc.Name] regained [npc.her] vaginal virginity!<br>[npc.Name] regained [npc.her] hymen! #ENDIF
+#IF(!npc.isVaginaUrethraVirgin()) #THEN[##npc.setVaginaUrethraVirgin(1)]<br>[npc.Name] regained [npc.her] vaginal urethral virginity! #ENDIF
+
+	#ENDIF
+		]]></applyEffects>
+
+		<itemTags>
+			<tag>DOMINION_ALLEYWAY_SPAWN</tag>
+			<tag>SUBMISSION_TUNNEL_SPAWN</tag>
+			<tag>BAT_CAVERNS_SPAWN</tag>
+			<tag>SOLD_BY_VICKY</tag>
+		</itemTags>
+	</coreAttributes>
+	<useDescriptions>
+		<selfUse><![CDATA[
+		[npc.Name] [npc.verb(absorb)] the essence of virginity.
+		]]></selfUse>
+		<otherUse><![CDATA[
+		[npc.Name] [npc.verb(slam)] the essence of virginity in [npc2.namePos] face, forcing [npc2.her] to absorb it.
+		]]></otherUse>
+	</useDescriptions>
+</item>

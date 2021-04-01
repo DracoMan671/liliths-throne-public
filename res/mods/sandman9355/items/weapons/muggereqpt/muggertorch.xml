@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<weapon>
+	<coreAttributes>
+		<value>800</value>
+		<melee>true</melee>
+		<twoHanded>false</twoHanded>
+		<determiner><![CDATA[a]]></determiner>
+		<name><![CDATA[torch]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[torches]]></namePlural>
+		<description><![CDATA[A wooden branch, old rags, something flamable, a spark of Arcane to make it last longer and burn hotter. It can bring light into dark places - and it is a club one can hit and burn someone with.]]></description> 
+		
+		<attackDescriptor>whack</attackDescriptor>
+		
+		<attackTooltipDescription><![CDATA[Whack [npc2.name] with your torch.]]></attackTooltipDescription>
+		
+		<rarity>COMMON</rarity> 
+		
+		<weaponSet/> 
+		
+		<equipText><![CDATA[[npc.Name] [npc.verb(ready)] [npc.her] torch in anticipation of using it as a weapon.]]></equipText>
+		
+		<unequipText><![CDATA[[npc.Name] [npc.verb(put)] away [npc.her] torch.]]></unequipText>
+		
+		<imageName>muggertorch2.svg</imageName> 
+		
+		<imageEquippedName>muggertorch.svg</imageEquippedName> 
+		
+		<damage>20</damage> 
+		
+		<arcaneCost>0</arcaneCost> 
+		
+		<damageVariance>LOW</damageVariance> 
+		
+		<availableDamageTypes>
+			<damageType>FIRE</damageType>
+		</availableDamageTypes>
+		
+		<spells/>
+		
+		<enchantmentLimit>5</enchantmentLimit>
+		
+		<effects/>
+		
+		<primaryColours>
+			<colour>CLOTHING_DESATURATED_BROWN</colour>
+			<colour>CLOTHING_TAN</colour>
+			<colour>CLOTHING_BROWN_VERY_DARK</colour>
+			<colour>CLOTHING_KHAKI</colour>
+		</primaryColours> 
+		<primaryColoursDye values="ALL"/>
+		<secondaryColours>
+			<colour>CLOTHING_BROWN</colour>
+		</secondaryColours>		
+		<secondaryColoursDye values="ALL"/>
+		
+		<itemTags> 
+			<tag>SOLD_BY_VICKY</tag>
+			<tag>NIGHT_VISION_AREA</tag>
+		</itemTags>
+		
+	</coreAttributes>
+	
+	<hitDescriptions>
+		<hitText><![CDATA[
+		[npc.Name] [npc.verb(swing)] [npc.her] torch at [npc2.name], grinning as it connects with [npc2.her] body!
+		]]></hitText>
+		<hitText><![CDATA[
+		Striking out at [npc2.name] with [npc.her] torch, [npc.name] [npc.verb(grin)] as it burns [npc2.herHim] on the [npc2.arm]!
+		]]></hitText>
+		<hitText><![CDATA[
+		[npc.Name] [npc.verb(swipe)] at [npc2.name] with [npc.her] torch, causing [npc2.herHim] to stagger back as [npc2.she] [npc2.verb(get)] whacked in the [npc2.arm]!
+		]]></hitText>
+	</hitDescriptions>
+
+	<missDescriptions>
+		<missText><![CDATA[
+		[npc.Name] [npc.verb(swing)] [npc.her] torch at [npc2.name], but [npc.verb(end)] up missing [npc2.herHim]!
+		]]></missText>
+		<missText><![CDATA[
+		Striking out at [npc2.name] with [npc.her] torch, [npc.name] [npc.verb(let)] out a frustrated cry as [npc.she] [npc.verb(miss)] [npc.her] target!
+		]]></missText>
+		<missText><![CDATA[
+		With a quick step forwards, [npc.name] [npc.verb(swipe)] at [npc2.name] with [npc.her] torch, but [npc.she] [npc.verb(miss)] [npc.her] target!
+		]]></missText>
+	</missDescriptions>
+	
+</weapon>

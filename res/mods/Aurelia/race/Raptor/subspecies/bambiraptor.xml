@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<subspecies>
+	<race>Aurelia_Raptor</race>
+	
+	<colour>Aurelia_Bambiraptor</colour>
+	<secondaryColour>Aurelia_Bambiraptor</secondaryColour>
+	<tertiaryColour>Aurelia_Bambiraptor</tertiaryColour>
+	
+	<mainSubspecies>false</mainSubspecies>
+	
+	<baseSlaveValue>75000</baseSlaveValue>
+	
+	<attributeItemId>Aurelia_race_raptor_vile_serum</attributeItemId>
+	
+	<transformativeItemId>Aurelia_race_raptor_unspeakable_meat</transformativeItemId>
+	
+	<subspeciesOverridePriority>0</subspeciesOverridePriority>
+	
+	<shortStature>true</shortStature>
+	
+	<bipedalSubspecies>true</bipedalSubspecies>
+	
+	<aquatic>false</aquatic>
+	
+	<applySubspeciesChanges><![CDATA[
+		[#targetedBody.getArm().setType(null, ARM_TYPE_Aurelia_Raptor_armWingarm)]
+		[#targetedBody.getAss().setType(null, ASS_TYPE_Aurelia_Raptor_assFeathered)]
+		[#targetedBody.getFace().setType(null, FACE_TYPE_Aurelia_Raptor_faceFeathered)]
+		[#targetedBody.getLeg().setType(null, LEG_TYPE_Aurelia_Raptor_legFeathered)]
+		[#targetedBody.getTail().setType(null, TAIL_TYPE_Aurelia_Raptor_tailFeathered)]
+		[#targetedBody.getTorso().setType(null, TORSO_TYPE_Aurelia_Raptor_torsoFeathered)]
+	]]></applySubspeciesChanges>
+	
+	<subspeciesWeighting><![CDATA[
+		#IF(targetedRace==RACE_Aurelia_Raptor &&
+		targetedBody.getArm().getType()==ARM_TYPE_Aurelia_Raptor_armWingarm &&
+		targetedBody.getAss().getType()==ASS_TYPE_Aurelia_Raptor_assFeathered &&
+		targetedBody.getFace().getType()==FACE_TYPE_Aurelia_Raptor_faceFeathered &&
+		targetedBody.getLeg().getType()==LEG_TYPE_Aurelia_Raptor_legFeathered &&
+		targetedBody.getTail().getType()==TAIL_TYPE_Aurelia_Raptor_tailFeathered &&
+		targetedBody.getTorso().getType()==TORSO_TYPE_Aurelia_Raptor_torsoFeathered)
+			150
+		#ELSE
+			0
+		#ENDIF
+	]]></subspeciesWeighting>
+	
+	<iconName displaySize="80">icon</iconName>
+	
+	<backgroundName>background</backgroundName>
+	
+	<bookIconName>icon</bookIconName>
+	
+	<bookName>Eyes of the Stalkers</bookName>
+	
+	<basicDescriptionId>RAPTOR_BASIC</basicDescriptionId>
+	<advancedDescriptionId>RAPTOR_ADVANCED</advancedDescriptionId>
+	
+	<defaultPreference>TWO_AVERAGE</defaultPreference>
+	
+	<name><![CDATA[bambiraptor-morph]]></name>
+	<namePlural><![CDATA[bambiraptor-morphs]]></namePlural>
+	<singularMaleName><![CDATA[bambiraptor-boy]]></singularMaleName>
+	<singularFemaleName><![CDATA[bambiraptor-girl]]></singularFemaleName>
+	<pluralMaleName><![CDATA[bambiraptor-boys]]></pluralMaleName>
+	<pluralFemaleName><![CDATA[bambiraptor-girls]]></pluralFemaleName>
+	
+	<description><![CDATA[An anthropomorphic bambiraptor, known as a 'bambiraptor-morph' when bipedal, and a 'bambiraptor-amalgam' when the lower body is that of a typically-oversized feral raptor.]]></description>
+	
+	<nameHalfDemon><![CDATA[nether-bambiraptor]]></nameHalfDemon>
+	<namePluralHalfDemon><![CDATA[nether-bambiraptors]]></namePluralHalfDemon>
+	<singularMaleNameHalfDemon><![CDATA[nether-bambiraptor]]></singularMaleNameHalfDemon>
+	<singularFemaleNameHalfDemon><![CDATA[nether-bambiraptor]]></singularFemaleNameHalfDemon>
+	<pluralMaleNameHalfDemon><![CDATA[nether-bambiraptors]]></pluralMaleNameHalfDemon>
+	<pluralFemaleNameHalfDemon><![CDATA[nether-bambiraptors]]></pluralFemaleNameHalfDemon>
+	
+	<feralAttributes>
+		<!-- Naming: -->
+		<feralName><![CDATA[bambiraptor]]></feralName>
+		<feralNamePlural><![CDATA[bambiraptors]]></feralNamePlural>
+		<feralSingularMaleName><![CDATA[bambiraptor]]></feralSingularMaleName>
+		<feralSingularFemaleName><![CDATA[bambiraptor]]></feralSingularFemaleName>
+		<feralPluralMaleName><![CDATA[bambiraptors]]></feralPluralMaleName>
+		<feralPluralFemaleName><![CDATA[bambiraptors]]></feralPluralFemaleName>
+		
+		<legConfiguration>AVIAN</legConfiguration>
+		<sizeHeight>true</sizeHeight>
+		<size>45</size>
+		
+		<breastRowCount>0</breastRowCount>
+		<nipplesPerBreastCount>1</nipplesPerBreastCount>
+		<crotchBreastRowCount>1</crotchBreastRowCount>
+		<nipplesPerCrotchBreastCount>1</nipplesPerCrotchBreastCount>
+		
+		<armsOrWingsPresent>true</armsOrWingsPresent>
+		<fingerActionsAvailable>true</fingerActionsAvailable>
+		<hairPresent>false</hairPresent>
+	</feralAttributes>
+	
+	<statusEffectDescription><![CDATA[
+		[npc.NamePos] bambiraptor-like body is very meek-looking, and [npc.she] [npc.has] a strong flight sense when foes challenge [npc.herHim].
+	]]></statusEffectDescription>
+	
+	<statusEffectAttributeModifiers>
+		<attribute value="5">MAJOR_PHYSIQUE</attribute>
+		<attribute value="50">MAJOR_CORRUPTION</attribute>
+		<attribute value="25">CRITICAL_DAMAGE</attribute>
+	</statusEffectAttributeModifiers>
+	
+	<extraEffects/>
+	
+	<perkWeightings>
+		<category masculineWeighting="10" feminineWeighting="10">PHYSICAL</category>
+		<category masculineWeighting="0" feminineWeighting="0">LUST</category>
+		<category masculineWeighting="0" feminineWeighting="0">ARCANE</category>
+	</perkWeightings>
+	
+	<regionLocations>
+		<region rarity="ONE_VERY_RARE">DOMINION</region>
+	</regionLocations>
+	
+	<worldLocations>
+			<world rarity="ONE_VERY_RARE">NIGHTLIFE_CLUB</world>
+	</worldLocations>
+	
+	<flags/>
+	
+</subspecies>

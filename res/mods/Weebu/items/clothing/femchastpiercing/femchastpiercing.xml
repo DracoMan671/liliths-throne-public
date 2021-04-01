@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+
+<clothing>
+  <coreAttributes>
+    <value>2500</value>
+    <determiner><![CDATA[a]]></determiner>
+    <name><![CDATA[female chastity piercing]]></name>
+    <namePlural pluralByDefault="false"><![CDATA[female chastity piercings]]></namePlural>
+    <description><![CDATA[An unobtrusive female chastity device that requires piercings to put in place and enchanted to restore the 'purity' of those who lack restraint.]]></description>
+
+    <physicalResistance>0</physicalResistance>
+    <femininity>FEMININE</femininity>
+    <slot>PIERCING_VAGINA</slot>
+    <rarity>EPIC</rarity>
+
+    <imageName>femchastpiercing.svg</imageName>
+
+    <clothingSet>BDSM</clothingSet>
+    <imageEquippedName/>
+    <enchantmentLimit/>
+
+	<effects> 
+		<effect itemEffectType="CLOTHING" limit="0" potency="MINOR_DRAIN" primaryModifier="CLOTHING_SPECIAL" secondaryModifier="CLOTHING_SEALING" timer="0"/>
+		<effect itemEffectType="CLOTHING" limit="0" potency="MINOR_DRAIN" primaryModifier="CLOTHING_MAJOR_ATTRIBUTE" secondaryModifier="STRENGTH" timer="0"/>
+
+	</effects>
+
+    <blockedPartsList>
+      <blockedParts>
+        <displacementType>REMOVE_OR_EQUIP</displacementType>
+        <clothingAccessRequired>
+          <clothingAccess>GROIN</clothingAccess>
+        </clothingAccessRequired>
+	<blockedBodyParts>
+          <bodyPart>VAGINA</bodyPart>
+        </blockedBodyParts>
+	<clothingAccessBlocked/>
+        <concealedSlots/>
+
+
+      </blockedParts>
+    </blockedPartsList>
+
+	<incompatibleSlots>
+	  <slot>VAGINA</slot>
+        </incompatibleSlots>
+
+    <primaryColours>
+		<colour>CLOTHING_SILVER</colour>
+    </primaryColours>
+    <primaryColoursDye values="ALL_WITH_METALS"/>
+    <secondaryColours>
+		<colour>CLOTHING_PINK</colour>
+    </secondaryColours>
+    <secondaryColoursDye values="ALL_WITH_METALS"/>
+    <tertiaryColours>
+		<colour>CLOTHING_BRASS</colour>
+    </tertiaryColours>
+    <tertiaryColoursDye values="ALL_METAL"/>
+
+    <attributeModifiers>
+    <modifier value="-100.0">AROUSAL</modifier>
+    </attributeModifiers>
+
+    <itemTags>
+      <tag>SOLD_BY_FINCH</tag>
+      <tag>REQUIRES_VAGINA</tag>
+      <tag>CHASTITY</tag>
+      <tag>ENABLE_SEX_EQUIP</tag>
+      <tag>TRANSPARENT</tag>
+      <tag>PROVIDES_KEY</tag>
+      <tag>NO_RANDOM_SPAWN</tag>
+    </itemTags>
+
+  </coreAttributes>
+
+  <replacementText type="REMOVE_OR_EQUIP">
+    <self>
+      <![CDATA[[npc.Name] [npc.verb(install)] the chastity device onto [npc.her] [npc.pussy+].
+		#IF (npc.hasHymen())
+		#THEN
+		<br>Sensing [npc.namePos] purity the Chasity Piercing grants you a sense of peace and sanctity.
+		#ELSE
+		<br>Sensing [npc.namePos] lack of restraint the Chastity Piercing sets about restoring [npc.her] 'purity'...
+		<br>[#npc.setHymen(1)]
+		#ENDIF
+		]]>
+    </self>
+    <other>
+      <![CDATA[[npc.Name] [npc.verb(install)] the chastity device onto [npc2.namePos] [npc2.pussy+].
+		#IF (npc.hasHymen())
+		#THEN
+		<br>Sensing [npc.namePos] purity the Chasity Piercing grants you a sense of peace and sanctity.
+		#ELSE
+		<br>Sensing [npc.namePos] lack of restraint the Chastity Piercing sets about restoring [npc.her] 'purity'...
+		<br>[#npc.setHymen(1)]
+		#ENDIF
+		]]>
+    </other>
+    <otherRough>
+      <![CDATA[[npc.Name] roughly [npc.verb(install)] the chastity device onto [npc2.namePos] [npc2.pussy+].
+		#IF (npc.hasHymen())
+		#THEN
+		<br>Sensing [npc.namePos] purity the Chasity Piercing grants you a sense of peace and sanctity.
+		#ELSE
+		<br>Sensing [npc.namePos] lack of restraint the Chastity Piercing sets about restoring [npc.her] 'purity'...
+		<br>[#npc.setHymen(1)]
+		#ENDIF
+		]]>
+    </otherRough>
+  </replacementText>
+
+  <displacementText type="REMOVE_OR_EQUIP">
+    <self>
+      <![CDATA[[npc.Name] carefully [npc.verb(take)] off the chastity device that was blocking [npc.her] [npc.pussy+].
+		]]>
+    </self>
+    <other>
+      <![CDATA[[npc.Name] carefully [npc.verb(take)] off the chastity device that was blocking [npc2.namePos] [npc2.pussy+].
+		]]>
+    </other>
+    <otherRough>
+      <![CDATA[[npc.Name] quickly [npc.verb(take)] off the chastity device that was blocking [npc2.namePos] [npc2.pussy+], causing [npc2.herHim] to let out a startled yell.
+		]]>
+    </otherRough>
+  </displacementText>
+
+
+</clothing>

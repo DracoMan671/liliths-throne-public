@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<vagina>
+	<race>poke_focco</race>
+	<transformationName><![CDATA[Fennekin-line]]></transformationName>
+	<coveringType>VAGINA</coveringType>
+	<fluidType>poke_focco_girlcum</fluidType>
+	<pubicHairAllowed>true</pubicHairAllowed>
+	<eggLayer>true</eggLayer>
+	<names>
+		<name><![CDATA[focco-]]></name>
+		<name><![CDATA[#IF(npc.getSubspecies()==SUBSPECIES_poke_focco_subspecies_Fennekin)
+		Fennekin-pussy
+		#ELSEIF(npc.getSubspecies()==SUBSPECIES_poke_focco_subspecies_Braixen)
+		Braixen-pussy
+		#ELSEIF(npc.getSubspecies()==SUBSPECIES_poke_focco_subspecies_Delphox)
+		Delphox-pussy
+		#ELSE
+		focco-pussy
+		#ENDIF]]></name>
+		<name><![CDATA[#IF(npc.getSubspecies()==SUBSPECIES_poke_focco_subspecies_Fennekin)
+		Fennekin-cunt
+		#ELSEIF(npc.getSubspecies()==SUBSPECIES_poke_focco_subspecies_Braixen)
+		Braixen-cunt
+		#ELSEIF(npc.getSubspecies()==SUBSPECIES_poke_focco_subspecies_Delphox)
+		Delphox-cunt
+		#ELSE
+		focco-cunt
+		#ENDIF]]></name>
+		<name><![CDATA[#IF(npc.getSubspecies()==SUBSPECIES_poke_focco_subspecies_Fennekin)
+		Fennekin-slit
+		#ELSEIF(npc.getSubspecies()==SUBSPECIES_poke_focco_subspecies_Braixen)
+		Braixen-slit
+		#ELSEIF(npc.getSubspecies()==SUBSPECIES_poke_focco_subspecies_Delphox)
+		Delphox-slit
+		#ELSE
+		focco-slit
+		#ENDIF]]></name>
+		<name><![CDATA[#IF(npc.getSubspecies()==SUBSPECIES_poke_focco_subspecies_Fennekin)
+		Fennekin-sex
+		#ELSEIF(npc.getSubspecies()==SUBSPECIES_poke_focco_subspecies_Braixen)
+		Braixen-sex
+		#ELSEIF(npc.getSubspecies()==SUBSPECIES_poke_focco_subspecies_Delphox)
+		Delphox-sex
+		#ELSE
+		focco-sex
+		#ENDIF]]></name>
+	</names>
+	<namesPlural>
+		<name><![CDATA[focco-]]></name>
+		<name><![CDATA[#IF(npc.getSubspecies()==SUBSPECIES_poke_focco_subspecies_Fennekin)
+		Fennekin-pussies
+		#ELSEIF(npc.getSubspecies()==SUBSPECIES_poke_focco_subspecies_Braixen)
+		Braixen-pussies
+		#ELSEIF(npc.getSubspecies()==SUBSPECIES_poke_focco_subspecies_Delphox)
+		Delphox-pussies
+		#ELSE
+		focco-pussies
+		#ENDIF]]></name>
+		<name><![CDATA[#IF(npc.getSubspecies()==SUBSPECIES_poke_focco_subspecies_Fennekin)
+		Fennekin-cunts
+		#ELSEIF(npc.getSubspecies()==SUBSPECIES_poke_focco_subspecies_Braixen)
+		Braixen-cunts
+		#ELSEIF(npc.getSubspecies()==SUBSPECIES_poke_focco_subspecies_Delphox)
+		Delphox-cunts
+		#ELSE
+		focco-cunts
+		#ENDIF]]></name>
+		<name><![CDATA[#IF(npc.getSubspecies()==SUBSPECIES_poke_focco_subspecies_Fennekin)
+		Fennekin-slits
+		#ELSEIF(npc.getSubspecies()==SUBSPECIES_poke_focco_subspecies_Braixen)
+		Braixen-slits
+		#ELSEIF(npc.getSubspecies()==SUBSPECIES_poke_focco_subspecies_Delphox)
+		Delphox-slits
+		#ELSE
+		focco-slits
+		#ENDIF]]></name>
+	</namesPlural>
+	<descriptors>
+		<descriptor><![CDATA[warm]]></descriptor>
+	</descriptors>
+	<!-- PUFFY, RIBBED, TENTACLED, MUSCLE_CONTROL -->
+	<defaultOrificeModifiers>
+		<modifier>PUFFY</modifier>
+		<modifier>MUSCLE_CONTROL</modifier>
+	</defaultOrificeModifiers>
+	<transformationDescription><![CDATA[
+			[npc.She] [npc.verb(let)] out a squeal of excitement as a wave of pleasure runs up through [npc.her] groin, which increases in intensity as [npc.she] [npc.verb(feel)] [npc.her] slit uncontrollably shifting and contracting. Within moments, the feeling fades away, and [npc.she] [npc.verb(discover)] that [npc.her] pussy [npc.has] reformed and tightened into a fox-like Fennekin-line's form.
+		</p>
+		<p>
+			Just as [npc.she] [npc.verb(start)] think that the transformation [npc.has] come to an end, [npc.her] pussy involuntarily clenches down, and a desperate squeal escapes from between [npc.her] [npc.lips+] as a warm, tingling feeling spreads up through [npc.her] lower abdomen. Images of throbbing Fennekin, Braixen, and Delphox-cocks slamming their thick knots deep into [npc.her] new pussy flash before [npc.her] eyes, and [npc.her] squeal turns into a satisfied moan as [npc.she] [npc.verb(imagine)] them pumping their potent seed deep into [npc.her] new womb. Just as quickly as they came, the images fade from [npc.her] mind, and as one last wave of tingling pleasure washes through [npc.her] body, [npc.she] [npc.verb(feel)] [npc.her] female reproductive organs finishing their transformation.
+			<br/>[npc.Name] now [npc.has] a Fennekin-line vagina, with [npc.pussyColourPrimary(true)] labia and [npc.pussyColourSecondary(true)] internal walls.
+	]]></transformationDescription>
+	<!-- Immediately follows on from:
+		'Between [npc.her] [npc.legs], ' -->
+	<bodyDescription><![CDATA[
+		[npc.she] [npc.has] #IF(npc.isPiercedVagina())a pierced#ELSEa#ENDIF Fennekin-line-pussy, with [npc.labiaSize], [npc.pussyPrimaryColour(true)] labia and [npc.pussySecondaryColour(true)] inner-walls.
+	]]></bodyDescription>
+</vagina>

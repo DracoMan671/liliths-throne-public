@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<leg>
+	<race>keelah_naga</race>
+
+	<transformationName><![CDATA[naga]]></transformationName>
+
+	<coveringType>keelah_naga_fur</coveringType>
+
+	<defaultFootStructure>NONE</defaultFootStructure>
+
+	<footType>NONE</footType>
+
+	<spinneret>false</spinneret>
+
+	<tentacleType>NONE</tentacleType>
+
+	<tentacleCount>0</tentacleCount>
+
+	<allowedLegConfigurations>
+		<configuration>TAIL_LONG</configuration>
+		<configuration>BIPEDAL</configuration>
+	</allowedLegConfigurations>
+
+	<name><![CDATA[tail]]></name>
+	<namePlural><![CDATA[legs]]></namePlural> 
+
+	<descriptorsMasculine>
+		<descriptor>masculine</descriptor>
+		<descriptor>scaly</descriptor>
+	</descriptorsMasculine>
+	<descriptorsFeminine>
+		<descriptor>feminine</descriptor>
+		<descriptor>scaly</descriptor>
+	</descriptorsFeminine>
+
+	<footDescriptorsMasculine>
+		<descriptor>naga-like</descriptor>
+	</footDescriptorsMasculine>
+	<footDescriptorsFeminine>
+		<descriptor>naga-like</descriptor>
+	</footDescriptorsFeminine>
+
+	<toeDescriptorsMasculine>
+		<descriptor>naga-like</descriptor>
+	</toeDescriptorsMasculine>
+	<toeDescriptorsFeminine>
+		<descriptor>naga-like</descriptor>
+	</toeDescriptorsFeminine>
+
+	<transformationDescription><![CDATA[
+		[npc.Her] legs slowly merge into a single thick member. [npc.Her] feet disappear into a thin tip slowly turning her legs into a long and thick tail. Her newly formed tail get covered in smoothscales. As the transformation ends, [npc.she] [npc.verb(see)] that [npc.her] new scaly tail connect smoothly to the [npc.skin] covering the rest of [npc.her] body at [npc.her] waist.
+		<br/>[npc.Name] now [npc.has] a, [style.boldHyena(long tail)], which is [npc.materialDescriptor] [npc.legFullDescription].
+	]]></transformationDescription>
+
+	<bodyDescription><![CDATA[
+		[npc.Her] tail is [npc.materialCompositionDescriptor] [npc.legFullDescription(true)].
+	]]></bodyDescription>
+	
+</leg>

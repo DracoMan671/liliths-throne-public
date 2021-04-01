@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<weapon>
+    <coreAttributes>
+        <authorTag><![CDATA[Casul]]></authorTag>
+        <value>1000</value>
+        <melee>false</melee>
+        <twoHanded>false</twoHanded>
+        <determiner><![CDATA[a]]></determiner>
+        <name><![CDATA[Lust Draft]]></name>
+        <namePlural pluralByDefault="false"><![CDATA[Lust Drafts]]></namePlural>
+        <description><![CDATA[This vial of bright pink fluid bubbles constantly inside the glass, as if eager to escape. It smells very sweet.]]></description>
+        <attackDescriptor>throw</attackDescriptor>
+        <attackTooltipDescription>Throw a vial at [npc2.name].</attackTooltipDescription>
+        <rarity>UNCOMMON</rarity>
+        <weaponSet/>
+        <equipText><![CDATA[[npc.Name] [npc.verb(uncork)] the vials.]]></equipText>
+        <unequipText><![CDATA[[npc.Name] [npc.verb(cork)] the vials.]]></unequipText>
+        <imageName>lustdraft.svg</imageName>
+        <imageEquippedName>lustdraft.svg</imageEquippedName>
+        <damage>15</damage>
+        <arcaneCost>0</arcaneCost>
+        <damageVariance>LOW</damageVariance>
+        <availableDamageTypes>
+            <damageType>LUST</damageType>
+        </availableDamageTypes>
+        <spells/>
+        <enchantmentLimit>0</enchantmentLimit>
+        <effects/>
+        <primaryColours values="ALL"/>
+        <primaryColoursDye values="ALL"/>
+        <secondaryColours values="ALL"/>
+        <secondaryColoursDye values="ALL"/>
+        <itemTags/>
+    </coreAttributes>
+    <hitDescriptions>
+        <hitText><![CDATA[[npc.Name] [npc.verb(fling)] a vial at [npc2.name], which shatters upon impact, dousing [npc2.her] in pink fluid!]]></hitText>
+    </hitDescriptions>
+    <missDescriptions>
+        <missText><![CDATA[[npc.Name] [npc.verb(fling)] a vial at [npc2.name], but misses, the pink liquid puddling beside [npc2.her] as the vial shatters!]]></missText>
+    </missDescriptions>
+</weapon>

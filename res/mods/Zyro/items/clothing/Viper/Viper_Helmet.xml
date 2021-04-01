@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!-- A fan-made mod for Innoxia's Lilith's Throne. Feel free to edit these files however you want, same goes for the svg's. Thanks to Innoxia for making Lilith's Throne, it's great. //Zyro-->
+<clothing>
+  <coreAtributes>
+    <authorTag><![CDATA[A small sticker informs you that this was made by a 'Zyro'.]]></authorTag>
+    <value>2000</value>
+    <determiner>a</determiner>
+    <name>Viper Helmet</name>
+    <namePlural pluralByDefault="false"><![CDATA[Sup dude]]></namePlural>
+    <description><![CDATA[The Viper Helmet is composed of extraterrestrial materials designed to be worn by snake women from another world.]]></description>
+    <physicalResistance>3</physicalResistance>
+    <femininity>FEMININE</femininity>
+    <slot>HEAD</slot>
+    <rarity>UNCOMMON</rarity>
+    <clothingSet />
+    <imageName>Viper_Helmet.svg</imageName>
+    <imageEquippedName />
+    <enchantmentLimit />
+    <effects></effects>
+    <blockedPartsList>
+      <blockedParts>
+        <displacementType>REMOVE_OR_EQUIP</displacementType>
+        <clothingAccessRequired>
+          <clothingAccess>HEAD</clothingAccess>
+        </clothingAccessRequired>
+        <blockedBodyParts>
+          <bodyPart>HAIR</bodyPart>
+          <bodyPart>HEAD</bodyPart>
+        </blockedBodyParts>
+        <clothingAccessBlocked />
+        <concealedSlots>
+          <slot>HAIR</slot>
+        </concealedSlots>
+      </blockedParts>
+    </blockedPartsList>
+    <incompatibleSlots />
+    <primaryColours values="JUST_BLACK" />
+    <primaryColoursDye values="ALL" />
+    <secondaryColours values="JUST_BLACK" />
+    <secondaryColoursDye values="ALL" />
+    <itemTags>
+      <tag>SOLD_BY_NYAN</tag>
+    </itemTags>
+  </coreAtributes>
+  <displacementText type="REMOVE_OR_EQUIP">
+    <playerSelf>
+			You take off the Viper Helmet.
+		</playerSelf>
+    <playerNPC>
+			You remove [npc.name]'s Viper Helmet.
+		</playerNPC>
+    <playerNPCRough>
+			You grab hold of [npc.name]'s Viper Helmet and tear it off [npc.her] head.
+		</playerNPCRough>
+    <NPCSelf>
+			[npc.Name] takes [npc.her] Viper Helmet off.
+		</NPCSelf>
+    <NPCPlayer>
+			[npc.Name] takes off your Viper Helmet.
+		</NPCPlayer>
+    <NPCPlayerRough>
+			[npc.Name] grabs hold of your Viper Helmet and roughly tears it off your head.
+		</NPCPlayerRough>
+    <NPCOtherNPC>
+			[npc1.Name] takes off [npc2.name]'s Viper Helmet.
+		</NPCOtherNPC>
+    <NPCOtherNPCRough>
+			[npc.Name] grabs hold of [npc2.name]'s Viper Helmet and roughly tears it off from [npc2.her] head.
+		</NPCOtherNPCRough>
+  </displacementText>
+  <replacementText type="REMOVE_OR_EQUIP">
+    <playerSelf>
+			You put on the Viper Helmet.
+		</playerSelf>
+    <playerNPC>
+			You put the Viper Helmet on [npc.name]'s [npc.head].
+		</playerNPC>
+    <playerNPCRough>
+			You hold [npc.name] still as you roughly force the Viper Helmet onto [npc.her] head.
+		</playerNPCRough>
+    <NPCSelf>
+			[npc.Name] puts on the Viper Helmet.
+		</NPCSelf>
+    <NPCPlayer>
+			[npc.Name] puts the Viper Helmet on your head.
+		</NPCPlayer>
+    <NPCPlayerRough>
+			[npc.Name] holds you still as [npc.she] roughly forces the Viper Helmet on top of your head.
+		</NPCPlayerRough>
+    <NPCOtherNPC>
+			[npc1.Name] puts the Viper Helmet on [npc2.name]'s head.
+		</NPCOtherNPC>
+    <NPCOtherNPCRough>
+			[npc1.Name] holds [npc2.name] still as [npc1.she] roughly forces the Viper Helmet onto [npc2.her] head.
+		</NPCOtherNPCRough>
+  </replacementText>
+</clothing>

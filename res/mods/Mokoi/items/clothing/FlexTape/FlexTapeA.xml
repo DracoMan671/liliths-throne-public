@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- For a version with comments, see "rental_mommy.xml". -->
+<clothing>
+	<coreAttributes>
+		<value>50</value>
+		<determiner><![CDATA[a roll of]]></determiner>
+		<name><![CDATA[Flex Tape - Anal]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Rolls of Flex Tape - Anal]]></namePlural>
+		<description><![CDATA[FLEX TAPE is a super strong, rubberized, waterproof tape that can patch, bond, seal and repair virtually anything, even your virginity! It is specially formulated with a thick, flexible, rubberized backing that conforms to any shape or object. This durable adhesive tape instantly seals out water, air and cum to create a super strong, flexible, watertight barrier. Prostitute approved!]]></description>
+		<physicalResistance>1</physicalResistance>
+		<femininity>ANDROGYNOUS</femininity>
+		<slot>ANUS</slot>
+		<rarity>EPIC</rarity>
+		<clothingSet/>
+		<imageName>FlexRollA.svg</imageName>
+		<imageEquippedName>FlexTapeA.svg</imageEquippedName>
+		<enchantmentLimit>4</enchantmentLimit>
+		<effects>
+              <effect itemEffectType="CLOTHING" limit="0" potency="MAJOR_DRAIN" primaryModifier="CLOTHING_SEALING" secondaryModifier="ARCANE_BOOST" timer="0"/>
+              <effect itemEffectType="CLOTHING" limit="0" potency="MINOR_DRAIN" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="VIRILITY" timer="0"/>     
+			  <effect itemEffectType="CLOTHING" limit="0" potency="MINOR_DRAIN" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="FERTILITY" timer="0"/>     
+		</effects>
+		<blockedPartsList>
+			<blockedParts>
+				<displacementType>REMOVE_OR_EQUIP</displacementType>
+				<clothingAccessRequired>
+					<clothingAccess>GROIN</clothingAccess>								
+				</clothingAccessRequired>
+				<blockedBodyParts>
+					<bodyPart>ANUS</bodyPart>
+				</blockedBodyParts>
+				<clothingAccessBlocked/>
+				<concealedSlots/>
+			</blockedParts>
+			
+		</blockedPartsList>
+		<incompatibleSlots/>
+		<primaryColours values="JUST_BLACK"/>
+		<primaryColoursDye values="JUST_BLACK"/>
+		<secondaryColours values="JUST_BLACK"/>
+		<secondaryColoursDye values="JUST_BLACK"/>
+		<tertiaryColours values="JUST_BLACK"/>
+		<tertiaryColoursDye values="JUST_BLACK"/>
+		<itemTags>
+			<tag>SOLD_BY_RALPH</tag>
+			<tag>TRANSPARENT</tag>
+			<tag>ENABLE_SEX_EQUIP</tag>		
+			<tag>SEALS_ANUS</tag>
+			<tag>DISCARDED_WHEN_UNEQUIPPED</tag>
+		</itemTags>
+	</coreAttributes>
+
+	<displacementText type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[
+			You very, very, VERY slowly peel the tape off your [pc.asshole+] and throw it away.
+		]]></playerSelf>
+		<playerNPC><![CDATA[
+			You very, very slowly peel the tape off [npc.name]'s [npc.asshole+] and throw it away.
+		]]></playerNPC>
+		<playerNPCRough><![CDATA[
+			You pinch a corner of the tape, giving it a few frustrated tugs, before using your magic tear a hole in the centre. [npc.Name] can remove the rest [npc.herHim]self later. Not your problem.
+		]]></playerNPCRough>
+		<NPCSelf><![CDATA[
+			[npc.Name] very, very, VERY slowly peels the tape off [npc.her] [npc.asshole+] and throws it away. It takes a lot of effort.
+		]]></NPCSelf>
+		<NPCPlayer><![CDATA[
+			[npc.Name] very, very slowly peels the tape off your [pc.asshole+] and throws it away. It takes a lot of effort.
+		]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[
+			[npc.Name] pinches a corner of the tape, giving it a few frustrated tugs, before managing to tear it off, leaving your [pc.asshole+] puffed up and sore. That's a lotta damage!
+		]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[
+			[npc1.Name] very, very slowly peels the tape off [npc2.name]'s [npc2.asshole+] and throws is away. It takes a lot of effort.
+		]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[
+			[npc.Name] pinches a corner of the tape, giving it a few frustrated tugs, before managing to tear it off, leaving [npc2.name]'s [pc.asshole+] puffed up and sore. That's a lotta damage!
+		]]></NPCOtherNPCRough>
+	</displacementText>
+
+	<replacementText type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[#IF (!pc.isAssVirgin())
+		#THEN   
+			#IF (pc.setAssVirgin(1)!=null)
+			#THEN
+				You place a few strips of Flex Tape over your butt, rubbing them into all the wrinkles and creases of your [pc.asshole+].
+			#ELSE
+				You place a few strips of Flex Tape over your butt, rubbing them into all the wrinkles and creases of your [pc.asshole+].
+			#ENDIF
+		#ELSE
+			You place a few strips of Flex Tape over your butt, rubbing them into all the wrinkles and creases of your [pc.asshole+].
+		#ENDIF
+		]]></playerSelf>
+		<playerNPC><![CDATA[#IF (!npc.isAssVirgin())
+		#THEN   
+			#IF (npc.setAssVirgin(1)!=null)
+			#THEN
+				You place a few strips of Flex Tape over [npc.name]'s butt, rubbing them into all the wrinkles and creases of [npc.her] [npc.asshole+].
+			#ELSE
+				You place a few strips of Flex Tape over [npc.name]'s butt, rubbing them into all the wrinkles and creases of [npc.her] [npc.asshole+].
+			#ENDIF
+		#ELSE
+			You place a few strips of Flex Tape over [npc.name]'s butt, rubbing them into all the wrinkles and creases of [npc.her] [npc.asshole+].
+		#ENDIF
+		]]></playerNPC>
+		<playerNPCRough><![CDATA[#IF (!npc.isAssVirgin())
+		#THEN   
+			#IF (npc.setAssVirgin(1)!=null)
+			#THEN
+				You knock [npc.name] onto [npc.herHis] front, and slap the Flex Tape over [npc.herHis] [npc.asshole+].
+			#ELSE
+				You knock [npc.name] onto [npc.herHis] front, and slap the Flex Tape over [npc.herHis] [npc.asshole+].
+			#ENDIF
+		#ELSE
+			You knock [npc.name] onto [npc.herHis] front, and slap the Flex Tape over [npc.herHis] [npc.asshole+].
+		#ENDIF
+		]]></playerNPCRough>
+		<NPCSelf><![CDATA[#IF (!npc.isAssVirgin())
+		#THEN   
+			#IF (npc.setAssVirgin(1)!=null)
+			#THEN
+				[npc.Name] places a few strips of Flex Tape over [npc.herHis] butt, and rubs them into all the wrinkles and creases of [npc.her] [npc.asshole+].
+			#ELSE
+				[npc.Name] places a few strips of Flex Tape over [npc.herHis] butt, and rubs them into all the wrinkles and creases of [npc.her] [npc.asshole+].
+			#ENDIF
+		#ELSE
+			[npc.Name] places a few strips of Flex Tape over [npc.herHis] butt, and rubs them into all the wrinkles and creases of [npc.her] [npc.asshole+].
+		#ENDIF
+		]]></NPCSelf>
+		<NPCPlayer><![CDATA[#IF (!pc.isAssVirgin())
+		#THEN   
+			#IF (pc.setAssVirgin(1)!=null)
+			#THEN
+				[npc.Name] places a few strips of Flex Tape over your butt, and rubs them into all the wrinkles and creases of your [pc.asshole+].
+			#ELSE
+				[npc.Name] places a few strips of Flex Tape over your butt, and rubs them into all the wrinkles and creases of your [pc.asshole+].
+			#ENDIF
+		#ELSE
+			[npc.Name] places a few strips of Flex Tape over your butt, and rubs them into all the wrinkles and creases of your [pc.asshole+].
+		#ENDIF
+		]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[#IF (!pc.isAssVirgin())
+		#THEN   
+			#IF (pc.setAssVirgin(1)!=null)
+			#THEN
+				[npc.Name] knocks you onto your front, and slaps the Flex Tape over your [pc.asshole+].
+			#ELSE
+				[npc.Name] knocks you onto your front, and slaps the Flex Tape over your [pc.asshole+].
+			#ENDIF
+		#ELSE
+			[npc.Name] knocks you onto your front, and slaps the Flex Tape over your [pc.asshole+].
+		#ENDIF
+		]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[#IF (!npc2.isAssVirgin())
+		#THEN   
+			#IF (npc2.setAssVirgin(1)!=null)
+			#THEN
+				[npc1.Name] places a few strips of Flex Tape over [npc2.name]'s butt, and rubs them into all the wrinkles and creases of [npc2.herHis] [npc2.asshole+].
+			#ELSE
+				[npc1.Name] places a few strips of Flex Tape over [npc2.name]'s butt, and rubs them into all the wrinkles and creases of [npc2.herHis] [npc2.asshole+].
+			#ENDIF
+		#ELSE
+			[npc1.Name] places a few strips of Flex Tape over [npc2.name]'s butt, and rubs them into all the wrinkles and creases of [npc2.herHis] [npc2.asshole+].
+		#ENDIF
+		]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[#IF (!npc2.isAssVirgin())
+		#THEN   
+			#IF (npc2.setAssVirgin(1)!=null)
+			#THEN
+				[npc1.Name] knocks [npc2.name] onto [npc2.herHis] front, and slaps the Flex Tape over [npc2.herHis] [npc2.asshole+].
+			#ELSE
+				[npc1.Name] knocks [npc2.name] onto [npc2.herHis] front, and slaps the Flex Tape over [npc2.herHis] [npc2.asshole+].
+			#ENDIF
+		#ELSE
+			[npc1.Name] knocks [npc2.name] onto [npc2.herHis] front, and slaps the Flex Tape over [npc2.herHis] [npc2.asshole+].
+		#ENDIF
+		]]></NPCOtherNPCRough>
+	</replacementText>
+
+	
+</clothing>

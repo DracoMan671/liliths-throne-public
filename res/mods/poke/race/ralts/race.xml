@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<race>
+	<racialBody>poke_ralts</racialBody>
+	<!-- The character's body that's being changed can be accessed via using 'targetedBody'. -->
+	<applyRaceChanges><![CDATA[
+		[#npc.addFetish(FETISH_EXHIBITIONIST)]
+		[#npc.addFetish(FETISH_INCEST)]
+	]]></applyRaceChanges>
+	<name><![CDATA[
+	#IF(npc.getSubspecies()==SUBSPECIES_poke_ralts_subspecies_Ralts)
+	[style.ColorLIGHTGREEN(Ralts-morph)]
+	#ELSEIF(npc.getSubspecies()==SUBSPECIES_poke_ralts_subspecies_Kirlia)
+	[style.ColorLIGHTGREEN(Kirlia-morph)]
+	#ELSEIF(npc.getSubspecies()==SUBSPECIES_poke_ralts_subspecies_Gallade)
+	[style.ColorDARKGREEN(Gallade-morph)]
+	#ELSE
+	[style.ColorGREEN(Gardevoir-morph)]
+	#ENDIF
+	]]></name>
+	<namePlural><![CDATA[
+	#IF(npc.getSubspecies()==SUBSPECIES_poke_ralts_subspecies_Ralts)
+	[style.ColorLIGHTGREEN(Ralts-morphs)]
+	#ELSEIF(npc.getSubspecies()==SUBSPECIES_poke_ralts_subspecies_Kirlia)
+	[style.ColorLIGHTGREEN(Kirlia-morphs)]
+	#ELSEIF(npc.getSubspecies()==SUBSPECIES_poke_ralts_subspecies_Gallade)
+	[style.ColorDARKGREEN(Gallade-morphs)]
+	#ELSE
+	[style.ColorGREEN(Gardevoir-morphs)]
+	#ENDIF
+	]]></namePlural>
+	<!-- The name corresponds to the name of this race when in the 'legConfiguration' form defined. 
+	BIPEDAL, QUADRUPEDAL, TAIL_LONG (serpent-tailed), TAIL (mer-tailed), ARACHNID, CEPHALOPOD, AVIAN -->
+	<nameFeral>
+		<name legConfiguration="BIPEDAL"><![CDATA[
+	#IF(npc.getSubspecies()==SUBSPECIES_poke_ralts_subspecies_Ralts)
+	[style.ColorLIGHTGREEN(Ralts)]
+	#ELSEIF(npc.getSubspecies()==SUBSPECIES_poke_ralts_subspecies_Kirlia)
+	[style.ColorLIGHTGREEN(Kirlia)]
+	#ELSEIF(npc.getSubspecies()==SUBSPECIES_poke_ralts_subspecies_Gallade)
+	[style.ColorDARKGREEN(Gallade)]
+	#ELSE
+	[style.ColorGREEN(Gardevoir)]
+	#ENDIF
+	]]></name>
+	</nameFeral>
+	<nameFeralPlural>
+		<name legConfiguration="BIPEDAL"><![CDATA[
+	#IF(npc.getSubspecies()==SUBSPECIES_poke_ralts_subspecies_Ralts)
+	[style.ColorLIGHTGREEN(Ralts)]
+	#ELSEIF(npc.getSubspecies()==SUBSPECIES_poke_ralts_subspecies_Kirlia)
+	[style.ColorLIGHTGREEN(Kirlia)]
+	#ELSEIF(npc.getSubspecies()==SUBSPECIES_poke_ralts_subspecies_Gallade)
+	[style.ColorDARKGREEN(Gallade)]
+	#ELSE
+	[style.ColorGREEN(Gardevoir)]
+	#ENDIF
+	]]></name>
+	</nameFeralPlural>
+	<defaultTransformName><![CDATA[Ralts-line]]></defaultTransformName>
+	<!-- https://github.com/Innoxia/liliths-throne-public/blob/dev/src/com/lilithsthrone/utils/colours/PresetColour.java -->
+	<colour>BASE_GREEN_LIGHT</colour>	
+	<!-- How this race will typically treat strangers.
+	CIVILIZED, NEUTRAL, UNPREDICTABLE, SAVAGE -->
+	<disposition>CIVILIZED</disposition>	
+	<!-- What kind of animal this race is based on.
+	MAMMAL, BIRD, REPTILE, AMPHIBIAN, FISH, INSECT, OTHER -->
+	<racialClass>OTHER</racialClass>
+	<feralPartsAvailable>true</feralPartsAvailable>
+	<ableToSelfTransform>false</ableToSelfTransform>
+	<flyingRace>false</flyingRace>
+	<!-- The default value is 'BALANCED'.
+	BALANCED, ATTACK, DEFEND, SEDUCE, SPELLS, SUPPORT -->
+	<combatBehaviour>SPELLS</combatBehaviour>
+	<!-- Acceptable values are floats between 0 and 1, representing 0% to 100%, with the standard value being 0.5 (representing 50%). -->
+	<chanceForMaleOffspring>0.5</chanceForMaleOffspring>
+	<numberOfOffspringLow>1</numberOfOffspringLow>
+	<numberOfOffspringHigh>6</numberOfOffspringHigh>
+	<!-- In a new game using completely default settings, what level of 'furry' should this race be for females and males.
+	HUMAN, MINIMUM, REDUCED, NORMAL, MAXIMUM -->
+	<defaultFemininePreference>MAXIMUM</defaultFemininePreference>
+	<defaultMasculinePreference>MAXIMUM</defaultMasculinePreference>
+	<affectedByFurryPreference>false</affectedByFurryPreference>
+</race>

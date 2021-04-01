@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<tongue>
+	<race>poke_lucario</race>
+	<coveringType>TONGUE</coveringType>
+	<!-- The default length of this tongue, measured in cm.
+	0-5 ZERO_NORMAL, 5-10 ONE_LONG, 10-20 TWO_VERY_LONG, 20-30 THREE_EXTREMELY_LONG, 30-60 FOUR_ABSURDLY_LONG -->
+	<defaultLength>8</defaultLength>
+	<name><![CDATA[tongue]]></name>
+	<namePlural><![CDATA[tongues]]></namePlural>
+	<descriptorsMasculine>
+		<descriptor><![CDATA[jackal-like]]></descriptor>
+	</descriptorsMasculine>
+	<descriptorsFeminine>
+		<descriptor><![CDATA[jackal-like]]></descriptor>
+	</descriptorsFeminine>
+	<bodyDescription><![CDATA[
+		[npc.Her] mouth holds [npc.a_tongueLength], [npc.tongueColour(true)], jackal-like [npc.tongue]#IF(npc.isPiercedTongue()), which has been pierced#ENDIF.
+	]]></bodyDescription>
+	<!-- RIBBED, TENTACLED, BIFURCATED, WIDE, FLAT, STRONG, TAPERED -->
+	<defaultTongueModifiers>
+		<modifier>WIDE</modifier>
+		<modifier>FLAT</modifier>
+		<modifier>STRONG</modifier>
+	</defaultTongueModifiers>
+</tongue>

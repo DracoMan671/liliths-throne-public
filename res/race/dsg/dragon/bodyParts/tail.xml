@@ -39,6 +39,8 @@
 		<tag>TAIL_TAPERING_LINEAR</tag>
 		<tag>TAIL_SLEEP_HUGGING</tag>
 		<tag>TAIL_ATTACK</tag>
+		<tag>TAIL_PREHENSILE</tag>
+		<tag>TAIL_SUTABLE_FOR_PENETRATION</tag>
 	</tags>
 	
 	<!-- The singular and plural determiners of this tail type.

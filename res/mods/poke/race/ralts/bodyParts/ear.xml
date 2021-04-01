@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ear>
+	<race>poke_ralts</race>
+	<transformationName><![CDATA[Ralts-line]]></transformationName>
+	<coveringType>poke_ralts_skin</coveringType>
+	<!-- EAR_HANDLES_IN_SEX, ECHO_LOCATION -->
+	<tags/>
+	<!--
+	<tags>
+		<tag>EAR_HANDLES_IN_SEX</tag>
+	</tags>
+	-->
+	<name><![CDATA[ear]]></name>
+	<namePlural><![CDATA[ears]]></namePlural>
+	<descriptorsMasculine>
+		<descriptor>tufted</descriptor>
+		<descriptor>ethereal</descriptor>
+	</descriptorsMasculine>
+	<descriptorsFeminine>
+		<descriptor>feminine</descriptor>
+		<descriptor>tufted</descriptor>
+		<descriptor>ethereal</descriptor>
+	</descriptorsFeminine>
+	<transformationDescription><![CDATA[
+		They stretch out from either side of [npc.her] head longer than human ears would
+		#IF(npc.getSubspecies()==SUBSPECIES_poke_ralts_subspecies_Ralts || npc.getSubspecies()==SUBSPECIES_poke_ralts_subspecies_Kirlia)
+		, though they still remain hidden beneath [npc.her] hair
+		#ENDIF
+		.
+		#IF(npc.getBodyMaterial()==BODY_MATERIAL_FLESH)
+		 A smooth layer of [npc.earFullDescriptionColour] envelops them.
+		#ELSE
+		 Just like the rest of [npc.her] body, they're made out of [npc.earFullDescription].
+		#ENDIF
+		<br/>[npc.Name] now [npc.has] Ralts-family ears, which are [npc.materialCompositionDescriptor] [npc.earFullDescription].
+	]]></transformationDescription>
+	<bodyDescription><![CDATA[
+		[npc.She] [npc.has] a pair of #IF(npc.isPiercedEar()) pierced,#ENDIF Ralts-family ears#IF(npc.getSubspecies()==SUBSPECIES_poke_ralts_subspecies_Ralts || npc.getSubspecies()==SUBSPECIES_poke_ralts_subspecies_Kirlia) hidden beneath [npc.her] hair#ENDIF which are [npc.materialCompositionDescriptor] [npc.earFullDescription(true)].
+	]]></bodyDescription>
+	
+</ear>

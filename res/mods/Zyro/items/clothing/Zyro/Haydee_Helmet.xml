@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!-- A fan-made mod for Innoxia's Lilith's Throne. Feel free to edit these files however you want, same goes for the svg's. Thanks to Innoxia for making Lilith's Throne, it's great. //Zyro-->
+<clothing>
+  <coreAtributes>
+    <value>500</value>
+    <determiner>an</determiner>
+    <name>E832 Helmet</name>
+    <namePlural pluralByDefault="false"><![CDATA[E832 Helmets]]></namePlural>
+    <description>A cybernetically manufactured helmet, for well behaving individuals.</description>
+    <physicalResistance>2</physicalResistance>
+    <femininity>FEMININE</femininity>
+    <slot>HEAD</slot>
+    <rarity>UNCOMMON</rarity>
+    <clothingSet />
+    <imageName>Haydee_Helmet.svg</imageName>
+    <imageEquippedName />
+    <enchantmentLimit />
+    <effects></effects>
+    <blockedPartsList>
+      <blockedParts>
+        <displacementType>REMOVE_OR_EQUIP</displacementType>
+        <clothingAccessRequired>
+          <clothingAccess>HEAD</clothingAccess>
+        </clothingAccessRequired>
+        <blockedBodyParts>
+          <bodyPart>HAIR</bodyPart>
+          <bodyPart>MOUTH</bodyPart>
+        </blockedBodyParts>
+        <clothingAccessBlocked />
+        <concealedSlots>
+          <slot>EYES</slot>
+          <slot>HAIR</slot>
+          <slot>MOUTH</slot>
+        </concealedSlots>
+      </blockedParts>
+    </blockedPartsList>
+    <incompatibleSlots />
+    <primaryColours values="JUST_WHITE" />
+    <primaryColoursDye values="ALL" />
+    <secondaryColours values="JUST_BLACK" />
+    <secondaryColoursDye values="ALL" />
+    <tertiaryColours values="JUST_WHITE" />
+    <tertiaryColoursDye values="ALL" />
+    <itemTags>
+      <tag>SOLD_BY_NYAN</tag>
+    </itemTags>
+  </coreAtributes>
+  <displacementText type="REMOVE_OR_EQUIP">
+    <playerSelf>
+			You take off the E832 Helmet.
+		</playerSelf>
+    <playerNPC>
+			You remove [npc.name]'s E832 Helmet.
+		</playerNPC>
+    <playerNPCRough>
+			You grab hold of [npc.name]'s E832 Helmet and tear it off [npc.her] head.
+		</playerNPCRough>
+    <NPCSelf>
+			[npc.Name] takes [npc.her] E832 Helmet off.
+		</NPCSelf>
+    <NPCPlayer>
+			[npc.Name] takes off your E832 Helmet.
+		</NPCPlayer>
+    <NPCPlayerRough>
+			[npc.Name] grabs hold of your E832 Helmet and roughly tears it off your head.
+		</NPCPlayerRough>
+    <NPCOtherNPC>
+			[npc1.Name] takes off [npc2.name]'s E832 Helmet.
+		</NPCOtherNPC>
+    <NPCOtherNPCRough>
+			[npc.Name] grabs hold of [npc2.name]'s E832 Helmet and roughly tears it off from [npc2.her] head.
+		</NPCOtherNPCRough>
+  </displacementText>
+  <replacementText type="REMOVE_OR_EQUIP">
+    <playerSelf>
+			You put on the E832 Helmet.
+		</playerSelf>
+    <playerNPC>
+			You put the E832 Helmet on [npc.name]'s [npc.head].
+		</playerNPC>
+    <playerNPCRough>
+			You hold [npc.name] still as you roughly force the E832 Helmet onto [npc.her] head.
+		</playerNPCRough>
+    <NPCSelf>
+			[npc.Name] puts on the E832 Helmet.
+		</NPCSelf>
+    <NPCPlayer>
+			[npc.Name] puts the E832 Helmet on your head.
+		</NPCPlayer>
+    <NPCPlayerRough>
+			[npc.Name] holds you still as [npc.she] roughly forces the E832 Helmet on top of your head.
+		</NPCPlayerRough>
+    <NPCOtherNPC>
+			[npc1.Name] puts the E832 Helmet on [npc2.her]'s head.
+		</NPCOtherNPC>
+    <NPCOtherNPCRough>
+			[npc1.Name] holds [npc2.name] still as [npc1.she] roughly forces the E832 Helmet onto [npc2.her] head.
+		</NPCOtherNPCRough>
+  </replacementText>
+</clothing>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- For a version without all of the comments, see "rental_daddy.xml". -->
+<clothing>
+	<coreAttributes>
+		<value>800</value> 
+		
+		<determiner><![CDATA[a]]></determiner>
+		
+		<name><![CDATA[armbinder]]></name>
+		
+		<namePlural pluralByDefault="true"><![CDATA[armbinder]]></namePlural> 
+		
+		<description><![CDATA[An armbinder is a type of restraint devices primarily used in bondage play, its designed to bind the arms and hands to each other behind the back.]]></description> 
+		<physicalResistance>0</physicalResistance> 
+		<femininity>ANDROGYNOUS</femininity>
+		
+		<equipSlots>
+		  <slot>WRIST</slot>
+		</equipSlots>
+		
+		<rarity>EPIC</rarity> 
+		<clothingSet>BDSM</clothingSet>
+			
+		<imageName>armbinder.svg</imageName>
+
+		<imageEquippedName slot="WRIST">armbinder.svg</imageEquippedName>
+			
+		<enchantmentLimit/>
+		
+		<effects> 
+			<effect itemEffectType="CLOTHING" limit="0" potency="BOOST" primaryModifier="CLOTHING_SPECIAL" secondaryModifier="CLOTHING_SEALING" timer="0"/>
+			<effect itemEffectType="CLOTHING" limit="0" potency="MAJOR_DRAIN" primaryModifier="CLOTHING_MAJOR_ATTRIBUTE" secondaryModifier="STRENGTH" timer="0"/>
+		</effects>
+		
+		<blockedPartsList slot="WRIST"> 
+			<blockedParts>
+				<displacementType>REMOVE_OR_EQUIP</displacementType> 
+				<clothingAccessRequired>
+					<clothingAccess>WRISTS</clothingAccess>
+				</clothingAccessRequired>
+				<blockedBodyParts/>
+				<clothingAccessBlocked>
+					<clothingAccess>WRISTS</clothingAccess>
+				</clothingAccessBlocked>
+				<concealedSlots/>
+			</blockedParts>
+		</blockedPartsList>
+
+			
+		<incompatibleSlots slot="WRIST"/>
+
+		<primaryColours values="JUST_BLACK"/> 
+		<primaryColoursDye values="ALL"/>
+		<secondaryColours values="JUST_BLACK"/>
+		<secondaryColoursDye values="ALL"/>
+		<tertiaryColours values="JUST_STEEL"/>
+		<tertiaryColoursDye values="ALL_WITH_METALS"/>
+		
+		<itemTags>
+			<tag>SOLD_BY_FINCH</tag>
+			<tag>PROVIDES_KEY</tag>
+		    <tag>ENABLE_SEX_EQUIP</tag>
+		    <tag>HINDERS_ARM_MOVEMENT</tag>
+			<tag>BLOCKS_ARM-WING_FLIGHT</tag>
+		</itemTags>
+	</coreAttributes>
+
+  <replacementText slot="WRIST" type="REMOVE_OR_EQUIP">
+		<self>
+		  <![CDATA[[npc.Name] [npc.verb(wrap)] the armbinder around [npc.her] wrists, before fastening the straps in place.]]>
+		</self>
+		<other>
+		  <![CDATA[[npc.Name] [npc.verb(wrap)] the armbinder around [npc2.namePos] wrists, before fastening the straps in place.]]>
+		</other>
+		<otherRough>
+		  <![CDATA[[npc.Name] roughly [npc.verb(force)] the armbinder around [npc2.namePos] wrists, before firmly fastening the straps in place.]]>
+	  </otherRough>
+	</replacementText>
+	<displacementText slot="WRIST" type="REMOVE_OR_EQUIP">
+		<self>
+		  <![CDATA[[npc.Name] [npc.verb(unfasten)] the armbinder from around [npc.her] wrists, before taking them off.]]>
+		</self>
+		<other>
+		  <![CDATA[[npc.Name] [npc.verb(unfasten)] the armbinder from around [npc2.namePos] wrists, before taking them off.]]>
+		</other>
+		<otherRough>
+		  <![CDATA[[npc.Name] roughly [npc.verb(unfasten)] the armbinder from around [npc2.namePos] wrists, before yanking them off.]]>
+		</otherRough>
+	</displacementText>
+	
+</clothing>

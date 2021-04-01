@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<clothing>
+	
+	<coreAtributes>
+		<value>1200</value> 
+		<determiner><![CDATA[a]]></determiner>
+		<name><![CDATA[Enforcer Helmet]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Enforcer Helmets]]></namePlural> 
+		<description><![CDATA[A a metal helmet used by Enforcers]]></description> 
+		<physicalResistance>2</physicalResistance> 
+		<femininity>ANDROGYNOUS</femininity> 
+		<slot>HEAD</slot> 
+		<rarity>RARE</rarity> 
+		<clothingSet>ENFORCER</clothingSet>
+		<imageName>head_enfocerHelmet_armor.svg</imageName> 
+		<imageEquippedName/> 
+		<enchantmentLimit/>
+		<effects/> 
+		<blockedPartsList>
+			<blockedParts>
+				<displacementType>REMOVE_OR_EQUIP</displacementType>
+				<clothingAccessRequired>
+					<clothingAccess>HEAD</clothingAccess>
+				</clothingAccessRequired>
+				<blockedBodyParts/>
+				<clothingAccessBlocked/>
+				<concealedSlots/>
+			</blockedParts>
+			<blockedParts>
+				<displacementType>PULLS_OFF</displacementType>
+				<clothingAccessRequired/>
+				<blockedBodyParts>
+					<bodyPart>HAIR</bodyPart>
+				</blockedBodyParts>
+				<clothingAccessBlocked>
+				</clothingAccessBlocked>
+				<concealedSlots>
+					<slot>HAIR</slot>
+				</concealedSlots>
+			</blockedParts>
+		</blockedPartsList>
+		<incompatibleSlots/>
+		<primaryColours values="JUST_STEEL"/>
+		<primaryColoursDye values="ALL_METAL"/>
+		<secondaryColours values="JUST_BLACK"/>
+		<secondaryColoursDye values="ALL"/>
+		<tertiaryColours values="JUST_BROWN"/>
+		<tertiaryColoursDye values="ALL"/>
+		<itemTags> 
+			<tag>SOLD_BY_NYAN</tag>
+			<tag>DOMINION_ALLEYWAY_SPAWN</tag>
+		</itemTags>
+	</coreAtributes>
+	<displacementText type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[
+			You take off your enforcer helmet.
+		]]></playerSelf>
+		<playerNPC><![CDATA[
+			You pull off [npc.name]'s enforcer helmet.
+		]]></playerNPC>
+		<playerNPCRough><![CDATA[
+			You grab hold of [npc.name]'s enforcer helmet and roughly pull it off [npc.her] head.
+		]]></playerNPCRough>
+		<NPCSelf><![CDATA[
+			[npc.Name] takes [npc.her] enforcer helmet off.
+		]]></NPCSelf>
+		<NPCPlayer><![CDATA[
+			[npc.Name] pulls your enforcer helmet off.
+		]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[
+			[npc.Name] grabs hold of your enforcer helmet and roughly pulls it off your head.
+		]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[
+			[npc1.Name] pulls [npc2.name]'s enforcer helmet off.
+		]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[
+			[npc.Name] grabs hold of [npc2.name]'s enforcer helmet and roughly pulls it off [npc2.her] head.
+		]]></NPCOtherNPCRough>
+	</displacementText>
+
+	<replacementText type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[
+			You put on the enforcer helmet.
+		]]></playerSelf>
+		<playerNPC><![CDATA[
+			You put [npc.name]'s enforcer helmet on [npc.her] head.
+		]]></playerNPC>
+		<playerNPCRough><![CDATA[
+			You hold [npc.name] still as you roughly force the enforcer helmet on [npc.her] head.
+		]]></playerNPCRough>
+		<NPCSelf><![CDATA[
+			[npc.Name] put on the enforcer helmet.
+		]]></NPCSelf>
+		<NPCPlayer><![CDATA[
+			[npc.Name] puts your enforcer helmet on your head.
+		]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[
+			[npc.Name] holds you still as [npc.she] roughly puts the enforcer helmet on your head.
+		]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[
+			[npc1.Name] puts [npc2.name]'s enforcer helmet off on their head.
+		]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[
+			[npc.Name] grabs hold of [npc2.name]'s enforcer helmet and roughly puts it on [npc2.her] head.
+		]]></NPCOtherNPCRough>
+	</replacementText>
+
+	<displacementText type="PULLS_OFF">
+		<playerSelf><![CDATA[
+			You take off your enforcer helmet.
+		]]></playerSelf>
+		<playerNPC><![CDATA[
+			You pull off [npc.name]'s enforcer helmet.
+		]]></playerNPC>
+		<playerNPCRough><![CDATA[
+			You grab hold of [npc.name]'s enforcer helmet and roughly pull it off [npc.her] head.
+		]]></playerNPCRough>
+		<NPCSelf><![CDATA[
+			[npc.Name] takes [npc.her] enforcer helmet off.
+		]]></NPCSelf>
+		<NPCPlayer><![CDATA[
+			[npc.Name] pulls your enforcer helmet off.
+		]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[
+			[npc.Name] grabs hold of your enforcer helmet and roughly pulls it off your head.
+		]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[
+			[npc1.Name] pulls [npc2.name]'s enforcer helmet off.
+		]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[
+			[npc.Name] grabs hold of [npc2.name]'s enforcer helmet and roughly pulls it off [npc2.her] head.
+		]]></NPCOtherNPCRough>
+	</displacementText>
+	
+	<replacementText type="PULLS_BACK_ON">
+		<playerSelf><![CDATA[
+			You put on the enforcer helmet.
+		]]></playerSelf>
+		<playerNPC><![CDATA[
+			You put [npc.name]'s enforcer helmet on [npc.her] head.
+		]]></playerNPC>
+		<playerNPCRough><![CDATA[
+			You hold [npc.name] still as you roughly force the enforcer helmet on [npc.her] head.
+		]]></playerNPCRough>
+		<NPCSelf><![CDATA[
+			[npc.Name] put on the enforcer helmet.
+		]]></NPCSelf>
+		<NPCPlayer><![CDATA[
+			[npc.Name] puts your enforcer helmet on your head.
+		]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[
+			[npc.Name] holds you still as [npc.she] roughly puts the enforcer helmet on your head.
+		]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[
+			[npc1.Name] puts [npc2.name]'s enforcer helmet off on their head.
+		]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[
+			[npc.Name] grabs hold of [npc2.name]'s enforcer helmet and roughly puts it on [npc2.her] head.
+		]]></NPCOtherNPCRough>
+	</replacementText>
+	
+</clothing>

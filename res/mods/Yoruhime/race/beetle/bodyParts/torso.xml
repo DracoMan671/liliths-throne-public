@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<torso>
+	<race>Yoruhime_beetle</race>
+	<transformationName><![CDATA[beetle]]></transformationName>
+	<coveringType>Yoruhime_beetle_chitin</coveringType>
+	<descriptorsMasculine/>
+	<descriptorsFeminine/>
+	<transformationDescription><![CDATA[
+		After just a few moments, the transformation comes to an end, and [npc.she] [npc.verb(let)] out a deep sigh as the itching finally stops, leaving [npc.her] torso covered with beetle-like chitin.
+		<br/>[npc.Name] now [npc.has] [style.boldNyto(beetle-like)], [npc.skinFullDescription].
+	]]></transformationDescription>
+	<bodyDescription><![CDATA[
+		[npc.Her] torso has [npc.a_femininity(true)] appearance, and is [npc.materialCompositionDescriptor] [npc.skinFullDescription(true)]. A thick chitin exoskeleton cover most of [npc.her] it.
+	]]></bodyDescription>
+</torso>

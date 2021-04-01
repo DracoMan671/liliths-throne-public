@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+
+<clothing>
+  <coreAtributes>
+    <value>400</value>
+    <determiner><![CDATA[a]]></determiner>
+    <name><![CDATA[Dogtags]]></name>
+    <namePlural pluralByDefault="false"><![CDATA[Dogtags]]></namePlural>
+    <description><![CDATA[A Chain necklace with a pair of military dogtags attached.]]></description>
+    
+    <physicalResistance>0</physicalResistance>
+    <femininity>ANDROGYNOUS</femininity> 
+    <slot>NECK</slot> 
+    <rarity>EPIC</rarity> 
+    
+    <imageName>dogtags.svg</imageName>
+
+    <clothingSet/>
+    <imageEquippedName/>
+    <enchantmentLimit>8</enchantmentLimit>
+    
+    <effects/>
+
+    <blockedPartsList>
+      <blockedParts>
+        
+        <displacementType>REMOVE_OR_EQUIP</displacementType> 
+        
+        <clothingAccessRequired/>
+        <blockedBodyParts/>
+        <clothingAccessBlocked/>        
+        <concealedSlots/>
+        
+      </blockedParts>
+    </blockedPartsList>
+
+    <incompatibleSlots/>
+    
+    <primaryColours values="JUST_STEEL"/>
+    <primaryColoursDye values="ALL_METAL"/>
+    <secondaryColours values="JUST_STEEL"/>
+    <secondaryColoursDye values="ALL_METAL"/>
+    <tertiaryColours values="JUST_BLACK"/>
+    <tertiaryColoursDye values="ALL"/>
+    
+    <itemTags>
+      <tag>SOLD_BY_KATE</tag>
+    </itemTags>
+    
+  </coreAtributes>
+
+  <displacementText type="REMOVE_OR_EQUIP">
+    <playerSelf>
+      <![CDATA[You take off your dogtags.]]>
+    </playerSelf>
+    <playerNPC>
+      <![CDATA[You take off [npc.Name]'s dogtags.]]>
+    </playerNPC>
+    <playerNPCRough>
+      <![CDATA[You yank [npc.name]'s dogtags off.]]>
+    </playerNPCRough>
+    <NPCSelf>
+      <![CDATA[[npc.Name] takes off [npc.herHis] dogtags.]]>
+    </NPCSelf>
+    <NPCPlayer>
+      <![CDATA[[npc.Name] takes off your dogtags.]]>
+    </NPCPlayer>
+    <NPCPlayerRough>
+      <![CDATA[[npc.Name] yanks off your dogtags.]]>
+    </NPCPlayerRough>
+    <NPCOtherNPC>
+      <![CDATA[[npc1.Name] takes off [npc2.name]'s dogtags.]]>
+    </NPCOtherNPC>
+    <NPCOtherNPCRough>
+      <![CDATA[[npc.Name] yanks off [npc2.name]'s dogtags.]]>
+    </NPCOtherNPCRough>
+  </displacementText>
+
+  <replacementText type="REMOVE_OR_EQUIP">
+    <playerSelf>
+      <![CDATA[You clasp the dogtags around your neck.]]>
+    </playerSelf>
+    <playerNPC>
+      <![CDATA[You clasp the dogtags around [npc.name]'s neck.]]>
+    </playerNPC>
+    <playerNPCRough>
+      <![CDATA[You clasp the dogtags around [npc.name]'s neck.]]>
+    </playerNPCRough>
+    <NPCSelf>
+      <![CDATA[[npc.Name] clasps the dogtags around [npc.herHis] neck.]]>
+    </NPCSelf>
+    <NPCPlayer>
+      <![CDATA[[npc.Name] clasps the dogtags around your neck.]]>
+    </NPCPlayer>
+    <NPCPlayerRough>
+      <![CDATA[[npc.Name] clasps the dogtags around your neck.]]>
+    </NPCPlayerRough>
+    <NPCOtherNPC>
+      <![CDATA[[npc1.Name] clasps the dogtags around [npc2.Name]'s neck.]]>
+    </NPCOtherNPC>
+    <NPCOtherNPCRough>
+      <![CDATA[[npc1.Name] clasps the dogtags around [npc2.Name]'s neck.]]>
+    </NPCOtherNPCRough>
+  </replacementText>
+  
+  
+</clothing>

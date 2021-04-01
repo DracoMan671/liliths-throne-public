@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<anus>
+	<race>poke_nyula</race>
+	<coveringType>ANUS</coveringType>
+	<names/>
+	<!--
+	<names>
+		<name><![CDATA[asshole]]></name>
+		<name><![CDATA[back door]]></name>
+		<name><![CDATA[rear entrance]]></name>
+	</names>
+	-->
+	<namesPlural/>
+	<!--
+	<namesPlural>
+		<name><![CDATA[assholes]]></name>
+		<name><![CDATA[back doors]]></name>
+		<name><![CDATA[rear entrances]]></name>
+	</namesPlural>
+	-->
+	<descriptorsMasculine>
+		<descriptor><![CDATA[weasel-like]]></descriptor>
+	</descriptorsMasculine>
+	<descriptorsFeminine>
+		<descriptor><![CDATA[weasel-like]]></descriptor>
+	</descriptorsFeminine>
+	<!-- PUFFY, RIBBED, TENTACLED, MUSCLE_CONTROL -->
+	<defaultOrificeModifiers>
+		<modifier>MUSCLE_CONTROL</modifier>
+	</defaultOrificeModifiers>
+</anus>

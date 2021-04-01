@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<clothing>
+	<coreAttributes>
+		<value>2500</value>
+		<determiner><![CDATA[an]]></determiner>
+		<name><![CDATA[Imperial Plensach]]></name>
+		<namePlural pluralByDefault="False"><![CDATA[Imperial Plensacha]]></namePlural>
+		<description><![CDATA[A type of eyepatch based off of the Imperial Goln's visor, its suspended arround the head using chain instead of straps. While traditionally used as an eyepatch it can also be used as a monocle or just as armor. While not common, it can be requested in the Imperial army for those who have any ocular issues.]]></description>
+		<physicalResistance>2</physicalResistance>
+		<femininity>ANDROGYNOUS</femininity>
+		<slot>EYES</slot>
+		<rarity>EPIC</rarity>
+		<clothingSet/>
+		<imageName>Imperial_Plensach.svg</imageName>
+		<imageEquippedName/>
+		<enchantmentLimit>10</enchantmentLimit>
+		<effects/>
+		
+		<blockedPartsList>
+			<blockedParts>
+				<displacementType>REMOVE_OR_EQUIP</displacementType>
+				<clothingAccessRequired>
+					<clothingAccess>EYES</clothingAccess>
+				</clothingAccessRequired>
+				<blockedBodyParts/>
+				<clothingAccessBlocked/>
+				<concealedSlots/>
+			</blockedParts>
+		</blockedPartsList>
+		
+		<incompatibleSlots/>
+		
+	<primaryColours>
+		<colour>CLOTHING_BLUE_NAVY</colour>
+	</primaryColours>
+	<primaryColoursDye values="ALL_WITH_METAL"/>
+	<secondaryColours>
+		<colour>CLOTHING_BLACK</colour>
+	</secondaryColours>
+	<secondaryColoursDye values="ALL_WITH_METAL"/>
+	
+		<itemTags>
+			<tag>SOLD_BY_VICKY</tag>
+			<tag>SOLD_BY_NYAN</tag>
+		</itemTags>
+	</coreAttributes>
+
+	
+  <replacementText type="REMOVE_OR_EQUIP">
+    <self>
+      <![CDATA[[npc.Name] [npc.verb(thread)] the eyepatch's chain around [npc.her] [npc.head], before positioning the plate over [npc.her] [npc.eye].]]>
+    </self>
+    <other>
+      <![CDATA[[npc.Name] [npc.verb(thread)] the eyepatch's chains around [npc2.namePos] [npc2.head], before positioning the plate over [npc2.her] [npc2.eye].]]>
+    </other>
+    <otherRough>
+      <![CDATA[[npc.Name] roughly [npc.verb(hook)] the eyepatch's chains around [npc2.namePos] [npc2.head], before firmly positioning the plate over [npc2.her] [npc2.eye].]]>
+    </otherRough>
+  </replacementText>
+
+  <displacementText type="REMOVE_OR_EQUIP">
+    <self>
+      <![CDATA[[npc.Name] [npc.verb(unbind)] the eyepatch's chains from around [npc.her] [npc.ears], before taking it off.]]>
+    </self>
+    <other>
+      <![CDATA[[npc.Name] [npc.verb(unbind)] the eyepatch's chains from around [npc2.namePos] [npc2.ears], before taking it off.]]>
+    </other>
+    <otherRough>
+      <![CDATA[[npc.Name] roughly [npc.verb(tug)] the eyepatch's chains off of [npc2.namePos] [npc2.ears], before taking it off.]]>
+    </otherRough>
+  </displacementText>
+	
+</clothing>

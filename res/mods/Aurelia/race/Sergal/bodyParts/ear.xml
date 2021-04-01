@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ear>
+	<race>Aurelia_Sergal</race>
+	
+	<transformationName><![CDATA[sergal]]></transformationName>
+	
+	<coveringType>Aurelia_Sergal_fur</coveringType>
+	
+	<tags>
+		<tag>EAR_HANDLES_IN_SEX</tag>
+	</tags>	
+
+	<name><![CDATA[ear]]></name>
+	<namePlural><![CDATA[ears]]></namePlural>
+	
+	<descriptorsMasculine>
+		<descriptor>furry</descriptor>
+		<descriptor>sergal</descriptor>
+	</descriptorsMasculine>
+	<descriptorsFeminine>
+		<descriptor>furry</descriptor>
+		<descriptor>sergal</descriptor>
+	</descriptorsFeminine>
+	
+	<transformationDescription><![CDATA[
+		They quickly begin to grow out and backward, becoming long and furred, starting just behind [npc.her] eyes.
+		#IF(npc.getBodyMaterial()==BODY_MATERIAL_FLESH)
+		 A layer of [npc.earFullDescriptionColour] quickly grows to cover them,
+		#ELSE
+		 Just like the rest of [npc.her] body, they're made out of [npc.earFullDescription],
+		#ENDIF
+		 and as the transformation finishes, [npc.she] experimentally [npc.verb(touch)] [npc.her] new sergal ears.
+		<br/>[npc.Name] now [npc.has] [style.boldSergalSlate(sergal ears)], which are [npc.materialCompositionDescriptor] [npc.earFullDescription].
+	]]></transformationDescription>
+	
+	<bodyDescription><![CDATA[
+		[npc.She] [npc.has] a pair of unnoticeable,#IF(npc.isPiercedEar()) pierced,#ENDIF sergal ears, which are positioned just behind [npc.her] eyes and are [npc.materialCompositionDescriptor] [npc.earFullDescription(true)].
+	]]></bodyDescription>
+	
+</ear>

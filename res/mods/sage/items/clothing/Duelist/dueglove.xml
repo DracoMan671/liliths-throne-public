@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<clothing>
+	<coreAttributes>
+		<value>2000</value> 
+		<determiner><![CDATA[a pair of]]></determiner>
+		<name><![CDATA[long cuffed leather glove]]></name>
+		<namePlural pluralByDefault="true"><![CDATA[long cuffed leather gloves]]></namePlural>
+		<description><![CDATA[A pair of rough long cuffed leather gloves. They have been reinforced to protact the wearers hands while also maintaining a classy, sexy with just the right amount of rogish charm to compliment any fencer.]]></description> 
+		<physicalResistance>1</physicalResistance> 
+		<femininity>ANDROGYNOUS</femininity> 
+		<slot>HAND</slot> 
+		<rarity>COMMON</rarity> 
+		<clothingSet>sage_dueset</clothingSet> 
+		<imageName>dueglove.svg</imageName> 
+		<imageEquippedName/> 
+		<enchantmentLimit/>
+		<effects/>
+		<blockedPartsList> 
+			<blockedParts>
+				<displacementType>REMOVE_OR_EQUIP</displacementType> 
+				<clothingAccessRequired> 
+					<clothingAccess>FINGERS</clothingAccess>
+				</clothingAccessRequired>
+				<blockedBodyParts/>
+				<clothingAccessBlocked/>
+				<concealedSlots>
+					<slot>FINGER</slot>
+				</concealedSlots> <!--I decided against having these conceal finger slots.-->
+			</blockedParts>
+		</blockedPartsList>
+		<incompatibleSlots/> 
+		<primaryColours>
+			<colour>CLOTHING_BLACK</colour>
+		</primaryColours> 
+		<primaryColoursDye values="ALL"/>
+		<secondaryColours/>
+		<secondaryColoursDye/>
+		<tertiaryColours/>
+		<tertiaryColoursDye/>
+		
+		<itemTags> 
+			<tag>SOLD_BY_VICKY</tag>
+		</itemTags>
+	</coreAttributes>
+
+	<replacementText type="REMOVE_OR_EQUIP">
+		<self>
+		  <![CDATA[[npc.Name] [npc.verb(slide)] the leather gloves over [npc.her] [npc.hands].]]>
+		</self>
+		<other>
+		  <![CDATA[[npc.Name] [npc.verb(slide)] the leather gloves over [npc2.namePos] [npc2.hands].]]>
+		</other>
+		<otherRough>
+		  <![CDATA[[npc.Name] roughly [npc.verb(forces)] the leather gloves onto [npc2.namePos] [npc2.hands].]]>
+	  </otherRough>
+	</replacementText>
+
+	<displacementText type="REMOVE_OR_EQUIP">
+		<self>
+		  <![CDATA[[npc.Name] [npc.verb(slide)] the leather gloves off [npc.her] [npc.hands], before pulling them free from [npc.her] [npc.hands].]]>
+		</self>
+		<other>
+		  <![CDATA[[npc.Name] [npc.verb(slide)] the leather gloves off [npc2.namePos] [npc2.hands], before pulling them free from [npc2.her] [npc2.hands].]]>
+		</other>
+		<otherRough>
+		  <![CDATA[[npc.Name] [npc.verb(yank)] the leather gloves off [npc2.namePos] [npc2.hands], before roughly pulling them free from [npc2.her] [npc2.hands].]]>
+		</otherRough>
+	</displacementText>
+	
+</clothing>

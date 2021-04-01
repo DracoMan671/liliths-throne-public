@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<clothing>
+	<coreAtributes>
+		<value>10000</value>
+		<determiner><![CDATA[a]]></determiner>
+		<name><![CDATA[Breastplate]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Breastplates]]></namePlural>
+		<description><![CDATA[An armoured plate that protects the upper torso, shoulders,and upper arms. Excellent at protecting the wearer from physical harm, and it's enchanted to accommodate wings.]]></description>
+		<physicalResistance>7</physicalResistance>
+		<femininity>ANDROGYNOUS</femininity>
+		<slot>TORSO_OVER</slot>
+		<rarity>RARE</rarity>
+		<clothingSet></clothingSet>
+		<imageName>Breastplate.svg</imageName>
+		<imageEquippedName></imageEquippedName>
+		<enchantmentLimit>8</enchantmentLimit>
+		<effects/>
+		<blockedPartsList>
+			<blockedParts>
+				<displacementType>REMOVE_OR_EQUIP</displacementType>
+				<clothingAccessRequired />
+				<blockedBodyParts>
+					<bodyPart>BREASTS</bodyPart>
+					<bodyPart>NIPPLES</bodyPart>
+				</blockedBodyParts>
+				<clothingAccessBlocked>
+					<clothingAccess>CHEST</clothingAccess>
+				</clothingAccessBlocked>
+				<concealedSlots>
+					<slot>TORSO_UNDER</slot>
+					<slot>CHEST</slot>
+					<slot>NIPPLE</slot>
+					<slot>PIERCING_NIPPLE</slot>
+				</concealedSlots>
+			</blockedParts>
+		</blockedPartsList>
+		<incompatibleSlots />
+		<primaryColours values="ALL_METAL" />
+		<primaryColoursDye values="ALL_METAL" />
+		<secondaryColours values="ALL" />
+		<secondaryColoursDye values="ALL" />
+		<itemTags>
+			<tag>SOLD_BY_VICKY</tag>
+		</itemTags>
+	</coreAtributes>
+	<displacementText type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[You undo the straps for your Breastplate, removing the armour.]]></playerSelf>
+		<playerNPC><![CDATA[You undo the straps for [npc.name]'s Breastplate.]]></playerNPC>
+		<playerNPCRough><![CDATA[You violently yank at the straps holding [npc.name]'s Breastplate on, removing the armour.]]></playerNPCRough>
+		<NPCSelf><![CDATA[[npc.name] undoes the straps for their Breastplate, removing the armour.]]></NPCSelf>
+		<NPCPlayer><![CDATA[[npc.name] undoes the straps for your Breastplate, removing the armour.]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[[npc.name] violently yanks at the straps holding your Breastplate on, removing the armour.]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[[npc1.name] undoes the straps for [npc2.name]'s Breastplate, removing the armour.]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[[npc1.name] violently yanks on the straps holding [npc2.name]'s Breastplate on, removing the armour.]]></NPCOtherNPCRough>
+	</displacementText>
+	<replacementText type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[You don your Breastplate, securing it with straps.]]></playerSelf>
+		<playerNPC><![CDATA[You assist [npc.name] in donning their Breastplate.]]></playerNPC>
+		<playerNPCRough><![CDATA[You hastily, and roughly, assist [npc.name] in donning their Breastplate.]]></playerNPCRough>
+		<NPCSelf><![CDATA[[npc.name] dons their Breastplate, securing it with straps.]]></NPCSelf>
+		<NPCPlayer><![CDATA[[npc.name] assists you in donning your Breastplate.]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[[npc.name] hastily, and roughly, assists you in donning your Breastplate.]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[[npc1.name] assists [npc2.name] in donning their Breastplate.]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[[npc1.name] hastily, and roughly, assists [npc2.name] in donning their Breastplate.]]></NPCOtherNPCRough>
+	</replacementText>
+</clothing>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<colour>
+	<metallic>false</metallic>
+	
+	<name><![CDATA[Slate Blue]]></name>
+	
+	<colour>6a5acd</colour>
+
+	<lightColour>6a5acd</lightColour>
+
+	<coveringIconColour>6a5acd</coveringIconColour>
+	
+	<formattingNames>
+		<name><![CDATA[sergalSlate]]></name>
+		<name><![CDATA[sergalSlateBlue]]></name>
+	</formattingNames>
+	
+	<tags>
+	</tags>
+	
+</colour>

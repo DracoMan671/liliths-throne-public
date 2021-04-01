@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<weapon>
+	<coreAttributes>
+		<value>15000</value>
+		<melee>false</melee>
+		<twoHanded>false</twoHanded>
+		<determiner><![CDATA[a]]></determiner>
+		<name><![CDATA[glowing demon crystal]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[demon crystal]]></namePlural>
+		<description><![CDATA[This crystal is said to have been crystallised from a Lilin's tears. Its arcane nature allows it to be absorbed into someone's aura to grant them the ability to cast a ranged attack using conjured swords. This particular crystal is in excellent shape, granting immense power.]]></description>
+		<attackDescriptor>Strike</attackDescriptor>
+		<attackTooltipDescription>Use your crystal's power to attack [npc2.name] with three floating blades of energy.</attackTooltipDescription>
+		<rarity>EPIC</rarity>
+		<weaponSet/>
+		<equipText><![CDATA[[npc.Name] [npc.verb(focus)] on the energy in the arcane crystal. As [npc.she] [npc.does] so, it dissolves and flows into [npc.her] aura, granting [npc.herHim] the ability to perform arcane-sword attacks at range.]]></equipText>
+		<unequipText><![CDATA[[npc.Name] [npc.verb(focus)] on extracting the absorbed arcane energy inside of [npc.her] aura. As [npc.she] [npc.does] so, it reforms back into an arcane crystal.]]></unequipText>
+		
+		<imageName>ArcaneUN3.svg</imageName> 
+		
+		<imageEquippedName>Arcane003.svg</imageEquippedName> 
+		
+		<damage>40</damage> 
+		
+		<arcaneCost>0</arcaneCost> 
+		
+		<damageVariance>HIGH</damageVariance> 
+		
+		<availableDamageTypes>
+			<damageType>PHYSICAL</damageType>
+			<damageType>ICE</damageType>
+			<damageType>FIRE</damageType>
+			<damageType>POISON</damageType>
+		</availableDamageTypes>
+		
+		<spells changeOnReforge="true">
+			<spell damageType="FIRE">FLASH</spell>
+			<spell damageType="ICE">RAIN_CLOUD</spell>
+			<spell damageType="LUST">TELEPATHIC_COMMUNICATION</spell>
+			<spell damageType="PHYSICAL">TELEKENETIC_SHOWER</spell>
+			<spell damageType="POISON">VACUUM</spell>
+		</spells>
+		
+		<enchantmentLimit>10</enchantmentLimit>
+		
+		<effects> 
+              <effect itemEffectType="WEAPON" limit="0" potency="MAJOR_BOOST" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="RESISTANCE_WEAPON" timer="0"/>
+              <effect itemEffectType="WEAPON" limit="0" potency="MAJOR_BOOST" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="RESISTANCE_WEAPON" timer="0"/>
+              <effect itemEffectType="WEAPON" limit="0" potency="MAJOR_BOOST" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="RESISTANCE_WEAPON" timer="0"/>
+              <effect itemEffectType="WEAPON" limit="0" potency="MINOR_BOOST" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="RESISTANCE_WEAPON" timer="0"/>
+		</effects>
+		
+		<primaryColours values="ALL"/> 
+		<primaryColoursDye values="ALL_WITH_METALS"/>
+		<secondaryColours/> 
+		<secondaryColoursDye/>
+		<tertiaryColours/> 
+		<tertiaryColoursDye/>
+		
+		<itemTags>
+			<tag>SOLD_BY_VICKY</tag>
+			<tag>WEAPON_BLADE</tag>
+		</itemTags>
+		
+	</coreAttributes>
+
+	<hitDescriptions>
+		<hitText><![CDATA[
+		Thrusting [npc.her] [npc.arm] out in front of [npc.herHim], three swords of arcane energy materialises around [npc.namePos] [npc.arm], before shooting out to strike [npc2.name]!
+		]]></hitText>
+		<hitText><![CDATA[
+		Making a quick forwards thrust with [npc.her] [npc.arm], a trio of arcane energy swords shoots out of [npc.namePos] [npc.hand] to strike [npc2.name]!
+		]]></hitText>
+		<hitText><![CDATA[
+		[npc.Name] [npc.verb(thrust)] [npc.her] [npc.arm] at [npc2.name], causing a sword of arcane energy to fly out and hit [npc2.herHim] right in the chest!
+		]]></hitText>
+	</hitDescriptions>
+
+	<missDescriptions>
+		<missText><![CDATA[
+		Thrusting [npc.her] [npc.arm] out in front of [npc.herHim], three swords of arcane energy materialises around [npc.namePos] [npc.arm], before shooting out and narrowly missing [npc2.name]!
+		]]></missText>
+		<missText><![CDATA[
+		Making a quick forwards thrust with [npc.her] [npc.arm], a trio of arcane energy swords shoots out of [npc.namePos] [npc.hand] to narrowly miss [npc2.name]!
+		]]></missText>
+		<missText><![CDATA[
+		[npc.Name] [npc.verb(thrust)] [npc.her] [npc.arm] at [npc2.name], causing a sword of arcane energy to fly out and narrowly miss [npc2.herHim]!
+		]]></missText>
+	</missDescriptions>
+	
+</weapon>

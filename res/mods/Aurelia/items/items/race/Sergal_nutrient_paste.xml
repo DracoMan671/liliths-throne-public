@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<item>
+	<coreAttributes>
+		<value>100</value> 
+		<determiner><![CDATA[a tin of]]></determiner>
+		<name><![CDATA[Nutrient Paste]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Nutrient Pastes]]></namePlural>
+		<description><![CDATA[A small metal container filled with a rather unappetizing paste of some sort. The scent can be detected through the tin, and is quite strong, almost unappetizing...]]></description> 
+		
+		<useDescriptor>eat</useDescriptor>
+		
+		<sexUse>true</sexUse>
+		<combatUseAllies>true</combatUseAllies>
+		<combatUseEnemies>false</combatUseEnemies>
+		<consumedOnUse>true</consumedOnUse>
+		
+		<rarity>RARE</rarity> 
+		
+		<imageName zLayer="0" imageRotation="0" imageSize="100">background_bottom.svg</imageName>
+		<imageName zLayer="1" imageRotation="0" imageSize="70" target1='stroke="#000"' replacement1='stroke="#ff5555"' target2='#ff8080' replacement2='#ff5555'>res/mods/Aurelia/race/Sergal/subspecies/icon.svg</imageName>
+		<imageName zLayer="2" imageRotation="0" imageSize="70">Sergal_nutrient_paste.svg</imageName>
+		<imageName zLayer="3" imageRotation="0" imageSize="100">background_top.svg</imageName>
+		
+		<colourPrimary>Aurelia_Sergal</colourPrimary>
+		<colourSecondary/>
+		<colourTertiary/>
+		
+		<potionDescriptor><![CDATA[sergal]]></potionDescriptor>
+		<associatedRace>Aurelia_Sergal</associatedRace>
+		<enchantmentItemTypeId>ELIXIR</enchantmentItemTypeId>
+		<enchantmentEffectId>RACE</enchantmentEffectId>
+		
+		<effectTooltipLines>
+			<line><![CDATA[[style.boldGood(Restores)] 10% [style.boldHealth([#ATTRIBUTE_HEALTH_MAXIMUM.getName()])]]]></line>
+			<line><![CDATA[[#ATTRIBUTE_MAJOR_PHYSIQUE.getFormattedValue(5)] to 'potion effects']]></line>
+			<line><![CDATA[[#ATTRIBUTE_DAMAGE_LUST.getFormattedValue(5)] to 'potion effects']]></line>
+		</effectTooltipLines>
+		
+		<applyEffects><![CDATA[
+			[##npc.incrementHealth(npc.getAttributeValue(ATTRIBUTE_HEALTH_MAXIMUM)/10)]
+			
+			<p style='margin-bottom:0; padding-bottom:0;'>
+				[npc.Name] [npc.verb(start)] to feel a little bit excited down south.
+			</p>
+			[#npc.addPotionEffect(ATTRIBUTE_MAJOR_PHYSIQUE, 5)]
+			[#npc.addPotionEffect(ATTRIBUTE_DAMAGE_LUST, 5)]
+		]]></applyEffects>
+		
+		<itemTags>
+			<tag>RACIAL_TF_ITEM</tag>
+			<tag>SOLD_BY_RALPH</tag>
+		</itemTags>
+	</coreAttributes>
+
+	<useDescriptions>
+		<selfUse><![CDATA[
+		Peeling the top on the tin can, [npc.name] [npc.verb(take)] a whiff of the ration-like paste. The stuff looks like a cracker spread at first glance, but closer inspection shows it to have many lumps. [npc.name] can't help but experimentally dip a finger down into the stuff, bringing it back to taste. It is potent, and [npc.her] [npc.tongue+] alights with so many conflicting flavors at once. [npc.name]
+		#IF(npc.getFaceType()==FACE_TYPE_Aurelia_Sergal_face)
+			 [npc.verb(start)] using [npc.her] tongue to lap up the remnants of the paste, and in a matter of moments [npc.has] completely cleaned out the tin.
+		#ELSE
+			 [npc.verb(lap)] the paste, the delicious taste bringing out an immense wave of pleasure. [npc.her] eyes half-close, and in a matter of moments [npc.has] finished the stuff off.
+		#ENDIF
+		]]></selfUse>
+		<otherUse><![CDATA[
+		Peeling the top on the tin can, [npc.name] [npc.verb(bring)] the paste up to [npc2.namePos] waiting [npc2.lips] and [npc.verb(get)] [npc2.herHim] to consume it. The stuff looks like a cracker spread at first glance, but closer inspection shows it to have many lumps. [npc2.name] can't help but experimentally dip a finger down into the stuff, bringing it back to taste. It is potent, and [npc2.her] [npc2.tongue+] alights with so many conflicting flavors at once. [npc2.name]
+		#IF(npc.getFaceType()==FACE_TYPE_Aurelia_Sergal_face)
+			 [npc2.verb(start)] using [npc2.her] tongue to lap up the remnants of the paste, and in a matter of moments [npc2.has] completely cleaned out the tin.
+		#ELSE
+			 [npc2.verb(lap)] the paste, the delicious taste bringing out an immense wave of pleasure. [npc2.her] eyes half-close, and in a matter of moments [npc2.has] finished the stuff off.
+		#ENDIF
+		]]></otherUse>
+	</useDescriptions>
+	
+</item>

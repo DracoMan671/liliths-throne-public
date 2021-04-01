@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<hair>
+	<race>Aurelia_Jackal</race>
+	
+	<transformationName><![CDATA[jackal]]></transformationName>
+	
+	<coveringType>Aurelia_Jackal_fur</coveringType>
+	
+	<tags>
+	</tags>
+	
+	<determiner><![CDATA[a head of]]></determiner>
+	
+	<name><![CDATA[fur]]></name>
+	
+	<namePlural pluralByDefault="false"><![CDATA[hairs]]></namePlural> 
+	
+	<descriptorsMasculine>
+		<descriptor>fur-like</descriptor>
+	</descriptorsMasculine>
+	<descriptorsFeminine>
+		<descriptor>fur-like</descriptor>
+	</descriptorsFeminine>
+	
+	<transformationDescription><![CDATA[
+		The transformation only lasts a matter of moments, leaving [npc.herHim] with fur-like hair.
+		<br/>[npc.Name] now [npc.has] [npc.hairColour] [style.boldJackalGoldenrod(jackal hair)].
+	]]></transformationDescription>
+	
+	<bodyDescription><![CDATA[
+		[npc.SheHasFull] [npc.hairDeterminer] [npc.hairLength], [npc.hairColour(true)], jackal hair
+	]]></bodyDescription>
+	
+</hair>

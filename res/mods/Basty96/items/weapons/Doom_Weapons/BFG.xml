@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<weapon>
+	<coreAttributes>
+	
+		<value>90000000</value> 
+		
+		<melee>false</melee>
+		
+		<twoHanded>true</twoHanded>
+		
+		<determiner><![CDATA[a]]></determiner>
+		
+		<name><![CDATA[BFG 9000]]></name>
+		
+		<namePlural pluralByDefault="false"><![CDATA[BFG 9000]]></namePlural> 
+		
+		<description><![CDATA[Representing the pinnacle of UAC research and design, the BFG 9000 is the most advanced firearm ever designed. Fully self contained and deployed as a handheld platform, it is capable of an excessive amount of firepower. <br/><span style='color:#D84646;'><span style='font-style:italic;'>When big is just not quite big enough.</span></span>]]></description> 
+		
+		<attackDescriptor>fire</attackDescriptor>
+		
+		<attackTooltipDescription>Shoot [npc2.name] with your BFG 9000.</attackTooltipDescription>
+		
+		<rarity>LEGENDARY</rarity> 
+		
+		
+		<equipText><![CDATA[[npc.Name] [npc.verb(draw)] [npc.her] BFG 9000, ready to use it in combat.]]></equipText>
+		
+		<unequipText><![CDATA[[npc.Name] [npc.verb(holster)] [npc.her] BFG 9000.]]></unequipText>
+		
+		<imageName>BFG.svg</imageName> 
+		
+		<imageEquippedName/>
+		
+		<damage>2000</damage> 		
+		<aoe chance="100">2000</aoe>
+		<aoe chance="100">2000</aoe>
+		<aoe chance="100">2000</aoe>
+		<aoe chance="100">2000</aoe>
+
+		
+		<arcaneCost>200</arcaneCost> 
+		
+		<damageVariance>LOW</damageVariance> 
+		
+		<availableDamageTypes>
+			<damageType>POISON</damageType>
+		</availableDamageTypes>
+		
+		<spells>
+		</spells>
+		
+		<enchantmentLimit>10</enchantmentLimit>
+		
+		<effects>
+		</effects>
+		
+		<primaryColours>
+			<colour>CLOTHING_STEEL</colour>
+		</primaryColours> 
+		<primaryColoursDye values="ALL_WITH_METALS"/>
+		<secondaryColours> 
+			<colour>CLOTHING_GOLD</colour>
+		</secondaryColours> 
+		<secondaryColoursDye values="ALL_WITH_METALS"/>
+		<tertiaryColours>
+			<tertiaryColours values="CLOTHING_BLACK"/> 
+		</tertiaryColours> 
+		<tertiaryColoursDye values="ALL"/>
+		
+		<itemTags> 
+			<tag>SOLD_BY_VICKY</tag>
+		</itemTags>
+		
+	</coreAttributes>
+
+	<!-- Descriptions that are used when hitting an enemy. One of the hitText values will be randomly selected each time the attacker hits their target. Follow the same guidelines as equipText. -->
+	<hitDescriptions>
+		<hitText><![CDATA[
+		Aiming and firing [npc.her] BFG 9000, [npc.name] [npc.verb(manage)] to hit [npc2.name] with a powerful plasma ball!
+		]]></hitText>
+		<hitText><![CDATA[
+		Taking aim at [npc2.name] with [npc.her] BFG 9000, [npc.name] [npc.verb(pull)] the trigger, unleashing a powerful blast of plasma energy that slams into [npc2.namePos] torso!
+		]]></hitText>
+		<hitText><![CDATA[
+		[npc.Name] [npc.verb(aim)] at [npc2.name] with [npc.her] BFG 9000, and, pulling the trigger, [npc.she] [npc.verb(manage)] to hit [npc2.herHim] right in the chest!
+		]]></hitText>
+	</hitDescriptions>
+
+	<!-- Descriptions that are used when missing an enemy. One of the missText values will be randomly selected each time the attacker misses their target. Follow the same guidelines as equipText. -->
+	<missDescriptions>
+		<missText><![CDATA[
+		Aiming and firing [npc.her] BFG 9000, [npc.name] [npc.verb(miss)] [npc2.name]!
+		]]></missText>
+		<missText><![CDATA[
+		Taking aim at [npc2.name] with [npc.her] BFG 9000, [npc.name] [npc.verb(pull)] the trigger, letting out a frustrated cry as [npc.she] [npc.verb(miss)] [npc.her] target!
+		]]></missText>
+		<missText><![CDATA[
+		[npc.Name] [npc.verb(aim)] at [npc2.name] with [npc.her] BFG 9000 and [npc.verb(pull)] the trigger, but [npc.she] [npc.verb(end)] up missing [npc.her] target!
+		]]></missText>
+	</missDescriptions>
+	
+</weapon>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<weapon>
+	<coreAttributes>
+	
+		<!-- How much this weapon is worth. -->
+		<value>6700</value> 
+		
+				<melee>true</melee>
+		
+				<twoHanded>true</twoHanded>
+		
+				<determiner><![CDATA[an]]></determiner>
+		
+		<!-- The name of this weapon. -->
+		<name><![CDATA[Canoe Oar]]></name>
+		
+				<namePlural pluralByDefault="false"><![CDATA[Canore Oar's]]></namePlural> 
+		
+				<description><![CDATA[A simple Canoe Oar originally designed to steer a Canoe, but you're not gonna use it for that, are you?]]></description>
+		
+				<attackDescriptor>Swing</attackDescriptor>
+		
+				<attackTooltipDescription>Swing at[npc2.name]with your Canoe Oar.</attackTooltipDescription>
+		
+				<rarity>EPIC</rarity> 
+		
+				<equipText><![CDATA[[npc.Name] [npc.verb(carry)] the Canoe Oar.]]></equipText>
+		
+				<unequipText><![CDATA[[npc.Name] [npc.verb(lower)] the Canoe Oar.]]></unequipText>
+		
+				<imageName>CanoeOre.svg</imageName> 
+		
+		
+		<imageEquippedName>CanoeOre.svg</imageEquippedName>
+		
+				<damage>29</damage> 
+		
+				<arcaneCost>0</arcaneCost> 
+		
+				<damageVariance>LOW</damageVariance> 
+		
+				<availableDamageTypes>
+
+			<damageType>PHYSICAL</damageType>
+              
+					</availableDamageTypes>
+		
+				<enchantmentLimit>5</enchantmentLimit>
+		
+				<effects> 
+              		</effects>
+		
+				<primaryColours values="WOOD"/> 
+		<primaryColoursDye values="WOOD"/>
+		<secondaryColours values="WOOD"/> 
+		<secondaryColoursDye values="WOOD"/>
+		
+				<itemTags> 
+			<tag>SOLD_BY_VICKY</tag>
+		</itemTags>
+		
+	</coreAttributes>
+
+		<hitDescriptions>
+		<hitText><![CDATA[
+		[npc.name] [npc.verb(Swing)] at [npc2.name], and pummel them in the sternum. The blow dazes them for a few seconds.
+		]]></hitText>
+		<hitText><![CDATA[
+		[npc.Name] [npc.verb(Smack)] at [npc2.name] with [npc.her] the Canoe Oar, [npc.name] [npc.verb(end up)] swiping [npc2.her] [npc2.arm] with the Canoe Oar.
+		]]></hitText>
+			</hitDescriptions>
+
+		<missDescriptions>
+		<missText><![CDATA[
+		[npc.name] [npc.verb(Swing)] at [npc2.name] but drastically miss your target.
+		]]></missText>
+		<missText><![CDATA[
+		[npc.name] [npc.verb(Try)] to smack [npc2.name] but you swing off course and hit the ground.
+		]]></missText>
+			</missDescriptions>
+	
+</weapon>

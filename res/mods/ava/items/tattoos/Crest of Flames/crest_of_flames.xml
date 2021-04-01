@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<tattoo>
+	<coreAttributes>
+		<value>500</value> 
+		
+		<name><![CDATA[Crest of Flames]]></name>
+		
+		<description><![CDATA[The Crest of a goddess now carried by a mysterious professor.]]></description> 
+		
+		<imageName>crest_of_flames.svg</imageName> 
+		
+		<enchantmentLimit>5</enchantmentLimit>
+		
+		<slotAvailability/>
+		
+		<primaryColours values="ALL"/> 
+		<secondaryColours values="ALL"/> 
+		<tertiaryColours/>
+		
+	</coreAttributes>
+	
+</tattoo>

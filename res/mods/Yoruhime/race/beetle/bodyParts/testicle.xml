@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testicle>
+	<race>Yoruhime_beetle</race>
+	<coveringType>Yoruhime_beetle_chitin</coveringType>
+	<fluidType>Yoruhime_beetle_cum</fluidType>
+	<internal>true</internal>
+	<names/>
+	<namesPlural/>
+	<descriptors/>
+</testicle>

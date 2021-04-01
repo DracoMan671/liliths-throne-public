@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!-- A fan-made mod for Innoxia's Lilith's Throne. Feel free to edit these files however you want, same goes for the svg's. Thanks to Innoxia for making Lilith's Throne, it's great. //Zyro-->
+<clothing>
+  <coreAttributes>
+    <value>1000</value>
+    <determiner><![CDATA[an]]></determiner>
+    <name><![CDATA[E832 Suit]]></name>
+    <namePlural pluralByDefault="false"><![CDATA[E832 Suits's]]></namePlural>
+    <description><![CDATA[A cybernetically manufactured suit, for well behaving individuals.]]></description>
+    <physicalResistance>2</physicalResistance>
+    <femininity>FEMININE</femininity>
+    <slot>TORSO_UNDER</slot>
+    <rarity>UNCOMMON</rarity>
+    <clothingSet />
+    <imageName>Haydee_Suit.svg</imageName>
+    <imageEquippedName />
+    <enchantmentLimit />
+    <effects></effects>
+    <blockedPartsList>
+      <blockedParts>
+        <displacementType>REMOVE_OR_EQUIP</displacementType>
+        <clothingAccessRequired>
+          <!--I'm gong to be honest with you, I have no idea how a woman gets inside one of these.-->
+			<clothingAccess>ARMS_UP_TO_SHOULDER</clothingAccess>
+		</clothingAccessRequired>
+		<blockedBodyParts>
+          <bodyPart>NIPPLES</bodyPart>
+          <bodyPart>STOMACH</bodyPart>
+          <bodyPart>VAGINA</bodyPart>
+          <bodyPart>PENIS</bodyPart>
+          <bodyPart>ANUS</bodyPart>
+        </blockedBodyParts>
+        <clothingAccessBlocked>
+		  <clothingAccess>ANUS</clothingAccess>
+          <clothingAccess>GROIN</clothingAccess>
+          <clothingAccess>CHEST</clothingAccess>
+		</clothingAccessBlocked>
+        <concealedSlots values="CONCEALED_PARTIAL_TORSO" />
+      </blockedParts>
+      <blockedParts>
+        <displacementType>SHIFTS_ASIDE</displacementType>
+        <clothingAccessRequired />
+		<blockedBodyParts>
+		  <bodyPart>BREASTS</bodyPart>
+          <bodyPart>NIPPLES</bodyPart>
+          <bodyPart>STOMACH</bodyPart>
+        </blockedBodyParts>
+        <clothingAccessBlocked />
+        <concealedSlots />
+		</blockedParts>
+    </blockedPartsList>
+    <incompatibleSlots />
+    <primaryColours values="JUST_WHITE" />
+    <primaryColoursDye values="ALL" />
+    <secondaryColours values="JUST_BLACK" />
+    <secondaryColoursDye values="ALL" />
+    <tertiaryColours values="JUST_WHITE" />
+    <tertiaryColoursDye values="ALL" />
+    <itemTags>
+      <tag>SOLD_BY_NYAN</tag>
+    </itemTags>
+  </coreAttributes>
+  <displacementText type="REMOVE_OR_EQUIP">
+    <playerSelf>
+			You take off the E832 Suit.
+		</playerSelf>
+    <playerNPC>
+			You remove [npc.name]'s E832 Suit.
+		</playerNPC>
+    <playerNPCRough>
+			You grab hold of [npc.name]'s E832 Suit and tear it off [npc.her] body.
+		</playerNPCRough>
+    <NPCSelf>
+			[npc.Name] takes off [npc.her] E832 Suit.
+		</NPCSelf>
+    <NPCPlayer>
+			[npc.Name] takes off your E832 Suit.
+		</NPCPlayer>
+    <NPCPlayerRough>
+			[npc.Name] grabs hold of your E832 Suit and roughly tear it off your body.
+		</NPCPlayerRough>
+    <NPCOtherNPC>
+			[npc1.Name] takes off [npc2.name]'s E832 Suit.
+		</NPCOtherNPC>
+    <NPCOtherNPCRough>
+			[npc.Name] grabs hold of [npc2.name]'s E832 Suit and roughly tear it off from [npc2.her] body.
+		</NPCOtherNPCRough>
+  </displacementText>
+  <replacementText type="REMOVE_OR_EQUIP">
+    <playerSelf>
+			You put on the E832 Suit.
+		</playerSelf>
+    <playerNPC>
+			You put the E832 Suit on [npc.name]'s body.
+		</playerNPC>
+    <playerNPCRough>
+			You hold [npc.name] still as you roughly force the E832 Suit onto [npc.her] body.
+		</playerNPCRough>
+    <NPCSelf>
+			[npc.Name] puts on the E832 Suit.
+		</NPCSelf>
+    <NPCPlayer>
+			[npc.Name] puts the E832 Suit on you.
+		</NPCPlayer>
+    <NPCPlayerRough>
+			[npc.Name] holds you still as [npc.she] roughly forces the E832 Suit onto your body.
+		</NPCPlayerRough>
+    <NPCOtherNPC>
+			[npc1.Name] puts on the E832 Suit on [npc2.her] body.
+		</NPCOtherNPC>
+    <NPCOtherNPCRough>
+			[npc1.Name] holds [npc2.name] still as [npc1.she] roughly forces the E832 Suit onto [npc2.her] body.
+		</NPCOtherNPCRough>
+  </replacementText>
+  <displacementText type="SHIFTS_ASIDE">
+    <playerSelf>
+			You shift your E832 Suit to the side.
+		</playerSelf>
+    <playerNPC>
+			You shift [npc.name]'s E832 Suit to the side.
+		</playerNPC>
+    <playerNPCRough>
+			You grab hold of [npc.name]'s E832 Suit and shift it to the side.
+		</playerNPCRough>
+    <NPCSelf>
+			[npc.Name] shifts [npc.her] E832 Suit to the side.
+		</NPCSelf>
+    <NPCPlayer>
+			[npc.Name] shifts your E832 Suit to the side.
+		</NPCPlayer>
+    <NPCPlayerRough>
+			[npc.Name] grabs hold of your E832 Suit and roughly shifts it to the side.
+		</NPCPlayerRough>
+    <NPCOtherNPC>
+			[npc1.Name] shifts [npc2.name]'s E832 Suit to the side.
+		</NPCOtherNPC>
+    <NPCOtherNPCRough>
+			[npc.Name] grabs hold of [npc2.name]'s E832 Suit and roughly shifts it to the side.
+		</NPCOtherNPCRough>
+  </displacementText>
+  <replacementText type="SHIFTS_ASIDE">
+    <playerSelf>
+			You shift your E832 Suit back into place.
+		</playerSelf>
+    <playerNPC>
+			You shift [npc.name]'s E832 Suit back into place.
+		</playerNPC>
+    <playerNPCRough>
+			You hold [npc.name] still as you roughly force [npc.her] E832 Suit back into place.
+		</playerNPCRough>
+    <NPCSelf>
+			[npc.Name] shifts her E832 Suit back into place.
+		</NPCSelf>
+    <NPCPlayer>
+			[npc.Name] shifts your E832 Suit back into place.
+		</NPCPlayer>
+    <NPCPlayerRough>
+			[npc.Name] holds you still as [npc.she] roughly forces your E832 Suit back into place.
+		</NPCPlayerRough>
+    <NPCOtherNPC>
+			[npc1.Name] shifts [npc2.name]'s E832 Suit back into place.
+		</NPCOtherNPC>
+    <NPCOtherNPCRough>
+			[npc1.Name] holds [npc2.name] still as [npc1.she] roughly shifts [npc2.name]'s E832 Suit back into place.
+		</NPCOtherNPCRough>
+  </replacementText>
+</clothing>

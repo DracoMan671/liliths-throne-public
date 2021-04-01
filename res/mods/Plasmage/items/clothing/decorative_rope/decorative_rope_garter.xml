@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<clothing>
+	<coreAttributes>
+		<value>400</value> 
+		<determiner><![CDATA[a bundle of]]></determiner>
+		<name><![CDATA[animated garter rope]]></name>
+		<namePlural pluralByDefault="false">
+      <![CDATA[arcane decorative garter rope]]>
+    </namePlural> 
+    
+    <description><![CDATA[A bundle of rope specially enscrolled itself into a fancy garter, or bundle back up.]]></description> 
+    
+	<physicalResistance>1</physicalResistance> 
+	<femininity>ANDROGYNOUS</femininity> 
+	<slot>HIPS</slot>
+	<rarity>EPIC</rarity>
+    <clothingSet/>
+		
+	<imageName>rope_bundle.svg</imageName>
+	<imageEquippedName>rope_corset.svg</imageEquippedName>
+	
+	<enchantmentLimit/>
+	<effects/>
+		
+		
+    <blockedPartsList>
+      <blockedParts>
+        <displacementType>REMOVE_OR_EQUIP</displacementType>
+        <clothingAccessRequired>
+          <clothingAccess>WAIST</clothingAccess>
+        </clothingAccessRequired>
+        <blockedBodyParts/>
+        <clothingAccessBlocked/>
+        <concealedSlots/>
+      </blockedParts>
+	  
+      <blockedParts>
+        <displacementType>SHIFTS_ASIDE</displacementType>
+        <clothingAccessRequired>GROIN</clothingAccessRequired>
+        <blockedBodyParts>
+          <bodyPart>ANUS</bodyPart>
+          <bodyPart>VAGINA</bodyPart>
+          <bodyPart>MOUND</bodyPart>
+		  <bodyPart>PENIS</bodyPart>
+        </blockedBodyParts>
+        <clothingAccessBlocked/>
+        <concealedSlots/>
+      </blockedParts>
+    </blockedPartsList>
+
+   
+    <incompatibleSlots/>
+		
+		<primaryColours values="JUST_SILVER"/> 
+		<primaryColoursDye values="ALL_PLUS_METAL"/>
+		<secondaryColours/>
+		<secondaryColoursDye/>
+		<tertiaryColours/>
+    <tertiaryColoursDye/>
+		
+	<itemTags>
+      <tag>SOLD_BY_FINCH</tag>
+      <tag>ENABLE_SEX_EQUIP</tag>
+      <tag>TRANSPARENT</tag>
+	  <tag>REVEALS_CONCEALABLE_SLOT</tag>
+    </itemTags>
+	
+	</coreAttributes>
+
+  <replacementText slot="HIPS" type="REMOVE_OR_EQUIP">
+    <self>
+      <![CDATA[[npc.Name] [npc.verb(rest)] the arcane rope on [npc.her] stomach, watching as it quickly ties itself into a decorative corset.]]>
+    </self>
+    <other>
+      <![CDATA[[npc.Name] [npc.verb(rest)] the arcane rope on [npc2.namePos] stomach, watching as it quickly ties itself into a decorative corset.]]>
+    </other>
+    <otherRough>
+      <![CDATA[[npc.Name] roughly [npc.verb(force)] the arcane rope against [npc2.namePos] stomach, watching as it self ties into a tight decorative corset.]]>
+    </otherRough>
+  </replacementText>
+  <displacementText slot="HIPS" type="REMOVE_OR_EQUIP">
+    <self>
+      <![CDATA[[npc.Name] [npc.verb(untie)] the rope around [npc.her] stomach, watching as it neatly bundles itself up.]]>
+    </self>
+    <other>
+      <![CDATA[[npc.Name] [npc.verb(untie)] the rope around [npc2.namePos] stomach, watching as it neatly bundles itself up.]]>
+    </other>
+    <otherRough>
+      <![CDATA[[npc.Name] [npc.verb(yank)] on the rope around [npc2.namePos] stomach, causing it to quickly untie with a snap then bundling itself up.]]>
+    </otherRough>
+  </displacementText>
+  <displacementText slot="HIPS" type="SHIFTS_ASIDE">
+    <self>
+      <![CDATA[[npc.Name] [npc.verb(pull)] the rope around [npc.her] crotch, causing it to untie itself.]]>
+    </self>
+    <other>
+      <![CDATA[[npc.Name] [npc.verb(pull)] the rope around [npc2.namePos] crotch, causing it to untie itself.]]>
+    </other>
+    <otherRough>
+      <![CDATA[[npc.Name] [npc.verb(yank)] on the rope around [npc2.namePos] crotch, causing it to quickly untie itself.]]>
+    </otherRough>
+  </displacementText>
+
+</clothing>

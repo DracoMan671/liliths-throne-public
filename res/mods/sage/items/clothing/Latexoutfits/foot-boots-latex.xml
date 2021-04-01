@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<clothing>
+	<coreAtributes>
+		
+		<value>500</value> 
+
+		<determiner><![CDATA[a pair of]]></determiner>
+		
+		<name><![CDATA[latex boots]]></name>
+		
+		<namePlural pluralByDefault="true"><![CDATA[latex boots]]></namePlural> 
+		
+		<description><![CDATA[A pair of latex boots with a buckle to hold them tight to the wearer's body.]]></description> 
+		
+		<physicalResistance>1</physicalResistance> 
+		
+		<femininity>ANDROGYNOUS</femininity> 
+		
+		<slot>FOOT</slot> 
+		
+		<rarity>COMMON</rarity> 
+		
+		<clothingSet>sage_ltxset</clothingSet>
+		
+		<imageName>foot-boots-latex.svg</imageName> 
+		
+		<enchantmentLimit/>
+		
+		<effects> 
+		</effects>
+		
+		<blockedPartsList>
+			<blockedParts>
+				<displacementType>REMOVE_OR_EQUIP</displacementType>
+				<clothingAccessRequired/>
+				<blockedBodyParts/>
+				<clothingAccessBlocked/>
+				<concealedSlots/>
+			</blockedParts>
+		</blockedPartsList>
+		
+		<incompatibleSlots/> 
+		
+
+		<primaryColours values="JUST_BLACK"/> 
+		<primaryColoursDye values="ALL"/>
+		<secondaryColours values="JUST_BLACK"/>
+		<secondaryColoursDye values="ALL"/>
+		<tertiaryColours values="ALL_METAL"/>
+		<tertiaryColoursDye values="ALL_METAL"/>
+		
+	
+		<itemTags> 
+			<tag>SOLD_BY_NYAN</tag>
+			<tag>DOMINION_ALLEYWAY_SPAWN</tag>
+			<tag>SUBMISSION_TUNNEL_SPAWN</tag>
+			<tag>BAT_CAVERNS_SPAWN</tag>
+		</itemTags>
+	</coreAtributes>
+
+	<displacementText type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[
+			You take off your latex boots.
+		]]></playerSelf>
+		<playerNPC><![CDATA[
+			You pull off [npc.name]'s latex boots.
+		]]></playerNPC>
+		<playerNPCRough><![CDATA[
+			You pull off [npc.name]'s latex boots.
+		]]></playerNPCRough>
+		<NPCSelf><![CDATA[
+			[npc.Name] takes [npc.her] latex boots off.
+		]]></NPCSelf>
+		<NPCPlayer><![CDATA[
+			[npc.Name] pulls off your latex boots.
+		]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[
+			[npc.Name] pulls off your latex boots.
+		]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[
+			[npc1.Name] pulls [npc2.name]'s latex boots off.
+		]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[
+			[npc1.Name] pulls [npc2.name]'s latex boots off.
+		]]></NPCOtherNPCRough>
+	</displacementText>
+
+	<replacementText type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[
+			You put the latex boots on.
+		]]></playerSelf>
+		<playerNPC><![CDATA[
+			You put the latex boots on [npc.name].
+		]]></playerNPC>
+		<playerNPCRough><![CDATA[
+			You put the latex boots on [npc.name].
+		]]></playerNPCRough>
+		<NPCSelf><![CDATA[
+			[npc.Name] puts the latex boots on [npc.her].
+		]]></NPCSelf>
+		<NPCPlayer><![CDATA[
+			[npc.Name] puts the latex boots on.
+		]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[
+			[npc.Name] puts the latex boots on.
+		]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[
+			[npc1.Name] puts the latex boots on [npc2.Name].
+		]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[
+			[npc1.Name] puts the latex boots on [npc2.Name].
+		]]></NPCOtherNPCRough>
+	</replacementText>
+	
+</clothing>

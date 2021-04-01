@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<clothing>
+	<coreAttributes>
+		<value>1000</value>
+		<determiner><![CDATA[a]]></determiner>
+		<name><![CDATA[Double Belt]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Double Belts]]></namePlural>
+		<description><![CDATA[A Leather Double Belt.]]></description>
+		<physicalResistance>1</physicalResistance>
+		<femininity>FEMININE</femininity>
+		<slot>HIPS</slot>
+		<rarity>EPIC</rarity>
+		<clothingSet/>
+		<imageName>Double Belt.svg</imageName>
+		<imageEquippedName/>
+		<enchantmentLimit/>
+		<effects/>
+		
+		<blockedPartsList>
+			<blockedParts>
+			    <displacementType>REMOVE_OR_EQUIP</displacementType>
+				<clothingAccessRequired>
+				</clothingAccessRequired>
+				<blockedBodyParts>
+				</blockedBodyParts>
+				<clothingAccessBlocked>
+				</clothingAccessBlocked>
+				<concealedSlots>
+				</concealedSlots>
+			</blockedParts>
+		</blockedPartsList>
+		
+		<incompatibleSlots/>
+		
+		<primaryColours values="JUST_GREY"/>
+		<primaryColoursDye values="ALL"/>
+		<secondaryColours values="JUST_GOLD"/>
+		<secondaryColoursDye values="ALL_METAL"/>
+		<tertiaryColours/>
+		<tertiaryColoursDye/>
+		
+		<itemTags>
+			<tag>SOLD_BY_NYAN</tag>
+		</itemTags>
+	</coreAttributes>
+
+  <replacementText type="REMOVE_OR_EQUIP">
+    <self>
+      <![CDATA[[npc.Name] [npc.verb(wrap)] the double belt around [npc.her] waist, before fastening the buckle.]]>
+    </self>
+    <other>
+      <![CDATA[[npc.Name] [npc.verb(wrap)] the double belt around [npc2.namePos] waist, before fastening the buckle.]]>
+    </other>
+    <otherRough>
+      <![CDATA[[npc.Name] tightly [npc.verb(wrap)] the double belt around [npc2.namePos] waist, before fastening the buckle.]]>
+    </otherRough>
+  </replacementText>
+
+  <displacementText type="REMOVE_OR_EQUIP">
+    <self>
+      <![CDATA[[npc.Name] [npc.verb(unbuckle)] [npc.her] double belt and [npc.verb(slip)] it off.]]>
+    </self>
+    <other>
+      <![CDATA[[npc.Name] [npc.verb(unbuckle)] [bpc2.namePos] double belt and [npc.verb(slip)] it off.]]>
+    </other>
+    <otherRough>
+      <![CDATA[[npc.Name] impatiently [npc.verb(unbuckle)] [bpc2.namePos] double belt and [npc.verb(pull)] it off.]]>
+    </otherRough>
+  </displacementText>
+	
+
+	
+</clothing>

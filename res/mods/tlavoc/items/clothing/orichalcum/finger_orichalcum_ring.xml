@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+
+<clothing>
+  <coreAtributes>
+    <value>2500</value>
+    <determiner><![CDATA[an]]></determiner>
+    <name><![CDATA[Orichalcum Ring]]></name>
+    <namePlural pluralByDefault="false"><![CDATA[Orichalcum Rings]]></namePlural>
+    <description><![CDATA[A ring embedded with the highly enchantable material; orichalcum.]]></description>
+    
+    <physicalResistance>0</physicalResistance>
+    <femininity>ANDROGYNOUS</femininity> 
+    <slot>FINGER</slot> 
+    <rarity>EPIC</rarity> 
+    
+    <imageName>finger_orichalcum_ring_optimized.svg</imageName>
+
+    <clothingSet/>
+    <imageEquippedName/>
+    <enchantmentLimit>25</enchantmentLimit>
+    
+    <effects/>
+
+    <blockedPartsList>
+      <blockedParts>
+        
+        <displacementType>REMOVE_OR_EQUIP</displacementType> 
+        
+        <clothingAccessRequired/>
+        <blockedBodyParts/>
+        <clothingAccessBlocked/>        
+        <concealedSlots/>
+        
+      </blockedParts>
+    </blockedPartsList>
+
+    <incompatibleSlots/>
+    
+    <primaryColours values="JUST_WHITE"/>
+    <primaryColoursDye values="ALL_METAL"/>
+    <secondaryColours values="JUST_DARK_RED"/>
+    <secondaryColoursDye values="ALL"/>
+    <tertiaryColours/>
+    <tertiaryColoursDye/>
+    
+    <itemTags>
+      <tag>SOLD_BY_KATE</tag>
+    </itemTags>
+    
+  </coreAtributes>
+
+  <displacementText type="REMOVE_OR_EQUIP">
+    <playerSelf>
+      <![CDATA[You take off your ring.]]>
+    </playerSelf>
+    <playerNPC>
+      <![CDATA[You take off [npc.Name]'s ring.]]>
+    </playerNPC>
+    <playerNPCRough>
+      <![CDATA[You yank [npc.name]'s ring off.]]>
+    </playerNPCRough>
+    <NPCSelf>
+      <![CDATA[[npc.Name] takes off [npc.herHis] ring.]]>
+    </NPCSelf>
+    <NPCPlayer>
+      <![CDATA[[npc.Name] takes off your ring.]]>
+    </NPCPlayer>
+    <NPCPlayerRough>
+      <![CDATA[[npc.Name] yanks off your ring.]]>
+    </NPCPlayerRough>
+    <NPCOtherNPC>
+      <![CDATA[[npc1.Name] takes off [npc2.name]'s ring.]]>
+    </NPCOtherNPC>
+    <NPCOtherNPCRough>
+      <![CDATA[[npc.Name] yanks off [npc2.name]'s ring.]]>
+    </NPCOtherNPCRough>
+  </displacementText>
+
+  <replacementText type="REMOVE_OR_EQUIP">
+    <playerSelf>
+      <![CDATA[You slide the ring over your finger.]]>
+    </playerSelf>
+    <playerNPC>
+      <![CDATA[You slide the ring over [npc.name]'s finger.]]>
+    </playerNPC>
+    <playerNPCRough>
+      <![CDATA[You slide the ring over [npc.name]'s finger.]]>
+    </playerNPCRough>
+    <NPCSelf>
+      <![CDATA[[npc.Name] slides the ring over [npc.herHis] finger.]]>
+    </NPCSelf>
+    <NPCPlayer>
+      <![CDATA[[npc.Name] slides the ring over your finger.]]>
+    </NPCPlayer>
+    <NPCPlayerRough>
+      <![CDATA[[npc.Name] slides the ring over your finger.]]>
+    </NPCPlayerRough>
+    <NPCOtherNPC>
+      <![CDATA[[npc1.Name] slides the ring over [npc2.Name]'s finger.]]>
+    </NPCOtherNPC>
+    <NPCOtherNPCRough>
+      <![CDATA[[npc1.Name] slides the ring over [npc2.Name]'s finger.]]>
+    </NPCOtherNPCRough>
+  </replacementText>
+  
+  
+</clothing>

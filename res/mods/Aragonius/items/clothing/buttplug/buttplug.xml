@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- For a version with comments, see "rental_mommy.xml". -->
+<clothing>
+	<coreAtributes>
+		<value>150</value>
+		<determiner><![CDATA[a]]></determiner>
+		<name><![CDATA[butt plug]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[butt plugs]]></namePlural>
+		<description><![CDATA[A large butt plug]]></description>
+		<physicalResistance>2</physicalResistance>
+		<femininity>ANDROGYNOUS</femininity>
+		<slot>ANUS</slot>
+		<rarity>COMMON</rarity>
+		<clothingSet/>
+		<imageName>buttplug.svg</imageName>
+		<imageEquippedName/>
+		<enchantmentLimit/>
+		<effects>
+            
+		</effects>
+		<blockedPartsList>
+			<blockedParts>
+				<displacementType>REMOVE_OR_EQUIP</displacementType>
+				<clothingAccessRequired>
+					<clothingAccess>ASS</clothingAccess>
+					<clothingAccess>ANUS</clothingAccess>
+				</clothingAccessRequired>
+				<blockedBodyParts>
+					<bodyPart>ANUS</bodyPart>
+				</blockedBodyParts>				
+				<clothingAccessBlocked/>
+				<concealedSlots/>
+			</blockedParts>
+		</blockedPartsList>
+		<incompatibleSlots/>
+		<primaryColours values="ALL"/>
+		<primaryColoursDye values="ALL"/>
+		<secondaryColours/>
+		<secondaryColoursDye/>
+		<tertiaryColours/>
+		<tertiaryColoursDye/>
+		<itemTags>
+			<tag>SOLD_BY_NYAN</tag>
+			<tag>SOLD_BY_FINCH</tag>
+			<tag>PLUGS_ANUS</tag>
+		</itemTags>
+	</coreAtributes>
+
+	<displacementText type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[
+			You pull out the butt plug.
+		]]></playerSelf>
+		<playerNPC><![CDATA[
+			You pull out [npc.name]'s butt plug.
+		]]></playerNPC>
+		<playerNPCRough><![CDATA[
+			You jerk out [npc.name]'s butt plug.
+		]]></playerNPCRough>
+		<NPCSelf><![CDATA[
+			[npc.name] pulls [npc.her] butt plug out.
+		]]></NPCSelf>
+		<NPCPlayer><![CDATA[
+			[npc.Name] pulls out your butt plug.
+		]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[
+			[npc.Name] jerks out your buttplug.
+		]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[
+			[npc1.Name] pulls out [npc2.name]'s butt plug.
+		]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[
+			[npc.Name] jerks [npc2.name]'s butt plug out.
+		]]></NPCOtherNPCRough>
+	</displacementText>
+
+	<replacementText type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[
+			You push in the butt plug.
+		]]></playerSelf>
+		<playerNPC><![CDATA[
+			You push the buttplug into [npc.herHim].
+		]]></playerNPC>
+		<playerNPCRough><![CDATA[
+			You pin [npc.name] in place as you jam the buttplug in.
+		]]></playerNPCRough>
+		<NPCSelf><![CDATA[
+			[npc.Name] pushes in the butt plug.
+		]]></NPCSelf>
+		<NPCPlayer><![CDATA[
+			[npc.Name] pushes the butt plug into you.
+		]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[
+			[npc.Name] pins you in place as they jam the buttplug in.
+		]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[
+			[npc1.Name] shoves the butt plug into [npc2.name].
+		]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[
+			[npc1.Name] jams the butt plug into [npc2.name]'s ass.
+		]]></NPCOtherNPCRough>
+	</replacementText>
+
+
+	
+</clothing>

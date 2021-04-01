@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<clothing>
+	<coreAtributes>
+		<value>2500</value>
+		<determiner><![CDATA[a pair of]]></determiner>
+		<name><![CDATA[chastity panties]]></name>
+		<namePlural pluralByDefault="true"><![CDATA[chastity panties]]></namePlural>
+		<description><![CDATA[A seemingly normal pair of panties that can't be displaced in any way once sealed, acting as a discreet chastity device.]]></description>
+		<physicalResistance>0</physicalResistance>
+		<femininity>FEMININE</femininity>
+		<slot>GROIN</slot>
+		<rarity>JINXED</rarity>
+		<clothingSet>BDSM</clothingSet>
+		<imageName>chastity_panties.svg</imageName>
+		<imageEquippedName/>
+		<enchantmentLimit/>
+		<effects>
+             <effect itemEffectType="CLOTHING" limit="0" potency="MINOR_BOOST" primaryModifier="CLOTHING_SEALING" secondaryModifier="ARCANE_BOOST" timer="0"/>
+		</effects>
+		<blockedPartsList>
+			<blockedParts>
+				<displacementType>REMOVE_OR_EQUIP</displacementType>
+				<clothingAccessRequired>
+					<clothingAccess>LEGS_UP_TO_GROIN_LOW_LEVEL</clothingAccess>
+					<clothingAccess>GROIN</clothingAccess>
+				</clothingAccessRequired>
+				<blockedBodyParts>
+					<bodyPart>ASS</bodyPart>
+					<bodyPart>ANUS</bodyPart>
+					<bodyPart>VAGINA</bodyPart>
+					<bodyPart>MOUND</bodyPart>
+					<bodyPart>PENIS</bodyPart>
+					<bodyPart>TESTICLES</bodyPart>
+				</blockedBodyParts>
+				<clothingAccessBlocked/>
+				<concealedSlots/>
+			</blockedParts>
+		</blockedPartsList>
+		<incompatibleSlots/>
+		<primaryColours values="ALL"/>
+		<primaryColoursDye values="ALL"/>
+		<itemTags>
+			<tag>SOLD_BY_FINCH</tag>
+		</itemTags>
+	</coreAtributes>
+
+	<displacementText type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[
+			You take off your chastity panties.
+		]]></playerSelf>
+		<playerNPC><![CDATA[
+			You take off [npc.name]'s chastity panties.
+		]]></playerNPC>
+		<playerNPCRough><![CDATA[
+			You roughly pull [npc.name]'s chastity panties off.
+		]]></playerNPCRough>
+		<NPCSelf><![CDATA[
+			[npc.Name] takes off [npc.her] chastity panties.
+		]]></NPCSelf>
+		<NPCPlayer><![CDATA[
+			[npc.Name] takes off your chastity panties.
+		]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[
+			[npc.Name] roughly pulls your chastitiy panties off.
+		]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[
+			[npc1.Name] takes off {npc2.name]'s chastity panties.
+		]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[
+			[npc1.Name] roughly pulls [npc2.name]'s chastity panties off.
+		]]></NPCOtherNPCRough>
+	</displacementText>
+
+	<replacementText type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[
+			You put on the chastity panties.
+		]]></playerSelf>
+		<playerNPC><![CDATA[
+			You put the chastity panties on [npc.name].
+		]]></playerNPC>
+		<playerNPCRough><![CDATA[
+			You forcefully put the chastity panties on [npc.name].
+		]]></playerNPCRough>
+		<NPCSelf><![CDATA[
+			[npc.Name] puts on the chastity panties.
+		]]></NPCSelf>
+		<NPCPlayer><![CDATA[
+			[npc.Name] puts the chastity panties on you.
+		]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[
+			[npc.Name] forcefully puts the chastity panties on you.
+		]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[
+			[npc1.Name] puts the chastity panties on [npc2.name].
+		]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[
+			[npc1.Name] forcefully puts the chastity panties on [npc2.name].
+		]]></NPCOtherNPCRough>
+	</replacementText>
+	
+</clothing>

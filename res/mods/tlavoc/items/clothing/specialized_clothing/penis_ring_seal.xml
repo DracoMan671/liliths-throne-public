@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+
+<clothing>
+  <coreAtributes>
+    <value>1000</value>
+    <determiner><![CDATA[a]]></determiner>
+    <name><![CDATA[Sealing Cock Ring]]></name>
+    <namePlural pluralByDefault="false"><![CDATA[Sealing Cock Rings]]></namePlural>
+    <description><![CDATA[A cock ring enchanted to prevent the wearer from cumming.  Once in place, the ring seals tightly against the base of the wearer's penis and increases sensitivity.  Often used for both training and punishment.]]></description>
+    
+    <physicalResistance>0</physicalResistance>
+    <femininity>ANDROGYNOUS</femininity> 
+    <slot>PENIS</slot> 
+    <rarity>EPIC</rarity> 
+    
+    <imageName>penis__ring__seal_optimized.svg</imageName>
+
+    <clothingSet/>
+    <imageEquippedName/>
+    <enchantmentLimit>5</enchantmentLimit>
+    
+    <effects>
+	<effect itemEffectType="CLOTHING" limit="0" potency="MAJOR_DRAIN" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="RESISTANCE_LUST" timer="0"/>
+	<effect itemEffectType="CLOTHING" limit="0" potency="MAJOR_DRAIN" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="RESISTANCE_LUST" timer="0"/>
+	<effect itemEffectType="CLOTHING" limit="0" potency="MAJOR_DRAIN" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="RESISTANCE_LUST" timer="0"/>
+	<effect itemEffectType="CLOTHING" limit="0" potency="MAJOR_DRAIN" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="RESISTANCE_LUST" timer="0"/>
+	<effect itemEffectType="CLOTHING" limit="0" potency="MAJOR_DRAIN" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="RESISTANCE_LUST" timer="0"/>
+	</effects>
+
+    <blockedPartsList>
+      <blockedParts>
+        
+        <displacementType>REMOVE_OR_EQUIP</displacementType> 
+        
+        <clothingAccessRequired/>
+        <blockedBodyParts/>
+        <clothingAccessBlocked/>        
+        <concealedSlots/>
+        
+      </blockedParts>
+    </blockedPartsList>
+
+    <incompatibleSlots/>
+    
+    <primaryColours values="ALL_METAL"/>
+    <primaryColoursDye values="ALL_WITH_METALS"/>
+    <secondaryColours/>
+    <secondaryColoursDye/>
+    <tertiaryColours/>
+    <tertiaryColoursDye/>
+    
+    <itemTags>
+      <tag>SOLD_BY_FINCH</tag>
+	  <tag>REQUIRES_PENIS</tag>
+    </itemTags>
+    
+  </coreAtributes>
+
+  <displacementText type="REMOVE_OR_EQUIP">
+    <playerSelf>
+      <![CDATA[You work the Sealing Cock Ring off your penis.
+	  #IF (pc.getPenisRawCumStorageValue()>0)
+	  #THEN
+	  You groan as your backed up cum surges for release now that it is no longer sealed away.
+	  #IF (pc.getPenisRawCumStorageValue()<pc.getPenisRawStoredCumValue()*2&&pc.getPenisRawCumStorageValue()>pc.getPenisRawStoredCumValue())
+	  #THEN
+	  [#pc.setPenisCumExpulsion(50)]You sigh in relief with the assurance that you can cum again.
+	  #ENDIF
+	  #IF (pc.getPenisRawCumStorageValue()>pc.getPenisRawStoredCumValue()*2)
+	  #THEN
+	  [#pc.setPenisCumExpulsion(25)]You sigh in relief with the assurance that you can cum again.
+	  #ENDIF
+	  #IF (pc.getPenisRawCumStorageValue()==pc.getPenisRawStoredCumValue())
+	  #THEN
+	  [#pc.setPenisCumExpulsion(100)][#pc.setPenisCumStorage(pc.getPenisRawCumStorageValue()*1.5)][#pc.setPenisStoredCum(10000)]The amount of pressure in your balls has caused your cum capacity to increase and with the power behind them, you can feel that your penis will empty them entirely on orgasm.
+	  #ENDIF
+	  #ENDIF
+	  ]]>
+    </playerSelf>
+    <playerNPC>
+      <![CDATA[You work the Sealing Cock Ring off [npc.Name]'s penis.  
+	  #IF (npc.getPenisRawCumStorageValue()>0)
+	  #THEN
+	  [npc.name]'s eyes roll back with a groan as [npc.herHis] cum surges for release now that it is no longer sealed away.
+	  #IF (npc.getPenisRawCumStorageValue()<npc.getPenisRawStoredCumValue()*2&&npc.getPenisRawCumStorageValue()>npc.getPenisRawStoredCumValue())
+	  #THEN
+	  [#npc.setPenisCumExpulsion(50)][npc.name] sighs in relief with the assurance that [npc.sheHe] can cum again.
+	  #ENDIF
+	  #IF (npc.getPenisRawCumStorageValue()>npc.getPenisRawStoredCumValue()*2)
+	  #THEN
+	  [#npc.setPenisCumExpulsion(25)][npc.name] sighs in relief with the assurance that [npc.sheHe] can cum again.
+	  #ENDIF
+	  #IF (npc.getPenisRawCumStorageValue()==npc.getPenisRawStoredCumValue())
+	  #THEN
+	  [#npc.setPenisCumExpulsion(100)][#npc.setPenisCumStorage(npc.getPenisRawCumStorageValue()*1.5)][#npc.setPenisStoredCum(10000)]The amount of pressure in [npc.name]'s balls has caused [npc.herHis] cum capacity to increase and with the power behind them, [npc.name] can feel that [npc.herHis] penis will empty them entirely on orgasm.
+	  #ENDIF
+	  #ENDIF
+	  ]]>
+    </playerNPC>
+    <playerNPCRough>
+      <![CDATA[You painfully yank the Sealing Cock Ring off [npc.name]'s penis.  
+	  #IF (npc.getPenisRawCumStorageValue()>0)
+	  #THEN
+	  [npc.name] gasps when the seal is removed, causing [npc.herHis] cock to painfully throb for release.
+	  #IF (npc.getPenisRawCumStorageValue()<npc.getPenisRawStoredCumValue()*2&&npc.getPenisRawCumStorageValue()>npc.getPenisRawStoredCumValue())
+	  #THEN
+	  [#npc.setPenisCumExpulsion(50)][npc.name] sighs in relief with the assurance that [npc.sheHe] can cum again.
+	  #ENDIF
+	  #IF (npc.getPenisRawCumStorageValue()>npc.getPenisRawStoredCumValue()*2)
+	  #THEN
+	  [#npc.setPenisCumExpulsion(25)][npc.name] sighs in relief with the assurance that [npc.sheHe] can cum again.
+	  #ENDIF
+	  #IF (npc.getPenisRawCumStorageValue()==npc.getPenisRawStoredCumValue())
+	  #THEN
+	  [#npc.setPenisCumExpulsion(100)][#npc.setPenisCumStorage(npc.getPenisRawCumStorageValue()*1.5)][#npc.setPenisStoredCum(10000)]The amount of pressure in [npc.name]'s balls has caused [npc.herHis] cum capacity to increase and with the power behind them, [npc.name] can feel that [npc.herHis] penis will empty them entirely on orgasm.
+	  #ENDIF
+	  #ENDIF
+	  ]]>
+    </playerNPCRough>
+    <NPCSelf>
+      <![CDATA[[npc.Name] works the Sealing Cock Ring off [npc.herHis] penis.  
+	  #IF (npc.getPenisRawCumStorageValue()>0)
+	  #THEN
+	  [npc.name]'s eyes roll back with a groan as [npc.herHis] cum surges for release now that it is no longer sealed away.
+	  #IF (npc.getPenisRawCumStorageValue()<npc.getPenisRawStoredCumValue()*2&&npc.getPenisRawCumStorageValue()>npc.getPenisRawStoredCumValue())
+	  #THEN
+	  [#npc.setPenisCumExpulsion(50)][npc.name] sighs in relief with the assurance that [npc.sheHe] can cum again.
+	  #ENDIF
+	  #IF (npc.getPenisRawCumStorageValue()>npc.getPenisRawStoredCumValue()*2)
+	  #THEN
+	  [#npc.setPenisCumExpulsion(25)][npc.name] sighs in relief with the assurance that [npc.sheHe] can cum again.
+	  #ENDIF
+	  #IF (npc.getPenisRawCumStorageValue()==npc.getPenisRawStoredCumValue())
+	  #THEN
+	  [#npc.setPenisCumExpulsion(100)][#npc.setPenisCumStorage(npc.getPenisRawCumStorageValue()*1.5)][#npc.setPenisStoredCum(10000)]The amount of pressure in [npc.name]'s balls has caused [npc.herHis] cum capacity to increase and with the power behind them, [npc.name] can feel that [npc.herHis] penis will empty them entirely on orgasm.
+	  #ENDIF
+	  #ENDIF
+	  ]]>
+    </NPCSelf>
+    <NPCPlayer>
+      <![CDATA[[npc.Name] works the Sealing Cock Ring off your penis.  
+	  #IF (pc.getPenisRawCumStorageValue()>0)
+	  #THEN
+	  Your eyes roll back with a groan as your cum surges for release now that it is no longer sealed away.
+	  #IF (pc.getPenisRawCumStorageValue()<pc.getPenisRawStoredCumValue()*2&&pc.getPenisRawCumStorageValue()>pc.getPenisRawStoredCumValue())
+	  #THEN
+	  [#pc.setPenisCumExpulsion(50)]You sigh in relief with the assurance that you can cum again.
+	  #ENDIF
+	  #IF (pc.getPenisRawCumStorageValue()>pc.getPenisRawStoredCumValue()*2)
+	  #THEN
+	  [#pc.setPenisCumExpulsion(25)]You sigh in relief with the assurance that you can cum again.
+	  #ENDIF
+	  #IF (pc.getPenisRawCumStorageValue()==pc.getPenisRawStoredCumValue())
+	  #THEN
+	  [#pc.setPenisCumExpulsion(100)][#pc.setPenisCumStorage(pc.getPenisRawCumStorageValue()*1.5)][#pc.setPenisStoredCum(10000)]The amount of pressure in your balls has caused your cum capacity to increase and with the power behind them, you can feel that your penis will empty them entirely on orgasm.
+	  #ENDIF
+	  #ENDIF
+	  ]]>
+    </NPCPlayer>
+    <NPCPlayerRough>
+      <![CDATA[[npc.Name] painfully yanks the Sealing Cock Ring off your penis.  
+	  #IF (pc.getPenisRawCumStorageValue()>0)
+	  #THEN
+	  You gasp when the seal is removed, causing your cock to painfully throb for release.
+	  #IF (pc.getPenisRawCumStorageValue()<pc.getPenisRawStoredCumValue()*2&&pc.getPenisRawCumStorageValue()>pc.getPenisRawStoredCumValue())
+	  #THEN
+	  [#pc.setPenisCumExpulsion(50)]You sigh in relief with the assurance that you can cum again.
+	  #ENDIF
+	  #IF (pc.getPenisRawCumStorageValue()>pc.getPenisRawStoredCumValue()*2)
+	  #THEN
+	  [#pc.setPenisCumExpulsion(25)]You sigh in relief with the assurance that you can cum again.
+	  #ENDIF
+	  #IF (pc.getPenisRawCumStorageValue()==pc.getPenisRawStoredCumValue())
+	  #THEN
+	  [#pc.setPenisCumExpulsion(100)][#pc.setPenisCumStorage(pc.getPenisRawCumStorageValue()*1.5)][#pc.setPenisStoredCum(10000)]The amount of pressure in your balls has caused your cum capacity to increase and with the power behind them, you can feel that your penis will empty them entirely on orgasm.
+	  #ENDIF
+	  #ENDIF
+	  ]]>
+    </NPCPlayerRough>
+    <NPCOtherNPC>
+      <![CDATA[[npc1.Name] works the Sealing Cock Ring off [npc2.name]'s penis.  
+	  #IF (npc2.getPenisRawCumStorageValue()>0)
+	  #THEN
+	  [npc2.name]'s eyes roll back with a groan as [npc2.herHis] cum surges for release now that it is no longer sealed away.
+	  #IF (npc2.getPenisRawCumStorageValue()<npc2.getPenisRawStoredCumValue()*2&&npc2.getPenisRawCumStorageValue()>npc2.getPenisRawStoredCumValue())
+	  #THEN
+	  [#npc2.setPenisCumExpulsion(50)][npc2.name] sighs in relief with the assurance that [npc2.sheHe] can cum again.
+	  #ENDIF
+	  #IF (npc2.getPenisRawCumStorageValue()>npc2.getPenisRawStoredCumValue()*2)
+	  #THEN
+	  [#npc2.setPenisCumExpulsion(25)][npc2.name] sighs in relief with the assurance that [npc2.sheHe] can cum again.
+	  #ENDIF
+	  #IF (npc2.getPenisRawCumStorageValue()==npc2.getPenisRawStoredCumValue())
+	  #THEN
+	  [#npc2.setPenisCumExpulsion(100)][#npc2.setPenisCumStorage(npc2.getPenisRawCumStorageValue()*1.5)][#npc2.setPenisStoredCum(10000)]The amount of pressure in [npc2.name]'s balls has caused [npc2.herHis] cum capacity to increase and with the power behind them, [npc2.name] can feel that [npc2.herHis] penis will empty them entirely on orgasm.
+	  #ENDIF
+	  #ENDIF
+	  ]]>
+    </NPCOtherNPC>
+    <NPCOtherNPCRough>
+      <![CDATA[[npc1.Name] painfully yanks the Sealing Cock Ring off [npc2.name]'s penis.  
+	  #IF (npc2.getPenisRawCumStorageValue()>0)
+	  #THEN
+	  [npc2.name] gasps when the seal is removed, causing [npc2.herHis] cock to painfully throb for release.
+	  #IF (npc2.getPenisRawCumStorageValue()<npc2.getPenisRawStoredCumValue()*2&&npc2.getPenisRawCumStorageValue()>npc2.getPenisRawStoredCumValue())
+	  #THEN
+	  [#npc2.setPenisCumExpulsion(50)][npc2.name] sighs in relief with the assurance that [npc2.sheHe] can cum again.
+	  #ENDIF
+	  #IF (npc2.getPenisRawCumStorageValue()>npc2.getPenisRawStoredCumValue()*2)
+	  #THEN
+	  [#npc2.setPenisCumExpulsion(25)][npc2.name] sighs in relief with the assurance that [npc2.sheHe] can cum again.
+	  #ENDIF
+	  #IF (npc2.getPenisRawCumStorageValue()==npc2.getPenisRawStoredCumValue())
+	  #THEN
+	  [#npc2.setPenisCumExpulsion(100)][#npc2.setPenisCumStorage(npc2.getPenisRawCumStorageValue()*1.5)][#npc2.setPenisStoredCum(10000)]The amount of pressure in [npc2.name]'s balls has caused [npc2.herHis] cum capacity to increase and with the power behind them, [npc2.name] can feel that [npc2.herHis] penis will empty them entirely on orgasm.
+	  #ENDIF
+	  #ENDIF
+	  ]]>
+    </NPCOtherNPCRough>
+  </displacementText>
+
+  <replacementText type="REMOVE_OR_EQUIP">
+    <playerSelf>
+      <![CDATA[You slide the Sealing Cock Ring down to the base of your penis.[#pc.setPenisCumExpulsion(0)]You feel the ring tighten, keeping any cum from being able to escape.]]>
+    </playerSelf>
+    <playerNPC>
+      <![CDATA[You slide the Sealing Cock Ring down to the base of [npc.name]'s penis.[#npc.setPenisCumExpulsion(0)][npc.name] feels the ring tighten, keeping any cum from being able to escape.]]>
+    </playerNPC>
+    <playerNPCRough>
+      <![CDATA[You slide the Sealing Cock Ring down to the base of [npc.name]'s penis.[#npc.setPenisCumExpulsion(0)][npc.name] feels the ring tighten, keeping any cum from being able to escape.]]>
+    </playerNPCRough>
+    <NPCSelf>
+      <![CDATA[[npc.Name] slides the Sealing Cock Ring down to the base of [npc.herHis] penis.[#npc.setPenisCumExpulsion(0)][npc.name] feels the ring tighten, keeping any cum from being able to escape.]]>
+    </NPCSelf>
+    <NPCPlayer>
+      <![CDATA[[npc.Name] slides the Sealing Cock Ring down to the base of your penis.[#pc.setPenisCumExpulsion(0)]You feel the ring tighten, keeping any cum from being able to escape.]]>
+    </NPCPlayer>
+    <NPCPlayerRough>
+      <![CDATA[[npc.Name] slides the Sealing Cock Ring down to the base of your penis.[#pc.setPenisCumExpulsion(0)]You feel the ring tighten, keeping any cum from being able to escape.]]>
+    </NPCPlayerRough>
+    <NPCOtherNPC>
+      <![CDATA[[npc1.Name] slides the Sealing Cock Ring down to the base of [npc2.Name]'s penis.[#npc2.setPenisCumExpulsion(0)][npc2.name] feels the ring tighten, keeping any cum from being able to escape.]]>
+    </NPCOtherNPC>
+    <NPCOtherNPCRough>
+      <![CDATA[[npc1.Name] slides the Sealing Cock Ring down to the base of [npc2.Name]'s penis.[#npc2.setPenisCumExpulsion(0)][npc2.name] feels the ring tighten, keeping any cum from being able to escape.]]>
+    </NPCOtherNPCRough>
+  </replacementText>
+  
+  
+</clothing>

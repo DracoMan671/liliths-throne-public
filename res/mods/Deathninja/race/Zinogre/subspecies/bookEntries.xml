@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<bookText>
+	
+	<htmlContent tag="ZINO_BASIC"><![CDATA[
+	<p>
+		Zinogres are seemingly native to another, more fierce world. They're typically territorial, often releasing a guttural growl when encroached.
+	</p>
+	]]>
+	</htmlContent>
+
+	<htmlContent tag="ZINO_ADVANCED"><![CDATA[
+	<p>
+		Zinogres are typically weak against cold elements, but are naturals at harvesting lightning. However, since lightning doesn't exist in this world, they're capable of redirecting it into other spells. It appears the thunder they give off are charged from strange bugs deemed "Fulgurbugs."
+	</p>
+	]]>
+	</htmlContent>
+	
+</bookText>

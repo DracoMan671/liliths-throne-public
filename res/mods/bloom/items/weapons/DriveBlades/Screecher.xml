@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<weapon>
+	<coreAttributes>
+	
+		<value>24500</value> 
+		
+		<melee>true</melee>
+		
+		<twoHanded>true</twoHanded>
+		
+		<determiner><![CDATA[]]></determiner>
+		
+		<name><![CDATA[Screecher]]></name>
+		
+		<namePlural pluralByDefault="false"><![CDATA[screechers]]></namePlural>
+		
+		<description><![CDATA[A long and jagged driveblade that keeps its elemental charge long after expelling its cartridge. The blade is actually called Shiden EX, it's been nicknamed the screecher for the sound it makes while its driving. Perhaps upgrading the original model with shadow god's parts wasnt a good idea...]]></description> 
+		
+		<attackDescriptor>Echo-location</attackDescriptor>
+		
+		<attackTooltipDescription>Arm the screecher and make [npc2.Name]'s day considerably worse. Sound warning.</attackTooltipDescription>
+		
+		<rarity>EPIC</rarity> 
+		
+		<weaponSet/>
+		
+		<equipText><![CDATA[[npc.Name] [npc.verb(fasten)] the Screecher to [npc.her] waist, With the cartridge in, and safety on for later use.]]></equipText>
+		
+		<unequipText><![CDATA[[npc.Name] [npc.verb(unfasten)] Screecher from [npc.her] waist, [npc.verb(unload)] it's active cartridge and [npc.verb(store)] it for later.]]></unequipText>
+		
+		<imageName>Screecher.svg</imageName> 
+		
+		<imageEquippedName>Screecher.svg</imageEquippedName>
+		
+		<damage>85</damage> 
+		
+		<arcaneCost>2</arcaneCost> 
+		
+		<damageVariance>MEDIUM</damageVariance> 
+		
+		<availableDamageTypes>
+			<damageType>PHYSICAL</damageType>
+			<damageType>ICE</damageType>
+			<damageType>FIRE</damageType>
+			<damageType>POISON</damageType>
+		</availableDamageTypes>
+		
+		<spells/>
+		
+		<enchantmentLimit>25</enchantmentLimit>
+		
+		<effects> 
+              <effect itemEffectType="CLOTHING" limit="0" potency="MAJOR_BOOST" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="DAMAGE_WEAPON" timer="0"/>
+              <effect itemEffectType="CLOTHING" limit="0" potency="MAJOR_BOOST" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="DAMAGE_WEAPON" timer="0"/>
+              <effect itemEffectType="CLOTHING" limit="0" potency="MAJOR_BOOST" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="DAMAGE_MELEE_WEAPON" timer="0"/>
+              <effect itemEffectType="CLOTHING" limit="0" potency="MAJOR_BOOST" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="DAMAGE_MELEE_WEAPON" timer="0"/>
+			  <effect itemEffectType="CLOTHING" limit="0" potency="MAJOR_BOOST" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="DAMAGE_MELEE_WEAPON" timer="0"/>
+              <effect itemEffectType="CLOTHING" limit="0" potency="MAJOR_BOOST" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="DAMAGE_MELEE_WEAPON" timer="0"/>
+		</effects>
+		
+		<primaryColours>
+			<colour>CLOTHING_PURPLE_DARK</colour>
+		</primaryColours> 
+		<primaryColoursDye values="ALL_WITH_METALS"/>
+		<secondaryColours> 
+			<colour>CLOTHING_SILVER</colour>
+		</secondaryColours> 
+		<secondaryColoursDye values="ALL_METAL"/>
+		
+		<itemTags> 
+			<tag>SOLD_BY_VICKY</tag>
+			<tag>WEAPON_BLADE</tag>
+		</itemTags>
+		
+	</coreAttributes>
+	
+	<hitDescriptions>
+		<hitText><![CDATA[
+		[npc.Name] [npc.verb(charge)] [npc.her] blade before slicing [npc2.name], the sword's element flaring on its surface before phasing through [npc2.her] body, a piercing howl errupts from the blade before the cartridge unlocks and is ready to be replaced.
+		]]></hitText>
+		<hitText><![CDATA[
+		[npc.Name] [npc.verb(cleave)] [npc.her] screecher through [npc2.Name]'s chest causing the blade's element and discharge into [npc2.her]. The blade releases its usual screech before it unlocks the cartridge.
+		]]></hitText>
+		<hitText><![CDATA[
+		With a quick dash forwards,[npc.Name] [npc.verb(thrust)] the ethereal blade through [npc2.name], sapping their energy with the blade's element. As the blade finishes its initial burst, it emmits its ear splitting roar before unlocking.
+		]]></hitText>
+	</hitDescriptions>
+
+	<!-- Descriptions that are used when missing an enemy. One of the missText values will be randomly selected each time the attacker misses their target. Follow the same guidelines as equipText. -->
+	<missDescriptions>
+		<missText><![CDATA[
+		[npc.Name] [npc.verb(charge)] [npc.her] blade before slicing at [npc2.name], The blade's element flaring as it misses [npc2.Name] completely. The blade howls as its expended cartrige unlocks.
+		]]></missText>
+		<missText><![CDATA[
+		[npc.Name] [npc.verb(cleave)] [npc.her] screecher at [npc2.Name], but the blade prematurely discharges and the blade's screech causes [npc.name] to miss. Not long after the blade's cartridge unlocks.
+		]]></missText>
+		<missText><![CDATA[
+		[npc.Name] [npc.verb(thrust)] [npc.her] sword at [npc2.name], but loses [npc.her] balance, [npc.her] strike falling well short of [npc.her] target, [Npc2.name]. The blade screeches and unlocks its cartridge after missing.
+		]]></missText>
+	</missDescriptions>
+	
+</weapon>

@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<clothing>
+	<coreAtributes>
+		<value>10000</value>
+		<determiner><![CDATA[a pair of]]></determiner>
+		<name><![CDATA[Mailed Trousers]]></name>
+		<namePlural pluralByDefault="true"><![CDATA[Mailed Trousers]]></namePlural>
+		<description><![CDATA[A pair of heavy-duty trousers, made of thick layers of quilted cloth. They conceal mail between their layers, providing excellent protection. They also have a metal codpiece riveted to the groin.]]></description>
+		<physicalResistance>7</physicalResistance>
+		<femininity>ANDROGYNOUS</femininity>
+		<slot>SOCK</slot>
+		<rarity>RARE</rarity>
+		<clothingSet></clothingSet>
+		<imageName>Mailed_Trousers.svg</imageName>
+		<imageEquippedName></imageEquippedName>
+		<enchantmentLimit>8</enchantmentLimit>
+		<effects />
+		<blockedPartsList>
+			<blockedParts>
+				<displacementType>REMOVE_OR_EQUIP</displacementType>
+				<clothingAccessRequired>
+					<clothingAccess>LEGS_UP_TO_GROIN</clothingAccess>
+				</clothingAccessRequired>
+				<blockedBodyParts>
+					<bodyPart>ASS</bodyPart>
+					<bodyPart>ANUS</bodyPart>
+					<bodyPart>LEGS</bodyPart>
+					<bodyPart>THIGHS</bodyPart>
+					<bodyPart>VAGINA</bodyPart>
+					<bodyPart>MOUND</bodyPart>
+					<bodyPart>PENIS</bodyPart>
+					<bodyPart>TESTICLES</bodyPart>
+				</blockedBodyParts>
+				<clothingAccessBlocked>
+					<clothingAccess>GROIN</clothingAccess>
+					<clothingAccess>ANUS</clothingAccess>
+				</clothingAccessBlocked>
+				<concealedSlots>
+					<slot>ANUS</slot>
+					<slot>GROIN</slot>
+					<slot>PENIS</slot>
+					<slot>VAGINA</slot>
+					<slot>PIERCING_VAGINA</slot>
+					<slot>PIERCING_PENIS</slot>
+				</concealedSlots>
+			</blockedParts>
+			<blockedParts>
+				<displacementType>PULLS_DOWN</displacementType>
+				<clothingAccessRequired>
+					<clothingAccess>LEGS_UP_TO_GROIN</clothingAccess>
+				</clothingAccessRequired>
+				<blockedBodyParts />
+				<clothingAccessBlocked />
+				<concealedSlots />
+			</blockedParts>
+		</blockedPartsList>
+		<incompatibleSlots />
+		<primaryColours values="ALL" />
+		<primaryColoursDye values="ALL" />
+		<secondaryColours values="ALL_METAL" />
+		<secondaryColoursDye values="ALL_METAL" />
+		<tertiaryColours values="" />
+		<tertiaryColoursDye values="" />
+		<itemTags>
+			<tag>SOLD_BY_VICKY</tag>
+		</itemTags>
+	</coreAtributes>
+	<displacementText type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[You undo and take off your Mailed Trousers.]]></playerSelf>
+		<playerNPC><![CDATA[You undo and take off [npc.name]'s Mailed Trousers.]]></playerNPC>
+		<playerNPCRough><![CDATA[You tear [npc.name]'s Mailed Trousers off their legs.]]></playerNPCRough>
+		<NPCSelf><![CDATA[[npc.name] undoes and takes off their Mailed Trousers.]]></NPCSelf>
+		<NPCPlayer><![CDATA[[npc.name] undoes and takes off your Mailed Trousers.]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[[npc.name] tears your Mailed Trousers off your legs.]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[[npc1.name] undoes and takes off [npc2.name]'s Mailed Trousers.]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[[npc1.name] tears [npc2.name]'s Mailed Trousers off their legs.]]></NPCOtherNPCRough>
+	</displacementText>
+	<replacementText type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[You pull on and do up your Mailed Trousers.]]></playerSelf>
+		<playerNPC><![CDATA[You pull [npc.name]'s Mailed Trousers onto their legs and do them up.]]></playerNPC>
+		<playerNPCRough><![CDATA[You haul [npc.name]'s Mailed Trousers up their legs.]]></playerNPCRough>
+		<NPCSelf><![CDATA[[npc.name] pulls on and does up their Mailed Trousers.]]></NPCSelf>
+		<NPCPlayer><![CDATA[[npc.name] pulls your Mailed Trousers onto your legs and does them up.]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[[npc.name] hauls your Mailed Trousers up your legs.]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[[npc1.name] pulls [npc2.name]'s Mailed Trousers onto their legs and does them up.]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[[npc1.name] hauls [npc2.name]'s Mailed Trousers up their legs.]]></NPCOtherNPCRough>
+	</replacementText>
+	<displacementText type="PULLS_DOWN">
+		<playerSelf><![CDATA[You pull down your Mailed Trousers.]]></playerSelf>
+		<playerNPC><![CDATA[You pull down [npc.name]'s Mailed Trousers.]]></playerNPC>
+		<playerNPCRough><![CDATA[You yank [npc.name]'s Mailed Trousers down.]]></playerNPCRough>
+		<NPCSelf><![CDATA[[npc.name] pulls down their Mailed Trousers.]]></NPCSelf>
+		<NPCPlayer><![CDATA[[npc.name] pulls down your Mailed Trousers.]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[[npc.name] yanks down your Mailed Trousers.]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[[npc1.name] pulls down [npc2.name]'s Mailed Trousers.]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[[npc1.name] yanks [npc2.name]'s Mailed Trousers down.]]></NPCOtherNPCRough>
+	</displacementText>
+	<replacementText type="PULLS_UP">
+		<playerSelf><![CDATA[You pull up your Mailed Trousers.]]></playerSelf>
+		<playerNPC><![CDATA[You pull up [npc.name]'s Mailed Trousers.]]></playerNPC>
+		<playerNPCRough><![CDATA[You haul [npc.name]'s Mailed Trousers up.]]></playerNPCRough>
+		<NPCSelf><![CDATA[[npc.name] pulls up their Mailed Trousers.]]></NPCSelf>
+		<NPCPlayer><![CDATA[[npc.name] pulls up your Mailed Trousers.]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[[npc.name] hauls up your Mailed Trousers.]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[[npc1.name] pulls up [npc2.name]'s Mailed Trousers.]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[[npc1.name] hauls up [npc2.name]'s Mailed Trousers.]]></NPCOtherNPCRough>
+	</replacementText>
+</clothing>

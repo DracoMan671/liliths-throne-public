@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<race>
+	<!-- Core definitions: -->
+	<racialBody>keelah_naga</racialBody>
+
+	<applyRaceChanges/>
+
+	<name><![CDATA[naga]]></name>
+	<namePlural><![CDATA[naga]]></namePlural>
+
+	<nameFeral>
+		<name legConfiguration="TAIL_LONG"><![CDATA[snake]]></name>
+	</nameFeral>
+	<nameFeralPlural>
+		<name legConfiguration="TAIL_LONG"><![CDATA[snakes]]></name>
+	</nameFeralPlural>
+
+	<defaultTransformName><![CDATA[naga]]></defaultTransformName>
+
+	<colour>COVERING_SILVER</colour>
+
+	<disposition>NEUTRAL</disposition>
+
+	<racialClass>REPTILE</racialClass>
+
+	<feralPartsAvailable>false</feralPartsAvailable>
+
+	<ableToSelfTransform>false</ableToSelfTransform>
+
+	<flyingRace>false</flyingRace>
+
+	<!-- Combat: -->
+	<combatBehaviour>BALANCED</combatBehaviour>
+
+	<!-- Breeding: -->
+	<chanceForMaleOffspring>0.3</chanceForMaleOffspring>
+
+	<numberOfOffspringLow>1</numberOfOffspringLow>
+	<numberOfOffspringHigh>2</numberOfOffspringHigh>
+
+	<!-- Gameplay preferences: -->
+	<defaultFemininePreference>MAXIMUM</defaultFemininePreference>
+	<defaultMasculinePreference>MAXIMUM</defaultMasculinePreference>
+
+	<affectedByFurryPreference>true</affectedByFurryPreference>
+</race>

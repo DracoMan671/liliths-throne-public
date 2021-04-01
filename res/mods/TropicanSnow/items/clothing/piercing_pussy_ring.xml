@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+
+<clothing>
+  <coreAttributes>
+    <clothingAuthorTag><![CDATA[Small engraved lettering informs you that these piercings were made by 'TropicanSnow'.]]></clothingAuthorTag>
+    <value>100</value> <!--10 flames = £1 ~ $1.5-->
+    <determiner><![CDATA[a]]></determiner>
+    <name><![CDATA[genital ring]]></name>
+    <namePlural pluralByDefault="false"><![CDATA[genital rings]]></namePlural>
+    <description><![CDATA[A metal ring closed with a captive ball, to be worn on the clitorial hood or outer labia in the style of a 'Diana' vaginal piercing.]]></description>
+    
+    <physicalResistance>0</physicalResistance>
+    <femininity>FEMININE</femininity> <!-- FEMININE, MASCULINE ANDROGYNOUS -->
+    <slot>PIERCING_VAGINA</slot> <!-- slot values: https://github.com/Innoxia/liliths-throne-public/blob/master/src/com/lilithsthrone/game/inventory/InventorySlot.java -->
+    <rarity>COMMON</rarity> <!-- rarity values: https://github.com/Innoxia/liliths-throne-public/blob/master/src/com/lilithsthrone/game/inventory/Rarity.java -->
+    
+    <imageName>piercing_pussy_ring.svg</imageName>
+    
+    <clothingSet/> <!-- No way to define custom sets yet -->
+    <imageEquippedName/> <!-- The file path for this clothing's image while equipped -->
+    <enchantmentLimit/> <!-- Custom values override game -->
+    <effects/> <!-- Default enchantments -->
+
+    <blockedPartsList slot="PIERCING_VAGINA">
+      <blockedParts>
+        <displacementType>REMOVE_OR_EQUIP</displacementType> 
+        <clothingAccessRequired/>
+        <blockedBodyParts/>
+        <clothingAccessBlocked/>
+        <concealedSlots/>
+      </blockedParts>
+    </blockedPartsList>
+
+    <incompatibleSlots slot="PIERCING_VAGINA"/>
+    
+    <primaryColours values="ALL_METAL"/>
+    <primaryColoursDye/>
+    <secondaryColours/>
+    <secondaryColoursDye/>
+    <tertiaryColours/>
+    <tertiaryColoursDye/>
+    
+    <itemTags>
+      <tag>SOLD_BY_KATE</tag>
+    </itemTags>
+    
+  </coreAttributes>
+
+  <replacementText slot="PIERCING_VAGINA" type="REMOVE_OR_EQUIP">
+    <self>
+      <![CDATA[[npc.Name] [npc.verb(slide)] the ringed barbell into [npc.her] vaginal piercing.]]>
+    </self>
+    <other>
+      <![CDATA[[npc.Name] [npc.verb(slide)] the ringed barbell into [npc2.namePos] vaginal piercing.]]>
+    </other>
+    <otherRough>
+      <![CDATA[[npc.Name] roughly [npc.verb(slide)] the ringed barbell into [npc2.namePos] vaginal piercing.]]>
+    </otherRough>
+  </replacementText>
+
+  <displacementText slot="PIERCING_VAGINA" type="REMOVE_OR_EQUIP">
+    <self>
+      <![CDATA[[npc.Name] [npc.verb(slide)] [npc.her] ringed barbell out of [npc.her] vaginal piercing.]]>
+    </self>
+    <other>
+      <![CDATA[[npc.Name] [npc.verb(slide)] [npc2.namePos] ringed barbell out of [npc2.her] vaginal piercing.]]>
+    </other>
+    <otherRough>
+      <![CDATA[[npc.Name] roughly [npc.verb(pull)] [npc2.namePos] ringed barbell out of [npc2.her] vaginal piercing.]]>
+    </otherRough>
+  </displacementText>
+  
+  
+</clothing>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<breast>
+	<race>poke_zoru</race>
+	<transformationName><![CDATA[Zorua-line]]></transformationName>
+	<coveringType>poke_zoru_fur</coveringType>
+	<nippleType>poke_zoru_nipple</nippleType>
+	<fluidType>poke_zoru_milk</fluidType>
+	<!-- Naming:
+	<names>
+		<name><![CDATA[breast]]></name>
+		<name><![CDATA[boob]]></name>
+		<name><![CDATA[tit]]></name>
+	</names>
+	-->
+	<names/>
+	<namesPlural/>
+	<descriptors/>
+	<namesFlat/>
+	<namesPluralFlat/>
+	<descriptorsFlat/>
+	<!-- Chest-located breasts: -->
+	<transformationDescription><![CDATA[
+		[npc.She] now [npc.has] Zorua-line, [npc.nipplesFullDescription], and when lactating, [npc.she] will produce that Pokémon's milk.
+	]]></transformationDescription>
+	<bodyDescription><![CDATA[
+		On each of [npc.her] [npc.breastSize] [npc.breasts], [npc.she] [npc.has] [npc.nipplesPerBreast] Zorua-line, [npc.nipplesFullDescription].
+	]]></bodyDescription>
+	<crotchBoobsTransformationDescription><![CDATA[
+		[npc.She] now [npc.has] Zorua-line, [npc.crotchNipplesFullDescription], and when lactating, [npc.she] will produce that Pokémon's milk.
+	]]></crotchBoobsTransformationDescription>
+	<crotchBoobsBodyDescription><![CDATA[
+		On each of [npc.her] [npc.crotchBoobSize] [npc.crotchBoobs], [npc.she] [npc.has] [npc.crotchNipplesPerBreast] Zorua-line, [npc.crotchNipplesFullDescription].
+	]]></crotchBoobsBodyDescription>
+</breast>

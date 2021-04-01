@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<coveringType>
+	<!-- MAIN_SKIN, MAIN_HAIR, MAIN_FUR, MAIN_SCALES, MAIN_FEATHER, MAIN_CHITIN
+	EYE_IRIS, EYE_PUPIL, EYE_SCLERA
+	ANTENNAE, HORN, ANTLER, HAIR
+	ANUS, MOUTH, TONGUE, NIPPLE, NIPPLE_CROTCH, VAGINA, PENIS, SPINNERET
+	BODY_HAIR
+	ARIFICIAL, FLUID, MAKEUP -->
+	<category>MAIN_FUR</category>
+	<!-- The determiner which should be used when describing this covering.
+	For feathers, it would be something like 'a plume of'. -->
+	<determiner><![CDATA[a layer of]]></determiner>
+	<name><![CDATA[fur]]></name>
+	<namePlural pluralByDefault="false"><![CDATA[fur]]></namePlural> 
+	<!-- EYE, FLUID, MAKEUP, GLOSSY, MATTE, SPARKLY, METALLIC, BLAZING, SHIMMERING, SWIRLING, GOOEY
+	Generic: SMOOTH, ROUGH
+	Skin: LEATHERY
+	Fur/Hair: SHORT, SILKEN, FLUFFY, SHAGGY, FURRY, COARSE -->
+	<naturalCoveringModifiers>
+		<modifier>FLUFFY</modifier>
+	</naturalCoveringModifiers>
+	<!-- Which modifiers this covering should have available to it under special transformative circumstances..-->
+	<extraCoveringModifiers/>
+	<!-- The 'weighting' attribute determines the weighted chance of the pattern being randomly chosen when first created for a character.
+	NONE, HIGHLIGHTS, STRIPED, SPOTTED, MOTTLED, MARKED, FRECKLED, FRECKLED_FACE, OMBRE -->
+	<naturalPatterns>
+		<pattern weighting="1">MARKED</pattern>
+	</naturalPatterns>
+	<extraPatterns/>
+	<!-- The colours which this covering has available to it.
+	'Natural' colours are those which can be chosen when a race with this covering is spawning in naturally.
+	The 'extra' colours are those which are available via transformation.
+	Colour values can be found here: https://github.com/Innoxia/liliths-throne-public/blob/dev/src/com/lilithsthrone/utils/colours/PresetColour.java
+	Instead of defining colours individually, you can use the 'values' attribute to apply pre-defined colours.
+	Acceptable 'values' are found here: https://github.com/Innoxia/liliths-throne-public/blob/dev/src/com/lilithsthrone/utils/colours/ColourListPresets.java -->
+	<naturalColoursPrimary>
+		<colour>COVERING_YELLOW</colour>
+	</naturalColoursPrimary>	
+	<extraColoursPrimary values="allCoveringColours"/>
+	<naturalColoursSecondary>
+		<colour>COVERING_WHITE</colour>
+	</naturalColoursSecondary>
+	<extraColoursSecondary values="allCoveringColours"/>
+</coveringType>

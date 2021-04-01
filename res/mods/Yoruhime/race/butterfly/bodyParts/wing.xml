@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<wing>
+
+	<race>Yoruhime_butterfly</race>
+	<transformationName><![CDATA[butterfly]]></transformationName>
+	<coveringType>Yoruhime_butterfly_chitin</coveringType>
+
+	<!-- Whether this wing type grants the ability to fly. -->
+	<allowsFlight>true</allowsFlight>
+
+	<!-- The minimum and maximum size that this wing type can be transformed into.
+	Default values are ZERO_TINY and FOUR_HUGE.
+	Values for wing sizes can be found here: https://github.com/Innoxia/liliths-throne-public/blob/dev/src/com/lilithsthrone/game/character/body/valueEnums/WingSize.java -->
+	<minimumSize>ZERO_TINY</minimumSize>
+	<maximumSize>FOUR_HUGE</maximumSize>
+
+	<!-- The singular and plural names of this wing. -->
+	<name><![CDATA[wing]]></name>
+	<namePlural><![CDATA[wings]]></namePlural>
+
+	<!-- The descriptors which should be drawn upon when describing a masculine character's wing of this type.
+	Can be left blank. -->
+	<descriptorsMasculine>
+		<descriptor><![CDATA[scaley]]></descriptor>
+	</descriptorsMasculine>
+	<!-- Same as above, but for feminine characters. -->
+	<descriptorsFeminine>
+		<descriptor><![CDATA[scaley]]></descriptor>
+	</descriptorsFeminine>
+
+	<!-- The description which is shown when a character transforms to obtain this wing type.
+	This description immediately follows a brief description of the wing type beginning to transform. -->
+	<transformationDescription><![CDATA[
+		#IF(npc.getLegConfiguration().isWingsOnLegConfiguration())
+			[npc.She] [npc.verb(bite)] [npc.her] [npc.lip] to try and suppress an unexpected moan of pleasure as a pair of [npc.wingSize], scaley wings push out from the sides of [npc.her] [npc.legConfiguration] body.
+		#ELSE
+			[npc.She] [npc.verb(bite)] [npc.her] [npc.lip] to try and suppress an unexpected moan of pleasure as a pair of [npc.wingSize], scaley wings push out from [npc.her] shoulder blades.
+		#ENDIF
+		<br/>[npc.Name] now [npc.has] [style.boldTfGeneric(scaley wings)].
+	]]></transformationDescription>
+
+	<!-- How this wing is described in a character's description page. -->
+	<bodyDescription><![CDATA[
+		[npc.sheHasFull] a pair of [npc.wingSize], scaley wings, which are [npc.materialDescriptor] [npc.wingFullDescription(true)].
+	]]></bodyDescription>
+
+</wing>

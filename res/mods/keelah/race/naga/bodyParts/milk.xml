@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<fluid>
+	<race>keelah_naga</race>
+
+	<transformationName><![CDATA[naga]]></transformationName>
+
+	<baseFluidType>MILK</baseFluidType>
+
+	<flavour>MILK</flavour>
+
+	<namesMasculine/>
+
+	<namesFeminine/>
+
+	<descriptorsMasculine>
+		<name><![CDATA[naga]]></name>
+	</descriptorsMasculine>
+
+	<descriptorsFeminine>
+		<name><![CDATA[naga]]></name>
+	</descriptorsFeminine>
+
+	<defaultFluidModifiers/>
+</fluid>

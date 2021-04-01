@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<weapon>
+    <coreAttributes>
+        <authorTag/>
+        <value>5000</value>
+        <melee>false</melee>
+        <twoHanded>false</twoHanded>
+        <determiner><![CDATA[a]]></determiner>
+        <name><![CDATA[High Standard Derringer]]></name>
+        <namePlural pluralByDefault="false"><![CDATA[High Standard Derringers]]></namePlural>
+        <description><![CDATA[A small Derringer pistol found in a desert.]]></description>
+        <attackDescriptor>shoot</attackDescriptor>
+        <attackTooltipDescription>Shoot Derringer at [npc2.name].</attackTooltipDescription>
+        <rarity>LEGENDARY</rarity>
+        <weaponSet/>
+        <equipText><![CDATA[[npc.Name] [npc.verb(ready)] Derringer and load a bullet.]]></equipText>
+        <unequipText><![CDATA[[npc.Name] [npc.verb(lower)] Derringer and clear the chamber.]]></unequipText>
+        <imageName>High_Standard_Derringer.svg</imageName>
+        <imageEquippedName>High_Standard_Derringer.svg</imageEquippedName>
+        <damage>10</damage>
+        <arcaneCost>2</arcaneCost>
+        <damageVariance>HIGH</damageVariance>
+        <availableDamageTypes>
+            <damageType>PHYSICAL</damageType>
+            <damageType>POISON</damageType>
+            <damageType>FIRE</damageType>
+            <damageType>ICE</damageType>
+        </availableDamageTypes>
+        <spells/>
+        <enchantmentLimit>0</enchantmentLimit>
+        <effects>
+            <effect limit="0" potency="MAJOR_DRAIN" secondaryModifier="CRITICAL_DAMAGE" primaryModifier="CLOTHING_ATTRIBUTE" timer="0" itemEffectType="CLOTHING"/>
+        </effects>
+        <primaryColours values="ALL_METAL"/>
+        <primaryColoursDye values="ALL_METAL"/>
+        <secondaryColours values="ALL"/>
+        <secondaryColoursDye values="ALL"/>
+        <itemTags/>
+    </coreAttributes>
+    <hitDescriptions>
+        <hitText><![CDATA[[npc.Name] [npc.verb(line)] up [npc2.name] in [npc.namePos] sights and [npc.verb(pull)] the trigger. Ethereal rounds strike [npc2.name], causing [npc2.her] to lose energy.]]></hitText>
+    </hitDescriptions>
+    <missDescriptions>
+        <missText><![CDATA[[npc.Name] [npc.verb(line)] up [npc2.name] in [npc.namePos] sights and [npc.verb(pull)] the trigger. The shot goes wide! The round hits the ground uselessly]]></missText>
+    </missDescriptions>
+</weapon>

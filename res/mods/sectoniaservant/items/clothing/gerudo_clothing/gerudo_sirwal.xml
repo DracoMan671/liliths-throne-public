@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<clothing>
+	<coreAttributes>
+		<authorTag><![CDATA[A tag discreetly sewn into the sirwal's inner lining informs you that it was made by 'SectoniaServant'.]]></authorTag>
+		<value>180</value>
+		<determiner><![CDATA[a]]></determiner>
+		<name><![CDATA[Gerudo sirwal]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Gerudo sirwals]]></namePlural>
+		<description><![CDATA[A sirwal that seems to come from a special race called the Gerudo. It's meant for vai. It's designed to provide protection against the desert heat.]]></description>
+		<physicalResistance>0</physicalResistance>
+		<femininity>FEMININE</femininity>
+		<slot>LEG</slot>
+		<rarity>UNCOMMON</rarity>
+		<clothingSet/>
+		<imageName>gerudo_sirwal.svg</imageName>
+		<imageEquippedName/>
+		<enchancementLimit/>
+		<effects>
+			<effect itemEffectType="CLOTHING" limit="0" potency="MAJOR_BOOST" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="DAMAGE_LUST" timer="0"/>
+			<effect itemEffectType="CLOTHING" limit="0" potency="MAJOR_BOOST" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="DAMAGE_LUST" timer="0"/>
+			<effect itemEffectType="CLOTHING" limit="0" potency="MINOR_BOOST" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="RESISTANCE_FIRE" timer="0" />
+		</effects>
+		<blockedPartsList>
+			<blockedParts>
+				<displacementType>REMOVE_OR_EQUIP</displacementType> 
+				<clothingAccessRequired> 
+					<clothingAccess>FEET</clothingAccess>
+					<clothingAccess>LEGS_UP_TO_GROIN</clothingAccess>
+				</clothingAccessRequired>
+				<blockedBodyParts/>
+				<clothingAccessBlocked>
+					<clothingAccess>LEGS_UP_TO_GROIN</clothingAccess>
+				</clothingAccessBlocked>
+				<concealedSlots values="CONCEALED_ANKLES_FROM_TROUSERS"/>
+			</blockedParts>
+			<blockedParts>
+				<displacementType>PULLS_DOWN</displacementType> 
+				<clothingAccessRequired/>
+				<blockedBodyParts>
+					<bodyPart>ANUS</bodyPart>
+					<bodyPart>PENIS</bodyPart>
+					<bodyPart>VAGINA</bodyPart>
+				</blockedBodyParts>
+				<clothingAccessBlocked>
+					<clothingAccess>GROIN</clothingAccess>
+				</clothingAccessBlocked>
+				<concealedSlots values="CONCEALED_GROIN"/>
+			</blockedParts>
+			<blockedParts>
+				<displacementType>UNBUCKLE</displacementType> 
+				<clothingAccessRequired/>
+				<blockedBodyParts>
+					<bodyPart>PENIS</bodyPart>
+				</blockedBodyParts>
+				<clothingAccessBlocked>
+					<clothingAccess>GROIN</clothingAccess>
+				</clothingAccessBlocked>
+				<concealedSlots values="CONCEALED_UNZIPS_GROIN"/>
+			</blockedParts>
+		</blockedPartsList>
+		<incompatibleSlots/>
+		<primaryColours>
+			 <colour>CLOTHING_BLUE_LIGHT</colour>
+		</primaryColours>
+		<primaryColoursDye>
+			<colour>CLOTHING_WHITE</colour>
+			<colour>CLOTHING_BLACK</colour>
+			<colour>CLOTHING_GREY</colour>
+			<colour>CLOTHING_RED</colour>
+			<colour>CLOTHING_RED_DARK</colour>
+			<colour>CLOTHING_BROWN</colour>
+			<colour>CLOTHING_GREEN</colour>
+			<colour>CLOTHING_PURPLE</colour>
+			<colour>CLOTHING_YELLOW</colour>
+			<colour>CLOTHING_BLUE</colour>
+			<colour>CLOTHING_BLUE_LIGHT</colour>
+			<colour>CLOTHING_BLUE_DARK</colour>
+			<colour>CLOTHING_PINK</colour>
+			<colour>CLOTHING_TAN</colour>
+			<colour>CLOTHING_ORANGE</colour>
+		</primaryColoursDye>
+		<secondaryColours/>
+		<secondaryColourDye/>
+		<tertiaryColours/>
+		<tertiaryColoursDye/>
+		<itemTags>
+			<tag>SOLD_BY_NYAN</tag>
+			<tag>DOMINION_ALLEYWAY_SPAWN</tag>
+		</itemTags>
+	</coreAttributes>
+	
+	<displacementText type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[
+			You take off your sirwal.
+		]]></playerSelf>
+		<playerNPC><![CDATA[
+			You pull off [npc.name]'s sirwal.
+		]]></playerNPC>
+		<playerNPCRough><![CDATA[
+			You roughly yank down [npc.name]'s sirwal.
+		]]></playerNPCRough>
+		<NPCSelf><![CDATA[
+			[npc.Name] takes [npc.her] sirwal off.
+		]]></NPCSelf>
+		<NPCPlayer><![CDATA[
+			[npc.Name] pulls your sirwal off.
+		]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[
+			[npc.Name] roughly yanks down your sirwal.
+		]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[
+			[npc1.Name] pulls [npc2.name]'s sirwal off.
+		]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[
+			[npc.Name] roughly yanks down [npc2.name]'s sirwal.
+		]]></NPCOtherNPCRough>
+	</displacementText>
+	
+	<replacementText type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[
+			You pull on the sirwal.
+		]]></playerSelf>
+		<playerNPC><![CDATA[
+			You guide [npc.name]'s [npc.legs] through the sleeves of the sirwal as you pull it on [npc.herHim].
+		]]></playerNPC>
+		<playerNPCRough><![CDATA[
+			You hold [npc.name] still as you roughly force the sirwal through [npc.her] [npc.legs+].
+		]]></playerNPCRough>
+		<NPCSelf><![CDATA[
+			[npc.Name] pulls on the sirwal.
+		]]></NPCSelf>
+		<NPCPlayer><![CDATA[
+			[npc.Name] guides your [pc.legs] through the sleeves of the sirwal.
+		]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[
+			[npc.Name] holds you still as [npc.she] roughly forces the sleeves of the sirwal through your [pc.legs]
+		]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[
+			[npc1.Name] guides [npc2.name]'s [npc2.legs] through the sirwal's sleeves.
+		]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[
+			[npc1.Name] holds [npc2.name] still as [npc1.she] roughly forces the sleeves of the sirwal onto [npc2.name]'s [npc2.legs+]
+		]]></NPCOtherNPCRough>
+	</replacementText>
+	
+	<displacementText type="PULLS_DOWN">
+		<playerSelf><![CDATA[
+			You pull your sirwal down.
+		]]></playerSelf>
+		<playerNPC><![CDATA[
+			You pull down [npc.name]'s sirwal.
+		]]></playerNPC>
+		<playerNPCRough><![CDATA[
+			You roughly yank down [npc.name]'s sirwal.
+		]]></playerNPCRough>
+		<NPCSelf><![CDATA[
+			[npc.Name] pulls [npc.her] sirwal down.
+		]]></NPCSelf>
+		<NPCPlayer><![CDATA[
+			[npc.Name] pulls down your sirwal.
+		]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[
+			[npc.Name] roughly yanks down your sirwal.
+		]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[
+			[npc1.Name] pulls down [npc2.name]'s sirwal.
+		]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[
+			[npc1.Name] roughly yanks down [npc2.name]'s sirwal.
+		]]></NPCOtherNPCRough>
+	</displacementText>
+	
+	<replacementText type="PULLS_UP">
+		<playerSelf><![CDATA[
+			You pull your sirwal back up, covering your groin.
+		]]></playerSelf>
+		<playerNPC><![CDATA[
+			You pull up [npc.name]'s sirwal.
+		]]></playerNPC>
+		<playerNPCRough><![CDATA[
+			You roughly yank up [npc.Name]'s sirwal.
+		]]></playerNPCRough>
+		<NPCSelf><![CDATA[
+			[npc.Name] pulls [npc.her] sirwal back up to cover [npc.her] groin.
+		]]></NPCSelf>
+		<NPCPlayer><![CDATA[
+			[npc.Name] pulls up your sirwal.
+		]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[
+			[npc.Name] roughly yanks up your sirwal.
+		]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[
+			[npc1.Name] pulls up [npc2.Name]'s sirwal.
+		]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[
+			[npc1.Name] roughly yanks up [npc2.Name]'s sirwal.
+		]]></NPCOtherNPCRough>
+	</replacementText>
+	
+	<displacementText type="UNBUCKLE">
+		<playerSelf><![CDATA[ 
+			You unbuckle the belt on the sirwal, before shuffling it down.
+		]]></playerSelf>
+		<playerNPC><![CDATA[
+			You unbuckle the belt on [npc.Name]'s sirwal, before shuffling it down.
+		]]></playerNPC>
+		<playerNPCRough><![CDATA[
+			You roughly unbuckle the belt on [npc.Name]'s sirwal, before pushing it down.
+		]]></playerNPCRough>
+		<NPCSelf><![CDATA[
+			[npc.Name] unbuckles the belt on [npc.her] sirwal, before shuffling it down.
+		]]></NPCSelf>
+		<NPCPlayer><![CDATA[
+			[npc.name] unbuckles the belt on your sirwal, before shuffling it down.
+		]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[
+			[npc.name] roughly unbuckles the belt on your sirwal before pushing it down.
+		]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[
+			[npc1.name] unbuckles the belt on [npc2.name]'s sirwal, before shuffling it down.
+		]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[
+			[npc1.name] roughly unbuckles the belt on [npc2.name]'s sirwal before pushing it down.
+		]]></NPCOtherNPCRough>
+	</displacementText>
+	
+	<replacementText type="UNBUCKLE">
+		<playerSelf><![CDATA[ 
+			You buckle the belt on the sirwal, before pulling it up.
+		]]></playerSelf>
+		<playerNPC><![CDATA[
+			You buckle the belt on [npc.Name]'s sirwal, before pulling it up.
+		]]></playerNPC>
+		<playerNPCRough><![CDATA[
+			You roughly buckle the belt on [npc.Name]'s sirwal, before yanking it up.
+		]]></playerNPCRough>
+		<NPCSelf><![CDATA[
+			[npc.Name] buckles the belt on [npc.her] sirwal, before pulling it up.
+		]]></NPCSelf>
+		<NPCPlayer><![CDATA[
+			[npc.name] buckles the belt on your sirwal, before pulling it up.
+		]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[
+			[npc.name] roughly buckles the belt on your sirwal before yanking it up.
+		]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[
+			[npc1.name] buckles the belt on [npc2.name]'s sirwal, before pulling it up.
+		]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[
+			[npc1.name] roughly buckles the belt on [npc2.name]'s sirwal before yanking it up.
+		]]></NPCOtherNPCRough>
+	</replacementText>
+
+</clothing>

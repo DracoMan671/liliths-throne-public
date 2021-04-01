@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<clothing>
+	<coreAtributes>
+		<value>10000</value>
+		<determiner><![CDATA[an]]></determiner>
+		<name><![CDATA[Eternal Virgin Ring]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Eternal Virgin Rings]]></namePlural>
+		<description><![CDATA[A cursed mystical ring that restores virginities when equipped.]]></description>
+		<physicalResistance>0</physicalResistance>
+		<femininity>ANDROGYNOUS</femininity>
+		<slot>FINGER</slot>
+		<rarity>RARE</rarity>
+		<clothingSet/>
+		<imageName>eternal_virgin_ring.svg</imageName>
+		<imageEquippedName/>
+		<enchantmentLimit/>
+    <effects>
+	<effect itemEffectType="CLOTHING" limit="0" potency="MAJOR_BOOST" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="RESISTANCE_LUST" timer="0"/>
+    <effect itemEffectType="CLOTHING" limit="0" potency="MINOR_BOOST" primaryModifier="CLOTHING_SEALING" secondaryModifier="ARCANE_BOOST" timer="0"/>
+	</effects>
+		<blockedPartsList>
+			<blockedParts>
+				<displacementType>REMOVE_OR_EQUIP</displacementType>
+				<clothingAccessRequired>
+					<clothingAccess>FINGERS</clothingAccess>
+				</clothingAccessRequired>
+				<blockedBodyParts/>
+				<clothingAccessBlocked/>
+				<concealedSlots/>
+			</blockedParts>
+		</blockedPartsList>
+		<incompatibleSlots/>
+    <primaryColours values="JUST_BLACK"/>
+    <primaryColoursDye values="ALL_METAL"/>
+    <secondaryColours values="JUST_PINK"/>
+    <secondaryColoursDye values="ALL"/>
+    <tertiaryColours/>
+    <tertiaryColoursDye/>
+		<itemTags> 
+			<tag>SOLD_BY_NYAN</tag>
+		</itemTags>
+	</coreAtributes>
+ <displacementText type="REMOVE_OR_EQUIP">
+    <playerSelf>
+      <![CDATA[You take off your ring.]]>
+    </playerSelf>
+    <playerNPC>
+      <![CDATA[You take off [npc.Name]'s ring.]]>
+    </playerNPC>
+    <playerNPCRough>
+      <![CDATA[You yank [npc.name]'s ring off.]]>
+    </playerNPCRough>
+    <NPCSelf>
+      <![CDATA[[npc.Name] takes off [npc.herHis] ring.]]>
+    </NPCSelf>
+    <NPCPlayer>
+      <![CDATA[[npc.Name] takes off your ring.]]>
+    </NPCPlayer>
+    <NPCPlayerRough>
+      <![CDATA[[npc.Name] yanks off your ring.]]>
+    </NPCPlayerRough>
+    <NPCOtherNPC>
+      <![CDATA[[npc1.Name] takes off [npc2.name]'s ring.]]>
+    </NPCOtherNPC>
+    <NPCOtherNPCRough>
+      <![CDATA[[npc.Name] yanks off [npc2.name]'s ring.]]>
+    </NPCOtherNPCRough>
+  </displacementText>
+
+  <replacementText type="REMOVE_OR_EQUIP">
+    <playerSelf>
+      <![CDATA[You slide the ring over your finger.
+		#IF (pc.hasPenis()&&!pc.isPenisVirgin())
+		#THEN
+		<br>Eternal Virgin [#pc.setPenisVirgin(1)]ifies you, restoring mental innocence and penile virginity!
+		#ENDIF
+		#IF (pc.hasVagina()&&!pc.isVaginaVirgin())
+		#THEN
+		<br>Eternal Virgin [#pc.setVaginaVirgin(1)]ifies you,  restoring mental innocence and hymen!
+		#ENDIF
+		#IF (!pc.isFaceVirgin())
+		#THEN
+		<br>Eternal Virgin [#pc.setFaceVirgin(1)]ifies you, restoring mental innocence and oral virginity!
+		#ENDIF
+		#IF (!pc.isAssVirgin())
+		#THEN
+		<br>Eternal Virgin [#pc.setAssVirgin(1)]ifies you, restring mental innocence and anal virginity!
+		#ENDIF
+		]]>		
+    </playerSelf>
+    <playerNPC>
+      <![CDATA[You slide the ring over [npc.name]'s finger.
+		#IF (npc.hasPenis()&&!npc.isPenisVirgin())
+		#THEN
+		<br>Eternal Virgin [#npc.setPenisVirgin(1)]ifies [npc.namePos], restoring mental innocence and penile virginity!
+		#ENDIF
+		#IF (npc.hasVagina()&&!npc.isVaginaVirgin())
+		#THEN
+		<br>Eternal Virgin [#npc.setVaginaVirgin(1)]ifies [npc.namePos],  restores [npc.her] mental innocence and hymen!
+		#ENDIF
+		#IF (!npc.isFaceVirgin())
+		#THEN
+		<br>Eternal Virgin [#npc.setFaceVirgin(1)]ifies [npc.namePos], restoring mental innocence and oral virginity!
+		#ENDIF
+		#IF (!npc.isAssVirgin())
+		#THEN
+		<br>Eternal Virgin [#npc.setAssVirgin(1)]ifies [npc.namePos], restring mental innocence and anal virginity!
+		#ENDIF
+	  ]]>
+    </playerNPC>
+    <playerNPCRough>
+      <![CDATA[You slide the ring over [npc.name]'s finger.
+		#IF (npc.hasPenis()&&!npc.isPenisVirgin())
+		#THEN
+		<br>Eternal Virgin [#npc.setPenisVirgin(1)]ifies [npc.namePos], restoring mental innocence and penile virginity!
+		#ENDIF
+		#IF (npc.hasVagina()&&!npc.isVaginaVirgin())
+		#THEN
+		<br>Eternal Virgin [#npc.setVaginaVirgin(1)]ifies [npc.namePos],  restores [npc.her] mental innocence and hymen!
+		#ENDIF
+		#IF (!npc.isFaceVirgin())
+		#THEN
+		<br>Eternal Virgin [#npc.setFaceVirgin(1)]ifies [npc.namePos], restoring mental innocence and oral virginity!
+		#ENDIF
+		#IF (!npc.isAssVirgin())
+		#THEN
+		<br>Eternal Virgin [#npc.setAssVirgin(1)]ifies [npc.namePos], restring mental innocence and anal virginity!
+		#ENDIF
+	  ]]>
+    </playerNPCRough>
+    <NPCSelf>
+      <![CDATA[[npc.Name] slides the ring over [npc.herHis] finger.
+		#IF (npc.hasPenis()&&!npc.isPenisVirgin())
+		#THEN
+		<br>Eternal Virgin [#npc.setPenisVirgin(1)]ifies [npc.namePos], restoring mental innocence and penile virginity!
+		#ENDIF
+		#IF (npc.hasVagina()&&!npc.isVaginaVirgin())
+		#THEN
+		<br>Eternal Virgin [#npc.setVaginaVirgin(1)]ifies [npc.namePos],  restores [npc.her] mental innocence and hymen!
+		#ENDIF
+		#IF (!npc.isFaceVirgin())
+		#THEN
+		<br>Eternal Virgin [#npc.setFaceVirgin(1)]ifies [npc.namePos], restoring mental innocence and oral virginity!
+		#ENDIF
+		#IF (!npc.isAssVirgin())
+		#THEN
+		<br>Eternal Virgin [#npc.setAssVirgin(1)]ifies [npc.namePos], restring mental innocence and anal virginity!
+		#ENDIF	  
+	  ]]>
+    </NPCSelf>
+    <NPCPlayer>
+      <![CDATA[[npc.Name] slides the ring over your finger.
+		#IF (pc.hasPenis()&&!pc.isPenisVirgin())
+		#THEN
+		<br>Eternal Virgin [#pc.setPenisVirgin(1)]ifies you, restoring mental innocence and penile virginity!
+		#ENDIF
+		#IF (pc.hasVagina()&&!pc.isVaginaVirgin())
+		#THEN
+		<br>Eternal Virgin [#pc.setVaginaVirgin(1)]ifies you,  restoring mental innocence and hymen!
+		#ENDIF
+		#IF (!pc.isFaceVirgin())
+		#THEN
+		<br>Eternal Virgin [#pc.setFaceVirgin(1)]ifies you, restoring mental innocence and oral virginity!
+		#ENDIF
+		#IF (!pc.isAssVirgin())
+		#THEN
+		<br>Eternal Virgin [#pc.setAssVirgin(1)]ifies you, restring mental innocence and anal virginity!
+		#ENDIF	  
+	  ]]>
+    </NPCPlayer>
+    <NPCPlayerRough>
+      <![CDATA[[npc.Name] slides the ring over your finger.
+		#IF (pc.hasPenis()&&!pc.isPenisVirgin())
+		#THEN
+		<br>Eternal Virgin [#pc.setPenisVirgin(1)]ifies you, restoring mental innocence and penile virginity!
+		#ENDIF
+		#IF (pc.hasVagina()&&!pc.isVaginaVirgin())
+		#THEN
+		<br>Eternal Virgin [#pc.setVaginaVirgin(1)]ifies you,  restoring mental innocence and hymen!
+		#ENDIF
+		#IF (!pc.isFaceVirgin())
+		#THEN
+		<br>Eternal Virgin [#pc.setFaceVirgin(1)]ifies you, restoring mental innocence and oral virginity!
+		#ENDIF
+		#IF (!pc.isAssVirgin())
+		#THEN
+		<br>Eternal Virgin [#pc.setAssVirgin(1)]ifies you, restring mental innocence and anal virginity!
+		#ENDIF
+	  ]]>
+    </NPCPlayerRough>
+    <NPCOtherNPC>
+      <![CDATA[[npc1.Name] slides the ring over [npc2.Name]'s finger.
+		#IF (npc2.hasPenis()&&!npc2.isPenisVirgin())
+		#THEN
+		<br>Eternal Virgin [#npc2.setPenisVirgin(1)]ifies [npc2.namePos], restoring mental innocence and penile virginity!
+		#ENDIF
+		#IF (npc2.hasVagina()&&!npc2.isVaginaVirgin())
+		#THEN
+		<br>Eternal Virgin [#npc2.setVaginaVirgin(1)]ifies [npc2.namePos],  restores [npc2.her] mental innocence and hymen!
+		#ENDIF
+		#IF (!npc2.isFaceVirgin())
+		#THEN
+		<br>Eternal Virgin [#npc2.setFaceVirgin(1)]ifies [npc2.namePos], restoring mental innocence and oral virginity!
+		#ENDIF
+		#IF (!npc2.isAssVirgin())
+		#THEN
+		<br>Eternal Virgin [#npc2.setAssVirgin(1)]ifies [npc2.namePos], restring mental innocence and anal virginity!
+		#ENDIF  
+	  ]]>
+    </NPCOtherNPC>
+    <NPCOtherNPCRough>
+      <![CDATA[[npc1.Name] slides the ring over [npc2.Name]'s finger.
+		#IF (npc2.hasPenis()&&!npc2.isPenisVirgin())
+		#THEN
+		<br>Eternal Virgin [#npc2.setPenisVirgin(1)]ifies [npc2.namePos], restoring mental innocence and penile virginity!
+		#ENDIF
+		#IF (npc2.hasVagina()&&!npc2.isVaginaVirgin())
+		#THEN
+		<br>Eternal Virgin [#npc2.setVaginaVirgin(1)]ifies [npc2.namePos],  restores [npc2.her] mental innocence and hymen!
+		#ENDIF
+		#IF (!npc2.isFaceVirgin())
+		#THEN
+		<br>Eternal Virgin [#npc2.setFaceVirgin(1)]ifies [npc2.namePos], restoring mental innocence and oral virginity!
+		#ENDIF
+		#IF (!npc2.isAssVirgin())
+		#THEN
+		<br>Eternal Virgin [#npc2.setAssVirgin(1)]ifies [npc2.namePos], restring mental innocence and anal virginity!
+		#ENDIF
+	  ]]>
+    </NPCOtherNPCRough>
+  </replacementText>
+  
+</clothing>

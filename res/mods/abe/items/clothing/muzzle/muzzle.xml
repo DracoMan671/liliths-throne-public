@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<clothing>
+	<coreAtributes>
+		<value>500</value>
+		<determiner><![CDATA[a]]></determiner>
+		<name><![CDATA[Leather Muzzle]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Leather Muzzles]]></namePlural>
+		<description><![CDATA[A contraption of sturdy leather with belts to fixate it on the wearer's head. It is commonly used to prevent pets from biting people, eating junk or otherwise misuse their mouthes.]]></description>
+		<physicalResistance>2</physicalResistance>
+		<femininity>ANDROGYNOUS</femininity>
+		<slot>MOUTH</slot>
+		<rarity>RARE</rarity>
+		<clothingSet>BDSM</clothingSet>
+		<imageName>muzzle.svg</imageName>
+		<imageEquippedName></imageEquippedName>
+		<enchantmentLimit>10</enchantmentLimit>
+		<effects>
+			<effect itemEffectType="CLOTHING" limit="0" potency="MAJOR_BOOST" primaryModifier="CLOTHING_SEALING" secondaryModifier="ARCANE_BOOST" timer="0" />
+		</effects>
+		<blockedPartsList>
+			<blockedParts>
+				<displacementType>REMOVE_OR_EQUIP</displacementType>
+				<clothingAccessRequired>
+					<clothingAccess>MOUTH</clothingAccess>
+				</clothingAccessRequired>
+				<blockedBodyParts>
+					<bodyPart>MOUTH</bodyPart>
+				</blockedBodyParts>
+				<clothingAccessBlocked>
+					<clothingAccess>MOUTH</clothingAccess>
+				</clothingAccessBlocked>
+				<concealedSlots>
+					<slot>PIERCING_TONGUE</slot>
+					<slot>PIERCING_LIP</slot>
+				</concealedSlots>
+			</blockedParts>
+		</blockedPartsList>
+		<incompatibleSlots />
+		<primaryColours values="LEATHER" />
+		<primaryColoursDye values="ALL" />
+		<secondaryColours values="LEATHER" />
+		<secondaryColoursDye values="ALL" />
+		<tertiaryColours values="JUST_STEEL" />
+		<tertiaryColoursDye values="ALL_METAL" />
+		<itemTags>
+			<tag>SOLD_BY_FINCH</tag>
+		</itemTags>
+	</coreAtributes>
+	<displacementText type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[You unbuckle the belts and put the muzzle off your face. It's nice to be abe to use you mouth again.]]></playerSelf>
+		<playerNPC><![CDATA[You unbuckle the belts and put the muzzle off [npc.name]'s face.]]></playerNPC>
+		<playerNPCRough><![CDATA[You grab [npc.name] by the nap of [npc.her] neck and unbuckle the muzzle's belts. With a rough jerk, you pull the item off.]]></playerNPCRough>
+		<NPCSelf><![CDATA[[npc.name] unbuckles the belts and puts the muzzle off [npc.her] face.]]></NPCSelf>
+		<NPCPlayer><![CDATA[[Npc.name] unbuckles the belts and puts the muzzle off your face.]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[[Npc.name] grabs you by the nap of your neck and neck and unbuckles the muzzle's belts. With a rough jerk, [npc.she] pulls the item off.]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[[Npc1.name] unbuckles the belts and puts the muzzle off [npc2.name]'s face.]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[[Npc1.name] grabs [npc2.name] by the nap of [npc2.her] neck and unbuckles the muzzle's belts. With a rough jerk, [npc.she] pulls the item off.]]></NPCOtherNPCRough>
+	</displacementText>
+	<replacementText type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[You put the muzzle on your face and fasten the belts on the back of your head.]]></playerSelf>
+		<playerNPC><![CDATA[You put the muzzle on [npc.name]'s face and fasten the belts.]]></playerNPC>
+		<playerNPCRough><![CDATA[You grab [npc.name] by the nap of [npc.her] neck and shove the muzzle of [npc.her] face. You fasten the belts, pulling them a hole or two too tight.]]></playerNPCRough>
+		<NPCSelf><![CDATA[[npc.name] puts the muzzle on your face and fasten the belts on the back of [npc.her] head.]]></NPCSelf>
+		<NPCPlayer><![CDATA[[Npc.name] puts the muzzle on your face and fastets the belts.]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[[Npc.name] grabs you by the nap of your neck and shoves the muzzle on your face. You feel the think is getting fasten tight - too tight.]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[[Npc1.name] puts the muzzle on [npc2.name]'s face and fastens the belts.]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[[Npc1.name] puts the muzzle on [npc2.name]'s face, treating [npc2.her] like a bad dog.]]></NPCOtherNPCRough>
+	</replacementText>
+</clothing>

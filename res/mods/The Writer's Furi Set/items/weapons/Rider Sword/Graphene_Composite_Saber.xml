@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<weapon>
+	<coreAttributes>
+	
+		<!-- How much this weapon is worth. -->
+		<value>100000</value> 
+		
+				<melee>true</melee>
+		
+				<twoHanded>false</twoHanded>
+		
+				<determiner><![CDATA[an]]></determiner>
+		
+		<!-- The name of this weapon. -->
+		<name><![CDATA[Graphene Composite Saber]]></name>
+		
+				<namePlural pluralByDefault="false"><![CDATA[Graphene Composite Saber's]]></namePlural> 
+		
+				<description><![CDATA[It doesn't belong to this world, it belonged to a stranger who visited, pseudonymously known as The Rider. It seems he left it behind, every little thing about the Saber is unknown.]]></description>
+		
+				<attackDescriptor>Let it out.</attackDescriptor>
+		
+				<attackTooltipDescription>Slice at [npc2.name] with your Graphene Composite Saber.</attackTooltipDescription>
+		
+				<rarity>LEGENDARY</rarity> 
+		
+				<equipText><![CDATA[[npc.Name] [npc.verb(take out)] the Graphene Composite Saber.]]></equipText>
+		
+				<unequipText><![CDATA[[npc.Name] [npc.verb(sheathe)] the Graphene Composite Saber.]]></unequipText>
+		
+				<imageName>Graphene_Composite_Saber.svg</imageName> 
+		
+		
+		<imageEquippedName>Graphene_Composite_Saber.svg</imageEquippedName>
+		
+				<damage>56</damage> 
+		
+				<arcaneCost>0</arcaneCost> 
+		
+				<damageVariance>LOW</damageVariance> 
+		
+				<availableDamageTypes>
+
+			<damageType>PHYSICAL</damageType>
+              
+					</availableDamageTypes>
+		
+				<enchantmentLimit>0</enchantmentLimit>
+		
+				<effects> 
+              		</effects>
+		
+				<primaryColours values="Graphene"/> 
+		<primaryColoursDye values="Graphene"/>
+		<secondaryColours values="Graphene"/> 
+		<secondaryColoursDye values="Graphene"/>
+		
+				<itemTags> 
+			<tag>SOLD_BY_VICKY</tag>
+		</itemTags>
+		
+	</coreAttributes>
+
+		<hitDescriptions>
+		<hitText><![CDATA[
+		[npc.name] [npc.verb(lash out)] at [npc2.name], jumping up into the air, before smashing downwards, slicing through [npc2.name], they tumble downwards from the sudden blow, but thankfully they aren't seriously injured.
+		]]></hitText>
+		<hitText><![CDATA[
+		[npc.Name] [npc.verb(slash)] at [npc2.name] with [npc.her] Saber [npc.name] [npc.verb(end up)] grazing [npc2.her] [npc2.arm] with the Saber.
+		]]></hitText>
+			</hitDescriptions>
+
+		<missDescriptions>
+		<missText><![CDATA[
+		[npc.name] [npc.verb(swipe)] at [npc2.name] but you miss, smashing your Saber into a nearby wall!
+		]]></missText>
+		<missText><![CDATA[
+		[npc.name] [npc.verb(attempt)] to plunge the Saber into [npc2.name] but you hit air!
+		]]></missText>
+			</missDescriptions>
+	
+</weapon>

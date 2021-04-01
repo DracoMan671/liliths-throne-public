@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<statusEffect>
+	<renderingPriority>0</renderingPriority>
+	<renderInEffectsPanel>false</renderInEffectsPanel>
+	<beneficial>DETRIMENTAL</beneficial>
+	<combatEffect>false</combatEffect>
+	<sexEffect>false</sexEffect>
+	<name><![CDATA[]]></name>
+	<description><![CDATA[]]></description>	
+	<imageName>xrc_easymode.svg</imageName>
+	<colourPrimary>CLOTHING_RED_BRIGHT</colourPrimary>	
+	<colourSecondary/> 
+	<colourTertiary/>
+
+	<attributeModifiers>
+		<modifier value="-99999999">HEALTH_MAXIMUM</modifier>
+		<modifier value="-99999999">MANA_MAXIMUM</modifier>
+		<modifier value="-99999999">EXPERIENCE</modifier>
+		<modifier value="-99999999">ACTION_POINTS</modifier>
+		<modifier value="99999999">LUST</modifier>
+		<modifier value="-99999999">MAJOR_PHYSIQUE</modifier>
+		<modifier value="-99999999">MAJOR_ARCANE</modifier>
+		<modifier value="-99999999">MAJOR_CORRUPTION</modifier>
+		<modifier value="-99999999">ENCHANTMENT_LIMIT</modifier>
+		<modifier value="-99999999">SPELL_COST_MODIFIER</modifier>
+		<modifier value="-99999999">CRITICAL_DAMAGE</modifier>
+		<modifier value="-99999999">ENERGY_SHIELDING</modifier>
+		<modifier value="-99999999">RESISTANCE_PHYSICAL</modifier>
+		<modifier value="-99999999">RESISTANCE_LUST</modifier>
+		<modifier value="-99999999">RESISTANCE_FIRE</modifier>
+		<modifier value="-99999999">RESISTANCE_ICE</modifier>
+		<modifier value="-99999999">RESISTANCE_POISON</modifier>
+		<modifier value="-99999999">DAMAGE_UNARMED</modifier>
+		<modifier value="-99999999">DAMAGE_MELEE_WEAPON</modifier>
+		<modifier value="-99999999">DAMAGE_RANGED_WEAPON</modifier>
+		<modifier value="-99999999">DAMAGE_SPELLS</modifier>
+		<modifier value="-99999999">DAMAGE_PHYSICAL</modifier>
+		<modifier value="-99999999">DAMAGE_LUST</modifier>
+		<modifier value="-99999999">DAMAGE_FIRE</modifier>
+		<modifier value="-99999999">DAMAGE_ICE</modifier>
+		<modifier value="-99999999">DAMAGE_POISON</modifier>
+	</attributeModifiers>
+	<combatMoves/>
+	<extraEffects/>
+	<applicationCondition><![CDATA[
+		#IF(npc.isPlayer())
+			false
+		#ELSE
+			true
+		#ENDIF
+	]]></applicationCondition>
+<applyEffect/>
+	<applyRemovalEffect/>
+	<applyPostRemovalEffect/>
+	
+</statusEffect>

@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<clothing>
+	<coreAtributes>
+		<authorTag><![CDATA[Stamped into the neck of the armor reads "FORGED BY TROOPS #P01-Y & #B100-M"]]></authorTag>
+		<value>12500</value>
+		<determiner><![CDATA[an]]></determiner>
+		<name><![CDATA[Imperial Noctiluca]]></name>
+		<namePlural pluralByDefault="True"><![CDATA[Imperial Noctiluca]]></namePlural>
+		<description><![CDATA[A peaked chestplate protects the torso down to the waist. The style of plate used for its construction is named after an insect called a Noctiluca, an Iridecent beetle that bears a strong carapace. A standard of the imperial army for its hardy construction. ]]></description>
+		<physicalResistance>9</physicalResistance>
+		<femininity>ANDROGYNOUS</femininity>
+		<slot>TORSO_UNDER</slot>
+		<rarity>EPIC</rarity>
+		<clothingSet></clothingSet>
+		<imageName>Imperial_Noctiluca.svg</imageName>
+		<imageEquippedName></imageEquippedName>
+		<enchantmentLimit>8</enchantmentLimit>
+		<effects/>
+		<blockedPartsList>
+			<blockedParts>
+				<displacementType>REMOVE_OR_EQUIP</displacementType>
+				<clothingAccessRequired />
+				<blockedBodyParts>
+					<bodyPart>STOMACH</bodyPart>
+					<bodyPart>BACK</bodyPart>				
+					<bodyPart>BREASTS</bodyPart>
+					<bodyPart>NIPPLES</bodyPart>
+				</blockedBodyParts>
+				<clothingAccessBlocked>
+					<clothingAccess>CHEST</clothingAccess>
+					<clothingAccess>WAIST</clothingAccess>					
+				</clothingAccessBlocked>
+				<concealedSlots>
+					<slot>CHEST</slot>
+					<slot>STOMACH</slot>
+					<slot>NIPPLE</slot>
+					<slot>PIERCING_NIPPLE</slot>
+					<slot>PIERCING_STOMACH</slot>					
+				</concealedSlots>
+			</blockedParts>
+		</blockedPartsList>
+		<incompatibleSlots />
+	<primaryColours>
+		<colour>CLOTHING_BLUE_NAVY</colour>
+	</primaryColours>
+	<primaryColoursDye values="ALL_WITH_METAL"/>
+	<secondaryColours>
+		<colour>CLOTHING_BLACK</colour>
+	</secondaryColours>
+	<secondaryColoursDye values="ALL_WITH_METAL"/>
+	<tertiaryColours>
+		<colour>CLOTHING_DESATURATED_BROWN</colour>
+	</tertiaryColours>
+	<tertiaryColoursDye values="ALL"/>
+	
+		<itemTags>
+			<tag>SOLD_BY_VICKY</tag>
+			<tag>RIGID_MATERIAL</tag>
+		</itemTags>
+	</coreAtributes>
+	<displacementText type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[You undo the straps for your Breastplate, removing the armour.]]></playerSelf>
+		<playerNPC><![CDATA[You undo the straps for [npc.name]'s Breastplate.]]></playerNPC>
+		<playerNPCRough><![CDATA[You violently yank at the straps holding [npc.name]'s Breastplate on, removing the armour.]]></playerNPCRough>
+		<NPCSelf><![CDATA[[npc.name] undoes the straps for their Breastplate, removing the armour.]]></NPCSelf>
+		<NPCPlayer><![CDATA[[npc.name] undoes the straps for your Breastplate, removing the armour.]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[[npc.name] violently yanks at the straps holding your Breastplate on, removing the armour.]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[[npc1.name] undoes the straps for [npc2.name]'s Breastplate, removing the armour.]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[[npc1.name] violently yanks on the straps holding [npc2.name]'s Breastplate on, removing the armour.]]></NPCOtherNPCRough>
+	</displacementText>
+	<replacementText type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[You don your Breastplate, securing it with straps.]]></playerSelf>
+		<playerNPC><![CDATA[You assist [npc.name] in donning their Breastplate.]]></playerNPC>
+		<playerNPCRough><![CDATA[You hastily, and roughly, assist [npc.name] in donning their Breastplate.]]></playerNPCRough>
+		<NPCSelf><![CDATA[[npc.name] dons their Breastplate, securing it with straps.]]></NPCSelf>
+		<NPCPlayer><![CDATA[[npc.name] assists you in donning your Breastplate.]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[[npc.name] hastily, and roughly, assists you in donning your Breastplate.]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[[npc1.name] assists [npc2.name] in donning their Breastplate.]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[[npc1.name] hastily, and roughly, assists [npc2.name] in donning their Breastplate.]]></NPCOtherNPCRough>
+	</replacementText>
+</clothing>

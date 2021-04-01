@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<subspecies>
+	<race>Aurelia_Jackal</race>
+	
+	<colour>Aurelia_Jackal</colour>
+	<secondaryColour>Aurelia_Jackal</secondaryColour>
+	<tertiaryColour>Aurelia_Jackal</tertiaryColour>
+	
+	<mainSubspecies>true</mainSubspecies>
+	
+	<baseSlaveValue>10000</baseSlaveValue>
+	
+	<attributeItemId>Aurelia_race_Jackal_desert_ambrosia</attributeItemId>
+	
+	<transformativeItemId>Aurelia_race_Jackal_honeyed_bread</transformativeItemId>
+	
+	<subspeciesOverridePriority>0</subspeciesOverridePriority>
+	
+	<shortStature>false</shortStature>
+	
+	<bipedalSubspecies>true</bipedalSubspecies>
+	
+	<aquatic>false</aquatic>
+	
+	<applySubspeciesChanges><![CDATA[
+	]]></applySubspeciesChanges>
+	
+	<subspeciesWeighting><![CDATA[
+		#IF(targetedRace==RACE_Aurelia_Jackal)
+			100
+		#ELSE
+			0
+		#ENDIF
+	]]></subspeciesWeighting>
+	
+	<iconName displaySize="80">icon</iconName>
+	
+	<backgroundName>background</backgroundName>
+	
+	<bookIconName>icon</bookIconName>
+	
+	<bookName>From Ancient Sands</bookName>
+	
+	<basicDescriptionId>JACKAL_BASIC</basicDescriptionId>
+	<advancedDescriptionId>JACKAL_ADVANCED</advancedDescriptionId>
+	
+	<defaultPreference>TWO_AVERAGE</defaultPreference>
+	
+	<name><![CDATA[jackal-morph]]></name>
+	<namePlural><![CDATA[jackal-morphs]]></namePlural>
+	<singularMaleName><![CDATA[jackal-boy]]></singularMaleName>
+	<singularFemaleName><![CDATA[jackal-girl]]></singularFemaleName>
+	<pluralMaleName><![CDATA[jackal-boys]]></pluralMaleName>
+	<pluralFemaleName><![CDATA[jackal-girls]]></pluralFemaleName>
+	
+	<description><![CDATA[A jackal, known as a 'jackal-morph' when bipedal, and a 'jackal-taur' when the lower body is that of a typically-oversized quadrupedal jackal.]]></description>
+	
+	<nameHalfDemon><![CDATA[anubian jackal]]></nameHalfDemon>
+	<namePluralHalfDemon><![CDATA[anubian jackals]]></namePluralHalfDemon>
+	<singularMaleNameHalfDemon><![CDATA[anubian jackal]]></singularMaleNameHalfDemon>
+	<singularFemaleNameHalfDemon><![CDATA[anubian jackal]]></singularFemaleNameHalfDemon>
+	<pluralMaleNameHalfDemon><![CDATA[anubian jackals]]></pluralMaleNameHalfDemon>
+	<pluralFemaleNameHalfDemon><![CDATA[anubian jackals]]></pluralFemaleNameHalfDemon>
+	
+	<feralAttributes>
+		<feralName><![CDATA[jackal]]></feralName>
+		<feralNamePlural><![CDATA[jackals]]></feralNamePlural>
+		<feralSingularMaleName><![CDATA[jackal]]></feralSingularMaleName>
+		<feralSingularFemaleName><![CDATA[jackal]]></feralSingularFemaleName>
+		<feralPluralMaleName><![CDATA[jackals]]></feralPluralMaleName>
+		<feralPluralFemaleName><![CDATA[jackals]]></feralPluralFemaleName>
+		
+		<legConfiguration>QUADRUPEDAL</legConfiguration>
+		<sizeHeight>true</sizeHeight>
+		<size>90</size>
+		
+		<breastRowCount>0</breastRowCount>
+		<nipplesPerBreastCount>1</nipplesPerBreastCount>
+		<crotchBreastRowCount>1</crotchBreastRowCount>
+		<nipplesPerCrotchBreastCount>1</nipplesPerCrotchBreastCount>
+		
+		<armsOrWingsPresent>false</armsOrWingsPresent>
+		<fingerActionsAvailable>false</fingerActionsAvailable>
+		<hairPresent>true</hairPresent>
+	</feralAttributes>
+	
+	<statusEffectDescription><![CDATA[
+		[npc.NamePos] jackal-like body is very attractive, and [npc.she] [npc.has] a strong desire to force [npc.herHis] partners and foes to submit to [npc.herHim].
+	]]></statusEffectDescription>
+	
+	<statusEffectAttributeModifiers>
+		<attribute value="15">MAJOR_PHYSIQUE</attribute>
+		<attribute value="15">MAJOR_ARCANE</attribute>
+		<attribute value="30">MAJOR_CORRUPTION</attribute>
+		<attribute value="30">LUST</attribute>
+	</statusEffectAttributeModifiers>
+	
+	<extraEffects/>
+	
+	<perkWeightings>
+		<category masculineWeighting="5" feminineWeighting="0">PHYSICAL</category>
+		<category masculineWeighting="10" feminineWeighting="10">LUST</category>
+		<category masculineWeighting="0" feminineWeighting="5">ARCANE</category>
+	</perkWeightings>
+	
+	<regionLocations>
+		<region rarity="FOUR_COMMON">DOMINION</region>
+	</regionLocations>
+	
+	<worldLocations>
+		<world rarity="FOUR_COMMON">NIGHTLIFE_CLUB</world>
+	</worldLocations>
+	
+	<flags/>
+	
+</subspecies>

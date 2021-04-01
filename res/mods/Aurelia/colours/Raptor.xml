@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<colour>
+	<metallic>false</metallic>
+	
+	<name><![CDATA[Lime Green]]></name>
+	
+	<colour>32cd32</colour>
+
+	<lightColour>32cd32</lightColour>
+
+	<coveringIconColour>32cd32</coveringIconColour>
+	
+	<formattingNames>
+		<name><![CDATA[raptorLime]]></name>
+		<name><![CDATA[raptorLimeGreen]]></name>
+	</formattingNames>
+	
+	<tags>
+	</tags>
+	
+</colour>

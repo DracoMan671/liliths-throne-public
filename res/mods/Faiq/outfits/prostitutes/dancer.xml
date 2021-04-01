@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!-- Outfits are a way to make randomly-generated NPCs' outfit generation less chaotic. -->
+<outfit>
+
+	<coreAttributes>
+		<name><![CDATA[Sky Dancer's Costume]]></name>
+
+		<description><![CDATA[A costume that is commonly used for Skydancers, wearing it will give you parts of their power]]></description>
+		
+		<femininity>FEMININE</femininity>
+		
+		<!-- The worlds in which this outfit may be used for randomly generated characters. You can leave this empty, or delete the element entirely, if you do not want this outfit to be restricted based on WorldType (so it can be used anywhere). Values can be found here: https://github.com/Innoxia/liliths-throne-public/blob/master/src/com/lilithsthrone/world/WorldType.java -->
+		<worldTypes/>
+
+		<outfitTypes>
+		  <type>PROSITUTE</type>
+		</outfitTypes>
+		
+		<acceptableLegConfigurations>
+			<legConfiguration>BIPEDAL</legConfiguration>
+		</acceptableLegConfigurations>
+
+		<conditional><![CDATA[npc.hasFetish(FETISH_MASTURBATION)]]></conditional>
+		
+		<weight>69</weight>
+	</coreAttributes>
+	
+	<generationAttributes>
+		
+		<cond1 constant="true"><![CDATA[RND.nextInt(100)<=50]]></cond1>
+		<cond2 constant="true"><![CDATA[RND.nextInt(100)<=75]]></cond2>
+		
+		
+		<presetColourGroup1 singleColour="true"> <!-- The optional "singleColour" attribute, when set to true, means that this group will always return the same, randomly chosen colour from this list. -->
+			<randomColour>CLOTHING_PINK</randomColour>
+			<randomColour>CLOTHING_PINK_LIGHT</randomColour>
+			<randomColour>CLOTHING_RED</randomColour>
+			<randomColour>CLOTHING_WHITE</randomColour>
+		</presetColourGroup1>
+		
+		<presetColourGroup2>
+			<randomColour>CLOTHING_ROSE_GOLD</randomColour>
+			<randomColour>CLOTHING_GOLD</randomColour>
+			<randomColour>CLOTHING_SILVER</randomColour>
+			<randomColour>presetColourGroup1</randomColour>
+		</presetColourGroup2>
+
+		
+		<!-- Weapons can be added in a similar (although more limited) manner to clothing. This file doesn't use any weapons. Look at res/outfits/innoxia/genericMugger/dominion_masculine.xml for a weapon example. -->
+		<mainWeapons/>
+		
+		<offhandWeapons/>
+		
+		<guaranteedClothingEquips>
+			<uniqueClothing>
+				<clothing colour="CLOTHING_PINK" colourSecondary="CLOTHING_WHITE" colourTertiary="CLOTHING_ROSE_GOLD" enchantmentKnown="true" id="Faiq_skydancer_ribbon" isDirty="false" name="Sky Dancer's Twin Ribbons" pattern="none" patternColour="CLOTHING_BLACK" patternColourSecondary="CLOTHING_BLACK" patternColourTertiary="CLOTHING_BLACK">
+		<effects>
+              <effect limit="0" mod1="CLOTHING_ATTRIBUTE" mod2="SPELL_COST_MODIFIER" potency="MAJOR_BOOST" timer="780" type="CLOTHING"/>
+              <effect limit="0" mod1="CLOTHING_ATTRIBUTE" mod2="SPELL_COST_MODIFIER" potency="MAJOR_BOOST" timer="780" type="CLOTHING"/>
+              <effect limit="0" mod1="CLOTHING_ATTRIBUTE" mod2="RESISTANCE_FIRE" potency="MAJOR_BOOST" timer="780" type="CLOTHING"/>
+              <effect limit="0" mod1="CLOTHING_ATTRIBUTE" mod2="RESISTANCE_ICE" potency="MAJOR_BOOST" timer="780" type="CLOTHING"/>
+              <effect limit="0" mod1="CLOTHING_ATTRIBUTE" mod2="RESISTANCE_POISON" potency="MAJOR_BOOST" timer="780" type="CLOTHING"/>
+            	</effects>
+					<displacedList/>
+				</clothing>
+			</uniqueClothing>
+			
+			<uniqueClothing>
+				<clothing colour="CLOTHING_PINK" colourSecondary="CLOTHING_WHITE" colourTertiary="CLOTHING_ROSE_GOLD" enchantmentKnown="true" id="Faiq_skydancer_gloves" isDirty="false" name="Sky Dancer's Gloves" pattern="none" patternColour="CLOTHING_BLACK" patternColourSecondary="CLOTHING_BLACK" patternColourTertiary="CLOTHING_BLACK">
+            <effects>
+              <effect limit="0" mod1="CLOTHING_ATTRIBUTE" mod2="RESISTANCE_FIRE" potency="MAJOR_BOOST" timer="780" type="CLOTHING"/>
+              <effect limit="0" mod1="CLOTHING_ATTRIBUTE" mod2="RESISTANCE_ICE" potency="MAJOR_BOOST" timer="780" type="CLOTHING"/>
+              <effect limit="0" mod1="CLOTHING_ATTRIBUTE" mod2="RESISTANCE_POISON" potency="MAJOR_BOOST" timer="780" type="CLOTHING"/>
+            </effects>
+					<displacedList/>
+				</clothing>
+			</uniqueClothing>
+			
+			<uniqueClothing>
+				<clothing colour="CLOTHING_PINK" colourSecondary="CLOTHING_WHITE" colourTertiary="CLOTHING_ROSE_GOLD" enchantmentKnown="true" id="Faiq_skydancer_feather" isDirty="false" name="Sky Dancer's Wing" pattern="none" patternColour="CLOTHING_BLACK" patternColourSecondary="CLOTHING_BLACK" patternColourTertiary="CLOTHING_BLACK">
+            <effects>
+              <effect limit="0" mod1="CLOTHING_ATTRIBUTE" mod2="DAMAGE_LUST" potency="MAJOR_BOOST" timer="0" type="CLOTHING"/>
+              <effect limit="0" mod1="CLOTHING_ATTRIBUTE" mod2="RESISTANCE_FIRE" potency="MAJOR_BOOST" timer="0" type="CLOTHING"/>
+              <effect limit="0" mod1="CLOTHING_ATTRIBUTE" mod2="RESISTANCE_ICE" potency="MAJOR_BOOST" timer="0" type="CLOTHING"/>
+              <effect limit="0" mod1="CLOTHING_ATTRIBUTE" mod2="RESISTANCE_POISON" potency="MAJOR_BOOST" timer="0" type="CLOTHING"/>
+            </effects>
+					<displacedList/>
+				</clothing>
+			</uniqueClothing>
+
+			<uniqueClothing>
+				<clothing colour="CLOTHING_PINK" colourSecondary="CLOTHING_WHITE" colourTertiary="CLOTHING_ROSE_GOLD" enchantmentKnown="true" id="Faiq_skydancer_main" isDirty="false" name="Sky Dancer's String" pattern="none" patternColour="CLOTHING_BLACK" patternColourSecondary="CLOTHING_BLACK" patternColourTertiary="CLOTHING_BLACK">
+            <effects>
+              <effect limit="0" mod1="CLOTHING_ATTRIBUTE" mod2="DAMAGE_LUST" potency="MAJOR_BOOST" timer="0" type="CLOTHING"/>
+              <effect limit="0" mod1="CLOTHING_ATTRIBUTE" mod2="DAMAGE_LUST" potency="MAJOR_BOOST" timer="0" type="CLOTHING"/>
+              <effect limit="0" mod1="CLOTHING_ATTRIBUTE" mod2="DAMAGE_LUST" potency="MAJOR_BOOST" timer="0" type="CLOTHING"/>
+              <effect limit="0" mod1="TF_MOD_FETISH_BEHAVIOUR" mod2="TF_MOD_FETISH_EXHIBITIONIST" potency="MAJOR_BOOST" timer="0" type="CLOTHING"/>
+              <effect limit="0" mod1="TF_MOD_FETISH_BEHAVIOUR" mod2="TF_MOD_FETISH_MASTURBATION" potency="MAJOR_BOOST" timer="0" type="CLOTHING"/>
+            </effects>
+					<displacedList/>
+				</clothing>
+			</uniqueClothing>
+
+			<uniqueClothing>
+				<clothing colour="CLOTHING_PINK" colourSecondary="CLOTHING_WHITE" colourTertiary="CLOTHING_ROSE_GOLD" enchantmentKnown="true" id="Faiq_skydancer_shoes" isDirty="false" name="Sky Dancer's Footwears" pattern="none" patternColour="CLOTHING_BLACK" patternColourSecondary="CLOTHING_BLACK" patternColourTertiary="CLOTHING_BLACK">
+            <effects>
+              <effect limit="0" mod1="CLOTHING_MAJOR_ATTRIBUTE" mod2="INTELLIGENCE" potency="MAJOR_BOOST" timer="780" type="CLOTHING"/>
+              <effect limit="0" mod1="CLOTHING_MAJOR_ATTRIBUTE" mod2="INTELLIGENCE" potency="MAJOR_BOOST" timer="780" type="CLOTHING"/>
+            </effects>
+					<displacedList/>
+				</clothing>
+			</uniqueClothing>
+
+			<uniqueClothing>
+				<clothing colour="CLOTHING_PINK" colourSecondary="CLOTHING_WHITE" colourTertiary="CLOTHING_ROSE_GOLD" enchantmentKnown="true" id="Faiq_skydancer_bra" isDirty="false" name="Sky Dancer's Bra" pattern="none" patternColour="CLOTHING_BLACK" patternColourSecondary="CLOTHING_BLACK" patternColourTertiary="CLOTHING_BLACK">
+            <effects>
+              <effect limit="0" mod1="CLOTHING_ATTRIBUTE" mod2="DAMAGE_LUST" potency="MAJOR_BOOST" timer="780" type="CLOTHING"/>
+              <effect limit="0" mod1="CLOTHING_ATTRIBUTE" mod2="RESISTANCE_LUST" potency="MAJOR_BOOST" timer="780" type="CLOTHING"/>
+              <effect limit="0" mod1="CLOTHING_ATTRIBUTE" mod2="RESISTANCE_FIRE" potency="MAJOR_BOOST" timer="780" type="CLOTHING"/>
+              <effect limit="0" mod1="CLOTHING_ATTRIBUTE" mod2="RESISTANCE_ICE" potency="MAJOR_BOOST" timer="780" type="CLOTHING"/>
+              <effect limit="0" mod1="CLOTHING_ATTRIBUTE" mod2="RESISTANCE_POISON" potency="MAJOR_BOOST" timer="780" type="CLOTHING"/>
+            </effects>
+					<displacedList/>
+				</clothing>
+			</uniqueClothing>
+		</guaranteedClothingEquips>
+		
+		
+		<!-- "genericClothingType" elements automatically populate the possible clothing lists with all clothing in the game that satisfies the conditionals.-->
+		<genericClothingType>
+			<itemTags/>
+
+			<acceptableFemininities>
+				<femininity>FEMININE</femininity>
+			</acceptableFemininities>
+
+			<slot/>
+
+			<rarity/>
+
+			<conditional/>
+
+			<primaryColours>
+				<colour>presetColourGroup2</colour>
+			</primaryColours>
+			<secondaryColours/>
+			<tertiaryColours/>
+			
+		</genericClothingType>
+		
+		<genericClothingType> <!-- Generic jewellery. This should probably be used in all outfits, unless you want to manually define your own jewellery. -->
+			<itemTags/>
+			<acceptableFemininities>
+				<femininity>FEMININE</femininity>
+				<femininity>ANDROGYNOUS</femininity>
+			</acceptableFemininities>
+			<slot/>
+			<rarity>COMMON</rarity>
+			<conditional><![CDATA[clothing.getSlot().isJewellery() && (RND.nextInt(100)<=25 || clothing.getSlot()==IS_PIERCING_EAR)]]></conditional> <!-- 25% chance for every item of jewellery to be added, unless it's earrings, then 100%. These items are skipped over if the the related slot is not pierced. -->
+			<primaryColours>
+				<colour>presetColourGroup2</colour>
+			</primaryColours>
+			<secondaryColours/>
+			<tertiaryColours/>
+		</genericClothingType>
+		
+		
+		<clothingType>
+			<conditional><![CDATA[npc.hasBreasts()]]></conditional>
+			<types>
+				<type>CHEST_PLUNGE_BRA</type>
+				<type>CHEST_LACY_PLUNGE_BRA</type>
+				<type>CHEST_FULLCUP_BRA</type>
+			</types>
+			<primaryColours values="LINGERIE"/> <!-- The optional attribute "values" can be used as a pre-set colour list instead of defining individual colours. Accepted values can be found here: https://github.com/Innoxia/liliths-throne-public/blob/dev/src/com/lilithsthrone/utils/colours/ColourListPresets.java -->
+			<secondaryColours/>
+			<tertiaryColours/>
+		</clothingType>
+		
+		<clothingType>
+			<conditional><![CDATA[npc.getFemininityValue()<75]]></conditional>
+			<types>
+				<type>FOOT_HEELS</type>
+			</types>
+			<primaryColours>
+				<colour>presetColourGroup2</colour>
+			</primaryColours>
+			<secondaryColours/>
+			<tertiaryColours/>
+		</clothingType>
+		
+		<clothingType>
+			<conditional><![CDATA[npc.getFemininityValue()>=75]]></conditional>
+			<types>
+				<type>FOOT_STILETTO_HEELS</type>
+			</types>
+			<primaryColours>
+				<colour>presetColourGroup2</colour>
+			</primaryColours>
+			<secondaryColours/>
+			<tertiaryColours/>
+		</clothingType>
+		
+		<clothingType>
+			<conditional><![CDATA[cond1]]></conditional>
+			<types>
+				<type>FINGER_RING</type>
+			</types>
+			<primaryColours>
+				<colour>presetColourGroup2</colour>
+			</primaryColours>
+			<secondaryColours/>
+			<tertiaryColours/>
+		</clothingType>
+		
+		<clothingType>
+			<conditional><![CDATA[!cond1 || cond2]]></conditional>
+			<types>
+				<type>NECK_HEART_NECKLACE</type>
+			</types>
+			<primaryColours>
+				<colour>presetColourGroup2</colour>
+			</primaryColours>
+			<secondaryColours/>
+			<tertiaryColours/>
+		</clothingType>
+		
+		<clothingType>
+			<conditional/>
+			<types>
+				<type>WRIST_WOMENS_WATCH</type>
+			</types>
+			<primaryColours>
+				<colour>CLOTHING_PINK_LIGHT</colour>
+				<colour>CLOTHING_PINK</colour>
+			</primaryColours>
+			<secondaryColours/>
+			<tertiaryColours/>
+		</clothingType>
+		
+		<!-- Both "genericClothingType"s and "clothingType"s are shuffled together before being run through and worn, so if two items have the same slot, such as these two headbands, then it's random as to which is worn. -->
+		
+		<clothingType>
+			<conditional><![CDATA[npc.getHairRawLengthValue()>12]]></conditional>
+			<types>
+				<type>HEAD_HEADBAND_BOW</type>
+				<type>HEAD_HEADBAND</type>
+			</types>
+			<primaryColours>
+				<colour>CLOTHING_BLACK</colour>
+				<colour>CLOTHING_WHITE</colour>
+			</primaryColours>
+			<secondaryColours/>
+			<tertiaryColours>
+				<colour>CLOTHING_PINK_LIGHT</colour>
+				<colour>CLOTHING_RED</colour>
+			</tertiaryColours>
+		</clothingType>
+		
+	</generationAttributes>
+	
+</outfit>

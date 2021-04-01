@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ear>
+	<race>poke_chu</race>
+	<transformationName><![CDATA[Pikachu]]></transformationName>
+	<coveringType>poke_chu_fur</coveringType>
+	<!-- EAR_HANDLES_IN_SEX, ECHO_LOCATION -->
+	<tags/>
+	<!--
+	<tags>
+		<tag>EAR_HANDLES_IN_SEX</tag>
+	</tags>
+	-->
+	<name><![CDATA[ear]]></name>
+	<namePlural><![CDATA[ears]]></namePlural>
+	<descriptorsMasculine>
+		<descriptor>furry</descriptor>
+		<descriptor>mouse-like</descriptor>
+		<descriptor>pointy</descriptor>
+	</descriptorsMasculine>
+	<descriptorsFeminine>
+		<descriptor>feminine</descriptor>
+		<descriptor>furry</descriptor>
+		<descriptor>mouse-like</descriptor>
+		<descriptor>pointy</descriptor>
+	</descriptorsFeminine>
+	<transformationDescription><![CDATA[
+		They quickly begin to grow larger and shift to sit higher up on [npc.her] head than a normal pair of human ears would.
+		#IF(npc.getBodyMaterial()==BODY_MATERIAL_FLESH)
+		 A layer of [npc.earFullDescriptionColour] quickly grows to cover them,
+		#ELSE
+		 Just like the rest of [npc.her] body, they're made out of [npc.earFullDescription],
+		#ENDIF
+		 and as the transformation finishes, [npc.she] experimentally [npc.verb(twitch)] [npc.her] new rodent-like ears back and forth.
+		<br/>[npc.Name] now [npc.has] adorable Pikachu ears, which are [npc.materialCompositionDescriptor] [npc.earFullDescription].
+	]]></transformationDescription>
+	<bodyDescription><![CDATA[
+		[npc.She] [npc.has] a pair of adorable,#IF(npc.isPiercedEar()) pierced,#ENDIF Pikachu ears, which are positioned high up on [npc.her] head and are [npc.materialCompositionDescriptor] [npc.earFullDescription(true)].
+	]]></bodyDescription>
+	
+</ear>

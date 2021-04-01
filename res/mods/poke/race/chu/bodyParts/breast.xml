@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<breast>
+	<race>poke_chu</race>
+	<transformationName><![CDATA[Pikachu-line]]></transformationName>
+	<coveringType>poke_chu_fur</coveringType>
+	<nippleType>poke_chu_nipple</nippleType>
+	<fluidType>poke_chu_milk</fluidType>
+	<!-- Naming:
+	<names>
+		<name><![CDATA[breast]]></name>
+		<name><![CDATA[boob]]></name>
+		<name><![CDATA[tit]]></name>
+	</names>
+	-->
+	<names/>
+	<namesPlural/>
+	<descriptors/>
+	<namesFlat/>
+	<namesPluralFlat/>
+	<descriptorsFlat/>
+	<!-- Chest-located breasts: -->
+	<transformationDescription><![CDATA[
+		[npc.She] now [npc.has] Raichu/Pikachu, [npc.nipplesFullDescription], and when lactating, [npc.she] will produce that Mouse Pokémon's milk.
+	]]></transformationDescription>
+	<bodyDescription><![CDATA[
+		On each of [npc.her] [npc.breastSize] [npc.breasts], [npc.she] [npc.has] [npc.nipplesPerBreast] Raichu/Pikachu, [npc.nipplesFullDescription].
+	]]></bodyDescription>
+	<crotchBoobsTransformationDescription><![CDATA[
+		[npc.She] now [npc.has] Raichu/Pikachu, [npc.crotchNipplesFullDescription], and when lactating, [npc.she] will produce that Mouse Pokémon's milk.
+	]]></crotchBoobsTransformationDescription>
+	<crotchBoobsBodyDescription><![CDATA[
+		On each of [npc.her] [npc.crotchBoobSize] [npc.crotchBoobs], [npc.she] [npc.has] [npc.crotchNipplesPerBreast] Raichu/Pikachu, [npc.crotchNipplesFullDescription].
+	]]></crotchBoobsBodyDescription>
+</breast>

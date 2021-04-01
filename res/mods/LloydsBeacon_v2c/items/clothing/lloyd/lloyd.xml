@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<clothing>
+	<coreAtributes>
+		<value>30000</value>
+		<determiner><![CDATA[]]></determiner>
+		<name><![CDATA[Lloyd's Beacon]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Lloyd's Beacons]]></namePlural>
+		<description><![CDATA[
+#IF pc.getHomeWorldLocation().toString() == 'MUSEUM'
+#THEN
+A strange artifact. Who knows what it does?<br>Well, only one way to find out!<br><br>The name "χρϡ" is engraved on the handle.
+#ELSEIF pc.getWorldLocation().getTeleportPermissions() == 'NONE'
+#THEN
+The artifact doesn't seem to respond to your aura at the moment...
+#ELSEIF pc.getWorldLocation().getTeleportPermissions() == 'INCOMING_ONLY'
+#THEN
+This intricate magical device grants the user the ability to return to a set location.<br><br>It seems to render itself inert when you're not holding it, concealing its nature as an illegal artifact.
+#ELSEIF pc.getHomeWorldLocation().toString() != 'MUSEUM'
+#THEN
+This intricate magical device grants the user the ability to return to a set location.<br><br>It seems to render itself inert when you're not holding it, concealing its nature as an illegal artifact.
+#ELSE
+This intricate magical device grants the user the ability to return to a set location.<br><br>It seems to render itself inert when you're not holding it, concealing its nature as an illegal artifact.
+#ENDIF]]></description>
+
+
+<authorTag><![CDATA[
+#IF pc.getWorldLocation().getTeleportPermissions() == 'NONE'
+#THEN
+
+#ELSEIF pc.getHomeWorldLocation().toString() == 'MUSEUM'
+#THEN
+
+#ELSE
+'<span style='color:#9edfdf;'><b>[#pc.getHomeWorldLocation().toString()]</b></span>'
+#ENDIF]]></authorTag>
+		<physicalResistance>0</physicalResistance>
+		<femininity>ANDROGYNOUS</femininity>
+	<equipSlots>
+		<slot>WRIST</slot>
+		<slot>HAND</slot>
+	</equipSlots>
+		<rarity>EPIC</rarity>
+		<clothingSet/>
+		<imageName>lloydsbeacon.svg</imageName>
+		<imageEquippedName slot="WRIST">lloydsbeacon.svg</imageEquippedName>
+		<imageEquippedName slot="HAND">lloydsbeacon.svg</imageEquippedName>
+		<enchantmentLimit>0</enchantmentLimit>
+    <effects>
+	</effects>
+		<blockedPartsList slot="WRIST"> 
+			<blockedParts>
+				<displacementType>REMOVE_OR_EQUIP</displacementType>
+				<clothingAccessRequired />
+				<blockedBodyParts>
+				</blockedBodyParts>
+				<clothingAccessBlocked>
+				</clothingAccessBlocked>
+				<concealedSlots>
+				</concealedSlots>
+			</blockedParts>
+    </blockedPartsList>
+		<blockedPartsList slot="HAND"> 
+			<blockedParts>
+				<displacementType>REMOVE_OR_EQUIP</displacementType>
+				<clothingAccessRequired />
+				<blockedBodyParts>
+				</blockedBodyParts>
+				<clothingAccessBlocked>
+				</clothingAccessBlocked>
+				<concealedSlots>
+				</concealedSlots>
+			</blockedParts>
+    </blockedPartsList>
+    <incompatibleSlots slot="WRIST"/>
+    <incompatibleSlots slot="HAND"/>
+		<primaryColours values="JUST_BLACK"/> 
+		<primaryColoursDye values="JUST_BLACK"/>
+		<secondaryColours values="JUST_BLACK"/>
+		<secondaryColoursDye values="JUST_BLACK"/>
+		<tertiaryColours values="JUST_BLACK"/>
+		<tertiaryColoursDye values="JUST_BLACK"/>
+		<itemTags> 
+			<tag>SOLD_BY_VICKY</tag>
+		</itemTags>
+	</coreAtributes>
+ <replacementText slot="WRIST" type="REMOVE_OR_EQUIP">
+    <self>
+      <![CDATA[
+You activate the artifact...<br>
+#IF pc.isAtHome()
+#THEN
+Nothing seems to happen...<br>
+
+#ELSEIF pc.getWorldLocation().getTeleportPermissions() == 'NONE'
+#THEN
+Nothing seems to happen...
+
+#ELSEIF pc.getWorldLocation().getTeleportPermissions() == 'OUTGOING_ONLY'
+#THEN
+Nothing seems to happen...
+
+#ELSE [##pc.setHomeLocation()]
+The beacon has been set at your current location.<br>
+#ENDIF
+		]]>
+    </self>
+    <playerNPC>
+      <![CDATA[ TODO ]]>
+    </playerNPC>
+    <playerNPCRough>
+      <![CDATA[ TODO ]]>
+    </playerNPCRough>
+    <NPCSelf>
+      <![CDATA[ TODO ]]>
+    </NPCSelf>
+    <NPCPlayer>
+      <![CDATA[ TODO ]]>
+    </NPCPlayer>
+    <NPCPlayerRough>
+      <![CDATA[ TODO ]]>
+    </NPCPlayerRough>
+    <NPCOtherNPC>
+      <![CDATA[ TODO ]]>
+    </NPCOtherNPC>
+    <NPCOtherNPCRough>
+      <![CDATA[ TODO ]]>
+    </NPCOtherNPCRough>
+  </replacementText>
+
+  <replacementText slot="HAND" type="REMOVE_OR_EQUIP">
+    <self>
+	      <![CDATA[
+You activate the artifact...<br>
+
+#IF pc.getHomeWorldLocation().toString() == 'MUSEUM'
+#THEN
+Nothing <i>seems</i> to happen...<br>
+<br><br>
+Glowing, cyan lettering is projected into the air, which reads:<br>
+<span style='color:#9edfdf;'><i>Remove from the hands to return.</i></span><br>
+<span style='color:#9edfdf;'><i>Remove from the wrist to set the beacon.</i></span>
+#ELSEIF pc.getWorldLocation().getTeleportPermissions()=='NONE'
+#THEN
+Nothing happens...
+#ELSEIF pc.getWorldLocation().getTeleportPermissions()=='INCOMING_ONLY'
+#THEN
+The world fades to black for a brief moment, and you feel yourself being pulled back by some strange, powerful force...<br>
+You find yourself standing where you were before using the artifact.
+#ELSE
+[##pc.returnToHome()]<br>
+The world fades to black for a brief moment...<br>
+#ENDIF
+		]]>	
+    </self>
+    <playerNPC>
+      <![CDATA[ TODO ]]>
+    </playerNPC>
+    <playerNPCRough>
+      <![CDATA[ TODO ]]>
+    </playerNPCRough>
+    <NPCSelf>
+      <![CDATA[ TODO ]]>
+    </NPCSelf>
+    <NPCPlayer>
+      <![CDATA[ TODO ]]>
+    </NPCPlayer>
+    <NPCPlayerRough>
+      <![CDATA[ TODO ]]>
+    </NPCPlayerRough>
+    <NPCOtherNPC>
+      <![CDATA[ TODO ]]>
+    </NPCOtherNPC>
+    <NPCOtherNPCRough>
+      <![CDATA[ TODO ]]>
+    </NPCOtherNPCRough>
+  </replacementText>
+  
+</clothing>

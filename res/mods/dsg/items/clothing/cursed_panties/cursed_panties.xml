@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- For a version without all of the comments, see "rental_daddy.xml". -->
+<clothing>
+	<coreAttributes>
+		<value>1</value> 
+		<determiner><![CDATA[a pair of]]></determiner>
+		<name><![CDATA[cursed panties]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[cursed panties]]></namePlural>
+		<description><![CDATA[A pair of expensive-looking panties. Don't let the name or suspiciously low value discourage you, there is nothing underhanded about them at all.]]></description>
+		<physicalResistance>0</physicalResistance>
+		<femininity>FEMININE</femininity>
+		<slot>GROIN</slot>
+		<rarity>UNCOMMON</rarity>
+		<clothingSet/> 
+		<imageName>cursed_panties.svg</imageName> 
+		<imageEquippedName/> 
+		<enchantmentLimit/>
+		<effects/>
+		
+		<blockedPartsList>
+			<blockedParts>
+				<displacementType>REMOVE_OR_EQUIP</displacementType> 
+				<clothingAccessRequired> 
+					<clothingAccess>LEGS_UP_TO_GROIN_LOW_LEVEL</clothingAccess>
+					<clothingAccess>LEGS_UP_TO_GROIN</clothingAccess>
+					<clothingAccess>GROIN</clothingAccess>
+				</clothingAccessRequired>
+				<blockedBodyParts/>
+				<clothingAccessBlocked/>
+				<concealedSlots/>
+			</blockedParts>
+			
+			<blockedParts>
+				<displacementType>SHIFTS_ASIDE</displacementType> 
+				<clothingAccessRequired> 
+					<clothingAccess>GROIN</clothingAccess>
+				</clothingAccessRequired>
+				<blockedBodyParts>
+					<bodyPart>ANUS</bodyPart>
+					<bodyPart>PENIS</bodyPart>
+					<bodyPart>VAGINA</bodyPart>
+				</blockedBodyParts>
+				<clothingAccessBlocked/>
+				<concealedSlots values="CONCEALED_GENITALS"/>
+			</blockedParts>
+		</blockedPartsList>
+		
+		<incompatibleSlots/> 
+		
+		<primaryColours>
+			<colour>CLOTHING_PINK</colour>
+		</primaryColours>
+		<primaryColoursDye values="ALL"/>
+		<secondaryColours/>
+		<secondaryColoursDye/>
+		<tertiaryColours/>
+		<tertiaryColoursDye/>
+		
+		<itemTags> 
+			<tag>DOMINION_ALLEYWAY_SPAWN</tag>
+			<tag>SOLD_BY_FINCH</tag>
+		</itemTags>
+
+		<replacementText type="REMOVE_OR_EQUIP">
+			<self>
+				<![CDATA[[npc.Name] [npc.verb(pull)] the panties up to [npc.her] groin.
+				#IF (!npc.hasStatusEffect(SE_dsg_cursed_panties))
+				#THEN [##npc.addStatusEffect(SE_dsg_cursed_panties, 31)]<br/>[npc.Name] [npc.verb(feel)] a [style.boldBad(strange warmth)]...
+				#ENDIF
+				]]>
+			</self>
+			<other>
+				<![CDATA[[npc.Name] [npc.verb(pull)] the panties up to [npc2.namePos] groin.
+				#IF (!npc2.hasStatusEffect(SE_dsg_cursed_panties))
+				#THEN [##npc2.addStatusEffect(SE_dsg_cursed_panties, 31)]<br/>[npc2.Name] [npc2.verb(feel)] a [style.boldBad(strange warmth)]...
+				#ENDIF				
+				]]>
+			</other>
+			<otherRough>
+				<![CDATA[[npc.Name] [npc.verb(pull)] the panties up to [npc2.namePos] groin so hard it practically gives [npc2.her] a wedgie.
+				#IF (!npc2.hasStatusEffect(SE_dsg_cursed_panties))
+				#THEN [##npc2.addStatusEffect(SE_dsg_cursed_panties, 31)]<br/>[npc2.Name] [npc2.verb(feel)] a [style.boldBad(strange warmth)]...
+				#ENDIF
+				]]>
+			</otherRough>
+		</replacementText>
+		
+		<displacementText type="REMOVE_OR_EQUIP">
+			<self>
+				<![CDATA[[npc.Name] [npc.verb(pull)] [npc.her] panties down and [npc.verb(slides)] them from [npc.her] legs.
+				#IF (npc.getLevel() >= 50)
+				#THEN [##npc.removeStatusEffect(SE_dsg_cursed_panties)]<br/>[npc.Name] no longer [npc.verb(feel)] the strange warmth. It seems [npc.name] [npc.was] [style.boldGood(strong enough)] to break the curse.
+				#ELSE <br/>Although [npc.name] [npc.verb(take)] off the panties, the [style.boldBad(the strange warmth persists)]!
+				#ENDIF
+				]]>
+			</self>
+			<other>
+				<![CDATA[[npc.Name] [npc.verb(pull)] [npc2.namePos] panties down and [npc.verb(slides)] them from [npc2.her] legs.
+				#IF (npc2.getLevel() >= 50)
+				#THEN [##npc2.removeStatusEffect(SE_dsg_cursed_panties)]<br/>[npc2.Name] no longer [npc2.verb(feel)] the strange warmth. It seems [npc2.name] [npc2.was] [style.boldGood(strong enough)] to break the curse.
+				#ELSE [##npc2.equipClothingFromNowhere(CT_dsg_cursed_panties_cursed_panties, true, npc2)]<br/>The instant that the panties are no longer in contact with [npc2.name], they vanish and [style.boldBad(rematerialize)] around [npc2.her] groin!
+				#ENDIF
+				]]>
+			</other>
+			<otherRough>
+				<![CDATA[[npc.Name] [npc.verb(rip)] off [npc2.namePos] panties.
+				#IF (npc2.getLevel() >= 50)
+				#THEN [##npc2.removeStatusEffect(SE_dsg_cursed_panties)]<br/>[npc2.Name] no longer [npc2.verb(feel)] the strange warmth. It seems [npc2.name] [npc2.was] [style.boldGood(strong enough)] to break the curse.
+				#ELSE [##npc2.equipClothingFromNowhere(CT_dsg_cursed_panties_cursed_panties, true, npc2)]<br/>The instant that the panties are no longer in contact with [npc2.name], they vanish and [style.boldBad(rematerialize)] around [npc2.her] groin!
+				#ENDIF
+				]]>
+			</otherRough>
+		</displacementText>
+
+		<replacementText type="SHIFTS_ASIDE">
+			<self>
+				<![CDATA[[npc.Name] [npc.verb(shift)] [npc.her] panties back into place, covering [npc.her] groin.]]>
+			</self>
+			<other>
+				<![CDATA[[npc.Name] [npc.verb(shift)] [npc2.namePos] panties back into place, covering [npc2.her] groin.]]>
+			</other>
+			<otherRough>
+				<![CDATA[[npc.Name] [npc.verb(snap)] [npc2.namePos] panties back into place, covering [npc2.her] groin.]]>
+			</otherRough>
+		</replacementText>
+
+		<displacementText type="SHIFTS_ASIDE">
+			<self>
+				<![CDATA[[npc.Name] [npc.verb(shift)] [npc.her] panties aside, exposing [npc.her] groin.]]>
+			</self>
+			<other>
+				<![CDATA[[npc.Name] [npc.verb(shift)] [npc2.namePos] panties aside, exposing [npc2.her] groin.]]>
+			</other>
+			<otherRough>
+				<![CDATA[[npc.Name] [npc.verb(yank)] [npc2.namePos] panties aside, exposing [npc2.her] groin.]]>
+			</otherRough>
+		</displacementText>
+		
+	</coreAttributes>
+</clothing>

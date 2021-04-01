@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<tongue>
+	<race>Aurelia_Sergal</race>
+
+	<coveringType>TONGUE</coveringType>
+	
+	<defaultLength>15</defaultLength>
+	
+	<name><![CDATA[tongue]]></name>
+	<namePlural><![CDATA[tongues]]></namePlural>
+	
+	<descriptorsMasculine>
+		<descriptor><![CDATA[sergal]]></descriptor>
+	</descriptorsMasculine>
+	<!-- Same as above, but for feminine characters. -->
+	<descriptorsFeminine>
+		<descriptor><![CDATA[sergal]]></descriptor>
+	</descriptorsFeminine>
+	
+	<bodyDescription><![CDATA[
+		[npc.Her] mouth holds [npc.a_tongueLength], [npc.tongueColour(true)], sergal [npc.tongue]#IF(npc.isPiercedTongue()), which has been pierced#ENDIF.
+	]]></bodyDescription>
+	
+	<defaultTongueModifiers>
+		<modifier>FLAT</modifier>
+	</defaultTongueModifiers>
+	
+</tongue>

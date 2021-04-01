@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- For a version with comments, see "rental_mommy.xml". -->
+<clothing>
+	<coreAtributes>
+		<value>900</value>
+		<determiner><![CDATA[an]]></determiner>
+		<name><![CDATA[earless cat mask]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[earless cat masks]]></namePlural>
+		<description><![CDATA[An earless cat mask, popular with vigilantes and feline worshippers who haves animal ears of their own.]]></description>
+		<physicalResistance>1</physicalResistance>
+		<femininity>ANDROGYNOUS</femininity>
+		<slot>HEAD</slot>
+		<rarity>UNCOMMON</rarity>
+		<clothingSet/>
+		<imageName>head_catmask_earless.svg</imageName>
+		<imageEquippedName/>
+		<enchantmentLimit/>
+		<effects>
+		</effects>
+		<blockedPartsList>
+			<blockedParts>
+				<displacementType>REMOVE_OR_EQUIP</displacementType>
+				<clothingAccessRequired>
+					<clothingAccess>EYES</clothingAccess>
+					<clothingAccess>HEAD</clothingAccess>
+				</clothingAccessRequired>
+				<blockedBodyParts/>
+				<clothingAccessBlocked/>
+				<concealedSlots/>
+			</blockedParts>
+			<blockedParts>
+				<displacementType>PULLS_UP</displacementType>
+				<clothingAccessRequired>
+					<clothingAccess>EYES</clothingAccess>
+				</clothingAccessRequired>
+				<blockedBodyParts/>
+				<clothingAccessBlocked/>
+				<concealedSlots>
+					<slot>EYES</slot>
+				</concealedSlots>
+			</blockedParts>
+		</blockedPartsList>
+		<incompatibleSlots/>
+		<primaryColours values="ALL_METAL"/>
+		<primaryColoursDye values="ALL"/>
+		<secondaryColours values="ALL_METAL"/>
+		<secondaryColoursDye values="ALL"/>
+		<tertiaryColours/>
+		<tertiaryColoursDye/>
+		<itemTags>
+			<tag>SOLD_BY_NYAN</tag>
+			<tag>DOMINION_ALLEYWAY_SPAWN</tag>
+			<tag>SUBMISSION_TUNNEL_SPAWN</tag>
+			<tag>BAT_CAVERNS_SPAWN</tag>
+		</itemTags>
+	</coreAtributes>
+
+	<displacementText type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[
+			You take off your mask.
+		]]></playerSelf>
+		<playerNPC><![CDATA[
+			You slide off [npc.name]'s mask.
+		]]></playerNPC>
+		<playerNPCRough><![CDATA[
+			You grab hold of [npc.name]'s mask and roughly pulls it off [npc.her].
+		]]></playerNPCRough>
+		<NPCSelf><![CDATA[
+			[npc.Name] takes [npc.her] mask off.
+		]]></NPCSelf>
+		<NPCPlayer><![CDATA[
+			[npc.Name] slips your mask off.
+		]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[
+			[npc.Name] grabs hold of your mask and roughly pulls it off.
+		]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[
+			[npc1.Name] takes [npc2.name]'s mask off.
+		]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[
+			[npc.Name] grabs hold of [npc2.name]'s mask and roughly pulls it off [npc2.her].
+		]]></NPCOtherNPCRough>
+	</displacementText>
+
+	<replacementText type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[
+			You slip on your mask.
+		]]></playerSelf>
+		<playerNPC><![CDATA[
+			You slip the mask onto [npc.her] face.
+		]]></playerNPC>
+		<playerNPCRough><![CDATA[
+			You hold [npc.name] still as you roughly push the mask onto [npc.her] face.
+		]]></playerNPCRough>
+		<NPCSelf><![CDATA[
+			[npc.Name] slips the mask on.
+		]]></NPCSelf>
+		<NPCPlayer><![CDATA[
+			[npc.Name] slips the mask onto your face.
+		]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[
+			[npc.Name] holds you still as [npc.she] roughly pushes the mask onto your face.
+		]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[
+			[npc1.Name] slips the mask onto [npc2.name]'s face.
+		]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[
+			[npc1.Name] holds [npc2.name] still as [npc1.she] roughly pushes the mask onto [npc2.her] face.
+		]]></NPCOtherNPCRough>
+	</replacementText>
+
+	<displacementText type="PULLS_UP">
+		<playerSelf><![CDATA[
+			You pull up your mask.
+		]]></playerSelf>
+		<playerNPC><![CDATA[
+			You slide up [npc.name]'s mask.
+		]]></playerNPC>
+		<playerNPCRough><![CDATA[
+			You grab hold of [npc.name]'s mask and roughly pull it up.
+		]]></playerNPCRough>
+		<NPCSelf><![CDATA[
+			[npc.Name] pulls [npc.her] mask up.
+		]]></NPCSelf>
+		<NPCPlayer><![CDATA[
+			[npc.Name] slips your mask up.
+		]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[
+			[npc.Name] grabs hold of your mask and roughly pulls it up.
+		]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[
+			[npc1.Name] pulls [npc2.name]'s mask up.
+		]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[
+			[npc.Name] grabs hold of [npc2.name]'s mask and roughly pulls it up.
+		]]></NPCOtherNPCRough>
+	</displacementText>
+
+	<replacementText type="PULLS_UP">
+		<playerSelf><![CDATA[
+			You pull down your mask.
+		]]></playerSelf>
+		<playerNPC><![CDATA[
+			You pull the mask down over [npc.her] face.
+		]]></playerNPC>
+		<playerNPCRough><![CDATA[
+			You hold [npc.name] still as you roughly pull the mask down over [npc.her] face.
+		]]></playerNPCRough>
+		<NPCSelf><![CDATA[
+			[npc.Name] pulls down [npc.Her] mask.
+		]]></NPCSelf>
+		<NPCPlayer><![CDATA[
+			[npc.Name] slips the mask down over your face.
+		]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[
+			[npc.Name] holds you still as [npc.she] roughly pulls the mask down over your face.
+		]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[
+			[npc1.Name] slips the mask down over [npc2.name]'s face.
+		]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[
+			[npc1.Name] holds [npc2.name] still as [npc1.she] roughly pulls the mask down over [npc2.her] face.
+		]]></NPCOtherNPCRough>
+	</replacementText>
+	
+</clothing>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<item>
+	<coreAttributes>
+		<value>25</value>
+		<determiner><![CDATA[a]]></determiner>
+		<name><![CDATA[Butterfly Nectar]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Butterfly Nectars]]></namePlural>
+		<description><![CDATA[A glass filled with a nectar that butterfly-morphs are quite fond off.]]></description>
+
+		<useDescriptor>drink</useDescriptor>
+
+		<sexUse>true</sexUse>
+		<combatUseAllies>true</combatUseAllies>
+		<combatUseEnemies>false</combatUseEnemies>
+		<consumedOnUse>true</consumedOnUse>
+
+		<rarity>RARE</rarity>
+
+		<imageName zLayer="0" imageRotation="0" imageSize="100">background_bottom.svg</imageName>
+		<imageName zLayer="1" imageRotation="0" imageSize="60" target1='stroke="#000"' replacement1='stroke="#ff5555"' target2='#ff8080' replacement2='#ff5555'>res/mods/Yoruhime/race/butterfly/subspecies/butterfly.svg</imageName>
+		<imageName zLayer="2" imageRotation="0" imageSize="75">mantis_cocktail.svg</imageName>
+		<imageName zLayer="3" imageRotation="0" imageSize="100">background_top.svg</imageName>
+
+		<colourPrimary>Yoruhime_butterfly</colourPrimary>
+		<colourSecondary/>
+		<colourTertiary/>
+
+		<potionDescriptor><![CDATA[butterfly]]></potionDescriptor>
+		<associatedRace>Yoruhime_butterfly</associatedRace>
+		<enchantmentItemTypeId>ELIXIR</enchantmentItemTypeId>
+		<enchantmentEffectId>RACE</enchantmentEffectId>
+
+		<effectTooltipLines>
+			<line><![CDATA[[style.boldGood(Restores)] 10% [style.boldHealth([#ATTRIBUTE_HEALTH_MAXIMUM.getName()])]]]></line>
+			<line><![CDATA[[#ATTRIBUTE_MAJOR_PHYSIQUE.getFormattedValue(2)] to 'potion effects']]></line>
+		</effectTooltipLines>
+
+		<applyEffects><![CDATA[
+			[##npc.incrementHealth(npc.getAttributeValue(ATTRIBUTE_HEALTH_MAXIMUM)/10)]
+		]]></applyEffects>
+
+		<itemTags>
+			<tag>RACIAL_TF_ITEM</tag>
+			<tag>SOLD_BY_RALPH</tag>
+		</itemTags>
+	</coreAttributes>
+
+	<useDescriptions>
+		<selfUse><![CDATA[
+		[npc.Name] [npc.verb(take)] the glass and quickly drink its contents, leaving [npc.herHim] with the delicious taste of nectar filling [npc.her] mouth.
+		]]></selfUse>
+		<otherUse><![CDATA[
+		[npc.Name] [npc.verb(take)] glass, before bringing it up to [npc2.namePos] [npc2.lips] and getting [npc2.herHim] to drink it. Quickly sipping it, [npc2.name] is left with the delicious taste of nectar filling [npc2.her] mouth.
+		]]></otherUse>
+	</useDescriptions>
+
+
+</item>

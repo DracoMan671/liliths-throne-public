@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<weapon>
+	<coreAttributes>
+		
+		<authorTag><![CDATA[On the side of the Super Shotgun, a small engraving informs you it was made by Charisma."]]></authorTag>
+		
+		<value>50000</value> 
+		
+		<melee>false</melee>
+		
+		<twoHanded>true</twoHanded>
+		
+		<determiner><![CDATA[a]]></determiner>
+		
+		<name><![CDATA[Super Shotgun]]></name>
+		
+		<namePlural pluralByDefault="false"><![CDATA[Super Shotguns]]></namePlural> 
+		
+		<description><![CDATA[This shotgun was the personal weapon of choice of the Doom Slayer, a legendary demon slayer from another world. It has been modified to use arcane shells commonly available to Dominion's enforcers, and it has a meat hook attachment that is currently nonfunctonal.]]></description> 
+		
+		<attackDescriptor>shoot</attackDescriptor>
+		
+		<attackTooltipDescription><![CDATA[Shoot [npc2.name] with your Super Shotgun.]]></attackTooltipDescription>
+		
+		<!-- The rarity of this weapon. Values can be found here: https://github.com/Innoxia/liliths-throne-public/blob/master/src/com/lilithsthrone/game/inventory/Rarity.java -->
+		<rarity>LEGENDARY</rarity> 
+		
+		<!-- What set this weapon is a part of. Values can be found here: https://github.com/Innoxia/liliths-throne-public/blob/master/src/com/lilithsthrone/game/inventory/clothing/ClothingSet.java -->
+		<weaponSet/> 
+		
+		<!-- The description that's used when equipping this weapon. The description should be generic, able to be used by both the player and NPCs. Just make sure to use the tag "[npc.verb()]" whenever using a verb, which will then, for example, parse like this:
+		[npc.verb(run)] if npc is player = "run"
+		[npc.verb(run)] if npc is not the player = "runs"
+		Always use the first-person singular verb.
+		The target "npc" OR "npc1" should be used for the character using the weapon. e.g. If the player is the one attacking (and is called Innoxia), then [npc.Name] will return "Innoxia"
+		The target "npc2" should be used for the character being attacked. e.g. If Brax is the one being attacked, then [npc2.Name] will return "Brax"
+		-->
+		<equipText><![CDATA[[npc.Name] [npc.verb(pull)] out the Super Shotgun and [npc.verb(load)] it with two arcane shells, ready to shoot some demons.]]></equipText>
+		
+		<unequipText><![CDATA[[npc.Name] [npc.verb(remove)] the Super Shotgun's shells and [npc.verb(put)] it away.]]></unequipText>
+		
+		<!-- The file name of this weapon's image when in the character's inventory. The only supported file type is .svg. I use the free program "Inkscape" to make .svg images for the game. -->
+		<imageName>super_shotgun.svg</imageName> 
+		
+		<!-- The file name of this weapon's image when equipped. Can be (and usually is) the same as the imageName (which in this example would be "dagger_sheathed.svg"). -->
+		<imageEquippedName>super_shotgun.svg</imageEquippedName>
+		
+		<!-- How much natural physical resistance this weapon provides when equipped. Should only really be above 0 for shields or other such protective weapons. -->
+		<physicalResistance>0</physicalResistance> 
+		
+		<!-- The base damage that this weapon deals. -->
+		<damage>120</damage>
+		
+		<arcaneCost>12</arcaneCost> 
+		
+		<damageVariance>MEDIUM</damageVariance> 
+		
+		<availableDamageTypes>
+			<damageType>PHYSICAL</damageType>
+			<damageType>FIRE</damageType>
+			<damageType>ICE</damageType>
+			<damageType>POISON</damageType>
+		</availableDamageTypes>
+		
+		<spells/>
+		
+		<combatMoves/>
+		
+		<enchantmentLimit>5</enchantmentLimit>
+		
+		<effects/>
+		
+		<primaryColours>
+			<colour>CLOTHING_GUNMETAL</colour>
+		</primaryColours>
+		<primaryColoursDye values="ALL_WITH_METALS"/>
+		<secondaryColours>
+			<colour>CLOTHING_BROWN_DARK</colour>
+		</secondaryColours>
+		<secondaryColoursDye values="ALL_WITH_METALS"/>
+		<tertiaryColours>
+			<colour>CLOTHING_BRASS</colour>
+		</tertiaryColours>
+		<tertiaryColoursDye values="ALL_WITH_METALS"/>
+		
+		
+		<!-- You can define any number of custom colours to replace the shades you've coloured your svg with.
+		If you have used the primary/secondary/tertiary elements up above, then do not use their associated colour hexes.
+		(i.e. If you've defined a primaryColours element, do not use #ff7f2a, #ff9955, #ffb380, #ffccaa, or #ffe6d5 in the customColour attributes.)
+		
+		You should NEVER use the primary recolouring shades, as they are always reserved for the damage type's colour:
+		#ff2a2a, #ff5555, #ff8080, #ffaaaa, or #ffd5d5
+		-->
+		<customColours/>
+		
+		<!-- Special item tags that apply to this weapon. Values can be found here: https://github.com/Innoxia/liliths-throne-public/blob/master/src/com/lilithsthrone/game/inventory/ItemTag.java -->
+		<itemTags> 
+			<tag>SOLD_BY_VICKY</tag>
+		</itemTags>
+		
+	</coreAttributes>
+
+	<!-- Descriptions that are used when hitting an enemy. One of the hitText values will be randomly selected each time the attacker hits their target. Follow the same guidelines as equipText. -->
+	<hitDescriptions>
+		<hitText><![CDATA[
+		[npc.Name] [npc.verb(point)] [npc.her] Super Shotgun at [npc2.name] and [npc.verb(pull)] the trigger, blasting [npc2.namePos] aura with arcane buckshot and draining [npc2.her] energy dramatically! [npc.Name] quickly [npc.verb(reload)] two new shells into the Super Shotgun.
+		]]></hitText>
+	</hitDescriptions>
+
+	<!-- Descriptions that are used when missing an enemy. One of the missText values will be randomly selected each time the attacker misses their target. Follow the same guidelines as equipText. -->
+	<missDescriptions>
+		<missText><![CDATA[
+		[npc.Name] [npc.verb(point)] [npc.her] Super Shotgun at [npc2.name] and [npc.verb(pull)] the trigger, but [npc.her] aim was off and the shot goes wild! [npc.Name] quickly [npc.verb(reload)] two new shells into the Super Shotgun.
+		]]></missText>
+	</missDescriptions>
+	
+</weapon>
+

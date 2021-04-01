@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<hair>
+	<race>poke_ralts</race>
+	<transformationName><![CDATA[Ralts-line]]></transformationName>
+	<coveringType>poke_ralts_hair</coveringType>
+	<!-- HAIR_HANDLES_IN_SEX, HAIR_NATURAL_MANE -->
+	<tags>
+		<tag>HAIR_HANDLES_IN_SEX</tag>
+	</tags>
+	<determiner><![CDATA[a head of]]></determiner>
+	<name><![CDATA[hair]]></name>
+	<namePlural pluralByDefault="false"><![CDATA[hairs]]></namePlural> 
+	<descriptorsMasculine>
+		<descriptor>silken</descriptor>
+		<descriptor>ethereal</descriptor>
+	</descriptorsMasculine>
+	<descriptorsFeminine>
+		<descriptor>silken</descriptor>
+		<descriptor>ethereal</descriptor>
+	</descriptorsFeminine>
+	<transformationDescription><![CDATA[
+		The transformation only lasts a matter of moments, leaving [npc.herHim] with smooth hair.
+		<br/>[npc.Name] now [npc.has] [npc.hairColour] Ralts-line hair.
+	]]></transformationDescription>
+	<bodyDescription><![CDATA[
+		[npc.SheHasFull] [npc.hairDeterminer] [npc.hairLength], [npc.hairColour(true)], Ralts-line hair
+	]]></bodyDescription>
+	
+</hair>

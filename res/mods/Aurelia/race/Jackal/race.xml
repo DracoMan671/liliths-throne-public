@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<race>
+	<racialBody>Aurelia_Jackal</racialBody>
+	
+	<applyRaceChanges><![CDATA[
+		[#targetedBody.getVagina().getClitoris().setGirth(null, 4)]
+	]]></applyRaceChanges>
+	
+	<name><![CDATA[jackal]]></name>
+	<namePlural><![CDATA[jackals]]></namePlural>
+	
+	<nameFeral>
+		<name legConfiguration="QUADRUPEDAL"><![CDATA[jackal]]></name>
+	</nameFeral>
+	<nameFeralPlural>
+		<name legConfiguration="QUADRUPEDAL"><![CDATA[jackals]]></name>
+	</nameFeralPlural>
+	
+	<defaultTransformName><![CDATA[jackal]]></defaultTransformName>
+	
+	<colour>Aurelia_Jackal</colour>
+	
+	<disposition>CIVILIZED</disposition>
+	
+	<racialClass>MAMMAL</racialClass>
+	
+	<feralPartsAvailable>true</feralPartsAvailable>
+	
+	<ableToSelfTransform>false</ableToSelfTransform>
+
+	<flyingRace>false</flyingRace>
+	
+	<combatBehaviour>SEDUCE</combatBehaviour>
+	
+	<chanceForMaleOffspring>0.25</chanceForMaleOffspring>
+	
+	<numberOfOffspringLow>2</numberOfOffspringLow>
+	<numberOfOffspringHigh>4</numberOfOffspringHigh>
+	
+	<defaultFemininePreference>NORMAL</defaultFemininePreference>
+	<defaultMasculinePreference>NORMAL</defaultMasculinePreference>
+	
+	<affectedByFurryPreference>true</affectedByFurryPreference>
+	
+</race>

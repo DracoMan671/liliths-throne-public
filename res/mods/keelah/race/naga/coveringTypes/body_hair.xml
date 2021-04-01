@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<coveringType>
+	<category>BODY_HAIR</category>
+
+	<determiner><![CDATA[a layer of]]></determiner>
+	<name><![CDATA[scale]]></name>
+	<namePlural pluralByDefault="true"><![CDATA[scales]]></namePlural>
+
+	<naturalCoveringModifiers>
+		<modifier>SMOOTH</modifier>
+	</naturalCoveringModifiers>
+
+	<extraCoveringModifiers/>
+
+	<naturalPatterns>
+		<pattern weighting="1">NONE</pattern>
+	</naturalPatterns>
+
+	<extraPatterns>
+		<pattern weighting="1">HIGHLIGHTS</pattern>
+		<pattern weighting="1">STRIPED</pattern>
+		<pattern weighting="1">MARKED</pattern>
+		<pattern weighting="1">OMBRE</pattern>
+	</extraPatterns>
+
+	<naturalColoursPrimary values="allCoveringColours"/> 
+	<extraColoursPrimary values="allCoveringColours"/>
+
+	<naturalColoursSecondary values="allCoveringColours"/>
+	<extraColoursSecondary values="allCoveringColours"/>
+</coveringType>

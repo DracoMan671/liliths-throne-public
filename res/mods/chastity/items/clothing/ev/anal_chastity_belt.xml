@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+
+<clothing>
+  <coreAtributes>
+    <value>1000</value>
+    <determiner><![CDATA[a]]></determiner>
+    <name><![CDATA[Anal_Chastity_Belt]]></name>
+    <namePlural pluralByDefault="false"><![CDATA[Anal_Chastity_Belt]]></namePlural>
+    <description><![CDATA[A simple belt to keep the butt a no-go zone.]]></description>
+    
+    <physicalResistance>0</physicalResistance>
+    <femininity>ANDROGYNOUS</femininity> 
+	<slot>GROIN</slot>
+	<rarity>COMMON</rarity> 
+    
+    <imageName>anal_chastity_belt.svg</imageName>
+
+    <clothingSet/>
+    <imageEquippedName/>
+    <enchantmentLimit>5</enchantmentLimit>
+    
+    <effects>
+	<effect itemEffectType="CLOTHING" limit="0" potency="MAJOR_DRAIN" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="RESISTANCE_LUST" timer="0"/>
+    <effect itemEffectType="CLOTHING" limit="0" potency="MINOR_BOOST" primaryModifier="CLOTHING_SEALING" secondaryModifier="ARCANE_BOOST" timer="0"/>
+	</effects>
+
+        
+		<blockedPartsList>
+			<blockedParts>
+				<displacementType>REMOVE_OR_EQUIP</displacementType>
+				<clothingAccessRequired>
+					<clothingAccess>GROIN</clothingAccess>
+				</clothingAccessRequired>
+				<blockedBodyParts>
+				  <bodyPart>ANUS</bodyPart>
+				</blockedBodyParts>
+				<clothingAccessBlocked/>
+				<concealedSlots/>
+			</blockedParts>
+		</blockedPartsList>
+
+    <incompatibleSlots/>
+    
+		<primaryColours><colour>CLOTHING_BLACK</colour></primaryColours>
+		<primaryColoursDye values="LEATHER"/>
+		<secondaryColours/>
+		<secondaryColoursDye/>
+		<tertiaryColours/>
+		<tertiaryColoursDye/>
+    
+    <itemTags>
+      <tag>SOLD_BY_FINCH</tag>
+    </itemTags>
+    
+  </coreAtributes>
+
+  <displacementText type="REMOVE_OR_EQUIP">
+    <playerSelf>
+      <![CDATA[You remove the anal chastity belt.
+	  ]]>
+    </playerSelf>
+    <playerNPC>
+      <![CDATA[You remove the anal chastity belt off [npc.Name].  
+	  ]]>
+    </playerNPC>
+    <playerNPCRough>
+    </playerNPCRough>
+    <NPCSelf>
+      <![CDATA[[npc.Name] removes the anal chastity belt. 
+	  ]]>	  
+    </NPCSelf>
+    <NPCPlayer>
+      <![CDATA[[npc.Name] removes the anal chastity belt from you.  
+	  ]]>
+    </NPCPlayer>
+    <NPCPlayerRough>
+    </NPCPlayerRough>
+    <NPCOtherNPC>
+      <![CDATA[[npc1.Name] removes the anal chastity belt from [npc2.name].  
+	  ]]>
+    </NPCOtherNPC>
+    <NPCOtherNPCRough>
+    </NPCOtherNPCRough>
+  </displacementText>
+
+  <replacementText type="REMOVE_OR_EQUIP">
+    <playerSelf>
+      <![CDATA[You put on the anal chastity belt, securing your butt from penetration.]]>
+    </playerSelf>
+    <playerNPC>
+      <![CDATA[You put on the anal chastity belt on [npc.name], securing their butt from penetration.]]>
+    </playerNPC>,
+    <playerNPCRough>
+      <![CDATA[You put on the anal chastity belt on [npc.name], securing their butt from penetration.]]>
+	 </playerNPCRough>
+    <NPCSelf>
+      <![CDATA[[npc.Name] puts on the anal chastity belt, securing their butt from penetration.]]>
+    </NPCSelf>
+    <NPCPlayer>
+      <![CDATA[[npc.Name] puts the anal chastity belt on you, securing your butt from penetration.]]>
+    </NPCPlayer>
+    <NPCPlayerRough>
+      <![CDATA[[npc.Name] puts the anal chastity belt on you, securing your butt from penetration.]]>
+    </NPCPlayerRough>
+    <NPCOtherNPC>
+      <![CDATA[[npc1.Name] puts the anal chastity belt on [npc2.Name], securing their butt from penetration]]>
+    </NPCOtherNPC>
+    <NPCOtherNPCRough>
+      <![CDATA[[npc1.Name] puts the anal chastity belt on [npc2.Name], securing their butt from penetration]]>
+    </NPCOtherNPCRough>
+  </replacementText>
+  
+  
+</clothing>

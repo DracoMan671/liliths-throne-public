@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<clothing>
+	<coreAttributes>
+		<value>80</value>
+		
+		<determiner><![CDATA[a set of]]></determiner>
+		
+		<name><![CDATA[stocking]]></name>
+		
+		<namePlural pluralByDefault="true"><![CDATA[Stockings]]></namePlural>
+		
+		<description><![CDATA[A set of four nylon stockings, which reach up to the wearer's upper-thighs, conforming to their hind legs. A very weak telekenesis enchanment helps you put them on.]]></description>
+		<physicalResistance>0</physicalResistance>
+		
+		<femininity>FEMININE</femininity>
+		
+		<slot>SOCK</slot> 
+		
+		<rarity>COMMON</rarity>
+		
+		<clothingSet/> 
+		
+		<imageName>feral_stockings.svg</imageName>
+		
+		<imageEquippedName/>
+		
+		<enchantmentLimit/>
+		
+		<effects/>
+		
+		<blockedPartsList>
+			<blockedParts>
+				<displacementType>REMOVE_OR_EQUIP</displacementType> 
+				<clothingAccessRequired> 
+					<clothingAccess>FEET</clothingAccess>
+					<clothingAccess>CALVES</clothingAccess>
+				</clothingAccessRequired>
+				<blockedBodyParts>
+					<bodyPart>FEET</bodyPart>
+				</blockedBodyParts>
+				<clothingAccessBlocked/>
+				<concealedSlots/>
+			</blockedParts>
+		</blockedPartsList>
+		
+		<incompatibleSlots/> 
+		
+		<primaryColours values="ALL"/> 
+		<primaryColoursDye/>
+		<secondaryColours values="ALL"/>
+		<secondaryColoursDye/>
+		<tertiaryColours/>
+		<tertiaryColoursDye/>
+		
+		<itemTags> 
+			<tag>SOLD_BY_NYAN</tag>
+			<tag>FITS_TAUR_BODY</tag>
+		</itemTags>
+	</coreAttributes>
+
+   <replacementText type="REMOVE_OR_EQUIP">
+    <self>
+      <![CDATA[[npc.Name] [npc.verb(steps)] into them before allowing the weak telekinetic enchantment to pull them up [npc.her] legs.]]>
+    </self>
+    <other>
+      <![CDATA[[npc.Name] [npc.verb(pull)] the stockings over [npc2.namePos] legs.]]>
+    </other>
+    <otherRough>
+      <![CDATA[[npc.Name] [npc.verb(force)] the stockings up [npc2.namePos] legs.]]>
+    </otherRough>
+  </replacementText>
+
+  <displacementText type="REMOVE_OR_EQUIP">
+    <self>
+      <![CDATA[[npc.Name] focuses [npc.her] thoughts on pulling down [npc.her] stockings, and, sure enough, the weak telekinetic enchantment sets to work, soon allowing [npc.herHim] to simply step out of them.]]>
+    </self>
+    <other>
+      <![CDATA[[npc.Name] [npc.verb(pull)] [npc2.namePos] stockings, taking them off [npc2.her] legs.]]>
+    </other>
+    <otherRough>
+      <![CDATA[[npc.Name] [npc.verb(pull)] [npc2.namePos] stockings, before yanking them off [npc2.her] legs.]]>
+    </otherRough>
+  </displacementText>
+	
+</clothing>

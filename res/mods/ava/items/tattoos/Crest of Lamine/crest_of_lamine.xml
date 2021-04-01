@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<tattoo>
+	<coreAttributes>
+		<value>500</value> 
+		
+		<name><![CDATA[Crest of Lamine]]></name>
+		
+		<description><![CDATA[The Crest of a Gregory now carried by a masked swordsman and a kind-hearted noblewoman.]]></description> 
+		
+		<imageName>crest_of_lamine.svg</imageName> 
+		
+		<enchantmentLimit>5</enchantmentLimit>
+		
+		<slotAvailability/>
+		
+		<primaryColours values="ALL"/> 
+		<secondaryColours values="ALL"/>
+		<tertiaryColours/>
+		
+	</coreAttributes>
+	
+</tattoo>

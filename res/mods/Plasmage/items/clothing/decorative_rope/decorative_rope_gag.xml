@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<clothing>
+	<coreAttributes>
+		<value>400</value> 
+		<determiner><![CDATA[a bundle of]]></determiner>
+		<name><![CDATA[animated rope bit gag]]></name>
+		<namePlural pluralByDefault="false">
+      <![CDATA[arcane decorative bit gag rope]]>
+    </namePlural> 
+    
+    <description><![CDATA[A bundle of rope specially enchanted to become a rope bit gag, or bundle back up.]]></description> 
+    
+		<physicalResistance>0</physicalResistance> 
+		<femininity>ANDROGYNOUS</femininity> 
+		
+		
+	<slot>MOUTH</slot>
+		
+		
+		<rarity>EPIC</rarity>
+		<clothingSet>BUTLER</clothingSet>
+    <clothingSet/>
+		
+	  <imageName>rope_bundle.svg</imageName>
+		
+		<imageEquippedName slot="MOUTH">rope_gag.svg</imageEquippedName>
+		
+		<enchantmentLimit/>
+		
+		<effects/>
+		
+		<blockedPartsList slot="MOUTH">
+      <blockedParts>
+        <displacementType>REMOVE_OR_EQUIP</displacementType>
+        <clothingAccessRequired> 
+					<clothingAccess>MOUTH</clothingAccess>
+				</clothingAccessRequired>
+        <blockedBodyParts>
+					<bodyPart>MOUTH</bodyPart>
+				</blockedBodyParts>
+				<clothingAccessBlocked/>
+			  <concealedSlots/>
+			</blockedParts>
+		</blockedPartsList>
+
+		<incompatibleSlots slot="MOUTH"/>
+		
+		<primaryColours values="JUST_SILVER"/> 
+		<primaryColoursDye values="ALL_PLUS_METAL"/>
+		<secondaryColours/>
+		<secondaryColoursDye/>
+		<tertiaryColours/>
+    <tertiaryColoursDye/>
+		
+	<itemTags>
+		<tag>SOLD_BY_FINCH</tag>
+		<tag>ENABLE_SEX_EQUIP</tag>
+		<tag>TRANSPARENT</tag>
+	  	<tag>REVEALS_CONCEALABLE_SLOT</tag>
+    </itemTags>
+	</coreAttributes>
+	
+	<replacementText slot="MOUTH" type="REMOVE_OR_EQUIP">
+		<self>
+			<![CDATA[[npc.Name] [npc.verb(push)] the arcane rope against [npc.her] [npc.mouthColour], watching as it quickly ties itself into a gag.]]>
+		</self>
+		<other>
+			<![CDATA[[npc.Name] [npc.verb(push)] the arcane rope against [npc2.namePos] [npc2.mouthColour], watching as it quickly ties itself into a gag.]]>
+		</other>
+		<otherRough>
+			<![CDATA[[npc.Name] roughly [npc.verb(force)] the arcane rope against [npc2.namePos] [npc2.mouthColour], watching as it quickly forces their mouth apart by forming a bit gag.]]>
+		</otherRough>
+	</replacementText>
+	<displacementText slot="MOUTH" type="REMOVE_OR_EQUIP">
+		<self>
+			<![CDATA[[npc.Name] [npc.verb(untie)] the rope gagging [npc.her], watching as it neatly bundles itself up.]]>
+		</self>
+		<other>
+			<![CDATA[[npc.Name] [npc.verb(untie)] the rope gagging [npc2.name], watching as it neatly bundles itself up.]]>
+		</other>
+		<otherRough>
+			<![CDATA[[npc.Name] [npc.verb(yank)] on the rope gagging [npc2.name], causing it to quickly untie with a flick before bundling itself up.]]>
+		</otherRough>
+	</displacementText>
+	
+  
+</clothing>

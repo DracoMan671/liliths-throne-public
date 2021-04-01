@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<weapon>
+	<coreAttributes>
+		<value>55000</value>
+		<melee>false</melee>
+		<twoHanded>false</twoHanded>
+		<determiner><![CDATA[an]]></determiner>
+		<name><![CDATA[arcane flintlock pistol]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[arcane flintlock pistol]]></namePlural>
+		<description><![CDATA[An ancient pistol once used in a bygone era. Instead of bullets, these smoothbore pistols fire bolts of arcane energy, and a billowing cloud of arcane smoke.]]></description>
+		<attackDescriptor>shoot</attackDescriptor>
+		<attackTooltipDescription>Point your flintlock pistol at [npc.name] and fire!</attackTooltipDescription>
+		<rarity>EPIC</rarity>
+		<weaponSet>sage_dueset</weaponSet> 
+		<equipText><![CDATA[[npc.Name] [npc.verb(ready)] [npc.her] arcane flintlock pistol.]]></equipText>
+		<unequipText><![CDATA[[npc.Name] [npc.verb(put)] [npc.her] arcane flintlock pistol away.]]></unequipText>
+		<imageName>dueflintlock.svg</imageName>
+		<imageEquippedName/>
+		<damage>80</damage>
+		<arcaneCost>5</arcaneCost> 
+		<damageVariance>LOW</damageVariance> 
+		
+		<availableDamageTypes>
+			<damageType>PHYSICAL</damageType>
+		</availableDamageTypes>
+		
+		<spells/>
+		<enchantmentLimit>10</enchantmentLimit>
+		<effects/>
+		
+		<primaryColours values="JUST_STEEL"/> 
+		<primaryColoursDye values="ALL_WITH_METALS"/>
+		<secondaryColours values = "JUST_IRON"/> 
+		<secondaryColoursDye values="ALL_WITH_METALS"/>
+		
+		<itemTags>
+			<tag>SOLD_BY_VICKY</tag>
+		</itemTags>
+	</coreAttributes>
+	
+	<hitDescriptions>
+		<hitText><![CDATA[
+		Aiming and firing [npc.her] arcane flintlock pistol, [npc.name] [npc.verb(manage)] to hit [npc2.name] with an arcane bullet!
+		]]></hitText>
+		<hitText><![CDATA[
+		Taking aim at [npc2.name] with [npc.her] arcane flintlock pistol, [npc.name] [npc.verb(pull)] the trigger, unleashing a blast of arcane energy that slams into [npc2.namePos] torso!
+		]]></hitText>
+		<hitText><![CDATA[
+		[npc.Name] [npc.verb(aim)] at [npc2.name] with [npc.her] arcane flintlock pistol, and, pulling the trigger, [npc.she] [npc.verb(manage)] to hit [npc2.herHim] right in the chest!
+		]]></hitText>
+	</hitDescriptions>
+
+	<missDescriptions>
+		<missText><![CDATA[
+		Aiming and firing [npc.her] arcane flintlock pistol, [npc.name] [npc.verb(miss)] [npc2.name]!
+		]]></missText>
+		<missText><![CDATA[
+		Taking aim at [npc2.name] with [npc.her] arcane flintlock pistol, [npc.name] [npc.verb(pull)] the trigger, letting out a frustrated cry as [npc.she] [npc.verb(miss)] [npc.her] target!
+		]]></missText>
+		<missText><![CDATA[
+		[npc.Name] [npc.verb(aim)] at [npc2.name] with [npc.her] arcane flintlock pistol and [npc.verb(pull)] the trigger, but [npc.she] [npc.verb(end)] up missing [npc.her] target!
+		]]></missText>
+	</missDescriptions>
+	
+</weapon>

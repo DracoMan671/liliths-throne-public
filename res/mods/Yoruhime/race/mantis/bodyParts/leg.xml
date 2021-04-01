@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<leg>
+	<race>Yoruhime_mantis</race>
+	<transformationName><![CDATA[mantis]]></transformationName>
+	<coveringType>Yoruhime_mantis_chitin</coveringType>
+	<defaultFootStructure>DIGITIGRADE</defaultFootStructure>
+	<footType>HUMANOID</footType>
+	<spinneret>false</spinneret>
+	<tentacleType>NONE</tentacleType>
+	<tentacleCount>0</tentacleCount>
+	<allowedLegConfigurations>
+		<configuration>BIPEDAL</configuration>
+		<configuration>QUADRUPEDAL</configuration>
+	</allowedLegConfigurations>
+	<name><![CDATA[leg]]></name>
+	<namePlural><![CDATA[legs]]></namePlural>
+	<descriptorsMasculine>
+		<descriptor>masculine</descriptor>
+		<descriptor>mantis-like</descriptor>
+	</descriptorsMasculine>
+	<descriptorsFeminine>
+		<descriptor>feminine</descriptor>
+		<descriptor>mantis-like</descriptor>
+	</descriptorsFeminine>
+	<footDescriptorsMasculine>
+		<descriptor>mantis-like</descriptor>
+	</footDescriptorsMasculine>
+	<footDescriptorsFeminine>
+		<descriptor>mantis-like</descriptor>
+	</footDescriptorsFeminine>
+	<toeDescriptorsMasculine>
+		<descriptor>mantis-like</descriptor>
+	</toeDescriptorsMasculine>
+	<toeDescriptorsFeminine>
+		<descriptor>mantis-like</descriptor>
+	</toeDescriptorsFeminine>
+	<transformationDescription><![CDATA[
+		A layer of mantis-like chitin quickly cover [npc.her] legs as they shift into a new form. As the chitin spreads down to the ends of [npc.her] toes, they morps into claws. As the transformation ends, [npc.she] [npc.verb(see)] that [npc.her] new chitin smoothly transitions into the [npc.skin] covering the rest of [npc.her] body at [npc.her] upper-thigh.
+		<br/>[npc.Name] now [npc.has] [style.boldNyto(mantis-like legs and feet)], which are [npc.materialDescriptor] [npc.legFullDescription].
+	]]></transformationDescription>
+	<bodyDescription><![CDATA[
+		[npc.Her] legs are [npc.materialCompositionDescriptor] [npc.legFullDescription(true)], and [npc.her] feet are formed into mantis-like feets, with claws on the end.
+	]]></bodyDescription>
+</leg>

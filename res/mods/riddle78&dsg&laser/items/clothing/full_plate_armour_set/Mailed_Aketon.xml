@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<clothing>
+	<coreAtributes>
+		<value>10000</value>
+		<determiner><![CDATA[a]]></determiner>
+		<name><![CDATA[Mailed Aketon]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Mailed Aketons]]></namePlural>
+		<description><![CDATA[A heavy-duty jacket made of thick, quilted cloth, with a mail jacket sewn in with leather thongs. Designed to be worn beneath armour, the mailed aketon is nonetheless effective armour all on its lonesome.]]></description>
+		<physicalResistance>7</physicalResistance>
+		<femininity>ANDROGYNOUS</femininity>
+		<slot>TORSO_UNDER</slot>
+		<rarity>RARE</rarity>
+		<clothingSet></clothingSet>
+		<imageName>Mailed_Aketon.svg</imageName>
+		<imageEquippedName></imageEquippedName>
+		<enchantmentLimit>8</enchantmentLimit>
+		<effects />
+		<blockedPartsList>
+			<blockedParts>
+				<displacementType>REMOVE_OR_EQUIP</displacementType>
+				<clothingAccessRequired />
+				<blockedBodyParts>
+					<bodyPart>STOMACH</bodyPart>
+					<bodyPart>BACK</bodyPart>
+					<bodyPart>BREASTS</bodyPart>
+					<bodyPart>NIPPLES</bodyPart>
+				</blockedBodyParts>
+				<clothingAccessBlocked>
+					<clothingAccess>ARMS_UP_TO_SHOULDER</clothingAccess>
+					<clothingAccess>WRISTS</clothingAccess>
+					<clothingAccess>CHEST</clothingAccess>
+					<clothingAccess>WAIST</clothingAccess>
+				</clothingAccessBlocked>
+				<concealedSlots>
+					<slot>CHEST</slot>
+					<slot>NIPPLE</slot>
+					<slot>PIERCING_NIPPLE</slot>
+					<slot>PIERCING_STOMACH</slot>
+				</concealedSlots>
+			</blockedParts>
+		</blockedPartsList>
+		<incompatibleSlots />
+		<primaryColours values="ALL_METAL" />
+		<primaryColoursDye values="ALL_METAL" />
+		<secondaryColours values="ALL" />
+		<secondaryColoursDye values="ALL" />
+		<tertiaryColours values="ALL" />
+		<tertiaryColoursDye values="ALL" />
+		<itemTags>
+			<tag>SOLD_BY_VICKY</tag>
+		</itemTags>
+	</coreAtributes>
+	<displacementText type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[You unlace the back of your Mailed Aketon, and remove it.]]></playerSelf>
+		<playerNPC><![CDATA[You unlace the back of [npc.name]'s Mailed Aketon, and remove it.]]></playerNPC>
+		<playerNPCRough><![CDATA[You tear open [npc.name]'s Mailed Aketon, and haul it off.]]></playerNPCRough>
+		<NPCSelf><![CDATA[[npc.name] unlaces the back of their Mailed Aketon, and removes it.]]></NPCSelf>
+		<NPCPlayer><![CDATA[[npc.name] unlaces the back of your Mailed Aketon, and removes it.]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[[npc.name] tears open the back of your Mailed Aketon, and hauls it off.]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[[npc1.name] unlaces the back of [npc2.name]'s Mailed Aketon, and removes it.]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[[npc1.name] tears open the back of [npc2.name]'s Mailed Aketon, and hauls it off.]]></NPCOtherNPCRough>
+	</displacementText>
+	<replacementText type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[You don your Mailed Aketon, and lace up the back.]]></playerSelf>
+		<playerNPC><![CDATA[You assist [npc.name] in donning their Mailed Aketon, and lace it up.]]></playerNPC>
+		<playerNPCRough><![CDATA[You shove [npc.name] into their Mailed Aketon, and lace it up.]]></playerNPCRough>
+		<NPCSelf><![CDATA[[npc.name] dons their Mailed Aketon, and laces up the back.]]></NPCSelf>
+		<NPCPlayer><![CDATA[[npc.name] assists you in donning your Mailed Aketon, and laces up the back.]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[[npc.name] shoves you into your Mailed Aketon, and laces it up.]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[[npc1.name] assists [npc2.name] in donning their Mailed Aketon, and laces up the back.]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[[npc1.name] shoves [npc2.name] into their Mailed Aketon, and laces it up.]]></NPCOtherNPCRough>
+	</replacementText>
+</clothing>

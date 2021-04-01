@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<vagina>
+	<race>poke_ralts</race>
+	<transformationName><![CDATA[Ralts-line]]></transformationName>
+	<coveringType>VAGINA</coveringType>
+	<fluidType>poke_ralts_girlcum</fluidType>
+	<pubicHairAllowed>true</pubicHairAllowed>
+	<eggLayer>true</eggLayer>
+	<names>
+		<name><![CDATA[ral'-]]></name>
+		<name><![CDATA[
+			#IF(npc.getSubspecies()==SUBSPECIES_poke_ralts_subspecies_Ralts)
+			Ralts-pussy
+			#ELSEIF(npc.getSubspecies()==SUBSPECIES_poke_ralts_subspecies_Kirlia)
+			Kirlia-pussy
+			#ELSEIF(npc.getSubspecies()==SUBSPECIES_poke_ralts_subspecies_Gallade)
+			Gallade-pussy
+			#ELSEIF(npc.getSubspecies()==SUBSPECIES_poke_ralts_subspecies_Gardevoir)
+			Gardevoir-pussy
+			#ELSE
+			ral'-pussy
+			#ENDIF
+		]]></name>
+		<name><![CDATA[
+			#IF(npc.getSubspecies()==SUBSPECIES_poke_ralts_subspecies_Ralts)
+			Ralts-sex
+			#ELSEIF(npc.getSubspecies()==SUBSPECIES_poke_ralts_subspecies_Kirlia)
+			Kirlia-sex
+			#ELSEIF(npc.getSubspecies()==SUBSPECIES_poke_ralts_subspecies_Gallade)
+			Gallade-sex
+			#ELSEIF(npc.getSubspecies()==SUBSPECIES_poke_ralts_subspecies_Gardevoir)
+			Gardevoir-sex
+			#ELSE
+			ral'-sex
+			#ENDIF
+		]]></name>
+	</names>
+	<namesPlural>
+		<name><![CDATA[ral'-]]></name>
+		<name><![CDATA[
+			#IF(npc.getSubspecies()==SUBSPECIES_poke_ralts_subspecies_Ralts)
+			Ralts-pussies
+			#ELSEIF(npc.getSubspecies()==SUBSPECIES_poke_ralts_subspecies_Kirlia)
+			Kirlia-pussies
+			#ELSEIF(npc.getSubspecies()==SUBSPECIES_poke_ralts_subspecies_Gallade)
+			Gallade-pussies
+			#ELSEIF(npc.getSubspecies()==SUBSPECIES_poke_ralts_subspecies_Gardevoir)
+			Gardevoir-pussies
+			#ELSE
+			ral'-pussies
+			#ENDIF
+		]]></name>
+	</namesPlural>
+	<descriptors/>
+	<!-- PUFFY, RIBBED, TENTACLED, MUSCLE_CONTROL -->
+	<defaultOrificeModifiers>
+		<modifier>MUSCLE_CONTROL</modifier>
+	</defaultOrificeModifiers>
+	<transformationDescription><![CDATA[
+			[npc.She] [npc.verb(let)] out a squeal of excitement as a wave of pleasure runs up through [npc.her] groin, which increases in intensity as [npc.she] [npc.verb(feel)] [npc.her] slit uncontrollably shifting and contracting. Within moments, the feeling fades away, and [npc.she] [npc.verb(discover)] that [npc.her] pussy [npc.has] reformed and tightened into an ethereal form, akin to a member of the Ralts-line.
+		</p>
+		<p>
+			Just as [npc.she] [npc.verb(start)] think that the transformation [npc.has] come to an end, [npc.her] pussy involuntarily clenches down, and a desperate squeal escapes from between [npc.her] [npc.lips+] as a warm, tingling feeling spreads up through [npc.her] lower abdomen. Images of throbbing Gallade and Gardevoir cocks slamming deep into [npc.her] new pussy flash before [npc.her] eyes, and [npc.her] squeal turns into a satisfied moan as [npc.she] [npc.verb(imagine)] them pumping their potent seed deep into [npc.her] new womb. Just as quickly as they came, the images fade from [npc.her] mind, and as one last wave of tingling pleasure washes through [npc.her] body, [npc.she] [npc.verb(feel)] [npc.her] female reproductive organs finishing their transformation.
+			<br/>[npc.Name] now [npc.has] a Ralts-line vagina, with [npc.pussyColourPrimary(true)] labia and [npc.pussyColourSecondary(true)] internal walls.
+	]]></transformationDescription>
+	<!-- Immediately follows on from:
+		'Between [npc.her] [npc.legs], ' -->
+	<bodyDescription><![CDATA[
+		[npc.she] [npc.has] #IF(npc.isPiercedVagina())a pierced#ELSEa#ENDIF #IF(npc.getSubspecies()==SUBSPECIES_poke_ralts_subspecies_Ralts)
+			Ralts-
+			#ELSEIF(npc.getSubspecies()==SUBSPECIES_poke_ralts_subspecies_Kirlia)
+			Kirlia-
+			#ELSEIF(npc.getSubspecies()==SUBSPECIES_poke_ralts_subspecies_Gallade)
+			Gallade-
+			#ELSEIF(npc.getSubspecies()==SUBSPECIES_poke_ralts_subspecies_Gardevoir)
+			Gardevoir-
+			#ENDIFpussy, with [npc.labiaSize], [npc.pussyPrimaryColour(true)] labia and [npc.pussySecondaryColour(true)] inner-walls.
+	]]></bodyDescription>
+</vagina>

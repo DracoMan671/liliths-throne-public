@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ass>
+	<race>keelah_naga</race>
+
+	<transformationName><![CDATA[naga]]></transformationName>
+
+	<coveringType>keelah_naga_fur</coveringType>
+
+	<anusType>keelah_naga_anus</anusType>
+
+	<names/>
+
+	<namesPlural/>
+
+	<descriptorsMasculine/>
+
+	<descriptorsFeminine/>
+
+	<transformationDescription><![CDATA[
+		[npc.She] now [npc.has] a [style.boldHyena(scaly)], [npc.assholeFullDescription].
+	]]></transformationDescription>
+
+	<bodyDescription><![CDATA[
+		[npc.SheHasFull] a scaly, [npc.anusFullDescription(true)]
+	]]></bodyDescription>
+</ass>

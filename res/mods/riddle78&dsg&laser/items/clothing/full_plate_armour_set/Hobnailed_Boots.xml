@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<clothing>
+	<coreAtributes>
+		<value>10000</value>
+		<determiner><![CDATA[a pair of]]></determiner>
+		<name><![CDATA[Hobnailed Boots]]></name>
+		<namePlural pluralByDefault="true"><![CDATA[Hobnailed Boots]]></namePlural>
+		<description><![CDATA[A pair of heavy leather boots, with a complimentary pair of heavy woollen socks. The soles are made of metal plates,with spikes to improve traction, and the toes are steel, as well.]]></description>
+		<physicalResistance>2</physicalResistance>
+		<femininity>ANDROGYNOUS</femininity>
+		<slot>FOOT</slot>
+		<rarity>RARE</rarity>
+		<clothingSet></clothingSet>
+		<imageName>Hobnailed_Boots.svg</imageName>
+		<imageEquippedName></imageEquippedName>
+		<enchantmentLimit>8</enchantmentLimit>
+		<effects />
+		<blockedPartsList>
+			<blockedParts>
+				<displacementType>REMOVE_OR_EQUIP</displacementType>
+				<clothingAccessRequired />
+				<blockedBodyParts>
+					<bodyPart>FEET</bodyPart>
+				</blockedBodyParts>
+				<clothingAccessBlocked />
+				<concealedSlots />
+			</blockedParts>
+		</blockedPartsList>
+		<incompatibleSlots />
+		<primaryColours values="LEATHER" />
+		<primaryColoursDye values="LEATHER" />
+		<secondaryColours values="ALL_METAL" />
+		<secondaryColoursDye values="ALL_METAL" />
+		<itemTags>
+			<tag>SOLD_BY_VICKY</tag>
+		</itemTags>
+	</coreAtributes>
+	<displacementText type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[You pull off your Hobnailed Boots.]]></playerSelf>
+		<playerNPC><![CDATA[You pull off [npc.name]'s Hobnailed Boots.]]></playerNPC>
+		<playerNPCRough><![CDATA[You rip off [npc.name]'s Hobnailed Boots.]]></playerNPCRough>
+		<NPCSelf><![CDATA[[npc.name] pulls off their Hobnailed Boots.]]></NPCSelf>
+		<NPCPlayer><![CDATA[[npc.name] pulls off your Hobnailed Boots.]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[[npc.name] rips off your Hobnailed Boots.]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[[npc1.name] pulls off [npc2.name]'s Hobnailed Boots.]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[[npc1.name] rips off [npc2.name]'s Hobnailed Boots.]]></NPCOtherNPCRough>
+	</displacementText>
+	<replacementText type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[You pull on your Hobnailed Boots.]]></playerSelf>
+		<playerNPC><![CDATA[You pull [npc.name]'s Hobnailed Boots onto their feet.]]></playerNPC>
+		<playerNPCRough><![CDATA[You shove [npc.name]'s Hobnailed Boots onto their feet.]]></playerNPCRough>
+		<NPCSelf><![CDATA[[npc.name] pulls on their Hobnailed Boots.]]></NPCSelf>
+		<NPCPlayer><![CDATA[[npc.name] pulls your Hobnailed Boots onto your feet.]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[[npc.name] shoves your Hobnailed Boots onto your feet.]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[[npc1.name] pulls [npc2.name]'s Hobnailed Boots onto their feet.]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[[npc1.name] shoves [npc2.name]'s Hobnailed Boots onto their feet.]]></NPCOtherNPCRough>
+	</replacementText>
+</clothing>

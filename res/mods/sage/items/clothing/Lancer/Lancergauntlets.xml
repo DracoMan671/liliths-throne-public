@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<clothing>
+	<coreAttributes>
+		<value>1000000</value> 
+		<determiner><![CDATA[a pair of]]></determiner>
+		<name><![CDATA[Royal Knight Gauntlets]]></name>
+		<namePlural pluralByDefault="true"><![CDATA[Royal Knight Gauntlets]]></namePlural>
+		<description><![CDATA[A pair of arcane constructed steel Gauntlets based of the appearance of a legendary King, The left gauntlet is more armoured than the right to allow for more freedom of movement .]]></description> 
+		<physicalResistance>5</physicalResistance> 
+		<femininity>ANDROGYNOUS</femininity> 
+		<slot>HAND</slot> 
+		<rarity>LEGENDARY</rarity> 
+		<clothingSet/> 
+		<imageName>Lancergauntlets.svg</imageName> 
+		<imageEquippedName/> 
+		<enchantmentLimit/>
+		<effects/>
+		<blockedPartsList> 
+			<blockedParts>
+				<displacementType>REMOVE_OR_EQUIP</displacementType> 
+				<clothingAccessRequired> 
+					<clothingAccess>FINGERS</clothingAccess>
+				</clothingAccessRequired>
+				<blockedBodyParts/>
+				<clothingAccessBlocked/>
+				<concealedSlots/> <!--I decided against having these conceal finger slots.-->
+			</blockedParts>
+		</blockedPartsList>
+		<incompatibleSlots/> 
+		
+		<primaryColours values="JUST_STEEL"/> 
+		<primaryColoursDye values="ALL_WITH_METALS"/>
+		
+		<itemTags> 
+			<tag>SOLD_BY_VICKY</tag>
+		</itemTags>
+	</coreAttributes>
+
+	<replacementText type="REMOVE_OR_EQUIP">
+		<self>
+		  <![CDATA[[npc.Name] [npc.verb(slide)] the Gauntlets over [npc.her] [npc.hands].]]>
+		</self>
+		<other>
+		  <![CDATA[[npc.Name] [npc.verb(slide)] the gauntlets over [npc2.namePos] [npc2.hands].]]>
+		</other>
+		<otherRough>
+		  <![CDATA[[npc.Name] roughly [npc.verb(forces)] the gauntlets onto [npc2.namePos] [npc2.hands].]]>
+	  </otherRough>
+	</replacementText>
+
+	<displacementText type="REMOVE_OR_EQUIP">
+		<self>
+		  <![CDATA[[npc.Name] [npc.verb(slide)] the  gauntlest off [npc.her] [npc.hands], before pulling them free from [npc.her] [npc.hands].]]>
+		</self>
+		<other>
+		  <![CDATA[[npc.Name] [npc.verb(slide)] the  gauntlet off [npc2.namePos] [npc2.hands], before pulling them free from [npc2.her] [npc2.hands].]]>
+		</other>
+		<otherRough>
+		  <![CDATA[[npc.Name] [npc.verb(yank)] the gauntlet off [npc2.namePos] [npc2.hands], before roughly pulling them free from [npc2.her] [npc2.hands].]]>
+		</otherRough>
+	</displacementText>
+	
+</clothing>

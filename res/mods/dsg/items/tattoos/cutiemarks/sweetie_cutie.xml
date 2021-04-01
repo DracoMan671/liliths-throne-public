@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<tattoo>
+    <coreAttributes>
+        <value>500</value>
+        <name><![CDATA[Sweetie Belle's Cutie Mark]]></name>
+        <description><![CDATA[A shield with a musical star emblem.]]></description>
+        <imageName>sweetie_cutie.svg</imageName>
+        <enchantmentLimit>5</enchantmentLimit>
+        <slotAvailability>
+            <slot>HIPS</slot>
+        </slotAvailability>
+        <primaryColours values="ALL"/>
+        <secondaryColours values="ALL"/>
+        <tertiaryColours values="ALL"/>
+    </coreAttributes>
+</tattoo>

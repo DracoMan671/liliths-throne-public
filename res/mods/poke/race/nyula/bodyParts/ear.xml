@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ear>
+	<race>poke_nyula</race>
+	<transformationName><![CDATA[Weavile]]></transformationName>
+	<coveringType>poke_nyula_feather</coveringType>
+	<!-- EAR_HANDLES_IN_SEX, ECHO_LOCATION -->
+	<tags/>
+	<!--
+	<tags>
+		<tag>EAR_HANDLES_IN_SEX</tag>
+	</tags>
+	-->
+	<name><![CDATA[ear]]></name>
+	<namePlural><![CDATA[ears]]></namePlural>
+	<descriptorsMasculine>
+		<descriptor>feathery</descriptor>
+		<descriptor>weasel-like</descriptor>
+		<descriptor>vibrant</descriptor>
+		<descriptor>long</descriptor>
+	</descriptorsMasculine>
+	<descriptorsFeminine>
+		<descriptor>feminine</descriptor>
+		<descriptor>feathery</descriptor>
+		<descriptor>weasel-like</descriptor>
+		<descriptor>vibrant</descriptor>
+	</descriptorsFeminine>
+	<transformationDescription><![CDATA[
+		A plume of feathers
+		#IF(npc.getBodyMaterial()!=BODY_MATERIAL_FLESH)
+		, made of [npc.earFullDescription] like the rest of [npc.her] body,
+		#ENDIF
+		 sprout out where human ears would normally sit. [npc.She] experimentally [npc.verb(twitch)] [npc.her] new feathery ears back and forth.
+		<br/>[npc.Name] now [npc.has] Weavile ears, which are [npc.materialCompositionDescriptor] [npc.earFullDescription].
+	]]></transformationDescription>
+	<bodyDescription><![CDATA[
+		[npc.She] [npc.has] a pair of #IF(npc.isPiercedEar()) pierced,#ENDIF Weavile ears, which are positioned high up on [npc.her] head and are [npc.materialCompositionDescriptor] [npc.earFullDescription(true)].
+	]]></bodyDescription>
+	
+</ear>

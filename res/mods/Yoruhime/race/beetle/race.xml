@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<race>
+	<racialBody>Yoruhime_beetle</racialBody>
+	<applyRaceChanges/>
+	<name><![CDATA[beetle-morph]]></name>
+	<namePlural><![CDATA[beetle-morphs]]></namePlural>
+	<nameFeral>
+		<name legConfiguration="QUADRUPEDAL"><![CDATA[beetle]]></name>
+	</nameFeral>
+	<nameFeralPlural>
+		<name legConfiguration="QUADRUPEDAL"><![CDATA[beetle]]></name>
+	</nameFeralPlural>
+	<defaultTransformName><![CDATA[beetle]]></defaultTransformName>
+	<colour>Yoruhime_beetle</colour>
+	<disposition>NEUTRAL</disposition>
+	<racialClass>MAMMAL</racialClass>
+	<feralPartsAvailable>true</feralPartsAvailable>
+	<ableToSelfTransform>false</ableToSelfTransform>
+	<flyingRace>false</flyingRace>
+	<combatBehaviour>ATTACK</combatBehaviour>
+	<chanceForMaleOffspring>0.5</chanceForMaleOffspring>
+	<numberOfOffspringLow>2</numberOfOffspringLow>
+	<numberOfOffspringHigh>4</numberOfOffspringHigh>
+	<defaultFemininePreference>NORMAL</defaultFemininePreference>
+	<defaultMasculinePreference>NORMAL</defaultMasculinePreference>
+	<affectedByFurryPreference>true</affectedByFurryPreference>
+</race>

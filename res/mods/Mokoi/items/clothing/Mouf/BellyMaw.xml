@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- For a version with comments, see "rental_mommy.xml". -->
+<clothing>
+	<coreAttributes>
+		<value>3000</value>
+		<determiner><![CDATA[an]]></determiner>
+		<name><![CDATA[Illusionary Seal - Belly Maw]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Illusionary Seals - Belly Maw]]></namePlural>
+		<description><![CDATA[A piece of enchanted paper that, when applied, creates a localised glamour that makes one's stomach look like the mouth of a toothy beast. Anyone brave enough to stick their hand in will find the truth quite quickly however, as it does not provide tactile sensation.]]></description>
+		<physicalResistance>1</physicalResistance>
+		<femininity>ANDROGYNOUS</femininity>
+		<slot>STOMACH</slot>
+		<rarity>RARE</rarity>
+		<clothingSet/>
+		<imageName>BellyMawSeal.svg</imageName>
+		<imageEquippedName>BellyMaw.svg</imageEquippedName>
+		<enchantmentLimit/>
+		<effects>
+              <effect itemEffectType="CLOTHING" limit="0" potency="MINOR_BOOST" primaryModifier="CLOTHING_SEALING" secondaryModifier="ARCANE_BOOST" timer="0"/>
+		</effects>
+		<blockedPartsList>
+			<blockedParts>
+				<displacementType>REMOVE_OR_EQUIP</displacementType>
+				<clothingAccessRequired>
+					<clothingAccess>WAIST</clothingAccess>
+				</clothingAccessRequired>
+				<blockedBodyParts/>
+				<clothingAccessBlocked/>
+				<concealedSlots/>
+			</blockedParts>
+
+		</blockedPartsList>
+		<incompatibleSlots>PIERCING_STOMACH</incompatibleSlots>
+		<primaryColours values="JUST_DARK_RED"/>
+		<primaryColoursDye values="ALL"/>
+		<itemTags>
+			<tag>SOLD_BY_KATE</tag>
+			<tag>TRANSPARENT</tag>
+		</itemTags>
+	</coreAttributes>
+
+	<displacementText type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[
+			You reach inside your second mouth and feel around till you brush against the corner of the paper resting on your stomach. With a quick pinch and tug, the illusion dissipates in a puff of arcane smoke, leaving the deactivated seal in your hand.
+		]]></playerSelf>
+		<playerNPC><![CDATA[
+			You reach inside [npc.name]'s second mouth and feel around till you brush against the corner of the paper resting on [npc.herHis] stomach. With a quick pinch and tug, the illusion dissipates in a puff of arcane smoke, leaving the deactivated seal in your hand.
+		]]></playerNPC>
+		<playerNPCRough><![CDATA[
+			You thrust your hand inside [npc.name]'s second mouth so roughly it would have gagged were it real. You grope around at [npc.herHis] stomach till you brush against the corner of the paper resting in the centre, and yank it off. The illusion dissipates in a puff of arcane smoke, leaving the deactivated seal in your hand.
+		]]></playerNPCRough>
+		<NPCSelf><![CDATA[
+			[npc.Name] reaches inside [npc.herHis] second mouth and feels around till [npc.she] brushes against the corner of the paper resting on [npc.herHis] stomach. With a quick pinch and tug, the illusion dissipates in a puff of arcane smoke, leaving the deactivated seal in [npc.herHis] hand.
+		]]></NPCSelf>
+		<NPCPlayer><![CDATA[
+			[npc.Name] reaches inside your second mouth and feels around till [npc.she] brushes against the corner of the paper resting on your stomach. With a quick pinch and tug, the illusion dissipates in a puff of arcane smoke, leaving the deactivated seal in [npc.herHis] hand.
+		]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[
+			[npc.Name] thrusts [npc.herHis] hand inside your second mouth so roughly it would have gagged were it real. [npc.She] gropes around at your stomach till [npc.she] brushes against the corner of the paper resting in the centre, and yanks it off. The illusion dissipates in a puff of arcane smoke, leaving the deactivated seal in [npc.herHis] hand.
+		]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[
+			[npc1.Name] reaches inside [npc2.name]'s second mouth and feels around till [npc1.she] brushes against the corner of the paper resting on [npc2.herHis] stomach. With a quick pinch and tug, the illusion dissipates in a puff of arcane smoke, leaving the deactivated seal in [npc1.herHis] hand.
+		]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[
+			[npc1.Name] thrusts [npc1.herHis] hand inside [npc2.name]'s second mouth so roughly it would have gagged were it real. [npc1.She] gropes around at [npc2.herHis] stomach till [npc1.she] brushes against the corner of the paper resting in the centre, and yanks it off. The illusion dissipates in a puff of arcane smoke, leaving the deactivated seal in [npc1.herHis] hand.
+		]]></NPCOtherNPCRough>
+	</displacementText>
+
+	<replacementText type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[
+			You place the seal onto your belly, and marvel as it seems to sink into your skin. Your skin splits open painlessly the next second forming jagged teeth and a lolling tongue, however a testing reach for them has your hands waving through thin air, and brushing against your [pc.skinSkin+] half way into the illusionary maw.
+		]]></playerSelf>
+		<playerNPC><![CDATA[
+			You place the seal onto [npc.name]'s belly, and marvel as it seems to sink into [npc.herHis] skin. [npc.HerHis] skin splits open painlessly the next second forming jagged teeth and a lolling tongue.
+		]]></playerNPC>
+		<playerNPCRough><![CDATA[
+			You press the seal onto [npc.name]'s belly, and hold it down until it seems to sink into [npc.herHis] skin. [npc.HerHis] skin splits open painlessly the next second forming jagged teeth and a lolling tongue.
+		]]></playerNPCRough>
+		<NPCSelf><![CDATA[
+			[npc.Name] places the seal onto [npc.herHis]'s belly, and marvels as it seems to sink into [npc.herHis] skin. [npc.HerHis] skin splits open painlessly the next second forming jagged teeth and a lolling tongue.
+		]]></NPCSelf>
+		<NPCPlayer><![CDATA[
+			[npc.Name] places the seal onto your belly, and you marvel as it seems to sink into your skin. Your skin splits open painlessly the next second forming jagged teeth and a lolling tongue, however a testing reach for them has your hands waving through thin air, and brushing against your [pc.skinSkin+] half way into the illusionary maw.
+		]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[
+			[npc.Name] presses the seal onto your belly, and holds it down until it seems to sink into your skin. Your skin splits open painlessly the next second forming jagged teeth and a lolling tongue, however a testing reach for them has your hands waving through thin air, and brushing against your [pc.skinSkin+] half way into the illusionary maw.
+		]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[
+			[npc1.Name] places the seal onto [npc2.name]'s belly, and marvels as it seems to sink into [npc2.herHis] skin. [npc2.HerHis] skin splits open painlessly the next second forming jagged teeth and a lolling tongue.
+		]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[
+			[npc1.Name] presses the seal onto [npc2.name]'s belly, and holds it down until it seems to sink into [npc2.herHis] skin. [npc2.HerHis] skin splits open painlessly the next second forming jagged teeth and a lolling tongue.
+		]]></NPCOtherNPCRough>
+	</replacementText>
+	
+</clothing>

@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<clothing>
+	<coreAtributes>
+		<value>10000</value>
+		<determiner><![CDATA[a set of]]></determiner>
+		<name><![CDATA[Cuisses]]></name>
+		<namePlural pluralByDefault="true"><![CDATA[Cuisses]]></namePlural>
+		<description><![CDATA[A set of metal armour plates, hanging from a specialized belt, to protect the wearer's thighs. They've been enchanted to accommodate tails.]]></description>
+		<physicalResistance>7</physicalResistance>
+		<femininity>ANDROGYNOUS</femininity>
+		<slot>HIPS</slot>
+		<rarity>RARE</rarity>
+		<clothingSet></clothingSet>
+		<imageName>Cuisses.svg</imageName>
+		<imageEquippedName></imageEquippedName>
+		<enchantmentLimit>8</enchantmentLimit>
+		<effects />
+		<blockedPartsList>
+			<blockedParts>
+				<displacementType>REMOVE_OR_EQUIP</displacementType>
+				<clothingAccessRequired />
+				<blockedBodyParts>
+					<bodyPart>ASS</bodyPart>
+					<bodyPart>ANUS</bodyPart>
+					<bodyPart>LEGS</bodyPart>
+					<bodyPart>THIGHS</bodyPart>
+					<bodyPart>VAGINA</bodyPart>
+					<bodyPart>MOUND</bodyPart>
+					<bodyPart>PENIS</bodyPart>
+				</blockedBodyParts>
+				<clothingAccessBlocked>
+					<clothingAccess>LEGS_UP_TO_GROIN</clothingAccess>
+					<clothingAccess>GROIN</clothingAccess>
+				</clothingAccessBlocked>
+				<concealedSlots>
+					<slot>ANUS</slot>
+					<slot>GROIN</slot>
+					<slot>PENIS</slot>
+					<slot>VAGINA</slot>
+					<slot>PIERCING_VAGINA</slot>
+					<slot>PIERCING_PENIS</slot>
+				</concealedSlots>
+			</blockedParts>
+		</blockedPartsList>
+		<incompatibleSlots />
+		<primaryColours values="ALL_METAL"/>
+		<primaryColoursDye values="ALL_METAL"/>
+		<secondaryColours values="ALL"/>
+		<secondaryColoursDye values="ALL"/>
+		<itemTags>
+			<tag>SOLD_BY_VICKY</tag>
+		</itemTags>
+	</coreAtributes>
+	<displacementText type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[You unfasten and remove your Cuisses.]]></playerSelf>
+		<playerNPC><![CDATA[You unfasten and remove [npc.name]'s Cuisses.]]></playerNPC>
+		<playerNPCRough><![CDATA[You tear off [npc.name]'s Cuisses.]]></playerNPCRough>
+		<NPCSelf><![CDATA[[npc.name] unfastens and removes their Cuisses.]]></NPCSelf>
+		<NPCPlayer><![CDATA[[npc.name] unfastens and removes your Cuisses.]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[[npc.name] tears off your Cuisses.]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[[npc1.name] unfastens and removes [npc2.name]'s Cuisses.]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[[npc1.name] tears off [npc2.name]'s Cuisses.]]></NPCOtherNPCRough>
+	</displacementText>
+	<replacementText type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[You fasten your Cuisses to your hips.]]></playerSelf>
+		<playerNPC><![CDATA[You fasten [npc.name]'s Cuisses to their hips.]]></playerNPC>
+		<playerNPCRough><![CDATA[You roughly fasten the Cuisses to [npc.name]'s hips.]]></playerNPCRough>
+		<NPCSelf><![CDATA[[npc.name] fastens their Cuisses to their hips.]]></NPCSelf>
+		<NPCPlayer><![CDATA[[npc.name] fastens your Cuisses to your hips.]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[[npc.name] roughly fastens your Cuisses to your hips.]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[[npc1.name] fastens [npc2.name]'s Cuisses to their hips.]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[[npc1.name] roughly fastens [npc2.name]'s Cuisses to their hips.]]></NPCOtherNPCRough>
+	</replacementText>
+</clothing>

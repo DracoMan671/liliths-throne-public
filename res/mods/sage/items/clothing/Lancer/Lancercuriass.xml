@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<clothing>
+	<coreAttributes>
+		<value>1000000</value>
+		<determiner><![CDATA[a]]></determiner>
+		<name><![CDATA[Royal Knight Curiass]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Royal Knights Curiass]]></namePlural>
+		<description><![CDATA[an arcane constructed steel Curiass based of a Legendary king. It has a single pouldren attached to cover the wearers left shoulder.]]></description>
+		<physicalResistance>15</physicalResistance>
+		<femininity>ANDROGYNOUS</femininity>
+		<slot>TORSO_OVER</slot>
+		<rarity>LEGENDARY</rarity>
+		<clothingSet/>
+		<imageName>Lancercuriass.svg</imageName>
+		<imageEquippedName/>
+		<enchantmentLimit/>
+		<effects/>
+		
+		<blockedPartsList>
+			<blockedParts>
+				<displacementType>REMOVE_OR_EQUIP</displacementType>
+				<clothingAccessRequired/>
+				<blockedBodyParts>
+					<bodyPart>BREASTS</bodyPart>
+					<bodyPart>NIPPLES</bodyPart>
+				</blockedBodyParts>
+				<clothingAccessBlocked>
+					<clothingAccess>CHEST</clothingAccess>
+				</clothingAccessBlocked>
+				<concealedSlots>
+					<slot>TORSO_UNDER</slot>
+					<slot>CHEST</slot>
+					<slot>NIPPLE</slot>
+					<slot>PIERCING_NIPPLE</slot>
+					<slot>PIERCING_STOMACH</slot>
+				</concealedSlots>
+			</blockedParts>
+		</blockedPartsList>
+		
+		<incompatibleSlots/>
+		
+		<primaryColours values="JUST_STEEL"/> 
+		<primaryColoursDye values="ALL_WITH_METALS"/>
+		<secondaryColours values="JUST_BLUE"/>
+		<secondaryColoursDye values="ALL_WITH_METALS"/>
+	
+		<itemTags> 
+			<tag>SOLD_BY_VICKY</tag>
+		</itemTags>
+	</coreAttributes>
+  
+</clothing>

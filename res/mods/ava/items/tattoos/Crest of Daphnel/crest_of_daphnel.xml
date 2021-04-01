@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<tattoo>
+	<coreAttributes>
+		<value>500</value> 
+		
+		<name><![CDATA[Crest of Daphnel]]></name>
+		
+		<description><![CDATA[The Crest of a holy knight now carried by a noblewoman seeking to become a knight.]]></description> 
+		
+		<imageName>crest_of_daphnel.svg</imageName> 
+		
+		<enchantmentLimit>5</enchantmentLimit>
+		
+		<slotAvailability/>
+		
+		<primaryColours values="ALL"/> 
+		<secondaryColours values="ALL"/> 
+		<tertiaryColours/>
+		
+	</coreAttributes>
+	
+</tattoo>

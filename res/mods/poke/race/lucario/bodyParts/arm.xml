@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<arm>
+	<race>poke_lucario</race>
+	<transformationName><![CDATA[Lucario]]></transformationName>
+	<coveringType>poke_lucario_fur</coveringType>
+	<allowsFlight>false</allowsFlight>	
+	<!-- ARM_STANDARD, ARM_WINGS, ARM_WINGS_FEATHERED, ARM_WINGS_LEATHERY -->
+	<tags>
+		<tag>ARM_STANDARD</tag>
+	</tags>
+	<name><![CDATA[arm]]></name>
+	<namePlural><![CDATA[arms]]></namePlural> 
+	<descriptorsMasculine>
+		<descriptor>furry</descriptor>
+		<descriptor>fur-coated</descriptor>
+	</descriptorsMasculine>
+	<descriptorsFeminine>
+		<descriptor>furry</descriptor>
+		<descriptor>fur-coated</descriptor>
+	</descriptorsFeminine>
+	<handName><![CDATA[hand]]></handName>
+	<handNamePlural><![CDATA[hands]]></handNamePlural>
+	<handDescriptorsMasculine>
+		<descriptor>soft</descriptor>
+		<descriptor>jackal-like</descriptor>
+		<descriptor>furry</descriptor>
+		<descriptor>paw-like</descriptor>
+		<descriptor>spiked</descriptor>
+	</handDescriptorsMasculine>
+	<handDescriptorsFeminine>
+		<descriptor>soft</descriptor>
+		<descriptor>feminine</descriptor>
+		<descriptor>jackal-like</descriptor>
+		<descriptor>furry</descriptor>
+		<descriptor>paw-like</descriptor>
+		<descriptor>spiked</descriptor>
+	</handDescriptorsFeminine>
+	<fingerName><![CDATA[finger]]></fingerName>
+	<fingerNamePlural><![CDATA[fingers]]></fingerNamePlural>
+	<fingerDescriptorsMasculine>
+		<descriptor>soft</descriptor>
+		<descriptor>jackal-like</descriptor>
+	</fingerDescriptorsMasculine>
+	<fingerDescriptorsFeminine>
+		<descriptor>soft</descriptor>
+		<descriptor>feminine</descriptor>
+		<descriptor>jackal-like</descriptor>
+	</fingerDescriptorsFeminine>
+	<transformationDescription><![CDATA[
+		The transformation leaves [npc.nameIsFull] with a Lucario's spiked hands, which are [npc.materialDescriptor] [npc.armFullDescription].
+	]]></transformationDescription>
+	<bodyDescription><![CDATA[
+		[npc.She] [npc.has] [npc.armRows] Lucario arms, which are [npc.materialCompositionDescriptor] [npc.armFullDescription(true)].
+	]]></bodyDescription>
+</arm>

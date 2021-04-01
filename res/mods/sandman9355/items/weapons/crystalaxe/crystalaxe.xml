@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<weapon>
+	<coreAttributes>
+		<value>2000</value> 
+		<melee>true</melee>
+		<twoHanded>false</twoHanded>
+		<determiner><![CDATA[]]></determiner>
+		<name><![CDATA[demonstone axe]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[demonstone axes]]></namePlural> 
+		<description><![CDATA[A common type of demonstone has been cut and enchanted into an ethereal axehead to create a weapon that causes elemental damage. Or the wielder can channel some of their aura into it and cast a spell.]]></description> 
+		
+		<attackDescriptor>hack</attackDescriptor>
+		<attackTooltipDescription>Swing at [npc.name] in melee, causing elemental damage!</attackTooltipDescription>
+		
+		<rarity>RARE</rarity> 
+		
+		<equipText><![CDATA[[npc.Name] [npc.verb(take)] hold of [npc.her] axe, and [npc.verb(prepare)] to use it to fight [npc.herself] in combat.]]></equipText>
+		<unequipText><![CDATA[[npc.Name] [npc.verb(put)] [npc.her] axe away.]]></unequipText>
+		
+		<imageName>crystalaxe.svg</imageName> 
+		
+		<imageEquippedName/>
+		
+		<damage>25</damage> 
+		
+		<arcaneCost>0</arcaneCost> 
+		
+		<damageVariance>MEDIUM</damageVariance> 
+		
+		<availableDamageTypes>
+			<damageType>ICE</damageType>
+			<damageType>FIRE</damageType>
+			<damageType>POISON</damageType>
+		</availableDamageTypes>
+		
+		<spells changeOnReforge="true">
+			<spell damageType="FIRE">FIREBALL</spell>
+			<spell damageType="ICE">ICE_SHARD</spell>
+			<spell damageType="POISON">POISON_VAPOURS</spell>
+		</spells>
+		
+		<enchantmentLimit>6</enchantmentLimit>
+		
+		<effects> 
+              <effect itemEffectType="CLOTHING" limit="0" potency="MAJOR_BOOST" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="DAMAGE_WEAPON" timer="0"/>
+		</effects>
+		
+		<primaryColours values="JUST_BROWN_VERY_DARK"/>
+		<primaryColoursDye values="ALL"/>
+		<secondaryColours values="JUST_BRONZE"/>
+		<secondaryColoursDye values="ALL_METAL"/>
+	
+		<itemTags> 
+			<tag>SOLD_BY_VICKY</tag>
+			<tag>WEAPON_BLADE</tag>
+			<tag>DOMINION_ALLEYWAY_SPAWN</tag>
+			<tag>SUBMISSION_TUNNEL_SPAWN</tag>
+			<tag>BAT_CAVERNS_SPAWN</tag>
+			<tag>WEAPON_FERAL_EQUIPPABLE</tag>
+		</itemTags>
+		
+	</coreAttributes>
+
+	<!-- Descriptions that are used when hitting an enemy. One of the hitText values will be randomly selected each time the attacker hits their target. Follow the same guidelines as equipText. -->
+	<hitDescriptions>
+		<hitText><![CDATA[
+		Swinging with [npc.her] Crystal Axe, [npc.name] [npc.verb(manage)] to hit [npc2.name] in the chest, the demonstone axehead passing through [npc2.her] torso to drain [npc2.her] energy!
+		]]></hitText>
+		<hitText><![CDATA[
+		Hacking at [npc2.name] with [npc.her] Crystal Axe, [npc.name] [npc.verb(manage)] to slash through [npc2.her] [npc2.arm] with the demonstone axehead and drain [npc2.her] energy!
+		]]></hitText>
+		<hitText><![CDATA[
+		With a quick step forwards, [npc.name] [npc.verb(lunge)] out at [npc2.name] with [npc.her] Crystal Axe, sinking the demonstone edge into [npc2.her] shoulder and causing [npc2.herHim] to lose some energy!
+		]]></hitText>
+		<!-- You can add hit descriptions which will only be shown on a critical hit by using the 'criticalHitText' element.
+			This is optional, and you don't need to define any critical hit descriptions (in which case just a regular 'hitText' will be used instead.)-->
+		<criticalHitText><![CDATA[
+		Expertly sidestepping around [npc2.namePos] attempt to block [npc.her] attack, [npc.name] [npc.verb(deal)] a devastating strike with [npc.her] Crystal Axe!
+		]]></criticalHitText>
+	</hitDescriptions>
+
+	<!-- Descriptions that are used when missing an enemy. One of the missText values will be randomly selected each time the attacker misses their target. Follow the same guidelines as equipText. -->
+	<missDescriptions>
+		<missText><![CDATA[
+		Swinging with [npc.her] Crystal Axe, [npc.name] [npc.verb(attempt)] to hit [npc2.name] in the chest, but [npc.verb(end)] up missing [npc2.herHim]!
+		]]></missText>
+		<missText><![CDATA[
+		Swinging at [npc2.name] with [npc.her] Crystal Axe, [npc.name] [npc.verb(let)] out a frustrated cry as [npc.she] [npc.verb(miss)] [npc.her] target!
+		]]></missText>
+		<missText><![CDATA[
+		With a quick step forwards, [npc.name] [npc.verb(lunge)] out at [npc2.name] with [npc.her] Crystal Axe, but [npc.she] [npc.verb(miss)] [npc.her] target!
+		]]></missText>
+	</missDescriptions>
+	
+	
+</weapon>

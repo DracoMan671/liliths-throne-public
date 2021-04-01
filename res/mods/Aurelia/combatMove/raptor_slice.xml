@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<combatMove>
+	<category>SPECIAL</category>
+	
+	<type>ATTACK</type>
+	
+	<equipWeighting>10</equipWeighting>
+	
+	<name><![CDATA[Rend]]></name>
+	
+	<description><![CDATA[
+		Use [npc.her] raptor-like toes to deliver a merciless slice to [npc.her] target, dealing formattedDamageInflicted damage.
+	]]></description>
+	
+	<damageType><![CDATA[
+		PHYSICAL
+	]]></damageType>
+	
+	<baseDamage><![CDATA[
+		#IF(npc.isLegMovementHindered())
+			[#npc.getUnarmedDamage() * 1.5]
+		#ELSE
+			[#npc.getUnarmedDamage() * 3]
+		#ENDIF
+	]]></baseDamage>
+	
+	<blockAmount><![CDATA[
+		0
+	]]></blockAmount>
+	
+	<cooldown><![CDATA[
+		0
+	]]></cooldown>
+	
+	<APcost><![CDATA[
+		1
+	]]></APcost>
+	
+	<canTargetEnemies>true</canTargetEnemies>
+	<canTargetAllies>false</canTargetAllies>
+	<canTargetSelf>false</canTargetSelf>
+	
+	<imageName>raptor_slice.svg</imageName>
+	
+	<colourPrimary>DAMAGE_TYPE_PHYSICAL</colourPrimary> <!-- This has to have a value defined, or else this XML file will fail to load. -->
+	<colourSecondary/> <!-- This can optionally be left blank, like the 'colourTertiary' element below. -->
+	<colourTertiary/>
+	
+	<statusEffects>
+		<effect turnLength="3" onCrit="true">CRIPPLE</effect>
+	</statusEffects>
+	
+	
+	<!-- Effect logic -->
+	
+	<!-- The condition upon which this move is available to characters.
+	You must use the game's parsing engine to get what you want.
+	The parsing target of 'npc' corresponds to the character who is being checked to see if they have this move available to them.
+	All whitespace is stripped from the returned String before it is parsed into a Boolean. -->
+	<availabilityCondition><![CDATA[
+		[#(npc.getLegType()==LEG_TYPE_Aurelia_Raptor_leg) || (npc.getLegType()==LEG_TYPE_Aurelia_Raptor_legFeathered)]
+	]]>
+	</availabilityCondition>
+	
+	<!-- A short description to let the player know what the conditions are for this move being available to them. -->
+	<availabilityDescription><![CDATA[
+		Available to characters who have 'raptor' legs.
+	]]></availabilityDescription>
+	
+	<weighting><![CDATA[
+		0.25
+	]]></weighting>
+		
+	<criticalCondition><![CDATA[
+		[#npc2.getHealthPercentage() < 0.20]
+	]]></criticalCondition>
+	
+	<criticalDescription><![CDATA[
+		Target's health is below 20%.
+	]]></criticalDescription>
+	
+
+	<movePredictionDescriptionWithTarget><![CDATA[
+		Use [npc.her] raptor claws to deliver a lethal slice to [npc2.name], dealing formattedDamageInflicted damage.
+		#IF(npc.isLegMovementHindered())
+			 [style.italicsMinorBad(Damage is reduced by 50% as [npc.her] clothing is hindering leg movement!)]
+		#ENDIF
+	]]></movePredictionDescriptionWithTarget>
+	
+	<movePredictionDescriptionNoTarget><![CDATA[
+		Use [npc.her] raptor claws to deliver a lethal slice to [npc.her] target, dealing formattedDamageInflicted damage.
+		#IF(npc.isLegMovementHindered())
+			 [style.italicsMinorBad(Damage is reduced by 50% as [npc.her] clothing is hindering leg movement!)]
+		#ENDIF
+	]]></movePredictionDescriptionNoTarget>
+	
+	<performMove>
+		<execute><![CDATA[
+			#IF(npc.isLegMovementHindered())
+				As [npc.her] clothing is restricting [npc.her] legs' movement, [npc.name] [npc.verb(struggle)] to put any power behind [npc.her] strike, and as a result only [npc.verb(deal)] half damage to [npc2.name]...
+			#ELSE
+				[npc.Name] [npc.verb(lunge)] forth, before kicking out with [npc.her] claws extended and delivering a slice [npc2.name] with [npc.her] [npc.feet]!
+			#ENDIF
+			formattedHealthDamage
+		]]></execute>
+		<critDescription><![CDATA[
+			[npc.NamePos] slice was extremely effective!
+		]]></critDescription>
+		<critEffectDescription><![CDATA[
+			[npc2.Name] [npc2.has] been crippled by the attack!
+		]]></critEffectDescription>
+	</performMove>
+	
+</combatMove>

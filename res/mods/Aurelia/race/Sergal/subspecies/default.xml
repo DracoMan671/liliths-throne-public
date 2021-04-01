@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<subspecies>
+	<race>Aurelia_Sergal</race>
+	
+	<colour>Aurelia_Sergal</colour>
+	<secondaryColour>Aurelia_Sergal</secondaryColour>
+	<tertiaryColour>Aurelia_Sergal</tertiaryColour>
+	
+	<mainSubspecies>true</mainSubspecies>
+	
+	<baseSlaveValue>25000</baseSlaveValue>
+	
+	<attributeItemId>Aurelia_race_Sergal_otherworldly_draught</attributeItemId>
+	
+	<transformativeItemId>Aurelia_race_Sergal_nutrient_paste</transformativeItemId>
+	
+	<subspeciesOverridePriority>0</subspeciesOverridePriority>
+	
+	<shortStature>false</shortStature>
+	
+	<bipedalSubspecies>true</bipedalSubspecies>
+	
+	<aquatic>false</aquatic>
+	
+	<applySubspeciesChanges><![CDATA[
+	]]></applySubspeciesChanges>
+	
+	<subspeciesWeighting><![CDATA[
+		#IF(targetedRace==RACE_Aurelia_Sergal)
+			100
+		#ELSE
+			0
+		#ENDIF
+	]]></subspeciesWeighting>
+	
+	<iconName displaySize="80">icon</iconName>
+	
+	<backgroundName>background</backgroundName>
+	
+	<bookIconName>icon</bookIconName>
+	
+	<bookName>The Wedge-Head Invaders</bookName>
+	
+	<basicDescriptionId>SERGAL_BASIC</basicDescriptionId>
+	<advancedDescriptionId>SERGAL_ADVANCED</advancedDescriptionId>
+	
+	<defaultPreference>TWO_AVERAGE</defaultPreference>
+	
+	<name><![CDATA[sergal-morph]]></name>
+	<namePlural><![CDATA[sergal-morphs]]></namePlural>
+	<singularMaleName><![CDATA[sergal-boy]]></singularMaleName>
+	<singularFemaleName><![CDATA[sergal-girl]]></singularFemaleName>
+	<pluralMaleName><![CDATA[sergal-boys]]></pluralMaleName>
+	<pluralFemaleName><![CDATA[sergal-girls]]></pluralFemaleName>
+	
+	<description><![CDATA[A sergal, known as a 'sergal-morph' when bipedal, and a 'sergal-taur' when the lower body is that of a typically-oversized quadrupedal sergal.]]></description>
+	
+	<nameHalfDemon><![CDATA[nether-sergal]]></nameHalfDemon>
+	<namePluralHalfDemon><![CDATA[nether-sergals]]></namePluralHalfDemon>
+	<singularMaleNameHalfDemon><![CDATA[nether-sergal]]></singularMaleNameHalfDemon>
+	<singularFemaleNameHalfDemon><![CDATA[nether-sergal]]></singularFemaleNameHalfDemon>
+	<pluralMaleNameHalfDemon><![CDATA[nether-sergals]]></pluralMaleNameHalfDemon>
+	<pluralFemaleNameHalfDemon><![CDATA[nether-sergals]]></pluralFemaleNameHalfDemon>
+	
+	<feralAttributes>
+		<feralName><![CDATA[mutated sergal]]></feralName>
+		<feralNamePlural><![CDATA[mutated sergals]]></feralNamePlural>
+		<feralSingularMaleName><![CDATA[mutated sergal]]></feralSingularMaleName>
+		<feralSingularFemaleName><![CDATA[mutated sergal]]></feralSingularFemaleName>
+		<feralPluralMaleName><![CDATA[mutated sergals]]></feralPluralMaleName>
+		<feralPluralFemaleName><![CDATA[mutated sergals]]></feralPluralFemaleName>
+		
+		<legConfiguration>QUADRUPEDAL</legConfiguration>
+		<sizeHeight>true</sizeHeight>
+		<size>90</size>
+		
+		<breastRowCount>0</breastRowCount>
+		<nipplesPerBreastCount>1</nipplesPerBreastCount>
+		<crotchBreastRowCount>1</crotchBreastRowCount>
+		<nipplesPerCrotchBreastCount>1</nipplesPerCrotchBreastCount>
+		
+		<armsOrWingsPresent>false</armsOrWingsPresent>
+		<fingerActionsAvailable>false</fingerActionsAvailable>
+		<hairPresent>true</hairPresent>
+	</feralAttributes>
+	
+	<statusEffectDescription><![CDATA[
+		[npc.NamePos] sergal-like body is very lean and powerful, and [npc.she] [npc.has] a strong desire to prove [npc.herHis] might to all that are near [npc.herHim].
+	]]></statusEffectDescription>
+	
+	<statusEffectAttributeModifiers>
+		<attribute value="25">MAJOR_PHYSIQUE</attribute>
+		<attribute value="10">MAJOR_CORRUPTION</attribute>
+		<attribute value="15">DAMAGE_PHYSICAL</attribute>
+	</statusEffectAttributeModifiers>
+	
+	<extraEffects/>
+	
+	<perkWeightings>
+		<category masculineWeighting="10" feminineWeighting="1">PHYSICAL</category>
+		<category masculineWeighting="1" feminineWeighting="10">LUST</category>
+		<category masculineWeighting="0" feminineWeighting="0">ARCANE</category>
+	</perkWeightings>
+	
+	<regionLocations>
+		<region rarity="FOUR_COMMON">DOMINION</region>
+	</regionLocations>
+	
+	<worldLocations>
+		<world rarity="FOUR_COMMON">NIGHTLIFE_CLUB</world>
+	</worldLocations>
+	
+	<flags/>
+	
+</subspecies>

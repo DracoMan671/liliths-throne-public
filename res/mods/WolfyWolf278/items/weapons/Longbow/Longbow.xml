@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<weapon>
+    <coreAttributes>
+        <value>5000</value>
+        <melee>false</melee>
+        <twoHanded>true</twoHanded>
+        <determiner><![CDATA[a]]></determiner>
+        <name><![CDATA[Longbow]]></name>
+        <namePlural pluralByDefault="false"><![CDATA[Longbows]]></namePlural>
+        <description><![CDATA[While most bows require arrows, this longbow seems to have the string enchanted to create arcane arrows straight from your aura. It is made of a long, treated shaft of wood, and the string is strong and taut.]]></description>
+        <attackDescriptor>fire an arrow</attackDescriptor>
+        <attackTooltipDescription>you knock an arrow and let it loose at [npc2.name].</attackTooltipDescription>
+        <rarity>UNCOMMON</rarity>
+        <equipText><![CDATA[[npc.Name] [npc.verb(unsheathe)] the longbow.]]></equipText>
+        <unequipText><![CDATA[[npc.Name] [npc.verb(sheathe)] the longbow.]]></unequipText>
+        <imageName>longbow.svg</imageName>
+        <imageEquippedName/>
+        <damage>38</damage>
+        <arcaneCost>3</arcaneCost>
+        <damageVariance>MEDIUM</damageVariance>
+        <availableDamageTypes>
+            <damageType>PHYSICAL</damageType>
+            <damageType>POISON</damageType>
+            <damageType>FIRE</damageType>
+            <damageType>ICE</damageType>
+        </availableDamageTypes>
+        <spells/>
+        <enchantmentLimit>0</enchantmentLimit>
+        <effects>
+            <effect itemEffectType="CLOTHING" primaryModifier="CLOTHING_ATTRIBUTE" timer="0" limit="0" potency="BOOST" secondaryModifier="CRITICAL_DAMAGE"/>
+        </effects>
+        <primaryColours values="ALL"/>
+        <primaryColoursDye values="ALL"/>
+        <secondaryColours values="JUST_DARK_BROWN"/>
+        <secondaryColoursDye values="JUST_BROWN"/>
+        <itemTags>
+            <tag>SOLD_BY_VICKY</tag>
+        </itemTags>
+    </coreAttributes>
+    <hitDescriptions>
+        <hitText><![CDATA[Loosing an arrow with [npc.her] longbow, [npc.name] [npc.verb(manage)] to land a shot on [npc2.name] in the chest!]]></hitText>
+        <hitText><![CDATA[Letting loose an arrow with [npc.her] longbow, [npc.name] [npc.verb(manage)] to land an arrow of pure arcane in [npc2.name]'s body!]]></hitText>
+    </hitDescriptions>
+    <missDescriptions>
+        <missText><![CDATA[Loosing an arrow with [npc.her] longbow, [npc.name] [npc.verb(attempt)] towards [npc2.name] chest, but [npc.verb(end)] arrow went wide past [npc2.herHim]!]]></missText>
+    </missDescriptions>
+</weapon>

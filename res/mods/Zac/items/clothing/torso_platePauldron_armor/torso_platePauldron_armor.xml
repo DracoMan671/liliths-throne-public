@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<clothing>
+	
+	<coreAtributes>
+		<value>1500</value> 
+		<determiner><![CDATA[a pair of]]></determiner>
+		<name><![CDATA[Platemail Pauldron]]></name>
+		<namePlural pluralByDefault="true"><![CDATA[Platemail Pauldrons]]></namePlural> 
+		<description><![CDATA[A pair of hevay metal shoulder guards with layered plate metal protecting the upper arms.]]></description> 
+		<physicalResistance>3</physicalResistance> 
+		<femininity>ANDROGYNOUS</femininity> 
+		<slot>TORSO_OVER</slot> 
+		<rarity>RARE</rarity> 
+		<clothingSet/>
+		<imageName>torso_platePauldron_armor.svg</imageName> 
+		<imageEquippedName/> 
+		<enchantmentLimit/>
+		<effects/> 
+		<blockedPartsList>
+			<blockedParts>
+				<displacementType>REMOVE_OR_EQUIP</displacementType>
+				<clothingAccessRequired>
+					<clothingAccess>HEAD</clothingAccess>
+				</clothingAccessRequired>
+				<blockedBodyParts/>
+				<clothingAccessBlocked>
+					<clothingAccess>ARMS_UP_TO_SHOULDER</clothingAccess>
+				</clothingAccessBlocked>
+				<concealedSlots/>
+			</blockedParts>
+			<blockedParts>
+				<displacementType>PULLS_OFF</displacementType>
+				<clothingAccessRequired>
+					<clothingAccess>HEAD</clothingAccess>
+				</clothingAccessRequired>
+				<blockedBodyParts/>
+				<clothingAccessBlocked>
+					<clothingAccess>ARMS_UP_TO_SHOULDER</clothingAccess>
+				</clothingAccessBlocked>
+				<concealedSlots/>
+			</blockedParts>
+		</blockedPartsList>
+		<incompatibleSlots/>
+		<primaryColours values="JUST_STEEL"/>
+		<primaryColoursDye values="ALL_METAL"/>
+		<secondaryColours values="JUST_BROWN"/>
+		<secondaryColoursDye values="ALL"/>
+		<tertiaryColours values="NONE"/>
+		<tertiaryColoursDye values="NONE"/>
+		<itemTags> 
+			<tag>SOLD_BY_NYAN</tag>
+			<tag>DOMINION_ALLEYWAY_SPAWN</tag>
+		</itemTags>
+	</coreAtributes>
+	<displacementText type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[
+			You take off your platemail pauldrons.
+		]]></playerSelf>
+		<playerNPC><![CDATA[
+			You pull off [npc.name]'s platemail pauldrons.
+		]]></playerNPC>
+		<playerNPCRough><![CDATA[
+			You grab hold of [npc.name]'s platemail pauldrons and roughly pull them off [npc.her] shoulders.
+		]]></playerNPCRough>
+		<NPCSelf><![CDATA[
+			[npc.Name] takes [npc.her] platemail pauldrons off.
+		]]></NPCSelf>
+		<NPCPlayer><![CDATA[
+			[npc.Name] pulls your platemail pauldrons off.
+		]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[
+			[npc.Name] grabs hold of your platemail pauldrons and roughly pulls them off your shoulders.
+		]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[
+			[npc1.Name] pulls [npc2.name]'s platemail pauldrons off.
+		]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[
+			[npc.Name] grabs hold of [npc2.name]'s platemail pauldrons and roughly pulls them off [npc2.her] shoulders.
+		]]></NPCOtherNPCRough>
+	</displacementText>
+
+	<replacementText type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[
+			You put on the platemail pauldrons.
+		]]></playerSelf>
+		<playerNPC><![CDATA[
+			You put [npc.name]'s platemail pauldrons on [npc.her] shoulders.
+		]]></playerNPC>
+		<playerNPCRough><![CDATA[
+			You hold [npc.name] still as you roughly force the platemail pauldrons on [npc.her] shoulders.
+		]]></playerNPCRough>
+		<NPCSelf><![CDATA[
+			[npc.Name] put on the platemail pauldrons.
+		]]></NPCSelf>
+		<NPCPlayer><![CDATA[
+			[npc.Name] puts your platemail pauldrons on your shoulders.
+		]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[
+			[npc.Name] holds you still as [npc.she] roughly puts the platemail pauldrons on your shoulders.
+		]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[
+			[npc1.Name] puts [npc2.name]'s platemail pauldrons on their shoulders.
+		]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[
+			[npc.Name] grabs hold of [npc2.name]'s platemail pauldrons and roughly puts them on [npc2.her] shoulders.
+		]]></NPCOtherNPCRough>
+	</replacementText>
+
+	<displacementText type="PULLS_OFF">
+		<playerSelf><![CDATA[
+			You take off your platemail pauldrons.
+		]]></playerSelf>
+		<playerNPC><![CDATA[
+			You pull off [npc.name]'s platemail pauldrons.
+		]]></playerNPC>
+		<playerNPCRough><![CDATA[
+			You grab hold of [npc.name]'s platemail pauldrons and roughly pull them off [npc.her] shoulders.
+		]]></playerNPCRough>
+		<NPCSelf><![CDATA[
+			[npc.Name] takes [npc.her] platemail pauldrons off.
+		]]></NPCSelf>
+		<NPCPlayer><![CDATA[
+			[npc.Name] pulls your platemail pauldrons off.
+		]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[
+			[npc.Name] grabs hold of your platemail pauldrons and roughly pulls them off your shoulders.
+		]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[
+			[npc1.Name] pulls [npc2.name]'s platemail pauldrons off.
+		]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[
+			[npc.Name] grabs hold of [npc2.name]'s platemail pauldrons and roughly pulls them off [npc2.her] shoulders.
+		]]></NPCOtherNPCRough>
+	</displacementText>
+	
+	<replacementText type="PULLS_BACK_ON">
+		<playerSelf><![CDATA[
+			You put on the platemail pauldrons.
+		]]></playerSelf>
+		<playerNPC><![CDATA[
+			You put [npc.name]'s platemail pauldrons on [npc.her] shoulders.
+		]]></playerNPC>
+		<playerNPCRough><![CDATA[
+			You hold [npc.name] still as you roughly force the platemail pauldrons on [npc.her] shoulders.
+		]]></playerNPCRough>
+		<NPCSelf><![CDATA[
+			[npc.Name] put on the platemail pauldrons.
+		]]></NPCSelf>
+		<NPCPlayer><![CDATA[
+			[npc.Name] puts your platemail pauldrons on your shoulders.
+		]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[
+			[npc.Name] holds you still as [npc.she] roughly puts the platemail pauldrons on your shoulders.
+		]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[
+			[npc1.Name] puts [npc2.name]'s platemail pauldrons off on their shoulders.
+		]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[
+			[npc.Name] grabs hold of [npc2.name]'s platemail pauldrons and roughly puts them on [npc2.her] shoulders.
+		]]></NPCOtherNPCRough>
+	</replacementText>
+	
+</clothing>

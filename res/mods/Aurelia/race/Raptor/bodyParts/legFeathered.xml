@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<leg>
+	<race>Aurelia_Raptor</race>
+	
+	<transformationName><![CDATA[raptor (feathered)]]></transformationName>
+	
+	<coveringType>Aurelia_Raptor_feathers</coveringType>
+	
+	<defaultFootStructure>DIGITIGRADE</defaultFootStructure>
+	
+	<footType>PAWS</footType>
+	
+	<spinneret>false</spinneret>
+	
+	<tentacleType>NONE</tentacleType>
+	
+	<tentacleCount>0</tentacleCount>
+	
+	<allowedLegConfigurations>
+		<configuration>BIPEDAL</configuration>
+		<configuration>AVIAN</configuration>
+	</allowedLegConfigurations>
+	
+	<name><![CDATA[leg]]></name>
+	<namePlural><![CDATA[legs]]></namePlural> 
+	
+	<descriptorsMasculine>
+		<descriptor>masculine</descriptor>
+		<descriptor>feathery</descriptor>
+		<descriptor>anthropomorphic, raptor-like</descriptor>
+		<descriptor>feather-coated</descriptor>
+	</descriptorsMasculine>
+	<descriptorsFeminine>
+		<descriptor>feminine</descriptor>
+		<descriptor>feathery</descriptor>
+		<descriptor>anthropomorphic, raptor-like</descriptor>
+		<descriptor>feather-coated</descriptor>
+	</descriptorsFeminine>
+	
+	<footDescriptorsMasculine>
+		<descriptor>raptor-like</descriptor>
+	</footDescriptorsMasculine>
+	<footDescriptorsFeminine>
+		<descriptor>raptor-like</descriptor>
+	</footDescriptorsFeminine>
+	
+	<toeDescriptorsMasculine>
+		<descriptor>raptor-like</descriptor>
+	</toeDescriptorsMasculine>
+	<toeDescriptorsFeminine>
+		<descriptor>raptor-like</descriptor>
+	</toeDescriptorsFeminine>
+	
+	<transformationDescription><![CDATA[
+		A layer of feathers quickly grows over [npc.her] legs as they shift into a new form. As [npc.her] new feathery hide spreads down to the ends of [npc.her] toes, [npc.her] toenails thicken into sharp claws, and tough leathery scales grow to cover [npc.her] soles, leaving [npc.herHim] with vicious, feral, raptor-like feet. As the transformation ends, [npc.she] [npc.verb(see)] that [npc.her] new feathers smoothly transition into the [npc.skin] covering the rest of [npc.her] body at [npc.her] upper-thigh.
+		<br/>[npc.Name] now [npc.has] anthropomorphic, [style.boldRaptorLime(avian raptor-like legs and feet)], which are [npc.materialDescriptor] [npc.legFullDescription].
+	]]></transformationDescription>
+	
+	<bodyDescription><![CDATA[
+		[npc.Her] legs are [npc.materialCompositionDescriptor] [npc.legFullDescription(true)], and [npc.her] feet are formed into anthropomorphic raptor-like paws, complete with sharp claws and tough leathery soles.
+	]]></bodyDescription>
+	
+</leg>

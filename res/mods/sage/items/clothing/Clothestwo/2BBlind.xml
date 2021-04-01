@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<clothing>
+	<coreAtributes>
+		<value>50</value>
+		<determiner><![CDATA[a]]></determiner>
+		<name><![CDATA[YoRHa blindfold]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[blindfolds]]></namePlural>
+		<description><![CDATA[A replica blindfold based of an outfit worn by YoRHa Operatives, although it appears to be a normal blindfold, it acts as a visor to defend against harmful spirits.]]></description>
+		<physicalResistance>0</physicalResistance>
+		<femininity>ANDROGYNOUS</femininity>
+		<slot>EYES</slot>
+		<rarity>RARE</rarity>
+		<clothingSet/>
+		<imageName>2BBlind.svg</imageName>
+		<imageEquippedName/>
+		<enchantmentLimit/>
+		<effects />
+		<blockedPartsList>
+			<blockedParts>
+				<displacementType>REMOVE_OR_EQUIP</displacementType>
+				<clothingAccessRequired />
+				<blockedBodyParts />
+				<clothingAccessBlocked />
+				<concealedSlots>
+					<slot>EYES</slot>
+				</concealedSlots>
+			</blockedParts>
+		</blockedPartsList>
+		<incompatibleSlots />
+		<primaryColours values="JUST_BLACK" />
+		<primaryColoursDye values="ALL"/>
+		<secondaryColours values="" />
+		<secondaryColoursDye values="" />
+		<tertiaryColours values="" />
+		<tertiaryColoursDye values="" />
+		<itemTags>
+			<tag>SOLD_BY_NYAN</tag>
+		</itemTags>
+	</coreAtributes>
+
+	<displacementText type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[
+			You take off your blindfold.
+		]]></playerSelf>
+		<playerNPC><![CDATA[
+			You pull off [npc.name]'s blindfold.
+		]]></playerNPC>
+		<playerNPCRough><![CDATA[
+			You grab hold of [npc.name]'s blindfold and roughly pull it off [npc.her] head.
+		]]></playerNPCRough>
+		<NPCSelf><![CDATA[
+			[npc.Name] takes [npc.her] blindfold off.
+		]]></NPCSelf>
+		<NPCPlayer><![CDATA[
+			[npc.Name] pulls your blindfold off.
+		]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[
+			[npc.Name] grabs hold of your blindfold and roughly pulls it off your head.
+		]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[
+			[npc1.Name] pulls [npc2.name]'s blindfold off.
+		]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[
+			[npc.Name] grabs hold of [npc2.name]'s blindfold and roughly pulls it off [npc2.her].
+		]]></NPCOtherNPCRough>
+	</displacementText>
+
+	<replacementText type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[
+			You pull on the blindfold.
+		]]></playerSelf>
+		<playerNPC><![CDATA[
+			You slip the blindfold over [npc.name]'s head.
+		]]></playerNPC>
+		<playerNPCRough><![CDATA[
+			You hold [npc.name] still as you roughly force the blindfold on [npc.her] face.
+		]]></playerNPCRough>
+		<NPCSelf><![CDATA[
+			[npc.Name] pulls on the blindfold.
+		]]></NPCSelf>
+		<NPCPlayer><![CDATA[
+			[npc.Name] pulls the blindfold down your face, covering your eyes.
+		]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[
+			[npc.Name] forces the blindfold on your face, covering your eyes and robbing you of your vision!
+		]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[
+			[npc.Name] pulls the blindfold down [npc2.Name]'s face, covering [npc2.her] face.
+		]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[
+			[npc.Name] forces the blindfold on [npc2.name]'s face, covering  [npc2.her] face.]
+		]></NPCOtherNPCRough>
+		]]></NPCOtherNPCRough>
+	</replacementText>
+
+	<displacementText type="PULLS_UP">
+		<playerSelf><![CDATA[
+			You pull your blindfold up to your forehead.
+		]]></playerSelf>
+		<playerNPC><![CDATA[
+			You pull up [npc.name]'s blindfold.
+		]]></playerNPC>
+		<playerNPCRough><![CDATA[
+			You roughly yank up [npc.name]'s blindfold.
+		]]></playerNPCRough>
+		<NPCSelf><![CDATA[
+			[npc.Name] pulls [npc.her] blindfold up to just below [npc.her] chin.
+		]]></NPCSelf>
+		<NPCPlayer><![CDATA[
+			[npc.Name] pulls up your blindfold.
+		]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[
+			[npc.Name] roughly yanks up your blindfold.
+		]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[
+			[npc1.Name] pulls up [npc2.name]'s blindfold.
+		]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[
+			[npc.Name] roughly pulls up [npc2.name]'s blindfold.
+		]]></NPCOtherNPCRough>
+	</displacementText>
+	
+	<replacementText type="PULLS_DOWN">
+		<playerSelf><![CDATA[
+			You pull your blindfold back down, covering your torso.
+		]]></playerSelf>
+		<playerNPC><![CDATA[
+			You pull down [npc.name]'s blindfold.
+		]]></playerNPC>
+		<playerNPCRough><![CDATA[
+			You roughly pull down [npc.name]'s blindfold.
+		]]></playerNPCRough>
+		<NPCSelf><![CDATA[
+			[npc.Name] pulls [npc.her] blindfold back down to cover [npc.her] torso.
+		]]></NPCSelf>
+		<NPCPlayer><![CDATA[
+			[npc.Name] pulls down your blindfold.
+		]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[
+			[npc.Name] roughly pulls down your blindfold.
+		]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[
+			[npc1.Name] pulls down [npc2.name]'s blindfold.
+		]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[
+			[npc.Name] roughly pulls down [npc2.name]'s blindfold.
+		]]></NPCOtherNPCRough>
+	</replacementText>
+</clothing>

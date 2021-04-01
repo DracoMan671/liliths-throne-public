@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<clothing>
+<coreAtributes>
+		<value>100</value>
+		<determiner><![CDATA[a pair of]]></determiner>
+		<name><![CDATA[bloomers]]></name>
+<namePlural pluralByDefault="true"><![CDATA[bloomers]]></namePlural>
+<description><![CDATA[A pair of bloomers, typically used for exercising.]]></description>
+<physicalResistance>1</physicalResistance>
+<femininity>FEMININE</femininity>
+<slot>LEG</slot>
+<rarity>COMMON</rarity>
+<clothingSet/>
+<imageName>leg_bloomers.svg</imageName>
+<imageEquippedName/>
+<enchantmentLimit/>
+<effects>
+</effects>
+<blockedPartsList>
+<blockedParts>
+<displacementType>REMOVE_OR_EQUIP</displacementType>
+<clothingAccessRequired>
+<clothingAccess>LEGS_UP_TO_GROIN_LOW_LEVEL</clothingAccess>
+<clothingAccess>LEGS_UP_TO_GROIN</clothingAccess>
+<clothingAccess>GROIN</clothingAccess>
+</clothingAccessRequired>
+<blockedBodyParts>
+</blockedBodyParts>
+<clothingAccessBlocked>
+</clothingAccessBlocked>
+<concealedSlots>
+</concealedSlots>
+</blockedParts>
+<blockedParts>
+<displacementType>PULLS_DOWN</displacementType>
+<clothingAccessRequired>
+<clothingAccess>LEGS_UP_TO_GROIN_LOW_LEVEL</clothingAccess>
+<clothingAccess>LEGS_UP_TO_GROIN</clothingAccess>
+</clothingAccessRequired>
+<blockedBodyParts>
+<bodyPart>ANUS</bodyPart>
+<bodyPart>PENIS</bodyPart>
+<bodyPart>VAGINA</bodyPart>
+</blockedBodyParts>
+<clothingAccessBlocked>
+</clothingAccessBlocked>
+<concealedSlots>
+<slot>GROIN</slot>
+<slot>VAGINA</slot>
+<slot>ANUS</slot>
+<slot>PENIS</slot>
+<slot>PIERCING_PENIS</slot>
+<slot>PIERCING_VAGINA</slot>
+</concealedSlots>
+</blockedParts>
+</blockedPartsList>
+<incompatibleSlots/>
+<primaryColours values="ALL"/>
+<primaryColoursDye values="ALL"/>
+<secondaryColours values="ALL"/>
+<secondaryColoursDye values="ALL"/>
+<tertiaryColours values=""/>
+<tertiaryColoursDye values=""/>
+<itemTags>
+<tag>SOLD_BY_NYAN</tag>
+</itemTags>
+</coreAtributes>
+
+<displacementText type="REMOVE_OR_EQUIP">
+<playerSelf>
+<![CDATA[You pull off your bloomers]]>
+</playerSelf>
+<playerNPC>
+<![CDATA[You pull off your bloomers]]>
+</playerNPC>
+<playerNPCRough>
+<![CDATA[You roughly pull off [npc.name]'s bloomers.]]>
+</playerNPCRough>
+<NPCSelf>
+<![CDATA[[npc.Name] pulls off [npc.her] bloomers.]]>
+</NPCSelf>
+<NPCPlayer>
+<![CDATA[[npc.Name] pulls off your bloomers.]]>
+</NPCPlayer>
+<NPCPlayerRough>
+<![CDATA[[npc.Name] roughly pulls off your bloomers.]]>
+</NPCPlayerRough>
+<NPCOtherNPC>
+<![CDATA[[npc.Name] pulls off [npc2.name]'s bloomers.]]>
+</NPCOtherNPC>
+<NPCOtherNPCRough>
+<![CDATA[[npc.Name] roughly pulls off [npc2.name]'s bloomers.]]>
+</NPCOtherNPCRough>
+</displacementText>
+<displacementText type="PULLS_DOWN">
+<playerSelf>
+<![CDATA[You pull down your bloomers]]>
+</playerSelf>
+<playerNPC>
+<![CDATA[You pull down your bloomers]]>
+</playerNPC>
+<playerNPCRough>
+<![CDATA[You roughly pull down [npc.name]'s bloomers.]]>
+</playerNPCRough>
+<NPCSelf>
+<![CDATA[[npc.Name] pulls down [npc.her] bloomers.]]>
+</NPCSelf>
+<NPCPlayer>
+<![CDATA[[npc.Name] pulls down your bloomers.]]>
+</NPCPlayer>
+<NPCPlayerRough>
+<![CDATA[[npc.Name] roughly pulls down your bloomers.]]>
+</NPCPlayerRough>
+<NPCOtherNPC>
+<![CDATA[[npc.Name] pulls down [npc2.name]'s bloomers.]]>
+</NPCOtherNPC>
+<NPCOtherNPCRough>
+<![CDATA[[npc.Name] roughly pulls down [npc2.name]'s bloomers.]]>
+</NPCOtherNPCRough>
+</displacementText>
+<replacementText type="REMOVE_OR_EQUIP">
+<playerSelf>
+<![CDATA[You pull your bloomers back on]]>
+</playerSelf>
+<playerNPC>
+<![CDATA[You pull [npc.name]'s bloomers back on]]>
+</playerNPC>
+<playerNPCRough>
+<![CDATA[You roughly pull [npc.name]'s bloomers back on.]]>
+</playerNPCRough>
+<NPCSelf>
+<![CDATA[[npc.Name] pulls [npc.her] bloomers back on.]]>
+</NPCSelf>
+<NPCPlayer>
+<![CDATA[[npc.Name] pulls your bloomers back on.]]>
+</NPCPlayer>
+<NPCPlayerRough>
+<![CDATA[[npc.Name] roughly pulls your bloomers back on.]]>
+</NPCPlayerRough>
+<NPCOtherNPC>
+<![CDATA[[npc.Name] pulls [npc2.name]'s bloomers back on.]]>
+</NPCOtherNPC>
+<NPCOtherNPCRough>
+<![CDATA[[npc.Name] roughly pulls [npc2.name]'s bloomers back on.]]>
+</NPCOtherNPCRough>
+</replacementText>
+
+<replacementText type="PULLS_DOWN">
+<playerSelf>
+<![CDATA[You pull up your bloomers]]>
+</playerSelf>
+<playerNPC>
+<![CDATA[You pull up your bloomers]]>
+</playerNPC>
+<playerNPCRough>
+<![CDATA[You roughly pull up [npc.name]'s bloomers.]]>
+</playerNPCRough>
+<NPCSelf>
+<![CDATA[[npc.Name] pulls up [npc.her] bloomers.]]>
+</NPCSelf>
+<NPCPlayer>
+<![CDATA[[npc.Name] pulls up your bloomers.]]>
+</NPCPlayer>
+<NPCPlayerRough>
+<![CDATA[[npc.Name] roughly pulls up your bloomers.]]>
+</NPCPlayerRough>
+<NPCOtherNPC>
+<![CDATA[[npc.Name] pulls up [npc2.name]'s bloomers.]]>
+</NPCOtherNPC>
+<NPCOtherNPCRough>
+<![CDATA[[npc.Name] roughly pulls up [npc2.name]'s bloomers.]]>
+</NPCOtherNPCRough>
+</replacementText>
+</clothing>

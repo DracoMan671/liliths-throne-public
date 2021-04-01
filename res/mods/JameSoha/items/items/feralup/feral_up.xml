@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<item>
+	<coreAttributes>
+		<value>1000</value> 
+		<determiner><![CDATA[a bottle of]]></determiner>
+		<name><![CDATA[Feral up]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Feral ups]]></namePlural>
+		<description><![CDATA[A small unusually shaped flask with a crude drawing of an anthro and a feral on it.]]></description> 
+		
+		<useDescriptor>drink</useDescriptor>
+		
+		<sexUse>true</sexUse>
+		<combatUseAllies>true</combatUseAllies>
+		<combatUseEnemies>false</combatUseEnemies>
+		<consumedOnUse>true</consumedOnUse>
+		
+		<rarity>RARE</rarity> 
+		
+		<imageName zLayer="0" imageRotation="0" imageSize="100">background_bottom.svg</imageName>
+		<imageName zLayer="1" imageRotation="0" imageSize="100">feral_up.svg</imageName>
+		<imageName zLayer="2" imageRotation="0" imageSize="100">background_top.svg</imageName>
+		
+		<colourPrimary>BASE_PURPLE</colourPrimary>
+		<colourSecondary/>
+		<colourTertiary/>
+		
+		<effectTooltipLines>
+			<line><![CDATA[[style.boldGood(Turns the user into a feral)]]]></line>
+            <line><![CDATA[[style.boldGood(or turns ferals back)]]]></line>
+            <line><![CDATA[[style.boldBad(Is known to destroy the universe when consumed by non fully animal races)]]]></line>
+		</effectTooltipLines>
+		
+		<applyEffects><![CDATA[
+		#IF(npc.getRace().isFeralPartsAvailable())
+			#IF(npc.isFeral())
+				u anthro now.
+				[##npc.setBody(npc.getGender(),npc.getSubspecies(),RACE_STAGE_GREATER,true)]
+			#ELSE
+				u feral now.
+				[##npc.setFeral(npc.getSubspecies())]
+			#ENDIF
+		#ELSE
+			<p>The universe got destroyed, you now assume control over an alternate reality you that simply threw the Feral up away.</p>
+		#ENDIF
+        ]]></applyEffects>
+		
+		<itemTags>
+			<tag>SOLD_BY_RALPH</tag>
+		</itemTags>
+	</coreAttributes>
+
+	<useDescriptions>
+		<selfUse><![CDATA[
+		After first removing the cork, [npc.name] [npc.verb(bring)] the flask up to [npc.her] [npc.mouth]. [npc.She] [npc.verb(tilt)] [npc.her] head back and [npc.verb(start)] drinking the mysterious liquid.
+		]]></selfUse>
+		<otherUse><![CDATA[
+		After first removing the cork, [npc.name] [npc.verb(bring)] the flask up to [npc2.namePos] waiting [npc2.lips]. [npc2.She] [npc2.verb(tilt)] [npc2.her] head back and [npc2.verb(start)] drinking the mysterious liquid.
+		]]></otherUse>
+	</useDescriptions>
+
+</item>

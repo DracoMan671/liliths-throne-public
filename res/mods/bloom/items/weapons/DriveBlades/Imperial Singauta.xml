@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<weapon>
+	<coreAttributes>
+
+		<value>14000</value> 
+
+		<melee>true</melee>
+
+		<twoHanded>false</twoHanded>
+		
+		<determiner><![CDATA[an]]></determiner>
+
+		<name><![CDATA[Imperial Singauta]]></name>
+		
+		<namePlural pluralByDefault="false"><![CDATA[Imperial Singauta]]></namePlural> 
+		
+		<description><![CDATA[A shield with a wicked spike at the bottom for both offense and defense, Commonly wielded with spears for versitility's sake, but could also be paired with a sword just as well. 
+		#IF game.isSillyModeEnabled()
+		#THEN <br/><span style='font-style:bold;'><span style='color:#ac9d93ff;'>" Should not be used as a sled. It works as a snowboard way better. "
+		#ELSE <br/><span style='font-style:bold;'><span style='color:#ac9d93ff;'>" The hande is positioned so you can strike using the tip, and block without changing your stance. "
+		#ENDIF
+		]]></description> 
+		
+		<attackDescriptor>Pierce</attackDescriptor>
+		
+		<attackTooltipDescription>Attack using the tip of the shield.</attackTooltipDescription>
+		
+		<rarity>EPIC</rarity> 
+
+		<equipText><![CDATA[[npc.Name] [npc.verb(equip)] the shield.]]></equipText>
+		
+		<unequipText><![CDATA[[npc.Name] [npc.verb(unequip)] the shield and put it away away.]]></unequipText>
+		
+		<imageName>Imperial Singauta.svg</imageName> 
+		
+		<imageEquippedName>Imperial Singauta.svg</imageEquippedName>
+		
+		<damage>25</damage> 
+		
+		<arcaneCost>0</arcaneCost> 
+		
+		<damageVariance>LOW</damageVariance> 
+		
+		<availableDamageTypes>
+			<damageType>PHYSICAL</damageType>
+			<damageType>ICE</damageType>
+			<damageType>FIRE</damageType>
+			<damageType>POISON</damageType>
+		</availableDamageTypes>
+		
+		<spells/>
+		
+		<enchantmentLimit>10</enchantmentLimit>
+		
+		<effects> 
+              <effect itemEffectType="CLOTHING" limit="0" potency="MAJOR_BOOST" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="RESISTANCE_WEAPON" timer="0"/>
+			  <effect itemEffectType="CLOTHING" limit="0" potency="MAJOR_BOOST" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="RESISTANCE_PHYSICAL" timer="10"/>
+ 			  <effect itemEffectType="CLOTHING" limit="0" potency="MAJOR_BOOST" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="RESISTANCE_PHYSICAL" timer="10"/>
+		</effects>
+		
+		<primaryColours values="JUST_BLACK"/> 
+		<primaryColoursDye values="ALL_WITH_METAL"/>
+		<secondaryColours values="JUST_GOLD"/> 
+		<secondaryColoursDye values="ALL_WITH_METAL"/>
+		
+		<itemTags> 
+			<tag>SOLD_BY_VICKY</tag>
+		</itemTags>
+		
+	</coreAttributes>
+
+	<hitDescriptions>
+		<hitText><![CDATA[
+		Swiping wide with [npc.her] Shield, [npc.name] [npc.verb(manage)] to bash [npc2.name] in the chest; the shield slams into [npc2.her] torso and drains [npc.her] energy!
+		]]></hitText>
+		<hitText><![CDATA[
+		Striking out at [npc2.name] with [npc.her] Shield, [npc.name] [npc.verb(manage)] to slam the shield into [npc2.her] [npc2.arm] and drain [npc2.her] energy!
+		]]></hitText>
+		<hitText><![CDATA[
+		With a quick step forwards, [npc.name] [npc.verb(lunge)] out at [npc2.name] with [npc.her] Shield, sinking the bottom edge into [npc2.her] shoulder and causing [npc2.herHim] to lose some energy!
+		]]></hitText>
+	</hitDescriptions>
+
+	<missDescriptions>
+		<missText><![CDATA[
+		Thrusting out with [npc.her] Shield, [npc.name] [npc.verb(attempt)] to bash [npc2.name] in the chest, but [npc.verb(end)] up missing [npc2.herHim]!
+		]]></missText>
+		<missText><![CDATA[
+		Striking out at [npc2.name] with [npc.her] Shield, [npc.name] [npc.verb(let)] out a frustrated cry as [npc.she] [npc.verb(miss)] [npc.her] target!
+		]]></missText>
+		<missText><![CDATA[
+		With a quick step forwards, [npc.name] [npc.verb(lunge)] out at [npc2.name] with [npc.her] Shield, but [npc.she] [npc.verb(miss)] [npc.her] target!
+		]]></missText>
+	</missDescriptions>
+	
+</weapon>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- 
+This mod was made by coping and hacking (editing) files in the game. 
+Thanks Innoxia for the great game.
+
+I made this mod to cover the lower part of my slave maids.
+Made by Wizard^^.
+--><clothing>
+	<coreAttributes>
+		<value>1200</value> 		
+		<determiner><![CDATA[a]]></determiner>		
+		<name><![CDATA[maid taur-skirt]]></name>		
+		<namePlural pluralByDefault="false"><![CDATA[maid taur-skirts]]></namePlural> 		
+		<description><![CDATA[A specially-designed skirt to cover the lower part of a maid, suitable to be fit onto the lower body of any taur race.]]></description> 		
+		<physicalResistance>0</physicalResistance> 		
+		<femininity>FEMININE</femininity> 		
+		<slot>LEG</slot>
+		<rarity>RARE</rarity>
+		<clothingSet>MAID</clothingSet>
+		<imageName>maid_taur_skirt.svg</imageName> 		
+		<imageEquippedName/> 		
+		<enchantmentLimit/>		
+		<effects/>		
+		<blockedPartsList>
+			<blockedParts>
+				<displacementType>REMOVE_OR_EQUIP</displacementType> 				
+				<clothingAccessRequired>
+					<clothingAccess>LEGS_UP_TO_GROIN</clothingAccess>
+				</clothingAccessRequired>				
+				<blockedBodyParts>
+					<bodyPart>BACK</bodyPart>
+				</blockedBodyParts>				
+				<clothingAccessBlocked>
+					<clothingAccess>LEGS_UP_TO_GROIN</clothingAccess>
+				</clothingAccessBlocked>
+				<concealedSlots/>
+			</blockedParts>			
+			<blockedParts>
+				<displacementType>PULLS_UP</displacementType> 				
+				<clothingAccessRequired/>				
+				<blockedBodyParts>
+					<bodyPart>PENIS</bodyPart>
+					<bodyPart>ANUS</bodyPart>
+					<bodyPart>PENIS</bodyPart>
+					<bodyPart>VAGINA</bodyPart>
+					<bodyPart>THIGHS</bodyPart>
+					<bodyPart>STOMACH</bodyPart>
+					<bodyPart>BREASTS_CROTCH</bodyPart>
+					<bodyPart>NIPPLES_CROTCH</bodyPart>
+				</blockedBodyParts>				
+				<clothingAccessBlocked>
+					<clothingAccess>GROIN</clothingAccess>
+				</clothingAccessBlocked>				
+				<concealedSlots values="CONCEALED_TAUR"/>
+			</blockedParts>
+		</blockedPartsList>		
+		<incompatibleSlots/> 		
+		<primaryColours values="JUST_BLACK"/>
+		<primaryColoursDye values="ALL"/>
+		<secondaryColours/>
+		<secondaryColoursDye/>
+		<tertiaryColours/>
+		<tertiaryColoursDye/>		
+		<itemTags>
+			<tag>SOLD_BY_NYAN</tag>
+			<tag>FITS_TAUR_BODY</tag>
+		</itemTags>
+	</coreAttributes>
+  <replacementText type="REMOVE_OR_EQUIP">
+    <self>
+      <![CDATA[[npc.Name] [npc.verb(pull)] the maid taur-skirt down over [npc.her] head, before allowing it to settle into place over [npc.her] [npc.legRace]'s body.]]>
+    </self>
+    <other>
+      <![CDATA[[npc.Name] [npc.verb(pull)] the maid taur-skirt down over [npc2.namePos] head, before allowing it to settle into place over [npc2.her] [npc2.legRace]'s body.]]>
+    </other>
+    <otherRough>
+      <![CDATA[[npc.Name] [npc.verb(yank)] the maid taur-skirt down over [npc2.namePos] head, before firmly pulling it down over [npc2.her] [npc2.legRace]'s body.]]>
+    </otherRough>
+  </replacementText>
+  <displacementText type="REMOVE_OR_EQUIP">
+    <self>
+      <![CDATA[[npc.Name] [npc.verb(take)] hold of [npc.her] maid taur-skirt, before pulling it up and over [npc2.her] head.]]>
+    </self>
+    <other>
+      <![CDATA[[npc.Name] [npc.verb(take)] hold of [npc2.namePos] maid taur-skirt, before pulling it up and over [npc2.her] head.]]>
+    </other>
+    <otherRough>
+      <![CDATA[[npc.Name] [npc.verb(grab)] hold of [npc2.namePos] maid taur-skirt, before yanking it up and over [npc2.her] head.]]>
+    </otherRough>
+  </displacementText>	
+</clothing>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<weapon>
+	<coreAttributes>
+		<authorTag><![CDATA[On the handle of the sword, an engraving reads "forged by Rfpnj"]]></authorTag>
+		
+		<value>10000</value> 
+		
+		<melee>true</melee>
+		
+		<twoHanded>false</twoHanded>
+		
+		<determiner><![CDATA[]]></determiner>
+		
+		<name><![CDATA[master sword]]></name>
+		
+		<namePlural pluralByDefault="false"><![CDATA[master swords]]></namePlural> 
+		
+		<description><![CDATA[A sword of legend, said to be crafted be a goddess and quenched in scared flames]]></description> 
+		
+		<attackDescriptor>cut</attackDescriptor>
+		
+		<attackTooltipDescription>Slash [npc2.name] with your master sword.</attackTooltipDescription>
+		
+		<rarity>EPIC</rarity> 
+		
+		<weaponSet/>
+		
+		<equipText><![CDATA[[npc.Name] [npc.verb(position)] [npc.her] master sword on [npc.her] back, so that [npc.she] may draw it at a moment's notice.]]></equipText>
+		
+		<unequipText><![CDATA[[npc.Name] [npc.verb(sheath)] [npc.her] master sword, before putting it away.]]></unequipText>
+		
+		<imageName>sword.svg</imageName> 
+		
+		<imageEquippedName>sword.svg</imageEquippedName> 
+		
+		<damage>40</damage> 
+		
+		<arcaneCost>0</arcaneCost> 
+		
+		<damageVariance>LOW</damageVariance> 
+		
+		<availableDamageTypes>
+			<damageType>PHYSICAL</damageType>
+			<damageType>ICE</damageType>
+			<damageType>FIRE</damageType>
+			<damageType>POISON</damageType>
+			<damageType>LUST</damageType>
+		</availableDamageTypes>
+		
+		<spells/>
+		
+		<enchantmentLimit>10</enchantmentLimit>
+		
+		<effects> 
+              <effect itemEffectType="CLOTHING" limit="0" potency="MAJOR_BOOST" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="DAMAGE_MELEE_WEAPON" timer="0"/>
+              <effect itemEffectType="CLOTHING" limit="0" potency="MAJOR_BOOST" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="DAMAGE_MELEE_WEAPON" timer="0"/>
+		</effects>
+		
+		<primaryColours values="ALL"/>
+		<primaryColoursDye values="ALL"/>
+		<secondaryColours/>
+		<secondaryColoursDye/>
+		
+		<itemTags> 
+			<tag>SOLD_BY_VICKY</tag>
+			<tag>WEAPON_BLADE</tag>
+		</itemTags>
+		
+	</coreAttributes>
+	
+	<hitDescriptions>
+		<hitText><![CDATA[#IF npc.getMainWeapon().getDamageType() == DAMAGE_TYPE_PHYSICAL 
+		#THEN The blade brusts into <span style='color:#FF9955;'><b>flames</b></span>.
+			[##npc.getMainWeapon().setDamageType(DAMAGE_TYPE_FIRE)]
+		#ELSEIF npc.getMainWeapon().getDamageType() == DAMAGE_TYPE_FIRE
+		#THEN The flames on the blade vanish to be replaced with a <span style='color:#85FF8B;'><b>poison</b></span> that coats the blade.
+			[##npc.getMainWeapon().setDamageType(DAMAGE_TYPE_POISON)]
+		#ELSEIF npc.getMainWeapon().getDamageType() == DAMAGE_TYPE_POISON
+		#THEN The slick poison hardens to a  <span style='color:#85C6FF;'><b>icy</b></span> coating.
+			[##npc.getMainWeapon().setDamageType(DAMAGE_TYPE_ICE)]
+		#ELSEIF npc.getMainWeapon().getDamageType() == DAMAGE_TYPE_ICE
+		#THEN The ice chips away as the <span style='color:#FF1472;'><b>lust </b></span> for the princess fills the blade.
+			[##npc.getMainWeapon().setDamageType(DAMAGE_TYPE_LUST)]
+		#ELSEIF npc.getMainWeapon().getDamageType() == DAMAGE_TYPE_LUST
+		#THEN The blade cools to a <span style='color:#A79E90;'><b>metallic</b></span> shine.
+			[##npc.getMainWeapon().setDamageType(DAMAGE_TYPE_PHYSICAL)]
+		#ENDIF<br>
+		[npc.Name] [npc.verb(slash)] [npc.her] master sword at [npc2.name], grinning as the ethereal arcane blade travels through [npc2.her] body!
+		]]></hitText>
+		<hitText><![CDATA[#IF npc.getMainWeapon().getDamageType() == DAMAGE_TYPE_PHYSICAL 
+		#THEN The blade brusts into <span style='color:#FF9955;'><b>flames</b></span>.
+			[##npc.getMainWeapon().setDamageType(DAMAGE_TYPE_FIRE)]
+		#ELSEIF npc.getMainWeapon().getDamageType() == DAMAGE_TYPE_FIRE
+		#THEN The flames on the blade vanish to be replaced with a <span style='color:#85FF8B;'><b>poison</b></span> that coats the blade.
+			[##npc.getMainWeapon().setDamageType(DAMAGE_TYPE_POISON)]
+		#ELSEIF npc.getMainWeapon().getDamageType() == DAMAGE_TYPE_POISON
+		#THEN The slick poison hardens to a  <span style='color:#85C6FF;'><b>icy</b></span> coating.
+			[##npc.getMainWeapon().setDamageType(DAMAGE_TYPE_ICE)]
+		#ELSEIF npc.getMainWeapon().getDamageType() == DAMAGE_TYPE_ICE
+		#THEN The ice chips away as the <span style='color:#FF1472;'><b>lust </b></span> for the princess fills the blade.
+			[##npc.getMainWeapon().setDamageType(DAMAGE_TYPE_LUST)]
+		#ELSEIF npc.getMainWeapon().getDamageType() == DAMAGE_TYPE_LUST
+		#THEN The blade cools to a <span style='color:#A79E90;'><b>metallic</b></span> shine.
+			[##npc.getMainWeapon().setDamageType(DAMAGE_TYPE_PHYSICAL)]
+		#ENDIF<br>
+		Slashing out at [npc2.name] with [npc.her] master sword, [npc.name] [npc.verb(grin)] as [npc.she] [npc.verb(see)] the ethereal blade travel straight through [npc2.her] body!
+		]]></hitText>
+		<hitText><![CDATA[#IF npc.getMainWeapon().getDamageType() == DAMAGE_TYPE_PHYSICAL 
+		#THEN The blade brusts into <span style='color:#FF9955;'><b>flames</b></span>.
+			[##npc.getMainWeapon().setDamageType(DAMAGE_TYPE_FIRE)]
+		#ELSEIF npc.getMainWeapon().getDamageType() == DAMAGE_TYPE_FIRE
+		#THEN The flames on the blade vanish to be replaced with a <span style='color:#85FF8B;'><b>poison</b></span> that coats the blade.
+			[##npc.getMainWeapon().setDamageType(DAMAGE_TYPE_POISON)]
+		#ELSEIF npc.getMainWeapon().getDamageType() == DAMAGE_TYPE_POISON
+		#THEN The slick poison hardens to a  <span style='color:#85C6FF;'><b>icy</b></span> coating.
+			[##npc.getMainWeapon().setDamageType(DAMAGE_TYPE_ICE)]
+		#ELSEIF npc.getMainWeapon().getDamageType() == DAMAGE_TYPE_ICE
+		#THEN The ice chips away as the <span style='color:#FF1472;'><b>lust </b></span> for the princess fills the blade.
+			[##npc.getMainWeapon().setDamageType(DAMAGE_TYPE_LUST)]
+		#ELSEIF npc.getMainWeapon().getDamageType() == DAMAGE_TYPE_LUST
+		#THEN The blade cools to a <span style='color:#A79E90;'><b>metallic</b></span> shine.
+			[##npc.getMainWeapon().setDamageType(DAMAGE_TYPE_PHYSICAL)]
+		#ENDIF<br>
+		[npc.Name] [npc.verb(slash)] at [npc2.name] with [npc.her] master sword, causing [npc2.herHim] to stagger back as the ethereal blade passes right through [npc2.her] chest!
+		]]></hitText>
+	</hitDescriptions>
+
+	<!-- Descriptions that are used when missing an enemy. One of the missText values will be randomly selected each time the attacker misses their target. Follow the same guidelines as equipText. -->
+	<missDescriptions>
+		<missText><![CDATA[
+		[npc.Name] [npc.verb(slash)] [npc.her] master sword at [npc2.name], but [npc.verb(end)] up missing [npc2.herHim]!
+		]]></missText>
+		<missText><![CDATA[
+		Slashing out at [npc2.name] with [npc.her] master sword, [npc.name] [npc.verb(let)] out a frustrated cry as [npc.she] [npc.verb(miss)] [npc.her] target!
+		]]></missText>
+		<missText><![CDATA[
+		With a quick step forwards, [npc.name] [npc.verb(slash)] at [npc2.name] with [npc.her] master sword, but [npc.she] [npc.verb(miss)] [npc.her] target!
+		]]></missText>
+	</missDescriptions>
+	
+</weapon>

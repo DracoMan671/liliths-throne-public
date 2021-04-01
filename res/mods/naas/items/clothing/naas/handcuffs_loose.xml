@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--Code donated by Night Bloom,edited by SVNaas -->
+<clothing>
+	<coreAtributes>
+		<value>5</value>
+		<determiner><![CDATA[a pair of]]></determiner>
+		<name><![CDATA[Broken Handcuff]]></name>
+		<namePlural pluralByDefault="true"><![CDATA[Broken Handcuffs]]></namePlural>
+		<description><![CDATA[A pair of broken cuffs. Either a fashion statement or protest, hopefully it's just a punk thing.]]></description>
+		<physicalResistance>1</physicalResistance>
+		<femininity>ANDROGYNOUS</femininity>
+		<slot>WRIST</slot>
+		<rarity>COMMON</rarity>
+		<clothingSet></clothingSet>
+		<imageName>handcuffs_loose.svg</imageName>
+		<imageEquippedName/>
+		<enchantmentLimit></enchantmentLimit>
+		<effects />
+		<blockedPartsList>
+			<blockedParts>
+				<displacementType>REMOVE_OR_EQUIP</displacementType>
+				<clothingAccessRequired />
+				<blockedBodyParts />
+				<clothingAccessBlocked />
+				<concealedSlots />
+			</blockedParts>
+		</blockedPartsList>
+		<incompatibleSlots />
+		<primaryColours values="ALL_METAL" />
+		<primaryColoursDye values="ALL_METAL" />
+		<secondaryColours values="ALL_WITH_METALS" />
+		<secondaryColoursDye values="ALL_WITH_METALS" />
+		<tertiaryColours values="" />
+		<tertiaryColoursDye values="" />
+		<itemTags>
+			<tag>NOT_FOR_SALE</tag>
+			<tag>DOMINION_ALLEYWAY_SPAWN</tag>
+			<tag>SUBMISSION_TUNNEL_SPAWN</tag>
+			<tag>BAT_CAVERNS_SPAWN</tag>
+		</itemTags>
+	</coreAtributes>
+	<displacementText type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[You take off your cuffs.]]></playerSelf>
+		<playerNPC><![CDATA[You unclasp [npc.name]'s cuffs.]]></playerNPC>
+		<playerNPCRough><![CDATA[You yank off [npc.name]'s cuffs.]]></playerNPCRough>
+		<NPCSelf><![CDATA[[npc.Name] unclasps [npc.her] cuffs .]]></NPCSelf>
+		<NPCPlayer><![CDATA[[npc.Name] pulls your cuffs off.]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[[npc.Name] yanks your cuffs off.]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[[npc1.Name] pulls [npc2.name]'s cuffs off.]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[[npc1.Name] pulls [npc2.name]'s cuffs.]]></NPCOtherNPCRough>
+	</displacementText>
+	<replacementText type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[You clasp the cuffs around your wrists.]]></playerSelf>
+		<playerNPC><![CDATA[You clasp the cuffs around [npc.name]'s wrists.]]></playerNPC>
+		<playerNPCRough><![CDATA[You quickly clasp the cuffs around [npc.name]'s wrist.]]></playerNPCRough>
+		<NPCSelf><![CDATA[[npc.Name] clasps the cuffs around [npc.her] wrist.]]></NPCSelf>
+		<NPCPlayer><![CDATA[[npc.Name] clasps the cuffs around your wrist.]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[[npc.Name] quickly clasps the cuffs around your wrist.]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[[npc1.Name] clasps the cuffs around [npc2.Name]'s wrist.]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[[npc1.Name] clasps the cuffs around [npc2.Name]'s wrist.]]></NPCOtherNPCRough>
+	</replacementText>
+</clothing>

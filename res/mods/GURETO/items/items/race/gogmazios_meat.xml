@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<item>
+	<coreAttributes>
+		<value>1200</value> 
+		<determiner><![CDATA[a hunk of]]></determiner>
+		<name><![CDATA[oily Well-Done Steak]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[oily Well-Done Steaks]]></namePlural>
+		<description><![CDATA[A chunk of well cooked meat that is covered in oil. Provides a low boost to your physique and a slight heal. Must have been stuck onto a gogmazios.]]></description> 
+		
+		<useDescriptor>eat</useDescriptor>
+		
+		<sexUse>true</sexUse>
+		<combatUseAllies>true</combatUseAllies>
+		<combatUseEnemies>false</combatUseEnemies>
+		<consumedOnUse>true</consumedOnUse>
+		
+		<rarity>RARE</rarity> 
+		
+		<imageName zLayer="0" imageRotation="0" imageSize="100">Gbackground_bottom.svg</imageName>
+		<imageName zLayer="1" imageRotation="0" imageSize="70" target1='stroke="#000"' replacement1='stroke="#ff5555"' target2='#ff8080' replacement2='#ff5555'>Gicon.svg</imageName>
+		<imageName zLayer="2" imageRotation="0" imageSize="70">gogmazios_meat.svg</imageName>
+		<imageName zLayer="3" imageRotation="0" imageSize="100">Gbackground_top.svg</imageName>
+		
+		<colourPrimary>BASE_BLACK</colourPrimary>
+		<colourSecondary/>
+		<colourTertiary/>
+		
+		<potionDescriptor><![CDATA[gogmazios]]></potionDescriptor>
+		<associatedRace>GURETO_gogmazios</associatedRace>
+		<enchantmentItemTypeId>ELIXIR</enchantmentItemTypeId>
+		<enchantmentEffectId>RACE</enchantmentEffectId>
+		
+		<effectTooltipLines>
+			<line><![CDATA[[style.boldGood(Restores)] 5% [style.boldHealth([#ATTRIBUTE_HEALTH_MAXIMUM.getName()])]]]></line>
+			<line><![CDATA[[#ATTRIBUTE_MAJOR_PHYSIQUE.getFormattedValue(5)] to 'potion effects']]></line>
+		</effectTooltipLines>
+		
+		<applyEffects><![CDATA[
+			[##npc.incrementHealth(npc.getAttributeValue(ATTRIBUTE_HEALTH_MAXIMUM)/5)]
+			
+			<p style='margin-bottom:0; padding-bottom:0;'>
+				[npc.Name] [npc.verb(start)] to feel unusually energized!
+			</p>
+			[#npc.addPotionEffect(ATTRIBUTE_MAJOR_PHYSIQUE, 5)]
+		]]></applyEffects>
+		
+		<itemTags>
+			<tag>RACIAL_TF_ITEM</tag>
+			<tag>SOLD_BY_RALPH</tag>
+		</itemTags>
+	</coreAttributes>
+
+	<useDescriptions>
+		<selfUse><![CDATA[
+		[npc.Name] [npc.verb(remove)] the hunk of steak from [npc.her] inventory, the meat looking rather well-done, too bad it's covered in oil. [npc.she] [npc.verb(start)] eating. The meaty taste, and slightly cold feeling of the steak dominates [npc.her] mouth, but [npc.she] [npc.do]n't take any time to really notice, as [npc.she] [npc.verb(start)] chewing on the meat, the delicious taste bringing out an immensely primal glint in [npc.her] eyes, and in only a matter of moments, [npc.she] [npc.has] completely consumed the steak.  [npc.Name] pat [npc.her] sufficiently stuffed stomach.
+		]]></selfUse>
+		<otherUse><![CDATA[
+		[npc.Name] [npc.verb(remove)] the hunk of steak from [npc.her] inventory, the meat looking rather well-done,  too bad it's covered in oil. [npc.verb(hold)] it out to [npc2.name], allowing [npc2.herHim] to breathe in the oily , meaty smell. Quite hesitantly, [npc2.she] [npc2.verb(start)] chewing on the steak, the taste bringing out an immensely primal glint in [npc2.her] eyes, [npc2.she] [npc2.has] completely consumed the sticky steak.
+		]]></otherUse>
+	</useDescriptions>
+	
+</item>

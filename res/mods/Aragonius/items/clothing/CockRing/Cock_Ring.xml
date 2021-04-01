@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- For a version with comments, see "rental_mommy.xml". -->
+<clothing>
+	<coreAtributes>
+		<value>250</value>
+		<determiner><![CDATA[a]]></determiner>
+		<name><![CDATA[Cock Ring]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Cock Rings]]></namePlural>
+		<description><![CDATA[A simple ring meant to be worn around a phallus.]]></description>
+		<physicalResistance>2</physicalResistance>
+		<femininity>ANDROGYNOUS</femininity>
+		<slot>PENIS</slot>
+		<rarity>COMMON</rarity>
+		<clothingSet/>
+		<imageName>Cock_Ring.svg</imageName>
+		<imageEquippedName/>
+		<enchantmentLimit/>
+		<effects>
+            
+		</effects>
+		<blockedPartsList>
+			<blockedParts>
+				<displacementType>REMOVE_OR_EQUIP</displacementType>
+				<clothingAccessRequired>
+					<clothingAccess>GROIN</clothingAccess>
+				</clothingAccessRequired>
+				<blockedBodyParts/>
+				<clothingAccessBlocked/>
+				<concealedSlots/>
+			</blockedParts>
+		</blockedPartsList>
+		<incompatibleSlots/>
+		<primaryColours values="ALL"/>
+		<primaryColoursDye values="ALL"/>
+		<secondaryColours/>
+		<secondaryColoursDye/>
+		<tertiaryColours/>
+		<tertiaryColoursDye/>
+		<itemTags>
+			<tag>SOLD_BY_NYAN</tag>
+			<tag>SOLD_BY_FINCH</tag>
+			<tag>REQUIRES_PENIS</tag>
+		</itemTags>
+	</coreAtributes>
+
+	<displacementText type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[
+			You pull off the cock ring. 
+		]]></playerSelf>
+		<playerNPC><![CDATA[
+			You pull off [npc.name]'s cock ring.
+		]]></playerNPC>
+		<playerNPCRough><![CDATA[
+			You jerk off [npc.name]'s cock ring.
+		]]></playerNPCRough>
+		<NPCSelf><![CDATA[
+			[npc.Name] pulls off [npc.her] cock ring.
+		]]></NPCSelf>
+		<NPCPlayer><![CDATA[
+			[npc.Name] pulls off your cock ring.
+		]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[
+			[npc.Name] jerks off your cock ring.
+		]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[
+			[npc1.Name] pulls off [npc2.name]'s cock ring.
+		]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[
+			[npc1.Name] jerks off [npc2.name]'s cock ring.
+		]]></NPCOtherNPCRough>
+	</displacementText>
+
+	<replacementText type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[
+			You slide the ring onto your cock.
+		]]></playerSelf>
+		<playerNPC><![CDATA[
+			You slide the ring onto [npc.name]'s cock.
+		]]></playerNPC>
+		<playerNPCRough><![CDATA[
+			You jam the ring onto [npc.name]'s cock.
+		]]></playerNPCRough>
+		<NPCSelf><![CDATA[
+			[npc.Name] slides the ring onto [npc.her] cock.
+		]]></NPCSelf>
+		<NPCPlayer><![CDATA[
+			[npc.Name] slides the ring onto your cock.
+		]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[
+			[npc.Name] jams the ring onto your cock.
+		]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[
+			[npc1.Name] slides the ring onto [npc2.name]'s cock.
+		]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[
+			[npc1.Name] jams the ring onto [npc2.name]'s cock.
+		]]></NPCOtherNPCRough>
+	</replacementText>
+
+
+	
+</clothing>

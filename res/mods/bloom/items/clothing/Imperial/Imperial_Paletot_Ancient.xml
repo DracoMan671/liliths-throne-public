@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<clothing>
+	<coreAttributes>
+	<authorTag><![CDATA[An added tag near the neck reads "STITCHED WITH MALICE BY TROOPS #P01-Y & #B100-M"]]></authorTag>
+	<value>9500</value> 
+	<determiner><![CDATA[a]]></determiner>
+	<name><![CDATA[Strong-hold Paletot]]></name>
+	<namePlural pluralByDefault="false"><![CDATA[Strong-hold Paletota]]></namePlural>
+	<description><![CDATA[A clearly once loved commander's Paletot. Its a cloak, torn in many places and on its last stitches. But its still made of a very heavy fabric, and even seems to have special properties. The style of cloak matches that of an older version of the standard commander's cloak.]]></description>
+	<physicalResistance>5</physicalResistance>
+	<femininity>ANDROGYNOUS</femininity>
+    <equipSlots>
+      <slot>TORSO_OVER</slot>
+      <slot>NECK</slot>
+    </equipSlots>
+		<rarity>EPIC</rarity>
+		<clothingSet/>
+		<imageName>Imperial_Paletot_Ancient.svg</imageName>
+    <imageEquippedName slot="TORSO_OVER">Imperial_Paletot_Ancient.svg</imageEquippedName>
+		<imageEquippedName/>
+		<enchantmentLimit>15</enchantmentLimit>
+				<effects>
+			<effect limit="0" mod1="CLOTHING_ATTRIBUTE" mod2="RESISTANCE_FIRE" potency="MAJOR_BOOST" timer="1080" type="WEAPON"/>
+            <effect limit="0" mod1="CLOTHING_ATTRIBUTE" mod2="RESISTANCE_FIRE" potency="MAJOR_BOOST" timer="1080" type="WEAPON"/>
+            <effect limit="0" mod1="CLOTHING_ATTRIBUTE" mod2="RESISTANCE_ICE" potency="MAJOR_BOOST" timer="1080" type="WEAPON"/>
+            <effect limit="0" mod1="CLOTHING_ATTRIBUTE" mod2="RESISTANCE_ICE" potency="MAJOR_BOOST" timer="1080" type="WEAPON"/>
+            <effect limit="0" mod1="CLOTHING_ATTRIBUTE" mod2="RESISTANCE_PHYSICAL" potency="MAJOR_BOOST" timer="1080" type="WEAPON"/>
+            <effect limit="0" mod1="CLOTHING_ATTRIBUTE" mod2="RESISTANCE_PHYSICAL" potency="MAJOR_BOOST" timer="1080" type="WEAPON"/>
+            <effect limit="0" mod1="CLOTHING_ATTRIBUTE" mod2="RESISTANCE_POISON" potency="MAJOR_BOOST" timer="1080" type="WEAPON"/>
+            <effect limit="0" mod1="CLOTHING_ATTRIBUTE" mod2="RESISTANCE_POISON" potency="MAJOR_BOOST" timer="1080" type="WEAPON"/>
+		</effects>
+		
+		<blockedPartsList slot="TORSO_OVER">
+			<blockedParts>
+				<displacementType>REMOVE_OR_EQUIP</displacementType>
+				<clothingAccessRequired/>
+				<blockedBodyParts>
+					<bodyPart>BACK</bodyPart>
+				</blockedBodyParts>
+				<clothingAccessBlocked/>
+				<concealedSlots/>
+			</blockedParts>
+		</blockedPartsList>
+
+    <blockedPartsList slot="NECK">
+      <blockedParts>
+				<displacementType>REMOVE_OR_EQUIP</displacementType>
+				<clothingAccessRequired/>
+				<blockedBodyParts>
+					<bodyPart>BACK</bodyPart>
+				</blockedBodyParts>
+				<clothingAccessBlocked/>
+				<concealedSlots/>
+		</blockedParts>
+    </blockedPartsList>
+		
+		<incompatibleSlots slot="TORSO_OVER"/>
+    <incompatibleSlots slot="NECK"/>
+		
+		<primaryColours>
+			<colour>CLOTHING_BLACK</colour>
+			<colour>CLOTHING_DESATURATED_BROWN</colour>
+			<colour>CLOTHING_WHITE</colour>
+			<colour>CLOTHING_GREY_LIGHT</colour>
+			<colour>CLOTHING_GREY</colour>
+			<colour>CLOTHING_GREY_DARK</colour>
+			<colour>CLOTHING_BLACK_JET</colour>
+			<colour>CLOTHING_KHAKI</colour>
+			<colour>CLOTHING_OLIVE</colour>
+			<colour>CLOTHING_BROWN_DARK</colour>
+		</primaryColours>
+		<primaryColoursDye values="ALL" />
+		<itemTags> 
+			<tag>SOLD_BY_NYAN</tag>
+		</itemTags>
+	
+		<itemTags/>
+	</coreAttributes>
+
+	
+  <replacementText slot="NECK" type="REMOVE_OR_EQUIP">
+    <self>
+      <![CDATA[[npc.Name] [npc.verb(drape)] the cloak over [npc.her] shoulders, before fastening the pins.]]>
+    </self>
+    <other>
+      <![CDATA[[npc.Name] [npc.verb(drape)] the cloak over [npc2.namePos] shoulders, before fastening the pins.]]>
+    </other>
+    <otherRough>
+      <![CDATA[[npc.Name] roughly [npc.verb(drape)] the cloak over [npc2.namePos] shoulders, before firmly fastening the pins.]]>
+    </otherRough>
+  </replacementText>
+  <displacementText slot="NECK" type="REMOVE_OR_EQUIP">
+    <self>
+      <![CDATA[[npc.Name] [npc.verb(unfasten)] the pins around [npc.her] neck, before taking off [npc.her] cloak.]]>
+    </self>
+    <other>
+      <![CDATA[[npc.Name] [npc.verb(unfasten)] the pins around [npc2.namePos] neck, before taking off [npc2.her] cloak.]]>
+    </other>
+    <otherRough>
+      <![CDATA[[npc.Name] roughly [npc.verb(unfasten)] the pins around [npc2.namePos] neck, before pulling off [npc2.her] cloak.]]>
+    </otherRough>
+  </displacementText>
+
+  <replacementText slot="TORSO_OVER" type="REMOVE_OR_EQUIP">
+    <self>
+      <![CDATA[[npc.Name] [npc.verb(drape)] the cloak over [npc.her] shoulders, before fastening the pins.]]>
+    </self>
+    <other>
+      <![CDATA[[npc.Name] [npc.verb(drape)] the cloak over [npc2.namePos] shoulders, before fastening the pins.]]>
+    </other>
+    <otherRough>
+      <![CDATA[[npc.Name] roughly [npc.verb(drape)] the cloak over [npc2.namePos] shoulders, before firmly fastening the pins.]]>
+    </otherRough>
+  </replacementText>
+  <displacementText slot="TORSO_OVER" type="REMOVE_OR_EQUIP">
+    <self>
+      <![CDATA[[npc.Name] [npc.verb(unfasten)] the pins around [npc.her] neck, before taking off [npc.her] cloak.]]>
+    </self>
+    <other>
+      <![CDATA[[npc.Name] [npc.verb(unfasten)] the pins around [npc2.namePos] neck, before taking off [npc2.her] cloak.]]>
+    </other>
+    <otherRough>
+      <![CDATA[[npc.Name] roughly [npc.verb(unfasten)] the pins around [npc2.namePos] neck, before pulling off [npc2.her] cloak.]]>
+    </otherRough>
+  </displacementText>
+
+</clothing>

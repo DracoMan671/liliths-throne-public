@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<clothing>
+	<coreAtributes>
+		<value>650</value>
+		<determiner><![CDATA[]]></determiner>
+		<name><![CDATA[sleeved tube top]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[sleeved tube tops]]></namePlural>
+		<description><![CDATA[a slashed necked piped crop top with a daringly wide keyhole.]]></description>
+		<physicalResistance>1</physicalResistance>
+		<femininity>FEMININE</femininity>
+		<slot>TORSO_UNDER</slot>
+		<rarity>COMMON</rarity>
+		<clothingSet></clothingSet>
+		<imageName>cropsleeves.svg</imageName>
+		<enchantmentLimit></enchantmentLimit>
+		<effects />
+		<blockedPartsList>
+			<blockedParts>
+				<displacementType>REMOVE_OR_EQUIP</displacementType>
+				<clothingAccessRequired>
+					<clothingAccess>ARMS_UP_TO_SHOULDER</clothingAccess>
+				</clothingAccessRequired>
+				<blockedBodyParts>
+					<bodyPart>BACK</bodyPart>
+				</blockedBodyParts>
+				<clothingAccessBlocked />
+				<concealedSlots />
+			</blockedParts>
+			<blockedParts>
+				<displacementType>PULLS_UP</displacementType>
+				<clothingAccessRequired />
+				<blockedBodyParts>
+					<bodyPart>BREASTS</bodyPart>
+					<bodyPart>NIPPLES</bodyPart>
+				</blockedBodyParts>
+				<clothingAccessBlocked>
+				</clothingAccessBlocked>
+				<concealedSlots>
+					<slot>CHEST</slot>
+					<slot>NIPPLE</slot>
+					<slot>PIERCING_NIPPLE</slot>
+				</concealedSlots>
+			</blockedParts>
+		</blockedPartsList>
+		<incompatibleSlots />
+		<primaryColours values="ALL" />
+		<primaryColoursDye values="ALL" />
+		<secondaryColours values="" />
+		<secondaryColoursDye values="" />
+		<tertiaryColours values="" />
+		<tertiaryColoursDye values="" />
+    <itemTags>
+      <tag>SOLD_BY_NYAN</tag>
+    </itemTags>
+	</coreAtributes>
+	<displacementText type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[[Player.name] tugs off [player.her] tube top.]]></playerSelf>
+		<playerNPC><![CDATA[[Player.name] lifts [npc.namePos] top up and off.]]></playerNPC>
+		<playerNPCRough><![CDATA[[Player.name] roughly shoves [npc.namePos] top up and off.]]></playerNPCRough>
+		<NPCSelf><![CDATA[[Npc.name] tugs off [npc.her] tube top.]]></NPCSelf>
+		<NPCPlayer><![CDATA[[Npc.name] lifts [player.namePos] top up and off.]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[[Npc.name] roughly shoves [Player.namePos] top up and off]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[[Npc1.name] lifts [Npc2.namePos] top up and off.]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[[Npc1.name] roughly shoves [Npc2.namePos] top up and off]]></NPCOtherNPCRough>
+	</displacementText>
+	<replacementText type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[[Player.name] slides into [player.her] top before adjusting it so it fits [player.her] snugly.]]></playerSelf>
+		<playerNPC><![CDATA[[Player.name] slides [Npc.name] into the tube top before guiding [npc.her] [npc.arms] into the sleeves.]]></playerNPC>
+		<playerNPCRough><![CDATA[[Player.name] shoves [Npc.name] into the tube top before wrestling [npc.her] [npc.arms] into the sleeves.]]></playerNPCRough>
+		<NPCSelf><![CDATA[[Npc.name] slides into [npc.her] top before adjusting it so it fits [npc.her] snugly.]]></NPCSelf>
+		<NPCPlayer><![CDATA[[Npc.name] slides [Player.name] into the tube top before guiding [player.her] [player.arms] into the sleeves.]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[[Npc.name] shoves [Player.name] into the tube top before wrestling [player.her] [player.arms] into the sleeves.]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[[Npc1.name] slides [Npc2.name] into the tube top before guiding [npc2.her] [npc2.arms] into the sleeves.]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[[Npc1.name] shoves [Npc2.name] into the tube top before wrestling [npc2.her] [npc2.arms] into the sleeves.]]></NPCOtherNPCRough>
+	</replacementText>
+	<displacementText type="PULLS_UP">
+		<playerSelf><![CDATA[[Player.name] lifts up [player.her] top.]]></playerSelf>
+		<playerNPC><![CDATA[[Player.name] peels up [Npc.namePos] tube top.]]></playerNPC>
+		<playerNPCRough><![CDATA[[Player.name] shoves aside [Npc.namePos] tube top.]]></playerNPCRough>
+		<NPCSelf><![CDATA[[Npc.name] lifts up [npc.her] top.]]></NPCSelf>
+		<NPCPlayer><![CDATA[[Npc.name] peels up [Player.namePos] tube top.]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[[Npc.name] shoves aside [Player.namePos] tube top.]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[[Npc1.name] peels up [Npc2.namePos] tube top]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[[Npc1.name] shoves aside [Npc2.namePos] tube top.]]></NPCOtherNPCRough>
+	</displacementText>
+	<replacementText type="PULLS_UP">
+		<playerSelf><![CDATA[[Player.name] slips [player.her] top back into place with an elastic snap.]]></playerSelf>
+		<playerNPC><![CDATA[[Player.name] pulls [Npc.namePos] top back into place and makes sure it fits nicely.]]></playerNPC>
+		<playerNPCRough><![CDATA[[Player.name] drags [Npc.namePos] top back into place.]]></playerNPCRough>
+		<NPCSelf><![CDATA[[Npc.name] slips [npc.her] top back into place with an elastic snap.]]></NPCSelf>
+		<NPCPlayer><![CDATA[[Npc.name] pulls [Player.namePos] top back into place and makes sure it fits nicely]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[[Npc.name] drags [Player.namePos] top back into place.]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[[Npc1.name] pulls [Npc2.namePos] top back into place and makes sure it fits nicely.]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[[Npc1.name] drags [Npc2.namePos] top back into place.]]></NPCOtherNPCRough>
+	</replacementText>
+</clothing>

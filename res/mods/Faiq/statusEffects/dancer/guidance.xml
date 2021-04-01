@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<statusEffect>
+
+	<renderingPriority>60</renderingPriority>
+
+	<renderInEffectsPanel>true</renderInEffectsPanel>
+	
+	<category>DEFAULT</category>
+	
+	<beneficial>NEUTRAL</beneficial>
+
+	<combatEffect>true</combatEffect>
+
+	<sexEffect>false</sexEffect>
+	
+	<!-- Tags which are applied to the affected character while this effect is active.
+	All tags can be found here: https://github.com/Innoxia/liliths-throne-public/blob/dev/src/com/lilithsthrone/game/inventory/ItemTag.java
+	The only ones which actually do anything at the time of this feature's addition (v0.4) are:
+		NIGHT_VISION_SELF
+		NIGHT_VISION_AREA
+		SPREADS_FEET
+		MUFFLES_SPEECH
+		HINDERS_ARM_MOVEMENT
+		HINDERS_LEG_MOVEMENT
+		PREVENTS_ERECTION_PHYSICAL
+		PREVENTS_ERECTION_OTHER
+	It is unlikely that additional tags will be supported in the future, but if any are added, this section will be updated. -->
+	<tags/>
+	
+	<name><![CDATA[Heaven's Guidance]]></name>
+	
+	<description><![CDATA[
+		The heavenly dance is guiding [npc.namePos] movements!
+	]]></description>
+	
+	<imageName>guidance.svg</imageName>
+	
+	<colourPrimary>BASE_RED</colourPrimary>
+	<colourSecondary/>
+	<colourTertiary/>
+	
+	<attributeModifiers>
+		<modifier value="3">ACTION_POINTS</modifier>
+		<modifier value="30">DAMAGE_MELEE_WEAPON</modifier>
+	</attributeModifiers>
+	
+	<combatMoves/>
+	
+	<spells/>
+	
+	<extraEffects/>
+
+	<applicationCondition><![CDATA[
+			false
+	]]></applicationCondition>
+
+	<applyEffect/>
+
+	<applyRemovalEffect/>
+
+	<applyPostRemovalEffect/>
+	
+</statusEffect>

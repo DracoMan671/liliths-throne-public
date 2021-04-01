@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<statusEffect>
+	<!-- 
+		Feel free to modify to taste.
+		Default mana cost is 50. Requires changing in 3 places. once in extraEffects, twice in applyEffect near the end.
+		Default creates a Fox race penis. Requires changine in 2 places. once in applyEffect, and once in applyPostRemovalEffect
+		Default works with the Pearl Stud Earring item. Requires changing the Item ID in applicationCondition and the Inventory Slot twice in applicationCondition and twice in applyEffect
+	-->
+	
+	<!-- GENERAL INFORMATION: If you are unsure of anything, please use the LT Discord to ask for help!-->
+	<renderingPriority>25</renderingPriority>
+	<renderInEffectsPanel>true</renderInEffectsPanel>
+	
+	<!-- 'BENEFICIAL' if this is a good status effect for a character to have, 'NEUTRAL' if it's neither, or 'DETRIMENTAL' if it's a bad one. -->
+	<beneficial>NEUTRAL</beneficial>
+	<combatEffect>false</combatEffect>
+	
+	<!-- sexEffect true: this alllows you to track mana during sex via the tooltip -->
+	<sexEffect>true</sexEffect>
+	<name><![CDATA[[#npc.name]'s Faux Fox]]></name>
+	<description><![CDATA[
+		[npc.name] [npc.has] equipped an item with a powerful curse that gives the wearer a dick if they don't already have one! <br/>
+		[style.cUsa(You could say, this makes them a stud.)]
+	]]></description> <!-- Yes the pun was bad, no I will not apologize. -->
+	
+	<!-- Nicked the image -->
+	<imageName>innoxia_cumFull.svg</imageName>
+	<colourPrimary>CLOTHING_TAN</colourPrimary>
+	<colourSecondary/>
+	<colourTertiary/>
+	
+	<!-- Toyed with the idea of extra virility, dismissed it -->
+	<attributeModifiers/>
+	<combatMoves/>
+	<spells/>
+	
+	<!--Does exactly what it says it does 
+		Shows the final, modified, mana cost
+		Shows current mana, and mana cost reduction %
+		This is useful for scenes, like sex, where you may not be able to see your current mana.-->
+	<extraEffects>
+		<effect><![CDATA[
+        [#npc.name] has a [style.cRainbow(Magic Dick)] that [style.cGood(never runs out of )][style.gWhite(Cum)]
+		<br/>Every ejaculation costs [style.cBad([#50*(1-(npc.getAttributeValue(ATTRIBUTE_SPELL_COST_MODIFIER)/100))])] [style.cMana(Mana)]
+		<br/>[#npc.name] has [style.cMana([#npc.getMana()] Mana)] and [style.cGood([#npc.getAttributeValue(ATTRIBUTE_SPELL_COST_MODIFIER)]% reduced Costs)]
+		]]></effect>
+	</extraEffects>
+	
+	<!-- Checks if Pearl Stud Earrings are equipped as an ear piercing
+	Inventory Slot enum referanced as IS_slot
+	getId() on Pearl Stud Earrings returns innoxia_piercing_ear_pearl_studs
+	prefix an item Id with "CT_" to use any other item-->
+	<applicationCondition><![CDATA[
+		#IF(npc.getClothingInSlot(IS_PIERCING_EAR)!=null)
+			#IF(npc.getClothingInSlot(IS_PIERCING_EAR).getClothingType().getId() == CT_innoxia_piercing_ear_pearl_studs.getId())
+				true
+			#ENDIF
+		#ELSE
+			false
+		#ENDIF
+	]]></applicationCondition>
+	<!-- different applicationCondition, targeting the Anal-Only Pastie
+		#IF(npc.getClothingInSlot(IS_VAGINA)!=null)
+			#IF(npc.getClothingInSlot(IS_VAGINA).getClothingType().getId()==CT_innoxia_vagina_sticker_anal_only.getId())
+				true
+			#ENDIF
+		#ELSE
+			false
+		#ENDIF
+	-->
+	
+	<!--	~	Here there be Dragons	~
+	When equipped it immediatly checks if there is no penis,
+		if there is no penis it will proceed to set a Fox one.
+		Sets the color to match the body
+		Makes it glow.
+	
+	While the above only happen if the wearer has no penis, these effects always apply.
+		Average vagina depth is 0.10(*1.5) *height. Sets length Minimum slightly less than the maximum uncomfortable length for characters of the same height at 0.14. Feel free to set it to 0.30 instead. Or even 0.03. I'm not an enforcer. Just change the two numbers and you have a new minimum.
+			~NOTE: V:0.10*1.5, A:0.12*2, M:0.10*2 Depth modifier is an additional *{.50, .75, 1.0, 1.5, 2.0, 2.5, 3.0, 4.0}	~
+			~			Giving a full range of 0.05-0.96 from minimum confortable to maximum uncomfortable						~
+		Set Minimum Average girth.
+		Set Minimum Average testicle size.
+		Set Minimum 100 ml cum storage.
+	-NOTE: While this does set all of the above to a minimum, it will not reduce anything if any of them are already above this minimum.
+	
+	Every minute while equipped it checks if testicles are full, and fills them if they are not. This includes during sex.
+		This costs a base value of 50 mana, adjusted by spell cost modifier.
+	If you do not have enough mana to pay the piper, it forcibly unequips itself.
+	-->
+	<applyEffect interval="0"><![CDATA[
+		#IF(TOTAL_SECONDS_PASSED==0)
+			#IF (!npc.hasPenisIgnoreDildo())
+				[##npc.setPenisType(PENIS_TYPE_FOX_MORPH)]
+				[##npc.getCovering(npc.getPenisCovering()).setPrimaryColour(npc.getCovering(npc.getTorsoCovering()).getPrimaryColour())]	
+				[##npc.getCovering(npc.getPenisCovering()).setPrimaryGlowing(true)]
+			#ENDIF
+			#IF	(npc.getPenisRawSizeValue()<(npc.getHeightValue()*0.14))			
+				[##npc.setPenisSize(npc.getHeightValue()*0.14)]	
+			#ENDIF
+			#IF (npc.getPenisGirth().getValue()<3)
+				[##npc.setPenisGirth(3)]
+			#ENDIF
+			#IF (npc.getTesticleSize().getValue()<3)
+				[##npc.setTesticleSize(3)]
+			#ENDIF
+			#IF (npc.getPenisRawCumStorageValue()<100)
+				[##npc.setPenisCumStorage(100)]
+			#ENDIF
+		#ENDIF
+		
+		#IF(npc.getPenisRawCumStorageValue() != npc.getPenisRawStoredCumValue())
+			[##npc.fillCumToMaxStorage()]	[##npc.incrementMana(-50*(1-(npc.getAttributeValue(ATTRIBUTE_SPELL_COST_MODIFIER)/100)))]
+		#ENDIF
+		#IF (npc.getMana() < (50*(1-(npc.getAttributeValue(ATTRIBUTE_SPELL_COST_MODIFIER)/100))))
+			The drain of the [#npc.getClothingInSlot(IS_PIERCING_EAR).getName()] is beginning to get to be too much for [#npc.name] <br/>
+			[#npc.unequipClothingIntoInventory(npc.getClothingInSlot(IS_PIERCING_EAR), true, npc)]
+		#ENDIF
+	]]></applyEffect>
+	
+	<applyRemovalEffect/>
+	
+	<!--	After the item is removed, it will vanish the cock if it is the same race as the cock it generated. 
+			This doesn't properly delete anything though, so the next time it is summoned it will return in all of its' glory.-->
+	<applyPostRemovalEffect><![CDATA[
+		#IF (npc.hasPenisIgnoreDildo())
+			#IF (npc.getPenisType()==PENIS_TYPE_FOX_MORPH)
+				[#npc.setPenisType(PENIS_TYPE_NONE)]
+			#ENDIF
+		#ENDIF
+		]]>
+	</applyPostRemovalEffect>
+	
+</statusEffect>

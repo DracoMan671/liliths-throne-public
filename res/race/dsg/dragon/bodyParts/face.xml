@@ -29,6 +29,7 @@
 		<tag>FACE_MUZZLE</tag>
 		<tag>FACE_FANGS</tag>
 		<tag>FACE_NATURAL_BALDNESS_SCALY</tag>
+		<tag>THERMAL_VISION</tag>
 	</tags>
 	
 	<!-- The singular and plural names of this face type.

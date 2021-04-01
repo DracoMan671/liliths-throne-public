@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<colour>
+	<metallic>false</metallic>
+	
+	<name><![CDATA[Forest Green]]></name>
+	
+	<colour>228b22</colour>
+
+	<lightColour>228b22</lightColour>
+
+	<coveringIconColour>228b22</coveringIconColour>
+	
+	<formattingNames>
+		<name><![CDATA[bambiraptorForest]]></name>
+		<name><![CDATA[bambiraptorForestGreen]]></name>
+	</formattingNames>
+	
+	<tags>
+	</tags>
+	
+</colour>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<weapon>
+	<coreAttributes>
+	
+		<value>1500</value> 
+		
+		<melee>range</melee>
+		
+		<twoHanded>false</twoHanded>
+		
+		<determiner><![CDATA[a]]></determiner>
+		
+		<name><![CDATA[Tentadrool Whip]]></name>
+		
+		<namePlural pluralByDefault="false"><![CDATA[Tentacle Whips]]></namePlural>
+		
+		<description><![CDATA[This vial contains a slime formed by abnormal fission during a arcane storm. Highly reactive to magic these slimes have been trained to serve as weapons.]]></description> 
+		
+		<attackDescriptor>Whiplash</attackDescriptor>
+		
+		<attackTooltipDescription><![CDATA[Strike at [npc2.name] with your whip.]]></attackTooltipDescription>
+		
+		<rarity>EPIC</rarity> 
+		
+		<weaponSet/> 
+		
+		<equipText><![CDATA[[npc.Name] [npc.verb(uncork)] the bottle for easy use, pushing the eager slime back down while giving it a bit of aura.]]></equipText>
+		
+		<unequipText><![CDATA[[npc.Name] [npc.verb(tickle)] the slime playful before resealing the bottle.]]></unequipText>
+		
+		<imageName>Tentadrool_Whip_Stored.svg</imageName> 
+		<imageEquippedName>Tentadrool_Whip_Wet.svg</imageEquippedName> 
+		
+		<damage>16</damage> 
+		
+		<arcaneCost>0</arcaneCost> 
+		
+		<damageVariance>MEDIUM</damageVariance> 
+		
+		<availableDamageTypes>
+			<damageType>ICE</damageType>
+			<damageType>FIRE</damageType>
+			<damageType>POISON</damageType>
+			<damageType>LUST</damageType>
+		</availableDamageTypes>
+		 
+		<spells/>
+		
+		<enchantmentLimit>4</enchantmentLimit>
+		
+		<effects/>
+		
+		<primaryColours values="ALL_WITH_METAL"/>
+		<primaryColoursDye values="ALL_WITH_METAL"/>
+		<secondaryColours values="JUST_PERIWINKLE"/> 
+		<secondaryColoursDye values="ALL_WITH_METAL"/>
+		<tertiaryColours/> 
+		<tertiaryColoursDye/>
+		
+		<itemTags> 
+			<tag>SOLD_BY_VICKY</tag>
+		</itemTags>
+		
+	</coreAttributes>
+	 
+	<hitDescriptions>
+		<hitText>
+		<![CDATA[[npc.Name]  [npc.verb(swing)] the whip wide, landing a solid smack to [npc2.her] face, leaving a streak of arcane charged slime ooze.
+			[##npc2.addDirtySlot(IS_HEAD)]
+			#IF npc2.getHighestZLayerCoverableArea(CA_MOUTH) != null
+				#THEN [##npc2.addDirtySlot(npc2.getHighestZLayerCoverableArea(CA_MOUTH).getClothingType().getSlot())]
+				#ELSE [##npc2.addDirtySlot(IS_MOUTH)]
+			#ENDIF
+			#IF npc2.getHighestZLayerCoverableArea(CA_HAIR) != null
+				#THEN [##npc2.addDirtySlot(npc2.getHighestZLayerCoverableArea(CA_HAIR).getClothingType().getSlot())]
+				#ELSE [##npc2.addDirtySlot(IS_HAIR)]
+			#ENDIF
+		]]></hitText>
+		<hitText><![CDATA[Lashing out at [npc2.name] , [npc.name] [npc.verb(grin)] as the slime twists around [npc2.her] guard, fondling [npc2.her] crotch and leaving it a slimey mess!
+		    #IF npc2.getHighestZLayerCoverableArea(CA_ASS) != null
+				#THEN [##npc2.addDirtySlot(npc2.getHighestZLayerCoverableArea(CA_ASS).getClothingType().getSlot())]
+				#ELSE
+					#IF npc2.getHighestZLayerCoverableArea(CA_ASS) == null
+						#THEN [##npc2.addDirtySlot(IS_PENIS)]
+					#ENDIF
+			#ENDIF
+			#IF npc2.getHighestZLayerCoverableArea(CA_ASS) != null
+				#THEN [##npc2.addDirtySlot(npc2.getHighestZLayerCoverableArea(CA_ASS).getClothingType().getSlot())]
+				#ELSE
+					#IF npc2.getHighestZLayerCoverableArea(CA_ASS) == null
+						#THEN [##npc2.addDirtySlot(IS_VAGINA)]
+					#ENDIF
+			#ENDIF
+			
+			]]></hitText>
+		<hitText><![CDATA[[npc.Name] [npc.verb(snap)] the whip behind [npc2.name] slapping [npc2.her] rear with a resounding smack! 
+			[##npc2.addDirtySlot(IS_TAIL)]
+			#IF npc2.getHighestZLayerCoverableArea(CA_ANUS) != null
+						#THEN [##npc2.addDirtySlot(npc2.getHighestZLayerCoverableArea(CA_ANUS).getClothingType().getSlot())]
+					#ELSE
+							#THEN [##npc2.addDirtySlot(IS_ANUS)]
+			#ENDIF
+		]]></hitText>
+		<hitText><![CDATA[[npc.Name] snapping [npc.her] whip at [npc2.name] feet, [npc.name] [npc.verb(score)] a few drooling hits.
+		[##npc2.addDirtySlot(IS_FOOT)][##npc2.addDirtySlot(IS_SOCK)][##npc2.addDirtySlot(IS_ANKLE)]
+		
+		]]></hitText>
+		<hitText><![CDATA[Swinging at [npc2.name] , [npc.name] [npc.verb(grin)] tentacle goes for [npc2.her] chest sloppily groping around! 
+		#IF npc2.getHighestZLayerCoverableArea(CA_NIPPLES) != null
+			#THEN [##npc2.addDirtySlot(npc2.getHighestZLayerCoverableArea(CA_NIPPLES).getClothingType().getSlot())]
+			#ELSE [##npc2.addDirtySlot(IS_CHEST)][##npc2.addDirtySlot(IS_NIPPLE)]
+		#ENDIF
+		]]></hitText>
+		<hitText><![CDATA[[npc.Name] [npc.verb(lash)] at [npc2.name] squarely hitting [npc2.her] stomach, and leaving a large smear of charged gunk. 
+				#IF npc2.getHighestZLayerCoverableArea(CA_STOMACH) != null
+					#THEN [##npc2.addDirtySlot(npc2.getHighestZLayerCoverableArea(CA_STOMACH).getClothingType().getSlot())]
+					#ELSE [##npc2.addDirtySlot(IS_STOMACH)][##npc2.addDirtySlot(IS_TORSO_UNDER)]
+				#ENDIF
+		]]></hitText>
+		<hitText><![CDATA[[npc.Name] [npc.verb(whip)] [npc2.name] striking [npc2.her] hand with a loud slick slap.! 
+				[##npc2.addDirtySlot(IS_HAND)] [##npc2.addDirtySlot(IS_FINGER)] [##npc2.addDirtySlot(IS_WRIST)]
+		]]></hitText>
+	</hitDescriptions>
+
+	<!-- Descriptions that are used when missing an enemy. One of the missText values will be randomly selected each time the attacker misses their target. Follow the same guidelines as equipText. -->
+	<missDescriptions>
+		<missText>
+		<![CDATA[[npc.Name] [npc.verb(whip)] at [npc2.name], but [npc.verb(end)] up connecting with air.]]>
+		</missText>
+		<missText>
+		<![CDATA[Swinging out at [npc2.name] with [npc.her] whip, [npc.name] [npc.verb(let)] out a frustrated cry as [npc.she] [npc.verb(miss)] [npc.her] target! ]]>
+		</missText>
+		<missText>
+		<![CDATA[With a quick step forwards, [npc.name] [npc.verb(slaps)] at [npc2.name] with [npc.her] whip, but [npc.she] [npc.verb(miss)] [npc.her] target! ]]>
+		</missText>
+	</missDescriptions>
+	
+</weapon>

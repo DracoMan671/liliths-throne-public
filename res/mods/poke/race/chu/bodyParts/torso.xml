@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<torso>
+	<race>poke_chu</race>
+	<transformationName><![CDATA[Pikachu-line]]></transformationName>
+	<coveringType>poke_chu_fur</coveringType>
+	<descriptorsMasculine/>
+	<descriptorsFeminine/>
+	<!-- 
+	<descriptorsMasculine>
+		<descriptor><![CDATA[hyena-like]]></descriptor>
+	</descriptorsMasculine>
+	-->
+	<transformationDescription><![CDATA[
+		After just a few moments, the transformation comes to an end, and [npc.she] [npc.verb(let)] out a deep sigh as the itching finally stops, leaving [npc.her] torso covered with mouse-like fur resembling Raichu and Pikachu. [npc.Her] new fur is soft, fluffy, and insulating.
+		<br/>[npc.Name] now [npc.has] Raichu/Pikachu, [npc.skinFullDescription].
+	]]></transformationDescription>
+	<bodyDescription><![CDATA[
+		[npc.Her] torso has [npc.a_femininity(true)] appearance, and is [npc.materialCompositionDescriptor] [npc.skinFullDescription(true)].
+	]]></bodyDescription>
+	<!-- TORSO_DORSAL_FIN, ALLOWS_FLIGHT -->
+	<tags/>
+</torso>

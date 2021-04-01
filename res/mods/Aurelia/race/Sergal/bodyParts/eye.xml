@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<eye>
+	<race>Aurelia_Sergal</race>
+	
+	<transformationName><![CDATA[sergal]]></transformationName>
+	
+	<coveringType>Aurelia_Sergal_eye</coveringType>
+	
+	<defaultPairCount>1</defaultPairCount>
+	
+	<defaultIrisShape>ROUND</defaultIrisShape>
+	
+	<defaultPupilShape>ROUND</defaultPupilShape>
+	
+	<name><![CDATA[eye]]></name>
+	<namePlural><![CDATA[eyes]]></namePlural>
+	
+	<descriptorsMasculine>
+		<descriptor><![CDATA[narrow]]></descriptor>
+		<descriptor><![CDATA[hungry]]></descriptor>
+	</descriptorsMasculine>
+	<descriptorsFeminine>
+		<descriptor><![CDATA[narrow]]></descriptor>
+		<descriptor><![CDATA[hungry]]></descriptor>
+	</descriptorsFeminine>
+	
+	<transformationDescription><![CDATA[
+		By the time [npc.she] hesitantly [npc.verb(open)] them again, they've changed into sergal eyes, with large irises and pupils.
+		<br/>[npc.Name] now [npc.has] [style.boldSergalSlate(sergal eyes)] with [style.boldGenericTF([npc.irisShape])], [npc.irisFullDescription(true)] and [style.boldGenericTF([npc.pupilShape])], [npc.pupilFullDescription(true)].
+	]]></transformationDescription>
+	
+	<bodyDescription><![CDATA[
+		[npc.SheHasFull] [npc.eyePairs] sergal eyes, the irises and pupils of which are larger than a regular human's. They have [npc.irisShape], [npc.irisColour(true)] irises, [npc.pupilShape], [npc.pupilColour(true)] pupils, and [npc.scleraColour(true)] sclerae.
+	]]></bodyDescription>
+	
+</eye>

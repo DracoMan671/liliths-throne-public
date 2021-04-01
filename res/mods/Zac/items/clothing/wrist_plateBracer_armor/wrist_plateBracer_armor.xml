@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<clothing>
+	
+	<coreAtributes>
+		<value>1000</value> 
+		<determiner><![CDATA[a pair of]]></determiner>
+		<name><![CDATA[Platemail Bracer]]></name>
+		<namePlural pluralByDefault="true"><![CDATA[Platemail Bracers]]></namePlural> 
+		<description><![CDATA[A pair of hevay metal wrist guards with layered plate metal protecting the wrists and lower arms.]]></description> 
+		<physicalResistance>2</physicalResistance> 
+		<femininity>ANDROGYNOUS</femininity> 
+		<slot>WRIST</slot> 
+		<rarity>RARE</rarity> 
+		<clothingSet/>
+		<imageName>wrist_plateBracer_armor.svg</imageName> 
+		<imageEquippedName/> 
+		<enchantmentLimit/>
+		<effects/> 
+		<blockedPartsList>
+			<blockedParts>
+				<displacementType>REMOVE_OR_EQUIP</displacementType>
+				<clothingAccessRequired/>
+				<blockedBodyParts/>
+				<clothingAccessBlocked/>
+				<concealedSlots/>
+			</blockedParts>
+			<blockedParts>
+				<displacementType>PULLS_OFF</displacementType>
+				<clothingAccessRequired/>
+				<blockedBodyParts/>
+				<clothingAccessBlocked/>
+				<concealedSlots/>
+			</blockedParts>
+		</blockedPartsList>
+		<incompatibleSlots/>
+		<primaryColours values="JUST_STEEL"/>
+		<primaryColoursDye values="ALL_METAL"/>
+		<secondaryColours values="JUST_BROWN"/>
+		<secondaryColoursDye values="ALL"/>
+		<tertiaryColours values="NONE"/>
+		<tertiaryColoursDye values="NONE"/>
+		<itemTags> 
+			<tag>SOLD_BY_NYAN</tag>
+			<tag>DOMINION_ALLEYWAY_SPAWN</tag>
+		</itemTags>
+	</coreAtributes>
+	<displacementText type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[
+			You take off your platemail bracers.
+		]]></playerSelf>
+		<playerNPC><![CDATA[
+			You pull off [npc.name]'s platemail bracers.
+		]]></playerNPC>
+		<playerNPCRough><![CDATA[
+			You grab hold of [npc.name]'s platemail bracers and roughly pull them off [npc.her] wrists.
+		]]></playerNPCRough>
+		<NPCSelf><![CDATA[
+			[npc.Name] takes [npc.her] platemail bracers off.
+		]]></NPCSelf>
+		<NPCPlayer><![CDATA[
+			[npc.Name] pulls your platemail bracers off.
+		]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[
+			[npc.Name] grabs hold of your platemail bracers and roughly pulls them off your wrists.
+		]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[
+			[npc1.Name] pulls [npc2.name]'s platemail bracers off.
+		]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[
+			[npc.Name] grabs hold of [npc2.name]'s platemail bracers and roughly pulls them off [npc2.her] wrists.
+		]]></NPCOtherNPCRough>
+	</displacementText>
+
+	<replacementText type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[
+			You put on the platemail bracers.
+		]]></playerSelf>
+		<playerNPC><![CDATA[
+			You put [npc.name]'s platemail bracers on [npc.her] wrists.
+		]]></playerNPC>
+		<playerNPCRough><![CDATA[
+			You hold [npc.name] still as you roughly force the platemail bracers on [npc.her] wrists.
+		]]></playerNPCRough>
+		<NPCSelf><![CDATA[
+			[npc.Name] put on the platemail bracers.
+		]]></NPCSelf>
+		<NPCPlayer><![CDATA[
+			[npc.Name] puts your platemail bracers on your wrists.
+		]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[
+			[npc.Name] holds you still as [npc.she] roughly puts the platemail bracers on your wrists.
+		]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[
+			[npc1.Name] puts [npc2.name]'s platemail bracers on their wrists.
+		]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[
+			[npc.Name] grabs hold of [npc2.name]'s platemail bracers and roughly puts them on [npc2.her] wrists.
+		]]></NPCOtherNPCRough>
+	</replacementText>
+
+	<displacementText type="PULLS_OFF">
+		<playerSelf><![CDATA[
+			You take off your platemail bracers.
+		]]></playerSelf>
+		<playerNPC><![CDATA[
+			You pull off [npc.name]'s platemail bracers.
+		]]></playerNPC>
+		<playerNPCRough><![CDATA[
+			You grab hold of [npc.name]'s platemail bracers and roughly pull them off [npc.her] wrists.
+		]]></playerNPCRough>
+		<NPCSelf><![CDATA[
+			[npc.Name] takes [npc.her] platemail bracers off.
+		]]></NPCSelf>
+		<NPCPlayer><![CDATA[
+			[npc.Name] pulls your platemail bracers off.
+		]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[
+			[npc.Name] grabs hold of your platemail bracers and roughly pulls them off your wrists.
+		]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[
+			[npc1.Name] pulls [npc2.name]'s platemail bracers off.
+		]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[
+			[npc.Name] grabs hold of [npc2.name]'s platemail bracers and roughly pulls them off [npc2.her] wrists.
+		]]></NPCOtherNPCRough>
+	</displacementText>
+	
+	<replacementText type="PULLS_BACK_ON">
+		<playerSelf><![CDATA[
+			You put on the platemail bracers.
+		]]></playerSelf>
+		<playerNPC><![CDATA[
+			You put [npc.name]'s platemail bracers on [npc.her] wrists.
+		]]></playerNPC>
+		<playerNPCRough><![CDATA[
+			You hold [npc.name] still as you roughly force the platemail bracers on [npc.her] wrists.
+		]]></playerNPCRough>
+		<NPCSelf><![CDATA[
+			[npc.Name] put on the platemail bracers.
+		]]></NPCSelf>
+		<NPCPlayer><![CDATA[
+			[npc.Name] puts your platemail bracers on your wrists.
+		]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[
+			[npc.Name] holds you still as [npc.she] roughly puts the platemail bracers on your wrists.
+		]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[
+			[npc1.Name] puts [npc2.name]'s platemail bracers on their wrists.
+		]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[
+			[npc.Name] grabs hold of [npc2.name]'s platemail bracers and roughly puts them on [npc2.her] wrists.
+		]]></NPCOtherNPCRough>
+	</replacementText>
+	
+</clothing>

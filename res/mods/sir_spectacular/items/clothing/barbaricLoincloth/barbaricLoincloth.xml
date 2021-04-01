@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- For a version with comments, see "rental_mommy.xml". -->
+<clothing>
+	<coreAtributes>
+		<value>5000</value>
+		<determiner><![CDATA[a]]></determiner>
+		<name><![CDATA[Loincloth of the Barbarian Hero]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Loincloths of the Barbarian Hero]]></namePlural>
+		<description>
+			<![CDATA[This loincloth still bears the unmistakeable musk of the legendary hero, Klod the Unmovable. It is said that this loincloth choses its owner, and upon donning it, the wearer is filled with barbaric rage and vitality. A true barbarian hero requires no coverings other than his or her loincloth.]]>
+		</description>
+		<physicalResistance>0</physicalResistance>
+		<femininity>MASCULINE</femininity>
+		<slot>GROIN</slot>
+		<rarity>LEGENDARY</rarity>
+		<clothingSet/>
+		<imageName>barbaricLoincloth.svg</imageName>
+		<imageEquippedName/>
+		<enchantmentLimit/>
+		<effects>
+            <effect itemEffectType="CLOTHING" limit="0" potency="MAJOR_BOOST" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="STRENGTH" timer="0"/>
+			<effect itemEffectType="CLOTHING" limit="0" potency="MAJOR_BOOST" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="STRENGTH" timer="0"/>
+			<effect itemEffectType="CLOTHING" limit="0" potency="MAJOR_BOOST" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="STRENGTH" timer="0"/>
+			<effect itemEffectType="CLOTHING" limit="0" potency="MAJOR_BOOST" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="DAMAGE_PHYSICAL" timer="0"/>
+			<effect itemEffectType="CLOTHING" limit="0" potency="MAJOR_BOOST" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="DAMAGE_PHYSICAL" timer="0"/>
+			<effect itemEffectType="CLOTHING" limit="0" potency="MAJOR_BOOST" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="DAMAGE_PHYSICAL" timer="0"/>
+			<effect itemEffectType="CLOTHING" limit="0" potency="MAJOR_BOOST" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="DAMAGE_PHYSICAL" timer="0"/>
+			<effect itemEffectType="CLOTHING" limit="0" potency="MAJOR_BOOST" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="DAMAGE_PHYSICAL" timer="0"/>
+			<effect itemEffectType="CLOTHING" limit="0" potency="MAJOR_BOOST" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="DAMAGE_PHYSICAL" timer="0"/>
+			<effect itemEffectType="CLOTHING" limit="100" potency="MAJOR_BOOST" primaryModifier="TF_CORE" secondaryModifier="TF_MOD_SIZE_SECONDARY" timer="0"/>
+			<effect itemEffectType="CLOTHING" limit="128" potency="MAJOR_BOOST" primaryModifier="TF_CORE" secondaryModifier="TF_MOD_SIZE" timer="0"/>
+		</effects>
+		<blockedPartsList>
+			<blockedParts>
+				<displacementType>REMOVE_OR_EQUIP</displacementType>
+				<clothingAccessRequired>
+					<clothingAccess>GROIN</clothingAccess>
+				</clothingAccessRequired>
+				<blockedBodyParts>
+					<bodyPart>PENIS</bodyPart>
+					<bodyPart>VAGINA</bodyPart>
+					<bodyPart>ANUS</bodyPart>
+				</blockedBodyParts>
+				<clothingAccessBlocked/>
+				<concealedSlots>
+					<slot>PENIS</slot>
+					<slot>VAGINA</slot>
+					<slot>PIERCING_PENIS</slot>
+					<slot>PIERCING_VAGINA</slot>
+				</concealedSlots>
+			</blockedParts>
+		</blockedPartsList>
+		<incompatibleSlots>
+			<slot>TORSO_OVER</slot>
+			<slot>TORSO_UNDER</slot>
+			<slot>CHEST</slot>
+			<slot>LEG</slot>
+		</incompatibleSlots>
+		<primaryColours><colour>CLOTHING_BROWN</colour></primaryColours>
+		<primaryColoursDye values="LEATHER"/>
+		<secondaryColours/>
+		<secondaryColoursDye/>
+		<tertiaryColours/>
+		<tertiaryColoursDye/>
+		<itemTags>
+			<tag>SOLD_BY_NYAN</tag>
+		</itemTags>
+	</coreAtributes>
+
+	<displacementText type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[
+			With a macho roar, you roughly tear off your loin cloth.
+		]]></playerSelf>
+		<playerNPC><![CDATA[
+			You roughly tear off [npc.name]'s loin cloth.
+		]]></playerNPC>
+		<playerNPCRough><![CDATA[
+			You roughly tear off [npc.name]'s loin cloth.
+		]]></playerNPCRough>
+		<NPCSelf><![CDATA[
+			With a macho roar, [npc.name] roughly tears off [npc.her] loin cloth.
+		]]></NPCSelf>
+		<NPCPlayer><![CDATA[
+			[npc.Name] roughly tears off your loin cloth.
+		]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[
+			[npc.Name] roughly tears off your loin cloth.
+		]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[
+			[npc1.Name] roughly tears off [npc2.name]'s loin cloth.
+		]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[
+			[npc1.Name] roughly tears off [npc2.name]'s loin cloth.
+		]]></NPCOtherNPCRough>
+	</displacementText>
+
+	<replacementText type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[
+			You close your eyes and think barbaric thoughts. The loincloth magically appears around your crotch.
+		]]></playerSelf>
+		<playerNPC><![CDATA[
+			You close your eyes and think barbaric thoughts. The loincloth magically appears around [npc.name]'s crotch.
+		]]></playerNPC>
+		<playerNPCRough><![CDATA[
+			You close your eyes and think barbaric thoughts. The loincloth magically appears around [npc.name]'s crotch.
+		]]></playerNPCRough>
+		<NPCSelf><![CDATA[
+			[npc.Name] closes [npc.her] eyes. The loincloth magically appears around [npc.her] crotch.
+		]]></NPCSelf>
+		<NPCPlayer><![CDATA[
+			[npc.Name] closes [npc.her] eyes. The loincloth magically appears around your crotch.
+		]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[
+			[npc.Name] closes [npc.her] eyes. The loincloth magically appears around your crotch.
+		]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[
+			[npc1.Name] closes [npc.her] eyes. The loincloth magically appears around [npc2.name]'s crotch.
+		]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[
+			[npc1.Name] closes [npc.her] eyes. The loincloth magically appears around [npc2.name]'s crotch.
+		]]></NPCOtherNPCRough>
+	</replacementText>
+
+
+	
+</clothing>

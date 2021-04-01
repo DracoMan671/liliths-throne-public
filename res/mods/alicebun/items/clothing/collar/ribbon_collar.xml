@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!-- Made by Alicebun! -->
+<clothing>
+	<coreAtributes>
+		<value>450</value>
+		<determiner><![CDATA[a]]></determiner>
+		<name><![CDATA[ribbon collar]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[ribbon collars]]></namePlural>
+		<description><![CDATA[A cute collar decorated with pleated ribbons and a pretty bow.]]></description>
+		<physicalResistance>0</physicalResistance>
+		<femininity>ANDROGYNOUS</femininity>
+		<slot>NECK</slot>
+		<rarity>COMMON</rarity>
+		<clothingSet></clothingSet>
+		<imageName>ribbon_collar.svg</imageName>
+		<imageEquippedName>ribbon_collar.svg</imageEquippedName>
+		<enchantmentLimit></enchantmentLimit>
+		<effects />
+		<blockedPartsList>
+			<blockedParts>
+				<displacementType>REMOVE_OR_EQUIP</displacementType>
+				<clothingAccessRequired />
+				<blockedBodyParts />
+				<clothingAccessBlocked />
+				<concealedSlots />
+			</blockedParts>
+		</blockedPartsList>
+		<incompatibleSlots />
+		<primaryColours values="MAID" />
+		<primaryColoursDye values="ALL" />
+		<secondaryColours values="JUST_WHITE" />
+		<secondaryColoursDye values="ALL" />
+		<tertiaryColours values="JUST_YELLOW" /> 
+		<tertiaryColoursDye values="ALL_WITH_METALS" />
+		<itemTags>
+			<tag>SOLD_BY_NYAN</tag>
+		</itemTags>
+	</coreAtributes>
+	<displacementText type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[You take off your ribbon collar.]]></playerSelf>
+		<playerNPC><![CDATA[You take off [npc.namePos] ribbon collar.]]></playerNPC>
+		<playerNPCRough><![CDATA[You roughly pull the ribbon collar from [npc.namePos] neck.]]></playerNPCRough>
+		<NPCSelf><![CDATA[[npc.Name] takes [npc.her] ribbon collar off.]]></NPCSelf>
+		<NPCPlayer><![CDATA[[npc.Name] takes your ribbon collar off.]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[[npc.Name] roughly pulls the ribbon collar from your neck.]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[[npc1.Name] takes [npc2.namePos] ribbon collar off.]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[[npc1.Name] roughly pulls the ribbon collar from [npc2.namePos] neck.]]></NPCOtherNPCRough>
+	</displacementText>
+	<replacementText type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[You fasten the ribbon collar around your neck.]]></playerSelf>
+		<playerNPC><![CDATA[You fasten the ribbon collar around [npc.namePos] neck.]]></playerNPC>
+		<playerNPCRough><![CDATA[You forcefully fasten the ribbon collar around [npc.namePos] neck.]]></playerNPCRough>
+		<NPCSelf><![CDATA[[npc.Name] fastens the ribbon collar around [npc.her] neck.]]></NPCSelf>
+		<NPCPlayer><![CDATA[[npc.Name] fastens the ribbon collar around your neck.]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[[npc.Name] forcefully fastens the ribbon collar around your neck]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[[npc1.Name] fastens the ribbon collar around [npc2.namePos] neck.]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[[npc1.Name] forcefully fastens the ribbon collar around [npc2.namePos] neck.]]></NPCOtherNPCRough>
+	</replacementText>
+</clothing>

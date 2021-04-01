@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<clothing>
+	<coreAttributes>
+		<value>18000</value>
+		<determiner><![CDATA[a pair of]]></determiner>
+		<name appendColourName="false"><![CDATA[Sky Dancer's Footwear]]></name>
+		<namePlural pluralByDefault="true"><![CDATA[Sky Dancer's Footwears]]></namePlural>
+
+		<description><![CDATA[A pair of footwear modeled after a heavenly bird. Parts of Sky Dancer's costume, these footwears are made so that they can fit into many leg types. The entwining ribbon modeled after the heavenly bird's tail is said to inspire many people, increasing their arcane abilities.]]></description> 
+
+		<physicalResistance>1</physicalResistance>
+		<femininity>FEMININE</femininity>
+
+		<equipSlots>
+			<slot>FOOT</slot>
+		</equipSlots>
+		<rarity>EPIC</rarity>
+		<clothingSet>Faiq_skydancer</clothingSet>
+		<imageName>shoes.svg</imageName>
+		<imageEquippedName/>
+		<stickers/>
+		
+		<enchantmentLimit/>
+		<effects>
+              <effect itemEffectType="CLOTHING" limit="0" potency="MAJOR_BOOST" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="INTELLIGENCE" timer="0"/>
+              <effect itemEffectType="CLOTHING" limit="0" potency="MAJOR_BOOST" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="INTELLIGENCE" timer="0"/>
+		</effects>
+
+		<blockedPartsList>
+		<blockedParts>
+		<displacementType>REMOVE_OR_EQUIP</displacementType>
+		<clothingAccessRequired> 
+			<clothingAccess>FEET</clothingAccess>
+		</clothingAccessRequired>
+		<blockedBodyParts>
+			<bodyPart>FEET</bodyPart>
+		</blockedBodyParts>
+		<clothingAccessBlocked> 
+			<clothingAccess>FEET</clothingAccess>
+		</clothingAccessBlocked>
+		<concealedSlots/>
+		</blockedParts>
+		</blockedPartsList>
+		<incompatibleSlots>
+			<slot>SOCK</slot>
+			<slot>ANKLE</slot>
+		</incompatibleSlots>
+
+		<primaryColours values="LINGERIE"/>
+		<primaryColoursDye values="ALL"/>
+		<secondaryColours values="JUST_WHITE"/>
+		<secondaryColoursDye values="ALL_WITH_METAL"/>
+		<tertiaryColours values="JUST_ROSE_GOLD"/>
+		<tertiaryColoursDye values="ALL_WITH_METAL"/>
+
+		<itemTags>
+			<tag>SOLD_BY_NYAN</tag>
+			<tag>FITS_TALONS</tag>
+			<tag>FITS_HOOF</tag>
+		</itemTags>
+	</coreAttributes>
+</clothing>

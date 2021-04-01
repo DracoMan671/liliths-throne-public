@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<wing>
+	<!-- IMPORTANT!!!
+	Instead of making a new wing type, you should almost certainly be using the pre-defined wing types FEATHERED or LEATHERY
+	These can be seen here: https://github.com/Innoxia/liliths-throne-public/blob/dev/src/com/lilithsthrone/game/character/body/types/WingType.java -->
+	<race>innoxia_hyena</race>
+	<transformationName><![CDATA[hyena]]></transformationName>
+	<coveringType>innoxia_hyena_fur</coveringType>
+	<allowsFlight>true</allowsFlight>
+	<!-- ZERO_TINY, ONE_SMALL, TWO_AVERAGE, THREE_LARGE, FOUR_HUGE -->
+	<minimumSize>ZERO_TINY</minimumSize>
+	<maximumSize>FOUR_HUGE</maximumSize>
+	<name><![CDATA[wing]]></name>
+	<namePlural><![CDATA[wings]]></namePlural>
+	<descriptorsMasculine>
+		<descriptor><![CDATA[feathered]]></descriptor>
+	</descriptorsMasculine>
+	<descriptorsFeminine>
+		<descriptor><![CDATA[feathered]]></descriptor>
+	</descriptorsFeminine>
+	<transformationDescription><![CDATA[
+		#IF(npc.getLegConfiguration().isWingsOnLegConfiguration())
+			[npc.She] [npc.verb(bite)] [npc.her] [npc.lip] to try and suppress an unexpected moan of pleasure as a pair of [npc.wingSize], feathered wings push out from the sides of [npc.her] [npc.legConfiguration] body.
+		#ELSE
+			[npc.She] [npc.verb(bite)] [npc.her] [npc.lip] to try and suppress an unexpected moan of pleasure as a pair of [npc.wingSize], feathered wings push out from [npc.her] shoulder blades.
+		#ENDIF
+		<br/>[npc.Name] now [npc.has] [style.boldTfGeneric(feathered wings)].
+	]]></transformationDescription>
+	<bodyDescription><![CDATA[
+		[npc.sheHasFull] a pair of [npc.wingSize], feathered wings, which are [npc.materialDescriptor] [npc.wingFullDescription(true)].
+	]]></bodyDescription>
+</wing>

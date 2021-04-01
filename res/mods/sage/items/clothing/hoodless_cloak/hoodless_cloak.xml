@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<clothing>
+	<coreAtributes>
+		<value>500</value>
+		<determiner><![CDATA[a]]></determiner>
+		<name><![CDATA[Hoodless Cloak]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Hoodless Cloaks]]></namePlural>
+		<description><![CDATA[A floor-length cloak, without the hood.​]]></description>
+		<physicalResistance>1</physicalResistance>
+		<femininity>ANDROGYNOUS</femininity>
+		<slot>TORSO_OVER</slot>
+		<rarity>RARE</rarity>
+		<clothingSet></clothingSet>
+		<imageName>hoodless_cloak.svg</imageName>
+		<imageEquippedName>hoodless_cloak.svg</imageEquippedName>
+		<enchantmentLimit>5</enchantmentLimit>
+		<effects />
+		<blockedPartsList>
+			<blockedParts>
+				<displacementType>REMOVE_OR_EQUIP</displacementType>
+				<clothingAccessRequired />
+				<blockedBodyParts />
+				<clothingAccessBlocked />
+				<concealedSlots>
+					<slot>TORSO_UNDER</slot>
+					<slot>CHEST</slot>
+					<slot>NIPPLE</slot>
+					<slot>STOMACH</slot>
+					<slot>HAND</slot>
+					<slot>WRIST</slot>
+					<slot>FINGER</slot>
+					<slot>HIPS</slot>
+					<slot>ANUS</slot>
+					<slot>LEG</slot>
+					<slot>GROIN</slot>
+					<slot>SOCK</slot>
+					<slot>ANKLE</slot>
+					<slot>WINGS</slot>
+					<slot>TAIL</slot>
+					<slot>PENIS</slot>
+					<slot>VAGINA</slot>
+					<slot>PIERCING_STOMACH</slot>
+					<slot>PIERCING_NIPPLE</slot>
+					<slot>PIERCING_VAGINA</slot>
+					<slot>PIERCING_PENIS</slot>
+					<slot>WEAPON_MAIN</slot>
+					<slot>WEAPON_OFFHAND</slot>
+					<slot>FOOT</slot>
+				</concealedSlots>
+			</blockedParts>			
+			<blockedParts>
+			<displacementType>SHIFTS_ASIDE</displacementType> 
+				<clothingAccessRequired />
+				<blockedBodyParts />
+				<clothingAccessBlocked />
+				<concealedSlots>
+					<slot>TORSO_UNDER</slot>
+					<slot>CHEST</slot>
+					<slot>NIPPLE</slot>
+					<slot>STOMACH</slot>
+					<slot>HAND</slot>
+					<slot>WRIST</slot>
+					<slot>FINGER</slot>
+					<slot>HIPS</slot>
+					<slot>LEG</slot>
+					<slot>GROIN</slot>
+					<slot>SOCK</slot>
+					<slot>ANKLE</slot>
+					<slot>PENIS</slot>
+					<slot>VAGINA</slot>
+					<slot>PIERCING_STOMACH</slot>
+					<slot>PIERCING_NIPPLE</slot>
+					<slot>PIERCING_VAGINA</slot>
+					<slot>PIERCING_PENIS</slot>
+					<slot>WEAPON_MAIN</slot>
+					<slot>WEAPON_OFFHAND</slot>
+					<slot>FOOT</slot>
+				</concealedSlots>
+			</blockedParts>			
+			<blockedParts>
+			<displacementType>PULLS_UP</displacementType> 
+				<clothingAccessRequired />
+				<blockedBodyParts />
+				<clothingAccessBlocked />
+				<concealedSlots>
+					<slot>HAND</slot>
+					<slot>WRIST</slot>
+					<slot>FINGER</slot>
+					<slot>HIPS</slot>
+					<slot>ANUS</slot>
+					<slot>LEG</slot>
+					<slot>GROIN</slot>
+					<slot>SOCK</slot>
+					<slot>ANKLE</slot>
+					<slot>TAIL</slot>
+					<slot>PENIS</slot>
+					<slot>VAGINA</slot>
+					<slot>PIERCING_STOMACH</slot>
+					<slot>PIERCING_NIPPLE</slot>
+					<slot>PIERCING_VAGINA</slot>
+					<slot>PIERCING_PENIS</slot>
+					<slot>FOOT</slot>
+				</concealedSlots>
+			</blockedParts>
+		</blockedPartsList>
+		<incompatibleSlots />
+		<primaryColours values="ALL" />
+		<primaryColoursDye values="" />
+		<secondaryColours values="ALL_METAL" />
+		<secondaryColoursDye values="" />
+		<tertiaryColours values="" />
+		<tertiaryColoursDye values="" />
+		<itemTags>
+			<tag>SOLD_BY_NYAN</tag>
+		</itemTags>
+	</coreAtributes>
+	<displacementText type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[You take off your cloak.​]]></playerSelf>
+		<playerNPC><![CDATA[You pull off [Npc.name]'s  cloak.​]]></playerNPC>
+		<playerNPCRough><![CDATA[You roughly pull off [Npc.name]'s  cloak.​]]></playerNPCRough>
+		<NPCSelf><![CDATA[[Npc.name] takes off his cloak.]]></NPCSelf>
+		<NPCPlayer><![CDATA[[Npc.name] pulls off your cloak.]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[[Npc.name] roughly pulls off your cloak.]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[[Npc.name1] pulls cloak off of [Npc2.name].]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[[Npc.name1] roughly pulls cloak off of [Npc2.name].]]></NPCOtherNPCRough>
+	</displacementText>
+	<replacementText type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[You pull on the cloak.]]></playerSelf>
+		<playerNPC><![CDATA[You pull the cloak onto [Npc.name].]]></playerNPC>
+		<playerNPCRough><![CDATA[You roughly pull the cloak onto [Npc.name].]]></playerNPCRough>
+		<NPCSelf><![CDATA[[Npc.name] pulls on cloak.]]></NPCSelf>
+		<NPCPlayer><![CDATA[[Npc.name] pulls the cloak onto you.]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[[Npc.name] roughly pulls the cloak onto you.]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[[Npc.name1] pulls the cloak onto [Npc2.name].]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[[Npc.name1] roughly pulls the cloak onto [Npc2.name].]]></NPCOtherNPCRough>
+	</replacementText>
+</clothing>

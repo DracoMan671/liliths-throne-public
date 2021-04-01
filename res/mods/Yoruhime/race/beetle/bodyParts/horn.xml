@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<horn>
+	<race>Yoruhime_beetle</race>
+	<transformationName><![CDATA[beetle]]></transformationName>
+	<coveringType>Yoruhime_beetle_chitin</coveringType>
+	<defaultHornsPerRow>2</defaultHornsPerRow>
+	<name><![CDATA[horn]]></name>
+	<namePlural><![CDATA[horns]]></namePlural>
+	Can be left blank. -->
+	<descriptorsMasculine>
+		<descriptor>curved</descriptor>
+	</descriptorsMasculine>
+	<descriptorsFeminine>
+		<descriptor>curved</descriptor>
+	</descriptorsFeminine>
+	<transformationDescription><![CDATA[
+		sleek, curved [npc.horns].
+		<br/>[npc.Name] now [npc.has] [npc.hornsDeterminer] [style.boldTfGeneric(straight [npc.horns])].
+	]]></transformationDescription>
+	<bodyDescription><![CDATA[
+		[npc.HornsDeterminer] [npc.hornSize], [npc.hornColour(true)], curved
+		#IF(npc.getTotalHorns()==1)
+			 [npc.horn] grows
+		#ELSE
+			 [npc.horns] grow
+		#ENDIF
+		 out of the
+		#IF(npc.getHornsPerRow()==1)
+			 middle
+		#ELSE
+			 upper sides
+		#ENDIF
+		 of [npc.her] forehead.
+	]]></bodyDescription>
+
+</horn>

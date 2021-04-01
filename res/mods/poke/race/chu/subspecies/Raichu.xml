@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<subspecies>
+	<race>poke_chu</race>
+	<colour>BASE_ORANGE</colour>
+	<secondaryColour>BASE_WHITE</secondaryColour>
+	<tertiaryColour>BASE_YELLOW</tertiaryColour>
+	<mainSubspecies>true</mainSubspecies>
+	<baseSlaveValue>10000</baseSlaveValue>
+	<attributeItemId>innoxia_race_human_vanilla_water</attributeItemId>
+	<transformativeItemId>poke_race_electric_mouse_energy</transformativeItemId>
+	<!-- A Subspecies which has a higher value than a character's current Subspecies Override will replace the current Override with this one.
+	This is only used for demons, and should always be left as 0 unless you know what you're doing. -->
+	<subspeciesOverridePriority>0</subspeciesOverridePriority>
+	<shortStature>false</shortStature>
+	<bipedalSubspecies>true</bipedalSubspecies>
+	<aquatic>false</aquatic>
+	<applySubspeciesChanges><![CDATA[
+		[#targetedBody.getEye().setType(null, EYE_TYPE_poke_chu_eye)]
+		[#targetedBody.getEar().setType(null, EAR_TYPE_poke_chu_ear)]
+		[#targetedBody.getTail().setType(null, TAIL_TYPE_poke_chu_tail)]
+		[#targetedBody.getCovering(BODY_COVERING_TYPE_poke_chu_fur, true).setPrimaryColour(COLOUR_COVERING_ORANGE)]
+		[#targetedBody.getCovering(BODY_COVERING_TYPE_poke_chu_fur, true).setSecondaryColour(COLOUR_COVERING_BROWN)]
+	]]></applySubspeciesChanges>
+	<!-- This conditional statement determines if a body is detected as being an instance of this subspecies.
+	It should return an integer value, with 0 being returned if this subspecies' requirements are not met by the supplied body/race.
+	You should usually return a value of 100 if the requirements are met, or something higher if this subspecies should have a higher priority than other subspecies which may also detect this body as being an instance of their subspecies.
+	The body that's being checked can be accessed via using 'targetedBody'.
+	The race of the body that's being checked SHOULD NOT be accessed via targetedBody.getRace(), and should instead be accessed via using 'targetedRace'. -->
+	<subspeciesWeighting><![CDATA[
+		#IF(targetedRace==RACE_poke_chu && 
+		targetedBody.getEye().getType()==EYE_TYPE_poke_chu_eye &&
+		targetedBody.getEar().getType()==EAR_TYPE_poke_chu_ear &&
+		targetedBody.getTail().getType()==TAIL_TYPE_poke_chu_tail)
+			100
+		#ELSE
+			0
+		#ENDIF
+	]]></subspeciesWeighting>
+	<!-- The name of the svg file which represents this subspecies' icon.
+	It should be located in the same folder as this xml file.
+	The 'displaySize' attribute defines how much (if any) this icon should be shrunk to fit onto the background image.
+		This is so that you can make your icon a full-sized svg, so that it's a full size for use in other places (such as for the book image or item backgrounds) and resize it just for this subspecies icon.
+		The default value I use is 80 (corresponding to 80% of the image's full size), but you can define it however you like, or even omit it entirely (in which case a value of 100 is used).
+		A setting of 100 means that no resizing will be made to your icon image. -->
+	<iconName displaySize="80">electric</iconName>
+	<!-- The name of the svg file which represents the background for this subspecies' icon.
+	It should be located in the same folder as this xml file.
+	You can leave this blank to use the game's default background. -->
+	<backgroundName>background</backgroundName>
+	<!-- Book information:
+	Books are automatically-generated items which reveal information about the game's subspecies.
+	There is a unique book created for every unique value defined for each subspecies' 'advancedDescriptionId' field. -->
+	<!-- The icon to be used on the book's front cover.
+	It should be located in the same folder as this xml file. -->
+	<bookIconName>electric</bookIconName>
+	<bookName>PokéDex Chapter 25-26</bookName>
+	<!-- These should be entered into the 'bookEntries.xml' file in the same folder location as this file. -->
+	<basicDescriptionId>CHU_BASIC</basicDescriptionId>
+	<advancedDescriptionId>CHU_ADVANCED</advancedDescriptionId>
+	<!-- ZERO_NONE, ONE_LOW, TWO_AVERAGE, THREE_HIGH, FOUR_ABUNDANT -->
+	<defaultPreference>THREE_HIGH</defaultPreference>
+		<name><![CDATA[Raichu-morph]]></name>
+		<namePlural><![CDATA[Raichu-morphs]]></namePlural>
+		<singularMaleName><![CDATA[Raichu-boy]]></singularMaleName>
+		<singularFemaleName><![CDATA[Raichu-girl]]></singularFemaleName>
+		<pluralMaleName><![CDATA[Raichu-boys]]></pluralMaleName>
+		<pluralFemaleName><![CDATA[Raichu-girls]]></pluralFemaleName>
+	<description><![CDATA[An anthropomorphic Raichu, known as a 'Raichu-morph'.]]></description>
+	<nameHalfDemon><![CDATA[Gorochu]]></nameHalfDemon>
+	<namePluralHalfDemon><![CDATA[Gorochu]]></namePluralHalfDemon>
+	<singularMaleNameHalfDemon><![CDATA[Gorochu]]></singularMaleNameHalfDemon>
+	<singularFemaleNameHalfDemon><![CDATA[Gorochu]]></singularFemaleNameHalfDemon>
+	<pluralMaleNameHalfDemon><![CDATA[Gorochu]]></pluralMaleNameHalfDemon>
+	<pluralFemaleNameHalfDemon><![CDATA[Gorochu]]></pluralFemaleNameHalfDemon>
+	<feralAttributes>
+		<name><![CDATA[Raichu]]></name>
+		<namePlural><![CDATA[Raichu]]></namePlural>
+		<singularMaleName><![CDATA[Raichu]]></singularMaleName>
+		<singularFemaleName><![CDATA[Raichu]]></singularFemaleName>
+		<pluralMaleName><![CDATA[Raichu]]></pluralMaleName>
+		<pluralFemaleName><![CDATA[Raichu]]></pluralFemaleName>
+		<legConfiguration>BIPEDAL</legConfiguration>
+		<!-- Whether or not this feral form's size is measured as height from floor to head, as for most mammals (true), or from head to tail (false), as for alligators and other low-lying animals which are far longer than they are tall. -->
+		<sizeHeight>true</sizeHeight>
+		<!-- The height/length of this subspecies' feral form, measured in cm. -->
+		<size>80</size>
+		<!-- The length of this feral form's tail when in the form of a serpent.
+		Values are defined as a percentage of the character's 'size', with this percentage being added onto their size to generate their total length.
+		As most of a snake's length is in fact their body, not their tail, the usual value for this element is a lot lower than you might expect, and is by default 0.1 (which represents 10%). -->
+		<serpentTailLength>0.1</serpentTailLength>
+		<!-- This will usually be 0, as it refers to breasts in the position of humans, which most animals lack. -->
+		<breastRowCount>3</breastRowCount>
+		<nipplesPerBreastCount>1</nipplesPerBreastCount>
+		<!-- The number of breast rows this feral form has near their crotch. -->
+		<crotchBreastRowCount>2</crotchBreastRowCount>
+		<nipplesPerCrotchBreastCount>1</nipplesPerCrotchBreastCount>
+		<!-- Whether this feral form has arms or wings. -->
+		<armsOrWingsPresent>true</armsOrWingsPresent>
+		<fingerActionsAvailable>true</fingerActionsAvailable>
+		<hairPresent>false</hairPresent>
+	</feralAttributes>
+	<statusEffectDescription><![CDATA[
+		[npc.NamePos] Raichu-like body is soft, but deceptively strong. [npc.she] is receptive to the weather, and arcane storms tend to turn [npc.her] temperament especially wild.
+	]]></statusEffectDescription>
+	<!-- MAJOR_PHYSIQUE, MAJOR_ARCANE, MAJOR_CORRUPTION, FERTILITY, VIRILITY, CRITICAL_DAMAGE
+	RESISTANCE_PHYSICAL, RESISTANCE_LUST, RESISTANCE_FIRE, RESISTANCE_ICE, RESISTANCE_POISON
+	DAMAGE_UNARMED, DAMAGE_MELEE_WEAPON, DAMAGE_RANGED_WEAPON, DAMAGE_SPELLS, DAMAGE_PHYSICAL, DAMAGE_LUST, DAMAGE_FIRE, DAMAGE_ICE, DAMAGE_POISON  
+	The 'value' field corresponds to a float of the magnitude of that Attribute. -->
+	<statusEffectAttributeModifiers>
+		<attribute value="24">MAJOR_PHYSIQUE</attribute>
+		<attribute value="31">MAJOR_ARCANE</attribute>
+		<attribute value="40">MAJOR_CORRUPTION</attribute>
+		<attribute value="35">DAMAGE_PHYSICAL</attribute>
+		<attribute value="35">DAMAGE_SPELLS</attribute>
+		<attribute value="22">RESISTANCE_PHYSICAL</attribute>
+		<attribute value="25">DAMAGE_LUST</attribute>
+		<attribute value="50">RESISTANCE_LUST</attribute>
+	</statusEffectAttributeModifiers>
+	<extraEffects>
+		<effect><![CDATA[Using an Everstone will turn a Raichu into a Pikachu.]]></effect>
+	</extraEffects>
+	<!-- The likelihood of an AI of this subspecies choosing to select a perk from each of the three main perk categories.
+	The weightings are relative to each other, and so you can use whatever values you want, but be aware that negative numbers, or a total number weight greater than 2,147,483,647 will produce unexpected results. -->
+	<perkWeightings>
+		<category masculineWeighting="5" feminineWeighting="5">PHYSICAL</category>
+		<category masculineWeighting="15" feminineWeighting="15">LUST</category>
+		<category masculineWeighting="25" feminineWeighting="25">ARCANE</category>
+	</perkWeightings>
+	<!-- Along with 'worldLocations' below, this determines in what areas of the game this subspecies can spawn.
+	'regionLocations' covers a more general spawn area, whereas 'worldLocations' is a lot more precise in which areas should see this subspecies spawning.
+	World Regions: DOMINION, SUBMISSION, FIELD_CITY, DESERT_CITY, JUNGLE_CITY, SEA_CITY
+	FIELDS, WOODLAND, RIVER, SAVANNAH, DESERT, VOLCANO, JUNGLE, SEA, YOUKO_FOREST, MOUNTAINS, SNOW 
+	Rarity: NEGATIVE_THREE_ZERO, NEGATIVE_TWO_MYTHICAL, NEGATIVE_ONE_LEGENDARY, ZERO_EXTREMELY_RARE, ONE_VERY_RARE, TWO_RARE, THREE_UNCOMMON, FOUR_COMMON -->
+	<regionLocations>
+		<region rarity="TWO_RARE">SUBMISSION</region>
+		<region rarity="THREE_UNCOMMON">WOODLAND</region>
+		<region rarity="ONE_VERY_RARE">YOUKO_FOREST</region>
+	</regionLocations>
+	<!-- World Locations: DOMINION, HARPY_NEST, NIGHTLIFE_CLUB, SUBMISSION, BAT_CAVERNS -->
+	<worldLocations>
+		<world rarity="TWO_RARE">NIGHTLIFE_CLUB</world>
+		<world rarity="ZERO_EXTREMELY_RARE">HARPY_NEST</world>
+		<world rarity="TWO_RARE">DOMINION</world>
+	</worldLocations>
+	<!-- Place Locations: DOMINION_BACK_ALLEYS, DOMINION_DARK_ALLEYS, DOMINION_ALLEYS_CANAL_CROSSING, DOMINION_CANAL
+	BAT_CAVERN_DARK, BAT_CAVERN_LIGHT, BAT_CAVERN_RIVER -->
+	<!-- 
+	<placeLocations>
+		<place rarity="TWO_RARE">DOMINION_CANAL</place>
+		<place rarity="TWO_RARE">DOMINION_ALLEYS_CANAL_CROSSING</place>
+	</placeLocations>
+	-->
+	<placeLocations/>
+	<!-- HIDDEN_FROM_PREFERENCES, DISABLE_FURRY_PREFERENCE, DISABLE_SPAWN_PREFERENCE -->
+	<flags>
+		<flag>HIDDEN_FROM_PREFERENCES</flag>
+	</flags>
+</subspecies>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<eye>
+	<race>poke_zoru</race>
+	<transformationName><![CDATA[Zoroark]]></transformationName>
+	<coveringType>poke_zoru_eye</coveringType>
+	<tags>
+		<tag>NIGHT_VISION</tag>
+	</tags>
+	<defaultPairCount>1</defaultPairCount>
+	<!-- ROUND, HORIZONTAL, VERTICAL, HEART, STAR -->
+	<defaultIrisShape>VERTICAL</defaultIrisShape>
+	<defaultPupilShape>VERTICAL</defaultPupilShape>
+	<name><![CDATA[eye]]></name>
+	<namePlural><![CDATA[eyes]]></namePlural>
+	<descriptorsMasculine>
+		<descriptor><![CDATA[devious]]></descriptor>
+	</descriptorsMasculine>
+	<descriptorsFeminine>
+		<descriptor><![CDATA[devious]]></descriptor>
+	</descriptorsFeminine>
+	<transformationDescription><![CDATA[
+		By the time [npc.she] hesitantly [npc.verb(open)] them again, they've sharpened into Zoroark eyes.
+		<br/>[npc.Name] now [npc.has] Zoroark eyes with [style.boldGenericTF([npc.irisShape])], [npc.irisFullDescription(true)] and [style.boldGenericTF([npc.pupilShape])], [npc.pupilFullDescription(true)].
+	]]></transformationDescription>
+	<bodyDescription><![CDATA[
+		[npc.SheHasFull] [npc.eyePairs] Zoroark eyes, the irises and pupils of which are larger than a regular human's. They have [npc.irisShape], [npc.irisColour(true)] irises, [npc.pupilShape], [npc.pupilColour(true)] pupils, and [npc.scleraColour(true)] sclerae.
+	]]></bodyDescription>
+	
+</eye>

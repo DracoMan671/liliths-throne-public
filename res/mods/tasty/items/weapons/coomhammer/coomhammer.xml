@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<weapon>
+	<coreAttributes>
+		
+		<authorTag><![CDATA[On the handle of the Coomhammer, there is a small inscription that reads "Cajun Creations by Tasty's Priest Sauce LLC."]]></authorTag>
+				
+		<value>78500</value> 
+				
+		<melee>true</melee>
+				
+		<twoHanded>false</twoHanded>
+		
+		<determiner><![CDATA[the]]></determiner>
+		
+		<name appendDamageName="true"><![CDATA[Coomhammer]]></name>
+		
+		<namePlural pluralByDefault="false"><![CDATA[Coomhammers]]></namePlural> 
+		
+		<description><![CDATA[The Coomhammer is called the Coomhammer because when its owner takes it into battle, it spells coom for the enemy.]]></description> 
+		
+		<attackDescriptor>bonk</attackDescriptor>
+		
+		<attackTooltipDescription><![CDATA[Swing your Coomhammer at [npc2.name].]]></attackTooltipDescription>
+		
+		<rarity>LEGENDARY</rarity> 
+		
+		<weaponSet/> 
+		
+		<equipText><![CDATA[[npc.Name] [npc.verb(heft)] the Coomhammer, readying it for use in combat.]]></equipText>
+				
+		<unequipText><![CDATA[[npc.Name] [npc.verb(relax)] the Coomhammer, before putting it away.]]></unequipText>
+		
+		<imageName>coomhammer.svg</imageName> 
+		
+		<imageEquippedName>coomhammer.svg</imageEquippedName>
+		
+		<physicalResistance>1</physicalResistance> 
+		
+		<damage>90</damage>
+		<aoe chance="75">10</aoe>
+		<aoe chance="50">35</aoe>
+		<aoe chance="25">48</aoe>
+		
+		<arcaneCost>0</arcaneCost> 
+		
+		<damageVariance>LOW</damageVariance> 
+		
+		<availableDamageTypes>
+			<damageType>PHYSICAL</damageType>
+			<damageType>ICE</damageType>
+			<damageType>FIRE</damageType>
+			<damageType>POISON</damageType>
+			<damageType>LUST</damageType>
+		</availableDamageTypes>
+		
+		<spells>
+			<spell damageType="FIRE">SLAM</spell>
+			<spell damageType="ICE">SLAM</spell>
+			<spell damageType="LUST">SLAM</spell>
+			<spell damageType="PHYSICAL">SLAM</spell>
+			<spell damageType="POISON">SLAM</spell>
+		</spells>
+		
+		<combatMoves/>
+		
+		<enchantmentLimit>5</enchantmentLimit>
+		
+		<effects> 
+              <effect itemEffectType="WEAPON" limit="0" potency="MAJOR_BOOST" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="DAMAGE_WEAPON" timer="0"/>
+              <effect itemEffectType="WEAPON" limit="0" potency="MAJOR_BOOST" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="DAMAGE_WEAPON" timer="0"/>
+              <effect itemEffectType="WEAPON" limit="0" potency="MAJOR_BOOST" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="CRITICAL_CHANCE" timer="0"/>
+              <effect itemEffectType="WEAPON" limit="0" potency="MAJOR_BOOST" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="CRITICAL_CHANCE" timer="0"/>
+		</effects>
+		
+		<extraEffects/>
+		
+		<onHitEffect/>
+	
+		<onCriticalHitEffect/>
+	
+		<primaryColours recolouringAllowed="true" values="ALL_METAL"/> 
+		<primaryColoursDye values="ALL_METAL"/>
+		<secondaryColours values="DARK_SHADES"/> 
+		<secondaryColoursDye values="ALL"/>
+		
+		<itemTags> 
+			<tag>SOLD_BY_VICKY</tag>
+		</itemTags>
+		
+	</coreAttributes>
+
+	<hitDescriptions>
+		<hitText><![CDATA[
+		Swinging out with [npc.her] Coomhammer, [npc.name] [npc.verb(manage)] to slam [npc2.name] in the chest; the mighty hammer plowing into [npc2.her] torso to drain [npc2.her] energy!
+		]]></hitText>
+		<hitText><![CDATA[
+		Swinging out at [npc2.name] with [npc.her] Coomhammer, [npc.name] [npc.verb(manage)] to slam [npc2.her] [npc2.arm] mighty hammer and drain [npc2.her] energy!
+		]]></hitText>
+		<hitText><![CDATA[
+		Lunging forward, [npc.name] [npc.verb(swing)] at [npc2.name] with [npc.her] Coomhammer, slamming the mighty hammer into [npc2.her] shoulder and causing [npc2.herHim] to lose some energy!
+		]]></hitText>
+		<criticalHitText><![CDATA[
+		Expertly swinging around [npc2.namePos] attempt to block [npc.her] attack, [npc.name] [npc.verb(slam)] a devastating hit with [npc.her] Coomhammer!
+		]]></criticalHitText>
+	</hitDescriptions>
+
+	<missDescriptions>
+		<missText><![CDATA[
+		Swinging with [npc.her] Coomhammer, [npc.name] [npc.verb(attempt)] to hit [npc2.name] in the chest, but [npc.verb(end)] up missing [npc2.herHim]!
+		]]></missText>
+		<missText><![CDATA[
+		Swinging at [npc2.name] with [npc.her] Coomhammer, [npc.name] [npc.verb(let)] out a disgusted groan as [npc.she] [npc.verb(miss)] [npc.her] target!
+		]]></missText>
+		<missText><![CDATA[
+		Lunging forwards, [npc.name] [npc.verb(swing)] at [npc2.name] with [npc.her] Coomhammer, but [npc.she] [npc.verb(miss)] [npc.her] target!
+		]]></missText>
+	</missDescriptions>
+	
+</weapon>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<clothing>
+	<coreAttributes>
+		<value>30000</value>
+		<determiner><![CDATA[a pair of]]></determiner>
+		<name appendColourName="false"><![CDATA[Sky Dancer's Twin Ribbon]]></name>
+		<namePlural pluralByDefault="true"><![CDATA[Sky Dancer's Twin Ribbons]]></namePlural>
+
+		<description><![CDATA[A pair of ribbon designed to complement a sky dancer's costume.The jewel on their core is said to enchance the wearer's mind, decreasing the aura needed to cast spells while offering some protection against elements.]]></description> 
+
+		<physicalResistance>1</physicalResistance>
+		<femininity>FEMININE</femininity>
+
+		<equipSlots>
+			<slot>HAIR</slot>
+		</equipSlots>
+		<rarity>EPIC</rarity>
+		<clothingSet>Faiq_skydancer</clothingSet>
+		<imageName>ribbon.svg</imageName>
+		<imageEquippedName/>
+		<stickers/>
+		
+		<enchantmentLimit/>
+		<effects>
+              <effect itemEffectType="CLOTHING" limit="0" potency="MAJOR_BOOST" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="SPELL_COST_MODIFIER" timer="0"/>
+              <effect itemEffectType="CLOTHING" limit="0" potency="MAJOR_BOOST" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="SPELL_COST_MODIFIER" timer="0"/>
+              <effect itemEffectType="CLOTHING" limit="0" potency="MAJOR_BOOST" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="RESISTANCE_FIRE" timer="0"/>
+              <effect itemEffectType="CLOTHING" limit="0" potency="MAJOR_BOOST" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="RESISTANCE_ICE" timer="0"/>
+              <effect itemEffectType="CLOTHING" limit="0" potency="MAJOR_BOOST" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="RESISTANCE_POISON" timer="0"/>
+		</effects>
+
+		<blockedPartsList>
+		<blockedParts>
+		<displacementType>REMOVE_OR_EQUIP</displacementType>
+		<clothingAccessRequired/>
+		<blockedBodyParts/>
+		<clothingAccessBlocked/>
+		<concealedSlots/>
+		</blockedParts>
+		</blockedPartsList>
+		<incompatibleSlots/>
+
+		<primaryColours values="LINGERIE"/>
+		<primaryColoursDye values="ALL"/>
+		<secondaryColours values="JUST_WHITE"/>
+		<secondaryColoursDye values="ALL_WITH_METAL"/>
+		<tertiaryColours values="JUST_ROSE_GOLD"/>
+		<tertiaryColoursDye values="ALL_WITH_METAL"/>
+
+		<itemTags>
+			<tag>SOLD_BY_KATE</tag>
+		</itemTags>
+	</coreAttributes>
+</clothing>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<clothing>	
+	<coreAtributes>
+		<value>5000</value> 
+		<determiner><![CDATA[a pair of]]></determiner>
+		<name><![CDATA[knee-high leather jack boots]]></name>		
+		<namePlural pluralByDefault="true"><![CDATA[leather jack boots]]></namePlural> 	
+		<description><![CDATA[A pair of leather knee high jack boots with a sturdy metal high heel. They have a authortarian appeal to them while still maintaining a feminine appeal, designed for high ranking demons back in the day, they were literaly made to walk all over people.]]></description> 
+		<physicalResistance>1</physicalResistance> 
+		<femininity>FEMININE</femininity> 
+		<slot>FOOT</slot> 
+		<rarity>COMMON</rarity> 
+		<clothingSet>sage_dueset</clothingSet> 
+		<imageName>Leatherjackboot.svg</imageName> 
+		<imageEquippedName/> 
+		<enchantmentLimit/>
+		<effects/>
+		<blockedPartsList>
+			<blockedParts>
+				<displacementType>REMOVE_OR_EQUIP</displacementType> 
+				<clothingAccessRequired> 
+					<clothingAccess>FEET</clothingAccess>
+				</clothingAccessRequired>
+				<blockedBodyParts>
+					<bodyPart>FEET</bodyPart>
+				</blockedBodyParts>
+				<clothingAccessBlocked> 
+					<clothingAccess>FEET</clothingAccess>
+				</clothingAccessBlocked>
+				<concealedSlots/>
+			</blockedParts>
+		</blockedPartsList>
+		<incompatibleSlots/> 
+		<primaryColours values="JUST_BLACK"/> 
+		<primaryColoursDye values="ALL_WITH_METALS"/>
+		<secondaryColours values="ALL_METAL"/>
+		<secondaryColoursDye values="ALL_WITH_METALS"/>
+		<itemTags> 
+			<tag>SOLD_BY_NYAN</tag>
+			<tag>DOMINION_ALLEYWAY_SPAWN</tag>
+		</itemTags>
+	</coreAtributes>
+	<displacementText type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[
+			You pull off your leather jack boots.
+		]]></playerSelf>
+		<playerNPC><![CDATA[
+			You pull off [npc.name]'s boots.
+		]]></playerNPC>
+		<playerNPCRough><![CDATA[
+			You grab [npc.name]'s [npc.feet] and roughly pull [npc.her] jack boots off.
+		]]></playerNPCRough>
+		<NPCSelf><![CDATA[
+			[npc.Name] pulls [npc.her] boots off.
+		]]></NPCSelf>
+		<NPCPlayer><![CDATA[
+			[npc.Name] pulls your boots off.
+		]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[
+			[npc.Name] grabs your [pc.feet] and roughly pulls your jack boots off.
+		]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[
+			[npc1.Name] pulls [npc2.name]'s boots off.
+		]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[
+			[npc.Name] grabs [npc2.name]'s [npc2.feet] and roughly pulls [npc2.name]'s jack boots off.
+		]]></NPCOtherNPCRough>
+	</displacementText>
+	<replacementText type="REMOVE_OR_EQUIP">
+		<playerSelf><![CDATA[
+			You push your feet into the leather jack boots and pull them up to your knees.
+		]]></playerSelf>
+		<playerNPC><![CDATA[
+			You guide [npc.name]'s [npc.feet] into the leather jack boots and pull them up to [npc.her] knees.
+		]]></playerNPC>
+		<playerNPCRough><![CDATA[
+			You hold [npc.name] still as you roughly force [npc.her] [npc.feet] into the leather jack boots and pull them up to [npc.her] knees.
+		]]></playerNPCRough>
+		<NPCSelf><![CDATA[
+			[npc.Name] puts [npc.her] [npc.feet] into the leather jack boots and pulls them up to [npc.her] knees.
+		]]></NPCSelf>
+		<NPCPlayer><![CDATA[
+			[npc.Name] guides your [pc.feet] into the leather jack boots, before pulling up to your knees.
+		]]></NPCPlayer>
+		<NPCPlayerRough><![CDATA[
+			[npc.Name] holds you still as [npc.she] roughly forces your [pc.feet] into the leather jack boots and pull them up to your knees.
+		]]></NPCPlayerRough>
+		<NPCOtherNPC><![CDATA[
+			[npc1.Name] guides [npc2.name]'s [npc2.feet] into the leather jack boots, before pulling up to [npc2.her] knees.
+		]]></NPCOtherNPC>
+		<NPCOtherNPCRough><![CDATA[
+			[npc1.Name] holds [npc2.name] still as [npc1.she] roughly forces [npc2.name]'s [npc2.feet] into the leather jack boots, before pulling up to [npc2.her] knees.
+		]]></NPCOtherNPCRough>
+	</replacementText>
+	
+</clothing>

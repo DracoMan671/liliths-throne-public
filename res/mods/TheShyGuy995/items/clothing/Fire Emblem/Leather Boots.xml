@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<clothing>
+	<coreAttributes>
+		<value>1500</value>
+		<determiner><![CDATA[a pair of]]></determiner>
+		<name><![CDATA[Leather Boots]]></name>
+		<namePlural pluralByDefault="true"><![CDATA[Leather Boots]]></namePlural>
+		<description><![CDATA[A pair of Leather Boots.]]></description>
+		<physicalResistance>2</physicalResistance>
+		<femininity>FEMININE</femininity>
+		<slot>FOOT</slot>
+		<rarity>EPIC</rarity>
+		<clothingSet/>
+		<imageName>Leather Boots.svg</imageName>
+		<imageEquippedName/>
+		<enchantmentLimit/>
+		<effects/>
+		
+		<blockedPartsList>
+			<blockedParts>
+			    <displacementType>REMOVE_OR_EQUIP</displacementType>
+				<clothingAccessRequired>
+					<clothingAccess>FEET</clothingAccess>
+				</clothingAccessRequired>
+				<blockedBodyParts>
+					<bodyPart>FEET</bodyPart>
+				</blockedBodyParts>
+				<clothingAccessBlocked>
+					<clothingAccess>FEET</clothingAccess>
+				</clothingAccessBlocked>
+				<concealedSlots>
+				    <slot>ANKLE</slot>
+				</concealedSlots>
+			</blockedParts>
+		</blockedPartsList>
+		
+		<incompatibleSlots/>
+		
+		<primaryColours values="JUST_DARK_BROWN"/>
+		<primaryColoursDye values="ALL"/>
+		<secondaryColours values="JUST_MIDNIGHT_BROWN"/>
+		<secondaryColoursDye values="ALL"/>
+		<tertiaryColours values="JUST_COPPER"/>
+		<tertiaryColoursDye values="ALL_METAL"/>
+		
+		<itemTags>
+			<tag>SOLD_BY_NYAN</tag>
+		</itemTags>
+	</coreAttributes>
+
+  <replacementText type="REMOVE_OR_EQUIP">
+    <self>
+      <![CDATA[[npc.Name] [npc.verb(push)] [npc.her] [npc.feet] into the leather boots and [npc.verb(pull)] them up to [npc.her] knee.]]>
+    </self>
+    <other>
+      <![CDATA[[npc.Name] [npc.verb(push)] [npc2.namePos] [npc2.feet] into the leather boots and [npc.verb(pull)] them up to [npc2.her] knee.]]>
+    </other>
+    <otherRough>
+      <![CDATA[[npc.Name] roughly [npc.verb(push)] [npc2.namePos] [npc2.feet] into the leather boots and [npc.verb(yank)] them up to [npc2.her] knee.]]>
+    </otherRough>
+  </replacementText>
+
+  <displacementText type="REMOVE_OR_EQUIP">
+    <self>
+      <![CDATA[[npc.Name] [npc.verb(pull)] down the tops of [npc.her] leather boots before tugging them off.]]>
+    </self>
+    <other>
+      <![CDATA[[npc.Name] [npc.verb(pull)] down the tops of [npc2.namePos] leather boots before tugging them off.]]>
+    </other>
+    <otherRough>
+      <![CDATA[[npc.Name] roughly [npc.verb(yank)] down the tops of [npc2.namePos] leather boots before tugging them off.]]>
+    </otherRough>
+  </displacementText>
+	
+
+	
+</clothing>

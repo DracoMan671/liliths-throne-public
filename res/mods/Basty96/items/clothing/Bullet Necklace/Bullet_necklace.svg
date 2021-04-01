@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg cursor="default" version="1.1" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <path d="m142.24 159.63c-243.35-27.23-94.686-37.853-34.09-81.851 19.504-14.162-84.658-26.929 28.713-67.455" fill="none" stroke="#000000" stroke-dasharray="3.58293968, 3.58293968" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="0" stroke-width="3.5829"/>
+ <path d="m143.27 159.75c-244.01-27.361-96.128-38.05-35.12-81.965 19.563-14.082-84.658-26.929 28.713-67.455" fill="none" stroke="#ffaaaa" stroke-dasharray="1.79146983, 1.79146983" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="0" stroke-width="1.7915"/>
+ <path d="m151.24 163.37a7.6513 7.6513 0 0 1-7.6513 7.6513 7.6513 7.6513 0 0 1-7.6513-7.6513 7.6513 7.6513 0 0 1 7.6513-7.6513 7.6513 7.6513 0 0 1 7.6513 7.6513zm2.572-0.17138a10.254 10.254 0 0 1-10.254 10.254 10.254 10.254 0 0 1-10.254-10.254 10.254 10.254 0 0 1 10.254-10.254 10.254 10.254 0 0 1 10.254 10.254z" fill="#ff2a2a" fill-rule="evenodd" stroke="#000000" stroke-linecap="square" stroke-width=".65144"/>
+ <g stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="0">
+  <path d="m144.96 160.03c184.16-13.229 60.415-66.147 75.802-92.514 27.659-47.399-7.763-71.533-83.968-58.078" fill="none" stroke="#000000" stroke-dasharray="3.58293968, 3.58293968" stroke-width="3.5829"/>
+  <path d="m144.96 160.03c184.16-13.229 60.415-66.147 75.802-92.514 27.659-47.399-7.763-71.533-83.968-58.078" fill="none" stroke="#ffaaaa" stroke-dasharray="1.69601141, 1.69601141" stroke-width="1.6959"/>
+  <ellipse transform="matrix(.95451 -.29818 .22243 .97495 0 0)" cx="128.65" cy="50.991" rx="4.8749" ry="2.1737" fill="#ff8080" stroke="#000000" stroke-dasharray="1.74011582, 1.74011582" stroke-width="1.7404" style="paint-order:stroke fill markers"/>
+  <ellipse transform="matrix(.99988 -.01567 -.03318 .99945 0 0)" cx="140.69" cy="11.862" rx="4.7404" ry="2.0466" fill="#ffaaaa" stroke="#000000" stroke-dasharray="1.66513485, 1.66513485" stroke-width="1.6655" style="paint-order:stroke fill markers"/>
+ </g>
+ <g stroke="#000000" stroke-linecap="square" stroke-width=".65144">
+  <path d="m138.5 177.63v37.858l2.1832 8.222 0.0198 13.55s0.46967 5.7955 1.8333 6.8419c0.47434 0.36397 1.3206 0.36562 1.7937 0 1.0204-0.78859 1.7819-6.8402 1.7819-6.8402l-0.0198-13.551 2.203-8.2217v-37.864z" fill="#ffd42a"/>
+  <path d="m148.29 174.38-3.6981 6e-5v-4.0861c0-0.88945-2.6683-0.88945-2.6683 0v4.0861l-3.4208-6e-5v1.6371h1.1643l8e-3 1.601 7.3881-7e-5 4e-3 -1.601h1.2219z" fill="#ff9955"/>
+  <rect transform="rotate(90)" x="176.02" y="-147.06" width="1.601" height="7.3968" fill="#ffb380" fill-rule="evenodd"/>
+  <path d="m138.5 177.63v38.026l2.1832 8.054 0.0198 13.55c3e-3 2.3611 0.46967 5.7955 1.8333 6.8419 0.47434 0.36397 1.3206 0.36562 1.7937 0 1.0204-0.78859 1.7854-4.484 1.7819-6.8402l-0.0198-13.551 2.203-8.2217v-37.864z" fill="#ff9955"/>
+  <path d="m140.68 224.37s0.0198 8.6604 0.0198 12.888c0 2.3611 0.58463 5.8838 1.8333 6.8419 0.47434 0.36397 1.3206 0.36562 1.7937 0 1.185-0.91585 1.7819-4.484 1.7819-6.8402 0-4.331-0.0198-12.889-0.0198-12.889z" fill="#ffdd55"/>
+ </g>
+</svg>

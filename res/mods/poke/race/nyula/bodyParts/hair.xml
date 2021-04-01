@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<hair>
+	<race>poke_nyula</race>
+	<transformationName><![CDATA[Weavile]]></transformationName>
+	<coveringType>poke_nyula_feather</coveringType>
+	<!-- HAIR_HANDLES_IN_SEX, HAIR_NATURAL_MANE -->
+	<tags>
+		<tag>HAIR_NATURAL_MANE</tag>
+	</tags>
+	<determiner><![CDATA[a plume of]]></determiner>
+	<name><![CDATA[hair]]></name>
+	<namePlural pluralByDefault="false"><![CDATA[hairs]]></namePlural> 
+	<descriptorsMasculine>
+		<descriptor>feathery</descriptor>
+	</descriptorsMasculine>
+	<descriptorsFeminine>
+		<descriptor>feathery</descriptor>
+	</descriptorsFeminine>
+	<transformationDescription><![CDATA[
+		The transformation only lasts a matter of moments, leaving [npc.herHim] with feathery hair.
+		<br/>[npc.Name] now [npc.has] [npc.hairColour] Weavile hair.
+	]]></transformationDescription>
+	<bodyDescription><![CDATA[
+		[npc.SheHasFull] [npc.hairDeterminer] [npc.hairLength], [npc.hairColour(true)], Weavile hair
+	]]></bodyDescription>
+	
+</hair>

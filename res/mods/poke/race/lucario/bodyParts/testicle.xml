@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testicle>
+	<race>poke_lucario</race>
+	<coveringType>poke_lucario_fur</coveringType>
+	<fluidType>poke_lucario_cum</fluidType>
+	<internal>false</internal>
+	<!-- 
+	<names>
+		<name><![CDATA[ball]]></name>
+		<name><![CDATA[testicle]]></name>
+	</names>
+	-->
+	<names/>
+	<namesPlural/>
+	<descriptors/>
+	<!-- 
+	<descriptors>
+		<descriptor><![CDATA[hyaenidae]]></descriptor>
+	</descriptors>
+	-->
+</testicle>

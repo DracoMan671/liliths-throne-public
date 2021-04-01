@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<weapon>
+	<coreAttributes>
+	<authorTag><![CDATA[A discreetly placed name can just about read which informs you that it was made by 'Maeko暁'.]]></authorTag>
+		<value>15200</value>
+		<melee>true</melee>
+		<twoHanded>true</twoHanded>
+		<determiner><![CDATA[The]]></determiner>
+		<name><![CDATA[Buster Sword]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Buster Sword]]></namePlural>
+		<description><![CDATA[The Iconic sword of Cloud Strife in Final Fantasy VII. This sword was first wielded by Angeal, Angeal passed it down to Zack as a symbol of passing on his honor and dreams. Zack was gunned down outside midgar and passed on The Buster Sword to Cloud Strife. "This sword is a symbol of my dreams.. and my honor. No.. it's more than that.." - Zach Fair]]></description>
+		<attackDescriptor>Slash</attackDescriptor>
+		<attackTooltipDescription>Ultimate End</attackTooltipDescription>
+		<rarity>EPIC</rarity>
+		<equipText>The Buster sword is ready for action at any given moment, it's placed firmly on your back waiting on you to be drawn in battle.</equipText>
+		<unequipText>Tired of the using The Buster Sword, you sheath it on your back ready for another day... maybe.</unequipText>
+		<imageName>buster_sword.svg</imageName>
+		<imageEquippedName>buster_sword.svg</imageEquippedName>
+		<damage>26</damage>
+		<arcaneCost>0</arcaneCost>
+		<damageVariance>MEDIUM</damageVariance>
+		<availableDamageTypes>
+			<damageType>PHYSICAL</damageType>
+			<damageType>POISON</damageType>
+			<damageType>FIRE</damageType>
+			<damageType>ICE</damageType>
+			<damageType>LUST</damageType>
+		</availableDamageTypes>
+		<enchantmentLimit>10</enchantmentLimit>
+		<effects>
+			<effect itemEffectType="" limit="0" potency="MAJOR_BOOST" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="CRITICAL_CHANCE" timer="0" />
+			<effect itemEffectType="WEAPON" limit="0" potency="MAJOR_BOOST" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="DAMAGE_PHYSICAL" timer="0"/>
+		</effects>
+		<primaryColours values="ALL_METAL" />
+		<primaryColoursDye values="ALL_METAL" />
+		<secondaryColours values="ALL_METAL" />
+		<secondaryColoursDye values="ALL_METAL" />
+		<itemTags>
+			<tag>SOLD_BY_VICKY</tag>
+		</itemTags>
+	</coreAttributes>
+	<hitDescriptions>
+		<hitText><![CDATA[It's as if you were born with it in your hand! You break through your opponent to unleash a powerful slash showing them just how much power you have.]]></hitText>
+		<hitText><![CDATA[Raising The Buster Sword horizontally above your head, blade edge facing up. You channel your power bringing it in a steady stance before you as you watch it glow and grow with power. You quickly charge your opponet saying the word "omnislash" connecting the blow for great impact.]]></hitText>
+		<hitText><![CDATA[Gripping tight you look to your opponent. Channeling some power, you dance around their attacks and rush them. You jump into the air gathering power in The Buster Sword behind your back as you bring it down, in a downwards slash saying the words "Braver" as your hit.]]></hitText>
+	</hitDescriptions>
+	<missDescriptions>
+		<missText><![CDATA[You get knocked off balance as you try to dodge and block your opponets attacks. They are too quick for you to do anything and you get hit.]]></missText>
+		<missText><![CDATA[You slam the sword down into the ground, trying to do something fancy. Instead you end up looking like a fool to your opponent.]]></missText>
+	</missDescriptions>
+</weapon>

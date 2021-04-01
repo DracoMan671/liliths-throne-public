@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<coveringType>
+	<category>HAIR</category>
+
+	<determiner><![CDATA[a]]></determiner>
+	<name><![CDATA[cowl]]></name>
+	<namePlural pluralByDefault="false"><![CDATA[cowls]]></namePlural> 
+
+	<naturalCoveringModifiers>
+		<modifier>SMOOTH</modifier>
+	</naturalCoveringModifiers>
+
+	<extraCoveringModifiers/>
+
+	<naturalPatterns>
+		<pattern weighting="1">NONE</pattern>
+	</naturalPatterns>
+
+	<extraPatterns/>
+
+	<naturalColoursPrimary values="naturalHairColours"/> 
+	<extraColoursPrimary values="allCoveringColours"/>
+	
+	<naturalColoursSecondary values="naturalHairColours"/>
+	<extraColoursSecondary values="allCoveringColours"/>
+</coveringType>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<weapon>
+	<coreAttributes>
+	
+		<value>10500</value> 
+		
+		<melee>true</melee>
+		
+		<twoHanded>False</twoHanded>
+		
+		<determiner><![CDATA[]]></determiner>
+		
+		<name><![CDATA[Bat-Wing Blade]]></name>
+		
+		<namePlural pluralByDefault="false"><![CDATA[Bat-Wing Blade]]></namePlural>
+		
+		<description><![CDATA[A smooth, curved driveblade thats light enough to be wielded with onehand. Its actual name is the Shiden but is often called the batwing because of its identical apperance to an Imperial bat's wing. While newer than the original imperial blade, it trades lower physical damage for higher elemental damage.]]></description> 
+		
+		<attackDescriptor>Slice</attackDescriptor>
+		
+		<attackTooltipDescription>Load a cartridge into the batwing and attack [npc2.Name] with it.</attackTooltipDescription>
+		
+		<rarity>RARE</rarity> 
+		
+		<weaponSet/>
+		
+		<equipText><![CDATA[[npc.Name] [npc.verb(fasten)] the bat blade to [npc.her] waist, With the cartridge in, and safety on for later use.]]></equipText>
+		
+		<unequipText><![CDATA[[npc.Name] [npc.verb(unfasten)] the bat blade from [npc.her] waist, [npc.verb(unload)] it's active cartridge and [npc.verb(store)] it for later.]]></unequipText>
+		
+		<imageName>Bat Blade Mk1.svg</imageName> 
+		
+		<imageEquippedName>Bat Blade Mk1.svg</imageEquippedName>
+		
+		<damage>25</damage> 
+		
+		<arcaneCost>1</arcaneCost> 
+		
+		<damageVariance>MEDIUM</damageVariance> 
+		
+		<availableDamageTypes>
+			<damageType>PHYSICAL</damageType>
+			<damageType>ICE</damageType>
+			<damageType>FIRE</damageType>
+			<damageType>POISON</damageType>
+		</availableDamageTypes>
+		
+		<spells/>
+		
+		<enchantmentLimit>15</enchantmentLimit>
+		
+		<effects> 
+              <effect itemEffectType="CLOTHING" limit="0" potency="MAJOR_BOOST" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="DAMAGE_WEAPON" timer="0"/>
+              <effect itemEffectType="CLOTHING" limit="0" potency="MAJOR_BOOST" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="DAMAGE_WEAPON" timer="0"/>
+              <effect itemEffectType="CLOTHING" limit="0" potency="MAJOR_BOOST" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="DAMAGE_WEAPON" timer="0"/>
+              <effect itemEffectType="CLOTHING" limit="0" potency="MAJOR_BOOST" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="DAMAGE_WEAPON" timer="0"/>
+              <effect itemEffectType="CLOTHING" limit="0" potency="MAJOR_BOOST" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="DAMAGE_WEAPON" timer="0"/>
+              <effect itemEffectType="CLOTHING" limit="0" potency="MAJOR_BOOST" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="DAMAGE_WEAPON" timer="0"/>
+              <effect itemEffectType="CLOTHING" limit="0" potency="MAJOR_BOOST" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="DAMAGE_MELEE_WEAPON" timer="0"/>
+              <effect itemEffectType="CLOTHING" limit="0" potency="MAJOR_BOOST" primaryModifier="CLOTHING_ATTRIBUTE" secondaryModifier="DAMAGE_MELEE_WEAPON" timer="0"/>
+		</effects>
+		
+		<primaryColours>
+			<colour>CLOTHING_RED_DARK</colour>
+		</primaryColours> 
+		<primaryColoursDye values="ALL_WITH_METALS"/>
+		<secondaryColours> 
+			<colour>CLOTHING_GOLD</colour>
+		</secondaryColours> 
+		<secondaryColoursDye values="ALL_METAL"/>
+		
+		<itemTags> 
+			<tag>SOLD_BY_VICKY</tag>
+			<tag>WEAPON_BLADE</tag>
+		</itemTags>
+		
+	</coreAttributes>
+	
+	<hitDescriptions>
+		<hitText><![CDATA[
+		[npc.Name] [npc.verb(charge)] [npc.her] blade before slicing [npc2.name], the sword's element exploding on contact before phasing through [npc2.her] body, a sad whine emits from the blade before the cartridge unlocks it's self and falls to the ground.
+		]]></hitText>
+		<hitText><![CDATA[
+		[npc.Name] [npc.verb(cleave)] [npc.her] sword through [npc2.Name]'s chest causing the blade's element and discharge into [npc2.herhim]. The blade's cartridge whines pitifully before unlocking and falling to the ground.
+		]]></hitText>
+		<hitText><![CDATA[
+		With a quick dash forwards,[npc.Name] [npc.verb(thrust)] the ethereal blade through [npc2.name] before the blade errupts its elemental charge, draining [npc2.name] of her energy. As the blade finishes its initial burst, the cartridge hisses softly before unlocking and falling.
+		]]></hitText>
+	</hitDescriptions>
+
+	<!-- Descriptions that are used when missing an enemy. One of the missText values will be randomly selected each time the attacker misses their target. Follow the same guidelines as equipText. -->
+	<missDescriptions>
+		<missText><![CDATA[
+		[npc.Name] [npc.verb(charge)] [npc.her] blade before slicing at [npc2.name], The blade's elemental charge flaring as it misses [npc2.Name] completely. The hisses as its expended cartrige unlocks.
+		]]></missText>
+		<missText><![CDATA[
+		[npc.Name] [npc.verb(cleave)] [npc.her] blade at [npc2.Name], but the blade prematurely discharges its element staggering [npc.name]. Not long after the blade's cartridge unlocks.
+		]]></missText>
+		<missText><![CDATA[
+		[npc.Name] [npc.verb(thrust)] [npc.her] sword at [npc2.name], but loses [npc.her] balance, [npc.her] strike falling well short of [npc.her] target, [Npc2.name]. The blade emits a soft whimper and unlocks its cartridge after missing.
+		]]></missText>
+	</missDescriptions>
+	
+</weapon>

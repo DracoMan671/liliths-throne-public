@@ -1,0 +1,3 @@
+Mod Category: Weapon
+Item Name: Arcane Sniper Rifle
+Description: A sniper rifle that uses arcane essence as ammunition.

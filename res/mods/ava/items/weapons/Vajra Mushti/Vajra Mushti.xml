@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<weapon>
+    <coreAttributes>
+        <value>25000</value>
+        <melee>true</melee>
+        <twoHanded>false</twoHanded>
+        <determiner><![CDATA[a]]></determiner>
+        <name><![CDATA[Vajra Mushti]]></name>
+        <namePlural pluralByDefault="true"><![CDATA[Vajra Mushti]]></namePlural>
+        <description><![CDATA[A pair of legendary gauntlets once wielded by the King of Grappling.]]></description>
+        <attackDescriptor>swing</attackDescriptor>
+        <attackTooltipDescription>you swing at [npc2.name].</attackTooltipDescription>
+        <rarity>EPIC</rarity>
+        <equipText><![CDATA[[npc.Name] [npc.verb(pull on)] the gauntlets, ready for a brawl!]]></equipText>
+        <unequipText><![CDATA[[npc.Name] [npc.verb(pull on)] the gauntlets.]]></unequipText>
+        <imageName>Vajra_Mushti.svg</imageName>
+        <imageEquippedName/>
+        <damage>38</damage>
+        <arcaneCost>0</arcaneCost>
+        <damageVariance>MEDIUM</damageVariance>
+        <availableDamageTypes>
+            <damageType>PHYSICAL</damageType>
+            <damageType>POISON</damageType>
+            <damageType>FIRE</damageType>
+            <damageType>ICE</damageType>
+        </availableDamageTypes>
+        <spells/>
+        <enchantmentLimit>10</enchantmentLimit>
+        <effects>
+            <effect itemEffectType="CLOTHING" primaryModifier="CLOTHING_ATTRIBUTE" timer="0" limit="0" potency="BOOST" secondaryModifier="CRITICAL_DAMAGE"/>
+        </effects>
+        <primaryColours values="JUST_TAN"/>
+        <primaryColoursDye values="JUST_TAN"/>
+        <secondaryColours values="JUST_TAN"/>
+        <secondaryColoursDye values="JUST_TAN"/>
+        <itemTags>
+            <tag>SOLD_BY_VICKY</tag>
+        </itemTags>
+    </coreAttributes>
+    <hitDescriptions>
+        <hitText><![CDATA[Swinging with [npc.her] gauntlets, [npc.name] [npc.verb(manage)] to land a hit on [npc2.name] in the chest!]]></hitText>
+        <hitText><![CDATA[Swinging with [npc.her] gauntlets, [npc.name] [npc.verb(manage)] to land a hit on [npc2.name]'s body!]]></hitText>
+    </hitDescriptions>
+    <missDescriptions>
+        <missText><![CDATA[Swinging with [npc.her] gauntlets, [npc.name] [npc.verb(attempt)] to hit [npc2.name] chest, but [npc.verb(end)] attack went wide past [npc2.herHim]!]]></missText>
+    </missDescriptions>
+</weapon>

@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+
+<clothing>
+  <coreAttributes>
+    <value>2500</value>
+    <determiner><![CDATA[a]]></determiner>
+    <name><![CDATA[female chastity piercing]]></name>
+    <namePlural pluralByDefault="false"><![CDATA[female chastity piercings]]></namePlural>
+    <description><![CDATA[An unobtrusive female chastity device that requires piercings to put in place.]]></description>
+
+    <physicalResistance>0</physicalResistance>
+    <femininity>ANDROGYNOUS</femininity>
+    <slot>PIERCING_VAGINA</slot>
+    <rarity>COMMON</rarity>
+
+    <imageName>femchastpiercing.svg</imageName>
+
+    <clothingSet/>
+    <imageEquippedName/>
+    <enchantmentLimit/>
+
+	<effects> 
+		<effect itemEffectType="CLOTHING" limit="0" potency="MINOR_DRAIN" primaryModifier="CLOTHING_SPECIAL" secondaryModifier="CLOTHING_SEALING" timer="0"/>
+		<effect itemEffectType="CLOTHING" limit="0" potency="MINOR_DRAIN" primaryModifier="CLOTHING_MAJOR_ATTRIBUTE" secondaryModifier="STRENGTH" timer="0"/>
+
+	</effects>
+
+    <blockedPartsList slot="PIERCING_VAGINA">
+      <blockedParts>
+        <displacementType>REMOVE_OR_EQUIP</displacementType>
+        <clothingAccessRequired>
+          <clothingAccess>GROIN</clothingAccess>
+        </clothingAccessRequired>
+	<blockedBodyParts>
+          <bodyPart>VAGINA</bodyPart>
+        </blockedBodyParts>
+	<clothingAccessBlocked>
+		<clothingAccess>VAGINA</clothingAccess>
+	</clothingAccessBlocked>
+        <concealedSlots>
+		<slot>VAGINA</slot>
+        </concealedSlots>
+
+
+      </blockedParts>
+    </blockedPartsList>
+
+	<incompatibleSlots slot="PIERCING_VAGINA">
+		<slot>VAGINA</slot>
+	</incompatibleSlots>
+
+    <primaryColours>
+		<colour>CLOTHING_SILVER</colour>
+    </primaryColours>
+    <primaryColoursDye values="ALL_METAL"/>
+    <secondaryColours>
+		<colour>CLOTHING_PINK</colour>
+    </secondaryColours>
+    <secondaryColoursDye values="ALL"/>
+    <tertiaryColours>
+		<colour>CLOTHING_BRASS</colour>
+    </tertiaryColours>
+    <tertiaryColoursDye values="ALL_METAL"/>
+
+    <attributeModifiers>
+    <modifier value="-100.0">AROUSAL</modifier>
+    </attributeModifiers>
+
+    <itemTags>
+      <tag>SOLD_BY_FINCH</tag>
+      <tag>REQUIRES_VAGINA</tag>
+      <tag>ENABLE_SEX_EQUIP</tag>
+      <tag>PROVIDES_KEY</tag>
+    </itemTags>
+
+  </coreAttributes>
+
+  <replacementText type="REMOVE_OR_EQUIP">
+    <self>
+      <![CDATA[[npc.Name] [npc.verb(install)] the chastity device onto [npc.her] [npc.pussy+].]]>
+    </self>
+    <other>
+      <![CDATA[[npc.Name] [npc.verb(install)] the chastity device onto [npc2.namePos] [npc2.pussy+].]]>
+    </other>
+    <otherRough>
+      <![CDATA[[npc.Name] roughly [npc.verb(install)] the chastity device onto [npc2.namePos] [npc2.pussy+].]]>
+    </otherRough>
+  </replacementText>
+
+  <displacementText type="REMOVE_OR_EQUIP">
+    <self>
+      <![CDATA[[npc.Name] carefully [npc.verb(take)] off the chastity device that was blocking [npc.her] [npc.pussy+].]]>
+    </self>
+    <other>
+      <![CDATA[[npc.Name] carefully [npc.verb(take)] off the chastity device that was blocking [npc2.namePos] [npc2.pussy+].]]>
+    </other>
+    <otherRough>
+      <![CDATA[[npc.Name] quickly [npc.verb(take)] off the chastity device that was blocking [npc2.namePos] [npc2.pussy+], causing [npc2.herHim] to let out a startled yell.]]>
+    </otherRough>
+  </displacementText>
+
+
+</clothing>

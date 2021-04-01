@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<fluid>
+	<race>poke_focco</race>
+	<transformationName><![CDATA[Fennekin-line]]></transformationName>
+	<baseFluidType>GIRLCUM</baseFluidType>
+	<flavour>GIRL_CUM</flavour>
+	<namesMasculine/>
+	<namesFeminine/>
+	<descriptorsMasculine>
+		<name><![CDATA[
+		#IF(npc.getSubspecies()==SUBSPECIES_poke_focco_subspecies_Fennekin)
+		Fennekin
+		#ELSEIF(npc.getSubspecies()==SUBSPECIES_poke_focco_subspecies_Braixen)
+		Braixen
+		#ELSEIF(npc.getSubspecies()==SUBSPECIES_poke_focco_subspecies_Delphox)
+		Delphox
+		#ENDIF
+		]]></name>
+	</descriptorsMasculine>
+	<descriptorsFeminine>
+		<name><![CDATA[
+		#IF(npc.getSubspecies()==SUBSPECIES_poke_focco_subspecies_Fennekin)
+		Fennekin
+		#ELSEIF(npc.getSubspecies()==SUBSPECIES_poke_focco_subspecies_Braixen)
+		Braixen
+		#ELSEIF(npc.getSubspecies()==SUBSPECIES_poke_focco_subspecies_Delphox)
+		Delphox
+		#ENDIF
+		]]></name>
+	</descriptorsFeminine>
+	<defaultFluidModifiers>
+		<modifier>SLIMY</modifier>
+	</defaultFluidModifiers>
+</fluid>

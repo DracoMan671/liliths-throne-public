@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<coveringType>
+
+	<category>MAIN_SKIN</category>
+	<determiner><![CDATA[a layer of]]></determiner>
+	<name><![CDATA[skin]]></name>
+	<namePlural pluralByDefault="false"><![CDATA[skin]]></namePlural>
+
+	<naturalCoveringModifiers>
+		<modifier>SMOOTH</modifier>
+	</naturalCoveringModifiers>
+
+	<extraCoveringModifiers/>
+
+	<naturalPatterns>
+		<pattern weighting="1">NONE</pattern>
+	</naturalPatterns>
+
+	<extraPatterns/>
+
+
+	<!-- The colours which this covering has available to it.
+	'natural' colours are those which can be chosen when a race with this covering is spawning in naturally.
+	The 'extra' colours are those which are available via transformation.
+	Colour values can be found here: https://github.com/Innoxia/liliths-throne-public/blob/dev/src/com/lilithsthrone/utils/colours/PresetColour.java
+	Instead of defining colours individually, you can use the 'values' attribute to apply pre-defined colours.
+	Acceptable 'values' are found here: https://github.com/Innoxia/liliths-throne-public/blob/dev/src/com/lilithsthrone/utils/colours/ColourListPresets.java -->
+
+	<naturalColoursPrimary values="humanSkinColours"/>
+
+	<extraColoursPrimary values="allSkinColours"/>
+
+	<naturalColoursSecondary values="humanSkinColours"/>
+
+	<extraColoursSecondary values="allSkinColours"/>
+
+</coveringType>

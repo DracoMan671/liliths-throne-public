@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<weapon>
+	<coreAttributes>
+		<value>30000</value>
+		<melee>true</melee>
+		<twoHanded>false</twoHanded>
+		<determiner><![CDATA[a]]></determiner>
+		<name><![CDATA[Cleaver-Sword]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Cleaver-Swords]]></namePlural>
+		<description><![CDATA[A flat one edged blade that looks like it was made by barbarians. It's been quickly and crudely sharpened and has multiple dents in the sword. Dirty bandages cover the handle. A gem sits lodged in the handle and gives the blade arcane ability.]]></description>
+		<attackDescriptor>Ravage</attackDescriptor>
+		<attackTooltipDescription>Go tribal on [npc2.name]</attackTooltipDescription>
+		<rarity>EPIC</rarity>
+		<equipText>[npc.Name] [npc.verb(brandish)] the un-balanced blade.</equipText>
+		<unequipText>[npc.Name] [npc.verb(drop)] the heavy blade.</unequipText>
+		<imageName>cleaver sword.svg</imageName>
+		<imageEquippedName>cleaver sword.svg</imageEquippedName>
+		<damage>50</damage>
+		<arcaneCost>0</arcaneCost>
+		<damageVariance>MEDIUM</damageVariance>
+		<availableDamageTypes>
+			<damageType>FIRE</damageType>
+			<damageType>ICE</damageType>
+			<damageType>PHYSICAL</damageType>
+			<damageType>POISON</damageType>
+		</availableDamageTypes>
+		<spells />
+		<enchantmentLimit>10</enchantmentLimit>
+		<effects />
+		<primaryColours values="ALL_METAL" />
+		<primaryColoursDye values="ALL_METAL" />
+		<secondaryColours values="ALL" />
+		<secondaryColoursDye values="ALL" />
+		<itemTags>
+			<tag>SOLD_BY_VICKY</tag>
+		</itemTags>
+	</coreAttributes>
+	<hitDescriptions>
+		<hitText><![CDATA[Bellowing out a war-cry, [npc.name] [npc.verb(charge)] at [npc2.name], swingling wildly.]]></hitText>
+		<hitText><![CDATA[[Npc.name] [npc.verb(throws)] their cleaver sword at [npc2.name], getting it lodged in their shoulder!!]]></hitText>
+		<hitText><![CDATA[[Npc.name] [npc.verb(throws)] their cleaver sword at [npc2.name], getting it lodged in their chest!!]]></hitText>
+		<hitText><![CDATA[[Npc.name] [npc.verb(throws)] their cleaver sword at [npc2.name], getting it lodged in their stomach!!]]></hitText>
+		<hitText><![CDATA[[Npc.name] [npc.verb(charges)] [npc2.name], should-checking them off-balance. [Npc.name] proceeds to chop the blade into the chest of [npc2.name], zapping their energy.]]></hitText>
+	</hitDescriptions>
+	<missDescriptions>
+		<missText><![CDATA[[Npc.name] tries to bellow out, but does it too hard and starts coughing, interrupting [npc.her] plans.]]></missText>
+		<missText><![CDATA[[Npc.name] attempts to throw their blade, but it ends up slipping, the dull part landing on their foot.]]></missText>
+	</missDescriptions>
+</weapon>
